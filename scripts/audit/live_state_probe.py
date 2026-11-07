@@ -145,11 +145,11 @@ def main():
             except Exception as e:
                 cfg = {}
                 out['errors'].append({'where': 'state_queries', 'error': str(e)})
-            out['storage'] = {}
-            for q in cfg.get('maps', []):
-                key = f"{q['pallet']}.{q['item']}"
+            out['storage'] = {'_pallet_accounts': cfg.get('pallet_accounts', {})}
+            for q in cfg.get('maps', []) + cfg.get('partial_maps', []):
+                key = f"{q['pallet']}.{q['item']}" + (f"#{q['tag']}" if q.get('tag') else '')
                 try:
-                    res = sub.query_map(q['pallet'], q['item'], block_hash=fin,
+                    res = sub.query_map(q['pallet'], q['item'], q.get('params'), block_hash=fin,
                                         max_results=q.get('max', 500), page_size=q.get('page', 100))
                     rows = []
                     for k, v in res:
@@ -162,7 +162,7 @@ def main():
                     out['storage'][key] = {'error': str(e)}
                     print('map ERROR', key, e, flush=True)
             for q in cfg.get('values', []):
-                key = f"{q['pallet']}.{q['item']}"
+                key = f"{q['pallet']}.{q['item']}" + (f"#{q['tag']}" if q.get('tag') else (f"#{q['params'][0][:16]}" if q.get('params') else ''))
                 try:
                     v = sub.query(q['pallet'], q['item'], q.get('params'), block_hash=fin)
                     out['storage'][key] = jsonable(v)

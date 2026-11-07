@@ -1,1 +1,858 @@
-{"maps": [], "values": [], "constants": []}
+{
+ "pallet_accounts_ss58_prefix": 10,
+ "pallet_accounts": {
+  "aca/trsy": "23M5ttkmR6KcoTAAE6gcmibnKFtVaTP5yxnY8HF1BmrJ2A1i",
+  "aca/loan": "23M5ttkmR6KcoCvrNZsA97DQMPxQmqktF8DHYZSDW4HLcEDw",
+  "aca/dexm": "23M5ttkmR6KcnxentoqchgBdUjzMDSzFoUyf5qMs7FsmRMvV",
+  "aca/cdpt": "23M5ttkmR6KcnvsNJdmYTpLo9xfc54g8uCk55buDfiJPon69",
+  "aca/cdpe": "23M5ttkmR6KcnvsNJKoKoYzMBRX23jj5m7qcExWfe5hsGBEJ",
+  "aca/homa": "23M5ttkmR6Kco5pqN691bGfU3BhfU6QPG9arw6SR1XpNuQqu",
+  "aca/hztr": "23M5ttkmR6Kco5uGj64jEZbG6PYyZSwvjeoeUVTMqQEG71yu",
+  "aca/hmtr": "23M5ttkmR6Kco5p3LFGKMpMv4zvLkKdUQWW1wGGoV8zDX3am",
+  "aca/inct": "23M5ttkmR6Kco7bReRDve6bQUSAcwqebatp3fWGJYb4hDSDJ",
+  "aca/cpot": "23M5ttkmR6KcnvxCGaueuxSnUmxG9ruKBibH6i1yszogd348",
+  "aca/reve": "23M5ttkmR6KcoPWv3spZT4dLSyv87w8fQ8EzBjbyXUZXwmze",
+  "aca/aNFT": "23M5ttkmR6KcnsARyoG6rU92WXWxNb48A62qhP4iGeZHUjAr",
+  "aca/urls": "23M5ttkmR6KcoUwA7NqBjLuMJFWCvobsD9Zy95MgaAECEhit",
+  "aca/fees": "23M5ttkmR6Kco2CnDJKTP4L2EUmMbKqPs1NngXH2iQpCNe9Y",
+  "aca/lqcl": "23M5ttkmR6KcoCwfEJnoAgczRQdDq85ZedwGc3uzyPwiCoq8",
+  "nuts/sta": "23M5ttkp2zdM8qa6LFak4BySWZDsAVByjepAfr7kt929S1U9",
+  "aca/hzbg": "23M5ttkmR6Kco5uF5giywrRtXYxsiWXC9UoZ9KXBaNne6Fm8",
+  "aca/xNFT": "23M5ttkmR6Kcoa1e3LmTtpfEuQq3JfAMLdF6KYtsGkYE7ZX7"
+ },
+ "maps": [
+  {
+   "pallet": "Tokens",
+   "item": "TotalIssuance",
+   "max": 300,
+   "page": 100
+  },
+  {
+   "pallet": "CdpEngine",
+   "item": "DebitExchangeRate",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "CdpEngine",
+   "item": "CollateralParams",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "Loans",
+   "item": "TotalPositions",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "Dex",
+   "item": "LiquidityPool",
+   "max": 500,
+   "page": 100
+  },
+  {
+   "pallet": "Dex",
+   "item": "TradingPairStatuses",
+   "max": 500,
+   "page": 100
+  },
+  {
+   "pallet": "Dex",
+   "item": "InitialShareExchangeRates",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "DexOracle",
+   "item": "AveragePrices",
+   "max": 200,
+   "page": 100
+  },
+  {
+   "pallet": "AggregatedDex",
+   "item": "AggregatedSwapPaths",
+   "max": 200,
+   "page": 100
+  },
+  {
+   "pallet": "Auction",
+   "item": "Auctions",
+   "max": 200,
+   "page": 100
+  },
+  {
+   "pallet": "Auction",
+   "item": "AuctionEndTime",
+   "max": 200,
+   "page": 100
+  },
+  {
+   "pallet": "AuctionManager",
+   "item": "CollateralAuctions",
+   "max": 200,
+   "page": 100
+  },
+  {
+   "pallet": "Earning",
+   "item": "Ledger",
+   "max": 50,
+   "page": 100
+  },
+  {
+   "pallet": "Homa",
+   "item": "StakingLedgers",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "StableAsset",
+   "item": "Pools",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "Prices",
+   "item": "LockedPrice",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "AcalaOracle",
+   "item": "Values",
+   "max": 200,
+   "page": 100
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": "AssetMetadatas",
+   "max": 300,
+   "page": 100
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": "Erc20IdToAddress",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "Incentives",
+   "item": "IncentiveRewardAmounts",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "Incentives",
+   "item": "ClaimRewardDeductionRates",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "Rewards",
+   "item": "PoolInfos",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "TokenExchangeRate",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "AlternativeFeeSwapPath",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "GlobalFeeSwapPath",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "Parameters",
+   "item": "Parameters",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "EVM",
+   "item": "CodeInfos",
+   "max": 50,
+   "page": 100
+  },
+  {
+   "pallet": "Honzon",
+   "item": "Authorization",
+   "max": 50,
+   "page": 100
+  }
+ ],
+ "partial_maps": [
+  {
+   "pallet": "Tokens",
+   "item": "Accounts",
+   "params": [
+    "23M5ttkmR6KcoTAAE6gcmibnKFtVaTP5yxnY8HF1BmrJ2A1i"
+   ],
+   "tag": "aca/trsy",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "Tokens",
+   "item": "Accounts",
+   "params": [
+    "23M5ttkmR6KcoCvrNZsA97DQMPxQmqktF8DHYZSDW4HLcEDw"
+   ],
+   "tag": "aca/loan",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "Tokens",
+   "item": "Accounts",
+   "params": [
+    "23M5ttkmR6KcnxentoqchgBdUjzMDSzFoUyf5qMs7FsmRMvV"
+   ],
+   "tag": "aca/dexm",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "Tokens",
+   "item": "Accounts",
+   "params": [
+    "23M5ttkmR6KcnvsNJdmYTpLo9xfc54g8uCk55buDfiJPon69"
+   ],
+   "tag": "aca/cdpt",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "Tokens",
+   "item": "Accounts",
+   "params": [
+    "23M5ttkmR6KcnvsNJKoKoYzMBRX23jj5m7qcExWfe5hsGBEJ"
+   ],
+   "tag": "aca/cdpe",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "Tokens",
+   "item": "Accounts",
+   "params": [
+    "23M5ttkmR6Kco5pqN691bGfU3BhfU6QPG9arw6SR1XpNuQqu"
+   ],
+   "tag": "aca/homa",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "Tokens",
+   "item": "Accounts",
+   "params": [
+    "23M5ttkmR6Kco5uGj64jEZbG6PYyZSwvjeoeUVTMqQEG71yu"
+   ],
+   "tag": "aca/hztr",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "Tokens",
+   "item": "Accounts",
+   "params": [
+    "23M5ttkmR6Kco5p3LFGKMpMv4zvLkKdUQWW1wGGoV8zDX3am"
+   ],
+   "tag": "aca/hmtr",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "Tokens",
+   "item": "Accounts",
+   "params": [
+    "23M5ttkmR6Kco7bReRDve6bQUSAcwqebatp3fWGJYb4hDSDJ"
+   ],
+   "tag": "aca/inct",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "Tokens",
+   "item": "Accounts",
+   "params": [
+    "23M5ttkmR6KcnvxCGaueuxSnUmxG9ruKBibH6i1yszogd348"
+   ],
+   "tag": "aca/cpot",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "Tokens",
+   "item": "Accounts",
+   "params": [
+    "23M5ttkmR6KcoPWv3spZT4dLSyv87w8fQ8EzBjbyXUZXwmze"
+   ],
+   "tag": "aca/reve",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "Tokens",
+   "item": "Accounts",
+   "params": [
+    "23M5ttkmR6KcnsARyoG6rU92WXWxNb48A62qhP4iGeZHUjAr"
+   ],
+   "tag": "aca/aNFT",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "Tokens",
+   "item": "Accounts",
+   "params": [
+    "23M5ttkmR6KcoUwA7NqBjLuMJFWCvobsD9Zy95MgaAECEhit"
+   ],
+   "tag": "aca/urls",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "Tokens",
+   "item": "Accounts",
+   "params": [
+    "23M5ttkmR6Kco2CnDJKTP4L2EUmMbKqPs1NngXH2iQpCNe9Y"
+   ],
+   "tag": "aca/fees",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "Tokens",
+   "item": "Accounts",
+   "params": [
+    "23M5ttkmR6KcoCwfEJnoAgczRQdDq85ZedwGc3uzyPwiCoq8"
+   ],
+   "tag": "aca/lqcl",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "Tokens",
+   "item": "Accounts",
+   "params": [
+    "23M5ttkp2zdM8qa6LFak4BySWZDsAVByjepAfr7kt929S1U9"
+   ],
+   "tag": "nuts/sta",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "Tokens",
+   "item": "Accounts",
+   "params": [
+    "23M5ttkmR6Kco5uF5giywrRtXYxsiWXC9UoZ9KXBaNne6Fm8"
+   ],
+   "tag": "aca/hzbg",
+   "max": 100,
+   "page": 100
+  },
+  {
+   "pallet": "Tokens",
+   "item": "Accounts",
+   "params": [
+    "23M5ttkmR6Kcoa1e3LmTtpfEuQq3JfAMLdF6KYtsGkYE7ZX7"
+   ],
+   "tag": "aca/xNFT",
+   "max": 100,
+   "page": 100
+  }
+ ],
+ "values": [
+  {
+   "pallet": "System",
+   "item": "Number",
+   "params": null
+  },
+  {
+   "pallet": "Balances",
+   "item": "TotalIssuance",
+   "params": null
+  },
+  {
+   "pallet": "CdpTreasury",
+   "item": "DebitPool",
+   "params": null
+  },
+  {
+   "pallet": "CdpTreasury",
+   "item": "DebitOffsetBuffer",
+   "params": null
+  },
+  {
+   "pallet": "CdpTreasury",
+   "item": "ExpectedCollateralAuctionSize",
+   "params": null
+  },
+  {
+   "pallet": "CdpEngine",
+   "item": "LastAccumulationSecs",
+   "params": null
+  },
+  {
+   "pallet": "CdpEngine",
+   "item": "LiquidationContracts",
+   "params": null
+  },
+  {
+   "pallet": "AuctionManager",
+   "item": "TotalCollateralInAuction",
+   "params": null
+  },
+  {
+   "pallet": "AuctionManager",
+   "item": "TotalTargetInAuction",
+   "params": null
+  },
+  {
+   "pallet": "Homa",
+   "item": "RelayChainCurrentEra",
+   "params": null
+  },
+  {
+   "pallet": "Homa",
+   "item": "TotalStakingBonded",
+   "params": null
+  },
+  {
+   "pallet": "Homa",
+   "item": "ToBondPool",
+   "params": null
+  },
+  {
+   "pallet": "Homa",
+   "item": "TotalVoidLiquid",
+   "params": null
+  },
+  {
+   "pallet": "Homa",
+   "item": "UnclaimedRedemption",
+   "params": null
+  },
+  {
+   "pallet": "Homa",
+   "item": "Unbondings",
+   "params": null
+  },
+  {
+   "pallet": "Homa",
+   "item": "CommissionRate",
+   "params": null
+  },
+  {
+   "pallet": "Homa",
+   "item": "FastMatchFeeRate",
+   "params": null
+  },
+  {
+   "pallet": "Homa",
+   "item": "EstimatedRewardRatePerEra",
+   "params": null
+  },
+  {
+   "pallet": "Homa",
+   "item": "SoftBondedCapPerSubAccount",
+   "params": null
+  },
+  {
+   "pallet": "StableAsset",
+   "item": "PoolCount",
+   "params": null
+  },
+  {
+   "pallet": "EmergencyShutdown",
+   "item": "IsShutdown",
+   "params": null
+  },
+  {
+   "pallet": "EmergencyShutdown",
+   "item": "CanRefund",
+   "params": null
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "PoolSize",
+   "params": null
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "SwapBalanceThreshold",
+   "params": null
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "NextFeeMultiplier",
+   "params": null
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "OverrideChargeFeeMethod",
+   "params": null
+  },
+  {
+   "pallet": "Auction",
+   "item": "AuctionsIndex",
+   "params": null
+  },
+  {
+   "pallet": "EVM",
+   "item": "ChainId",
+   "params": null
+  },
+  {
+   "pallet": "EVM",
+   "item": "NetworkContractIndex",
+   "params": null
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": "NextForeignAssetId",
+   "params": null
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": "NextStableAssetId",
+   "params": null
+  },
+  {
+   "pallet": "LiquidCrowdloan",
+   "item": "RedeemCurrencyId",
+   "params": null
+  },
+  {
+   "pallet": "Incentives",
+   "item": "ClaimRewardDeductionCurrency",
+   "params": null
+  },
+  {
+   "pallet": "AcalaOracle",
+   "item": "HasDispatched",
+   "params": null
+  },
+  {
+   "pallet": "DexOracle",
+   "item": "AveragePrices",
+   "params": null
+  },
+  {
+   "pallet": "Balances",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6KcoTAAE6gcmibnKFtVaTP5yxnY8HF1BmrJ2A1i"
+   ],
+   "tag": "aca/trsy"
+  },
+  {
+   "pallet": "System",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6KcoTAAE6gcmibnKFtVaTP5yxnY8HF1BmrJ2A1i"
+   ],
+   "tag": "aca/trsy"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6KcoCvrNZsA97DQMPxQmqktF8DHYZSDW4HLcEDw"
+   ],
+   "tag": "aca/loan"
+  },
+  {
+   "pallet": "System",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6KcoCvrNZsA97DQMPxQmqktF8DHYZSDW4HLcEDw"
+   ],
+   "tag": "aca/loan"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6KcnxentoqchgBdUjzMDSzFoUyf5qMs7FsmRMvV"
+   ],
+   "tag": "aca/dexm"
+  },
+  {
+   "pallet": "System",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6KcnxentoqchgBdUjzMDSzFoUyf5qMs7FsmRMvV"
+   ],
+   "tag": "aca/dexm"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6KcnvsNJdmYTpLo9xfc54g8uCk55buDfiJPon69"
+   ],
+   "tag": "aca/cdpt"
+  },
+  {
+   "pallet": "System",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6KcnvsNJdmYTpLo9xfc54g8uCk55buDfiJPon69"
+   ],
+   "tag": "aca/cdpt"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6KcnvsNJKoKoYzMBRX23jj5m7qcExWfe5hsGBEJ"
+   ],
+   "tag": "aca/cdpe"
+  },
+  {
+   "pallet": "System",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6KcnvsNJKoKoYzMBRX23jj5m7qcExWfe5hsGBEJ"
+   ],
+   "tag": "aca/cdpe"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6Kco5pqN691bGfU3BhfU6QPG9arw6SR1XpNuQqu"
+   ],
+   "tag": "aca/homa"
+  },
+  {
+   "pallet": "System",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6Kco5pqN691bGfU3BhfU6QPG9arw6SR1XpNuQqu"
+   ],
+   "tag": "aca/homa"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6Kco5uGj64jEZbG6PYyZSwvjeoeUVTMqQEG71yu"
+   ],
+   "tag": "aca/hztr"
+  },
+  {
+   "pallet": "System",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6Kco5uGj64jEZbG6PYyZSwvjeoeUVTMqQEG71yu"
+   ],
+   "tag": "aca/hztr"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6Kco5p3LFGKMpMv4zvLkKdUQWW1wGGoV8zDX3am"
+   ],
+   "tag": "aca/hmtr"
+  },
+  {
+   "pallet": "System",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6Kco5p3LFGKMpMv4zvLkKdUQWW1wGGoV8zDX3am"
+   ],
+   "tag": "aca/hmtr"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6Kco7bReRDve6bQUSAcwqebatp3fWGJYb4hDSDJ"
+   ],
+   "tag": "aca/inct"
+  },
+  {
+   "pallet": "System",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6Kco7bReRDve6bQUSAcwqebatp3fWGJYb4hDSDJ"
+   ],
+   "tag": "aca/inct"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6KcnvxCGaueuxSnUmxG9ruKBibH6i1yszogd348"
+   ],
+   "tag": "aca/cpot"
+  },
+  {
+   "pallet": "System",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6KcnvxCGaueuxSnUmxG9ruKBibH6i1yszogd348"
+   ],
+   "tag": "aca/cpot"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6KcoPWv3spZT4dLSyv87w8fQ8EzBjbyXUZXwmze"
+   ],
+   "tag": "aca/reve"
+  },
+  {
+   "pallet": "System",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6KcoPWv3spZT4dLSyv87w8fQ8EzBjbyXUZXwmze"
+   ],
+   "tag": "aca/reve"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6KcnsARyoG6rU92WXWxNb48A62qhP4iGeZHUjAr"
+   ],
+   "tag": "aca/aNFT"
+  },
+  {
+   "pallet": "System",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6KcnsARyoG6rU92WXWxNb48A62qhP4iGeZHUjAr"
+   ],
+   "tag": "aca/aNFT"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6KcoUwA7NqBjLuMJFWCvobsD9Zy95MgaAECEhit"
+   ],
+   "tag": "aca/urls"
+  },
+  {
+   "pallet": "System",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6KcoUwA7NqBjLuMJFWCvobsD9Zy95MgaAECEhit"
+   ],
+   "tag": "aca/urls"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6Kco2CnDJKTP4L2EUmMbKqPs1NngXH2iQpCNe9Y"
+   ],
+   "tag": "aca/fees"
+  },
+  {
+   "pallet": "System",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6Kco2CnDJKTP4L2EUmMbKqPs1NngXH2iQpCNe9Y"
+   ],
+   "tag": "aca/fees"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6KcoCwfEJnoAgczRQdDq85ZedwGc3uzyPwiCoq8"
+   ],
+   "tag": "aca/lqcl"
+  },
+  {
+   "pallet": "System",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6KcoCwfEJnoAgczRQdDq85ZedwGc3uzyPwiCoq8"
+   ],
+   "tag": "aca/lqcl"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Account",
+   "params": [
+    "23M5ttkp2zdM8qa6LFak4BySWZDsAVByjepAfr7kt929S1U9"
+   ],
+   "tag": "nuts/sta"
+  },
+  {
+   "pallet": "System",
+   "item": "Account",
+   "params": [
+    "23M5ttkp2zdM8qa6LFak4BySWZDsAVByjepAfr7kt929S1U9"
+   ],
+   "tag": "nuts/sta"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6Kco5uF5giywrRtXYxsiWXC9UoZ9KXBaNne6Fm8"
+   ],
+   "tag": "aca/hzbg"
+  },
+  {
+   "pallet": "System",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6Kco5uF5giywrRtXYxsiWXC9UoZ9KXBaNne6Fm8"
+   ],
+   "tag": "aca/hzbg"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6Kcoa1e3LmTtpfEuQq3JfAMLdF6KYtsGkYE7ZX7"
+   ],
+   "tag": "aca/xNFT"
+  },
+  {
+   "pallet": "System",
+   "item": "Account",
+   "params": [
+    "23M5ttkmR6Kcoa1e3LmTtpfEuQq3JfAMLdF6KYtsGkYE7ZX7"
+   ],
+   "tag": "aca/xNFT"
+  }
+ ],
+ "constants": [
+  {
+   "pallet": "CdpEngine",
+   "item": "DefaultDebitExchangeRate"
+  },
+  {
+   "pallet": "CdpEngine",
+   "item": "DefaultLiquidationRatio"
+  },
+  {
+   "pallet": "CdpEngine",
+   "item": "MinimumDebitValue"
+  },
+  {
+   "pallet": "Dex",
+   "item": "GetExchangeFee"
+  }
+ ]
+}

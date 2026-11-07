@@ -20,9 +20,9 @@ jobs:
       - name: Install SCALE/metadata tooling
         run: python3 -m pip install --quiet substrate-interface==1.8.1
       - name: Probe Acala state
-        run: python3 scripts/audit/live_state_probe.py --chain acala --mode catalogue --out audit-live/acala-catalogue.json
+        run: python3 scripts/audit/live_state_probe.py --chain acala --mode state --out audit-live/acala-state.json
       - name: Probe Karura state
-        run: python3 scripts/audit/live_state_probe.py --chain karura --mode catalogue --out audit-live/karura-catalogue.json
+        run: python3 scripts/audit/live_state_probe.py --chain karura --mode state --out audit-live/karura-state.json
       - name: Publish evidence to branch
         run: |
           git config user.name "audit-bot"
