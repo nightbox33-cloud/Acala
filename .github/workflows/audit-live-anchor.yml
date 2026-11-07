@@ -1,0 +1,28 @@
+name: Audit live-chain anchor
+on:
+  workflow_dispatch:
+    inputs:
+      extra_endpoints:
+        description: 'space-separated extra JSON-RPC endpoints'
+        required: false
+        default: ''
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: arena/9267cd86-acala
+      - name: Probe live chain RPC
+        run: |
+          python3 scripts/audit/rpc_probe.py --out audit-live/anchor.json ${{ github.event.inputs.extra_endpoints && format('--endpoints {0}', github.event.inputs.extra_endpoints) || '' }}
+      - name: Publish evidence to branch
+        run: |
+          git config user.name "audit-bot"
+          git config user.email "audit-bot@users.noreply.github.com"
+          git add audit-live/
+          git commit -m "audit: live chain anchor $(date -u +%Y-%m-%dT%H:%M:%SZ)" || echo "no changes"
+          git push origin HEAD:arena/9267cd86-acala
