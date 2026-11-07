@@ -27,9 +27,15 @@ jobs:
         run: python3 scripts/audit/live_state_probe.py --chain acala --mode state --out audit-live/acala-state.json --dump-evm-mismatches audit-live/evm-mismatch-acala
       - name: Probe Karura state
         run: python3 scripts/audit/live_state_probe.py --chain karura --mode state --out audit-live/karura-state.json
+      - name: Read live paused-call filter
+        run: |
+          python3 scripts/audit/query_paused.py acala audit-live/paused-calls-acala.json
+          python3 scripts/audit/query_paused.py karura audit-live/paused-calls-karura.json
       - name: Install chopsticks fork tooling
+        if: github.event_name == 'workflow_dispatch'
         run: npm install --no-audit --no-fund --silent @acala-network/chopsticks-core@1.5.2 @polkadot/api@latest
       - name: Fork mainnet and dry-run permissionless money paths
+        if: github.event_name == 'workflow_dispatch'
         continue-on-error: true
         run: |
           ANCHOR_HASH=$(python3 -c 'import json;print(json.load(open("audit-live/acala-state.json"))["anchor"]["finalized_hash"])')
