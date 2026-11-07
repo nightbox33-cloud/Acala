@@ -1,0 +1,58 @@
+{
+ "chain": "acala",
+ "generated_at_utc": "2026-11-07T23:43:49.371524+00:00",
+ "finalized_hash": "0x980be6ffb4627c894f4bea53cd015f33471622378ff5e1d42a777e22ea89656a",
+ "block_number": 12384068,
+ "items": {
+  "TransactionPause.PausedTransactions": [
+   [
+    [
+     "Honzon",
+     "transfer_debit"
+    ],
+    []
+   ],
+   [
+    [
+     "Honzon",
+     "unauthorize_all"
+    ],
+    []
+   ],
+   [
+    [
+     "Honzon",
+     "authorize"
+    ],
+    []
+   ],
+   [
+    [
+     "Honzon",
+     "expand_position_collateral"
+    ],
+    []
+   ],
+   [
+    [
+     "Honzon",
+     "unauthorize"
+    ],
+    []
+   ],
+   [
+    [
+     "Honzon",
+     "shrink_position_debit"
+    ],
+    []
+   ]
+  ],
+  "TransactionPause.PausedEvmPrecompiles": [
+   [
+    "0x0000000000000000000000000000000000000409",
+    []
+   ]
+  ]
+ }
+}

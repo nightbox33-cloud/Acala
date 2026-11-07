@@ -1,0 +1,90 @@
+{
+ "chain": "karura",
+ "generated_at_utc": "2026-11-07T23:43:54.203277+00:00",
+ "finalized_hash": "0x0f3aa8f9a33b6d55b5046d9e0eca50e844c0a9ce4349a5c0689df151517cee4f",
+ "block_number": 12812014,
+ "items": {
+  "TransactionPause.PausedTransactions": [
+   [
+    [
+     "Honzon",
+     "transfer_debit"
+    ],
+    []
+   ],
+   [
+    [
+     "HomaValidatorList",
+     "withdraw_unbonded"
+    ],
+    []
+   ],
+   [
+    [
+     "Honzon",
+     "unauthorize_all"
+    ],
+    []
+   ],
+   [
+    [
+     "Honzon",
+     "authorize"
+    ],
+    []
+   ],
+   [
+    [
+     "HomaValidatorList",
+     "unbond"
+    ],
+    []
+   ],
+   [
+    [
+     "HomaValidatorList",
+     "bond"
+    ],
+    []
+   ],
+   [
+    [
+     "PolkadotXcm",
+     "execute"
+    ],
+    []
+   ],
+   [
+    [
+     "Honzon",
+     "expand_position_collateral"
+    ],
+    []
+   ],
+   [
+    [
+     "Honzon",
+     "unauthorize"
+    ],
+    []
+   ],
+   [
+    [
+     "Honzon",
+     "shrink_position_debit"
+    ],
+    []
+   ]
+  ],
+  "TransactionPause.PausedEvmPrecompiles": [
+   [
+    "0x0000000000000000000000000000000000000409",
+    []
+   ],
+   [
+    "0x0000000000000000000000000000000000000406",
+    []
+   ]
+  ]
+ }
+}
