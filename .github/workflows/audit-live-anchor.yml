@@ -4,6 +4,7 @@ on:
     paths:
       - 'scripts/audit/*.py'
       - 'scripts/audit/*.json'
+      - 'scripts/audit/*.mjs'
       - '.github/workflows/audit-live-anchor.yml'
   workflow_dispatch:
 permissions:
@@ -17,12 +18,25 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: arena/9267cd86-acala
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
       - name: Install SCALE/metadata tooling
         run: python3 -m pip install --quiet substrate-interface==1.8.1
       - name: Probe Acala state
-        run: python3 scripts/audit/live_state_probe.py --chain acala --mode state --out audit-live/acala-state.json
+        run: python3 scripts/audit/live_state_probe.py --chain acala --mode state --out audit-live/acala-state.json --dump-evm-mismatches audit-live/evm-mismatch-acala
       - name: Probe Karura state
         run: python3 scripts/audit/live_state_probe.py --chain karura --mode state --out audit-live/karura-state.json
+      - name: Install chopsticks fork tooling
+        run: npm install --no-audit --no-fund --silent @acala-network/chopsticks-core@1.5.2 @polkadot/api@latest
+      - name: Fork mainnet and dry-run permissionless money paths
+        continue-on-error: true
+        run: |
+          ANCHOR_HASH=$(python3 -c 'import json;print(json.load(open("audit-live/acala-state.json"))["anchor"]["finalized_hash"])')
+          echo "ANCHOR_HASH=$ANCHOR_HASH" >> "$GITHUB_ENV"
+          export ANCHOR_HASH
+          export OUT=audit-live/fork-poc.json
+          timeout 600 node scripts/audit/fork_poc.mjs 2>&1 | tee audit-live/fork-poc.log
       - name: Publish evidence to branch
         run: |
           git config user.name "audit-bot"

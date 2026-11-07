@@ -57,42 +57,59 @@ MAPS = [
     ('Incentives', 'ClaimRewardDeductionRates', 100),
     ('Rewards', 'PoolInfos', 100),
     ('TransactionPayment', 'TokenExchangeRate', 100),
+    ('TransactionPayment', 'PoolSize', 100),
+    ('TransactionPayment', 'SwapBalanceThreshold', 100),
     ('TransactionPayment', 'AlternativeFeeSwapPath', 100),
     ('TransactionPayment', 'GlobalFeeSwapPath', 100),
     ('Parameters', 'Parameters', 100),
-    ('EVM', 'CodeInfos', 50),
+    ('CdpTreasury', 'ExpectedCollateralAuctionSize', 100),
+    ('AuctionManager', 'TotalCollateralInAuction', 100),
+    ('AuctionManager', 'TotalTargetInAuction', 100),
+    ('Incentives', 'ClaimRewardDeductionCurrency', 100),
+    ('DexOracle', 'AveragePrices', 100),
+    ('EVM', 'CodeInfos', 300),
     ('Honzon', 'Authorization', 50),
 ]
 
 VALUES = [
     'System.Number', 'Balances.TotalIssuance', 'CdpTreasury.DebitPool',
-    'CdpTreasury.DebitOffsetBuffer', 'CdpTreasury.ExpectedCollateralAuctionSize',
+    'CdpTreasury.DebitOffsetBuffer',
     'CdpEngine.LastAccumulationSecs', 'CdpEngine.LiquidationContracts',
-    'AuctionManager.TotalCollateralInAuction', 'AuctionManager.TotalTargetInAuction',
     'Homa.RelayChainCurrentEra', 'Homa.TotalStakingBonded', 'Homa.ToBondPool',
-    'Homa.TotalVoidLiquid', 'Homa.UnclaimedRedemption', 'Homa.Unbondings',
+    'Homa.TotalVoidLiquid', 'Homa.UnclaimedRedemption',
     'Homa.CommissionRate', 'Homa.FastMatchFeeRate', 'Homa.EstimatedRewardRatePerEra',
     'Homa.SoftBondedCapPerSubAccount', 'StableAsset.PoolCount',
     'EmergencyShutdown.IsShutdown', 'EmergencyShutdown.CanRefund',
-    'TransactionPayment.PoolSize', 'TransactionPayment.SwapBalanceThreshold',
     'TransactionPayment.NextFeeMultiplier', 'TransactionPayment.OverrideChargeFeeMethod',
     'Auction.AuctionsIndex', 'EVM.ChainId', 'EVM.NetworkContractIndex',
     'AssetRegistry.NextForeignAssetId', 'AssetRegistry.NextStableAssetId',
-    'LiquidCrowdloan.RedeemCurrencyId', 'Incentives.ClaimRewardDeductionCurrency',
-    'AcalaOracle.HasDispatched', 'DexOracle.AveragePrices',
+    'LiquidCrowdloan.RedeemCurrencyId',
+    'AcalaOracle.HasDispatched',
 ]
+
+# Charge-fee-pool sub-accounts: (b"modl" ++ b"aca/fees" ++ SCALE(CurrencyId)) padded to 32 bytes
+FEE_SUBS = {
+    'fee/AUSD': bytes([0, 1]),
+    'fee/DOT': bytes([0, 2]),
+    'fee/LDOT': bytes([0, 3]),
+    'fee/LCDOT13': bytes([4, 13, 0, 0, 0]),
+    'fee/FA14': bytes([5, 14, 0]),
+}
 
 def main():
     prefix = int(sys.argv[1]) if len(sys.argv) > 1 else 10
     accts = {pid: pallet_account(pid, prefix) for pid in PALLET_IDS}
+    fee_accts = {k: ss58((b'modl' + b'aca/fees' + v).ljust(32, b'\x00'), prefix)
+                 for k, v in FEE_SUBS.items()}
     q = {'pallet_accounts_ss58_prefix': prefix, 'pallet_accounts': accts,
+         'fee_sub_accounts': fee_accts,
          'maps': [{'pallet': p, 'item': i, 'max': m, 'page': 100} for p, i, m in MAPS],
          'partial_maps': [], 'values': [], 'constants': []}
     for kv in VALUES:
         p, i = kv.split('.', 1)
         q['values'].append({'pallet': p, 'item': i, 'params': None})
     # Balances.Account and System.Account for every module account (native ACA)
-    for pid, addr in accts.items():
+    for pid, addr in list(accts.items()) + list(fee_accts.items()):
         q['values'].append({'pallet': 'Balances', 'item': 'Account', 'params': [addr], 'tag': pid})
         q['values'].append({'pallet': 'System', 'item': 'Account', 'params': [addr], 'tag': pid})
         q['partial_maps'].append({'pallet': 'Tokens', 'item': 'Accounts', 'params': [addr],

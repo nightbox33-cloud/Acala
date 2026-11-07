@@ -58,6 +58,8 @@ def main():
     ap.add_argument('--mode', default='all', choices=['anchor', 'catalogue', 'state', 'all'])
     ap.add_argument('--predeploy-map', default='scripts/audit/predeploy_map.json')
     ap.add_argument('--queries', default='scripts/audit/state_queries.json')
+    ap.add_argument('--dump-evm-mismatches', default=None,
+                    help='directory to write raw hex bytecode of predeploy contracts whose live code differs from repo')
     a = ap.parse_args()
     c = CHAINS[a.chain]
     out = {'chain': a.chain, 'generated_at_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
@@ -113,6 +115,15 @@ def main():
         evm['codes'][addr] = rec
     out['evm'] = evm
     print('evm codes', len(evm['codes']), 'matched', sum(1 for r in evm['codes'].values() if r.get('matches_repo_bytecode')), flush=True)
+    if a.dump_evm_mismatches:
+        os.makedirs(a.dump_evm_mismatches, exist_ok=True)
+        for symbol, addr, expected_sha in predeploy:
+            rec = evm['codes'][addr]
+            if rec.get('present') and not rec.get('matches_repo_bytecode'):
+                code = rpc(c['evm'], 'eth_getCode', [addr, 'latest'], timeout=30).get('result') or '0x'
+                with open(os.path.join(a.dump_evm_mismatches, f'{addr}.hex'), 'w') as f:
+                    f.write(code)
+                print('dumped mismatch bytecode', symbol, addr, len(code), flush=True)
 
     if a.mode in ('catalogue', 'state', 'all'):
         try:
@@ -145,7 +156,8 @@ def main():
             except Exception as e:
                 cfg = {}
                 out['errors'].append({'where': 'state_queries', 'error': str(e)})
-            out['storage'] = {'_pallet_accounts': cfg.get('pallet_accounts', {})}
+            out['storage'] = {'_pallet_accounts': cfg.get('pallet_accounts', {}),
+                              '_fee_sub_accounts': cfg.get('fee_sub_accounts', {})}
             for q in cfg.get('maps', []) + cfg.get('partial_maps', []):
                 key = f"{q['pallet']}.{q['item']}" + (f"#{q['tag']}" if q.get('tag') else '')
                 try:
