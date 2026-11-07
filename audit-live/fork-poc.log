@@ -1,0 +1,75 @@
+@polkadot/types-create has multiple versions, ensure that there is only one installed.
+Either remove and explicitly install matching versions or dedupe using your package manager.
+The following conflicting packages were found:
+	esm 16.5.6	node_modules/@polkadot/types/node_modules/@polkadot/types-create/
+	esm 16.5.6	node_modules/@polkadot/types-known/node_modules/@polkadot/types-create/
+@polkadot/rpc-provider has multiple versions, ensure that there is only one installed.
+Either remove and explicitly install matching versions or dedupe using your package manager.
+The following conflicting packages were found:
+	esm 16.5.6	node_modules/@polkadot/rpc-provider/
+	esm 17.0.2	node_modules/@polkadot/api/node_modules/@polkadot/rpc-provider/
+@polkadot/rpc-provider has multiple versions, ensure that there is only one installed.
+Either remove and explicitly install matching versions or dedupe using your package manager.
+The following conflicting packages were found:
+	esm 16.5.6	node_modules/@polkadot/rpc-provider/
+	esm 17.0.2	node_modules/@polkadot/api/node_modules/@polkadot/rpc-provider/
+	esm 17.0.2	node_modules/@polkadot/rpc-core/node_modules/@polkadot/rpc-provider/
+@polkadot/types has multiple versions, ensure that there is only one installed.
+Either remove and explicitly install matching versions or dedupe using your package manager.
+The following conflicting packages were found:
+	esm 16.5.6	node_modules/@polkadot/types/
+	esm 17.0.2	node_modules/@polkadot/rpc-core/node_modules/@polkadot/types/
+@polkadot/types-create has multiple versions, ensure that there is only one installed.
+Either remove and explicitly install matching versions or dedupe using your package manager.
+The following conflicting packages were found:
+	esm 16.5.6	node_modules/@polkadot/types/node_modules/@polkadot/types-create/
+	esm 16.5.6	node_modules/@polkadot/types-known/node_modules/@polkadot/types-create/
+	esm 17.0.2	node_modules/@polkadot/types-create/
+@polkadot/types-codec has multiple versions, ensure that there is only one installed.
+Either remove and explicitly install matching versions or dedupe using your package manager.
+The following conflicting packages were found:
+	esm 16.5.6	node_modules/@polkadot/types-codec/
+	esm 17.0.2	node_modules/@polkadot/types-create/node_modules/@polkadot/types-codec/
+@polkadot/types-codec has multiple versions, ensure that there is only one installed.
+Either remove and explicitly install matching versions or dedupe using your package manager.
+The following conflicting packages were found:
+	esm 16.5.6	node_modules/@polkadot/types-codec/
+	esm 17.0.2	node_modules/@polkadot/types-create/node_modules/@polkadot/types-codec/
+	esm 17.0.2	node_modules/@polkadot/rpc-core/node_modules/@polkadot/types-codec/
+@polkadot/types has multiple versions, ensure that there is only one installed.
+Either remove and explicitly install matching versions or dedupe using your package manager.
+The following conflicting packages were found:
+	esm 16.5.6	node_modules/@polkadot/types/
+	esm 17.0.2	node_modules/@polkadot/rpc-core/node_modules/@polkadot/types/
+	esm 17.0.2	node_modules/@polkadot/api-derive/node_modules/@polkadot/types/
+@polkadot/types-codec has multiple versions, ensure that there is only one installed.
+Either remove and explicitly install matching versions or dedupe using your package manager.
+The following conflicting packages were found:
+	esm 16.5.6	node_modules/@polkadot/types-codec/
+	esm 17.0.2	node_modules/@polkadot/types-create/node_modules/@polkadot/types-codec/
+	esm 17.0.2	node_modules/@polkadot/rpc-core/node_modules/@polkadot/types-codec/
+	esm 17.0.2	node_modules/@polkadot/api-derive/node_modules/@polkadot/types-codec/
+@polkadot/types has multiple versions, ensure that there is only one installed.
+Either remove and explicitly install matching versions or dedupe using your package manager.
+The following conflicting packages were found:
+	esm 16.5.6	node_modules/@polkadot/types/
+	esm 17.0.2	node_modules/@polkadot/rpc-core/node_modules/@polkadot/types/
+	esm 17.0.2	node_modules/@polkadot/api-derive/node_modules/@polkadot/types/
+	esm 17.0.2	node_modules/@polkadot/api/node_modules/@polkadot/types/
+@polkadot/types-codec has multiple versions, ensure that there is only one installed.
+Either remove and explicitly install matching versions or dedupe using your package manager.
+The following conflicting packages were found:
+	esm 16.5.6	node_modules/@polkadot/types-codec/
+	esm 17.0.2	node_modules/@polkadot/types-create/node_modules/@polkadot/types-codec/
+	esm 17.0.2	node_modules/@polkadot/rpc-core/node_modules/@polkadot/types-codec/
+	esm 17.0.2	node_modules/@polkadot/api-derive/node_modules/@polkadot/types-codec/
+	esm 17.0.2	node_modules/@polkadot/api/node_modules/@polkadot/types-codec/
+setting up chopsticks fork at 0x610bba563e4d8762057b603eaa2b2aa7bc6719a701daf4dfb45783fb91077d5a
+fork ready; runtime 2370
+honzon.expandPositionCollateral (attempt to mint aUSD during shutdown) => {"Ok":{"Err":{"Module":{"index":"0","error":"0x05000000"}}}}
+honzon.adjustLoan (attempt to increase debit during shutdown) => {"Ok":{"Err":{"Module":{"index":"102","error":"0x01000000"}}}}
+honzon.transferDebit (attempt to move debit across collateral types) => {"Ok":{"Err":{"Module":{"index":"0","error":"0x05000000"}}}}
+dex.swapWithExactSupply ACA->aUSD (permissionless swap) => {"Ok":{"Ok":[]}}
+emergencyShutdown.refundCollaterals (permissionless final redemption) => {"Ok":{"Ok":[]}}
+stableAsset.swap pool 0 DOT->LDOT (Taiga) => {"Ok":{"Ok":[]}}
+wrote audit-live/fork-poc.json

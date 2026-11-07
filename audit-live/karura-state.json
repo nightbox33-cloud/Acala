@@ -1,26 +1,26 @@
 {
  "chain": "karura",
- "generated_at_utc": "2026-11-07T23:13:16.164584+00:00",
+ "generated_at_utc": "2026-11-07T23:26:18.354603+00:00",
  "rpc": "https://karura-rpc.aca-api.network",
  "evm_rpc": "https://eth-rpc-karura.aca-api.network",
- "ci_run_id": "42424157610",
+ "ci_run_id": "42425139923",
  "errors": [],
  "anchor": {
-  "finalized_hash": "0xd472feb475c36dd2e903f230592724fcc2b27b936cdb257c81703eaa0f2fbc31",
+  "finalized_hash": "0x7d519ceea44e199673ae70992a8ade604b83bdbc58e2a0fd519d11b4f72742f1",
   "finalized_header": {
    "digest": {
     "logs": [
-     "0x066175726120b24ee90800000000",
-     "0x04525053529018c19ea0683034a16beddbd82e9cd88fc9d01863bffb85e32690df59c3599205fe719508",
-     "0x05617572610101aa51899c4bd952b348175de47c8be804e34b043788930a0a7a7a6eeb2abbd42ae33288580d1f0bc34252809d0c19c060455ef23c85c4b607851d553449414d8d"
+     "0x066175726120f54ee90800000000",
+     "0x04525053529018c7fdf774c77f675a8202f00a3960da8da635a1d11300139c315a25d9baf0ae06749508",
+     "0x0561757261010138006684945194f755acd58c3314ae426ca7432e67c53fe0d1d5be512dd8410b6ff79013968ae95ddcbf6201e47f30e447b940cc67eb26aea676bb2b7c7eed8f"
     ]
    },
-   "extrinsicsRoot": "0x96fc5bc0042de036eadb314c6bd3b9a41d9d6c4d0e53ba350f356c42e15a850e",
-   "number": "0xc37e59",
-   "parentHash": "0x0a4a22599431400fbce26feda60dc524086c65685f79882b27c7011861cc424e",
-   "stateRoot": "0xe77c6b5aa31ba2b3f4c7bd6fb16ae2f63878f1aa0c9b37bb01641c67c0cfdc82"
+   "extrinsicsRoot": "0xb0fc89eba821d2f77072d8e4ecb03bbd037d35853bca88e4e70b7679530605c5",
+   "number": "0xc37e9a",
+   "parentHash": "0x362ee7975e082b9b73aca3b41b014b1cfdf6b58bfbdebac6ce8f270e82b12ab1",
+   "stateRoot": "0xb9897f8320e171c67ca9d721b24efb2b2b59a5ba66887523b786f209b420b525"
   },
-  "finalized_block_number": 12811865,
+  "finalized_block_number": 12811930,
   "runtime_version": {
    "specName": "karura",
    "implName": "karura",
@@ -36,7 +36,7 @@
  },
  "evm": {
   "chainId": "0x2ae",
-  "blockNumber": "0xc37e5d",
+  "blockNumber": "0xc37e9c",
   "codes": {
    "0x0000000000000000000100000000000000000000": {
     "symbol": "ACA",
@@ -2650,6 +2650,13 @@
    "aca/hzbg": "23M5ttkmR6Kco5uF5giywrRtXYxsiWXC9UoZ9KXBaNne6Fm8",
    "aca/xNFT": "23M5ttkmR6Kcoa1e3LmTtpfEuQq3JfAMLdF6KYtsGkYE7ZX7"
   },
+  "_fee_sub_accounts": {
+   "fee/AUSD": "23M5ttkmR6Kco2CnDJKTSdBmBnYpbezUpTMeBsewEsjdui9F",
+   "fee/DOT": "23M5ttkmR6Kco2CnDJKTWC3W96LHbz9ZmuLVhE2qmLf5TGWS",
+   "fee/LDOT": "23M5ttkmR6Kco2CnDJKTZkuF6Q7kcKJejMKMCaQkHoaWzb7W",
+   "fee/LCDOT13": "23M5ttkmR6Kco2CnDJLZ9Xf15SfCVqH1EWsvTrw9PkHqUEqE",
+   "fee/FA14": "23M5ttkmR6Kco2CnDJLpx84L9F7rxiXxvdoHX9ztP361H7un"
+  },
   "Tokens.TotalIssuance": {
    "count_returned": 49,
    "rows": [
@@ -2953,7 +2960,7 @@
      {
       "Token": "LKSM"
      },
-     530509175221888629
+     530509628929862361
     ],
     [
      {
@@ -3872,7 +3879,8 @@
    ]
   },
   "DexOracle.AveragePrices": {
-   "error": "Storage function requires 1 parameters, 0 given"
+   "count_returned": 0,
+   "rows": []
   },
   "AggregatedDex.AggregatedSwapPaths": {
    "count_returned": 2,
@@ -4385,21 +4393,21 @@
     [
      0,
      {
-      "bonded": 21722171133928956,
+      "bonded": 21724029038980856,
       "unlocking": []
      }
     ],
     [
      2,
      {
-      "bonded": 32154684049495635,
+      "bonded": 32157434251101610,
       "unlocking": []
      }
     ],
     [
      1,
      {
-      "bonded": 40923323054941374,
+      "bonded": 40926823241371889,
       "unlocking": [
        {
         "value": 18881396828603,
@@ -4541,8 +4549,8 @@
       "Token": "KSM"
      },
      {
-      "value": 3249300000000000000,
-      "timestamp": 1794093150000
+      "value": 3250000000000000000,
+      "timestamp": 1794091062000
      }
     ],
     [
@@ -6022,6 +6030,88 @@
     ]
    ]
   },
+  "TransactionPayment.PoolSize": {
+   "count_returned": 6,
+   "rows": [
+    [
+     {
+      "Token": "KSM"
+     },
+     28841331904847
+    ],
+    [
+     {
+      "Token": "KBTC"
+     },
+     5000000000000
+    ],
+    [
+     {
+      "Token": "LKSM"
+     },
+     38624589686269
+    ],
+    [
+     {
+      "Token": "KUSD"
+     },
+     141779862761463
+    ],
+    [
+     {
+      "ForeignAsset": 0
+     },
+     9983979413302
+    ],
+    [
+     {
+      "Token": "BNC"
+     },
+     15277983911930
+    ]
+   ]
+  },
+  "TransactionPayment.SwapBalanceThreshold": {
+   "count_returned": 6,
+   "rows": [
+    [
+     {
+      "Token": "KSM"
+     },
+     2500000000000
+    ],
+    [
+     {
+      "Token": "KBTC"
+     },
+     2500000000000
+    ],
+    [
+     {
+      "Token": "LKSM"
+     },
+     2500000000000
+    ],
+    [
+     {
+      "Token": "KUSD"
+     },
+     2500000000000
+    ],
+    [
+     {
+      "ForeignAsset": 0
+     },
+     2500000000000
+    ],
+    [
+     {
+      "Token": "BNC"
+     },
+     2500000000000
+    ]
+   ]
+  },
   "TransactionPayment.AlternativeFeeSwapPath": {
    "count_returned": 100,
    "rows": [
@@ -7204,8 +7294,61 @@
    "count_returned": 0,
    "rows": []
   },
+  "CdpTreasury.ExpectedCollateralAuctionSize": {
+   "count_returned": 3,
+   "rows": [
+    [
+     {
+      "Token": "KSM"
+     },
+     70000000000000
+    ],
+    [
+     {
+      "Token": "KAR"
+     },
+     7000000000000000
+    ],
+    [
+     {
+      "Token": "LKSM"
+     },
+     700000000000000
+    ]
+   ]
+  },
+  "AuctionManager.TotalCollateralInAuction": {
+   "count_returned": 3,
+   "rows": [
+    [
+     {
+      "Token": "KSM"
+     },
+     0
+    ],
+    [
+     {
+      "Token": "KAR"
+     },
+     0
+    ],
+    [
+     {
+      "Token": "LKSM"
+     },
+     0
+    ]
+   ]
+  },
+  "AuctionManager.TotalTargetInAuction": {
+   "error": "Given storage function is not a map"
+  },
+  "Incentives.ClaimRewardDeductionCurrency": {
+   "count_returned": 0,
+   "rows": []
+  },
   "EVM.CodeInfos": {
-   "count_returned": 50,
+   "count_returned": 85,
    "rows": [
     [
      "0x027b94197c73af060a8e90935f9bb19ba34e2c417c578d4103975573a64cb315",
@@ -7554,6 +7697,251 @@
      "0x90d17b56201da638c3417c6e0e48737ddaeb0614f1b3cba2e7cd219470650aa5",
      {
       "code_size": 1050,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x937fc006a6d87b26d0921b3f2185727b0e4e15da6e4158eb6a7ef849a2e43399",
+     {
+      "code_size": 12683,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0xa042093dc2574f7ac74d8c95c8def2bc723e607d5d896d6b95ca413fc6e656ae",
+     {
+      "code_size": 11526,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0xa2f1546e859bebdb6760531b1a004abed86bd91ad7b8fb8845833a5e9e7e840b",
+     {
+      "code_size": 1435,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0xa9865ac2d9c7a1591619b188c4d88167b50df6cc0c5327fcbd1c8c75f7c066ad",
+     {
+      "code_size": 410,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0xaa68404f53d898093d9e227a8b67c615b73dd32d7375ede82d101f61b4f472f8",
+     {
+      "code_size": 5469,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0xaa940c240e38791b3272bafe0f1346a98cd50f2630ef9dfd020a0db0f291611b",
+     {
+      "code_size": 695,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0xb45b16b0ba749e524e281abbfb36cbf51ec12f2bc4493470a4572236519353b8",
+     {
+      "code_size": 15725,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0xb89c1b3bdf2cf8827818646bce9a8f6e372885f8c55e5c07acbd307cb133b000",
+     {
+      "code_size": 171,
+      "ref_count": 7
+     }
+    ],
+    [
+     "0xbba688fbdb21ad2bb58bc320638b43d94e7d100f6f3ebaab0a4e4de6304b1c2e",
+     {
+      "code_size": 22958,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0xbf3987ed69252c781ab91bc03626ee735461d48d39ee4aaf457cb7c891dd16d4",
+     {
+      "code_size": 6859,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0xbff5035f5ebf35467def15469d4d82d54820d5e56166c2f4fd7b0ebbc9f438d3",
+     {
+      "code_size": 4558,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0xc33a125029725bf7b0f0fa6f9511e5e3bebc6c044a051f9321311688f49c0ac3",
+     {
+      "code_size": 6797,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0xc3a9d06c070bc538a2a6488114caa64f63fc258389ba4b8cfaead5fe7bd9e916",
+     {
+      "code_size": 2920,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0xc3da5c69ac710b0d019eb4eda3b4dd9d469dbe163db20b916f855a6110e9d307",
+     {
+      "code_size": 1881,
+      "ref_count": 2
+     }
+    ],
+    [
+     "0xc4b14d3d1d789a1cafb37e12d01c4fe58a94eacd80d4eb233aca9f343d5172c6",
+     {
+      "code_size": 24240,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0xcabdd96e5d866d2a59db35b95bca96e57f1ce8182701e442436f8e77810a61f2",
+     {
+      "code_size": 10434,
+      "ref_count": 14
+     }
+    ],
+    [
+     "0xcb50859a523f4156d0c9e5bb617be3f25f1135ab64b9da6c2e8710482b4bb30c",
+     {
+      "code_size": 20981,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0xcd6aa4f8ab5af50cba48a2f4ce013b8e261d16565c20b57de3f0d6e7de54e9c6",
+     {
+      "code_size": 558,
+      "ref_count": 2
+     }
+    ],
+    [
+     "0xd08bd0ead83eb9225146111b79803506ed4c9d20b74bf7e21b96072ecd9065b9",
+     {
+      "code_size": 2269,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0xd573d2c23f743c7b86ee78863c65adbcd64f03f8b06ff2d89d5370136bdba21b",
+     {
+      "code_size": 24437,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0xd71fb245ca071d285cbe654dbae3b9c488c640fb0ca5232f2622c07dccd62ccf",
+     {
+      "code_size": 6680,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0xdccc4c8ca19410c40bf4442ac7c4f2013f11f4e25626aaec383ba73c8e3731e1",
+     {
+      "code_size": 15223,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0xdd5ab885d2ca60ffcaf1122330215ddfb74ef38a64725492c54ee04c58e1a0f9",
+     {
+      "code_size": 680,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0xdefe7aa39be0a177bf982dc8b868effb705de3f9630ac85de6ff38c521311d74",
+     {
+      "code_size": 5034,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0xe0d46943371bb8c297d6ccfe9621799c1e86b8a2976449dd204b114649f49954",
+     {
+      "code_size": 3692,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0xe1856102504825da491b8fee63ade7f08f5b8931b46332dc68ce59722d769db8",
+     {
+      "code_size": 1507,
+      "ref_count": 6
+     }
+    ],
+    [
+     "0xeb2a99920a688aa3e85639b80f102461459cee1cec20263cb512b738dadb5dcc",
+     {
+      "code_size": 10199,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0xeca0a338b63f73f61182809e3a217f715148bbf093b2f73736235be4cf46546e",
+     {
+      "code_size": 19944,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0xef1eee5629209512233e9b16673ab68d637d93263eb3079dad0b7ab40294f95a",
+     {
+      "code_size": 12331,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0xf09a22f787a4992c64c47615f84b6faee62a3666784e09117fca7423f46b3fd8",
+     {
+      "code_size": 944,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0xf1a342728b95dc1d51b862d30145b0ae9ca42e3140fe1270785b9f5aeed80e52",
+     {
+      "code_size": 3628,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0xf6ffc44833eeea35ec92cca635f83ee8a2cf38186b23244936f41374468916db",
+     {
+      "code_size": 6720,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0xfbaad99c772019627aba7ebab1067116dac09b1f2a82ed5c474b1c6c985cf4f6",
+     {
+      "code_size": 418,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0xfc1ea81db44e2de921b958dc92da921a18968ff3f3465bd475fb86dd1af03986",
+     {
+      "code_size": 2141,
+      "ref_count": 11
+     }
+    ],
+    [
+     "0xfc35e4df7766a5227fbf4d5ec45b67c2b29f527170551f191243ddc7b98fdac7",
+     {
+      "code_size": 11953,
       "ref_count": 1
      }
     ]
@@ -8649,7 +9037,7 @@
       "Token": "LKSM"
      },
      {
-      "free": 6565056050112913,
+      "free": 6565509758086645,
       "reserved": 0,
       "frozen": 0
      }
@@ -9202,27 +9590,37 @@
    "count_returned": 0,
    "rows": []
   },
-  "System.Number": 12811865,
+  "Tokens.Accounts#fee/AUSD": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "Tokens.Accounts#fee/DOT": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "Tokens.Accounts#fee/LDOT": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "Tokens.Accounts#fee/LCDOT13": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "Tokens.Accounts#fee/FA14": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "System.Number": 12811930,
   "Balances.TotalIssuance": 130189450492777337807,
   "CdpTreasury.DebitPool": 2836910678262449472,
   "CdpTreasury.DebitOffsetBuffer": 0,
-  "CdpTreasury.ExpectedCollateralAuctionSize": {
-   "error": "Storage function requires 1 parameters, 0 given"
-  },
-  "CdpEngine.LastAccumulationSecs": 1794093132,
+  "CdpEngine.LastAccumulationSecs": 1794093936,
   "CdpEngine.LiquidationContracts": [],
-  "AuctionManager.TotalCollateralInAuction": {
-   "error": "Storage function requires 1 parameters, 0 given"
-  },
-  "AuctionManager.TotalTargetInAuction": 0,
-  "Homa.RelayChainCurrentEra": 10245,
-  "Homa.TotalStakingBonded": 94800178238365965,
+  "Homa.RelayChainCurrentEra": 10246,
+  "Homa.TotalStakingBonded": 94808286531454355,
   "Homa.ToBondPool": 0,
   "Homa.TotalVoidLiquid": 0,
   "Homa.UnclaimedRedemption": 7829545570657225,
-  "Homa.Unbondings": {
-   "error": "Storage function requires 2 parameters, 0 given"
-  },
   "Homa.CommissionRate": 10000000000000000,
   "Homa.FastMatchFeeRate": 10000000000000000,
   "Homa.EstimatedRewardRatePerEra": 85530357000000,
@@ -9230,12 +9628,6 @@
   "StableAsset.PoolCount": 2,
   "EmergencyShutdown.IsShutdown": true,
   "EmergencyShutdown.CanRefund": true,
-  "TransactionPayment.PoolSize": {
-   "error": "Storage function requires 1 parameters, 0 given"
-  },
-  "TransactionPayment.SwapBalanceThreshold": {
-   "error": "Storage function requires 1 parameters, 0 given"
-  },
   "TransactionPayment.NextFeeMultiplier": 1000000000000,
   "TransactionPayment.OverrideChargeFeeMethod": null,
   "Auction.AuctionsIndex": 493,
@@ -9245,9 +9637,6 @@
   "AssetRegistry.NextStableAssetId": 2,
   "LiquidCrowdloan.RedeemCurrencyId": {
    "error": "Pallet \"LiquidCrowdloan\" not found"
-  },
-  "Incentives.ClaimRewardDeductionCurrency": {
-   "error": "Storage function requires 1 parameters, 0 given"
   },
   "AcalaOracle.HasDispatched": [],
   "Balances.Account#aca/trsy": {
@@ -9569,6 +9958,96 @@
    "sufficients": 0,
    "data": {
     "free": 100000000000,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 170141183460469231731687303715884105728
+   }
+  },
+  "Balances.Account#fee/AUSD": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#fee/AUSD": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 0,
+   "sufficients": 0,
+   "data": {
+    "free": 0,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 170141183460469231731687303715884105728
+   }
+  },
+  "Balances.Account#fee/DOT": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#fee/DOT": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 0,
+   "sufficients": 0,
+   "data": {
+    "free": 0,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 170141183460469231731687303715884105728
+   }
+  },
+  "Balances.Account#fee/LDOT": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#fee/LDOT": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 0,
+   "sufficients": 0,
+   "data": {
+    "free": 0,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 170141183460469231731687303715884105728
+   }
+  },
+  "Balances.Account#fee/LCDOT13": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#fee/LCDOT13": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 0,
+   "sufficients": 0,
+   "data": {
+    "free": 0,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 170141183460469231731687303715884105728
+   }
+  },
+  "Balances.Account#fee/FA14": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#fee/FA14": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 0,
+   "sufficients": 0,
+   "data": {
+    "free": 0,
     "reserved": 0,
     "frozen": 0,
     "flags": 170141183460469231731687303715884105728

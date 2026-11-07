@@ -1,0 +1,127 @@
+{
+ "endpoint": "https://acala-rpc.aca-api.network",
+ "blockHash": "0x610bba563e4d8762057b603eaa2b2aa7bc6719a701daf4dfb45783fb91077d5a",
+ "runtime": "forked live Acala mainnet",
+ "tests": [
+  {
+   "name": "honzon.expandPositionCollateral (attempt to mint aUSD during shutdown)",
+   "call": "0x660600020010a5d4e8000000000000000000000000000000000000000000000000000000",
+   "outcome": {
+    "Ok": {
+     "Err": {
+      "Module": {
+       "index": "0",
+       "error": "0x05000000"
+      }
+     }
+    }
+   },
+   "outcomeJson": {
+    "ok": {
+     "err": {
+      "module": {
+       "index": 0,
+       "error": "0x05000000"
+      }
+     }
+    }
+   },
+   "storageDiffEntries": 15
+  },
+  {
+   "name": "honzon.adjustLoan (attempt to increase debit during shutdown)",
+   "call": "0x66000002000000000000000000000000000000000010a5d4e80000000000000000000000",
+   "outcome": {
+    "Ok": {
+     "Err": {
+      "Module": {
+       "index": "102",
+       "error": "0x01000000"
+      }
+     }
+    }
+   },
+   "outcomeJson": {
+    "ok": {
+     "err": {
+      "module": {
+       "index": 102,
+       "error": "0x01000000"
+      }
+     }
+    }
+   },
+   "storageDiffEntries": 15
+  },
+  {
+   "name": "honzon.transferDebit (attempt to move debit across collateral types)",
+   "call": "0x6609000200000010a5d4e80000000000000000000000",
+   "outcome": {
+    "Ok": {
+     "Err": {
+      "Module": {
+       "index": "0",
+       "error": "0x05000000"
+      }
+     }
+    }
+   },
+   "outcomeJson": {
+    "ok": {
+     "err": {
+      "module": {
+       "index": 0,
+       "error": "0x05000000"
+      }
+     }
+    }
+   },
+   "storageDiffEntries": 15
+  },
+  {
+   "name": "dex.swapWithExactSupply ACA->aUSD (permissionless swap)",
+   "call": "0x5b000800000001070010a5d4e800",
+   "outcome": {
+    "Ok": {
+     "Ok": []
+    }
+   },
+   "outcomeJson": {
+    "ok": {
+     "ok": []
+    }
+   },
+   "storageDiffEntries": 16
+  },
+  {
+   "name": "emergencyShutdown.refundCollaterals (permissionless final redemption)",
+   "call": "0x6902070010a5d4e8",
+   "outcome": {
+    "Ok": {
+     "Ok": []
+    }
+   },
+   "outcomeJson": {
+    "ok": {
+     "ok": []
+    }
+   },
+   "storageDiffEntries": 22
+  },
+  {
+   "name": "stableAsset.swap pool 0 DOT->LDOT (Taiga)",
+   "call": "0xc80200000000000000000100000000e40b540200000000000000000000000000000000000000000000000000000002000000",
+   "outcome": {
+    "Ok": {
+     "Ok": []
+    }
+   },
+   "outcomeJson": {
+    "ok": {
+     "ok": []
+    }
+   },
+   "storageDiffEntries": 22
+  }
+ ]
+}
