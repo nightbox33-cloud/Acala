@@ -1,0 +1,8915 @@
+{
+ "chain": "acala",
+ "generated_at_utc": "2026-11-07T23:12:20.337397+00:00",
+ "rpc": "https://acala-rpc.aca-api.network",
+ "evm_rpc": "https://eth-rpc-acala.aca-api.network",
+ "ci_run_id": "42424157610",
+ "errors": [],
+ "anchor": {
+  "finalized_hash": "0x95c861ae57684c810f36898a30dce9b9ed915b7b2a02892070f6136874146167",
+  "finalized_header": {
+   "digest": {
+    "logs": [
+     "0x066175726120ae4ee90800000000",
+     "0x045250535290f91d055f164e8c58bb9392ab8f3822e81c52081666154031ca55e46db9786af86eb30d08",
+     "0x05617572610101bed8de2ebbff8d5c5cfec3087200bf84ad92ee0757cb36d97a021a1df4b56e36d006e5559c124a373eac623c68a3d6667cc70f2ee84f8e3ee711b9493609fc83"
+    ]
+   },
+   "extrinsicsRoot": "0x6efde19d280801203d92bf238e1c57444e4d8f439f48d65b9221d2943d84b1c7",
+   "number": "0xbcf6a8",
+   "parentHash": "0xd85f4faf834aa1b4f2393873f3b9fd9dec3267dfc3637b6a06a59968a9681cc1",
+   "stateRoot": "0x2640c3bed3ca1dac73b6421dd0baa05060ba9d43348983842c36cfe28232c7eb"
+  },
+  "finalized_block_number": 12383912,
+  "runtime_version": {
+   "specName": "acala",
+   "implName": "acala",
+   "specVersion": 2370,
+   "transactionVersion": 3
+  }
+ },
+ "runtime_code": {
+  "storage_key": "0x3a636f6465",
+  "bytes": 1922197,
+  "sha256": "0x9ae95ba9bbcc32c47357935ae0796cf0314122865a9f6eecb27f0f3614af8b75",
+  "blake2b_256": "0xfb395779fcc731bf47ed8875b5337ab0b1ef47b4d1e5907cdde5177fd774bb23"
+ },
+ "evm": {
+  "chainId": "0x313",
+  "blockNumber": "0xbcf6ab",
+  "codes": {
+   "0x0000000000000000000100000000000000000000": {
+    "symbol": "ACA",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000100000000000000000001": {
+    "symbol": "AUSD",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000100000000000000000002": {
+    "symbol": "DOT",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000100000000000000000003": {
+    "symbol": "LDOT",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000100000000000000000004": {
+    "symbol": "TAP",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000200000000000000000001": {
+    "symbol": "LP_ACA_AUSD",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000200000000010000000003": {
+    "symbol": "LP_LDOT_AUSD",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x000000000000000000020000000001020000000d": {
+    "symbol": "LP_LCDOT_AUSD",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x000000000000000000020000000002020000000d": {
+    "symbol": "LP_LCDOT_DOT",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000200000000000107df96d1": {
+    "symbol": "LP_ACA_USDCET",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x00000000000000000002000000000301a7fb0045": {
+    "symbol": "LP_LDOT_JITOSOL",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x00000000000000000002000000000001fa904c86": {
+    "symbol": "LP_ACA_NEMO",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000200000000010300000003": {
+    "symbol": "LP_AUSD_IBTC",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x000000000000000000020000000002030000000a": {
+    "symbol": "LP_DOT_UNQ",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000200000000010300000004": {
+    "symbol": "LP_AUSD_INTR",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000300000000000000000000": {
+    "symbol": "SA_KSM",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000300000000000000000001": {
+    "symbol": "SA_3USD",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x000000000000000000040000000000000000000d": {
+    "symbol": "LCDOT_13",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000500000000000000000000": {
+    "symbol": "FA_RMRK",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000500000000000000000001": {
+    "symbol": "FA_ARIS",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000500000000000000000002": {
+    "symbol": "FA_QTZ",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000500000000000000000003": {
+    "symbol": "FA_MOVR",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000500000000000000000004": {
+    "symbol": "FA_HKO",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000500000000000000000005": {
+    "symbol": "FA_CSM",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000500000000000000000006": {
+    "symbol": "FA_KICO",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000500000000000000000007": {
+    "symbol": "FA_USDT",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000500000000000000000008": {
+    "symbol": "FA_TEER",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000500000000000000000009": {
+    "symbol": "FA_NEER",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x000000000000000000050000000000000000000a": {
+    "symbol": "FA_KMA",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x000000000000000000050000000000000000000b": {
+    "symbol": "FA_BSX",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x000000000000000000050000000000000000000c": {
+    "symbol": "FA_AIR",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x000000000000000000050000000000000000000d": {
+    "symbol": "FA_CRAB",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x000000000000000000050000000000000000000e": {
+    "symbol": "FA_GENS",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x000000000000000000050000000000000000000f": {
+    "symbol": "FA_EQD",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000500000000000000000010": {
+    "symbol": "FA_TUR",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000500000000000000000011": {
+    "symbol": "FA_PCHU",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000500000000000000000012": {
+    "symbol": "FA_SDN",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000500000000000000000013": {
+    "symbol": "FA_LT",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000100000000000000000080": {
+    "symbol": "KAR",
+    "present": false
+   },
+   "0x0000000000000000000100000000000000000081": {
+    "symbol": "KUSD",
+    "present": false
+   },
+   "0x0000000000000000000100000000000000000082": {
+    "symbol": "KSM",
+    "present": false
+   },
+   "0x0000000000000000000100000000000000000083": {
+    "symbol": "LKSM",
+    "present": false
+   },
+   "0x0000000000000000000100000000000000000084": {
+    "symbol": "TAI",
+    "present": false
+   },
+   "0x00000000000000000001000000000000000000a8": {
+    "symbol": "BNC",
+    "present": false
+   },
+   "0x00000000000000000001000000000000000000a9": {
+    "symbol": "VSKSM",
+    "present": false
+   },
+   "0x00000000000000000001000000000000000000aa": {
+    "symbol": "PHA",
+    "present": false
+   },
+   "0x00000000000000000001000000000000000000ab": {
+    "symbol": "KINT",
+    "present": false
+   },
+   "0x00000000000000000001000000000000000000ac": {
+    "symbol": "KBTC",
+    "present": false
+   },
+   "0x0000000000000000000200000000800000000083": {
+    "symbol": "LP_LKSM_KAR",
+    "present": false
+   },
+   "0x0000000000000000000200000000800300000002": {
+    "symbol": "LP_QTZ_KAR",
+    "present": false
+   },
+   "0x0000000000000000000200000000800000000082": {
+    "symbol": "LP_KAR_KSM",
+    "present": false
+   },
+   "0x0000000000000000000200000000820000000083": {
+    "symbol": "LP_LKSM_KSM",
+    "present": false
+   },
+   "0x0000000000000000000200000000820300000000": {
+    "symbol": "LP_RMRK_KSM",
+    "present": false
+   },
+   "0x0000000000000000000200000000820300000001": {
+    "symbol": "LP_ARIS_KSM",
+    "present": false
+   },
+   "0x0000000000000000000200000000800000000081": {
+    "symbol": "LP_KAR_KUSD",
+    "present": false
+   },
+   "0x0000000000000000000200000000810000000082": {
+    "symbol": "LP_KSM_KUSD",
+    "present": false
+   },
+   "0x0000000000000000000200000000810000000083": {
+    "symbol": "LP_LKSM_KUSD",
+    "present": false
+   },
+   "0x00000000000000000002000000008100000000a8": {
+    "symbol": "LP_BNC_KUSD",
+    "present": false
+   },
+   "0x00000000000000000002000000008100000000aa": {
+    "symbol": "LP_PHA_KUSD",
+    "present": false
+   },
+   "0x00000000000000000002000000008100000000ab": {
+    "symbol": "LP_KINT_KUSD",
+    "present": false
+   },
+   "0x00000000000000000002000000008100000000ac": {
+    "symbol": "LP_KBTC_KUSD",
+    "present": false
+   },
+   "0x0000000000000000000200000000810300000000": {
+    "symbol": "LP_RMRK_KUSD",
+    "present": false
+   },
+   "0x0000000000000000000200000000810300000002": {
+    "symbol": "LP_QTZ_KUSD",
+    "present": false
+   },
+   "0x0000000000000000000200000000810300000005": {
+    "symbol": "LP_CSM_KUSD",
+    "present": false
+   },
+   "0x000000000000000000020000000081030000000c": {
+    "symbol": "LP_AIR_KUSD",
+    "present": false
+   },
+   "0x0000000000000000000200000000840300000000": {
+    "symbol": "LP_RMRK_TAI",
+    "present": false
+   },
+   "0x0000000000000000000500000000000000000014": {
+    "symbol": "FA_LIT",
+    "present": false
+   },
+   "0x0000000000000000000000000000000000000800": {
+    "symbol": "EVM",
+    "present": true,
+    "bytes": 3622,
+    "sha256": "0xfa56a12676aa553619a5af559016d425124c6e5343d775d04920b8db1a8e2383",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000000000000000000000801": {
+    "symbol": "ORACLE",
+    "present": true,
+    "bytes": 695,
+    "sha256": "0x15981eda1014174217e16f9da062e2906c5a379b537dcbde4ef7a9d49e8dc626",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000000000000000000000802": {
+    "symbol": "SCHEDULE",
+    "present": false
+   },
+   "0x0000000000000000000000000000000000000803": {
+    "symbol": "DEXV2",
+    "present": true,
+    "bytes": 9341,
+    "sha256": "0x3902763414d58edde5d88ff8f549864011b21b88c297559416a137a36c6b12f2",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000000000000000000000804": {
+    "symbol": "STABLE_ASSET",
+    "present": true,
+    "bytes": 4522,
+    "sha256": "0xc19d1d71175b9920b32019a7d0f631f2c17f9f4718d35b87b2530644dd4f4010",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000000000000000000000805": {
+    "symbol": "HOMA",
+    "present": true,
+    "bytes": 1818,
+    "sha256": "0x94d96c584733d3fd9cc8a7cf15f11a12af8d2af04cbb8ad6f354f91f189c8479",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000000000000000000000806": {
+    "symbol": "EVM_ACCOUNTS",
+    "present": true,
+    "bytes": 1398,
+    "sha256": "0x5575247e5bfba4af7b493a388a81a528412c16327cfeefb83e09ae8f149c1ed8",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000000000000000000000807": {
+    "symbol": "HONZON",
+    "present": false
+   },
+   "0x0000000000000000000000000000000000000808": {
+    "symbol": "INCENTIVES",
+    "present": true,
+    "bytes": 3692,
+    "sha256": "0xdbb754201ae18db6bf9ae6a8c699054b4cabeab6cb73fda9b9b0b7a0e6de070d",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000000000000000000000809": {
+    "symbol": "XTOKENS",
+    "present": true,
+    "bytes": 6720,
+    "sha256": "0xc1d3e487eea0f1236738fa6bce943ac72aec24072b0c47eba1cf5ad69e6c6640",
+    "matches_repo_bytecode": true
+   },
+   "0x000000000000000000000000000000000000080a": {
+    "symbol": "LIQUID_CROWDLOAN",
+    "present": true,
+    "bytes": 1017,
+    "sha256": "0x417e090cc22a88518576be0616f6e3b090fd9790cb87361498eaeb9535e61ba5",
+    "matches_repo_bytecode": true
+   },
+   "0x000000000000000000000000000000000000080b": {
+    "symbol": "EARNING",
+    "present": true,
+    "bytes": 4116,
+    "sha256": "0x91f14ec37b11fce93bdfcc5c5381793fc8a427ee5ccfa2fc697fc9106340b580",
+    "matches_repo_bytecode": true
+   }
+  }
+ },
+ "storage_catalogue": [
+  {
+   "pallet": "System",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "System",
+   "item": "Account",
+   "modifier": "Default",
+   "value_type": "scale_info::3"
+  },
+  {
+   "pallet": "System",
+   "item": "ExtrinsicCount",
+   "modifier": "Optional",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "System",
+   "item": "InherentsApplied",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "System",
+   "item": "BlockWeight",
+   "modifier": "Default",
+   "value_type": "scale_info::9"
+  },
+  {
+   "pallet": "System",
+   "item": "AllExtrinsicsLen",
+   "modifier": "Optional",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "System",
+   "item": "BlockHash",
+   "modifier": "Default",
+   "value_type": "scale_info::13"
+  },
+  {
+   "pallet": "System",
+   "item": "ExtrinsicData",
+   "modifier": "Default",
+   "value_type": "scale_info::14"
+  },
+  {
+   "pallet": "System",
+   "item": "Number",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "System",
+   "item": "ParentHash",
+   "modifier": "Default",
+   "value_type": "scale_info::13"
+  },
+  {
+   "pallet": "System",
+   "item": "Digest",
+   "modifier": "Default",
+   "value_type": "scale_info::15"
+  },
+  {
+   "pallet": "System",
+   "item": "Events",
+   "modifier": "Default",
+   "value_type": "scale_info::19"
+  },
+  {
+   "pallet": "System",
+   "item": "EventCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "System",
+   "item": "EventTopics",
+   "modifier": "Default",
+   "value_type": "scale_info::255"
+  },
+  {
+   "pallet": "System",
+   "item": "LastRuntimeUpgrade",
+   "modifier": "Optional",
+   "value_type": "scale_info::256"
+  },
+  {
+   "pallet": "System",
+   "item": "UpgradedToU32RefCount",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "System",
+   "item": "UpgradedToTripleRefCount",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "System",
+   "item": "ExecutionPhase",
+   "modifier": "Optional",
+   "value_type": "scale_info::254"
+  },
+  {
+   "pallet": "System",
+   "item": "AuthorizedUpgrade",
+   "modifier": "Optional",
+   "value_type": "scale_info::257"
+  },
+  {
+   "pallet": "System",
+   "item": "ExtrinsicWeightReclaimed",
+   "modifier": "Default",
+   "value_type": "scale_info::10"
+  },
+  {
+   "pallet": "Timestamp",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Timestamp",
+   "item": "Now",
+   "modifier": "Default",
+   "value_type": "scale_info::12"
+  },
+  {
+   "pallet": "Timestamp",
+   "item": "DidUpdate",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "Scheduler",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Scheduler",
+   "item": "IncompleteSince",
+   "modifier": "Optional",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Scheduler",
+   "item": "Agenda",
+   "modifier": "Default",
+   "value_type": "scale_info::274"
+  },
+  {
+   "pallet": "Scheduler",
+   "item": "Retries",
+   "modifier": "Optional",
+   "value_type": "scale_info::450"
+  },
+  {
+   "pallet": "Scheduler",
+   "item": "Lookup",
+   "modifier": "Optional",
+   "value_type": "scale_info::33"
+  },
+  {
+   "pallet": "Multisig",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Multisig",
+   "item": "Multisigs",
+   "modifier": "Optional",
+   "value_type": "scale_info::454"
+  },
+  {
+   "pallet": "Proxy",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Proxy",
+   "item": "Proxies",
+   "modifier": "Default",
+   "value_type": "scale_info::457"
+  },
+  {
+   "pallet": "Proxy",
+   "item": "Announcements",
+   "modifier": "Default",
+   "value_type": "scale_info::461"
+  },
+  {
+   "pallet": "TransactionPause",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "TransactionPause",
+   "item": "PausedTransactions",
+   "modifier": "Optional",
+   "value_type": "scale_info::36"
+  },
+  {
+   "pallet": "TransactionPause",
+   "item": "PausedEvmPrecompiles",
+   "modifier": "Optional",
+   "value_type": "scale_info::36"
+  },
+  {
+   "pallet": "IdleScheduler",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "IdleScheduler",
+   "item": "Tasks",
+   "modifier": "Optional",
+   "value_type": "scale_info::48"
+  },
+  {
+   "pallet": "IdleScheduler",
+   "item": "NextTaskId",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "IdleScheduler",
+   "item": "PreviousRelayBlockNumber",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Preimage",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Preimage",
+   "item": "StatusFor",
+   "modifier": "Optional",
+   "value_type": "scale_info::467"
+  },
+  {
+   "pallet": "Preimage",
+   "item": "RequestStatusFor",
+   "modifier": "Optional",
+   "value_type": "scale_info::470"
+  },
+  {
+   "pallet": "Preimage",
+   "item": "PreimageFor",
+   "modifier": "Optional",
+   "value_type": "scale_info::475"
+  },
+  {
+   "pallet": "Balances",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Balances",
+   "item": "TotalIssuance",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Balances",
+   "item": "InactiveIssuance",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Account",
+   "modifier": "Default",
+   "value_type": "scale_info::5"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Locks",
+   "modifier": "Default",
+   "value_type": "scale_info::477"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Reserves",
+   "modifier": "Default",
+   "value_type": "scale_info::481"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Holds",
+   "modifier": "Default",
+   "value_type": "scale_info::485"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Freezes",
+   "modifier": "Default",
+   "value_type": "scale_info::495"
+  },
+  {
+   "pallet": "Tokens",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Tokens",
+   "item": "TotalIssuance",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Tokens",
+   "item": "Locks",
+   "modifier": "Default",
+   "value_type": "scale_info::500"
+  },
+  {
+   "pallet": "Tokens",
+   "item": "Accounts",
+   "modifier": "Default",
+   "value_type": "scale_info::503"
+  },
+  {
+   "pallet": "Tokens",
+   "item": "Reserves",
+   "modifier": "Default",
+   "value_type": "scale_info::504"
+  },
+  {
+   "pallet": "Vesting",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Vesting",
+   "item": "VestingSchedules",
+   "modifier": "Default",
+   "value_type": "scale_info::509"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "NextFeeMultiplier",
+   "modifier": "Default",
+   "value_type": "scale_info::64"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "AlternativeFeeSwapPath",
+   "modifier": "Optional",
+   "value_type": "scale_info::511"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "GlobalFeeSwapPath",
+   "modifier": "Optional",
+   "value_type": "scale_info::511"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "PoolSize",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "TokenExchangeRate",
+   "modifier": "Optional",
+   "value_type": "scale_info::64"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "SwapBalanceThreshold",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "OverrideChargeFeeMethod",
+   "modifier": "Optional",
+   "value_type": "scale_info::512"
+  },
+  {
+   "pallet": "Treasury",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Treasury",
+   "item": "ProposalCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Treasury",
+   "item": "Proposals",
+   "modifier": "Optional",
+   "value_type": "scale_info::516"
+  },
+  {
+   "pallet": "Treasury",
+   "item": "Deactivated",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Treasury",
+   "item": "Approvals",
+   "modifier": "Default",
+   "value_type": "scale_info::517"
+  },
+  {
+   "pallet": "Treasury",
+   "item": "SpendCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Treasury",
+   "item": "Spends",
+   "modifier": "Optional",
+   "value_type": "scale_info::519"
+  },
+  {
+   "pallet": "Treasury",
+   "item": "LastSpendPeriod",
+   "modifier": "Optional",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Bounties",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Bounties",
+   "item": "BountyCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Bounties",
+   "item": "Bounties",
+   "modifier": "Optional",
+   "value_type": "scale_info::522"
+  },
+  {
+   "pallet": "Bounties",
+   "item": "BountyDescriptions",
+   "modifier": "Optional",
+   "value_type": "scale_info::524"
+  },
+  {
+   "pallet": "Bounties",
+   "item": "BountyApprovals",
+   "modifier": "Default",
+   "value_type": "scale_info::517"
+  },
+  {
+   "pallet": "Tips",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Tips",
+   "item": "Tips",
+   "modifier": "Optional",
+   "value_type": "scale_info::526"
+  },
+  {
+   "pallet": "Tips",
+   "item": "Reasons",
+   "modifier": "Optional",
+   "value_type": "scale_info::14"
+  },
+  {
+   "pallet": "ParachainInfo",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "ParachainInfo",
+   "item": "ParachainId",
+   "modifier": "Default",
+   "value_type": "scale_info::169"
+  },
+  {
+   "pallet": "Authorship",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Authorship",
+   "item": "Author",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "CollatorSelection",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "CollatorSelection",
+   "item": "Invulnerables",
+   "modifier": "Default",
+   "value_type": "scale_info::529"
+  },
+  {
+   "pallet": "CollatorSelection",
+   "item": "Candidates",
+   "modifier": "Default",
+   "value_type": "scale_info::530"
+  },
+  {
+   "pallet": "CollatorSelection",
+   "item": "DesiredCandidates",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "CollatorSelection",
+   "item": "CandidacyBond",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "CollatorSelection",
+   "item": "SessionPoints",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "CollatorSelection",
+   "item": "NonCandidates",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Session",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Session",
+   "item": "Validators",
+   "modifier": "Default",
+   "value_type": "scale_info::69"
+  },
+  {
+   "pallet": "Session",
+   "item": "CurrentIndex",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Session",
+   "item": "QueuedChanged",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "Session",
+   "item": "QueuedKeys",
+   "modifier": "Default",
+   "value_type": "scale_info::533"
+  },
+  {
+   "pallet": "Session",
+   "item": "DisabledValidators",
+   "modifier": "Default",
+   "value_type": "scale_info::535"
+  },
+  {
+   "pallet": "Session",
+   "item": "NextKeys",
+   "modifier": "Optional",
+   "value_type": "scale_info::306"
+  },
+  {
+   "pallet": "Session",
+   "item": "KeyOwner",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "Aura",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Aura",
+   "item": "Authorities",
+   "modifier": "Default",
+   "value_type": "scale_info::542"
+  },
+  {
+   "pallet": "Aura",
+   "item": "CurrentSlot",
+   "modifier": "Default",
+   "value_type": "scale_info::544"
+  },
+  {
+   "pallet": "AuraExt",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "AuraExt",
+   "item": "Authorities",
+   "modifier": "Default",
+   "value_type": "scale_info::542"
+  },
+  {
+   "pallet": "AuraExt",
+   "item": "RelaySlotInfo",
+   "modifier": "Optional",
+   "value_type": "scale_info::545"
+  },
+  {
+   "pallet": "SessionManager",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "SessionManager",
+   "item": "SessionDuration",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "SessionManager",
+   "item": "DurationOffset",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "SessionManager",
+   "item": "SessionDurationChanges",
+   "modifier": "Default",
+   "value_type": "scale_info::33"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": "InboundXcmpSuspended",
+   "modifier": "Default",
+   "value_type": "scale_info::547"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": "OutboundXcmpStatus",
+   "modifier": "Default",
+   "value_type": "scale_info::550"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": "OutboundXcmpMessages",
+   "modifier": "Default",
+   "value_type": "scale_info::555"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": "SignalMessages",
+   "modifier": "Default",
+   "value_type": "scale_info::555"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": "QueueConfig",
+   "modifier": "Default",
+   "value_type": "scale_info::556"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": "QueueSuspended",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": "DeliveryFeeFactor",
+   "modifier": "Default",
+   "value_type": "scale_info::64"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "QueryCounter",
+   "modifier": "Default",
+   "value_type": "scale_info::12"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "Queries",
+   "modifier": "Optional",
+   "value_type": "scale_info::558"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "AssetTraps",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "SafeXcmVersion",
+   "modifier": "Optional",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "SupportedVersion",
+   "modifier": "Optional",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "VersionNotifiers",
+   "modifier": "Optional",
+   "value_type": "scale_info::12"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "VersionNotifyTargets",
+   "modifier": "Optional",
+   "value_type": "scale_info::564"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "VersionDiscoveryQueue",
+   "modifier": "Default",
+   "value_type": "scale_info::565"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "CurrentMigration",
+   "modifier": "Optional",
+   "value_type": "scale_info::568"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "RemoteLockedFungibles",
+   "modifier": "Optional",
+   "value_type": "scale_info::571"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "LockedFungibles",
+   "modifier": "Optional",
+   "value_type": "scale_info::575"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "XcmExecutionSuspended",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "ShouldRecordXcm",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "RecordedXcm",
+   "modifier": "Optional",
+   "value_type": "scale_info::93"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "AuthorizedAliases",
+   "modifier": "Optional",
+   "value_type": "scale_info::578"
+  },
+  {
+   "pallet": "UnknownTokens",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "UnknownTokens",
+   "item": "ConcreteFungibleBalances",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "UnknownTokens",
+   "item": "AbstractFungibleBalances",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "MessageQueue",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "MessageQueue",
+   "item": "BookStateFor",
+   "modifier": "Default",
+   "value_type": "scale_info::591"
+  },
+  {
+   "pallet": "MessageQueue",
+   "item": "ServiceHead",
+   "modifier": "Optional",
+   "value_type": "scale_info::168"
+  },
+  {
+   "pallet": "MessageQueue",
+   "item": "Pages",
+   "modifier": "Optional",
+   "value_type": "scale_info::595"
+  },
+  {
+   "pallet": "Authority",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Authority",
+   "item": "NextTaskIndex",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Authority",
+   "item": "SavedCalls",
+   "modifier": "Optional",
+   "value_type": "scale_info::598"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": "Proposals",
+   "modifier": "Default",
+   "value_type": "scale_info::600"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": "ProposalOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::278"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": "CostOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::601"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": "Voting",
+   "modifier": "Optional",
+   "value_type": "scale_info::602"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": "ProposalCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::69"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "GeneralCouncilMembership",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "GeneralCouncilMembership",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::604"
+  },
+  {
+   "pallet": "GeneralCouncilMembership",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": "Proposals",
+   "modifier": "Default",
+   "value_type": "scale_info::600"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": "ProposalOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::278"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": "CostOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::601"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": "Voting",
+   "modifier": "Optional",
+   "value_type": "scale_info::602"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": "ProposalCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::69"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "FinancialCouncilMembership",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "FinancialCouncilMembership",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::604"
+  },
+  {
+   "pallet": "FinancialCouncilMembership",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": "Proposals",
+   "modifier": "Default",
+   "value_type": "scale_info::600"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": "ProposalOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::278"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": "CostOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::601"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": "Voting",
+   "modifier": "Optional",
+   "value_type": "scale_info::602"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": "ProposalCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::69"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "HomaCouncilMembership",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "HomaCouncilMembership",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::604"
+  },
+  {
+   "pallet": "HomaCouncilMembership",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": "Proposals",
+   "modifier": "Default",
+   "value_type": "scale_info::600"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": "ProposalOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::278"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": "CostOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::601"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": "Voting",
+   "modifier": "Optional",
+   "value_type": "scale_info::602"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": "ProposalCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::69"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "TechnicalCommitteeMembership",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "TechnicalCommitteeMembership",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::604"
+  },
+  {
+   "pallet": "TechnicalCommitteeMembership",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "Democracy",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "PublicPropCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "PublicProps",
+   "modifier": "Default",
+   "value_type": "scale_info::612"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "DepositOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::615"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "ReferendumCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "LowestUnbaked",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "ReferendumInfoOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::616"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "VotingOf",
+   "modifier": "Default",
+   "value_type": "scale_info::619"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "LastTabledWasExternal",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "NextExternal",
+   "modifier": "Optional",
+   "value_type": "scale_info::625"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "Blacklist",
+   "modifier": "Optional",
+   "value_type": "scale_info::626"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "Cancellations",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "MetadataOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::13"
+  },
+  {
+   "pallet": "AcalaOracle",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "AcalaOracle",
+   "item": "RawValues",
+   "modifier": "Optional",
+   "value_type": "scale_info::628"
+  },
+  {
+   "pallet": "AcalaOracle",
+   "item": "Values",
+   "modifier": "Optional",
+   "value_type": "scale_info::628"
+  },
+  {
+   "pallet": "AcalaOracle",
+   "item": "HasDispatched",
+   "modifier": "Default",
+   "value_type": "scale_info::629"
+  },
+  {
+   "pallet": "OperatorMembershipAcala",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "OperatorMembershipAcala",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::632"
+  },
+  {
+   "pallet": "OperatorMembershipAcala",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "Auction",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Auction",
+   "item": "Auctions",
+   "modifier": "Optional",
+   "value_type": "scale_info::634"
+  },
+  {
+   "pallet": "Auction",
+   "item": "AuctionsIndex",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Auction",
+   "item": "AuctionEndTime",
+   "modifier": "Optional",
+   "value_type": "scale_info::36"
+  },
+  {
+   "pallet": "Rewards",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Rewards",
+   "item": "PoolInfos",
+   "modifier": "Default",
+   "value_type": "scale_info::636"
+  },
+  {
+   "pallet": "Rewards",
+   "item": "SharesAndWithdrawnRewards",
+   "modifier": "Default",
+   "value_type": "scale_info::642"
+  },
+  {
+   "pallet": "OrmlNFT",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "OrmlNFT",
+   "item": "NextClassId",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "OrmlNFT",
+   "item": "NextTokenId",
+   "modifier": "Default",
+   "value_type": "scale_info::12"
+  },
+  {
+   "pallet": "OrmlNFT",
+   "item": "Classes",
+   "modifier": "Optional",
+   "value_type": "scale_info::645"
+  },
+  {
+   "pallet": "OrmlNFT",
+   "item": "Tokens",
+   "modifier": "Optional",
+   "value_type": "scale_info::648"
+  },
+  {
+   "pallet": "OrmlNFT",
+   "item": "TokensByOwner",
+   "modifier": "Default",
+   "value_type": "scale_info::36"
+  },
+  {
+   "pallet": "Parameters",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Parameters",
+   "item": "Parameters",
+   "modifier": "Optional",
+   "value_type": "scale_info::654"
+  },
+  {
+   "pallet": "Prices",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Prices",
+   "item": "LockedPrice",
+   "modifier": "Optional",
+   "value_type": "scale_info::64"
+  },
+  {
+   "pallet": "Dex",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Dex",
+   "item": "LiquidityPool",
+   "modifier": "Default",
+   "value_type": "scale_info::638"
+  },
+  {
+   "pallet": "Dex",
+   "item": "TradingPairStatuses",
+   "modifier": "Default",
+   "value_type": "scale_info::658"
+  },
+  {
+   "pallet": "Dex",
+   "item": "ProvisioningPool",
+   "modifier": "Default",
+   "value_type": "scale_info::638"
+  },
+  {
+   "pallet": "Dex",
+   "item": "InitialShareExchangeRates",
+   "modifier": "Default",
+   "value_type": "scale_info::661"
+  },
+  {
+   "pallet": "DexOracle",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "DexOracle",
+   "item": "Cumulatives",
+   "modifier": "Default",
+   "value_type": "scale_info::663"
+  },
+  {
+   "pallet": "DexOracle",
+   "item": "AveragePrices",
+   "modifier": "Optional",
+   "value_type": "scale_info::666"
+  },
+  {
+   "pallet": "AggregatedDex",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "AggregatedDex",
+   "item": "AggregatedSwapPaths",
+   "modifier": "Optional",
+   "value_type": "scale_info::668"
+  },
+  {
+   "pallet": "Earning",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Earning",
+   "item": "Ledger",
+   "modifier": "Optional",
+   "value_type": "scale_info::671"
+  },
+  {
+   "pallet": "AuctionManager",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "AuctionManager",
+   "item": "CollateralAuctions",
+   "modifier": "Optional",
+   "value_type": "scale_info::676"
+  },
+  {
+   "pallet": "AuctionManager",
+   "item": "TotalCollateralInAuction",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "AuctionManager",
+   "item": "TotalTargetInAuction",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Loans",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Loans",
+   "item": "Positions",
+   "modifier": "Default",
+   "value_type": "scale_info::679"
+  },
+  {
+   "pallet": "Loans",
+   "item": "TotalPositions",
+   "modifier": "Default",
+   "value_type": "scale_info::679"
+  },
+  {
+   "pallet": "Honzon",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Honzon",
+   "item": "Authorization",
+   "modifier": "Optional",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "CdpTreasury",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "CdpTreasury",
+   "item": "ExpectedCollateralAuctionSize",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "CdpTreasury",
+   "item": "DebitPool",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "CdpTreasury",
+   "item": "DebitOffsetBuffer",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "CdpEngine",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "CdpEngine",
+   "item": "DebitExchangeRate",
+   "modifier": "Optional",
+   "value_type": "scale_info::64"
+  },
+  {
+   "pallet": "CdpEngine",
+   "item": "CollateralParams",
+   "modifier": "Optional",
+   "value_type": "scale_info::684"
+  },
+  {
+   "pallet": "CdpEngine",
+   "item": "LastAccumulationSecs",
+   "modifier": "Default",
+   "value_type": "scale_info::12"
+  },
+  {
+   "pallet": "CdpEngine",
+   "item": "LiquidationContracts",
+   "modifier": "Default",
+   "value_type": "scale_info::687"
+  },
+  {
+   "pallet": "EmergencyShutdown",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "EmergencyShutdown",
+   "item": "IsShutdown",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "EmergencyShutdown",
+   "item": "CanRefund",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "Homa",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Homa",
+   "item": "RelayChainCurrentEra",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Homa",
+   "item": "StakingLedgers",
+   "modifier": "Optional",
+   "value_type": "scale_info::691"
+  },
+  {
+   "pallet": "Homa",
+   "item": "TotalStakingBonded",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Homa",
+   "item": "ToBondPool",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Homa",
+   "item": "TotalVoidLiquid",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Homa",
+   "item": "UnclaimedRedemption",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Homa",
+   "item": "RedeemRequests",
+   "modifier": "Optional",
+   "value_type": "scale_info::692"
+  },
+  {
+   "pallet": "Homa",
+   "item": "Unbondings",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Homa",
+   "item": "EstimatedRewardRatePerEra",
+   "modifier": "Default",
+   "value_type": "scale_info::686"
+  },
+  {
+   "pallet": "Homa",
+   "item": "SoftBondedCapPerSubAccount",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Homa",
+   "item": "CommissionRate",
+   "modifier": "Default",
+   "value_type": "scale_info::686"
+  },
+  {
+   "pallet": "Homa",
+   "item": "FastMatchFeeRate",
+   "modifier": "Default",
+   "value_type": "scale_info::686"
+  },
+  {
+   "pallet": "Homa",
+   "item": "LastEraBumpedBlock",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Homa",
+   "item": "BumpEraFrequency",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Homa",
+   "item": "NominateIntervalEra",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "XcmInterface",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "XcmInterface",
+   "item": "XcmDestWeightAndFee",
+   "modifier": "Default",
+   "value_type": "scale_info::696"
+  },
+  {
+   "pallet": "HomaValidatorList",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "HomaValidatorList",
+   "item": "Guarantees",
+   "modifier": "Optional",
+   "value_type": "scale_info::699"
+  },
+  {
+   "pallet": "HomaValidatorList",
+   "item": "TotalLockedByGuarantor",
+   "modifier": "Optional",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "HomaValidatorList",
+   "item": "ValidatorBackings",
+   "modifier": "Optional",
+   "value_type": "scale_info::702"
+  },
+  {
+   "pallet": "NomineesElection",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "NomineesElection",
+   "item": "Nominations",
+   "modifier": "Default",
+   "value_type": "scale_info::409"
+  },
+  {
+   "pallet": "NomineesElection",
+   "item": "Ledger",
+   "modifier": "Optional",
+   "value_type": "scale_info::704"
+  },
+  {
+   "pallet": "NomineesElection",
+   "item": "Votes",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "NomineesElection",
+   "item": "ReservedNominees",
+   "modifier": "Default",
+   "value_type": "scale_info::409"
+  },
+  {
+   "pallet": "Incentives",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Incentives",
+   "item": "IncentiveRewardAmounts",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Incentives",
+   "item": "ClaimRewardDeductionRates",
+   "modifier": "Default",
+   "value_type": "scale_info::686"
+  },
+  {
+   "pallet": "Incentives",
+   "item": "ClaimRewardDeductionCurrency",
+   "modifier": "Optional",
+   "value_type": "scale_info::55"
+  },
+  {
+   "pallet": "Incentives",
+   "item": "PendingMultiRewards",
+   "modifier": "Default",
+   "value_type": "scale_info::643"
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": "NextForeignAssetId",
+   "modifier": "Default",
+   "value_type": "scale_info::42"
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": "NextStableAssetId",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": "ForeignAssetLocations",
+   "modifier": "Optional",
+   "value_type": "scale_info::135"
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": "LocationToCurrencyIds",
+   "modifier": "Optional",
+   "value_type": "scale_info::55"
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": "Erc20IdToAddress",
+   "modifier": "Optional",
+   "value_type": "scale_info::45"
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": "AssetMetadatas",
+   "modifier": "Optional",
+   "value_type": "scale_info::234"
+  },
+  {
+   "pallet": "LiquidCrowdloan",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "LiquidCrowdloan",
+   "item": "RedeemCurrencyId",
+   "modifier": "Optional",
+   "value_type": "scale_info::55"
+  },
+  {
+   "pallet": "EVM",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "EVM",
+   "item": "ChainId",
+   "modifier": "Default",
+   "value_type": "scale_info::12"
+  },
+  {
+   "pallet": "EVM",
+   "item": "Accounts",
+   "modifier": "Optional",
+   "value_type": "scale_info::711"
+  },
+  {
+   "pallet": "EVM",
+   "item": "ContractStorageSizes",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "EVM",
+   "item": "AccountStorages",
+   "modifier": "Default",
+   "value_type": "scale_info::13"
+  },
+  {
+   "pallet": "EVM",
+   "item": "Codes",
+   "modifier": "Default",
+   "value_type": "scale_info::715"
+  },
+  {
+   "pallet": "EVM",
+   "item": "CodeInfos",
+   "modifier": "Optional",
+   "value_type": "scale_info::716"
+  },
+  {
+   "pallet": "EVM",
+   "item": "NetworkContractIndex",
+   "modifier": "Default",
+   "value_type": "scale_info::12"
+  },
+  {
+   "pallet": "EVM",
+   "item": "ExtrinsicOrigin",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "EVM",
+   "item": "XcmOrigin",
+   "modifier": "Optional",
+   "value_type": "scale_info::69"
+  },
+  {
+   "pallet": "EvmAccounts",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "EvmAccounts",
+   "item": "Accounts",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "EvmAccounts",
+   "item": "EvmAddresses",
+   "modifier": "Optional",
+   "value_type": "scale_info::45"
+  },
+  {
+   "pallet": "StableAsset",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "StableAsset",
+   "item": "PoolCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "StableAsset",
+   "item": "Pools",
+   "modifier": "Optional",
+   "value_type": "scale_info::720"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "UnincludedSegment",
+   "modifier": "Default",
+   "value_type": "scale_info::722"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "AggregatedUnincludedSegment",
+   "modifier": "Optional",
+   "value_type": "scale_info::731"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "PendingValidationCode",
+   "modifier": "Default",
+   "value_type": "scale_info::14"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "NewValidationCode",
+   "modifier": "Optional",
+   "value_type": "scale_info::14"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "ValidationData",
+   "modifier": "Optional",
+   "value_type": "scale_info::431"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "DidSetValidationCode",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "LastRelayChainBlockNumber",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "UpgradeRestrictionSignal",
+   "modifier": "Default",
+   "value_type": "scale_info::732"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "UpgradeGoAhead",
+   "modifier": "Default",
+   "value_type": "scale_info::729"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "RelayStateProof",
+   "modifier": "Optional",
+   "value_type": "scale_info::433"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "RelevantMessagingState",
+   "modifier": "Optional",
+   "value_type": "scale_info::734"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "HostConfiguration",
+   "modifier": "Optional",
+   "value_type": "scale_info::739"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "LastDmqMqcHead",
+   "modifier": "Default",
+   "value_type": "scale_info::741"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "LastHrmpMqcHeads",
+   "modifier": "Default",
+   "value_type": "scale_info::742"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "ProcessedDownwardMessages",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "HrmpWatermark",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "HrmpOutboundMessages",
+   "modifier": "Default",
+   "value_type": "scale_info::745"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "UpwardMessages",
+   "modifier": "Default",
+   "value_type": "scale_info::261"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "PendingUpwardMessages",
+   "modifier": "Default",
+   "value_type": "scale_info::261"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "UpwardDeliveryFeeFactor",
+   "modifier": "Default",
+   "value_type": "scale_info::64"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "AnnouncedHrmpMessagesPerCandidate",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "ReservedXcmpWeightOverride",
+   "modifier": "Optional",
+   "value_type": "scale_info::10"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "ReservedDmpWeightOverride",
+   "modifier": "Optional",
+   "value_type": "scale_info::10"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "CustomValidationHeadData",
+   "modifier": "Optional",
+   "value_type": "scale_info::14"
+  },
+  {
+   "pallet": "Sudo",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Sudo",
+   "item": "Key",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  }
+ ],
+ "storage": {
+  "_pallet_accounts": {
+   "aca/trsy": "23M5ttkmR6KcoTAAE6gcmibnKFtVaTP5yxnY8HF1BmrJ2A1i",
+   "aca/loan": "23M5ttkmR6KcoCvrNZsA97DQMPxQmqktF8DHYZSDW4HLcEDw",
+   "aca/dexm": "23M5ttkmR6KcnxentoqchgBdUjzMDSzFoUyf5qMs7FsmRMvV",
+   "aca/cdpt": "23M5ttkmR6KcnvsNJdmYTpLo9xfc54g8uCk55buDfiJPon69",
+   "aca/cdpe": "23M5ttkmR6KcnvsNJKoKoYzMBRX23jj5m7qcExWfe5hsGBEJ",
+   "aca/homa": "23M5ttkmR6Kco5pqN691bGfU3BhfU6QPG9arw6SR1XpNuQqu",
+   "aca/hztr": "23M5ttkmR6Kco5uGj64jEZbG6PYyZSwvjeoeUVTMqQEG71yu",
+   "aca/hmtr": "23M5ttkmR6Kco5p3LFGKMpMv4zvLkKdUQWW1wGGoV8zDX3am",
+   "aca/inct": "23M5ttkmR6Kco7bReRDve6bQUSAcwqebatp3fWGJYb4hDSDJ",
+   "aca/cpot": "23M5ttkmR6KcnvxCGaueuxSnUmxG9ruKBibH6i1yszogd348",
+   "aca/reve": "23M5ttkmR6KcoPWv3spZT4dLSyv87w8fQ8EzBjbyXUZXwmze",
+   "aca/aNFT": "23M5ttkmR6KcnsARyoG6rU92WXWxNb48A62qhP4iGeZHUjAr",
+   "aca/urls": "23M5ttkmR6KcoUwA7NqBjLuMJFWCvobsD9Zy95MgaAECEhit",
+   "aca/fees": "23M5ttkmR6Kco2CnDJKTP4L2EUmMbKqPs1NngXH2iQpCNe9Y",
+   "aca/lqcl": "23M5ttkmR6KcoCwfEJnoAgczRQdDq85ZedwGc3uzyPwiCoq8",
+   "nuts/sta": "23M5ttkp2zdM8qa6LFak4BySWZDsAVByjepAfr7kt929S1U9",
+   "aca/hzbg": "23M5ttkmR6Kco5uF5giywrRtXYxsiWXC9UoZ9KXBaNne6Fm8",
+   "aca/xNFT": "23M5ttkmR6Kcoa1e3LmTtpfEuQq3JfAMLdF6KYtsGkYE7ZX7"
+  },
+  "Tokens.TotalIssuance": {
+   "count_returned": 38,
+   "rows": [
+    [
+     {
+      "Token": "TAP"
+     },
+     200000000000000000000
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "ACA"
+       },
+       {
+        "Erc20": "0x07df96d1341a7d16ba1ad431e2c847d978bc2bce"
+       }
+      ]
+     },
+     579663338737473031
+    ],
+    [
+     {
+      "ForeignAsset": 3
+     },
+     79732575
+    ],
+    [
+     {
+      "ForeignAsset": 17
+     },
+     122013039023476
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "LDOT"
+       },
+       {
+        "Erc20": "0xa7fb00459f5896c3bd4df97870b44e868ae663d7"
+       }
+      ]
+     },
+     1800230972349
+    ],
+    [
+     {
+      "ForeignAsset": 21
+     },
+     6525768618448884
+    ],
+    [
+     {
+      "ForeignAsset": 4
+     },
+     21804095371008673
+    ],
+    [
+     {
+      "ForeignAsset": 13
+     },
+     162541995913629497
+    ],
+    [
+     {
+      "ForeignAsset": 1
+     },
+     267544101391922121
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "ForeignAsset": 12
+       },
+       {
+        "ForeignAsset": 20
+       }
+      ]
+     },
+     3000000000
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "ACA"
+       },
+       {
+        "ForeignAsset": 18
+       }
+      ]
+     },
+     19999999999999998
+    ],
+    [
+     {
+      "ForeignAsset": 12
+     },
+     7543108858
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "AUSD"
+       },
+       {
+        "LiquidCrowdloan": 13
+       }
+      ]
+     },
+     767700354554434386
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "ACA"
+       },
+       {
+        "ForeignAsset": 19
+       }
+      ]
+     },
+     99999999999999999
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "AUSD"
+       },
+       {
+        "ForeignAsset": 3
+       }
+      ]
+     },
+     1346597504370527
+    ],
+    [
+     {
+      "ForeignAsset": 14
+     },
+     92691053477
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "ACA"
+       },
+       {
+        "ForeignAsset": 12
+       }
+      ]
+     },
+     774721833589235617
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "AUSD"
+       },
+       {
+        "Token": "LDOT"
+       }
+      ]
+     },
+     94309064051701760
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "DOT"
+       },
+       {
+        "LiquidCrowdloan": 13
+       }
+      ]
+     },
+     665707033980060
+    ],
+    [
+     {
+      "Token": "LDOT"
+     },
+     100357202974586775
+    ],
+    [
+     {
+      "ForeignAsset": 11
+     },
+     30000000000
+    ],
+    [
+     {
+      "ForeignAsset": 9
+     },
+     2536514733645281
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "ACA"
+       },
+       {
+        "Erc20": "0xfa904c86b73fd041d6cc2aeed9e6ec0148fd51da"
+       }
+      ]
+     },
+     27846588098270408
+    ],
+    [
+     {
+      "ForeignAsset": 20
+     },
+     952327858759000000
+    ],
+    [
+     {
+      "ForeignAsset": 19
+     },
+     99864691642000000
+    ],
+    [
+     {
+      "Token": "DOT"
+     },
+     30656448329073780
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "DOT"
+       },
+       {
+        "ForeignAsset": 10
+       }
+      ]
+     },
+     12474400835133
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "AUSD"
+       },
+       {
+        "ForeignAsset": 4
+       }
+      ]
+     },
+     3908813551795106
+    ],
+    [
+     {
+      "Token": "AUSD"
+     },
+     6008958880473045249
+    ],
+    [
+     {
+      "ForeignAsset": 8
+     },
+     5000000000
+    ],
+    [
+     {
+      "ForeignAsset": 2
+     },
+     298082382935283255711127
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "DOT"
+       },
+       {
+        "ForeignAsset": 20
+       }
+      ]
+     },
+     79586085880783
+    ],
+    [
+     {
+      "ForeignAsset": 0
+     },
+     49563588819562660085765
+    ],
+    [
+     {
+      "StableAssetPoolToken": 0
+     },
+     2931757508181158
+    ],
+    [
+     {
+      "ForeignAsset": 18
+     },
+     7868994000001000000
+    ],
+    [
+     {
+      "ForeignAsset": 10
+     },
+     4195800532065166437315431
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "ACA"
+       },
+       {
+        "Token": "AUSD"
+       }
+      ]
+     },
+     509955408428306362
+    ],
+    [
+     {
+      "LiquidCrowdloan": 13
+     },
+     23723477626752913
+    ]
+   ]
+  },
+  "CdpEngine.DebitExchangeRate": {
+   "count_returned": 4,
+   "rows": [
+    [
+     {
+      "Token": "ACA"
+     },
+     103405035231868578
+    ],
+    [
+     {
+      "Token": "LDOT"
+     },
+     103200785872887175
+    ],
+    [
+     {
+      "Token": "DOT"
+     },
+     103673167529336933
+    ],
+    [
+     {
+      "LiquidCrowdloan": 13
+     },
+     103903100508794527
+    ]
+   ]
+  },
+  "CdpEngine.CollateralParams": {
+   "count_returned": 7,
+   "rows": [
+    [
+     {
+      "Token": "ACA"
+     },
+     {
+      "maximum_total_debit_value": 0,
+      "interest_rate_per_sec": 0,
+      "liquidation_ratio": 0,
+      "liquidation_penalty": 0,
+      "required_collateral_ratio": 2150000000000000000
+     }
+    ],
+    [
+     {
+      "Erc20": "0x07df96d1341a7d16ba1ad431e2c847d978bc2bce"
+     },
+     {
+      "maximum_total_debit_value": 0,
+      "interest_rate_per_sec": 0,
+      "liquidation_ratio": 0,
+      "liquidation_penalty": 0,
+      "required_collateral_ratio": 1000000000000000000
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 14
+     },
+     {
+      "maximum_total_debit_value": 0,
+      "interest_rate_per_sec": 0,
+      "liquidation_ratio": 0,
+      "liquidation_penalty": 0,
+      "required_collateral_ratio": 1000000000000000000
+     }
+    ],
+    [
+     {
+      "Token": "LDOT"
+     },
+     {
+      "maximum_total_debit_value": 0,
+      "interest_rate_per_sec": 0,
+      "liquidation_ratio": 0,
+      "liquidation_penalty": 0,
+      "required_collateral_ratio": 2950000000000000000
+     }
+    ],
+    [
+     {
+      "Token": "DOT"
+     },
+     {
+      "maximum_total_debit_value": 0,
+      "interest_rate_per_sec": 0,
+      "liquidation_ratio": 0,
+      "liquidation_penalty": 0,
+      "required_collateral_ratio": 1600000000000000000
+     }
+    ],
+    [
+     {
+      "StableAssetPoolToken": 0
+     },
+     {
+      "maximum_total_debit_value": 0,
+      "interest_rate_per_sec": 0,
+      "liquidation_ratio": 1600000000000000000,
+      "liquidation_penalty": 150000000000000000,
+      "required_collateral_ratio": 2100000000000000000
+     }
+    ],
+    [
+     {
+      "LiquidCrowdloan": 13
+     },
+     {
+      "maximum_total_debit_value": 0,
+      "interest_rate_per_sec": 0,
+      "liquidation_ratio": 0,
+      "liquidation_penalty": 0,
+      "required_collateral_ratio": 2700000000000000000
+     }
+    ]
+   ]
+  },
+  "Loans.TotalPositions": {
+   "count_returned": 6,
+   "rows": [
+    [
+     {
+      "Token": "ACA"
+     },
+     {
+      "collateral": 4654710125781078725,
+      "debit": 0
+     }
+    ],
+    [
+     {
+      "Erc20": "0x07df96d1341a7d16ba1ad431e2c847d978bc2bce"
+     },
+     {
+      "collateral": 0,
+      "debit": 0
+     }
+    ],
+    [
+     {
+      "Token": "LDOT"
+     },
+     {
+      "collateral": 24332719404006866,
+      "debit": 0
+     }
+    ],
+    [
+     {
+      "Token": "DOT"
+     },
+     {
+      "collateral": 27378441139356,
+      "debit": 0
+     }
+    ],
+    [
+     {
+      "StableAssetPoolToken": 0
+     },
+     {
+      "collateral": 41848053033123,
+      "debit": 0
+     }
+    ],
+    [
+     {
+      "LiquidCrowdloan": 13
+     },
+     {
+      "collateral": 180822475089332,
+      "debit": 0
+     }
+    ]
+   ]
+  },
+  "Dex.LiquidityPool": {
+   "count_returned": 15,
+   "rows": [
+    [
+     [
+      {
+       "Token": "ACA"
+      },
+      {
+       "Erc20": "0xfa904c86b73fd041d6cc2aeed9e6ec0148fd51da"
+      }
+     ],
+     [
+      17827316384117361,
+      141696762481720122026039526
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "LDOT"
+      }
+     ],
+     [
+      96252808345604126,
+      194576855790128
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "ACA"
+      },
+      {
+       "ForeignAsset": 19
+      }
+     ],
+     [
+      475303891185817228,
+      26232278392604564
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "ForeignAsset": 10
+      }
+     ],
+     [
+      2377408748869,
+      1614611817830638463628070
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "ACA"
+      },
+      {
+       "Erc20": "0x07df96d1341a7d16ba1ad431e2c847d978bc2bce"
+      }
+     ],
+     [
+      580439837207944761,
+      8155256657
+     ]
+    ],
+    [
+     [
+      {
+       "ForeignAsset": 12
+      },
+      {
+       "ForeignAsset": 20
+      }
+     ],
+     [
+      624194960,
+      72695899070842343
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "ForeignAsset": 3
+      }
+     ],
+     [
+      5259870909880702,
+      369531
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "LiquidCrowdloan": 13
+      }
+     ],
+     [
+      658205164412183560,
+      252652812864191
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "ACA"
+      },
+      {
+       "ForeignAsset": 18
+      }
+     ],
+     [
+      9279367443419538,
+      808868061812450559
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "ACA"
+      },
+      {
+       "Token": "AUSD"
+      }
+     ],
+     [
+      5383609386517816058,
+      38112444872879135
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "ForeignAsset": 20
+      }
+     ],
+     [
+      34551514626417,
+      355780134814443305
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "LDOT"
+      },
+      {
+       "Erc20": "0xa7fb00459f5896c3bd4df97870b44e868ae663d7"
+      }
+     ],
+     [
+      322225177690,
+      783647858
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      }
+     ],
+     [
+      503768417938344,
+      505192479029119
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "ForeignAsset": 4
+      }
+     ],
+     [
+      336482332008713,
+      1781759365039390
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "ACA"
+      },
+      {
+       "ForeignAsset": 12
+      }
+     ],
+     [
+      5883404131529066069,
+      1467318640
+     ]
+    ]
+   ]
+  },
+  "Dex.TradingPairStatuses": {
+   "count_returned": 15,
+   "rows": [
+    [
+     [
+      {
+       "Token": "ACA"
+      },
+      {
+       "Erc20": "0xfa904c86b73fd041d6cc2aeed9e6ec0148fd51da"
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "LDOT"
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "Token": "ACA"
+      },
+      {
+       "ForeignAsset": 19
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "ForeignAsset": 10
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "Token": "ACA"
+      },
+      {
+       "Erc20": "0x07df96d1341a7d16ba1ad431e2c847d978bc2bce"
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "ForeignAsset": 12
+      },
+      {
+       "ForeignAsset": 20
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "ForeignAsset": 3
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "LiquidCrowdloan": 13
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "Token": "ACA"
+      },
+      {
+       "ForeignAsset": 18
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "Token": "ACA"
+      },
+      {
+       "Token": "AUSD"
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "ForeignAsset": 20
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "Token": "LDOT"
+      },
+      {
+       "Erc20": "0xa7fb00459f5896c3bd4df97870b44e868ae663d7"
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "ForeignAsset": 4
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "Token": "ACA"
+      },
+      {
+       "ForeignAsset": 12
+      }
+     ],
+     "Enabled"
+    ]
+   ]
+  },
+  "Dex.InitialShareExchangeRates": {
+   "count_returned": 9,
+   "rows": [
+    [
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "LDOT"
+      }
+     ],
+     [
+      1000000000000000000,
+      183260054872048297822
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "ACA"
+      },
+      {
+       "ForeignAsset": 19
+      }
+     ],
+     [
+      1000000000000000000,
+      208333333333333333
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "ForeignAsset": 10
+      }
+     ],
+     [
+      1000000000000000000,
+      13245069
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "ACA"
+      },
+      {
+       "Erc20": "0x07df96d1341a7d16ba1ad431e2c847d978bc2bce"
+      }
+     ],
+     [
+      1000000000000000000,
+      21811471970776477911374405
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "ForeignAsset": 3
+      }
+     ],
+     [
+      1000000000000000000,
+      259065481597269231793655409
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "LiquidCrowdloan": 13
+      }
+     ],
+     [
+      1000000000000000000,
+      1292991121190617079257
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "ACA"
+      },
+      {
+       "Token": "AUSD"
+      }
+     ],
+     [
+      1000000000000000000,
+      666939873287365220
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      }
+     ],
+     [
+      1000000000000000000,
+      655153842692650397
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "ForeignAsset": 4
+      }
+     ],
+     [
+      1000000000000000000,
+      10057145521262557754
+     ]
+    ]
+   ]
+  },
+  "DexOracle.AveragePrices": {
+   "error": "Storage function requires 1 parameters, 0 given"
+  },
+  "AggregatedDex.AggregatedSwapPaths": {
+   "count_returned": 3,
+   "rows": [
+    [
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "Token": "AUSD"
+      }
+     ],
+     [
+      {
+       "Taiga": [
+        0,
+        0,
+        1
+       ]
+      },
+      {
+       "Dex": [
+        {
+         "Token": "LDOT"
+        },
+        {
+         "Token": "AUSD"
+        }
+       ]
+      }
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "LDOT"
+      },
+      {
+       "Token": "AUSD"
+      }
+     ],
+     [
+      {
+       "Taiga": [
+        0,
+        1,
+        0
+       ]
+      },
+      {
+       "Dex": [
+        {
+         "Token": "DOT"
+        },
+        {
+         "LiquidCrowdloan": 13
+        },
+        {
+         "Token": "AUSD"
+        }
+       ]
+      }
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "Token": "ACA"
+      }
+     ],
+     [
+      {
+       "Dex": [
+        {
+         "Token": "DOT"
+        },
+        {
+         "LiquidCrowdloan": 13
+        },
+        {
+         "Token": "AUSD"
+        },
+        {
+         "Token": "ACA"
+        }
+       ]
+      }
+     ]
+    ]
+   ]
+  },
+  "Auction.Auctions": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "Auction.AuctionEndTime": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "AuctionManager.CollateralAuctions": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "Earning.Ledger": {
+   "count_returned": 50,
+   "rows": [
+    [
+     "21tQZukfDGEiQHEq3rdRfmBYsQ8jSvohHfehConisfu5rAsh",
+     {
+      "total": 14263566169628427,
+      "active": 14263566169628427,
+      "unlocking": []
+     }
+    ],
+    [
+     "25QFaZnrCY1j2VjReEmbyaoekznNLLgm2Shw2U7XSntqSwix",
+     {
+      "total": 124001291004333,
+      "active": 124001291004333,
+      "unlocking": []
+     }
+    ],
+    [
+     "25mMFfdpet7ooojMghAk69tx2JpXa3dnEED6MpG6tupRYynQ",
+     {
+      "total": 118233547771552,
+      "active": 118233547771552,
+      "unlocking": []
+     }
+    ],
+    [
+     "25dxZeuPBXquLTtso3qz7Ef1dR3MHzJved2NzZzAE1GBsBQY",
+     {
+      "total": 2815197650000000,
+      "active": 2815197650000000,
+      "unlocking": []
+     }
+    ],
+    [
+     "24Tu6SwT2VEX1pYLu5GnYtnnu4nLStfYASsMq1PXiMW3J6Hi",
+     {
+      "total": 526538806313729,
+      "active": 526538806313729,
+      "unlocking": []
+     }
+    ],
+    [
+     "25z1pNuedS5A76wWiUDARP2vSNprMbWG9xtKM3RwExXvrjXP",
+     {
+      "total": 1537873470831868,
+      "active": 1537873470831868,
+      "unlocking": []
+     }
+    ],
+    [
+     "24BbsiHpDFv7wsKSGBC65wvMeSAAgzdEwBUnZH3BxsqjnUXw",
+     {
+      "total": 280000000000000,
+      "active": 0,
+      "unlocking": [
+       {
+        "value": 280000000000000,
+        "unlock_at": 9887714
+       }
+      ]
+     }
+    ],
+    [
+     "22bLaDxhQsWHaSQh16VbA6JFmq3zKccrB7Vxo6nZRVwiQa9e",
+     {
+      "total": 3950000000000000,
+      "active": 3950000000000000,
+      "unlocking": []
+     }
+    ],
+    [
+     "268y6xddJAQZPz1bpRqc2gXAbAf8Tn316fWtdprY5j2yQNGu",
+     {
+      "total": 193648316248590,
+      "active": 193648316248590,
+      "unlocking": []
+     }
+    ],
+    [
+     "25KQ9yCu2HhnmoTPbhmj2htD4N55kzgxbSYdAra7pBrzWj4o",
+     {
+      "total": 1980000000000000,
+      "active": 1980000000000000,
+      "unlocking": []
+     }
+    ],
+    [
+     "21XPkV9VXspTaE1zUiGsW6uCoAJGu1je8mnvwRPiN4mF3ANq",
+     {
+      "total": 202176448075590,
+      "active": 0,
+      "unlocking": [
+       {
+        "value": 202176448075590,
+        "unlock_at": 9446948
+       }
+      ]
+     }
+    ],
+    [
+     "21Ry686EJvSVN3DMRjgNRCrw3n74RD9MLNDf5isKdwPZGCQQ",
+     {
+      "total": 2635015620682256,
+      "active": 2635015620682256,
+      "unlocking": []
+     }
+    ],
+    [
+     "23Yxweqjm8GB5aDVizQZpLrKRtJTvyHQHYKKcNG8eFY9ASug",
+     {
+      "total": 148000000000000,
+      "active": 0,
+      "unlocking": [
+       {
+        "value": 148000000000000,
+        "unlock_at": 5927933
+       }
+      ]
+     }
+    ],
+    [
+     "24pWZ765UvF4jcuuo8FD8Qmw6chm9Cyq8ELRDFw5rKy3x33u",
+     {
+      "total": 1977846230600971,
+      "active": 1977846230600971,
+      "unlocking": []
+     }
+    ],
+    [
+     "24HNNXUe6JNGKAfLXWr3vEzGSCRPhgy44uSKMWuxNnovwvD2",
+     {
+      "total": 779050357478440,
+      "active": 0,
+      "unlocking": [
+       {
+        "value": 779050357478440,
+        "unlock_at": 7899977
+       }
+      ]
+     }
+    ],
+    [
+     "21ExVHcX7c1T41X4GNWW9bRQo7nNyx8m67xZEhy4jDkF5R3j",
+     {
+      "total": 9081842502015314,
+      "active": 9081842502015314,
+      "unlocking": []
+     }
+    ],
+    [
+     "262fbF2DssofYFc4S3oq74sxH1FTNdgJUs2agaxRpTAWKZnH",
+     {
+      "total": 5130000000000000,
+      "active": 0,
+      "unlocking": [
+       {
+        "value": 5130000000000000,
+        "unlock_at": 7822342
+       }
+      ]
+     }
+    ],
+    [
+     "263Za2tQQt7ZBqMNHDb2mgjbGfLE9djw7FpJfM1fMosLDqLS",
+     {
+      "total": 305139065794480,
+      "active": 305139065794480,
+      "unlocking": []
+     }
+    ],
+    [
+     "26bJfc3ZwSpsG6mFR3PUC73o9hN3tfN3KMuLRj3ixvWnTcEg",
+     {
+      "total": 312997849995176,
+      "active": 312997849995176,
+      "unlocking": []
+     }
+    ],
+    [
+     "26TFTyiMZvanyA4bnNRHQyGkSzvcgPXPxodPF3eo4T4m722g",
+     {
+      "total": 25914266854826140,
+      "active": 25914266854826140,
+      "unlocking": []
+     }
+    ],
+    [
+     "23EYQA4TZg9jGVNtZgmtKf264np3qNJPUjQ2fDXVXftbdSpK",
+     {
+      "total": 576967587010667,
+      "active": 0,
+      "unlocking": [
+       {
+        "value": 576967587010667,
+        "unlock_at": 7831481
+       }
+      ]
+     }
+    ],
+    [
+     "25Sgx6pNMxMei4BFGm2UwtSmRKXGSNJ5jd2XLUNfU9q8SmiA",
+     {
+      "total": 1100000000000000,
+      "active": 1100000000000000,
+      "unlocking": []
+     }
+    ],
+    [
+     "25EP2UinYPTMYVBKkRSzPvqu5XnFEUkYXBVhMDtwCLi8Pf1f",
+     {
+      "total": 100000000000000,
+      "active": 100000000000000,
+      "unlocking": []
+     }
+    ],
+    [
+     "23QfX6vPw14nDCs4ATosXPm5Ghmo3GTsuiZGywCdpKi79tFw",
+     {
+      "total": 1164339585894405,
+      "active": 0,
+      "unlocking": [
+       {
+        "value": 1164339585894405,
+        "unlock_at": 9859306
+       }
+      ]
+     }
+    ],
+    [
+     "22t2uoHvyWW6sFU5tFDaEwzxiyrJ6DUw4FtLQQGeW8zaZHky",
+     {
+      "total": 366831774923728,
+      "active": 366831774923728,
+      "unlocking": []
+     }
+    ],
+    [
+     "23146Hvm6utzNNhZB2m6vbBBT39vNXzwTT3sizWG5QcUR31B",
+     {
+      "total": 887977210087891,
+      "active": 887977210087891,
+      "unlocking": []
+     }
+    ],
+    [
+     "25KKSdzw6CHuctmbvAruUkfzKyeFhKhqZC15aAEadxr7UJh4",
+     {
+      "total": 873579700297398,
+      "active": 873579700297398,
+      "unlocking": []
+     }
+    ],
+    [
+     "23Nnhys8AXoyEFYkSBgV3uSEFNTdWnoHJ2cQbXy1nvzw1ztz",
+     {
+      "total": 127240049661425,
+      "active": 127240049661425,
+      "unlocking": []
+     }
+    ],
+    [
+     "24NCdMx6kAhYm9BAZDRVuzoxfzzQKf6RPdUHawbzJEsJMGJQ",
+     {
+      "total": 215000000000000,
+      "active": 215000000000000,
+      "unlocking": []
+     }
+    ],
+    [
+     "24Dkxs66KgisjikdwBN3uKkZJKda418dv34eCQ4RSD7iSMUX",
+     {
+      "total": 12265578202934831,
+      "active": 12265578202934831,
+      "unlocking": []
+     }
+    ],
+    [
+     "23BwFJUvGBTXcikZHiuECy7C4LwcRkt6SPja7xzSifL17RZn",
+     {
+      "total": 420591049148158,
+      "active": 420591049148158,
+      "unlocking": []
+     }
+    ],
+    [
+     "22s8zphMFxBmykvAe6AvTG7g9MeCKHNCU2WazAeRFdPnXFE7",
+     {
+      "total": 3391600657673646,
+      "active": 0,
+      "unlocking": [
+       {
+        "value": 3391600657673646,
+        "unlock_at": 10399028
+       }
+      ]
+     }
+    ],
+    [
+     "25wM5d1PoTBbpP3MwpPhf63SeEiQcqN6tmXUeXFJa88u88ch",
+     {
+      "total": 221896614188965,
+      "active": 0,
+      "unlocking": [
+       {
+        "value": 221896614188965,
+        "unlock_at": 5908801
+       }
+      ]
+     }
+    ],
+    [
+     "251JF9UPbMSTHbvjDV7fgPCppKS6uAS9KXkUdm4eEeKm7GXy",
+     {
+      "total": 92865705175154296,
+      "active": 92865705175154296,
+      "unlocking": []
+     }
+    ],
+    [
+     "24Mn3nkFgjnsUe6SQjFzvXsTDptxAYSCucznTwMnN1EufCqC",
+     {
+      "total": 208604678571921,
+      "active": 208604678571921,
+      "unlocking": []
+     }
+    ],
+    [
+     "zz4wwQRC9WtG3sRZEneHdaPaRMMbXHsRa9oe6XVDNTmHuMX",
+     {
+      "total": 101269589780606,
+      "active": 0,
+      "unlocking": [
+       {
+        "value": 101269589780606,
+        "unlock_at": 7749336
+       }
+      ]
+     }
+    ],
+    [
+     "24U21thuyurwcc4zyN6MvpuFyWHTWL5kBL9gEJGyTbGpGGWe",
+     {
+      "total": 181000000000000,
+      "active": 0,
+      "unlocking": [
+       {
+        "value": 181000000000000,
+        "unlock_at": 7067121
+       }
+      ]
+     }
+    ],
+    [
+     "22EQfQ59dwA9sR3Rk4MCZJcXX5XtDtByPNSMppN47HxCHGSA",
+     {
+      "total": 232885374374414,
+      "active": 232885374374414,
+      "unlocking": []
+     }
+    ],
+    [
+     "23BQCLmyncenX7q7nYJW1pAYsWQJ2nyD5ceg8LMuRd5tKvbq",
+     {
+      "total": 632997390556445,
+      "active": 632997390556445,
+      "unlocking": []
+     }
+    ],
+    [
+     "25WNKCbRUZBiXsbyYo1JYUFMtBFeCr5dbnK743U7fAcb1YiJ",
+     {
+      "total": 500000000000000,
+      "active": 0,
+      "unlocking": [
+       {
+        "value": 500000000000000,
+        "unlock_at": 7525732
+       }
+      ]
+     }
+    ],
+    [
+     "25TQYuJwFxD44aSdrpHZcJJVV7pKtaTbfDt9uELwq6DBwBp8",
+     {
+      "total": 980000000000000,
+      "active": 0,
+      "unlocking": [
+       {
+        "value": 980000000000000,
+        "unlock_at": 5257688
+       }
+      ]
+     }
+    ],
+    [
+     "211ZN3P9eeJG47NxrG9SxWR9U4mXy68iJUXQrFfpj3Y7YzHR",
+     {
+      "total": 1613633877075258,
+      "active": 1613633877075258,
+      "unlocking": []
+     }
+    ],
+    [
+     "24VqPicKmYMmZaUSnYdDVMAtaBFTo1HTTutBGWRKVW8mcme7",
+     {
+      "total": 498130065408364,
+      "active": 0,
+      "unlocking": [
+       {
+        "value": 498130065408364,
+        "unlock_at": 8120652
+       }
+      ]
+     }
+    ],
+    [
+     "24Jtvf2qtKWbBvibMbLpVfCvaG9icERkonDsKonCUJb85WJN",
+     {
+      "total": 497200000000000,
+      "active": 497200000000000,
+      "unlocking": []
+     }
+    ],
+    [
+     "25umVUeyad99UhVi3XCSmka8w7A3d7JpHUp5p7L4xv6hxvS1",
+     {
+      "total": 5258164976395949,
+      "active": 5258164976395949,
+      "unlocking": []
+     }
+    ],
+    [
+     "244KHJ4iqqnUjCi1YScz6PST69orihwESAJLAQfWUxYp872c",
+     {
+      "total": 128942726813725,
+      "active": 128942726813725,
+      "unlocking": []
+     }
+    ],
+    [
+     "226Rm58buMcFPkx3JpgvXNCJaL9STD3xDGs8PBMVTi2P93xU",
+     {
+      "total": 761996637708497,
+      "active": 761996637708497,
+      "unlocking": []
+     }
+    ],
+    [
+     "22ZMNPCLSgzewr98BdwX3cVhBwoGhNKBBDWdZDqgpq5eVSPR",
+     {
+      "total": 3736342309331740,
+      "active": 3736342309331740,
+      "unlocking": []
+     }
+    ],
+    [
+     "zxu5CEL6h9gujtLQuPE2LrvfwVetXaNE7dTw4d7AX1nZEdn",
+     {
+      "total": 18777593732343620,
+      "active": 18777593732343620,
+      "unlocking": []
+     }
+    ],
+    [
+     "211aqegHrnjWfvzL3iUGUn8h9yk2VJhNYJVkBREDHzGgDm8t",
+     {
+      "total": 735500000000000,
+      "active": 735500000000000,
+      "unlocking": []
+     }
+    ]
+   ]
+  },
+  "Homa.StakingLedgers": {
+   "count_returned": 1,
+   "rows": [
+    [
+     0,
+     {
+      "bonded": 19376758882225950,
+      "unlocking": [
+       {
+        "value": 1917845779141,
+        "era": 2351
+       },
+       {
+        "value": 48694819180909,
+        "era": 2360
+       },
+       {
+        "value": 9266757531870,
+        "era": 2364
+       },
+       {
+        "value": 10777116039961,
+        "era": 2365
+       },
+       {
+        "value": 9293477246133,
+        "era": 2366
+       },
+       {
+        "value": 2975755662396,
+        "era": 2369
+       },
+       {
+        "value": 7770004693658,
+        "era": 2373
+       },
+       {
+        "value": 9441967109657,
+        "era": 2375
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  "StableAsset.Pools": {
+   "count_returned": 1,
+   "rows": [
+    [
+     0,
+     {
+      "pool_asset": {
+       "StableAssetPoolToken": 0
+      },
+      "assets": [
+       {
+        "Token": "DOT"
+       },
+       {
+        "Token": "LDOT"
+       }
+      ],
+      "precisions": [
+       1,
+       1
+      ],
+      "mint_fee": 0,
+      "swap_fee": 25000000,
+      "redeem_fee": 30000000,
+      "total_supply": 2931757964069804,
+      "a": 3000,
+      "a_block": 1073272,
+      "future_a": 3000,
+      "future_a_block": 1073272,
+      "balances": [
+       920055806327193,
+       2015580124107418
+      ],
+      "fee_recipient": "23AdbsfTWCWtRFweQF4f3iZLcLBPwSHci9CXuMhqFirZmUZj",
+      "account_id": "23M5ttkp2zdM8qa6LFak4BySWZDsAVByjepAfr7kt929S1U9",
+      "yield_recipient": "23AdbsfTWCWtRFweQF4f3iZLcLBPwSHci9CXuMhqFirZmUZj",
+      "precision": 10000000000
+     }
+    ]
+   ]
+  },
+  "Prices.LockedPrice": {
+   "count_returned": 6,
+   "rows": [
+    [
+     {
+      "Token": "ACA"
+     },
+     62444000000000000000000
+    ],
+    [
+     {
+      "Erc20": "0x07df96d1341a7d16ba1ad431e2c847d978bc2bce"
+     },
+     1857660000000000000000000000000
+    ],
+    [
+     {
+      "Token": "LDOT"
+     },
+     123900289112785805721706000
+    ],
+    [
+     {
+      "Token": "DOT"
+     },
+     852109000000000000000000000
+    ],
+    [
+     {
+      "StableAssetPoolToken": 0
+     },
+     852109000000000000000000000
+    ],
+    [
+     {
+      "LiquidCrowdloan": 13
+     },
+     852109000000000000000000000
+    ]
+   ]
+  },
+  "AcalaOracle.Values": {
+   "count_returned": 5,
+   "rows": [
+    [
+     {
+      "Token": "ACA"
+     },
+     {
+      "value": 8936633000000000,
+      "timestamp": 1770870540000
+     }
+    ],
+    [
+     {
+      "Erc20": "0x07df96d1341a7d16ba1ad431e2c847d978bc2bce"
+     },
+     {
+      "value": 1857660000000000000,
+      "timestamp": 1712213226000
+     }
+    ],
+    [
+     {
+      "Erc20": "0xc80084af223c8b598536178d9361dc55bfda6818"
+     },
+     {
+      "value": 75762380000000000000000,
+      "timestamp": 1794092934000
+     }
+    ],
+    [
+     {
+      "Token": "DOT"
+     },
+     {
+      "value": 898925500000000000,
+      "timestamp": 1794092934000
+     }
+    ],
+    [
+     {
+      "Erc20": "0x5a4d6acdc4e3e5ab15717f407afe957f7a242578"
+     },
+     {
+      "value": 2233900000000000000000,
+      "timestamp": 1794092862000
+     }
+    ]
+   ]
+  },
+  "AssetRegistry.AssetMetadatas": {
+   "count_returned": 46,
+   "rows": [
+    [
+     {
+      "NativeAssetId": {
+       "Token": "AUSD"
+      }
+     },
+     {
+      "name": "aUSD SEED",
+      "symbol": "aSEED",
+      "decimals": 12,
+      "minimal_balance": 100000000000
+     }
+    ],
+    [
+     {
+      "NativeAssetId": {
+       "Token": "ACA"
+      }
+     },
+     {
+      "name": "Acala",
+      "symbol": "ACA",
+      "decimals": 12,
+      "minimal_balance": 100000000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 10
+     },
+     {
+      "name": "Unique Network",
+      "symbol": "UNQ",
+      "decimals": 18,
+      "minimal_balance": 1250000000000000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 21
+     },
+     {
+      "name": "Ether",
+      "symbol": "ETH",
+      "decimals": 18,
+      "minimal_balance": 10000000000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 14
+     },
+     {
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "decimals": 6,
+      "minimal_balance": 10000
+     }
+    ],
+    [
+     {
+      "StableAssetId": 0
+     },
+     {
+      "name": "Taiga DOT",
+      "symbol": "tDOT",
+      "decimals": 10,
+      "minimal_balance": 100000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 19
+     },
+     {
+      "name": "DAMN",
+      "symbol": "DAMN",
+      "decimals": 12,
+      "minimal_balance": 1
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 8
+     },
+     {
+      "name": "Equilibrium USD",
+      "symbol": "EQD",
+      "decimals": 9,
+      "minimal_balance": 1000000000
+     }
+    ],
+    [
+     {
+      "NativeAssetId": {
+       "Token": "TAP"
+      }
+     },
+     {
+      "name": "Tapio",
+      "symbol": "TAP",
+      "decimals": 12,
+      "minimal_balance": 1000000000000
+     }
+    ],
+    [
+     {
+      "NativeAssetId": {
+       "LiquidCrowdloan": 13
+      }
+     },
+     {
+      "name": "Liquid Crowdloan DOT",
+      "symbol": "LcDOT",
+      "decimals": 10,
+      "minimal_balance": 100000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 16
+     },
+     {
+      "name": "Polkadex",
+      "symbol": "PDEX",
+      "decimals": 12,
+      "minimal_balance": 3202800000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 4
+     },
+     {
+      "name": "Interlay",
+      "symbol": "INTR",
+      "decimals": 10,
+      "minimal_balance": 1000000000
+     }
+    ],
+    [
+     {
+      "Erc20": "0xa72206fdf839c785b3073870013f2fd57ba10b63"
+     },
+     {
+      "name": "Crust Network (Portal from Ethereum)",
+      "symbol": "CRUet",
+      "decimals": 18,
+      "minimal_balance": 12000000000000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 6
+     },
+     {
+      "name": "Wrapped Ether (Asset Hub)",
+      "symbol": "WETHah",
+      "decimals": 18,
+      "minimal_balance": 500000000000000
+     }
+    ],
+    [
+     {
+      "Erc20": "0x07df96d1341a7d16ba1ad431e2c847d978bc2bce"
+     },
+     {
+      "name": "USD Coin (Portal from Ethereum)",
+      "symbol": "USDCet",
+      "decimals": 6,
+      "minimal_balance": 10000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 2
+     },
+     {
+      "name": "Astar Native Token",
+      "symbol": "ASTR",
+      "decimals": 18,
+      "minimal_balance": 100000000000000000
+     }
+    ],
+    [
+     {
+      "Erc20": "0x892ddd9387dbdecedaef878bd7acf8603109227f"
+     },
+     {
+      "name": "Taiga",
+      "symbol": "TAI",
+      "decimals": 12,
+      "minimal_balance": 10000000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 20
+     },
+     {
+      "name": "LOTY",
+      "symbol": "LOTY",
+      "decimals": 12,
+      "minimal_balance": 100000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 9
+     },
+     {
+      "name": "Phala Token",
+      "symbol": "PHA",
+      "decimals": 12,
+      "minimal_balance": 100000000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 1
+     },
+     {
+      "name": "Parallel",
+      "symbol": "PARA",
+      "decimals": 12,
+      "minimal_balance": 100000000000
+     }
+    ],
+    [
+     {
+      "Erc20": "0xf4c723e61709d90f89939c1852f516e373d418a8"
+     },
+     {
+      "name": "ApeCoin (Portal)",
+      "symbol": "APE",
+      "decimals": 18,
+      "minimal_balance": 3000000000000000
+     }
+    ],
+    [
+     {
+      "Erc20": "0xfa904c86b73fd041d6cc2aeed9e6ec0148fd51da"
+     },
+     {
+      "name": "Nemo",
+      "symbol": "Nemo",
+      "decimals": 18,
+      "minimal_balance": 0
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 0
+     },
+     {
+      "name": "Moonbeam",
+      "symbol": "GLMR",
+      "decimals": 18,
+      "minimal_balance": 100000000000000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 5
+     },
+     {
+      "name": "Wrapped Bitcoin",
+      "symbol": "WBTC",
+      "decimals": 8,
+      "minimal_balance": 3000
+     }
+    ],
+    [
+     {
+      "Erc20": "0xd1729649ee6d5e3740ee2f9254c4226aabd0dc5b"
+     },
+     {
+      "name": "Lido DAO (Portal)",
+      "symbol": "LDO",
+      "decimals": 18,
+      "minimal_balance": 4500000000000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 17
+     },
+     {
+      "name": "Hydration",
+      "symbol": "HDX",
+      "decimals": 12,
+      "minimal_balance": 78438200000000
+     }
+    ],
+    [
+     {
+      "NativeAssetId": {
+       "Token": "LDOT"
+      }
+     },
+     {
+      "name": "Liquid DOT",
+      "symbol": "LDOT",
+      "decimals": 10,
+      "minimal_balance": 500000000
+     }
+    ],
+    [
+     {
+      "Erc20": "0x54a37a01cd75b616d63e0ab665bffdb0143c52ae"
+     },
+     {
+      "name": "DAI Stablecoin (Portal)",
+      "symbol": "DAI",
+      "decimals": 18,
+      "minimal_balance": 10000000000000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 13
+     },
+     {
+      "name": "PINK",
+      "symbol": "PINK",
+      "decimals": 10,
+      "minimal_balance": 1000000000
+     }
+    ],
+    [
+     {
+      "Erc20": "0xaf6997a70feb868df863d5380c3ab93da4297edc"
+     },
+     {
+      "name": "Shiba Inu (Portal)",
+      "symbol": "SHIB",
+      "decimals": 18,
+      "minimal_balance": 1266000000000000000000
+     }
+    ],
+    [
+     {
+      "Erc20": "0x492f4e41bd378d6dbd92ab645ac4020b01784db3"
+     },
+     {
+      "name": "Tether USD (Portal from Ethereum)",
+      "symbol": "USDTet",
+      "decimals": 6,
+      "minimal_balance": 10000
+     }
+    ],
+    [
+     {
+      "Erc20": "0x604cae74cdc395a8824557d422fccf8db6809a2f"
+     },
+     {
+      "name": "Chainlink (Portal)",
+      "symbol": "LINK",
+      "decimals": 18,
+      "minimal_balance": 1700000000000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 11
+     },
+     {
+      "name": "Crust Parachain Native Token",
+      "symbol": "CRU",
+      "decimals": 12,
+      "minimal_balance": 10000000000
+     }
+    ],
+    [
+     {
+      "Erc20": "0xa7fb00459f5896c3bd4df97870b44e868ae663d7"
+     },
+     {
+      "name": "Jito Staked SOL",
+      "symbol": "JitoSOL",
+      "decimals": 9,
+      "minimal_balance": 10000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 12
+     },
+     {
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "decimals": 6,
+      "minimal_balance": 10000
+     }
+    ],
+    [
+     {
+      "Erc20": "0xd53e4ba478cca5080c47435769ff82f41e5e4cd0"
+     },
+     {
+      "name": "Arbitrum (Portal)",
+      "symbol": "ARB",
+      "decimals": 18,
+      "minimal_balance": 9000000000000000
+     }
+    ],
+    [
+     {
+      "Erc20": "0x5a4d6acdc4e3e5ab15717f407afe957f7a242578"
+     },
+     {
+      "name": "Wrapped Ether (Portal)",
+      "symbol": "WETH",
+      "decimals": 18,
+      "minimal_balance": 8500000000000
+     }
+    ],
+    [
+     {
+      "Erc20": "0x7d52316b1132c26626670fbf52aa7f5ce6f9b388"
+     },
+     {
+      "name": "Binance USD (Portal from BSC)",
+      "symbol": "BUSDbs",
+      "decimals": 18,
+      "minimal_balance": 10000000000000000
+     }
+    ],
+    [
+     {
+      "Erc20": "0x19eba3efa7d0e02956678c5f3c63c46beda2d7d8"
+     },
+     {
+      "name": "MATIC (Portal from Polygon)",
+      "symbol": "MATICpo",
+      "decimals": 18,
+      "minimal_balance": 12500000000000000
+     }
+    ],
+    [
+     {
+      "NativeAssetId": {
+       "Token": "DOT"
+      }
+     },
+     {
+      "name": "Polkadot",
+      "symbol": "DOT",
+      "decimals": 10,
+      "minimal_balance": 100000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 7
+     },
+     {
+      "name": "Equilibrium",
+      "symbol": "EQ",
+      "decimals": 9,
+      "minimal_balance": 1000000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 18
+     },
+     {
+      "name": "AIWeb3",
+      "symbol": "LOVA",
+      "decimals": 12,
+      "minimal_balance": 1
+     }
+    ],
+    [
+     {
+      "Erc20": "0x13fe490489204abde3265bfd81179e6ddd2020c3"
+     },
+     {
+      "name": "Uniswap (Portal)",
+      "symbol": "UNI",
+      "decimals": 18,
+      "minimal_balance": 2000000000000000
+     }
+    ],
+    [
+     {
+      "Erc20": "0xc80084af223c8b598536178d9361dc55bfda6818"
+     },
+     {
+      "name": "Wrapped Bitcoin (Portal)",
+      "symbol": "WBTC",
+      "decimals": 8,
+      "minimal_balance": 60
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 15
+     },
+     {
+      "name": "Centrifuge",
+      "symbol": "CFG",
+      "decimals": 18,
+      "minimal_balance": 1346900000000000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 3
+     },
+     {
+      "name": "interBTC",
+      "symbol": "IBTC",
+      "decimals": 8,
+      "minimal_balance": 100
+     }
+    ]
+   ]
+  },
+  "AssetRegistry.Erc20IdToAddress": {
+   "count_returned": 17,
+   "rows": [
+    [
+     132093649,
+     "0x07df96d1341a7d16ba1ad431e2c847d978bc2bce"
+    ],
+    [
+     1227836993,
+     "0x492f4e41bd378d6dbd92ab645ac4020b01784db3"
+    ],
+    [
+     3577629604,
+     "0xd53e4ba478cca5080c47435769ff82f41e5e4cd0"
+    ],
+    [
+     2942932903,
+     "0xaf6997a70feb868df863d5380c3ab93da4297edc"
+    ],
+    [
+     4203760774,
+     "0xfa904c86b73fd041d6cc2aeed9e6ec0148fd51da"
+    ],
+    [
+     2818244677,
+     "0xa7fb00459f5896c3bd4df97870b44e868ae663d7"
+    ],
+    [
+     2804025085,
+     "0xa72206fdf839c785b3073870013f2fd57ba10b63"
+    ],
+    [
+     434873327,
+     "0x19eba3efa7d0e02956678c5f3c63c46beda2d7d8"
+    ],
+    [
+     1515023053,
+     "0x5a4d6acdc4e3e5ab15717f407afe957f7a242578"
+    ],
+    [
+     1419999745,
+     "0x54a37a01cd75b616d63e0ab665bffdb0143c52ae"
+    ],
+    [
+     2301484435,
+     "0x892ddd9387dbdecedaef878bd7acf8603109227f"
+    ],
+    [
+     335431940,
+     "0x13fe490489204abde3265bfd81179e6ddd2020c3"
+    ],
+    [
+     3355477167,
+     "0xc80084af223c8b598536178d9361dc55bfda6818"
+    ],
+    [
+     2102538603,
+     "0x7d52316b1132c26626670fbf52aa7f5ce6f9b388"
+    ],
+    [
+     4106691558,
+     "0xf4c723e61709d90f89939c1852f516e373d418a8"
+    ],
+    [
+     3513947721,
+     "0xd1729649ee6d5e3740ee2f9254c4226aabd0dc5b"
+    ],
+    [
+     1615638132,
+     "0x604cae74cdc395a8824557d422fccf8db6809a2f"
+    ]
+   ]
+  },
+  "Incentives.IncentiveRewardAmounts": {
+   "count_returned": 2,
+   "rows": [
+    [
+     [
+      {
+       "Dex": {
+        "DexShare": [
+         {
+          "Token": "ACA"
+         },
+         {
+          "ForeignAsset": 12
+         }
+        ]
+       }
+      },
+      {
+       "Token": "ACA"
+      }
+     ],
+     1800390000000
+    ],
+    [
+     [
+      {
+       "Earning": {
+        "Token": "ACA"
+       }
+      },
+      {
+       "Token": "ACA"
+      }
+     ],
+     96450600000000
+    ]
+   ]
+  },
+  "Incentives.ClaimRewardDeductionRates": {
+   "count_returned": 1,
+   "rows": [
+    [
+     {
+      "Earning": {
+       "Token": "ACA"
+      }
+     },
+     200000000000000000
+    ]
+   ]
+  },
+  "Rewards.PoolInfos": {
+   "count_returned": 19,
+   "rows": [
+    [
+     {
+      "Loans": {
+       "LiquidCrowdloan": 13
+      }
+     },
+     {
+      "total_shares": 180822475089332,
+      "rewards": []
+     }
+    ],
+    [
+     {
+      "Dex": {
+       "DexShare": [
+        {
+         "Token": "AUSD"
+        },
+        {
+         "LiquidCrowdloan": 13
+        }
+       ]
+      }
+     },
+     {
+      "total_shares": 410978359754569710,
+      "rewards": [
+       [
+        {
+         "Token": "ACA"
+        },
+        [
+         67231233498195842,
+         29855361772767521
+        ]
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "Dex": {
+       "DexShare": [
+        {
+         "Token": "ACA"
+        },
+        {
+         "Token": "AUSD"
+        }
+       ]
+      }
+     },
+     {
+      "total_shares": 240436357253462625,
+      "rewards": [
+       [
+        {
+         "Token": "ACA"
+        },
+        [
+         51911420601387750,
+         17344812013100675
+        ]
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "Dex": {
+       "DexShare": [
+        {
+         "Token": "AUSD"
+        },
+        {
+         "ForeignAsset": 4
+        }
+       ]
+      }
+     },
+     {
+      "total_shares": 1533369518905042,
+      "rewards": [
+       [
+        {
+         "Token": "ACA"
+        },
+        [
+         70076035207188,
+         64207965260670
+        ]
+       ],
+       [
+        {
+         "ForeignAsset": 4
+        },
+        [
+         30857215919249,
+         28273167449391
+        ]
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "Dex": {
+       "DexShare": [
+        {
+         "Token": "AUSD"
+        },
+        {
+         "Token": "LDOT"
+        }
+       ]
+      }
+     },
+     {
+      "total_shares": 12108828798813531,
+      "rewards": [
+       [
+        {
+         "Token": "ACA"
+        },
+        [
+         1574134379858088,
+         920378512445872
+        ]
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "Loans": {
+       "Token": "LDOT"
+      }
+     },
+     {
+      "total_shares": 24332719404006866,
+      "rewards": [
+       [
+        {
+         "Token": "ACA"
+        },
+        [
+         47173859997103535,
+         41517255081133756
+        ]
+       ],
+       [
+        {
+         "Token": "AUSD"
+        },
+        [
+         117786795243781658,
+         116587935648832125
+        ]
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "Dex": {
+       "DexShare": [
+        {
+         "Token": "DOT"
+        },
+        {
+         "LiquidCrowdloan": 13
+        }
+       ]
+      }
+     },
+     {
+      "total_shares": 487292993319852,
+      "rewards": [
+       [
+        {
+         "Token": "ACA"
+        },
+        [
+         34278620358524665,
+         6354871085271230
+        ]
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "Dex": {
+       "DexShare": [
+        {
+         "Token": "ACA"
+        },
+        {
+         "ForeignAsset": 12
+        }
+       ]
+      }
+     },
+     {
+      "total_shares": 740549576338042428,
+      "rewards": [
+       [
+        {
+         "Token": "ACA"
+        },
+        [
+         1135444861789286683,
+         783962162455872572
+        ]
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "Dex": {
+       "DexShare": [
+        {
+         "Token": "ACA"
+        },
+        {
+         "Erc20": "0xfa904c86b73fd041d6cc2aeed9e6ec0148fd51da"
+        }
+       ]
+      }
+     },
+     {
+      "total_shares": 300487605183174,
+      "rewards": []
+     }
+    ],
+    [
+     {
+      "Dex": {
+       "DexShare": [
+        {
+         "ForeignAsset": 12
+        },
+        {
+         "ForeignAsset": 20
+        }
+       ]
+      }
+     },
+     {
+      "total_shares": 3000000000,
+      "rewards": []
+     }
+    ],
+    [
+     {
+      "Earning": {
+       "Token": "ACA"
+      }
+     },
+     {
+      "total_shares": 148135661150255719830,
+      "rewards": [
+       [
+        {
+         "Token": "ACA"
+        },
+        [
+         161927289327915619958,
+         112626950916080785790
+        ]
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "Loans": {
+       "Token": "DOT"
+      }
+     },
+     {
+      "total_shares": 27378441139356,
+      "rewards": []
+     }
+    ],
+    [
+     {
+      "Loans": {
+       "Token": "ACA"
+      }
+     },
+     {
+      "total_shares": 4654710125781078725,
+      "rewards": [
+       [
+        {
+         "Token": "ACA"
+        },
+        [
+         120643781679651270,
+         68717717773953239
+        ]
+       ],
+       [
+        {
+         "DexShare": [
+          {
+           "Token": "ACA"
+          },
+          {
+           "Token": "AUSD"
+          }
+         ]
+        },
+        [
+         2093886437764952,
+         380072330918489
+        ]
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "Dex": {
+       "DexShare": [
+        {
+         "Token": "DOT"
+        },
+        {
+         "ForeignAsset": 10
+        }
+       ]
+      }
+     },
+     {
+      "total_shares": 569185693943,
+      "rewards": [
+       [
+        {
+         "Token": "DOT"
+        },
+        [
+         93040107614,
+         57957311471
+        ]
+       ],
+       [
+        {
+         "ForeignAsset": 10
+        },
+        [
+         6512653438544080958072,
+         4056964827200253759757
+        ]
+       ]
+      ]
+     }
+    ],
+    [
+     "NomineesElection",
+     {
+      "total_shares": 2727706789458976,
+      "rewards": []
+     }
+    ],
+    [
+     {
+      "Loans": {
+       "StableAssetPoolToken": 0
+      }
+     },
+     {
+      "total_shares": 41848053033123,
+      "rewards": []
+     }
+    ],
+    [
+     {
+      "Dex": {
+       "DexShare": [
+        {
+         "Token": "ACA"
+        },
+        {
+         "Erc20": "0x07df96d1341a7d16ba1ad431e2c847d978bc2bce"
+        }
+       ]
+      }
+     },
+     {
+      "total_shares": 487137145888854728,
+      "rewards": [
+       [
+        {
+         "Token": "ACA"
+        },
+        [
+         359627402361603532,
+         148403263162388689
+        ]
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "Dex": {
+       "DexShare": [
+        {
+         "Token": "AUSD"
+        },
+        {
+         "ForeignAsset": 3
+        }
+       ]
+      }
+     },
+     {
+      "total_shares": 263910000000006,
+      "rewards": []
+     }
+    ],
+    [
+     {
+      "Dex": {
+       "DexShare": [
+        {
+         "Token": "DOT"
+        },
+        {
+         "ForeignAsset": 20
+        }
+       ]
+      }
+     },
+     {
+      "total_shares": 79585840707380,
+      "rewards": []
+     }
+    ]
+   ]
+  },
+  "TransactionPayment.TokenExchangeRate": {
+   "count_returned": 4,
+   "rows": [
+    [
+     {
+      "Token": "LDOT"
+     },
+     475809419069820
+    ],
+    [
+     {
+      "Token": "DOT"
+     },
+     52453683053328
+    ],
+    [
+     {
+      "Token": "AUSD"
+     },
+     139337121300233570
+    ],
+    [
+     {
+      "LiquidCrowdloan": 13
+     },
+     97813639929330
+    ]
+   ]
+  },
+  "TransactionPayment.AlternativeFeeSwapPath": {
+   "count_returned": 100,
+   "rows": [
+    [
+     "24mKsAMhEQ5FirK4PPuKRqXxPtJDcGYgXG3bR912z976J2hE",
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "265wj2TJT81RgghpkJFeFNJ3fiK7B1wVz3YRtv6QegZsfQ45",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "zt44pawNqWu79B1v5fcLGc61iSbtFCGAWLPLMfD1TESHxS1",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "239iSCrPTEUjMKvL9DGnu3vULYRvk5h3mUfKbzpdJzvQLBbz",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "243gmNwTA7gpDXGbHU3U2LWsDsggguNSnAVbcMGgc4WJEBvf",
+     [
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "241qHgyJgbrNHwg3QY8kXzLoxxD65TNhzeuBzAGhc5jv8qjp",
+     [
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "24dQ9jvb97RvjFmh9346B7sjjENy82pej2u2Zr6577gyh6k8",
+     [
+      {
+       "Token": "LDOT"
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "2449UQ1FrupifbBLgfC2JrFDrQvrjnEbvmaWJyvmWk2RyZ6X",
+     [
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "25W4ctr4DLhQ118mVKv8yd23TALj9Zrfq2GdHT4fLWaboJo6",
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "22msb5dp29odrgFtUWqumSdKA4qeqoPrVQtnZuZPZDSS97ob",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "2368HGusbbLbz4UFhvXNqfMF7wzMk5kySvuDwWhoTwaJBXtr",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "263L39uJ4RbKqdH4i9DuX1R3TtShgVWg1WPxPGhxPqYcQedG",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "25BVLXJCXsgYLhDEoBdsefvhn1dMdpoMpswokeaKDtMyxSXr",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "21EoXXemesRuNwiQ4ejcFwUzdcZ3RrwN6egz56wStR2Ctndd",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "25ueGj2NdfYErzQqC25mRBqPbwrQ8AqUtcuTzBwJc9giP4Ko",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "26bHKYziGRfejn6xVaHceWcFssr5pnMQYnpxVV1eunE5ysZz",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "22ncBneQHx5LqX3f8iH3ZZP3uHvfmHCoGj44cDs8wqGpccsS",
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "22qeMueDyBBanAU6qUvThApS9ty5nsKsT3zYmu7f9rfYrwHW",
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "24TjMYYPNLdZisXoAbevePZNwWp2sFc8fNfV1nXnxZjLuWoG",
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "21etwP3cn2zrLuXPnXGyqWCWq7RxkyhGHj88HcpzwUvngJdA",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "21RQMwdfdaTHTb3ChoM6PE8Yea34ZDbe8H4y1TXpYwVxCNBS",
+     [
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "22xLnWnzuaQgtzzGkTJyEQcbrzoMWGVx1z8W1WYvw6Q1jVah",
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "21ZsNeqxg7JCzEamR8f68sGN6LuU7TWsQ4zNYmb4CozDLUUk",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "24zpgjrS1CiiKZzrc4KSxuzTUiK6rbmufS9RBynGqKy5HNwq",
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "24mD958dEBNdWBAAaYrdyiLkN9txWMm86fMoC4SJSuXcQQ7j",
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "21RU7g7xG3mNJ2qfLRL7jXPJsjJ2ZHw3ddWPXNCmsRk7vKQq",
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "23WDNDxXRWQKRURkSRYa91fUvo3odXZ9SmmDAGoEkjsvrwGx",
+     [
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "253kdsNsudHNHbYXcAEv6i1ni3JeRayEAx5toZkmrd3ipUpQ",
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "26Pgf8yQnGNRgL2HDP1xpWz8NcnNAFK9bL6BecbkqMU9czCV",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "22HisyHAKAxn5qQdE1nmW62XFFba1e5JJV355uyVCHPDFKp8",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "23LBuWro6zrbxiHKB98R228ks8Fvvm1MEUtB54UfPez3jghT",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "244P6PPUhBa9gUnfQmeS1GL3G36J6gHSVbj6t8d3qJKgwQqx",
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "24uGhTUf7T5FkbwfiHX3B2DCoA95JbhjnJV1JjSYhNqapomt",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "25eEBxvPWFzZTXAC1e6K8r8teRGNThjFk1DVtKUq9ddxH9Bg",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "25KCNamnf5UCik99g5E23ERRhW1MZvM1UMfzSWkoe9yY8AjE",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "21ezrnEj8DzF7deuN93w4PdUfk5fKZqdHn83Fg1KLAXy769P",
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "23eQBuBJTkT3Jzh8218mDNLo95ZSMjtV8g5SCxn3hR8co4Tp",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "21xyQVnZHs8eU7SZ3akagJf2DuiX7raM62LidsgVCoVwWYKR",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "21sL62ZFtpvCJikoETxjLfB5M94fovR1LWhRfBperixtpu4G",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "24vBLvrj35UuPFNT41uuLN6gyY1XpBwAPAB6f7FNhVUqhazy",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "23HZUnv6HwkK3WpXj4ztdQWwYD5a47mAYHHXYKeATz41Swcv",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "22vH2xi41xMrZC7Jsx1J3orGXRzcYtJgg5WXdsC1jx9TQjCy",
+     [
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "22Z49ACQ6TR3kU3umdAGuHbm6jFn59FJNVvSpLdtM1882Fik",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "25d4XPDwuk7T8kpQwchdkxX6CfAL3ekUPBjULBwEo2WYYZty",
+     [
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "25zxwMEKMt7UqQFdsFViY4GYHkLHoNMLpou5TBx6KPCi3WNH",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "23eisFYWmaAKa88y5TGJoAycmweMLWgUkpeW8TyoGg6upZZi",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "214i5bLYsMQBa7T3AVqan64qsFcGMd5WcRd2PteCfe53V1g9",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "22yBtxUpYjur8P9nmUzEuJx7LyCXVQo4w3EP23NdYz1jnuDk",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "21ssPic8zP1CRem1sVMiVNabwGusi1bjuRZZbbZhE6ZDieeu",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "24Qo3fPSFXhS92jpZyMeVkQYHo7awStUdTuGEN7ExhuoURMa",
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "224QWCtyVykm2RxRt9L8ncj1wnzMTAwN2ShT65K94dtpAeiS",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "22k53shihXYqnCYSJWJKCWaL1gJCECPmojAcWZYkciYsc9Z4",
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "24jN31gBEicncQSnZAcWsykbvrFKWtqfMyvfS1xg4Yfv7Qr9",
+     [
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "217GxTxEramu18da2nFEpxQc1z3jaCHSEJ4DaR2k4BMgmjY3",
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "231RuCHtBbugLWCRqZKmrHrxEr8FPHb1zNJkjLuxPRgj41RW",
+     [
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "26DsxQm7iNT4UXLkQuKS9p1EoENbSrkeKmBoJjKG6Pu7UnLe",
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "23sQxkLcVTSSh7x96Hk9T7gpteenGmdH2S8nvAWX3iGqbgJB",
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "21RsbiGxAq9sbpZN6kzxX7Qzp6pgrR61nr2S1wmHgzZdUqPS",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "21WwJJVoHGontnvh7dBWEguTieXLaeKk3ZP2ka6gz2TgVKzs",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "21bt5m6mrw4UHdhUW7Pge7DLyYUdyhpMJrDKRt1MFG2yZ6QV",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "25NTWYNcQdnULUu1fYDRiYph2Bt77aqTCuFiYskViiUb3wiX",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "23ThX2JsyX27ASZfc7SyfaAPYaGgFrRLQvWUYviyQFWHbw99",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "22pzwYCvjpLBnpwxadoSo8i8G99ospvsp6psLXhDzXcaPJap",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "223zoPZteQrP9XUbLs6qTeSzkSXVAW3jJPX8Zt7UFCkPgx59",
+     [
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "25V6HJsaQynKk4kYeqiHPdZBQgxxG8LS4ez2UdFwGGe7PkgY",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "zt87mFqdc7XL2YGnn3RZiG8LENEi682eouY2uPnCkvNpMgU",
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "24NfJ4UEiLKzjTm1wSCfT6FayEnPU1PEDbQ3g6hQ5PKNhsjA",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "21SCPuHr5uhLNADCmxN1CTafJSNgA1tgHZhVfgKHF6zb9W1W",
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "21KxgmcM8nrAvEyaibgPz6e11Qp2jRDLbCg3JHUUqqxUT5U5",
+     [
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "23BUxvQomcMqwm2zw3DZAGvvKHHv8KPWT7UFxcukwp85rtiA",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "23sfRw8SrxVw6vCmkHUr4YjEgWBruP6p6b6SDwXDXFL6T911",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "24LC2HBFyBPsNJUGbXnjfk1ijFWP1QTmchV4oBKUZyMQdqFF",
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "25mSQSgUYtsmRQSfYMk9USBCweFECamJJ3Db8hTiPp413PA9",
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "26aip6t3hupmbtGcy561FCw1NLXnZBLXusr8BPd2kEnGAmhF",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "23xo61o5obRSek61wyL4qncZoBQrnqEYHw7gN8GjqrHThHUo",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "22eiMD6PKTHNTQ3R1mVzXKpEiTSfZmj7pWqQZ7muHgT9jHxn",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "21M6BMyzDK4cbgKyVTYgbFdGoqLJZuzLqgzMh8Tngnd1iM3A",
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "21hM282PB4uiCf3pknkFX1RDNcuPk1wxQGVajGpcSGK9aYmC",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "24zZtS3PTFdPvciFH7Nbj1j81eh9yhjKXGPjAuXF1KtZvHub",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "263GF64Cvc5vVsRCXcMGdUcNFNCHri5UDbp5hgYdxuqubihM",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "23bqQNwGBpLqXA69DaANuX6GSaAyj2RkGo71DUBCK3bsLd2Z",
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "227GTMUMiGar9W53222H8SzaJJvSUcT6LAWRKGH1drbNyXvj",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "26aqxqn6TqpxE39hbx1PZnKP34rrDZSW6vad8rqCuSfzHaU4",
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "23qHg4s9jRBnemFKsMqVXkF3hyw2k91kByHKt5fVoWmUP9LZ",
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "236C7gAUeBczXPacJKJXv3bijQ1HRHbvMPiUSbJLrTKxYKF7",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "21phC8WYL36L7wFMCERbT89wREGJuKyCjP2jzGxYxAQcZ6rX",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "23xnovkrGzqabZAjkp76eTRa4wLK79YFK4BzX9GuTFCA2WBf",
+     [
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "23CdXtbrRTTh4LuszjdjrsoAUvHZNRCzniHjqqp5Qg1pVD5k",
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "23db5MejvbNiH8NT19TnYZucPUSM2vfpmFK6EyarVXgzuX5U",
+     [
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "24WATuLZKYiK1ebkdB195UC3rMyy34RTCAHJnVLXmy5xkt12",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "21nntdjTMEybCBbXC4QQDUMZYjEidqLuKt5FVBT1xLV7zafY",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "24117KeiGrXxSY1m3k6drEjjmjn227bGVDDfPzgrKoPNspHH",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "ztV9jVYJNWbRPhhadyQy5BXADwQagrSPDFiQWyTh3gFY99m",
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "22ZKCpiexZTtbcjE8XFwp62e7Rw9ZYV77rDm2yzvgofpQh5u",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "24HHHYSCgGiEhzSwizxHbTKbHLU1f7ATFX4LA8kd42dAiPZt",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "22ERRNm5gZz2wxvAsph9LC1njrYvpQAnCx3z2oAaraS5rFJS",
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "26Q6pAhHPpzg5AahbV7FNtehh3T2f7aYCSh7f62cgbyEHG4v",
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "24KRc3RRoTomfXv6rvQ2yqx7UXa7fqpdEAypzSxQ2BDmWsPT",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "234brDxZRVEmMCGJ1YhMmaERE49khRynELkcSvNzhcqdjHSH",
+     [
+      {
+       "Token": "DOT"
+      },
+      {
+       "LiquidCrowdloan": 13
+      },
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ],
+    [
+     "26VfC8mDdLvTdZyKVV334GBUTGq9WAcRgtzKUo29yy51rnyK",
+     [
+      {
+       "Token": "AUSD"
+      },
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "ACA"
+      }
+     ]
+    ]
+   ]
+  },
+  "TransactionPayment.GlobalFeeSwapPath": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "Parameters.Parameters": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "EVM.CodeInfos": {
+   "count_returned": 50,
+   "rows": [
+    [
+     "0x002d4f3df437ab4c03685b8948febb1ccdccc8f5c4bad5c3d407814778fd1e10",
+     {
+      "code_size": 18718,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x00454d31d07acc6a50857657d3af06b54c0b9ca840d0f2732585936eb208388d",
+     {
+      "code_size": 22981,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x01d42d676bffae473f361806c9b069dbc6b0dca77e8428cffff0d4113d154405",
+     {
+      "code_size": 17578,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x03a4568429ffdfb64d882522133b9b346147b9ed79718e5b11b3bfd953d687a4",
+     {
+      "code_size": 23984,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x03e69f7ce809e81687c69b19a7d7cca45b6d551ffdec73d9bb87178476de1abf",
+     {
+      "code_size": 5492,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x041e70f4d25ac845667f4398c07ed6fdb56c955a42baedec65edbb56e2ad1ceb",
+     {
+      "code_size": 12735,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x04a34e26f03212ec6f8f0ddcb1ad0839d7360b05412417dfd72c9c333defc245",
+     {
+      "code_size": 5835,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x051fc9a5147e558dcc08d2cb645ddf5f89bbc7171096bde7f8f48fd36f9726f4",
+     {
+      "code_size": 5041,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x05df29f30d2f6c3297186e4784c0910616ee43cdacd3498952c3d6cee511c902",
+     {
+      "code_size": 19832,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x065daea397483bf92166771751a29e658d034b988c100a670275839684ab638a",
+     {
+      "code_size": 5352,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x070d301740254d52fca63e491a923b12bf89da3e15d38fea612c16e927f56d10",
+     {
+      "code_size": 3376,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x07249451a0464e681c7b14530d7b1463f634b9e744bc18d08d382509edd9c89e",
+     {
+      "code_size": 11987,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x0796f68983afa9166b96bfb646ebfefa67dfcee7116f276e4ccdc49b10ca99b8",
+     {
+      "code_size": 18678,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x08492d97017811f486aabff66f9c79fd1988cbd54a33d1edab05eeaceeed43b1",
+     {
+      "code_size": 6737,
+      "ref_count": 7
+     }
+    ],
+    [
+     "0x0a34f3bb5c7fdfa9f26847c4256103eb5e0e904d16a6a7bf91ab7a125d6bcc68",
+     {
+      "code_size": 14954,
+      "ref_count": 4
+     }
+    ],
+    [
+     "0x0ab093637b2c363bbd4d17838c23ec78ee8f491cbf6b7183eaa0ebe66db730ab",
+     {
+      "code_size": 1395,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x0aba698a3bdb4f9cbe775b32a138ce9577e9eb8d4a2937a198b2784aacbd7c39",
+     {
+      "code_size": 4116,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x0afcf35fbcea4c0bfa394412c660770e4e41d0f78f9c6100cb80f9009389e949",
+     {
+      "code_size": 3553,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x0b7f0b8a98859d89a5c3b51d7f790baf840ec3702e5db1005b7fe120ba6c5b1d",
+     {
+      "code_size": 665,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x0bc579af96d9d34b4cc5c16e14fa2a196926eda66bb200d6f374112ac7927e13",
+     {
+      "code_size": 3984,
+      "ref_count": 5
+     }
+    ],
+    [
+     "0x0bd5cd3ba8810e446d1963988674f7aafeefe4d8d4b082b590324bdac324c67b",
+     {
+      "code_size": 3405,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x0c514dba2bab2c0aaee76804aa3127e6643500b4542f1ae9a86630905b38f983",
+     {
+      "code_size": 8643,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x0cddd40d307ec829cce02d4fb5738112c0a47185190d1f244d09656929578eae",
+     {
+      "code_size": 2624,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x0cdefd9734137499af1d982c0cfe3b14551843b125d611bc4f0f9daf4bc53b38",
+     {
+      "code_size": 4584,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x0d52ff2d75ff346466e67062777abee0581a1b5a025553a5b3fb20998df6ffb5",
+     {
+      "code_size": 5551,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x0e70cd980e0f446e85aee2b55781985f7527ec7589130a68a5ec30e935667880",
+     {
+      "code_size": 6555,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x0ee98fc12e100cbe18826ec11c2f4d6ea312909b781ead76046477262aa3f61e",
+     {
+      "code_size": 3495,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x10a6caea421f6f18e4323a9d4081d597c11d8429233e4347617c44f714be57a7",
+     {
+      "code_size": 3670,
+      "ref_count": 14
+     }
+    ],
+    [
+     "0x10d64531e49205b6719396c7d7d1ed7d2af11c2e9d8eba60cbbfd12091e2c952",
+     {
+      "code_size": 2616,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x11267d1eb08335c6d556ff2b0cdd3ea9ed3062f6ce2ac5e4d3410df48aba3e98",
+     {
+      "code_size": 11234,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x151617128cfbd4d0db6b614e78735b04ddfe175d9f59d5da9a64cfdd6e149c0c",
+     {
+      "code_size": 1508,
+      "ref_count": 2
+     }
+    ],
+    [
+     "0x184962e112926389582a67d85297a745339e331ba978ffa1148bb59044c2a5ae",
+     {
+      "code_size": 3818,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x1acb6161c8ef004e50e385f86ea395e255095aadb4d6533e8fea62c4e8105d44",
+     {
+      "code_size": 19057,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x1f4392999150360e28e4a0a83cbcb8d02f37368f79fd9d2d234d2e4c79fc91d4",
+     {
+      "code_size": 831,
+      "ref_count": 47
+     }
+    ],
+    [
+     "0x208c6968f91d97317f948f507fb5c074cf7ac657ccecf87886e7cd76e314394b",
+     {
+      "code_size": 9519,
+      "ref_count": 2
+     }
+    ],
+    [
+     "0x21842597390c4c6e3c1239e434a682b054bd9548eee5e9b1d6a4482731023c0f",
+     {
+      "code_size": 23800,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x22233782aedf9d027724c65e3ba9684f5d6d3a2663ad633a2cc59a2b2204e71a",
+     {
+      "code_size": 6204,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x22bc69c79b0579905e947afe3e111ec713d0f9948a173ec2ef0f7d982593e6bf",
+     {
+      "code_size": 6266,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x22d378e8531a906a910b71d2f2965ede8411d08542a24269a4ef35c7001f6bbc",
+     {
+      "code_size": 1040,
+      "ref_count": 2
+     }
+    ],
+    [
+     "0x238eb2812c78f10ecc4f52ea70ad7ce2efb775cb2f821edb1d0e9414881e0749",
+     {
+      "code_size": 4068,
+      "ref_count": 5
+     }
+    ],
+    [
+     "0x2486fdd2d69b22fac19f2ee29cd2bfac817d8166670e5792e36ae8d6361a16ed",
+     {
+      "code_size": 9831,
+      "ref_count": 7
+     }
+    ],
+    [
+     "0x25338c31422b5fcc057a4a8ff54f17fe2ab85fe92de9e98d30145fa12f6cfb77",
+     {
+      "code_size": 680,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x25df983dc5182f5dab4532a6897f1fc861ec1ef1c5ab5dd9d619bf93975ccc60",
+     {
+      "code_size": 1665,
+      "ref_count": 3
+     }
+    ],
+    [
+     "0x260150b273e39a3fca006c6964205d7a498f8e42653d80d9cc8d9ef67fcf8ae4",
+     {
+      "code_size": 6382,
+      "ref_count": 2
+     }
+    ],
+    [
+     "0x264743d470e24d08a813fce2a63f7144f80f85271a651c6577f38bd4da850f93",
+     {
+      "code_size": 9554,
+      "ref_count": 6
+     }
+    ],
+    [
+     "0x26e996d00868b16019e917afb904e6742a2f796fb3ef71e8ad9b1c6c0d1842c8",
+     {
+      "code_size": 12929,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x27f07ca2043beecd94f35e4a58df147d24545d16ba32bd2d7c549cf6b11578e6",
+     {
+      "code_size": 14595,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x2840027470c5747a680a6bb9f1e6e129211469cb65156fe1c528ac10aa9dc3ec",
+     {
+      "code_size": 23781,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x2878b99c2ff3b4baec919c70ea5b4b906df63bd0d1a431469f461902d1c9a01e",
+     {
+      "code_size": 12893,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x29073dca8fdc24dc2f4b25fe72ee7c5a7567ecd1fcc0b7a674149c90000b4d2b",
+     {
+      "code_size": 4584,
+      "ref_count": 12
+     }
+    ]
+   ]
+  },
+  "Honzon.Authorization": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "Tokens.Accounts#aca/trsy": {
+   "count_returned": 29,
+   "rows": [
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "ACA"
+       },
+       {
+        "Erc20": "0x07df96d1341a7d16ba1ad431e2c847d978bc2bce"
+       }
+      ]
+     },
+     {
+      "free": 122039914786,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 3
+     },
+     {
+      "free": 16400,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 17
+     },
+     {
+      "free": 122013039023476,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 21
+     },
+     {
+      "free": 3328200000000,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 4
+     },
+     {
+      "free": 303883833458,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 13
+     },
+     {
+      "free": 301653203821,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 1
+     },
+     {
+      "free": 1005519600000,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 12
+     },
+     {
+      "free": 1185631,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "AUSD"
+       },
+       {
+        "LiquidCrowdloan": 13
+       }
+      ]
+     },
+     {
+      "free": 438076912011,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "AUSD"
+       },
+       {
+        "ForeignAsset": 3
+       }
+      ]
+     },
+     {
+      "free": 71456666443,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 14
+     },
+     {
+      "free": 15336,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "ACA"
+       },
+       {
+        "ForeignAsset": 12
+       }
+      ]
+     },
+     {
+      "free": 70343559341,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "AUSD"
+       },
+       {
+        "Token": "LDOT"
+       }
+      ]
+     },
+     {
+      "free": 66957496559,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "DOT"
+       },
+       {
+        "LiquidCrowdloan": 13
+       }
+      ]
+     },
+     {
+      "free": 565997125,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "LDOT"
+     },
+     {
+      "free": 307388473993,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 11
+     },
+     {
+      "free": 808240000,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 9
+     },
+     {
+      "free": 412680000000,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "ACA"
+       },
+       {
+        "Erc20": "0xfa904c86b73fd041d6cc2aeed9e6ec0148fd51da"
+       }
+      ]
+     },
+     {
+      "free": 25574020,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 20
+     },
+     {
+      "free": 361698709,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "DOT"
+     },
+     {
+      "free": 463998218333,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "AUSD"
+       },
+       {
+        "ForeignAsset": 4
+       }
+      ]
+     },
+     {
+      "free": 23073725441,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "AUSD"
+     },
+     {
+      "free": 441922983882028,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 8
+     },
+     {
+      "free": 93240000,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 2
+     },
+     {
+      "free": 8939574089203083949,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 0
+     },
+     {
+      "free": 22366407705909743193,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "StableAssetPoolToken": 0
+     },
+     {
+      "free": 586443715,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 10
+     },
+     {
+      "free": 266025045022218231681,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "ACA"
+       },
+       {
+        "Token": "AUSD"
+       }
+      ]
+     },
+     {
+      "free": 807248709925,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "LiquidCrowdloan": 13
+     },
+     {
+      "free": 111563453199,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ]
+   ]
+  },
+  "Tokens.Accounts#aca/loan": {
+   "count_returned": 4,
+   "rows": [
+    [
+     {
+      "Token": "LDOT"
+     },
+     {
+      "free": 24332719404006894,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "DOT"
+     },
+     {
+      "free": 27378441139356,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "StableAssetPoolToken": 0
+     },
+     {
+      "free": 41848053033123,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "LiquidCrowdloan": 13
+     },
+     {
+      "free": 180822475089332,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ]
+   ]
+  },
+  "Tokens.Accounts#aca/dexm": {
+   "count_returned": 22,
+   "rows": [
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "ACA"
+       },
+       {
+        "Erc20": "0x07df96d1341a7d16ba1ad431e2c847d978bc2bce"
+       }
+      ]
+     },
+     {
+      "free": 466229439415535,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 3
+     },
+     {
+      "free": 369531,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "LDOT"
+       },
+       {
+        "Erc20": "0xa7fb00459f5896c3bd4df97870b44e868ae663d7"
+       }
+      ]
+     },
+     {
+      "free": 16,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 4
+     },
+     {
+      "free": 1781759365039390,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 12
+     },
+     {
+      "free": 2091513600,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "AUSD"
+       },
+       {
+        "LiquidCrowdloan": 13
+       }
+      ]
+     },
+     {
+      "free": 17939545042826512,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "ACA"
+       },
+       {
+        "ForeignAsset": 19
+       }
+      ]
+     },
+     {
+      "free": 99999999999999999,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "AUSD"
+       },
+       {
+        "ForeignAsset": 3
+       }
+      ]
+     },
+     {
+      "free": 410784900000015,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "ACA"
+       },
+       {
+        "ForeignAsset": 12
+       }
+      ]
+     },
+     {
+      "free": 1,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "AUSD"
+       },
+       {
+        "Token": "LDOT"
+       }
+      ]
+     },
+     {
+      "free": 464000324559573,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "DOT"
+       },
+       {
+        "LiquidCrowdloan": 13
+       }
+      ]
+     },
+     {
+      "free": 14027316831205,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "LDOT"
+     },
+     {
+      "free": 194899080967818,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 20
+     },
+     {
+      "free": 428476033885285648,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 19
+     },
+     {
+      "free": 26232278392604564,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "DOT"
+     },
+     {
+      "free": 540697341313630,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "DOT"
+       },
+       {
+        "ForeignAsset": 10
+       }
+      ]
+     },
+     {
+      "free": 204924353750,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "AUSD"
+       },
+       {
+        "ForeignAsset": 4
+       }
+      ]
+     },
+     {
+      "free": 270668579287761,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "AUSD"
+     },
+     {
+      "free": 798166770872556236,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 18
+     },
+     {
+      "free": 808868061812450559,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 10
+     },
+     {
+      "free": 1614611817830638463628070,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "ACA"
+       },
+       {
+        "Token": "AUSD"
+       }
+      ]
+     },
+     {
+      "free": 4566459395076418,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "LiquidCrowdloan": 13
+     },
+     {
+      "free": 757845291893310,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ]
+   ]
+  },
+  "Tokens.Accounts#aca/cdpt": {
+   "count_returned": 2,
+   "rows": [
+    [
+     {
+      "ForeignAsset": 14
+     },
+     {
+      "free": 92341876302,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "LDOT"
+     },
+     {
+      "free": 566779912312873,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ]
+   ]
+  },
+  "Tokens.Accounts#aca/cdpe": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "Tokens.Accounts#aca/homa": {
+   "count_returned": 4,
+   "rows": [
+    [
+     {
+      "Token": "LDOT"
+     },
+     {
+      "free": 4141749677429,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "DOT"
+     },
+     {
+      "free": 2300013987127962,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "AUSD"
+     },
+     {
+      "free": 2849111524984,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "LiquidCrowdloan": 13
+     },
+     {
+      "free": 17434785422,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ]
+   ]
+  },
+  "Tokens.Accounts#aca/hztr": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "Tokens.Accounts#aca/hmtr": {
+   "count_returned": 1,
+   "rows": [
+    [
+     {
+      "Token": "LDOT"
+     },
+     {
+      "free": 1554637898304061,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ]
+   ]
+  },
+  "Tokens.Accounts#aca/inct": {
+   "count_returned": 17,
+   "rows": [
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "ACA"
+       },
+       {
+        "Erc20": "0x07df96d1341a7d16ba1ad431e2c847d978bc2bce"
+       }
+      ]
+     },
+     {
+      "free": 487137145888854728,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 4
+     },
+     {
+      "free": 52710862825737,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 13
+     },
+     {
+      "free": 1105798376794181,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "ForeignAsset": 12
+       },
+       {
+        "ForeignAsset": 20
+       }
+      ]
+     },
+     {
+      "free": 3000000000,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "AUSD"
+       },
+       {
+        "LiquidCrowdloan": 13
+       }
+      ]
+     },
+     {
+      "free": 410978359754569710,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "AUSD"
+       },
+       {
+        "ForeignAsset": 3
+       }
+      ]
+     },
+     {
+      "free": 263910000000006,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "ACA"
+       },
+       {
+        "ForeignAsset": 12
+       }
+      ]
+     },
+     {
+      "free": 740549576338042428,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "AUSD"
+       },
+       {
+        "Token": "LDOT"
+       }
+      ]
+     },
+     {
+      "free": 12108828798813531,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "DOT"
+       },
+       {
+        "LiquidCrowdloan": 13
+       }
+      ]
+     },
+     {
+      "free": 487292993319852,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "ACA"
+       },
+       {
+        "Erc20": "0xfa904c86b73fd041d6cc2aeed9e6ec0148fd51da"
+       }
+      ]
+     },
+     {
+      "free": 300487605183174,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "DOT"
+     },
+     {
+      "free": 94663852219,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "DOT"
+       },
+       {
+        "ForeignAsset": 10
+       }
+      ]
+     },
+     {
+      "free": 569185693943,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "AUSD"
+       },
+       {
+        "ForeignAsset": 4
+       }
+      ]
+     },
+     {
+      "free": 1533369518905042,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "AUSD"
+     },
+     {
+      "free": 11925915875958433,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "DOT"
+       },
+       {
+        "ForeignAsset": 20
+       }
+      ]
+     },
+     {
+      "free": 79585840707380,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 10
+     },
+     {
+      "free": 6626272362364311798249,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "ACA"
+       },
+       {
+        "Token": "AUSD"
+       }
+      ]
+     },
+     {
+      "free": 267984516715986322,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ]
+   ]
+  },
+  "Tokens.Accounts#aca/cpot": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "Tokens.Accounts#aca/reve": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "Tokens.Accounts#aca/aNFT": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "Tokens.Accounts#aca/urls": {
+   "count_returned": 6,
+   "rows": [
+    [
+     {
+      "ForeignAsset": 4
+     },
+     {
+      "free": 4634958908000000,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 13
+     },
+     {
+      "free": 9903623805446,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "DOT"
+     },
+     {
+      "free": 9000104320,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "AUSD"
+     },
+     {
+      "free": 1600000000000,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 10
+     },
+     {
+      "free": 10000016000000000000,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "ACA"
+       },
+       {
+        "Token": "AUSD"
+       }
+      ]
+     },
+     {
+      "free": 10710400000000000,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ]
+   ]
+  },
+  "Tokens.Accounts#aca/fees": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "Tokens.Accounts#aca/lqcl": {
+   "count_returned": 1,
+   "rows": [
+    [
+     {
+      "Token": "DOT"
+     },
+     {
+      "free": 23723477625136911,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ]
+   ]
+  },
+  "Tokens.Accounts#nuts/sta": {
+   "count_returned": 3,
+   "rows": [
+    [
+     {
+      "ForeignAsset": 13
+     },
+     {
+      "free": 3837129980808646,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "LDOT"
+     },
+     {
+      "free": 10444605089864111,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "DOT"
+     },
+     {
+      "free": 920055806327193,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ]
+   ]
+  },
+  "Tokens.Accounts#aca/hzbg": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "Tokens.Accounts#aca/xNFT": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "System.Number": 12383912,
+  "Balances.TotalIssuance": 1319127120180453634703,
+  "CdpTreasury.DebitPool": 6182665672858482289,
+  "CdpTreasury.DebitOffsetBuffer": 3734615587502195269,
+  "CdpTreasury.ExpectedCollateralAuctionSize": {
+   "error": "Storage function requires 1 parameters, 0 given"
+  },
+  "CdpEngine.LastAccumulationSecs": 1794093090,
+  "CdpEngine.LiquidationContracts": [],
+  "AuctionManager.TotalCollateralInAuction": {
+   "error": "Storage function requires 1 parameters, 0 given"
+  },
+  "AuctionManager.TotalTargetInAuction": 0,
+  "Homa.RelayChainCurrentEra": 2349,
+  "Homa.TotalStakingBonded": 19376758882225950,
+  "Homa.ToBondPool": 0,
+  "Homa.TotalVoidLiquid": 0,
+  "Homa.UnclaimedRedemption": 2299967520880990,
+  "Homa.Unbondings": {
+   "error": "Storage function requires 2 parameters, 0 given"
+  },
+  "Homa.CommissionRate": 10000000000000000,
+  "Homa.FastMatchFeeRate": 10000000000000000,
+  "Homa.EstimatedRewardRatePerEra": 261160000000000,
+  "Homa.SoftBondedCapPerSubAccount": 160000000000000000,
+  "StableAsset.PoolCount": 1,
+  "EmergencyShutdown.IsShutdown": true,
+  "EmergencyShutdown.CanRefund": true,
+  "TransactionPayment.PoolSize": {
+   "error": "Storage function requires 1 parameters, 0 given"
+  },
+  "TransactionPayment.SwapBalanceThreshold": {
+   "error": "Storage function requires 1 parameters, 0 given"
+  },
+  "TransactionPayment.NextFeeMultiplier": 1000000000000,
+  "TransactionPayment.OverrideChargeFeeMethod": null,
+  "Auction.AuctionsIndex": 1464,
+  "EVM.ChainId": 787,
+  "EVM.NetworkContractIndex": 33554432,
+  "AssetRegistry.NextForeignAssetId": 22,
+  "AssetRegistry.NextStableAssetId": 1,
+  "LiquidCrowdloan.RedeemCurrencyId": null,
+  "Incentives.ClaimRewardDeductionCurrency": {
+   "error": "Storage function requires 1 parameters, 0 given"
+  },
+  "AcalaOracle.HasDispatched": [],
+  "Balances.Account#aca/trsy": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/trsy": {
+   "nonce": 0,
+   "consumers": 1,
+   "providers": 30,
+   "sufficients": 0,
+   "data": {
+    "free": 35374267656729995247,
+    "reserved": 400000000000,
+    "frozen": 0,
+    "flags": 170141183460469231731687303715884105728
+   }
+  },
+  "Balances.Account#aca/loan": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/loan": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 5,
+   "sufficients": 0,
+   "data": {
+    "free": 4655001673758778725,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 170141183460469231731687303715884105728
+   }
+  },
+  "Balances.Account#aca/dexm": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/dexm": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 23,
+   "sufficients": 0,
+   "data": {
+    "free": 12349869030268181015,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 170141183460469231731687303715884105728
+   }
+  },
+  "Balances.Account#aca/cdpt": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/cdpt": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 3,
+   "sufficients": 0,
+   "data": {
+    "free": 41941180818802765769,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 170141183460469231731687303715884105728
+   }
+  },
+  "Balances.Account#aca/cdpe": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/cdpe": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 0,
+   "sufficients": 0,
+   "data": {
+    "free": 0,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 170141183460469231731687303715884105728
+   }
+  },
+  "Balances.Account#aca/homa": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/homa": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 5,
+   "sufficients": 0,
+   "data": {
+    "free": 4000000000000,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 0
+   }
+  },
+  "Balances.Account#aca/hztr": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/hztr": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 1,
+   "sufficients": 0,
+   "data": {
+    "free": 2100000000000,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 0
+   }
+  },
+  "Balances.Account#aca/hmtr": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/hmtr": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 2,
+   "sufficients": 0,
+   "data": {
+    "free": 100000000000,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 0
+   }
+  },
+  "Balances.Account#aca/inct": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/inct": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 18,
+   "sufficients": 0,
+   "data": {
+    "free": 60875243549789375775,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 170141183460469231731687303715884105728
+   }
+  },
+  "Balances.Account#aca/cpot": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/cpot": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 1,
+   "sufficients": 0,
+   "data": {
+    "free": 100000000000,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 0
+   }
+  },
+  "Balances.Account#aca/reve": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/reve": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 1,
+   "sufficients": 0,
+   "data": {
+    "free": 44037480583064705,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 170141183460469231731687303715884105728
+   }
+  },
+  "Balances.Account#aca/aNFT": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/aNFT": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 1,
+   "sufficients": 0,
+   "data": {
+    "free": 80200000000,
+    "reserved": 54079800000000,
+    "frozen": 0,
+    "flags": 0
+   }
+  },
+  "Balances.Account#aca/urls": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/urls": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 7,
+   "sufficients": 0,
+   "data": {
+    "free": 3362346425410000000,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 170141183460469231731687303715884105728
+   }
+  },
+  "Balances.Account#aca/fees": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/fees": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 0,
+   "sufficients": 0,
+   "data": {
+    "free": 0,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 170141183460469231731687303715884105728
+   }
+  },
+  "Balances.Account#aca/lqcl": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/lqcl": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 1,
+   "sufficients": 0,
+   "data": {
+    "free": 0,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 170141183460469231731687303715884105728
+   }
+  },
+  "Balances.Account#nuts/sta": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#nuts/sta": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 5,
+   "sufficients": 0,
+   "data": {
+    "free": 5907970449812,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 0
+   }
+  },
+  "Balances.Account#aca/hzbg": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/hzbg": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 0,
+   "sufficients": 0,
+   "data": {
+    "free": 0,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 170141183460469231731687303715884105728
+   }
+  },
+  "Balances.Account#aca/xNFT": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/xNFT": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 0,
+   "sufficients": 0,
+   "data": {
+    "free": 0,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 170141183460469231731687303715884105728
+   }
+  },
+  "CdpEngine.DefaultDebitExchangeRate": 100000000000000000,
+  "CdpEngine.DefaultLiquidationRatio": 1500000000000000000,
+  "CdpEngine.MinimumDebitValue": 50000000000000,
+  "Dex.GetExchangeFee": [
+   3,
+   1000
+  ]
+ }
+}

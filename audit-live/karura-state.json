@@ -1,0 +1,9585 @@
+{
+ "chain": "karura",
+ "generated_at_utc": "2026-11-07T23:13:16.164584+00:00",
+ "rpc": "https://karura-rpc.aca-api.network",
+ "evm_rpc": "https://eth-rpc-karura.aca-api.network",
+ "ci_run_id": "42424157610",
+ "errors": [],
+ "anchor": {
+  "finalized_hash": "0xd472feb475c36dd2e903f230592724fcc2b27b936cdb257c81703eaa0f2fbc31",
+  "finalized_header": {
+   "digest": {
+    "logs": [
+     "0x066175726120b24ee90800000000",
+     "0x04525053529018c19ea0683034a16beddbd82e9cd88fc9d01863bffb85e32690df59c3599205fe719508",
+     "0x05617572610101aa51899c4bd952b348175de47c8be804e34b043788930a0a7a7a6eeb2abbd42ae33288580d1f0bc34252809d0c19c060455ef23c85c4b607851d553449414d8d"
+    ]
+   },
+   "extrinsicsRoot": "0x96fc5bc0042de036eadb314c6bd3b9a41d9d6c4d0e53ba350f356c42e15a850e",
+   "number": "0xc37e59",
+   "parentHash": "0x0a4a22599431400fbce26feda60dc524086c65685f79882b27c7011861cc424e",
+   "stateRoot": "0xe77c6b5aa31ba2b3f4c7bd6fb16ae2f63878f1aa0c9b37bb01641c67c0cfdc82"
+  },
+  "finalized_block_number": 12811865,
+  "runtime_version": {
+   "specName": "karura",
+   "implName": "karura",
+   "specVersion": 2370,
+   "transactionVersion": 2
+  }
+ },
+ "runtime_code": {
+  "storage_key": "0x3a636f6465",
+  "bytes": 1932964,
+  "sha256": "0xc89def58e6b7ed5148041a905abdc4b97c4795c7cf7fa14e90075ed7c6530cdf",
+  "blake2b_256": "0x6aa0263c1a43549c262de85604f6c01a12e416ce27a990ab131be8ae284dedf3"
+ },
+ "evm": {
+  "chainId": "0x2ae",
+  "blockNumber": "0xc37e5d",
+  "codes": {
+   "0x0000000000000000000100000000000000000000": {
+    "symbol": "ACA",
+    "present": false
+   },
+   "0x0000000000000000000100000000000000000001": {
+    "symbol": "AUSD",
+    "present": false
+   },
+   "0x0000000000000000000100000000000000000002": {
+    "symbol": "DOT",
+    "present": false
+   },
+   "0x0000000000000000000100000000000000000003": {
+    "symbol": "LDOT",
+    "present": false
+   },
+   "0x0000000000000000000100000000000000000004": {
+    "symbol": "TAP",
+    "present": false
+   },
+   "0x0000000000000000000200000000000000000001": {
+    "symbol": "LP_ACA_AUSD",
+    "present": false
+   },
+   "0x0000000000000000000200000000010000000003": {
+    "symbol": "LP_LDOT_AUSD",
+    "present": false
+   },
+   "0x000000000000000000020000000001020000000d": {
+    "symbol": "LP_LCDOT_AUSD",
+    "present": false
+   },
+   "0x000000000000000000020000000002020000000d": {
+    "symbol": "LP_LCDOT_DOT",
+    "present": false
+   },
+   "0x0000000000000000000200000000000107df96d1": {
+    "symbol": "LP_ACA_USDCET",
+    "present": false
+   },
+   "0x00000000000000000002000000000301a7fb0045": {
+    "symbol": "LP_LDOT_JITOSOL",
+    "present": false
+   },
+   "0x00000000000000000002000000000001fa904c86": {
+    "symbol": "LP_ACA_NEMO",
+    "present": false
+   },
+   "0x0000000000000000000200000000010300000003": {
+    "symbol": "LP_AUSD_IBTC",
+    "present": false
+   },
+   "0x000000000000000000020000000002030000000a": {
+    "symbol": "LP_DOT_UNQ",
+    "present": false
+   },
+   "0x0000000000000000000200000000010300000004": {
+    "symbol": "LP_AUSD_INTR",
+    "present": false
+   },
+   "0x0000000000000000000300000000000000000000": {
+    "symbol": "SA_KSM",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x903c68ae33370dd87dd9f0321fee047e068154a0141d006363683660b5a4c367",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000300000000000000000001": {
+    "symbol": "SA_3USD",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x903c68ae33370dd87dd9f0321fee047e068154a0141d006363683660b5a4c367",
+    "matches_repo_bytecode": false
+   },
+   "0x000000000000000000040000000000000000000d": {
+    "symbol": "LCDOT_13",
+    "present": false
+   },
+   "0x0000000000000000000500000000000000000000": {
+    "symbol": "FA_RMRK",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000500000000000000000001": {
+    "symbol": "FA_ARIS",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000500000000000000000002": {
+    "symbol": "FA_QTZ",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000500000000000000000003": {
+    "symbol": "FA_MOVR",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000500000000000000000004": {
+    "symbol": "FA_HKO",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000500000000000000000005": {
+    "symbol": "FA_CSM",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000500000000000000000006": {
+    "symbol": "FA_KICO",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000500000000000000000007": {
+    "symbol": "FA_USDT",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x903c68ae33370dd87dd9f0321fee047e068154a0141d006363683660b5a4c367",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000500000000000000000008": {
+    "symbol": "FA_TEER",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000500000000000000000009": {
+    "symbol": "FA_NEER",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x000000000000000000050000000000000000000a": {
+    "symbol": "FA_KMA",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x000000000000000000050000000000000000000b": {
+    "symbol": "FA_BSX",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x000000000000000000050000000000000000000c": {
+    "symbol": "FA_AIR",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x000000000000000000050000000000000000000d": {
+    "symbol": "FA_CRAB",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x000000000000000000050000000000000000000e": {
+    "symbol": "FA_GENS",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x000000000000000000050000000000000000000f": {
+    "symbol": "FA_EQD",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000500000000000000000010": {
+    "symbol": "FA_TUR",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000500000000000000000011": {
+    "symbol": "FA_PCHU",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000500000000000000000012": {
+    "symbol": "FA_SDN",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000500000000000000000013": {
+    "symbol": "FA_LT",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000100000000000000000080": {
+    "symbol": "KAR",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x903c68ae33370dd87dd9f0321fee047e068154a0141d006363683660b5a4c367",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000100000000000000000081": {
+    "symbol": "KUSD",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x903c68ae33370dd87dd9f0321fee047e068154a0141d006363683660b5a4c367",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000100000000000000000082": {
+    "symbol": "KSM",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000100000000000000000083": {
+    "symbol": "LKSM",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000100000000000000000084": {
+    "symbol": "TAI",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x903c68ae33370dd87dd9f0321fee047e068154a0141d006363683660b5a4c367",
+    "matches_repo_bytecode": false
+   },
+   "0x00000000000000000001000000000000000000a8": {
+    "symbol": "BNC",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x00000000000000000001000000000000000000a9": {
+    "symbol": "VSKSM",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x00000000000000000001000000000000000000aa": {
+    "symbol": "PHA",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x00000000000000000001000000000000000000ab": {
+    "symbol": "KINT",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x00000000000000000001000000000000000000ac": {
+    "symbol": "KBTC",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000200000000800000000083": {
+    "symbol": "LP_LKSM_KAR",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000200000000800300000002": {
+    "symbol": "LP_QTZ_KAR",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000200000000800000000082": {
+    "symbol": "LP_KAR_KSM",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000200000000820000000083": {
+    "symbol": "LP_LKSM_KSM",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000200000000820300000000": {
+    "symbol": "LP_RMRK_KSM",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000200000000820300000001": {
+    "symbol": "LP_ARIS_KSM",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000200000000800000000081": {
+    "symbol": "LP_KAR_KUSD",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000200000000810000000082": {
+    "symbol": "LP_KSM_KUSD",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000200000000810000000083": {
+    "symbol": "LP_LKSM_KUSD",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x00000000000000000002000000008100000000a8": {
+    "symbol": "LP_BNC_KUSD",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x00000000000000000002000000008100000000aa": {
+    "symbol": "LP_PHA_KUSD",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x00000000000000000002000000008100000000ab": {
+    "symbol": "LP_KINT_KUSD",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x00000000000000000002000000008100000000ac": {
+    "symbol": "LP_KBTC_KUSD",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000200000000810300000000": {
+    "symbol": "LP_RMRK_KUSD",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000200000000810300000002": {
+    "symbol": "LP_QTZ_KUSD",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000200000000810300000005": {
+    "symbol": "LP_CSM_KUSD",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x000000000000000000020000000081030000000c": {
+    "symbol": "LP_AIR_KUSD",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000200000000840300000000": {
+    "symbol": "LP_RMRK_TAI",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000500000000000000000014": {
+    "symbol": "FA_LIT",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000000000000000000000800": {
+    "symbol": "EVM",
+    "present": true,
+    "bytes": 3622,
+    "sha256": "0xfa56a12676aa553619a5af559016d425124c6e5343d775d04920b8db1a8e2383",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000000000000000000000801": {
+    "symbol": "ORACLE",
+    "present": true,
+    "bytes": 695,
+    "sha256": "0x15981eda1014174217e16f9da062e2906c5a379b537dcbde4ef7a9d49e8dc626",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000000000000000000000802": {
+    "symbol": "SCHEDULE",
+    "present": false
+   },
+   "0x0000000000000000000000000000000000000803": {
+    "symbol": "DEXV2",
+    "present": true,
+    "bytes": 6797,
+    "sha256": "0x294b6a8b7a577edd7933458e5fea6294b7aad75e668ef89bd10d892a55f3a542",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000000000000000000000804": {
+    "symbol": "STABLE_ASSET",
+    "present": false
+   },
+   "0x0000000000000000000000000000000000000805": {
+    "symbol": "HOMA",
+    "present": true,
+    "bytes": 1818,
+    "sha256": "0x94d96c584733d3fd9cc8a7cf15f11a12af8d2af04cbb8ad6f354f91f189c8479",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000000000000000000000806": {
+    "symbol": "EVM_ACCOUNTS",
+    "present": true,
+    "bytes": 1398,
+    "sha256": "0x91b59753c3bf22c84343c921183439a2ffcbd6117bd3565ffa0fa274a2737479",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000000000000000000000807": {
+    "symbol": "HONZON",
+    "present": false
+   },
+   "0x0000000000000000000000000000000000000808": {
+    "symbol": "INCENTIVES",
+    "present": true,
+    "bytes": 3692,
+    "sha256": "0xdbb754201ae18db6bf9ae6a8c699054b4cabeab6cb73fda9b9b0b7a0e6de070d",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000000000000000000000809": {
+    "symbol": "XTOKENS",
+    "present": true,
+    "bytes": 6720,
+    "sha256": "0xc1d3e487eea0f1236738fa6bce943ac72aec24072b0c47eba1cf5ad69e6c6640",
+    "matches_repo_bytecode": true
+   },
+   "0x000000000000000000000000000000000000080a": {
+    "symbol": "LIQUID_CROWDLOAN",
+    "present": false
+   },
+   "0x000000000000000000000000000000000000080b": {
+    "symbol": "EARNING",
+    "present": true,
+    "bytes": 4116,
+    "sha256": "0x91f14ec37b11fce93bdfcc5c5381793fc8a427ee5ccfa2fc697fc9106340b580",
+    "matches_repo_bytecode": true
+   }
+  }
+ },
+ "storage_catalogue": [
+  {
+   "pallet": "System",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "System",
+   "item": "Account",
+   "modifier": "Default",
+   "value_type": "scale_info::3"
+  },
+  {
+   "pallet": "System",
+   "item": "ExtrinsicCount",
+   "modifier": "Optional",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "System",
+   "item": "InherentsApplied",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "System",
+   "item": "BlockWeight",
+   "modifier": "Default",
+   "value_type": "scale_info::9"
+  },
+  {
+   "pallet": "System",
+   "item": "AllExtrinsicsLen",
+   "modifier": "Optional",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "System",
+   "item": "BlockHash",
+   "modifier": "Default",
+   "value_type": "scale_info::13"
+  },
+  {
+   "pallet": "System",
+   "item": "ExtrinsicData",
+   "modifier": "Default",
+   "value_type": "scale_info::14"
+  },
+  {
+   "pallet": "System",
+   "item": "Number",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "System",
+   "item": "ParentHash",
+   "modifier": "Default",
+   "value_type": "scale_info::13"
+  },
+  {
+   "pallet": "System",
+   "item": "Digest",
+   "modifier": "Default",
+   "value_type": "scale_info::15"
+  },
+  {
+   "pallet": "System",
+   "item": "Events",
+   "modifier": "Default",
+   "value_type": "scale_info::19"
+  },
+  {
+   "pallet": "System",
+   "item": "EventCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "System",
+   "item": "EventTopics",
+   "modifier": "Default",
+   "value_type": "scale_info::257"
+  },
+  {
+   "pallet": "System",
+   "item": "LastRuntimeUpgrade",
+   "modifier": "Optional",
+   "value_type": "scale_info::258"
+  },
+  {
+   "pallet": "System",
+   "item": "UpgradedToU32RefCount",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "System",
+   "item": "UpgradedToTripleRefCount",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "System",
+   "item": "ExecutionPhase",
+   "modifier": "Optional",
+   "value_type": "scale_info::256"
+  },
+  {
+   "pallet": "System",
+   "item": "AuthorizedUpgrade",
+   "modifier": "Optional",
+   "value_type": "scale_info::259"
+  },
+  {
+   "pallet": "System",
+   "item": "ExtrinsicWeightReclaimed",
+   "modifier": "Default",
+   "value_type": "scale_info::10"
+  },
+  {
+   "pallet": "Timestamp",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Timestamp",
+   "item": "Now",
+   "modifier": "Default",
+   "value_type": "scale_info::12"
+  },
+  {
+   "pallet": "Timestamp",
+   "item": "DidUpdate",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "Scheduler",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Scheduler",
+   "item": "IncompleteSince",
+   "modifier": "Optional",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Scheduler",
+   "item": "Agenda",
+   "modifier": "Default",
+   "value_type": "scale_info::276"
+  },
+  {
+   "pallet": "Scheduler",
+   "item": "Retries",
+   "modifier": "Optional",
+   "value_type": "scale_info::452"
+  },
+  {
+   "pallet": "Scheduler",
+   "item": "Lookup",
+   "modifier": "Optional",
+   "value_type": "scale_info::33"
+  },
+  {
+   "pallet": "Multisig",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Multisig",
+   "item": "Multisigs",
+   "modifier": "Optional",
+   "value_type": "scale_info::456"
+  },
+  {
+   "pallet": "Proxy",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Proxy",
+   "item": "Proxies",
+   "modifier": "Default",
+   "value_type": "scale_info::459"
+  },
+  {
+   "pallet": "Proxy",
+   "item": "Announcements",
+   "modifier": "Default",
+   "value_type": "scale_info::463"
+  },
+  {
+   "pallet": "TransactionPause",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "TransactionPause",
+   "item": "PausedTransactions",
+   "modifier": "Optional",
+   "value_type": "scale_info::36"
+  },
+  {
+   "pallet": "TransactionPause",
+   "item": "PausedEvmPrecompiles",
+   "modifier": "Optional",
+   "value_type": "scale_info::36"
+  },
+  {
+   "pallet": "IdleScheduler",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "IdleScheduler",
+   "item": "Tasks",
+   "modifier": "Optional",
+   "value_type": "scale_info::48"
+  },
+  {
+   "pallet": "IdleScheduler",
+   "item": "NextTaskId",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "IdleScheduler",
+   "item": "PreviousRelayBlockNumber",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Preimage",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Preimage",
+   "item": "StatusFor",
+   "modifier": "Optional",
+   "value_type": "scale_info::469"
+  },
+  {
+   "pallet": "Preimage",
+   "item": "RequestStatusFor",
+   "modifier": "Optional",
+   "value_type": "scale_info::472"
+  },
+  {
+   "pallet": "Preimage",
+   "item": "PreimageFor",
+   "modifier": "Optional",
+   "value_type": "scale_info::477"
+  },
+  {
+   "pallet": "Balances",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Balances",
+   "item": "TotalIssuance",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Balances",
+   "item": "InactiveIssuance",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Account",
+   "modifier": "Default",
+   "value_type": "scale_info::5"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Locks",
+   "modifier": "Default",
+   "value_type": "scale_info::479"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Reserves",
+   "modifier": "Default",
+   "value_type": "scale_info::483"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Holds",
+   "modifier": "Default",
+   "value_type": "scale_info::487"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Freezes",
+   "modifier": "Default",
+   "value_type": "scale_info::497"
+  },
+  {
+   "pallet": "Tokens",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Tokens",
+   "item": "TotalIssuance",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Tokens",
+   "item": "Locks",
+   "modifier": "Default",
+   "value_type": "scale_info::502"
+  },
+  {
+   "pallet": "Tokens",
+   "item": "Accounts",
+   "modifier": "Default",
+   "value_type": "scale_info::505"
+  },
+  {
+   "pallet": "Tokens",
+   "item": "Reserves",
+   "modifier": "Default",
+   "value_type": "scale_info::506"
+  },
+  {
+   "pallet": "Vesting",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Vesting",
+   "item": "VestingSchedules",
+   "modifier": "Default",
+   "value_type": "scale_info::511"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "NextFeeMultiplier",
+   "modifier": "Default",
+   "value_type": "scale_info::64"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "AlternativeFeeSwapPath",
+   "modifier": "Optional",
+   "value_type": "scale_info::513"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "GlobalFeeSwapPath",
+   "modifier": "Optional",
+   "value_type": "scale_info::513"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "PoolSize",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "TokenExchangeRate",
+   "modifier": "Optional",
+   "value_type": "scale_info::64"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "SwapBalanceThreshold",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "OverrideChargeFeeMethod",
+   "modifier": "Optional",
+   "value_type": "scale_info::514"
+  },
+  {
+   "pallet": "Treasury",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Treasury",
+   "item": "ProposalCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Treasury",
+   "item": "Proposals",
+   "modifier": "Optional",
+   "value_type": "scale_info::518"
+  },
+  {
+   "pallet": "Treasury",
+   "item": "Deactivated",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Treasury",
+   "item": "Approvals",
+   "modifier": "Default",
+   "value_type": "scale_info::519"
+  },
+  {
+   "pallet": "Treasury",
+   "item": "SpendCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Treasury",
+   "item": "Spends",
+   "modifier": "Optional",
+   "value_type": "scale_info::521"
+  },
+  {
+   "pallet": "Treasury",
+   "item": "LastSpendPeriod",
+   "modifier": "Optional",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Bounties",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Bounties",
+   "item": "BountyCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Bounties",
+   "item": "Bounties",
+   "modifier": "Optional",
+   "value_type": "scale_info::524"
+  },
+  {
+   "pallet": "Bounties",
+   "item": "BountyDescriptions",
+   "modifier": "Optional",
+   "value_type": "scale_info::526"
+  },
+  {
+   "pallet": "Bounties",
+   "item": "BountyApprovals",
+   "modifier": "Default",
+   "value_type": "scale_info::519"
+  },
+  {
+   "pallet": "Tips",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Tips",
+   "item": "Tips",
+   "modifier": "Optional",
+   "value_type": "scale_info::528"
+  },
+  {
+   "pallet": "Tips",
+   "item": "Reasons",
+   "modifier": "Optional",
+   "value_type": "scale_info::14"
+  },
+  {
+   "pallet": "ParachainInfo",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "ParachainInfo",
+   "item": "ParachainId",
+   "modifier": "Default",
+   "value_type": "scale_info::169"
+  },
+  {
+   "pallet": "Authorship",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Authorship",
+   "item": "Author",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "CollatorSelection",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "CollatorSelection",
+   "item": "Invulnerables",
+   "modifier": "Default",
+   "value_type": "scale_info::531"
+  },
+  {
+   "pallet": "CollatorSelection",
+   "item": "Candidates",
+   "modifier": "Default",
+   "value_type": "scale_info::532"
+  },
+  {
+   "pallet": "CollatorSelection",
+   "item": "DesiredCandidates",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "CollatorSelection",
+   "item": "CandidacyBond",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "CollatorSelection",
+   "item": "SessionPoints",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "CollatorSelection",
+   "item": "NonCandidates",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Session",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Session",
+   "item": "Validators",
+   "modifier": "Default",
+   "value_type": "scale_info::69"
+  },
+  {
+   "pallet": "Session",
+   "item": "CurrentIndex",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Session",
+   "item": "QueuedChanged",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "Session",
+   "item": "QueuedKeys",
+   "modifier": "Default",
+   "value_type": "scale_info::535"
+  },
+  {
+   "pallet": "Session",
+   "item": "DisabledValidators",
+   "modifier": "Default",
+   "value_type": "scale_info::537"
+  },
+  {
+   "pallet": "Session",
+   "item": "NextKeys",
+   "modifier": "Optional",
+   "value_type": "scale_info::308"
+  },
+  {
+   "pallet": "Session",
+   "item": "KeyOwner",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "Aura",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Aura",
+   "item": "Authorities",
+   "modifier": "Default",
+   "value_type": "scale_info::544"
+  },
+  {
+   "pallet": "Aura",
+   "item": "CurrentSlot",
+   "modifier": "Default",
+   "value_type": "scale_info::546"
+  },
+  {
+   "pallet": "AuraExt",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "AuraExt",
+   "item": "Authorities",
+   "modifier": "Default",
+   "value_type": "scale_info::544"
+  },
+  {
+   "pallet": "AuraExt",
+   "item": "RelaySlotInfo",
+   "modifier": "Optional",
+   "value_type": "scale_info::547"
+  },
+  {
+   "pallet": "SessionManager",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "SessionManager",
+   "item": "SessionDuration",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "SessionManager",
+   "item": "DurationOffset",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "SessionManager",
+   "item": "SessionDurationChanges",
+   "modifier": "Default",
+   "value_type": "scale_info::33"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": "InboundXcmpSuspended",
+   "modifier": "Default",
+   "value_type": "scale_info::549"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": "OutboundXcmpStatus",
+   "modifier": "Default",
+   "value_type": "scale_info::552"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": "OutboundXcmpMessages",
+   "modifier": "Default",
+   "value_type": "scale_info::557"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": "SignalMessages",
+   "modifier": "Default",
+   "value_type": "scale_info::557"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": "QueueConfig",
+   "modifier": "Default",
+   "value_type": "scale_info::558"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": "QueueSuspended",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": "DeliveryFeeFactor",
+   "modifier": "Default",
+   "value_type": "scale_info::64"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "QueryCounter",
+   "modifier": "Default",
+   "value_type": "scale_info::12"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "Queries",
+   "modifier": "Optional",
+   "value_type": "scale_info::560"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "AssetTraps",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "SafeXcmVersion",
+   "modifier": "Optional",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "SupportedVersion",
+   "modifier": "Optional",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "VersionNotifiers",
+   "modifier": "Optional",
+   "value_type": "scale_info::12"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "VersionNotifyTargets",
+   "modifier": "Optional",
+   "value_type": "scale_info::566"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "VersionDiscoveryQueue",
+   "modifier": "Default",
+   "value_type": "scale_info::567"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "CurrentMigration",
+   "modifier": "Optional",
+   "value_type": "scale_info::570"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "RemoteLockedFungibles",
+   "modifier": "Optional",
+   "value_type": "scale_info::573"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "LockedFungibles",
+   "modifier": "Optional",
+   "value_type": "scale_info::577"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "XcmExecutionSuspended",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "ShouldRecordXcm",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "RecordedXcm",
+   "modifier": "Optional",
+   "value_type": "scale_info::93"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "AuthorizedAliases",
+   "modifier": "Optional",
+   "value_type": "scale_info::580"
+  },
+  {
+   "pallet": "UnknownTokens",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "UnknownTokens",
+   "item": "ConcreteFungibleBalances",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "UnknownTokens",
+   "item": "AbstractFungibleBalances",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "MessageQueue",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "MessageQueue",
+   "item": "BookStateFor",
+   "modifier": "Default",
+   "value_type": "scale_info::593"
+  },
+  {
+   "pallet": "MessageQueue",
+   "item": "ServiceHead",
+   "modifier": "Optional",
+   "value_type": "scale_info::168"
+  },
+  {
+   "pallet": "MessageQueue",
+   "item": "Pages",
+   "modifier": "Optional",
+   "value_type": "scale_info::597"
+  },
+  {
+   "pallet": "Authority",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Authority",
+   "item": "NextTaskIndex",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Authority",
+   "item": "SavedCalls",
+   "modifier": "Optional",
+   "value_type": "scale_info::600"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": "Proposals",
+   "modifier": "Default",
+   "value_type": "scale_info::602"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": "ProposalOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::280"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": "CostOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::603"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": "Voting",
+   "modifier": "Optional",
+   "value_type": "scale_info::604"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": "ProposalCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::69"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "GeneralCouncilMembership",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "GeneralCouncilMembership",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::606"
+  },
+  {
+   "pallet": "GeneralCouncilMembership",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": "Proposals",
+   "modifier": "Default",
+   "value_type": "scale_info::602"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": "ProposalOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::280"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": "CostOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::603"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": "Voting",
+   "modifier": "Optional",
+   "value_type": "scale_info::604"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": "ProposalCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::69"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "FinancialCouncilMembership",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "FinancialCouncilMembership",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::606"
+  },
+  {
+   "pallet": "FinancialCouncilMembership",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": "Proposals",
+   "modifier": "Default",
+   "value_type": "scale_info::602"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": "ProposalOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::280"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": "CostOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::603"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": "Voting",
+   "modifier": "Optional",
+   "value_type": "scale_info::604"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": "ProposalCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::69"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "HomaCouncilMembership",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "HomaCouncilMembership",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::606"
+  },
+  {
+   "pallet": "HomaCouncilMembership",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": "Proposals",
+   "modifier": "Default",
+   "value_type": "scale_info::602"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": "ProposalOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::280"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": "CostOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::603"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": "Voting",
+   "modifier": "Optional",
+   "value_type": "scale_info::604"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": "ProposalCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::69"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "TechnicalCommitteeMembership",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "TechnicalCommitteeMembership",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::606"
+  },
+  {
+   "pallet": "TechnicalCommitteeMembership",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "Democracy",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "PublicPropCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "PublicProps",
+   "modifier": "Default",
+   "value_type": "scale_info::614"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "DepositOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::617"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "ReferendumCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "LowestUnbaked",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "ReferendumInfoOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::618"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "VotingOf",
+   "modifier": "Default",
+   "value_type": "scale_info::621"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "LastTabledWasExternal",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "NextExternal",
+   "modifier": "Optional",
+   "value_type": "scale_info::627"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "Blacklist",
+   "modifier": "Optional",
+   "value_type": "scale_info::628"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "Cancellations",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "MetadataOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::13"
+  },
+  {
+   "pallet": "AcalaOracle",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "AcalaOracle",
+   "item": "RawValues",
+   "modifier": "Optional",
+   "value_type": "scale_info::630"
+  },
+  {
+   "pallet": "AcalaOracle",
+   "item": "Values",
+   "modifier": "Optional",
+   "value_type": "scale_info::630"
+  },
+  {
+   "pallet": "AcalaOracle",
+   "item": "HasDispatched",
+   "modifier": "Default",
+   "value_type": "scale_info::631"
+  },
+  {
+   "pallet": "OperatorMembershipAcala",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "OperatorMembershipAcala",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::634"
+  },
+  {
+   "pallet": "OperatorMembershipAcala",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "Auction",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Auction",
+   "item": "Auctions",
+   "modifier": "Optional",
+   "value_type": "scale_info::636"
+  },
+  {
+   "pallet": "Auction",
+   "item": "AuctionsIndex",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Auction",
+   "item": "AuctionEndTime",
+   "modifier": "Optional",
+   "value_type": "scale_info::36"
+  },
+  {
+   "pallet": "Rewards",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Rewards",
+   "item": "PoolInfos",
+   "modifier": "Default",
+   "value_type": "scale_info::638"
+  },
+  {
+   "pallet": "Rewards",
+   "item": "SharesAndWithdrawnRewards",
+   "modifier": "Default",
+   "value_type": "scale_info::644"
+  },
+  {
+   "pallet": "OrmlNFT",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "OrmlNFT",
+   "item": "NextClassId",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "OrmlNFT",
+   "item": "NextTokenId",
+   "modifier": "Default",
+   "value_type": "scale_info::12"
+  },
+  {
+   "pallet": "OrmlNFT",
+   "item": "Classes",
+   "modifier": "Optional",
+   "value_type": "scale_info::647"
+  },
+  {
+   "pallet": "OrmlNFT",
+   "item": "Tokens",
+   "modifier": "Optional",
+   "value_type": "scale_info::650"
+  },
+  {
+   "pallet": "OrmlNFT",
+   "item": "TokensByOwner",
+   "modifier": "Default",
+   "value_type": "scale_info::36"
+  },
+  {
+   "pallet": "Parameters",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Parameters",
+   "item": "Parameters",
+   "modifier": "Optional",
+   "value_type": "scale_info::656"
+  },
+  {
+   "pallet": "Prices",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Prices",
+   "item": "LockedPrice",
+   "modifier": "Optional",
+   "value_type": "scale_info::64"
+  },
+  {
+   "pallet": "Dex",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Dex",
+   "item": "LiquidityPool",
+   "modifier": "Default",
+   "value_type": "scale_info::640"
+  },
+  {
+   "pallet": "Dex",
+   "item": "TradingPairStatuses",
+   "modifier": "Default",
+   "value_type": "scale_info::660"
+  },
+  {
+   "pallet": "Dex",
+   "item": "ProvisioningPool",
+   "modifier": "Default",
+   "value_type": "scale_info::640"
+  },
+  {
+   "pallet": "Dex",
+   "item": "InitialShareExchangeRates",
+   "modifier": "Default",
+   "value_type": "scale_info::663"
+  },
+  {
+   "pallet": "DexOracle",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "DexOracle",
+   "item": "Cumulatives",
+   "modifier": "Default",
+   "value_type": "scale_info::665"
+  },
+  {
+   "pallet": "DexOracle",
+   "item": "AveragePrices",
+   "modifier": "Optional",
+   "value_type": "scale_info::668"
+  },
+  {
+   "pallet": "AggregatedDex",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "AggregatedDex",
+   "item": "AggregatedSwapPaths",
+   "modifier": "Optional",
+   "value_type": "scale_info::670"
+  },
+  {
+   "pallet": "Earning",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Earning",
+   "item": "Ledger",
+   "modifier": "Optional",
+   "value_type": "scale_info::673"
+  },
+  {
+   "pallet": "AuctionManager",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "AuctionManager",
+   "item": "CollateralAuctions",
+   "modifier": "Optional",
+   "value_type": "scale_info::678"
+  },
+  {
+   "pallet": "AuctionManager",
+   "item": "TotalCollateralInAuction",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "AuctionManager",
+   "item": "TotalTargetInAuction",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Loans",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Loans",
+   "item": "Positions",
+   "modifier": "Default",
+   "value_type": "scale_info::681"
+  },
+  {
+   "pallet": "Loans",
+   "item": "TotalPositions",
+   "modifier": "Default",
+   "value_type": "scale_info::681"
+  },
+  {
+   "pallet": "Honzon",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Honzon",
+   "item": "Authorization",
+   "modifier": "Optional",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "CdpTreasury",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "CdpTreasury",
+   "item": "ExpectedCollateralAuctionSize",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "CdpTreasury",
+   "item": "DebitPool",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "CdpTreasury",
+   "item": "DebitOffsetBuffer",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "CdpEngine",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "CdpEngine",
+   "item": "DebitExchangeRate",
+   "modifier": "Optional",
+   "value_type": "scale_info::64"
+  },
+  {
+   "pallet": "CdpEngine",
+   "item": "CollateralParams",
+   "modifier": "Optional",
+   "value_type": "scale_info::686"
+  },
+  {
+   "pallet": "CdpEngine",
+   "item": "LastAccumulationSecs",
+   "modifier": "Default",
+   "value_type": "scale_info::12"
+  },
+  {
+   "pallet": "CdpEngine",
+   "item": "LiquidationContracts",
+   "modifier": "Default",
+   "value_type": "scale_info::689"
+  },
+  {
+   "pallet": "EmergencyShutdown",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "EmergencyShutdown",
+   "item": "IsShutdown",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "EmergencyShutdown",
+   "item": "CanRefund",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "HonzonBridge",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "HonzonBridge",
+   "item": "BridgedStableCoinCurrencyId",
+   "modifier": "Optional",
+   "value_type": "scale_info::55"
+  },
+  {
+   "pallet": "Homa",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Homa",
+   "item": "RelayChainCurrentEra",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Homa",
+   "item": "StakingLedgers",
+   "modifier": "Optional",
+   "value_type": "scale_info::694"
+  },
+  {
+   "pallet": "Homa",
+   "item": "TotalStakingBonded",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Homa",
+   "item": "ToBondPool",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Homa",
+   "item": "TotalVoidLiquid",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Homa",
+   "item": "UnclaimedRedemption",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Homa",
+   "item": "RedeemRequests",
+   "modifier": "Optional",
+   "value_type": "scale_info::695"
+  },
+  {
+   "pallet": "Homa",
+   "item": "Unbondings",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Homa",
+   "item": "EstimatedRewardRatePerEra",
+   "modifier": "Default",
+   "value_type": "scale_info::688"
+  },
+  {
+   "pallet": "Homa",
+   "item": "SoftBondedCapPerSubAccount",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Homa",
+   "item": "CommissionRate",
+   "modifier": "Default",
+   "value_type": "scale_info::688"
+  },
+  {
+   "pallet": "Homa",
+   "item": "FastMatchFeeRate",
+   "modifier": "Default",
+   "value_type": "scale_info::688"
+  },
+  {
+   "pallet": "Homa",
+   "item": "LastEraBumpedBlock",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Homa",
+   "item": "BumpEraFrequency",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Homa",
+   "item": "NominateIntervalEra",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "XcmInterface",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "XcmInterface",
+   "item": "XcmDestWeightAndFee",
+   "modifier": "Default",
+   "value_type": "scale_info::699"
+  },
+  {
+   "pallet": "HomaValidatorList",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "HomaValidatorList",
+   "item": "Guarantees",
+   "modifier": "Optional",
+   "value_type": "scale_info::702"
+  },
+  {
+   "pallet": "HomaValidatorList",
+   "item": "TotalLockedByGuarantor",
+   "modifier": "Optional",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "HomaValidatorList",
+   "item": "ValidatorBackings",
+   "modifier": "Optional",
+   "value_type": "scale_info::705"
+  },
+  {
+   "pallet": "NomineesElection",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "NomineesElection",
+   "item": "Nominations",
+   "modifier": "Default",
+   "value_type": "scale_info::411"
+  },
+  {
+   "pallet": "NomineesElection",
+   "item": "Ledger",
+   "modifier": "Optional",
+   "value_type": "scale_info::707"
+  },
+  {
+   "pallet": "NomineesElection",
+   "item": "Votes",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "NomineesElection",
+   "item": "ReservedNominees",
+   "modifier": "Default",
+   "value_type": "scale_info::411"
+  },
+  {
+   "pallet": "Incentives",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Incentives",
+   "item": "IncentiveRewardAmounts",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Incentives",
+   "item": "ClaimRewardDeductionRates",
+   "modifier": "Default",
+   "value_type": "scale_info::688"
+  },
+  {
+   "pallet": "Incentives",
+   "item": "ClaimRewardDeductionCurrency",
+   "modifier": "Optional",
+   "value_type": "scale_info::55"
+  },
+  {
+   "pallet": "Incentives",
+   "item": "PendingMultiRewards",
+   "modifier": "Default",
+   "value_type": "scale_info::645"
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": "NextForeignAssetId",
+   "modifier": "Default",
+   "value_type": "scale_info::42"
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": "NextStableAssetId",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": "ForeignAssetLocations",
+   "modifier": "Optional",
+   "value_type": "scale_info::135"
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": "LocationToCurrencyIds",
+   "modifier": "Optional",
+   "value_type": "scale_info::55"
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": "Erc20IdToAddress",
+   "modifier": "Optional",
+   "value_type": "scale_info::45"
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": "AssetMetadatas",
+   "modifier": "Optional",
+   "value_type": "scale_info::235"
+  },
+  {
+   "pallet": "XNFT",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "XNFT",
+   "item": "ForeignAssetToClass",
+   "modifier": "Optional",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "XNFT",
+   "item": "ClassToForeignAsset",
+   "modifier": "Optional",
+   "value_type": "scale_info::134"
+  },
+  {
+   "pallet": "XNFT",
+   "item": "AssetInstanceToItem",
+   "modifier": "Optional",
+   "value_type": "scale_info::12"
+  },
+  {
+   "pallet": "XNFT",
+   "item": "ItemToAssetInstance",
+   "modifier": "Optional",
+   "value_type": "scale_info::141"
+  },
+  {
+   "pallet": "EVM",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "EVM",
+   "item": "ChainId",
+   "modifier": "Default",
+   "value_type": "scale_info::12"
+  },
+  {
+   "pallet": "EVM",
+   "item": "Accounts",
+   "modifier": "Optional",
+   "value_type": "scale_info::716"
+  },
+  {
+   "pallet": "EVM",
+   "item": "ContractStorageSizes",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "EVM",
+   "item": "AccountStorages",
+   "modifier": "Default",
+   "value_type": "scale_info::13"
+  },
+  {
+   "pallet": "EVM",
+   "item": "Codes",
+   "modifier": "Default",
+   "value_type": "scale_info::720"
+  },
+  {
+   "pallet": "EVM",
+   "item": "CodeInfos",
+   "modifier": "Optional",
+   "value_type": "scale_info::721"
+  },
+  {
+   "pallet": "EVM",
+   "item": "NetworkContractIndex",
+   "modifier": "Default",
+   "value_type": "scale_info::12"
+  },
+  {
+   "pallet": "EVM",
+   "item": "ExtrinsicOrigin",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "EVM",
+   "item": "XcmOrigin",
+   "modifier": "Optional",
+   "value_type": "scale_info::69"
+  },
+  {
+   "pallet": "EvmAccounts",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "EvmAccounts",
+   "item": "Accounts",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "EvmAccounts",
+   "item": "EvmAddresses",
+   "modifier": "Optional",
+   "value_type": "scale_info::45"
+  },
+  {
+   "pallet": "StableAsset",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "StableAsset",
+   "item": "PoolCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "StableAsset",
+   "item": "Pools",
+   "modifier": "Optional",
+   "value_type": "scale_info::725"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "UnincludedSegment",
+   "modifier": "Default",
+   "value_type": "scale_info::727"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "AggregatedUnincludedSegment",
+   "modifier": "Optional",
+   "value_type": "scale_info::736"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "PendingValidationCode",
+   "modifier": "Default",
+   "value_type": "scale_info::14"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "NewValidationCode",
+   "modifier": "Optional",
+   "value_type": "scale_info::14"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "ValidationData",
+   "modifier": "Optional",
+   "value_type": "scale_info::433"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "DidSetValidationCode",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "LastRelayChainBlockNumber",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "UpgradeRestrictionSignal",
+   "modifier": "Default",
+   "value_type": "scale_info::737"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "UpgradeGoAhead",
+   "modifier": "Default",
+   "value_type": "scale_info::734"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "RelayStateProof",
+   "modifier": "Optional",
+   "value_type": "scale_info::435"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "RelevantMessagingState",
+   "modifier": "Optional",
+   "value_type": "scale_info::739"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "HostConfiguration",
+   "modifier": "Optional",
+   "value_type": "scale_info::744"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "LastDmqMqcHead",
+   "modifier": "Default",
+   "value_type": "scale_info::746"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "LastHrmpMqcHeads",
+   "modifier": "Default",
+   "value_type": "scale_info::747"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "ProcessedDownwardMessages",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "HrmpWatermark",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "HrmpOutboundMessages",
+   "modifier": "Default",
+   "value_type": "scale_info::750"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "UpwardMessages",
+   "modifier": "Default",
+   "value_type": "scale_info::263"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "PendingUpwardMessages",
+   "modifier": "Default",
+   "value_type": "scale_info::263"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "UpwardDeliveryFeeFactor",
+   "modifier": "Default",
+   "value_type": "scale_info::64"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "AnnouncedHrmpMessagesPerCandidate",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "ReservedXcmpWeightOverride",
+   "modifier": "Optional",
+   "value_type": "scale_info::10"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "ReservedDmpWeightOverride",
+   "modifier": "Optional",
+   "value_type": "scale_info::10"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "CustomValidationHeadData",
+   "modifier": "Optional",
+   "value_type": "scale_info::14"
+  },
+  {
+   "pallet": "Sudo",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Sudo",
+   "item": "Key",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  }
+ ],
+ "storage": {
+  "_pallet_accounts": {
+   "aca/trsy": "23M5ttkmR6KcoTAAE6gcmibnKFtVaTP5yxnY8HF1BmrJ2A1i",
+   "aca/loan": "23M5ttkmR6KcoCvrNZsA97DQMPxQmqktF8DHYZSDW4HLcEDw",
+   "aca/dexm": "23M5ttkmR6KcnxentoqchgBdUjzMDSzFoUyf5qMs7FsmRMvV",
+   "aca/cdpt": "23M5ttkmR6KcnvsNJdmYTpLo9xfc54g8uCk55buDfiJPon69",
+   "aca/cdpe": "23M5ttkmR6KcnvsNJKoKoYzMBRX23jj5m7qcExWfe5hsGBEJ",
+   "aca/homa": "23M5ttkmR6Kco5pqN691bGfU3BhfU6QPG9arw6SR1XpNuQqu",
+   "aca/hztr": "23M5ttkmR6Kco5uGj64jEZbG6PYyZSwvjeoeUVTMqQEG71yu",
+   "aca/hmtr": "23M5ttkmR6Kco5p3LFGKMpMv4zvLkKdUQWW1wGGoV8zDX3am",
+   "aca/inct": "23M5ttkmR6Kco7bReRDve6bQUSAcwqebatp3fWGJYb4hDSDJ",
+   "aca/cpot": "23M5ttkmR6KcnvxCGaueuxSnUmxG9ruKBibH6i1yszogd348",
+   "aca/reve": "23M5ttkmR6KcoPWv3spZT4dLSyv87w8fQ8EzBjbyXUZXwmze",
+   "aca/aNFT": "23M5ttkmR6KcnsARyoG6rU92WXWxNb48A62qhP4iGeZHUjAr",
+   "aca/urls": "23M5ttkmR6KcoUwA7NqBjLuMJFWCvobsD9Zy95MgaAECEhit",
+   "aca/fees": "23M5ttkmR6Kco2CnDJKTP4L2EUmMbKqPs1NngXH2iQpCNe9Y",
+   "aca/lqcl": "23M5ttkmR6KcoCwfEJnoAgczRQdDq85ZedwGc3uzyPwiCoq8",
+   "nuts/sta": "23M5ttkp2zdM8qa6LFak4BySWZDsAVByjepAfr7kt929S1U9",
+   "aca/hzbg": "23M5ttkmR6Kco5uF5giywrRtXYxsiWXC9UoZ9KXBaNne6Fm8",
+   "aca/xNFT": "23M5ttkmR6Kcoa1e3LmTtpfEuQq3JfAMLdF6KYtsGkYE7ZX7"
+  },
+  "Tokens.TotalIssuance": {
+   "count_returned": 49,
+   "rows": [
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KSM"
+       },
+       {
+        "Token": "LKSM"
+       }
+      ]
+     },
+     1135893450482135
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "Token": "BNC"
+       }
+      ]
+     },
+     285481995295409632
+    ],
+    [
+     {
+      "ForeignAsset": 3
+     },
+     189569302628479551904
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KSM"
+       },
+       {
+        "ForeignAsset": 0
+       }
+      ]
+     },
+     74397348105940
+    ],
+    [
+     {
+      "ForeignAsset": 5
+     },
+     6533237482807457745
+    ],
+    [
+     {
+      "ForeignAsset": 17
+     },
+     22211118197321143433926
+    ],
+    [
+     {
+      "Token": "VSKSM"
+     },
+     164591004796348
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KAR"
+       },
+       {
+        "Token": "KSM"
+       }
+      ]
+     },
+     447684622650627577
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "ForeignAsset": 5
+       }
+      ]
+     },
+     24528147948412006
+    ],
+    [
+     {
+      "Token": "PHA"
+     },
+     141286416987838390
+    ],
+    [
+     {
+      "ForeignAsset": 4
+     },
+     2129930448085710
+    ],
+    [
+     {
+      "ForeignAsset": 13
+     },
+     6430917720503493690924
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KAR"
+       },
+       {
+        "ForeignAsset": 2
+       }
+      ]
+     },
+     52885529047905391
+    ],
+    [
+     {
+      "ForeignAsset": 1
+     },
+     783067976606389
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "Token": "KSM"
+       }
+      ]
+     },
+     684912166990766995
+    ],
+    [
+     {
+      "ForeignAsset": 12
+     },
+     1847305416986092051499690
+    ],
+    [
+     {
+      "StableAssetPoolToken": 1
+     },
+     23402018471326077
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "ForeignAsset": 2
+       }
+      ]
+     },
+     3190663767567757
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "ForeignAsset": 12
+       }
+      ]
+     },
+     2779872527086922
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "Token": "KBTC"
+       }
+      ]
+     },
+     15500825669982178
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "Token": "PHA"
+       }
+      ]
+     },
+     16103223755242350
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "ForeignAsset": 0
+       }
+      ]
+     },
+     12498698393921600
+    ],
+    [
+     {
+      "ForeignAsset": 7
+     },
+     122221038538
+    ],
+    [
+     {
+      "Token": "KSM"
+     },
+     39135489860947262
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KAR"
+       },
+       {
+        "Token": "KUSD"
+       }
+      ]
+     },
+     54247576834726873
+    ],
+    [
+     {
+      "ForeignAsset": 6
+     },
+     4300000000000000
+    ],
+    [
+     {
+      "ForeignAsset": 11
+     },
+     89658940132237533342
+    ],
+    [
+     {
+      "ForeignAsset": 9
+     },
+     94697443768162402401
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "Token": "KINT"
+       }
+      ]
+     },
+     11786380423644366
+    ],
+    [
+     {
+      "Token": "KBTC"
+     },
+     29753567
+    ],
+    [
+     {
+      "ForeignAsset": 20
+     },
+     1000000000000
+    ],
+    [
+     {
+      "ForeignAsset": 19
+     },
+     66986200000000
+    ],
+    [
+     {
+      "Token": "TAI"
+     },
+     10000000000000000000
+    ],
+    [
+     {
+      "Token": "LKSM"
+     },
+     530509175221888629
+    ],
+    [
+     {
+      "ForeignAsset": 16
+     },
+     262560000000
+    ],
+    [
+     {
+      "Token": "KINT"
+     },
+     67611199032068878
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KAR"
+       },
+       {
+        "Erc20": "0x1f3a10587a20114ea25ba1b388ee2dd4a337ce27"
+       }
+      ]
+     },
+     149095112580770135
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "Token": "LKSM"
+       }
+      ]
+     },
+     139497144492140587
+    ],
+    [
+     {
+      "Token": "KUSD"
+     },
+     2382974288055862755
+    ],
+    [
+     {
+      "ForeignAsset": 8
+     },
+     166003451525792
+    ],
+    [
+     {
+      "ForeignAsset": 2
+     },
+     8683999529801759012407398
+    ],
+    [
+     {
+      "ForeignAsset": 0
+     },
+     929099350800685
+    ],
+    [
+     {
+      "StableAssetPoolToken": 0
+     },
+     1939838410884341
+    ],
+    [
+     {
+      "ForeignAsset": 18
+     },
+     2818173070903030839165
+    ],
+    [
+     {
+      "ForeignAsset": 10
+     },
+     997036521085169835
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KSM"
+       },
+       {
+        "ForeignAsset": 1
+       }
+      ]
+     },
+     5679421956841
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "TAI"
+       },
+       {
+        "StableAssetPoolToken": 0
+       }
+      ]
+     },
+     338932713339387068
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KAR"
+       },
+       {
+        "Token": "LKSM"
+       }
+      ]
+     },
+     178315666631768725
+    ],
+    [
+     {
+      "Token": "BNC"
+     },
+     839095871116382023
+    ]
+   ]
+  },
+  "CdpEngine.DebitExchangeRate": {
+   "count_returned": 3,
+   "rows": [
+    [
+     {
+      "Token": "KSM"
+     },
+     105693078318913589
+    ],
+    [
+     {
+      "Token": "KAR"
+     },
+     104621307145767954
+    ],
+    [
+     {
+      "Token": "LKSM"
+     },
+     105735550201799625
+    ]
+   ]
+  },
+  "CdpEngine.CollateralParams": {
+   "count_returned": 4,
+   "rows": [
+    [
+     {
+      "Token": "KSM"
+     },
+     {
+      "maximum_total_debit_value": 0,
+      "interest_rate_per_sec": 0,
+      "liquidation_ratio": 0,
+      "liquidation_penalty": 0,
+      "required_collateral_ratio": 1850000000000000000
+     }
+    ],
+    [
+     {
+      "Token": "KAR"
+     },
+     {
+      "maximum_total_debit_value": 0,
+      "interest_rate_per_sec": 0,
+      "liquidation_ratio": 0,
+      "liquidation_penalty": 0,
+      "required_collateral_ratio": 1650000000000000000
+     }
+    ],
+    [
+     {
+      "Token": "LKSM"
+     },
+     {
+      "maximum_total_debit_value": 0,
+      "interest_rate_per_sec": 0,
+      "liquidation_ratio": 0,
+      "liquidation_penalty": 0,
+      "required_collateral_ratio": 2550000000000000000
+     }
+    ],
+    [
+     {
+      "StableAssetPoolToken": 0
+     },
+     {
+      "maximum_total_debit_value": 0,
+      "interest_rate_per_sec": 0,
+      "liquidation_ratio": 1600000000000000000,
+      "liquidation_penalty": 150000000000000000,
+      "required_collateral_ratio": 2100000000000000000
+     }
+    ]
+   ]
+  },
+  "Loans.TotalPositions": {
+   "count_returned": 4,
+   "rows": [
+    [
+     {
+      "Token": "KSM"
+     },
+     {
+      "collateral": 405086707958111,
+      "debit": 0
+     }
+    ],
+    [
+     {
+      "Token": "KAR"
+     },
+     {
+      "collateral": 1157030136966358,
+      "debit": 0
+     }
+    ],
+    [
+     {
+      "Token": "LKSM"
+     },
+     {
+      "collateral": 55585085516966407,
+      "debit": 0
+     }
+    ],
+    [
+     {
+      "StableAssetPoolToken": 0
+     },
+     {
+      "collateral": 1267738906607981,
+      "debit": 0
+     }
+    ]
+   ]
+  },
+  "Dex.LiquidityPool": {
+   "count_returned": 19,
+   "rows": [
+    [
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "ForeignAsset": 0
+      }
+     ],
+     [
+      16688993767952,
+      17880417582842
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "KAR"
+      },
+      {
+       "Erc20": "0x1f3a10587a20114ea25ba1b388ee2dd4a337ce27"
+      }
+     ],
+     [
+      217215683183214985,
+      2081417468
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "LKSM"
+      }
+     ],
+     [
+      806637681405250,
+      4609543069766182
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "KAR"
+      },
+      {
+       "Token": "KUSD"
+      }
+     ],
+     [
+      254573142289214973,
+      4489872884600563
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "KAR"
+      },
+      {
+       "ForeignAsset": 2
+      }
+     ],
+     [
+      26456814183485142,
+      2881966530354453783345735
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "KSM"
+      }
+     ],
+     [
+      286271108928864134,
+      3530417058170797
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "BNC"
+      }
+     ],
+     [
+      22694006155203030,
+      104328510467468187
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "ForeignAsset": 5
+      }
+     ],
+     [
+      17016368829461943,
+      1217195431599334118
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "ForeignAsset": 0
+      }
+     ],
+     [
+      2137300577489759,
+      28344011484699
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "ForeignAsset": 1
+      }
+     ],
+     [
+      93904173506,
+      51497909464545
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "KINT"
+      }
+     ],
+     [
+      301720121471565,
+      17304263221720025
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "TAI"
+      },
+      {
+       "StableAssetPoolToken": 0
+      }
+     ],
+     [
+      147532096085411149,
+      14343718498446
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "KAR"
+      },
+      {
+       "Token": "KSM"
+      }
+     ],
+     [
+      2980065773928929755,
+      646423338105640
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "ForeignAsset": 12
+      }
+     ],
+     [
+      1832901512998887,
+      133519576983261620163602
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "KAR"
+      },
+      {
+       "Token": "LKSM"
+      }
+     ],
+     [
+      980456085438420640,
+      1217765528067523
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "ForeignAsset": 2
+      }
+     ],
+     [
+      178854771390044,
+      1107575000835985896707320
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "PHA"
+      }
+     ],
+     [
+      11034759506905453,
+      28909800978236466
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "LKSM"
+      }
+     ],
+     [
+      50246806089839849,
+      3535007139377006
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "KBTC"
+      }
+     ],
+     [
+      25029062098498203,
+      6950953
+     ]
+    ]
+   ]
+  },
+  "Dex.TradingPairStatuses": {
+   "count_returned": 19,
+   "rows": [
+    [
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "ForeignAsset": 0
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "Token": "KAR"
+      },
+      {
+       "Erc20": "0x1f3a10587a20114ea25ba1b388ee2dd4a337ce27"
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "LKSM"
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "Token": "KAR"
+      },
+      {
+       "Token": "KUSD"
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "Token": "KAR"
+      },
+      {
+       "ForeignAsset": 2
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "KSM"
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "BNC"
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "ForeignAsset": 5
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "ForeignAsset": 0
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "ForeignAsset": 1
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "KINT"
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "Token": "TAI"
+      },
+      {
+       "StableAssetPoolToken": 0
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "Token": "KAR"
+      },
+      {
+       "Token": "KSM"
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "ForeignAsset": 12
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "Token": "KAR"
+      },
+      {
+       "Token": "LKSM"
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "ForeignAsset": 2
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "PHA"
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "LKSM"
+      }
+     ],
+     "Enabled"
+    ],
+    [
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "KBTC"
+      }
+     ],
+     "Enabled"
+    ]
+   ]
+  },
+  "Dex.InitialShareExchangeRates": {
+   "count_returned": 13,
+   "rows": [
+    [
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "ForeignAsset": 0
+      }
+     ],
+     [
+      1000000000000000000,
+      7718493834651394306
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "KAR"
+      },
+      {
+       "Erc20": "0x1f3a10587a20114ea25ba1b388ee2dd4a337ce27"
+      }
+     ],
+     [
+      1000000000000000000,
+      14999948350522176220798407
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "LKSM"
+      }
+     ],
+     [
+      1000000000000000000,
+      102114645537328084
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "KAR"
+      },
+      {
+       "Token": "KUSD"
+      }
+     ],
+     [
+      1000000000000000000,
+      933494882683239799
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "KAR"
+      },
+      {
+       "ForeignAsset": 2
+      }
+     ],
+     [
+      1000000000000000000,
+      12216300766
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "BNC"
+      }
+     ],
+     [
+      1000000000000000000,
+      11286522939273393195
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "ForeignAsset": 5
+      }
+     ],
+     [
+      1000000000000000000,
+      8262247944090927
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "ForeignAsset": 0
+      }
+     ],
+     [
+      1000000000000000000,
+      1221958068548148779416
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "KINT"
+      }
+     ],
+     [
+      1000000000000000000,
+      12253743197817179609
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "KAR"
+      },
+      {
+       "Token": "KSM"
+      }
+     ],
+     [
+      1000000000000000000,
+      44427394513246142348
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "ForeignAsset": 12
+      }
+     ],
+     [
+      1000000000000000000,
+      11660046918
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "ForeignAsset": 2
+      }
+     ],
+     [
+      1000000000000000000,
+      17734069095
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "KBTC"
+      }
+     ],
+     [
+      1000000000000000000,
+      395366674398282381481171245
+     ]
+    ]
+   ]
+  },
+  "DexOracle.AveragePrices": {
+   "error": "Storage function requires 1 parameters, 0 given"
+  },
+  "AggregatedDex.AggregatedSwapPaths": {
+   "count_returned": 2,
+   "rows": [
+    [
+     [
+      {
+       "Token": "LKSM"
+      },
+      {
+       "Token": "KUSD"
+      }
+     ],
+     [
+      {
+       "Taiga": [
+        0,
+        1,
+        0
+       ]
+      },
+      {
+       "Dex": [
+        {
+         "Token": "KSM"
+        },
+        {
+         "Token": "KUSD"
+        }
+       ]
+      }
+     ]
+    ],
+    [
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KUSD"
+      }
+     ],
+     [
+      {
+       "Taiga": [
+        0,
+        0,
+        1
+       ]
+      },
+      {
+       "Dex": [
+        {
+         "Token": "LKSM"
+        },
+        {
+         "Token": "KUSD"
+        }
+       ]
+      }
+     ]
+    ]
+   ]
+  },
+  "Auction.Auctions": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "Auction.AuctionEndTime": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "AuctionManager.CollateralAuctions": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "Earning.Ledger": {
+   "count_returned": 50,
+   "rows": [
+    [
+     "sCxZCMvzwHmoYmDnYsSCFBczDxrnuTAJnQseEpXnAdaQAPp",
+     {
+      "total": 10000000000000,
+      "active": 10000000000000,
+      "unlocking": []
+     }
+    ],
+    [
+     "u1GqVhJzSPDqX7hm4kwCfsVdjZrQXeKvybSQsG9tHE6r7JG",
+     {
+      "total": 350000000000000,
+      "active": 350000000000000,
+      "unlocking": []
+     }
+    ],
+    [
+     "sLSpArJFX6bnUfPjaeTo9EVbbQpi8GhKf7EkRLMUmYCHURH",
+     {
+      "total": 101214303090197,
+      "active": 101214303090197,
+      "unlocking": []
+     }
+    ],
+    [
+     "rcLMjUVo37o3osE68Esw15YrhizavDTL4bkSKnx9UWBiPEP",
+     {
+      "total": 330904782221732,
+      "active": 330904782221732,
+      "unlocking": []
+     }
+    ],
+    [
+     "tBogvEj9Cb6TcLMcyJhM9E99c7wgScMCAutJCZ9QUnjHkmv",
+     {
+      "total": 680000000000000,
+      "active": 680000000000000,
+      "unlocking": []
+     }
+    ],
+    [
+     "rr4YQMFewtEWbHTPKdGR75QdhqjA196fPdsfDv3mXTstkPf",
+     {
+      "total": 305439880373647584,
+      "active": 305439880373647584,
+      "unlocking": []
+     }
+    ],
+    [
+     "ssNS7jZbNcCPwNKThGSC5uv8MEgL133MjvG7764YSe9t92k",
+     {
+      "total": 250000000000000,
+      "active": 250000000000000,
+      "unlocking": []
+     }
+    ],
+    [
+     "pS1rk4DWVV8PXnLHuDvCAZDfszVUpB6mTNGojCREL72HxVd",
+     {
+      "total": 24703563860324,
+      "active": 24703563860324,
+      "unlocking": []
+     }
+    ],
+    [
+     "ozPx1gB8Us6rwMff3SL39CBeSrkpbvgh5nQ8kcsFKsoW6Mm",
+     {
+      "total": 74897708518106502,
+      "active": 74897708518106502,
+      "unlocking": []
+     }
+    ],
+    [
+     "snHND5rW8h52myWHL636h6tZ3uBwoCLvAQbZaiZJMiHkMYv",
+     {
+      "total": 47355247457973,
+      "active": 47355247457973,
+      "unlocking": []
+     }
+    ],
+    [
+     "qnZmyNYqYY9u3GLrzzUXCA4LR4c7hvxAJTdUfkdTH3NxXwa",
+     {
+      "total": 310000000000000,
+      "active": 310000000000000,
+      "unlocking": []
+     }
+    ],
+    [
+     "oSjqMantfZ8KgVjrf7yFYqNNoehnTktFA7KCFvNFUFh5x5Y",
+     {
+      "total": 38324919910893,
+      "active": 38324919910893,
+      "unlocking": []
+     }
+    ],
+    [
+     "rEkbam4C6E5Ba743W8NG7su18kRzSDcN6irYF22Svt16qDF",
+     {
+      "total": 50000000000000,
+      "active": 50000000000000,
+      "unlocking": []
+     }
+    ],
+    [
+     "pwRpyKaGtGb8qF3nHniPnfbWykuuQzhZFHfxzufgizQzNGH",
+     {
+      "total": 1170000000000000,
+      "active": 0,
+      "unlocking": [
+       {
+        "value": 1170000000000000,
+        "unlock_at": 10356735
+       }
+      ]
+     }
+    ],
+    [
+     "oPvRsj51KhaeURPZzPKqd8qPyrRoX6SrBD41JPC8FDuYYQA",
+     {
+      "total": 60000000000000,
+      "active": 60000000000000,
+      "unlocking": []
+     }
+    ],
+    [
+     "qm8uxKWrEnDPw6QCHLPWu12Hgnxm7bHwATdfwo4krMGgAvY",
+     {
+      "total": 6138150370915314,
+      "active": 0,
+      "unlocking": [
+       {
+        "value": 6138150370915314,
+        "unlock_at": 8297320
+       }
+      ]
+     }
+    ],
+    [
+     "tWCod3jTxkorTSqK39kcwLaF7vByvjJsfWB68Ub8qXkitsj",
+     {
+      "total": 2270198550763960,
+      "active": 2270198550763960,
+      "unlocking": []
+     }
+    ],
+    [
+     "pJdPLY6uQYCnG8JbrpSJtWrc3CTSbdNsMoYFDXkDSDGhER5",
+     {
+      "total": 52794839677910,
+      "active": 52794839677910,
+      "unlocking": []
+     }
+    ],
+    [
+     "snQTFxUFpRosLr3L4EgFNa3Ha7gjQnAzmwaGyCuyJJ1ZLXF",
+     {
+      "total": 277086891000000000,
+      "active": 277086891000000000,
+      "unlocking": []
+     }
+    ],
+    [
+     "qvUfCTfX8thAmwCKY3jQohDG3VPA9ETsiW8Kg1wb325yWox",
+     {
+      "total": 499723640266784,
+      "active": 499723640266784,
+      "unlocking": []
+     }
+    ],
+    [
+     "rRH1yitfUKbLXvX1bf1jV2gUGUxN2bdYEifgByomH4ksj3k",
+     {
+      "total": 80000000000000,
+      "active": 80000000000000,
+      "unlocking": []
+     }
+    ],
+    [
+     "op8reNdpsLwptfu1sf8R4mwfUXrNSLNgcMSgUPpxBkuWj32",
+     {
+      "total": 139000000000000,
+      "active": 139000000000000,
+      "unlocking": []
+     }
+    ],
+    [
+     "ssg1WaRfQt6EBiQ9RNuJQQ5ANiiG9mNDs1aThZdjotFCE5A",
+     {
+      "total": 7304997849995176,
+      "active": 7304997849995176,
+      "unlocking": []
+     }
+    ],
+    [
+     "oVjYx5VZGH8v1aH1QK6R4EueP37DrduUHNJR3Won5FYVbF9",
+     {
+      "total": 21251418608646,
+      "active": 21251418608646,
+      "unlocking": []
+     }
+    ],
+    [
+     "pPGK6bcUQQAu2nCjbtg9CRwrCo4er1fjs5Ysg3u95r3vUjU",
+     {
+      "total": 143000000000000000,
+      "active": 143000000000000000,
+      "unlocking": []
+     }
+    ],
+    [
+     "qwP1h4YuDMks29JdSaVPfB5YL7hWd4rzrbEfzKFDAqDGFbb",
+     {
+      "total": 778604505225447,
+      "active": 778604505225447,
+      "unlocking": []
+     }
+    ],
+    [
+     "tpGLghLEAQ4k82Ax4GU4x8csRZXPDdKCe8EWwapwwERrMHo",
+     {
+      "total": 421674512303215,
+      "active": 421674512303215,
+      "unlocking": []
+     }
+    ],
+    [
+     "tC53ciKkZ4m1ZiLMhzpKkptjRR7C2XAxScxgQVCWxUsy7VD",
+     {
+      "total": 2129884658534987,
+      "active": 2129884658534987,
+      "unlocking": []
+     }
+    ],
+    [
+     "qS3eD42wGWnErYL8AtNoKx1KiuxNoQMyx7LxjCyaEscAMym",
+     {
+      "total": 142911830991849,
+      "active": 142911830991849,
+      "unlocking": []
+     }
+    ],
+    [
+     "oMV1Y28Xyunatn4ex5j4e2PXx8M5yBGh6ALN6pc2EwPB6zQ",
+     {
+      "total": 94000000000000,
+      "active": 94000000000000,
+      "unlocking": []
+     }
+    ],
+    [
+     "trqiZh3YmCY6rvWyyqafhNXgYkNU3T7d7xerLijKsTf1T9j",
+     {
+      "total": 3383968518790453,
+      "active": 3383968518790453,
+      "unlocking": []
+     }
+    ],
+    [
+     "qCUZeD4bPrxTfSLasDNCKLSB2A5iF5eh2afrXxER5q6XdwT",
+     {
+      "total": 41468272189360,
+      "active": 41468272189360,
+      "unlocking": []
+     }
+    ],
+    [
+     "qRYg1GGy8DB9PppH9d1txvAceyKCV7p3R1XsmApqLYVqRte",
+     {
+      "total": 90058904305356,
+      "active": 90058904305356,
+      "unlocking": []
+     }
+    ],
+    [
+     "rDJgwmB5E7jy1L4u64aXmFbUwFMuHBucxfLpUrtRFp57eRH",
+     {
+      "total": 59997849994395,
+      "active": 59997849994395,
+      "unlocking": []
+     }
+    ],
+    [
+     "q7wanRmSZVe99ximyCfgzyz9RBX3ANYLWNbCS1abHgUpt3p",
+     {
+      "total": 15197141561160,
+      "active": 15197141561160,
+      "unlocking": []
+     }
+    ],
+    [
+     "sjMNmDGf55knnqUTYGKKwimzBcJWXAWCWqJVLSXgufSUkWT",
+     {
+      "total": 46709000948032,
+      "active": 46709000948032,
+      "unlocking": []
+     }
+    ],
+    [
+     "tEiBWDJhyR1ZCw4Z6p6UzLgjDPc3xLkh2GpeG5sG1KoiMYW",
+     {
+      "total": 3280740405161591,
+      "active": 3280740405161591,
+      "unlocking": []
+     }
+    ],
+    [
+     "tcJYpzPTw7BrhzeBY75QWVNjfn2MgUaRDabJ4FTXfRzuiNf",
+     {
+      "total": 27620189320129791,
+      "active": 27620189320129791,
+      "unlocking": []
+     }
+    ],
+    [
+     "tZmARnsQGcpMc7qXqdpmNe91UBKxM5jPwtrpLptK2BZCPEX",
+     {
+      "total": 73877506082416,
+      "active": 73877506082416,
+      "unlocking": []
+     }
+    ],
+    [
+     "tH5EbmtushQ2W1r9hdnCGffJyM9JdZjZmzzVDkWmUAGmWrt",
+     {
+      "total": 54441519313897,
+      "active": 54441519313897,
+      "unlocking": []
+     }
+    ],
+    [
+     "pCoLaZ9d9Zacaauruu8Rx5UPP2zX3ZVUstumb818RKgUw3u",
+     {
+      "total": 58734256929100,
+      "active": 58734256929100,
+      "unlocking": []
+     }
+    ],
+    [
+     "pL7xLtApybMMC9NTTojv721fJ9xb5baByXJzNrkpbdrYTCA",
+     {
+      "total": 4000000000000000,
+      "active": 0,
+      "unlocking": [
+       {
+        "value": 4000000000000000,
+        "unlock_at": 12844267
+       }
+      ]
+     }
+    ],
+    [
+     "rALeZp17upTWMzce8FBaA7cyYXALmzswjW3kcPWm54SRS16",
+     {
+      "total": 293329223406681,
+      "active": 293329223406681,
+      "unlocking": []
+     }
+    ],
+    [
+     "sprBz92TFNcj42KYHGQTVaBhGL4xrCRePqUCZ7cvnWbgf7p",
+     {
+      "total": 228202650181196,
+      "active": 228102650181196,
+      "unlocking": [
+       {
+        "value": 100000000000,
+        "unlock_at": 10229309
+       }
+      ]
+     }
+    ],
+    [
+     "ryQGyV5mM8in1mjZ2Jg13KARNkZiSBEYTbGFhtjy7VjDmPE",
+     {
+      "total": 10000000000000,
+      "active": 10000000000000,
+      "unlocking": []
+     }
+    ],
+    [
+     "tnoWhmhhJ5AsYszBvszKYCQrDD1dXYtKmKK8iZaudUGQpD1",
+     {
+      "total": 365035482679994,
+      "active": 365035482679994,
+      "unlocking": []
+     }
+    ],
+    [
+     "qaZk49onA6rrzQrivyygv9GGqTw2MR8mVw1qsZhTojgfCUr",
+     {
+      "total": 139833694884851,
+      "active": 139833694884851,
+      "unlocking": []
+     }
+    ],
+    [
+     "rX5e3WgmrsDREqZhNVN6rvKd15YFJJN2Z4dekKqqemuPg5E",
+     {
+      "total": 300000000000000,
+      "active": 300000000000000,
+      "unlocking": []
+     }
+    ],
+    [
+     "p54NCPLo9ecNfkHwHVpaYGf1Afj4G3eeUJK8R6mUZZb1RJZ",
+     {
+      "total": 26060476444799,
+      "active": 0,
+      "unlocking": [
+       {
+        "value": 26060476444799,
+        "unlock_at": 8159253
+       }
+      ]
+     }
+    ],
+    [
+     "rLwCmmcqq2Ssk8T9dABH4MmdeLFR7FUStN5gRv2hHDwSL7S",
+     {
+      "total": 600000000000000,
+      "active": 600000000000000,
+      "unlocking": []
+     }
+    ]
+   ]
+  },
+  "Homa.StakingLedgers": {
+   "count_returned": 3,
+   "rows": [
+    [
+     0,
+     {
+      "bonded": 21722171133928956,
+      "unlocking": []
+     }
+    ],
+    [
+     2,
+     {
+      "bonded": 32154684049495635,
+      "unlocking": []
+     }
+    ],
+    [
+     1,
+     {
+      "bonded": 40923323054941374,
+      "unlocking": [
+       {
+        "value": 18881396828603,
+        "era": 10259
+       },
+       {
+        "value": 4198380490646,
+        "era": 10262
+       },
+       {
+        "value": 199410065929948,
+        "era": 10264
+       },
+       {
+        "value": 121163277858746,
+        "era": 10266
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  "StableAsset.Pools": {
+   "count_returned": 2,
+   "rows": [
+    [
+     0,
+     {
+      "pool_asset": {
+       "StableAssetPoolToken": 0
+      },
+      "assets": [
+       {
+        "Token": "KSM"
+       },
+       {
+        "Token": "LKSM"
+       }
+      ],
+      "precisions": [
+       1,
+       1
+      ],
+      "mint_fee": 0,
+      "swap_fee": 25000000,
+      "redeem_fee": 30000000,
+      "total_supply": 1939838813826055,
+      "a": 220,
+      "a_block": 1582221,
+      "future_a": 3000,
+      "future_a_block": 1582500,
+      "balances": [
+       446609443943899,
+       1499768114415839
+      ],
+      "fee_recipient": "qbK5taeJoMcwJoK3hZ7W8y2KkGu1iDRUvjrg9xQMsUKrrv7",
+      "account_id": "qmmNug1GQstpimAXBphJPSbDawH47vwMmhuSUq9xRqAsDAr",
+      "yield_recipient": "qbK5taeJoMcwJoK3hZ7W8y2KkGu1iDRUvjrg9xQMsUKrrv7",
+      "precision": 1000000000000
+     }
+    ],
+    [
+     1,
+     {
+      "pool_asset": {
+       "StableAssetPoolToken": 1
+      },
+      "assets": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "Erc20": "0x1f3a10587a20114ea25ba1b388ee2dd4a337ce27"
+       },
+       {
+        "ForeignAsset": 7
+       }
+      ],
+      "precisions": [
+       1,
+       1000000,
+       1000000
+      ],
+      "mint_fee": 0,
+      "swap_fee": 5000000,
+      "redeem_fee": 10000000,
+      "total_supply": 23402029305735271,
+      "a": 10000,
+      "a_block": 1913274,
+      "future_a": 10000,
+      "future_a_block": 1913274,
+      "balances": [
+       23116083958623209,
+       1034581592000000,
+       182960611000000
+      ],
+      "fee_recipient": "qbK5taeJoMcwJoK3hZ7W8y2KkGu1iDRUvjrg9xQMsUKrrv7",
+      "account_id": "qmmNug1GQstpimAXBpy3QzBL5cUWg2p6SeQzRWzRFhu8pfX",
+      "yield_recipient": "qbK5taeJoMcwJoK3hZ7W8y2KkGu1iDRUvjrg9xQMsUKrrv7",
+      "precision": 1000000000000
+     }
+    ]
+   ]
+  },
+  "Prices.LockedPrice": {
+   "count_returned": 4,
+   "rows": [
+    [
+     {
+      "Token": "KSM"
+     },
+     43367140000000000000000000
+    ],
+    [
+     {
+      "Token": "KAR"
+     },
+     145900000000000000000000
+    ],
+    [
+     {
+      "Token": "LKSM"
+     },
+     6679837807484687748904480
+    ],
+    [
+     {
+      "StableAssetPoolToken": 0
+     },
+     43367140000000000000000000
+    ]
+   ]
+  },
+  "AcalaOracle.Values": {
+   "count_returned": 2,
+   "rows": [
+    [
+     {
+      "Token": "KSM"
+     },
+     {
+      "value": 3249300000000000000,
+      "timestamp": 1794093150000
+     }
+    ],
+    [
+     {
+      "Token": "KAR"
+     },
+     {
+      "value": 8986428000000000,
+      "timestamp": 1768410270000
+     }
+    ]
+   ]
+  },
+  "AssetRegistry.AssetMetadatas": {
+   "count_returned": 52,
+   "rows": [
+    [
+     {
+      "Erc20": "0x577f6a0718a468e8a995f6075f2325f86a07c83b"
+     },
+     {
+      "name": "Binance USD (Portal from Ethereum)",
+      "symbol": "BUSDet",
+      "decimals": 18,
+      "minimal_balance": 10000000000000000
+     }
+    ],
+    [
+     {
+      "NativeAssetId": {
+       "Token": "LKSM"
+      }
+     },
+     {
+      "name": "Liquid KSM",
+      "symbol": "LKSM",
+      "decimals": 12,
+      "minimal_balance": 500000000
+     }
+    ],
+    [
+     {
+      "Erc20": "0xe278651e8ff8e2efa83d7f84205084ebc90688be"
+     },
+     {
+      "name": "Binance Coin (Portal from Ethereum)",
+      "symbol": "BNBet",
+      "decimals": 18,
+      "minimal_balance": 40000000000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 10
+     },
+     {
+      "name": "Calamari",
+      "symbol": "KMA",
+      "decimals": 12,
+      "minimal_balance": 100000000000
+     }
+    ],
+    [
+     {
+      "Erc20": "0x66291c7d88d2ed9a708147bae4e0814a76705e2f"
+     },
+     {
+      "name": "Wrapped BTC (Portal from Ethereum)",
+      "symbol": "WBTC",
+      "decimals": 8,
+      "minimal_balance": 35
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 14
+     },
+     {
+      "name": "Genshiro Native Token",
+      "symbol": "GENS",
+      "decimals": 9,
+      "minimal_balance": 1000000000000
+     }
+    ],
+    [
+     {
+      "StableAssetId": 0
+     },
+     {
+      "name": "Taiga KSM",
+      "symbol": "tKSM",
+      "decimals": 12,
+      "minimal_balance": 100000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 19
+     },
+     {
+      "name": "Listen",
+      "symbol": "LT",
+      "decimals": 12,
+      "minimal_balance": 1000000000000
+     }
+    ],
+    [
+     {
+      "Erc20": "0x1516d2d4436d7f2eb0eadeb9be597b8cdbfb5724"
+     },
+     {
+      "name": "Binance USD (Portal from BSC)",
+      "symbol": "BUSDbs",
+      "decimals": 18,
+      "minimal_balance": 10000000000000000
+     }
+    ],
+    [
+     {
+      "Erc20": "0x2c7de70b32cf5f20e02329a88d2e3b00ef85eb90"
+     },
+     {
+      "name": "Chainlink (Portal from Ethereum)",
+      "symbol": "LINK",
+      "decimals": 18,
+      "minimal_balance": 2000000000000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 8
+     },
+     {
+      "name": "Integritee Trusted Execution Environment",
+      "symbol": "TEER",
+      "decimals": 12,
+      "minimal_balance": 100000000000
+     }
+    ],
+    [
+     {
+      "NativeAssetId": {
+       "Token": "KAR"
+      }
+     },
+     {
+      "name": "Karura",
+      "symbol": "KAR",
+      "decimals": 12,
+      "minimal_balance": 100000000000
+     }
+    ],
+    [
+     {
+      "NativeAssetId": {
+       "Token": "BNC"
+      }
+     },
+     {
+      "name": "Bifrost Native Token",
+      "symbol": "BNC",
+      "decimals": 12,
+      "minimal_balance": 8000000000
+     }
+    ],
+    [
+     {
+      "Erc20": "0xb4ce1f6109854243d1af13b8ea34ed28542f31e0"
+     },
+     {
+      "name": "Lido DAO (Portal from Ethereum)",
+      "symbol": "LDO",
+      "decimals": 18,
+      "minimal_balance": 5000000000000000
+     }
+    ],
+    [
+     {
+      "NativeAssetId": {
+       "Token": "TAI"
+      }
+     },
+     {
+      "name": "Taiga",
+      "symbol": "TAI",
+      "decimals": 12,
+      "minimal_balance": 1000000000000
+     }
+    ],
+    [
+     {
+      "Erc20": "0x21a3e77e77f1a73f303b0e050bdfa33c439e57d3"
+     },
+     {
+      "name": "Arbitrum (Portal from Arbitrum)",
+      "symbol": "ARB",
+      "decimals": 18,
+      "minimal_balance": 9000000000000000
+     }
+    ],
+    [
+     {
+      "Erc20": "0x54e183e533fd3c6e72debb2d1cab451d017faf72"
+     },
+     {
+      "name": "Tether USD (Portal from Ethereum)",
+      "symbol": "USDTet",
+      "decimals": 6,
+      "minimal_balance": 10000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 16
+     },
+     {
+      "name": "Turing",
+      "symbol": "TUR",
+      "decimals": 10,
+      "minimal_balance": 40000000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 4
+     },
+     {
+      "name": "Heiko",
+      "symbol": "HKO",
+      "decimals": 12,
+      "minimal_balance": 100000000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 6
+     },
+     {
+      "name": "KICO",
+      "symbol": "KICO",
+      "decimals": 14,
+      "minimal_balance": 100000000000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 2
+     },
+     {
+      "name": "Quartz",
+      "symbol": "QTZ",
+      "decimals": 18,
+      "minimal_balance": 1000000000000000000
+     }
+    ],
+    [
+     {
+      "Erc20": "0x30b1f4ba0b07789be9986fa090a57e0fe5631ebb"
+     },
+     {
+      "name": "ApeCoin (Portal from Ethereum)",
+      "symbol": "APE",
+      "decimals": 18,
+      "minimal_balance": 3000000000000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 20
+     },
+     {
+      "name": "Litmus Native Token",
+      "symbol": "LIT",
+      "decimals": 12,
+      "minimal_balance": 100000000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 9
+     },
+     {
+      "name": "Metaverse.Network Pioneer",
+      "symbol": "NEER",
+      "decimals": 18,
+      "minimal_balance": 100000000000000000
+     }
+    ],
+    [
+     {
+      "Erc20": "0x8cc494086db58859bddc5df0f33679dfe3729a03"
+     },
+     {
+      "name": "Binance Coin (Portal from BSC)",
+      "symbol": "BNB",
+      "decimals": 18,
+      "minimal_balance": 40000000000000
+     }
+    ],
+    [
+     {
+      "NativeAssetId": {
+       "Token": "PHA"
+      }
+     },
+     {
+      "name": "Phala Native Token",
+      "symbol": "PHA",
+      "decimals": 12,
+      "minimal_balance": 40000000000
+     }
+    ],
+    [
+     {
+      "Erc20": "0xa2a37aaf4730aeedada5aa8ee20a4451cb8b1c4e"
+     },
+     {
+      "name": "MATIC (Portal from Ethereum)",
+      "symbol": "MATICet",
+      "decimals": 18,
+      "minimal_balance": 10000000000000000
+     }
+    ],
+    [
+     {
+      "Erc20": "0x77cf14f938cb97308d752647d554439d99b39a3f"
+     },
+     {
+      "name": "Uniswap (Portal from Ethereum)",
+      "symbol": "UNI",
+      "decimals": 18,
+      "minimal_balance": 2000000000000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 1
+     },
+     {
+      "name": "PolarisDAO",
+      "symbol": "ARIS",
+      "decimals": 8,
+      "minimal_balance": 1000000000000
+     }
+    ],
+    [
+     {
+      "NativeAssetId": {
+       "Token": "KINT"
+      }
+     },
+     {
+      "name": "Kintsugi Native Token",
+      "symbol": "KINT",
+      "decimals": 12,
+      "minimal_balance": 133330000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 0
+     },
+     {
+      "name": "RMRK",
+      "symbol": "RMRK",
+      "decimals": 10,
+      "minimal_balance": 100000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 5
+     },
+     {
+      "name": "Crust Shadow Native Token",
+      "symbol": "CSM",
+      "decimals": 12,
+      "minimal_balance": 1000000000000
+     }
+    ],
+    [
+     {
+      "NativeAssetId": {
+       "Token": "VSKSM"
+      }
+     },
+     {
+      "name": "Bifrost Voucher Slot KSM",
+      "symbol": "VSKSM",
+      "decimals": 12,
+      "minimal_balance": 100000000
+     }
+    ],
+    [
+     {
+      "Erc20": "0x1f3a10587a20114ea25ba1b388ee2dd4a337ce27"
+     },
+     {
+      "name": "USD Coin (Portal from Ethereum)",
+      "symbol": "USDCet",
+      "decimals": 6,
+      "minimal_balance": 10000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 17
+     },
+     {
+      "name": "Pichiu",
+      "symbol": "PCHU",
+      "decimals": 18,
+      "minimal_balance": 100000000000000000
+     }
+    ],
+    [
+     {
+      "Erc20": "0x9759ca009cbcd75a84786ac19bb5d02f8e68bcd9"
+     },
+     {
+      "name": "Shiba Inu (Portal from Ethereum)",
+      "symbol": "SHIB",
+      "decimals": 18,
+      "minimal_balance": 1000000000000000000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 13
+     },
+     {
+      "name": "Crab Parachain Token",
+      "symbol": "CRAB",
+      "decimals": 18,
+      "minimal_balance": 1000000000000000000
+     }
+    ],
+    [
+     {
+      "NativeAssetId": {
+       "Token": "KSM"
+      }
+     },
+     {
+      "name": "Kusama",
+      "symbol": "KSM",
+      "decimals": 12,
+      "minimal_balance": 100000000
+     }
+    ],
+    [
+     {
+      "Erc20": "0x4bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a71"
+     },
+     {
+      "name": "DAI Stablecoin (Portal)",
+      "symbol": "DAI",
+      "decimals": 18,
+      "minimal_balance": 10000000000000000
+     }
+    ],
+    [
+     {
+      "Erc20": "0xc621abc3afa3f24886ea278fffa7e10e8969d755"
+     },
+     {
+      "name": "Arbitrum (Portal from Ethereum)",
+      "symbol": "ARBet",
+      "decimals": 18,
+      "minimal_balance": 9000000000000000
+     }
+    ],
+    [
+     {
+      "Erc20": "0xece0cc38021e734bef1d5da071b027ac2f71181f"
+     },
+     {
+      "name": "Wrapped Ether (Portal from Ethereum)",
+      "symbol": "WETH",
+      "decimals": 18,
+      "minimal_balance": 5555555555555
+     }
+    ],
+    [
+     {
+      "NativeAssetId": {
+       "Token": "KUSD"
+      }
+     },
+     {
+      "name": "aUSD SEED",
+      "symbol": "aSEED",
+      "decimals": 12,
+      "minimal_balance": 10000000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 11
+     },
+     {
+      "name": "Basilisk",
+      "symbol": "BSX",
+      "decimals": 12,
+      "minimal_balance": 1000000000000
+     }
+    ],
+    [
+     {
+      "NativeAssetId": {
+       "Token": "KBTC"
+      }
+     },
+     {
+      "name": "Kintsugi Wrapped BTC",
+      "symbol": "KBTC",
+      "decimals": 8,
+      "minimal_balance": 66
+     }
+    ],
+    [
+     {
+      "Erc20": "0xc5033741ca1ce8f4f956eca6c2ff7360cabfa08d"
+     },
+     {
+      "name": "MATIC (Portal from Polygon)",
+      "symbol": "MATICpo",
+      "decimals": 18,
+      "minimal_balance": 10000000000000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 12
+     },
+     {
+      "name": "Altair",
+      "symbol": "AIR",
+      "decimals": 18,
+      "minimal_balance": 100000000000000000
+     }
+    ],
+    [
+     {
+      "Erc20": "0xe20683ad1ed8bbeed7e1ae74be10f19d8045b530"
+     },
+     {
+      "name": "Acala Dollar (Portal)",
+      "symbol": "waUSD",
+      "decimals": 12,
+      "minimal_balance": 100000000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 7
+     },
+     {
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "decimals": 6,
+      "minimal_balance": 10000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 18
+     },
+     {
+      "name": "Shiden Native Token",
+      "symbol": "SDN",
+      "decimals": 18,
+      "minimal_balance": 10000000000000000
+     }
+    ],
+    [
+     {
+      "StableAssetId": 1
+     },
+     {
+      "name": "Taiga 3USD",
+      "symbol": "3USD",
+      "decimals": 12,
+      "minimal_balance": 10000000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 15
+     },
+     {
+      "name": "Equilibrium USD",
+      "symbol": "EQD",
+      "decimals": 9,
+      "minimal_balance": 10000000000
+     }
+    ],
+    [
+     {
+      "ForeignAssetId": 3
+     },
+     {
+      "name": "Moonriver",
+      "symbol": "MOVR",
+      "decimals": 18,
+      "minimal_balance": 1000000000000000
+     }
+    ]
+   ]
+  },
+  "AssetRegistry.Erc20IdToAddress": {
+   "count_returned": 19,
+   "rows": [
+    [
+     3324095427,
+     "0xc621abc3afa3f24886ea278fffa7e10e8969d755"
+    ],
+    [
+     2361693192,
+     "0x8cc494086db58859bddc5df0f33679dfe3729a03"
+    ],
+    [
+     2728622767,
+     "0xa2a37aaf4730aeedada5aa8ee20a4451cb8b1c4e"
+    ],
+    [
+     1270263733,
+     "0x4bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a71"
+    ],
+    [
+     746448651,
+     "0x2c7de70b32cf5f20e02329a88d2e3b00ef85eb90"
+    ],
+    [
+     3792077741,
+     "0xe20683ad1ed8bbeed7e1ae74be10f19d8045b530"
+    ],
+    [
+     3305322305,
+     "0xc5033741ca1ce8f4f956eca6c2ff7360cabfa08d"
+    ],
+    [
+     1467968007,
+     "0x577f6a0718a468e8a995f6075f2325f86a07c83b"
+    ],
+    [
+     2539244032,
+     "0x9759ca009cbcd75a84786ac19bb5d02f8e68bcd9"
+    ],
+    [
+     3974155320,
+     "0xece0cc38021e734bef1d5da071b027ac2f71181f"
+    ],
+    [
+     353817300,
+     "0x1516d2d4436d7f2eb0eadeb9be597b8cdbfb5724"
+    ],
+    [
+     523898968,
+     "0x1f3a10587a20114ea25ba1b388ee2dd4a337ce27"
+    ],
+    [
+     1713970301,
+     "0x66291c7d88d2ed9a708147bae4e0814a76705e2f"
+    ],
+    [
+     816968890,
+     "0x30b1f4ba0b07789be9986fa090a57e0fe5631ebb"
+    ],
+    [
+     3799541022,
+     "0xe278651e8ff8e2efa83d7f84205084ebc90688be"
+    ],
+    [
+     3033407329,
+     "0xb4ce1f6109854243d1af13b8ea34ed28542f31e0"
+    ],
+    [
+     564389758,
+     "0x21a3e77e77f1a73f303b0e050bdfa33c439e57d3"
+    ],
+    [
+     2010060025,
+     "0x77cf14f938cb97308d752647d554439d99b39a3f"
+    ],
+    [
+     1424065509,
+     "0x54e183e533fd3c6e72debb2d1cab451d017faf72"
+    ]
+   ]
+  },
+  "Incentives.IncentiveRewardAmounts": {
+   "count_returned": 1,
+   "rows": [
+    [
+     [
+      {
+       "Earning": {
+        "Token": "KAR"
+       }
+      },
+      {
+       "Token": "KAR"
+      }
+     ],
+     14467560000000
+    ]
+   ]
+  },
+  "Incentives.ClaimRewardDeductionRates": {
+   "count_returned": 1,
+   "rows": [
+    [
+     {
+      "Earning": {
+       "Token": "KAR"
+      }
+     },
+     200000000000000000
+    ]
+   ]
+  },
+  "Rewards.PoolInfos": {
+   "count_returned": 25,
+   "rows": [
+    [
+     {
+      "Loans": {
+       "Token": "KAR"
+      }
+     },
+     {
+      "total_shares": 1157030136966358,
+      "rewards": []
+     }
+    ],
+    [
+     {
+      "Dex": {
+       "DexShare": [
+        {
+         "Token": "KUSD"
+        },
+        {
+         "ForeignAsset": 5
+        }
+       ]
+      }
+     },
+     {
+      "total_shares": 21655613082947004,
+      "rewards": [
+       [
+        {
+         "Token": "KUSD"
+        },
+        [
+         2028001465403414,
+         1906962342610520
+        ]
+       ],
+       [
+        {
+         "ForeignAsset": 5
+        },
+        [
+         608400439621045331,
+         572088702783181520
+        ]
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "Dex": {
+       "DexShare": [
+        {
+         "Token": "KUSD"
+        },
+        {
+         "ForeignAsset": 12
+        }
+       ]
+      }
+     },
+     {
+      "total_shares": 642669661779919,
+      "rewards": [
+       [
+        {
+         "Token": "KAR"
+        },
+        [
+         17512385261495,
+         8431172623003
+        ]
+       ],
+       [
+        {
+         "ForeignAsset": 12
+        },
+        [
+         7882050002079187933616,
+         3794737795708614094913
+        ]
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "Loans": {
+       "Token": "KSM"
+      }
+     },
+     {
+      "total_shares": 184227733473781,
+      "rewards": []
+     }
+    ],
+    [
+     {
+      "Dex": {
+       "DexShare": [
+        {
+         "Token": "KUSD"
+        },
+        {
+         "Token": "KSM"
+        }
+       ]
+      }
+     },
+     {
+      "total_shares": 570915526996471087,
+      "rewards": [
+       [
+        {
+         "Token": "KAR"
+        },
+        [
+         157734906594318109,
+         25888610162357682
+        ]
+       ],
+       [
+        {
+         "Token": "KUSD"
+        },
+        [
+         13147913483175993,
+         3095716363745524
+        ]
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "Dex": {
+       "DexShare": [
+        {
+         "Token": "KUSD"
+        },
+        {
+         "Token": "BNC"
+        }
+       ]
+      }
+     },
+     {
+      "total_shares": 215486684371792189,
+      "rewards": [
+       [
+        {
+         "Token": "KAR"
+        },
+        [
+         1370230303434644,
+         207185784608791
+        ]
+       ],
+       [
+        {
+         "Token": "BNC"
+        },
+        [
+         10944288824736544,
+         1655757297858870
+        ]
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "Dex": {
+       "DexShare": [
+        {
+         "Token": "KSM"
+        },
+        {
+         "ForeignAsset": 0
+        }
+       ]
+      }
+     },
+     {
+      "total_shares": 7164087918,
+      "rewards": []
+     }
+    ],
+    [
+     {
+      "Dex": {
+       "DexShare": [
+        {
+         "Token": "KSM"
+        },
+        {
+         "ForeignAsset": 1
+        }
+       ]
+      }
+     },
+     {
+      "total_shares": 4158567318546,
+      "rewards": [
+       [
+        {
+         "ForeignAsset": 1
+        },
+        [
+         1814474795463,
+         43319845227
+        ]
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "Dex": {
+       "DexShare": [
+        {
+         "Token": "KAR"
+        },
+        {
+         "Erc20": "0x1f3a10587a20114ea25ba1b388ee2dd4a337ce27"
+        }
+       ]
+      }
+     },
+     {
+      "total_shares": 91359560413379266,
+      "rewards": [
+       [
+        {
+         "Token": "KAR"
+        },
+        [
+         88597511797515649,
+         49268795749785639
+        ]
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "Dex": {
+       "DexShare": [
+        {
+         "Token": "KUSD"
+        },
+        {
+         "Token": "LKSM"
+        }
+       ]
+      }
+     },
+     {
+      "total_shares": 105877920572763023,
+      "rewards": [
+       [
+        {
+         "Token": "KAR"
+        },
+        [
+         38401244072475056,
+         22199760368193924
+        ]
+       ],
+       [
+        {
+         "Token": "KUSD"
+        },
+        [
+         3479638455210888,
+         2286512295649000
+        ]
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "Dex": {
+       "DexShare": [
+        {
+         "Token": "KAR"
+        },
+        {
+         "Token": "LKSM"
+        }
+       ]
+      }
+     },
+     {
+      "total_shares": 140658574162248694,
+      "rewards": [
+       [
+        {
+         "Token": "KAR"
+        },
+        [
+         91570709709698079,
+         46481005499909588
+        ]
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "Dex": {
+       "DexShare": [
+        {
+         "Token": "KSM"
+        },
+        {
+         "Token": "LKSM"
+        }
+       ]
+      }
+     },
+     {
+      "total_shares": 619425251865092,
+      "rewards": [
+       [
+        {
+         "Token": "KAR"
+        },
+        [
+         7009334086470508,
+         2031312104486022
+        ]
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "Dex": {
+       "DexShare": [
+        {
+         "Token": "KUSD"
+        },
+        {
+         "Token": "PHA"
+        }
+       ]
+      }
+     },
+     {
+      "total_shares": 2010711047900350,
+      "rewards": [
+       [
+        {
+         "Token": "KUSD"
+        },
+        [
+         85260222801479,
+         15296758001477
+        ]
+       ],
+       [
+        {
+         "Token": "PHA"
+        },
+        [
+         852600505449264,
+         152972345001763
+        ]
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "Earning": {
+       "Token": "KAR"
+      }
+     },
+     {
+      "total_shares": 25005003224553014131,
+      "rewards": [
+       [
+        {
+         "Token": "KAR"
+        },
+        [
+         21995542185308734983,
+         13261058774115457864
+        ]
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "Dex": {
+       "DexShare": [
+        {
+         "Token": "KUSD"
+        },
+        {
+         "Token": "KINT"
+        }
+       ]
+      }
+     },
+     {
+      "total_shares": 2071095969474496,
+      "rewards": [
+       [
+        {
+         "Token": "KUSD"
+        },
+        [
+         339582654166611,
+         313055922456691
+        ]
+       ],
+       [
+        {
+         "Token": "KINT"
+        },
+        [
+         118827522842124,
+         109545229475501
+        ]
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "Dex": {
+       "DexShare": [
+        {
+         "Token": "KAR"
+        },
+        {
+         "Token": "KUSD"
+        }
+       ]
+      }
+     },
+     {
+      "total_shares": 45771793705727016,
+      "rewards": [
+       [
+        {
+         "Token": "KAR"
+        },
+        [
+         28073630133057641,
+         14139689395855665
+        ]
+       ],
+       [
+        {
+         "Token": "KUSD"
+        },
+        [
+         3801866152552477,
+         3606780942228501
+        ]
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "Dex": {
+       "DexShare": [
+        {
+         "Token": "KAR"
+        },
+        {
+         "ForeignAsset": 2
+        }
+       ]
+      }
+     },
+     {
+      "total_shares": 957460759076474,
+      "rewards": [
+       [
+        {
+         "Token": "KAR"
+        },
+        [
+         45663373030822,
+         18229148058912
+        ]
+       ],
+       [
+        {
+         "ForeignAsset": 2
+        },
+        [
+         30443205107853227772445,
+         12153017776691733427345
+        ]
+       ]
+      ]
+     }
+    ],
+    [
+     "NomineesElection",
+     {
+      "total_shares": 14152933489669539,
+      "rewards": []
+     }
+    ],
+    [
+     {
+      "Dex": {
+       "DexShare": [
+        {
+         "Token": "KUSD"
+        },
+        {
+         "ForeignAsset": 0
+        }
+       ]
+      }
+     },
+     {
+      "total_shares": 8483392866486464,
+      "rewards": [
+       [
+        {
+         "Token": "KAR"
+        },
+        [
+         174914662183208,
+         128020206026083
+        ]
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "Dex": {
+       "DexShare": [
+        {
+         "Token": "KAR"
+        },
+        {
+         "Token": "KSM"
+        }
+       ]
+      }
+     },
+     {
+      "total_shares": 374343306716377560,
+      "rewards": [
+       [
+        {
+         "Token": "KAR"
+        },
+        [
+         162880347484658160,
+         16367349615622283
+        ]
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "Loans": {
+       "StableAssetPoolToken": 0
+      }
+     },
+     {
+      "total_shares": 1267738906607981,
+      "rewards": []
+     }
+    ],
+    [
+     {
+      "Dex": {
+       "DexShare": [
+        {
+         "Token": "TAI"
+        },
+        {
+         "StableAssetPoolToken": 0
+        }
+       ]
+      }
+     },
+     {
+      "total_shares": 39189613989279066,
+      "rewards": []
+     }
+    ],
+    [
+     {
+      "Loans": {
+       "Token": "LKSM"
+      }
+     },
+     {
+      "total_shares": 55585085516966407,
+      "rewards": [
+       [
+        {
+         "Token": "KAR"
+        },
+        [
+         18409461271881633,
+         15006176354183104
+        ]
+       ],
+       [
+        {
+         "Token": "KUSD"
+        },
+        [
+         9744467291044990,
+         7434485855609691
+        ]
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "Dex": {
+       "DexShare": [
+        {
+         "Token": "KUSD"
+        },
+        {
+         "Token": "KBTC"
+        }
+       ]
+      }
+     },
+     {
+      "total_shares": 2339702886995918,
+      "rewards": [
+       [
+        {
+         "Token": "KAR"
+        },
+        [
+         199388184505322,
+         93858541695519
+        ]
+       ],
+       [
+        {
+         "Token": "KUSD"
+        },
+        [
+         219593529682243,
+         141702032600961
+        ]
+       ],
+       [
+        {
+         "Token": "KINT"
+        },
+        [
+         78577939259883,
+         43505358112222
+        ]
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "Dex": {
+       "DexShare": [
+        {
+         "Token": "KUSD"
+        },
+        {
+         "ForeignAsset": 2
+        }
+       ]
+      }
+     },
+     {
+      "total_shares": 377894727921171,
+      "rewards": [
+       [
+        {
+         "Token": "KUSD"
+        },
+        [
+         25715986451808,
+         8811046133543
+        ]
+       ],
+       [
+        {
+         "ForeignAsset": 2
+        },
+        [
+         8572165917343513504826,
+         2937074427245192331500
+        ]
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  "TransactionPayment.TokenExchangeRate": {
+   "count_returned": 6,
+   "rows": [
+    [
+     {
+      "Token": "KSM"
+     },
+     2185996394255059
+    ],
+    [
+     {
+      "Token": "KBTC"
+     },
+     2630000000
+    ],
+    [
+     {
+      "Token": "LKSM"
+     },
+     14681764378833334
+    ],
+    [
+     {
+      "Token": "KUSD"
+     },
+     32509580717486984
+    ],
+    [
+     {
+      "ForeignAsset": 0
+     },
+     1227125331035687
+    ],
+    [
+     {
+      "Token": "BNC"
+     },
+     1547943787816433280
+    ]
+   ]
+  },
+  "TransactionPayment.AlternativeFeeSwapPath": {
+   "count_returned": 100,
+   "rows": [
+    [
+     "sC1MBGtTpKoQjW8aL9Gg3176v1dVuHe9NwLBmiS4Rv7jep3",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "sH84j5Pmo8eopu9iGbSNDpvxXtCQWwyCoJjqwxZMrvAxXBP",
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "oaek7EjPrRzqJpKRsU9VyWpyHAK6EniEBuqf6ZSMKDNCPC7",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "sxmTz6VYwRHxrPwNaCjDgVEUAnRpu38RVEFhtzfQFGgJrbK",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "rgzaCaNMeUdUDLrPX56pcjduvZgTAThKZowmWqSbQorFcys",
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "tRH15kFnW51gmpQUgnJs6vhEbQMvxML2YHaoemM1rdbkASQ",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "qFZUtHdbBeUfGZdNvq6RRfy17NueJ8hkEj5vdSojSH2AcSf",
+     [
+      {
+       "ForeignAsset": 0
+      },
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "paa2U4sXMqLedYuWbETAgqsfftqXqSWYwjrKKknCaKpa1Df",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "rXXEPsWdbmtJ75559GXb9PE6Vmh57sL9Ntvs3W2kA3qSTRx",
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "qqYdvngZeajgysXxkYDsqrmy5b9dY6b8SfAwcriPw2DbtLU",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "oSfNzvA2J2UYEnFuba8ja6L5GWUa6BhB1iwj2e59qYQt8jG",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "t94ctxR68sASfxghedNYErVKxXrseRY9daTC8tf91i6CJfh",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "oVPdMCXZ7ybVLChDgvVSHxbPzvRuoYzGHqNxCknTjof4BBw",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "qCZ56Z1Fa4BYZSxfT5s1e6Ts6Z4jS8p7XnXLYGndWFTaVyF",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "p2p3dc2j98f9N7jgiPiHjPsKmBDkBY14ATsdhRhJXVvh4uK",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "syEQvWNSYqtqnyc3YZRsRbLXeeVozxfGNWTwqepMHRu5qQu",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "qzByBkk193TLMVk47Q7W3RH6Vb49W5Rj3xmr6LMmWJ3qUCE",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "pqnhH3HEaCPB4mxZFs63m2ccMWGSazRMsSLq5Fg7PHftPm3",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "od4V5ZLA7jNUbHyMKs5YmaWRiEGpw522zh5fkrcmww57hcs",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "qHxPp6zA6rRbgUUMDFaXBUDu6rD5pUyhQXyZP7fXCkY7Joj",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "qtRyYXLpsAqmrUR6QSeajLMuAyoDoGjnhLD9jfxjeHK3cGY",
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "ooLPVQk8FizVW7J8971z62GuoAs3vif799NMVs25oN8icmR",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "tgZgrdKgypX4qtWCMbBpDApJnGgHxgRtS9Dx2wB1VFC6zmG",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "q2KZf4bfByj8kdZ7u28Wp6yEoEkKrLo9uYnV5QhV16ZfHir",
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "qWxkXDKEX9QRwbSBHh7jvJw8nZLgF5TPU5df8GstQ26uPF9",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "sTk81fmRTwKTZfEpSLCdTfxVxgDiPd7TGANY1VuFNFU92C1",
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "u4dDXkVvTdhnrA4CTiYZEjjHBCwaaXDjrUSYKJ8PWEMnttJ",
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "s2ELwhN55aaAtaQrW8pi2BfBBb1dd6zyxJFwWDP6WtJoUt9",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "tNorDVwwry7NJk3KmLfwwvgbUWSUtM7wjkVi1TCFvW39qF9",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "qCwtXgLg2zgjRV7f2DAkjhAqeJXVKVXHZJ83b36cgN9Yrws",
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "qf3Wfm6MsbvNN2YeifzxrvvpzHDy816Tt8tJKtMvPj7KXU8",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "ozNR2XuV6gTPgqFLEvn3rxJSue9dTYQvcoCGvPB726xYr86",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "qWmo77LwGTMn1UGPYTgrVnw5HDdzEgHJRWEXNq4gLPvhpeU",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "qZa4wPYfKsPLWZdZiTA2btJP5QDKXm4Hp788ZGkWkDwZY2y",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "tnjsMfJAQiJpDcMr381Dt4s1MnHveEePdZisUKX1eum39sg",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "rPtnoKurG9WggWezCEEZ9c7XdPosdx1SZBYothhgQ1USS76",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "t4AbhvttUC2eVYj6XganaLFPZs9ChMpjzs8QqrBgArJHN5v",
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "rqdwcMjyxirYwtC6rMvm6vKfgKfdEvksqJSd1RnyJ8uXpKG",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "qofYLs2H8o1fmCCuZCGUy3rp7WXT8WkgUPEYSt4R55xbxLx",
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "ro86oW9k9xd1e2k1bpFGQB36UeUjLD7fj1gT5YFNX3xtDWm",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "turPWETjRgj543d45S51DNUrRL4sdrnAjYiq4hX9z3KP2TC",
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "rAeHzAZ8gacjkWupXoF2pEgeh9kSq6W8EqSu3JvEn7sGtAg",
+     [
+      {
+       "ForeignAsset": 0
+      },
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "r9ixsnf5zDbmCk3YhErECZ5DBBj8aPebNgfzDFq3nid5sRy",
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "tWFqqdM8QJGkuJtjgGZLT3dpyDHiRUQLakvnmjVEi3qjcU8",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "oJPjsmmWz5RxWyBZywx4etXmEKyLq35HBR9hEbSKYLziqtS",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "rh7zjB7EiW3RVcj97GYnutDcXYQmxXBG2scXD9nbb8qmUyf",
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "sbdgtUSDHqabsz6egJ47w5fk9Tm3e8bZAPFuDfwtgqZUrRN",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "sFbqBjxPBgfBmGPgxSWqweKLnHawKvMc9K1JNgcijAZjt1X",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "qPsNyQ1nAAPpGLrxREC9WRG3zuwP3Y2ZA87ng62dGpmEGj1",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "qiRxV6PHifv9yBVStN6AuS2vVdR61EfXfUrLVdAFnrhN9uL",
+     [
+      {
+       "Token": "LKSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "se4WWwFqq5nRC8mbLdeVGvkP9UnzVigd3g3DWv1Ps6Qqcnm",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "sHT1Sq2MsztFdmktLSndKssC1X3n4dwv5rVzKRYo1Pgq4sN",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "pSsFiPU8kWXSeUWvpAX54c4fktv4SVYrQAPQVoKPnszqYfZ",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "rC8kn9sLKLfqeJL4PnQ2v6aTR22XrHKWvjrYYQgC4LBQFR7",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "orzHuyPSkjLTJW4gG5K2sqrjAHCGQkCfiwi6ukxj4YHrrUS",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "t135HytkT6EnL8PnubfzLKnn6GGJcrusVC8gdfjQqYbCwSs",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "rU9kwix3ED9SpRuiBpEtJ2r8ZEkJ16acSpsxrUMAucp5kZN",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "ofi2tUFRyvHNKmQdxHrDt2Z3G54BZZCaKb2Eva9W31zrPns",
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "sxsAkKApbA7XCcXQQGyy9YMMMexNX1sAiBNq52KPwXMXGJq",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "qzGS5XxjdCnZNwn1y8h7rydLHg6JLARPGCndaGhqKBrSfWd",
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "owcnKQzWh4Lag7mJZRTUtNcRgEkUH4hfgGmXCp64KGhvXFu",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "ooef4BE2PzKa3oRh2YCqXSwwhPnbzzCx1Pe3Bp3neJTJZ5f",
+     [
+      {
+       "ForeignAsset": 0
+      },
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "piTc2VALtm27idPEDy7qLHKQJ8KPZp55hpfj26ZWurGiJSR",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "sek5gvDtM8ydv7qGaMvvc5yyHd7xDSwVXaFM6LsXcDh2nUR",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "qAMZ65uNgN21yJCvGyeriiJXFZQjKjGkbr7iuHvrrJTDiSk",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "qtTEC3uPdBkwWDewvsU8MM4AMZqWXCcs5ebNcSuAqXQhwiM",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "okZENLJadaMQp56dYPy2aMKrd7EqdKrNMpA6ijjcTWCcfsT",
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "r9oDs9XRk9acaZjVcYw7rDMH92cGWXkvNUCXH7QjPFVramK",
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "qhUhV5jHVNiLNc5D6Bo8ZiauwBck73MhiqciFpA8hTwVWbk",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "r2JrHQuWfFgCPuJctHS7Uf3sCizaA8XaqPaFxRHG3BWvwUv",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "rA7VcfpfL1YtqZhXZfFjjRQphJtSDr1CMEYAYa7U31aFbpx",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "rxjR8PPjoJbhG47cF29XahArbg3ya61QRN6BazxQLqv7mf2",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "pQKKE6UKFNd5JfpSmEPsc6WKDzaH6iMJZrLGBDx7wn7kWF4",
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "rRREkpL4NYST1n6Hj8poVCfBcCTE1AZhf7YJohVdxJLio35",
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "qUkSLRyTMqLGuzHwGLKGW2LC6DMgBCKP9E1CtUTxegMGGk3",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "u4SM5D6gbRyob8MhUxWT4VGf6grnQVKCYbX8LJtNdWMZwTJ",
+     [
+      {
+       "Token": "LKSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "t4uhSjzjAGAvbQWxBBmia76ykQoNeVw6gfY86DKEV9A5WR8",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "t79EhZLoS1q9LQLX8UFA2V63F8y7oQCKAtqCGtQiDG7n1C9",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "pSmAKDEkF2To2BhvmFfNBKU8fTxgupKkpZMz3Q3qsBC5Ztb",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "qSFYuAKfefVE8s3zfcSHYJGUcwRhEZNzqx8oq3FvfobBEDU",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "r7X28996x3kt7dBvc6wEDGPYJqovADUrdBcdHDfFq5tYDh8",
+     [
+      {
+       "ForeignAsset": 0
+      },
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "sRrRSpoZR88jfvKfesnqKDdcBCTeW9K1WzcgVfpUfq4K4Xm",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "oorUvev2yfQ1uafbwcTvfPbHdk7vhaqnCd3w1ph6BkeqPao",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "st4mSq13UFRy7uSjVMJrnPhUys9HzCpDc2kd1jLYnxjn9F5",
+     [
+      {
+       "Token": "BNC"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "rSUrMtoTzJyxNu649LFR3baLg9GW9yYCrJp3YVCscBJYNM2",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "u1eNWJNdktY85TLPpKgBrdTS976fHqPTxrLNLZMfrwBpf99",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "qG6MMpfWd4eRx9sLBEhVCH1d7H4fG4XAwvSufPWevx2wrnw",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "qSUwRwYdVp6qmrf4SnKJesN5RHxHF6Y1pjbfB9NHPHqqAmX",
+     [
+      {
+       "Token": "BNC"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "pvwBnAAXbbqBhVHeqouFpLM5ZzTUsmXsyyVptw8qWkwcVDo",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "qfKtMaw3sAfsNkS8mzhyZzmBVbBxk2S6z6SHnWyiQ3HCqmy",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "poqA6ykDdS51F6tnsCdtPEinYy5TPpcHi29Uv4NTvp7vbiM",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "qyqHkzEnbZaZMk63uUaEGAyTqeVkYhBBNZkfnEEjHtDzRsN",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "rekNRx6Kyxrx4uY1RXthi8p5kmGvR11cEjDwe3cmmMtH6wP",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "r7vpCvqnmHXffpg3xsC4VWw6NNWbtdQGAVJyLMuND1hSGrn",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "pJ25vfk8qvjhWoiDoPS6LD6da3QS9JHDc4oGd3p91mQEVVd",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "rvQwKpV9kDdU2aK58yHa1x6rkVpP8c9Cdj5QTE2VJ3LfPia",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "oKNddNS7mNLMBnc85rfyaqEAb58YWnGhn2rJRXZdYRuuK93",
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "pttYDT3U91xB2cQRxFGc966WLgetM64zM5aGAsToNCmuYWz",
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "tNAbDMjsW9WiBDpG6NDq1osHogKsPL6BRigC1oX1JH21hcW",
+     [
+      {
+       "Token": "KSM"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ],
+    [
+     "prAUK6hGTcinfpDPRspXRSZ6fH46zgH9NTqVUDBY5HiHxQE",
+     [
+      {
+       "Token": "KUSD"
+      },
+      {
+       "Token": "KAR"
+      }
+     ]
+    ]
+   ]
+  },
+  "TransactionPayment.GlobalFeeSwapPath": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "Parameters.Parameters": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "EVM.CodeInfos": {
+   "count_returned": 50,
+   "rows": [
+    [
+     "0x027b94197c73af060a8e90935f9bb19ba34e2c417c578d4103975573a64cb315",
+     {
+      "code_size": 3522,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x03653eb63681820cd1f5caa18defd00d0f71e04389ac84c03c282f4285855a8c",
+     {
+      "code_size": 9658,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x03e69f7ce809e81687c69b19a7d7cca45b6d551ffdec73d9bb87178476de1abf",
+     {
+      "code_size": 5492,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x04a34e26f03212ec6f8f0ddcb1ad0839d7360b05412417dfd72c9c333defc245",
+     {
+      "code_size": 5835,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x0aba698a3bdb4f9cbe775b32a138ce9577e9eb8d4a2937a198b2784aacbd7c39",
+     {
+      "code_size": 4116,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x111494e6ee82208e450a23a12917d8f13c01f7e7ed691db6c46c44b58c9171ff",
+     {
+      "code_size": 115,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x1245f67dd25483b92ff7762c55dba9f354fd570443f90bd7b0ef76b90c74945c",
+     {
+      "code_size": 6859,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x1837f005db1ffcf48bd22f05403d418c1896eaf959115601d4347171a8926b4b",
+     {
+      "code_size": 6859,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x1899f170c2acf3141635bb54686fbd7a305991e7920d7d0e8e95a048a8b291c6",
+     {
+      "code_size": 24206,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x1b10bbd43e445b390722df015a5aa037bf205e27cadd12b2dd7706ba499f5bd9",
+     {
+      "code_size": 18905,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x1f4392999150360e28e4a0a83cbcb8d02f37368f79fd9d2d234d2e4c79fc91d4",
+     {
+      "code_size": 831,
+      "ref_count": 41
+     }
+    ],
+    [
+     "0x21842597390c4c6e3c1239e434a682b054bd9548eee5e9b1d6a4482731023c0f",
+     {
+      "code_size": 23800,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x25338c31422b5fcc057a4a8ff54f17fe2ab85fe92de9e98d30145fa12f6cfb77",
+     {
+      "code_size": 680,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x2f6962adfa0319d817174d6ffa111230325a74bf1d3790f24fc8ffd3aefb40c3",
+     {
+      "code_size": 4585,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x2fa86add0aed31f33a762c9d88e807c475bd51d0f52bd0955754b2608f7e4989",
+     {
+      "code_size": 69,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x2fa8b9d9c85af6c082e9c8bbc6902109ad6f73ac504e7f19e8f556d683518a8e",
+     {
+      "code_size": 3622,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x32dfb5131765f31f5380b54e30bafde58b3fcf57a92e81da9c95da50aa2656ba",
+     {
+      "code_size": 11211,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x330b9f1afee9d71fb2ee42927a996a39889a45323883a66a194e210ab850d111",
+     {
+      "code_size": 680,
+      "ref_count": 3
+     }
+    ],
+    [
+     "0x337d7f54be11b6ed55fef7b667ea5488db53db8320a05d1146aa4bd169a39a9b",
+     {
+      "code_size": 3774,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x35c0e88ab1bf0413d106baaafcb66e388cc68bedbd516cb957f47b9e20379d89",
+     {
+      "code_size": 4114,
+      "ref_count": 42
+     }
+    ],
+    [
+     "0x36a03a7879a36a3974ae7b6c7a9317f7712560e214630618170a8f66f479ff42",
+     {
+      "code_size": 4703,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x3ac65dea3cc9dd0d7b7b800f834e3d73415b4e944bb94555c3e4a08fb137e918",
+     {
+      "code_size": 966,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x3ad03ea1d3512d90bd9e16c5d937429f0b5c347c9aeee189cbeceb82777dbc82",
+     {
+      "code_size": 19128,
+      "ref_count": 5
+     }
+    ],
+    [
+     "0x3f45240d7bbbffa853b1885cc709a2f70239c6a80538659901acbd1fe9e3fcb9",
+     {
+      "code_size": 619,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x408dab218a6d8fc17303863718a3e3d25a06b6de227ffead34d96c14e7df6f40",
+     {
+      "code_size": 5346,
+      "ref_count": 4
+     }
+    ],
+    [
+     "0x429c24622842648507b46432e1fc68402d88b6d72287d7ad63cc1a2a3f68acef",
+     {
+      "code_size": 1505,
+      "ref_count": 4
+     }
+    ],
+    [
+     "0x431734c2ce8608af886ab73b3fb6858d2961739ce6a0c464e6172959a3050909",
+     {
+      "code_size": 21516,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x44fc5d59a7e86d54b552a5781dbda8cb819c63d1c473fc585dddbb69a4b17379",
+     {
+      "code_size": 1818,
+      "ref_count": 3
+     }
+    ],
+    [
+     "0x47c20ac401a2ee437dffd37e2442bd82a2f32fcd7ad3a0a82260dd1b54979b7a",
+     {
+      "code_size": 13173,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x4bde55738e7b235af4f048ca344c93727f142de10050ca648137c58f9ef898b4",
+     {
+      "code_size": 665,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x4c86918d29c6682ba31bfece1d71ad58d3873e8cca3e504c11140905319020b4",
+     {
+      "code_size": 23553,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x502ed826a5c13dc27d501dcd0180214368e3ec4a32b94a1fc14eb59ab4427beb",
+     {
+      "code_size": 680,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x50c9ce64e49f158a78dcd87030040ea585e97177c293a4a9643b49d0fb7533de",
+     {
+      "code_size": 23434,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x5410ffc109c565d641c3f29793a51ef138c7d1231eeda1feac910d8ad8d8d589",
+     {
+      "code_size": 21077,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x54cdcfcb8cf7f6e69d0c7a3968193b2907e5bf4d0aa2d5a570b9499cf3127d9c",
+     {
+      "code_size": 367,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x54e7e1dd4fd8642b924a3dcc731dacaed9dc0a00d042a4b1e3d905864d616657",
+     {
+      "code_size": 4593,
+      "ref_count": 4
+     }
+    ],
+    [
+     "0x66712e1d9161706f826d8d74a3cc03db0289b2530a1202f24d52986952b69a02",
+     {
+      "code_size": 850,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x68dc991e48a073db306436c3f9da87435289026c6088307c247699f96ecc3801",
+     {
+      "code_size": 8338,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x6ae76a69fb2258cade5540aa34be1c1a590c0c955b6f4e99b1fa58cabab5a1b7",
+     {
+      "code_size": 418,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x74421371b380677f0e65d8e5e3f408de7d040898e46bee2351f1343ab2bf83ab",
+     {
+      "code_size": 831,
+      "ref_count": 4
+     }
+    ],
+    [
+     "0x78fc461631e47a5e904dcd98ecaf9311bb750146b1ac19ef1d097b4e265e8039",
+     {
+      "code_size": 1398,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x7b5dbbb9333e8973eb3e6ed329cf1505c087d69c4d7bfd3cf76a48a09c445ffc",
+     {
+      "code_size": 23716,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x8155d988823a4f6f1bcbc76a64af8e510c4ce68819290d43cf24956bd24dee82",
+     {
+      "code_size": 1119,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x817d75a411aac722895d51d26d422e542be5a1618c73336ad384b99481bfa036",
+     {
+      "code_size": 23324,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x81db0e4afdf5178583537b58c5ad403bd47a4ac7f9bde2442ef3e341d433126a",
+     {
+      "code_size": 629,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x890b8e00a0a550815411ba6774645eaf07fd2051458ba6e9b08661dc8ca8c550",
+     {
+      "code_size": 4114,
+      "ref_count": 6
+     }
+    ],
+    [
+     "0x8cd243f70f4eba74464561b0b3b1e7d6d68299138b57f19854d8b367e6568ea6",
+     {
+      "code_size": 21967,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x8f6d94b67307a78097542ef212d3c6830acdd9cf173559a43225f3bb7a6d5c97",
+     {
+      "code_size": 19911,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x9095836810dbe32f8653caa581f545d65fffcd14334675adfca7c67b215d1297",
+     {
+      "code_size": 2570,
+      "ref_count": 1
+     }
+    ],
+    [
+     "0x90d17b56201da638c3417c6e0e48737ddaeb0614f1b3cba2e7cd219470650aa5",
+     {
+      "code_size": 1050,
+      "ref_count": 1
+     }
+    ]
+   ]
+  },
+  "Honzon.Authorization": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "Tokens.Accounts#aca/trsy": {
+   "count_returned": 47,
+   "rows": [
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KSM"
+       },
+       {
+        "Token": "LKSM"
+       }
+      ]
+     },
+     {
+      "free": 11055321995,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "Token": "BNC"
+       }
+      ]
+     },
+     {
+      "free": 15592399380,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 3
+     },
+     {
+      "free": 58313075119555359,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KSM"
+       },
+       {
+        "ForeignAsset": 0
+       }
+      ]
+     },
+     {
+      "free": 111915334,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 5
+     },
+     {
+      "free": 134920857716147,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 17
+     },
+     {
+      "free": 455020000000000000,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "VSKSM"
+     },
+     {
+      "free": 90971893827,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KAR"
+       },
+       {
+        "Token": "KSM"
+       }
+      ]
+     },
+     {
+      "free": 2398132678571,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "ForeignAsset": 5
+       }
+      ]
+     },
+     {
+      "free": 368854546,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "PHA"
+     },
+     {
+      "free": 268800446571740,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 4
+     },
+     {
+      "free": 1301569290497,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 13
+     },
+     {
+      "free": 10447820980365896186,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KAR"
+       },
+       {
+        "ForeignAsset": 2
+       }
+      ]
+     },
+     {
+      "free": 1369289,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 1
+     },
+     {
+      "free": 2162768291856,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "Token": "KSM"
+       }
+      ]
+     },
+     {
+      "free": 457891089772,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 12
+     },
+     {
+      "free": 18135024829525814425,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "StableAssetPoolToken": 1
+     },
+     {
+      "free": 100773738,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "Token": "KBTC"
+       }
+      ]
+     },
+     {
+      "free": 252932058,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "Token": "PHA"
+       }
+      ]
+     },
+     {
+      "free": 128820562,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "ForeignAsset": 0
+       }
+      ]
+     },
+     {
+      "free": 316875142,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 7
+     },
+     {
+      "free": 5451000,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "KSM"
+     },
+     {
+      "free": 13164423227488,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KAR"
+       },
+       {
+        "Token": "KUSD"
+       }
+      ]
+     },
+     {
+      "free": 110092585553,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 6
+     },
+     {
+      "free": 247063200000000,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 11
+     },
+     {
+      "free": 38764371909107,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 9
+     },
+     {
+      "free": 2463842993898723039,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "Token": "KINT"
+       }
+      ]
+     },
+     {
+      "free": 228229039,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "KBTC"
+     },
+     {
+      "free": 117061,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 20
+     },
+     {
+      "free": 9269600000,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 19
+     },
+     {
+      "free": 1859160000000,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "TAI"
+     },
+     {
+      "free": 61252765940217,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "LKSM"
+     },
+     {
+      "free": 1777062815947,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 16
+     },
+     {
+      "free": 21409600000,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "KINT"
+     },
+     {
+      "free": 866231868581,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KAR"
+       },
+       {
+        "Erc20": "0x1f3a10587a20114ea25ba1b388ee2dd4a337ce27"
+       }
+      ]
+     },
+     {
+      "free": 60460556294,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "Token": "LKSM"
+       }
+      ]
+     },
+     {
+      "free": 5230004221,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "KUSD"
+     },
+     {
+      "free": 236083755726673,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 8
+     },
+     {
+      "free": 259275800000,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 2
+     },
+     {
+      "free": 299628962940480783032,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 0
+     },
+     {
+      "free": 43373278025,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "StableAssetPoolToken": 0
+     },
+     {
+      "free": 8541183214,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 18
+     },
+     {
+      "free": 241230810245652037,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 10
+     },
+     {
+      "free": 3715381200000,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KSM"
+       },
+       {
+        "ForeignAsset": 1
+       }
+      ]
+     },
+     {
+      "free": 59236618,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "TAI"
+       },
+       {
+        "StableAssetPoolToken": 0
+       }
+      ]
+     },
+     {
+      "free": 2995450856971,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KAR"
+       },
+       {
+        "Token": "LKSM"
+       }
+      ]
+     },
+     {
+      "free": 176134284167,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "BNC"
+     },
+     {
+      "free": 253280407033405,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ]
+   ]
+  },
+  "Tokens.Accounts#aca/loan": {
+   "count_returned": 3,
+   "rows": [
+    [
+     {
+      "Token": "KSM"
+     },
+     {
+      "free": 405086707958111,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "LKSM"
+     },
+     {
+      "free": 55585085516966489,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "StableAssetPoolToken": 0
+     },
+     {
+      "free": 1267738906607981,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ]
+   ]
+  },
+  "Tokens.Accounts#aca/dexm": {
+   "count_returned": 29,
+   "rows": [
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KSM"
+       },
+       {
+        "Token": "LKSM"
+       }
+      ]
+     },
+     {
+      "free": 50317196830667,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "Token": "BNC"
+       }
+      ]
+     },
+     {
+      "free": 21826410108445683,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KSM"
+       },
+       {
+        "ForeignAsset": 0
+       }
+      ]
+     },
+     {
+      "free": 18250000000049,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 5
+     },
+     {
+      "free": 1217195431599334118,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KAR"
+       },
+       {
+        "Token": "KSM"
+       }
+      ]
+     },
+     {
+      "free": 11543273945132670,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "ForeignAsset": 5
+       }
+      ]
+     },
+     {
+      "free": 4461613889822,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "PHA"
+     },
+     {
+      "free": 28909800978236466,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KAR"
+       },
+       {
+        "ForeignAsset": 2
+       }
+      ]
+     },
+     {
+      "free": 399739646175657,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 1
+     },
+     {
+      "free": 51497909464545,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 12
+     },
+     {
+      "free": 133519576983261620163602,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "ForeignAsset": 2
+       }
+      ]
+     },
+     {
+      "free": 235904688075223,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "ForeignAsset": 12
+       }
+      ]
+     },
+     {
+      "free": 65198318346703,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "Token": "KBTC"
+       }
+      ]
+     },
+     {
+      "free": 591737340446426,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "Token": "PHA"
+       }
+      ]
+     },
+     {
+      "free": 20,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "ForeignAsset": 0
+       }
+      ]
+     },
+     {
+      "free": 287912931866888,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "KSM"
+     },
+     {
+      "free": 5000260975623145,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KAR"
+       },
+       {
+        "Token": "KUSD"
+       }
+      ]
+     },
+     {
+      "free": 7000000000008,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "Token": "KINT"
+       }
+      ]
+     },
+     {
+      "free": 222630000000014,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "KBTC"
+     },
+     {
+      "free": 6950953,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "TAI"
+     },
+     {
+      "free": 147532096085411149,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "LKSM"
+     },
+     {
+      "free": 9362315737210711,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "KINT"
+     },
+     {
+      "free": 17304263221720025,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KAR"
+       },
+       {
+        "Erc20": "0x1f3a10587a20114ea25ba1b388ee2dd4a337ce27"
+       }
+      ]
+     },
+     {
+      "free": 50102999793402092,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "KUSD"
+     },
+     {
+      "free": 421234761476723430,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 2
+     },
+     {
+      "free": 3989541531190439680053055,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 0
+     },
+     {
+      "free": 46224429067541,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "StableAssetPoolToken": 0
+     },
+     {
+      "free": 14343718498446,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KSM"
+       },
+       {
+        "ForeignAsset": 1
+       }
+      ]
+     },
+     {
+      "free": 9,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "BNC"
+     },
+     {
+      "free": 104328510467468187,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ]
+   ]
+  },
+  "Tokens.Accounts#aca/cdpt": {
+   "count_returned": 1,
+   "rows": [
+    [
+     {
+      "Token": "LKSM"
+     },
+     {
+      "free": 119938087899775014,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ]
+   ]
+  },
+  "Tokens.Accounts#aca/cdpe": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "Tokens.Accounts#aca/homa": {
+   "count_returned": 1,
+   "rows": [
+    [
+     {
+      "Token": "KSM"
+     },
+     {
+      "free": 7829545570657225,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ]
+   ]
+  },
+  "Tokens.Accounts#aca/hztr": {
+   "count_returned": 1,
+   "rows": [
+    [
+     {
+      "Token": "KUSD"
+     },
+     {
+      "free": 500000000000,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ]
+   ]
+  },
+  "Tokens.Accounts#aca/hmtr": {
+   "count_returned": 1,
+   "rows": [
+    [
+     {
+      "Token": "LKSM"
+     },
+     {
+      "free": 6565056050112913,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ]
+   ]
+  },
+  "Tokens.Accounts#aca/inct": {
+   "count_returned": 27,
+   "rows": [
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KSM"
+       },
+       {
+        "Token": "LKSM"
+       }
+      ]
+     },
+     {
+      "free": 619425251865092,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "Token": "BNC"
+       }
+      ]
+     },
+     {
+      "free": 215486684371792189,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KSM"
+       },
+       {
+        "ForeignAsset": 0
+       }
+      ]
+     },
+     {
+      "free": 7164087918,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 5
+     },
+     {
+      "free": 75505212456692198,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KAR"
+       },
+       {
+        "Token": "KSM"
+       }
+      ]
+     },
+     {
+      "free": 374343306716377560,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "ForeignAsset": 5
+       }
+      ]
+     },
+     {
+      "free": 21655613082947004,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "PHA"
+     },
+     {
+      "free": 5395871991471960,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KAR"
+       },
+       {
+        "ForeignAsset": 2
+       }
+      ]
+     },
+     {
+      "free": 957460759076474,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 1
+     },
+     {
+      "free": 8250678077209,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "Token": "KSM"
+       }
+      ]
+     },
+     {
+      "free": 570915526996471087,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 12
+     },
+     {
+      "free": 7231804565127685594661,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "ForeignAsset": 2
+       }
+      ]
+     },
+     {
+      "free": 377894727921171,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "ForeignAsset": 12
+       }
+      ]
+     },
+     {
+      "free": 642669661779919,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "Token": "KBTC"
+       }
+      ]
+     },
+     {
+      "free": 2339702886995918,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "Token": "PHA"
+       }
+      ]
+     },
+     {
+      "free": 2010711047900350,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "ForeignAsset": 0
+       }
+      ]
+     },
+     {
+      "free": 8483392866486464,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KAR"
+       },
+       {
+        "Token": "KUSD"
+       }
+      ]
+     },
+     {
+      "free": 45771793705727016,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "Token": "KINT"
+       }
+      ]
+     },
+     {
+      "free": 2071095969474496,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "KINT"
+     },
+     {
+      "free": 643592922056535,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KAR"
+       },
+       {
+        "Erc20": "0x1f3a10587a20114ea25ba1b388ee2dd4a337ce27"
+       }
+      ]
+     },
+     {
+      "free": 91359560413379266,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KUSD"
+       },
+       {
+        "Token": "LKSM"
+       }
+      ]
+     },
+     {
+      "free": 105877920572763023,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "KUSD"
+     },
+     {
+      "free": 34958313054679833,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 2
+     },
+     {
+      "free": 68188675453772289720037,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KSM"
+       },
+       {
+        "ForeignAsset": 1
+       }
+      ]
+     },
+     {
+      "free": 4158567318546,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "TAI"
+       },
+       {
+        "StableAssetPoolToken": 0
+       }
+      ]
+     },
+     {
+      "free": 39189613989279066,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "DexShare": [
+       {
+        "Token": "KAR"
+       },
+       {
+        "Token": "LKSM"
+       }
+      ]
+     },
+     {
+      "free": 140658574162248694,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "BNC"
+     },
+     {
+      "free": 16533431918022984,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ]
+   ]
+  },
+  "Tokens.Accounts#aca/cpot": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "Tokens.Accounts#aca/reve": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "Tokens.Accounts#aca/aNFT": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "Tokens.Accounts#aca/urls": {
+   "count_returned": 8,
+   "rows": [
+    [
+     {
+      "ForeignAsset": 5
+     },
+     {
+      "free": 871560000000000,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "PHA"
+     },
+     {
+      "free": 1728000000000,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 1
+     },
+     {
+      "free": 195728000000,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 12
+     },
+     {
+      "free": 100386995552000000000000,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "KINT"
+     },
+     {
+      "free": 2791360000000,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "KUSD"
+     },
+     {
+      "free": 3381442000000,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "ForeignAsset": 2
+     },
+     {
+      "free": 37912500000000000000,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "BNC"
+     },
+     {
+      "free": 11723200000,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ]
+   ]
+  },
+  "Tokens.Accounts#aca/fees": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "Tokens.Accounts#aca/lqcl": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "Tokens.Accounts#nuts/sta": {
+   "count_returned": 2,
+   "rows": [
+    [
+     {
+      "Token": "KSM"
+     },
+     {
+      "free": 446609443943899,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ],
+    [
+     {
+      "Token": "LKSM"
+     },
+     {
+      "free": 6885477788747961,
+      "reserved": 0,
+      "frozen": 0
+     }
+    ]
+   ]
+  },
+  "Tokens.Accounts#aca/hzbg": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "Tokens.Accounts#aca/xNFT": {
+   "count_returned": 0,
+   "rows": []
+  },
+  "System.Number": 12811865,
+  "Balances.TotalIssuance": 130189450492777337807,
+  "CdpTreasury.DebitPool": 2836910678262449472,
+  "CdpTreasury.DebitOffsetBuffer": 0,
+  "CdpTreasury.ExpectedCollateralAuctionSize": {
+   "error": "Storage function requires 1 parameters, 0 given"
+  },
+  "CdpEngine.LastAccumulationSecs": 1794093132,
+  "CdpEngine.LiquidationContracts": [],
+  "AuctionManager.TotalCollateralInAuction": {
+   "error": "Storage function requires 1 parameters, 0 given"
+  },
+  "AuctionManager.TotalTargetInAuction": 0,
+  "Homa.RelayChainCurrentEra": 10245,
+  "Homa.TotalStakingBonded": 94800178238365965,
+  "Homa.ToBondPool": 0,
+  "Homa.TotalVoidLiquid": 0,
+  "Homa.UnclaimedRedemption": 7829545570657225,
+  "Homa.Unbondings": {
+   "error": "Storage function requires 2 parameters, 0 given"
+  },
+  "Homa.CommissionRate": 10000000000000000,
+  "Homa.FastMatchFeeRate": 10000000000000000,
+  "Homa.EstimatedRewardRatePerEra": 85530357000000,
+  "Homa.SoftBondedCapPerSubAccount": 90000000000000000,
+  "StableAsset.PoolCount": 2,
+  "EmergencyShutdown.IsShutdown": true,
+  "EmergencyShutdown.CanRefund": true,
+  "TransactionPayment.PoolSize": {
+   "error": "Storage function requires 1 parameters, 0 given"
+  },
+  "TransactionPayment.SwapBalanceThreshold": {
+   "error": "Storage function requires 1 parameters, 0 given"
+  },
+  "TransactionPayment.NextFeeMultiplier": 1000000000000,
+  "TransactionPayment.OverrideChargeFeeMethod": null,
+  "Auction.AuctionsIndex": 493,
+  "EVM.ChainId": 686,
+  "EVM.NetworkContractIndex": 33554432,
+  "AssetRegistry.NextForeignAssetId": 21,
+  "AssetRegistry.NextStableAssetId": 2,
+  "LiquidCrowdloan.RedeemCurrencyId": {
+   "error": "Pallet \"LiquidCrowdloan\" not found"
+  },
+  "Incentives.ClaimRewardDeductionCurrency": {
+   "error": "Storage function requires 1 parameters, 0 given"
+  },
+  "AcalaOracle.HasDispatched": [],
+  "Balances.Account#aca/trsy": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/trsy": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 48,
+   "sufficients": 0,
+   "data": {
+    "free": 12041368097993194943,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 170141183460469231731687303715884105728
+   }
+  },
+  "Balances.Account#aca/loan": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/loan": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 4,
+   "sufficients": 0,
+   "data": {
+    "free": 1157130136966358,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 170141183460469231731687303715884105728
+   }
+  },
+  "Balances.Account#aca/dexm": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/dexm": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 30,
+   "sufficients": 0,
+   "data": {
+    "free": 4458767699023265495,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 170141183460469231731687303715884105728
+   }
+  },
+  "Balances.Account#aca/cdpt": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/cdpt": {
+   "nonce": 0,
+   "consumers": 2,
+   "providers": 2,
+   "sufficients": 0,
+   "data": {
+    "free": 9857227958763738930,
+    "reserved": 2022200000000,
+    "frozen": 0,
+    "flags": 170141183460469231731687303715884105728
+   }
+  },
+  "Balances.Account#aca/cdpe": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/cdpe": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 0,
+   "sufficients": 0,
+   "data": {
+    "free": 0,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 170141183460469231731687303715884105728
+   }
+  },
+  "Balances.Account#aca/homa": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/homa": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 2,
+   "sufficients": 0,
+   "data": {
+    "free": 100000000000,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 0
+   }
+  },
+  "Balances.Account#aca/hztr": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/hztr": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 2,
+   "sufficients": 0,
+   "data": {
+    "free": 100000000000,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 0
+   }
+  },
+  "Balances.Account#aca/hmtr": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/hmtr": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 2,
+   "sufficients": 0,
+   "data": {
+    "free": 100000000000,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 0
+   }
+  },
+  "Balances.Account#aca/inct": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/inct": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 28,
+   "sufficients": 0,
+   "data": {
+    "free": 10067218840291856711,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 170141183460469231731687303715884105728
+   }
+  },
+  "Balances.Account#aca/cpot": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/cpot": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 1,
+   "sufficients": 0,
+   "data": {
+    "free": 100000000001,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 0
+   }
+  },
+  "Balances.Account#aca/reve": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/reve": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 1,
+   "sufficients": 0,
+   "data": {
+    "free": 2278083219399171,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 170141183460469231731687303715884105728
+   }
+  },
+  "Balances.Account#aca/aNFT": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/aNFT": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 1,
+   "sufficients": 0,
+   "data": {
+    "free": 0,
+    "reserved": 52030000000000,
+    "frozen": 0,
+    "flags": 0
+   }
+  },
+  "Balances.Account#aca/urls": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/urls": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 9,
+   "sufficients": 0,
+   "data": {
+    "free": 11486400000000,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 170141183460469231731687303715884105728
+   }
+  },
+  "Balances.Account#aca/fees": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/fees": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 0,
+   "sufficients": 0,
+   "data": {
+    "free": 0,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 170141183460469231731687303715884105728
+   }
+  },
+  "Balances.Account#aca/lqcl": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/lqcl": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 0,
+   "sufficients": 0,
+   "data": {
+    "free": 0,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 170141183460469231731687303715884105728
+   }
+  },
+  "Balances.Account#nuts/sta": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#nuts/sta": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 3,
+   "sufficients": 0,
+   "data": {
+    "free": 0,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 0
+   }
+  },
+  "Balances.Account#aca/hzbg": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/hzbg": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 1,
+   "sufficients": 0,
+   "data": {
+    "free": 1106400000000,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 0
+   }
+  },
+  "Balances.Account#aca/xNFT": {
+   "free": 0,
+   "reserved": 0,
+   "frozen": 0,
+   "flags": 170141183460469231731687303715884105728
+  },
+  "System.Account#aca/xNFT": {
+   "nonce": 0,
+   "consumers": 0,
+   "providers": 1,
+   "sufficients": 0,
+   "data": {
+    "free": 100000000000,
+    "reserved": 0,
+    "frozen": 0,
+    "flags": 170141183460469231731687303715884105728
+   }
+  },
+  "CdpEngine.DefaultDebitExchangeRate": 100000000000000000,
+  "CdpEngine.DefaultLiquidationRatio": 1500000000000000000,
+  "CdpEngine.MinimumDebitValue": 50000000000000,
+  "Dex.GetExchangeFee": [
+   3,
+   1000
+  ]
+ }
+}
