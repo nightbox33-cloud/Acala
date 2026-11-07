@@ -13,7 +13,9 @@ jobs:
   probe:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 40
+    env:
+      RUN_FORK: ${{ contains(github.event.head_commit.message, 'run-fork') || github.event_name == 'workflow_dispatch' }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -31,18 +33,24 @@ jobs:
         run: |
           python3 scripts/audit/query_paused.py acala audit-live/paused-calls-acala.json
           python3 scripts/audit/query_paused.py karura audit-live/paused-calls-karura.json
+      - name: Enumerate deployed EVM accounts, balances and bytecode
+        continue-on-error: true
+        env:
+          EVM_MAX_ACCOUNTS: '400'
+        run: |
+          python3 scripts/audit/evm_inventory.py acala audit-live/evm-inventory-acala.json audit-live/evm-code-acala
+          python3 scripts/audit/evm_inventory.py karura audit-live/evm-inventory-karura.json audit-live/evm-code-karura
       - name: Install chopsticks fork tooling
-        if: github.event_name == 'workflow_dispatch'
-        run: npm install --no-audit --no-fund --silent @acala-network/chopsticks-core@1.5.2 @polkadot/api@latest
-      - name: Fork mainnet and dry-run permissionless money paths
-        if: github.event_name == 'workflow_dispatch'
+        if: env.RUN_FORK == 'true'
+        run: npm install --no-audit --no-fund --silent @acala-network/chopsticks@1.5.2 @acala-network/chopsticks-core@1.5.2 @polkadot/api@latest
+      - name: Fork mainnet and measure PnL of accumulated call sequences
+        if: env.RUN_FORK == 'true'
         continue-on-error: true
         run: |
           ANCHOR_HASH=$(python3 -c 'import json;print(json.load(open("audit-live/acala-state.json"))["anchor"]["finalized_hash"])')
-          echo "ANCHOR_HASH=$ANCHOR_HASH" >> "$GITHUB_ENV"
           export ANCHOR_HASH
-          export OUT=audit-live/fork-poc.json
-          timeout 600 node scripts/audit/fork_poc.mjs 2>&1 | tee audit-live/fork-poc.log
+          export OUT=audit-live/fork-fuzz.json
+          timeout 600 node scripts/audit/fork_fuzz.mjs 2>&1 | tee audit-live/fork-fuzz.log
       - name: Publish evidence to branch
         run: |
           git config user.name "audit-bot"
