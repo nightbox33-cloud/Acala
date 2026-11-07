@@ -2,14 +2,10 @@ name: Audit live-chain anchor
 on:
   push:
     paths:
-      - 'scripts/audit/rpc_probe.py'
+      - 'scripts/audit/*.py'
+      - 'scripts/audit/*.json'
       - '.github/workflows/audit-live-anchor.yml'
   workflow_dispatch:
-    inputs:
-      extra_endpoints:
-        description: 'space-separated extra JSON-RPC endpoints'
-        required: false
-        default: ''
 permissions:
   contents: write
 jobs:
@@ -21,9 +17,12 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: arena/9267cd86-acala
-      - name: Probe live chain RPC
-        run: |
-          python3 scripts/audit/rpc_probe.py --out audit-live/anchor.json ${{ github.event.inputs.extra_endpoints && format('--endpoints {0}', github.event.inputs.extra_endpoints) || '' }}
+      - name: Install SCALE/metadata tooling
+        run: python3 -m pip install --quiet substrate-interface==1.8.1
+      - name: Probe Acala state
+        run: python3 scripts/audit/live_state_probe.py --chain acala --mode catalogue --out audit-live/acala-catalogue.json
+      - name: Probe Karura state
+        run: python3 scripts/audit/live_state_probe.py --chain karura --mode catalogue --out audit-live/karura-catalogue.json
       - name: Publish evidence to branch
         run: |
           git config user.name "audit-bot"
