@@ -1,0 +1,1438 @@
+{
+ "generated_at_utc": "2026-11-07T23:04:52.971088+00:00",
+ "runner": {
+  "hostname": "runnervmwuk1x",
+  "ci": "true",
+  "run_id": "42423566952"
+ },
+ "endpoints": {
+  "https://acala-rpc.aca-api.network": {
+   "kind": "substrate",
+   "calls": {
+    "system_chain": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": "Acala",
+      "id": 1
+     }
+    },
+    "system_health": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": {
+       "isSyncing": false,
+       "peers": 1,
+       "shouldHavePeers": true
+      },
+      "id": 1
+     }
+    },
+    "system_localPeerId": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": "12D3KooWRGvWqwkS8S5nFqtaKWzyCastdk6Zr9yxy13iGs2iJj8h",
+      "id": 1
+     }
+    },
+    "chain_getHeader": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": {
+       "digest": {
+        "logs": [
+         "0x0661757261208b4ee90800000000",
+         "0x04525053529062ed9cde720343a5e2eed72d0126691c815b5ec44adffa23d5aff0943f659d7f56b20d08",
+         "0x05617572610101480b7204741963631923a3de95c32aec40633c4214304fc1482185de3413aa451eb7037b9ddb6c6bb6db6f49882f9fe06afd956aad5836e9cf5e6715baac6686"
+        ]
+       },
+       "extrinsicsRoot": "0x189847d04b7741c54bfb5783fe67a12e39a6160f75394bd4b01d942a8d54a623",
+       "number": "0xbcf685",
+       "parentHash": "0x32b5d5cce50ef288e2692d0d6b96cec831bf952dc6041db040daa40e3fc0bb59",
+       "stateRoot": "0x1a1416cb6141ce41e16c88dbd7df14c5ea6461b2d0dab708941e2b248b09e633"
+      },
+      "id": 1
+     }
+    },
+    "chain_getFinalizedHead": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": "0xb472134393884d3d1f54d8aa722d9d15c3a9f9305449f223db0cd52741385a9d",
+      "id": 1
+     }
+    },
+    "state_getRuntimeVersion": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": {
+       "apis": [
+        [
+         "0xdf6acb689907609b",
+         5
+        ],
+        [
+         "0x40fe3ad401f8959a",
+         6
+        ],
+        [
+         "0xd2bc9897eed08f15",
+         3
+        ],
+        [
+         "0x6ef953004ba30e59",
+         1
+        ],
+        [
+         "0xab3c0572291feb8b",
+         1
+        ],
+        [
+         "0x37c8bb1350a9a2a8",
+         4
+        ],
+        [
+         "0x955e168e0cfb3409",
+         1
+        ],
+        [
+         "0xf78b278be53f454c",
+         2
+        ],
+        [
+         "0x9af86751b70c112d",
+         2
+        ],
+        [
+         "0xf3ff14d5ab527059",
+         3
+        ],
+        [
+         "0xbc9d89904f5b923f",
+         1
+        ],
+        [
+         "0x6ff52ee858e6c5bd",
+         1
+        ],
+        [
+         "0xdd718d5cc53262d4",
+         1
+        ],
+        [
+         "0xe3df3f2aa8a5cc57",
+         2
+        ],
+        [
+         "0x91b1c8b16328eb92",
+         2
+        ],
+        [
+         "0xea93e3f16f3d6962",
+         3
+        ],
+        [
+         "0x37e397fc7c91f5e4",
+         2
+        ]
+       ],
+       "authoringVersion": 1,
+       "implName": "acala",
+       "implVersion": 0,
+       "specName": "acala",
+       "specVersion": 2370,
+       "stateVersion": 1,
+       "systemVersion": 1,
+       "transactionVersion": 3
+      },
+      "id": 1
+     }
+    }
+   }
+  },
+  "https://acala-rpc-0.aca-api.network": {
+   "kind": "substrate",
+   "calls": {
+    "system_chain": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": "Acala",
+      "id": 1
+     }
+    },
+    "system_health": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": {
+       "isSyncing": false,
+       "peers": 1,
+       "shouldHavePeers": true
+      },
+      "id": 1
+     }
+    },
+    "system_localPeerId": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": "12D3KooWRGvWqwkS8S5nFqtaKWzyCastdk6Zr9yxy13iGs2iJj8h",
+      "id": 1
+     }
+    },
+    "chain_getHeader": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": {
+       "digest": {
+        "logs": [
+         "0x0661757261208b4ee90800000000",
+         "0x04525053529062ed9cde720343a5e2eed72d0126691c815b5ec44adffa23d5aff0943f659d7f56b20d08",
+         "0x05617572610101480b7204741963631923a3de95c32aec40633c4214304fc1482185de3413aa451eb7037b9ddb6c6bb6db6f49882f9fe06afd956aad5836e9cf5e6715baac6686"
+        ]
+       },
+       "extrinsicsRoot": "0x189847d04b7741c54bfb5783fe67a12e39a6160f75394bd4b01d942a8d54a623",
+       "number": "0xbcf685",
+       "parentHash": "0x32b5d5cce50ef288e2692d0d6b96cec831bf952dc6041db040daa40e3fc0bb59",
+       "stateRoot": "0x1a1416cb6141ce41e16c88dbd7df14c5ea6461b2d0dab708941e2b248b09e633"
+      },
+      "id": 1
+     }
+    },
+    "chain_getFinalizedHead": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": "0xb472134393884d3d1f54d8aa722d9d15c3a9f9305449f223db0cd52741385a9d",
+      "id": 1
+     }
+    },
+    "state_getRuntimeVersion": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": {
+       "apis": [
+        [
+         "0xdf6acb689907609b",
+         5
+        ],
+        [
+         "0x40fe3ad401f8959a",
+         6
+        ],
+        [
+         "0xd2bc9897eed08f15",
+         3
+        ],
+        [
+         "0x6ef953004ba30e59",
+         1
+        ],
+        [
+         "0xab3c0572291feb8b",
+         1
+        ],
+        [
+         "0x37c8bb1350a9a2a8",
+         4
+        ],
+        [
+         "0x955e168e0cfb3409",
+         1
+        ],
+        [
+         "0xf78b278be53f454c",
+         2
+        ],
+        [
+         "0x9af86751b70c112d",
+         2
+        ],
+        [
+         "0xf3ff14d5ab527059",
+         3
+        ],
+        [
+         "0xbc9d89904f5b923f",
+         1
+        ],
+        [
+         "0x6ff52ee858e6c5bd",
+         1
+        ],
+        [
+         "0xdd718d5cc53262d4",
+         1
+        ],
+        [
+         "0xe3df3f2aa8a5cc57",
+         2
+        ],
+        [
+         "0x91b1c8b16328eb92",
+         2
+        ],
+        [
+         "0xea93e3f16f3d6962",
+         3
+        ],
+        [
+         "0x37e397fc7c91f5e4",
+         2
+        ]
+       ],
+       "authoringVersion": 1,
+       "implName": "acala",
+       "implVersion": 0,
+       "specName": "acala",
+       "specVersion": 2370,
+       "stateVersion": 1,
+       "systemVersion": 1,
+       "transactionVersion": 3
+      },
+      "id": 1
+     }
+    }
+   }
+  },
+  "https://acala-rpc-1.aca-api.network": {
+   "kind": "substrate",
+   "calls": {
+    "system_chain": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": "Acala",
+      "id": 1
+     }
+    },
+    "system_health": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": {
+       "isSyncing": false,
+       "peers": 1,
+       "shouldHavePeers": true
+      },
+      "id": 1
+     }
+    },
+    "system_localPeerId": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": "12D3KooWRGvWqwkS8S5nFqtaKWzyCastdk6Zr9yxy13iGs2iJj8h",
+      "id": 1
+     }
+    },
+    "chain_getHeader": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": {
+       "digest": {
+        "logs": [
+         "0x0661757261208c4ee90800000000",
+         "0x04525053529058820f2150203036be7432a7606a38715b65fee1eaa8bd6e3e4f576f6ab0bc7f5eb20d08",
+         "0x0561757261010106041bace83529fd0c5fe7b5e0ec5f01c214baf59e41d11db9d6649b80c90d342fe8c4f10d36de476624aa1d0928d45fce8375122eabffedaf16320ec1a21182"
+        ]
+       },
+       "extrinsicsRoot": "0x88bcdc02399299ccd6ecba31199c45141b713ff830ed0c5da691c8a1854d38a9",
+       "number": "0xbcf686",
+       "parentHash": "0x93083b33a689785d06b73466fcc707f78ec3b9261c598800bb7fb1552c8fb9ca",
+       "stateRoot": "0x0d5a49b5185cd0d7b9ca9d0d81be49fdc2222062675059a694673b63a3f103e1"
+      },
+      "id": 1
+     }
+    },
+    "chain_getFinalizedHead": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": "0xb472134393884d3d1f54d8aa722d9d15c3a9f9305449f223db0cd52741385a9d",
+      "id": 1
+     }
+    },
+    "state_getRuntimeVersion": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": {
+       "apis": [
+        [
+         "0xdf6acb689907609b",
+         5
+        ],
+        [
+         "0x40fe3ad401f8959a",
+         6
+        ],
+        [
+         "0xd2bc9897eed08f15",
+         3
+        ],
+        [
+         "0x6ef953004ba30e59",
+         1
+        ],
+        [
+         "0xab3c0572291feb8b",
+         1
+        ],
+        [
+         "0x37c8bb1350a9a2a8",
+         4
+        ],
+        [
+         "0x955e168e0cfb3409",
+         1
+        ],
+        [
+         "0xf78b278be53f454c",
+         2
+        ],
+        [
+         "0x9af86751b70c112d",
+         2
+        ],
+        [
+         "0xf3ff14d5ab527059",
+         3
+        ],
+        [
+         "0xbc9d89904f5b923f",
+         1
+        ],
+        [
+         "0x6ff52ee858e6c5bd",
+         1
+        ],
+        [
+         "0xdd718d5cc53262d4",
+         1
+        ],
+        [
+         "0xe3df3f2aa8a5cc57",
+         2
+        ],
+        [
+         "0x91b1c8b16328eb92",
+         2
+        ],
+        [
+         "0xea93e3f16f3d6962",
+         3
+        ],
+        [
+         "0x37e397fc7c91f5e4",
+         2
+        ]
+       ],
+       "authoringVersion": 1,
+       "implName": "acala",
+       "implVersion": 0,
+       "specName": "acala",
+       "specVersion": 2370,
+       "stateVersion": 1,
+       "systemVersion": 1,
+       "transactionVersion": 3
+      },
+      "id": 1
+     }
+    }
+   }
+  },
+  "https://acala-rpc.n.dwellir.com": {
+   "kind": "substrate",
+   "calls": {
+    "system_chain": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": "Acala"
+     }
+    },
+    "system_health": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": {
+       "peers": 5,
+       "isSyncing": false,
+       "shouldHavePeers": true
+      }
+     }
+    },
+    "system_localPeerId": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": "12D3KooWNyQNjp8ttyqA74knQjyuZUf1w5MechLzRnpMSyPvb3A1"
+     }
+    },
+    "chain_getHeader": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": {
+       "parentHash": "0x93083b33a689785d06b73466fcc707f78ec3b9261c598800bb7fb1552c8fb9ca",
+       "number": "0xbcf686",
+       "stateRoot": "0x0d5a49b5185cd0d7b9ca9d0d81be49fdc2222062675059a694673b63a3f103e1",
+       "extrinsicsRoot": "0x88bcdc02399299ccd6ecba31199c45141b713ff830ed0c5da691c8a1854d38a9",
+       "digest": {
+        "logs": [
+         "0x0661757261208c4ee90800000000",
+         "0x04525053529058820f2150203036be7432a7606a38715b65fee1eaa8bd6e3e4f576f6ab0bc7f5eb20d08",
+         "0x0561757261010106041bace83529fd0c5fe7b5e0ec5f01c214baf59e41d11db9d6649b80c90d342fe8c4f10d36de476624aa1d0928d45fce8375122eabffedaf16320ec1a21182"
+        ]
+       }
+      }
+     }
+    },
+    "chain_getFinalizedHead": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": "0x82423a45c7119accb8aeef579b32e632ec1115287837e011a8ac4c0fe0cdffbd"
+     }
+    },
+    "state_getRuntimeVersion": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": {
+       "specName": "acala",
+       "implName": "acala",
+       "authoringVersion": 1,
+       "specVersion": 2370,
+       "implVersion": 0,
+       "apis": [
+        [
+         "0xdf6acb689907609b",
+         5
+        ],
+        [
+         "0x40fe3ad401f8959a",
+         6
+        ],
+        [
+         "0xd2bc9897eed08f15",
+         3
+        ],
+        [
+         "0x6ef953004ba30e59",
+         1
+        ],
+        [
+         "0xab3c0572291feb8b",
+         1
+        ],
+        [
+         "0x37c8bb1350a9a2a8",
+         4
+        ],
+        [
+         "0x955e168e0cfb3409",
+         1
+        ],
+        [
+         "0xf78b278be53f454c",
+         2
+        ],
+        [
+         "0x9af86751b70c112d",
+         2
+        ],
+        [
+         "0xf3ff14d5ab527059",
+         3
+        ],
+        [
+         "0xbc9d89904f5b923f",
+         1
+        ],
+        [
+         "0x6ff52ee858e6c5bd",
+         1
+        ],
+        [
+         "0xdd718d5cc53262d4",
+         1
+        ],
+        [
+         "0xe3df3f2aa8a5cc57",
+         2
+        ],
+        [
+         "0x91b1c8b16328eb92",
+         2
+        ],
+        [
+         "0xea93e3f16f3d6962",
+         3
+        ],
+        [
+         "0x37e397fc7c91f5e4",
+         2
+        ]
+       ],
+       "transactionVersion": 3,
+       "systemVersion": 1,
+       "stateVersion": 1
+      }
+     }
+    }
+   }
+  },
+  "https://acala-rpc.dwellir.com": {
+   "kind": "substrate",
+   "calls": {
+    "system_chain": {
+     "ok": false,
+     "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
+    },
+    "system_health": {
+     "ok": false,
+     "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
+    },
+    "system_localPeerId": {
+     "ok": false,
+     "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
+    },
+    "chain_getHeader": {
+     "ok": false,
+     "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
+    },
+    "chain_getFinalizedHead": {
+     "ok": false,
+     "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
+    },
+    "state_getRuntimeVersion": {
+     "ok": false,
+     "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
+    }
+   }
+  },
+  "https://acala-polkadot.api.onfinality.io/public-http": {
+   "kind": "substrate",
+   "calls": {
+    "system_chain": {
+     "ok": false,
+     "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
+    },
+    "system_health": {
+     "ok": false,
+     "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
+    },
+    "system_localPeerId": {
+     "ok": false,
+     "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
+    },
+    "chain_getHeader": {
+     "ok": false,
+     "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
+    },
+    "chain_getFinalizedHead": {
+     "ok": false,
+     "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
+    },
+    "state_getRuntimeVersion": {
+     "ok": false,
+     "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
+    }
+   }
+  },
+  "https://karura-rpc.aca-api.network": {
+   "kind": "substrate",
+   "calls": {
+    "system_chain": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": "Karura",
+      "id": 1
+     }
+    },
+    "system_health": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": {
+       "isSyncing": false,
+       "peers": 1,
+       "shouldHavePeers": true
+      },
+      "id": 1
+     }
+    },
+    "system_localPeerId": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": "12D3KooWRGvWqwkS8S5nFqtaKWzyCastdk6Zr9yxy13iGs2iJj8h",
+      "id": 1
+     }
+    },
+    "chain_getHeader": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": {
+       "digest": {
+        "logs": [
+         "0x0661757261208c4ee90800000000",
+         "0x0452505352904ef03642bddb398cbcefb2dd88572dd56c66da988c2848e10058c3ba53aba3e5ce709508",
+         "0x05617572610101a4c7de9cda25abb73610d57c5f6942c9212d0ddba183494d5ea88a2601682d5090bbf8fc151ee4f05dcfb41c798db11105028695bbe1d2358f692380ee6d2184"
+        ]
+       },
+       "extrinsicsRoot": "0x069015566a0faa0bc6db56a2ecc416c61ba15289111217a3c0cdd3a052ffe883",
+       "number": "0xc37e33",
+       "parentHash": "0x392d12a2915cd19db47417a505a952ca20f7a689a49eb18846be2fb1eebe4502",
+       "stateRoot": "0x4049a94c147fd1ef19a141b7dba4ae0d2dc4cad7e9c605152b9c2d461b9038fb"
+      },
+      "id": 1
+     }
+    },
+    "chain_getFinalizedHead": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": "0x183f86f2c228e2b3a036089e428e12b6e474a4d32cbd5a11ced430ee004240f1",
+      "id": 1
+     }
+    },
+    "state_getRuntimeVersion": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": {
+       "apis": [
+        [
+         "0xdd718d5cc53262d4",
+         1
+        ],
+        [
+         "0x37c8bb1350a9a2a8",
+         4
+        ],
+        [
+         "0xe3df3f2aa8a5cc57",
+         2
+        ],
+        [
+         "0x6ef953004ba30e59",
+         1
+        ],
+        [
+         "0x91b1c8b16328eb92",
+         2
+        ],
+        [
+         "0x6ff52ee858e6c5bd",
+         1
+        ],
+        [
+         "0x37e397fc7c91f5e4",
+         2
+        ],
+        [
+         "0xd2bc9897eed08f15",
+         3
+        ],
+        [
+         "0xab3c0572291feb8b",
+         1
+        ],
+        [
+         "0x9af86751b70c112d",
+         2
+        ],
+        [
+         "0xbc9d89904f5b923f",
+         1
+        ],
+        [
+         "0x955e168e0cfb3409",
+         1
+        ],
+        [
+         "0xf78b278be53f454c",
+         2
+        ],
+        [
+         "0xdf6acb689907609b",
+         5
+        ],
+        [
+         "0x40fe3ad401f8959a",
+         6
+        ],
+        [
+         "0xf3ff14d5ab527059",
+         3
+        ],
+        [
+         "0xea93e3f16f3d6962",
+         3
+        ]
+       ],
+       "authoringVersion": 1,
+       "implName": "karura",
+       "implVersion": 0,
+       "specName": "karura",
+       "specVersion": 2370,
+       "stateVersion": 1,
+       "systemVersion": 1,
+       "transactionVersion": 2
+      },
+      "id": 1
+     }
+    }
+   }
+  },
+  "https://karura-rpc-0.aca-api.network": {
+   "kind": "substrate",
+   "calls": {
+    "system_chain": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": "Karura",
+      "id": 1
+     }
+    },
+    "system_health": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": {
+       "isSyncing": false,
+       "peers": 1,
+       "shouldHavePeers": true
+      },
+      "id": 1
+     }
+    },
+    "system_localPeerId": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": "12D3KooWRGvWqwkS8S5nFqtaKWzyCastdk6Zr9yxy13iGs2iJj8h",
+      "id": 1
+     }
+    },
+    "chain_getHeader": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": {
+       "digest": {
+        "logs": [
+         "0x0661757261208c4ee90800000000",
+         "0x0452505352904ef03642bddb398cbcefb2dd88572dd56c66da988c2848e10058c3ba53aba3e5ce709508",
+         "0x05617572610101a4c7de9cda25abb73610d57c5f6942c9212d0ddba183494d5ea88a2601682d5090bbf8fc151ee4f05dcfb41c798db11105028695bbe1d2358f692380ee6d2184"
+        ]
+       },
+       "extrinsicsRoot": "0x069015566a0faa0bc6db56a2ecc416c61ba15289111217a3c0cdd3a052ffe883",
+       "number": "0xc37e33",
+       "parentHash": "0x392d12a2915cd19db47417a505a952ca20f7a689a49eb18846be2fb1eebe4502",
+       "stateRoot": "0x4049a94c147fd1ef19a141b7dba4ae0d2dc4cad7e9c605152b9c2d461b9038fb"
+      },
+      "id": 1
+     }
+    },
+    "chain_getFinalizedHead": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": "0x183f86f2c228e2b3a036089e428e12b6e474a4d32cbd5a11ced430ee004240f1",
+      "id": 1
+     }
+    },
+    "state_getRuntimeVersion": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": {
+       "apis": [
+        [
+         "0xdd718d5cc53262d4",
+         1
+        ],
+        [
+         "0x37c8bb1350a9a2a8",
+         4
+        ],
+        [
+         "0xe3df3f2aa8a5cc57",
+         2
+        ],
+        [
+         "0x6ef953004ba30e59",
+         1
+        ],
+        [
+         "0x91b1c8b16328eb92",
+         2
+        ],
+        [
+         "0x6ff52ee858e6c5bd",
+         1
+        ],
+        [
+         "0x37e397fc7c91f5e4",
+         2
+        ],
+        [
+         "0xd2bc9897eed08f15",
+         3
+        ],
+        [
+         "0xab3c0572291feb8b",
+         1
+        ],
+        [
+         "0x9af86751b70c112d",
+         2
+        ],
+        [
+         "0xbc9d89904f5b923f",
+         1
+        ],
+        [
+         "0x955e168e0cfb3409",
+         1
+        ],
+        [
+         "0xf78b278be53f454c",
+         2
+        ],
+        [
+         "0xdf6acb689907609b",
+         5
+        ],
+        [
+         "0x40fe3ad401f8959a",
+         6
+        ],
+        [
+         "0xf3ff14d5ab527059",
+         3
+        ],
+        [
+         "0xea93e3f16f3d6962",
+         3
+        ]
+       ],
+       "authoringVersion": 1,
+       "implName": "karura",
+       "implVersion": 0,
+       "specName": "karura",
+       "specVersion": 2370,
+       "stateVersion": 1,
+       "systemVersion": 1,
+       "transactionVersion": 2
+      },
+      "id": 1
+     }
+    }
+   }
+  },
+  "https://karura-rpc.n.dwellir.com": {
+   "kind": "substrate",
+   "calls": {
+    "system_chain": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": "Karura"
+     }
+    },
+    "system_health": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": {
+       "peers": 2,
+       "isSyncing": false,
+       "shouldHavePeers": true
+      }
+     }
+    },
+    "system_localPeerId": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": "12D3KooWSGSsNYoTE7SLZcAyq5BHycwky7EFVwpXGLjAG4hh83XQ"
+     }
+    },
+    "chain_getHeader": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": {
+       "parentHash": "0xf939e09dc7fa658706316d7df9370917a62077971ce55da03a37e60caacb9bd9",
+       "number": "0xc37e34",
+       "stateRoot": "0xd781e614989ab2aba827c9b43e153382eb5bf2132dc4fdb19cf56f41c9785bee",
+       "extrinsicsRoot": "0x46e338f30d4f62c752e6a6074a202b8697fe79ae0674127c659115dd927f0fab",
+       "digest": {
+        "logs": [
+         "0x0661757261208d4ee90800000000",
+         "0x045250535290483f5114f763e4be59e1c916daeb8d030e5286e062f09322b986809a122b1ce0d6709508",
+         "0x05617572610101c6a5c01dd1cddcea51b5ddde91dd426a661fdc9dc10f19c6bc8aeb62a8be4903b60a13fb34dd080f0a2e7834e7418c1ba92cb5da720e3a3e80e60100b3def280"
+        ]
+       }
+      }
+     }
+    },
+    "chain_getFinalizedHead": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": "0x183f86f2c228e2b3a036089e428e12b6e474a4d32cbd5a11ced430ee004240f1"
+     }
+    },
+    "state_getRuntimeVersion": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": {
+       "specName": "karura",
+       "implName": "karura",
+       "authoringVersion": 1,
+       "specVersion": 2370,
+       "implVersion": 0,
+       "apis": [
+        [
+         "0xdd718d5cc53262d4",
+         1
+        ],
+        [
+         "0x37c8bb1350a9a2a8",
+         4
+        ],
+        [
+         "0xe3df3f2aa8a5cc57",
+         2
+        ],
+        [
+         "0x6ef953004ba30e59",
+         1
+        ],
+        [
+         "0x91b1c8b16328eb92",
+         2
+        ],
+        [
+         "0x6ff52ee858e6c5bd",
+         1
+        ],
+        [
+         "0x37e397fc7c91f5e4",
+         2
+        ],
+        [
+         "0xd2bc9897eed08f15",
+         3
+        ],
+        [
+         "0xab3c0572291feb8b",
+         1
+        ],
+        [
+         "0x9af86751b70c112d",
+         2
+        ],
+        [
+         "0xbc9d89904f5b923f",
+         1
+        ],
+        [
+         "0x955e168e0cfb3409",
+         1
+        ],
+        [
+         "0xf78b278be53f454c",
+         2
+        ],
+        [
+         "0xdf6acb689907609b",
+         5
+        ],
+        [
+         "0x40fe3ad401f8959a",
+         6
+        ],
+        [
+         "0xf3ff14d5ab527059",
+         3
+        ],
+        [
+         "0xea93e3f16f3d6962",
+         3
+        ]
+       ],
+       "transactionVersion": 2,
+       "systemVersion": 1,
+       "stateVersion": 1
+      }
+     }
+    }
+   }
+  },
+  "https://eth-rpc-acala.aca-api.network": {
+   "kind": "evm",
+   "calls": {
+    "eth_chainId": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": "0x313",
+      "id": 1
+     }
+    },
+    "eth_blockNumber": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": "0xbcf686",
+      "id": 1
+     }
+    },
+    "eth_getBlockByNumber": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": {
+       "difficulty": "0x0",
+       "extraData": "0x",
+       "gasLimit": "0x1c99c80",
+       "gasUsed": "0x0",
+       "hash": "0x908f58724d528082e574e358f09486e23ec494f7753a7ee1bc683ef94dfbb9c2",
+       "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+       "miner": "0xd37c3548dd0fc0339f6e7a4353bc2defa6ff96b5",
+       "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+       "nonce": "0x0000000000000000",
+       "number": "0xbcf686",
+       "parentHash": "0x93083b33a689785d06b73466fcc707f78ec3b9261c598800bb7fb1552c8fb9ca",
+       "receiptsRoot": "0x88bcdc02399299ccd6ecba31199c45141b713ff830ed0c5da691c8a1854d38a9",
+       "sha3Uncles": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+       "size": "0x4161",
+       "stateRoot": "0x0d5a49b5185cd0d7b9ca9d0d81be49fdc2222062675059a694673b63a3f103e1",
+       "timestamp": "0x6aefae96",
+       "totalDifficulty": "0x0",
+       "transactions": [],
+       "transactionsRoot": "0x88bcdc02399299ccd6ecba31199c45141b713ff830ed0c5da691c8a1854d38a9",
+       "uncles": []
+      },
+      "id": 1
+     }
+    }
+   }
+  },
+  "https://eth-rpc-karura.aca-api.network": {
+   "kind": "evm",
+   "calls": {
+    "eth_chainId": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": "0x2ae",
+      "id": 1
+     }
+    },
+    "eth_blockNumber": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": "0xc37e34",
+      "id": 1
+     }
+    },
+    "eth_getBlockByNumber": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": {
+       "difficulty": "0x0",
+       "extraData": "0x",
+       "gasLimit": "0x1c99c80",
+       "gasUsed": "0x0",
+       "hash": "0x0f065f0e226dcc1c7733b8126208b7b6c0db55ab3f9b1fd26240daa7923a1a83",
+       "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+       "miner": "0x2ca7856310511ceed7b5ed21f80095cd80c50869",
+       "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+       "nonce": "0x0000000000000000",
+       "number": "0xc37e34",
+       "parentHash": "0xf939e09dc7fa658706316d7df9370917a62077971ce55da03a37e60caacb9bd9",
+       "receiptsRoot": "0x46e338f30d4f62c752e6a6074a202b8697fe79ae0674127c659115dd927f0fab",
+       "sha3Uncles": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+       "size": "0x4144",
+       "stateRoot": "0xd781e614989ab2aba827c9b43e153382eb5bf2132dc4fdb19cf56f41c9785bee",
+       "timestamp": "0x6aefae9c",
+       "totalDifficulty": "0x0",
+       "transactions": [],
+       "transactionsRoot": "0x46e338f30d4f62c752e6a6074a202b8697fe79ae0674127c659115dd927f0fab",
+       "uncles": []
+      },
+      "id": 1
+     }
+    }
+   }
+  },
+  "https://blockscout.acala.network/api/eth-rpc": {
+   "kind": "evm",
+   "calls": {
+    "eth_chainId": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "error": "Action not found.",
+      "id": 1
+     }
+    },
+    "eth_blockNumber": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "result": "0xbcf686",
+      "id": 1
+     }
+    },
+    "eth_getBlockByNumber": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "error": "Action not found.",
+      "id": 1
+     }
+    }
+   }
+  },
+  "https://polkadot-rpc.dwellir.com": {
+   "kind": "substrate",
+   "calls": {
+    "system_chain": {
+     "ok": false,
+     "error": "HTTPError: HTTP Error 503: Service Unavailable"
+    },
+    "system_health": {
+     "ok": false,
+     "error": "HTTPError: HTTP Error 503: Service Unavailable"
+    },
+    "system_localPeerId": {
+     "ok": false,
+     "error": "HTTPError: HTTP Error 503: Service Unavailable"
+    },
+    "chain_getHeader": {
+     "ok": false,
+     "error": "HTTPError: HTTP Error 503: Service Unavailable"
+    },
+    "chain_getFinalizedHead": {
+     "ok": false,
+     "error": "HTTPError: HTTP Error 503: Service Unavailable"
+    },
+    "state_getRuntimeVersion": {
+     "ok": false,
+     "error": "HTTPError: HTTP Error 503: Service Unavailable"
+    }
+   }
+  },
+  "https://polkadot.api.onfinality.io/public-http": {
+   "kind": "substrate",
+   "calls": {
+    "system_chain": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": "Polkadot"
+     }
+    },
+    "system_health": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": {
+       "peers": 49,
+       "isSyncing": false,
+       "shouldHavePeers": true
+      }
+     }
+    },
+    "system_localPeerId": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": "12D3KooWT1PWaNdAwYrSr89dvStnoGdH3t4LNRbcVNN4JCtsotkR"
+     }
+    },
+    "chain_getHeader": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": {
+       "parentHash": "0xefe6b68cc30c2ddd9e5797f2526167af531964eb115a519d15dc44b1134d7194",
+       "number": "0x2036c99",
+       "stateRoot": "0x9d99d1ed9626cb4c42983c570ddf02c740a8aed22ae7e0d6798218e500969c83",
+       "extrinsicsRoot": "0x4053cc66099ee4ead23fb781eb369f608ba186e97b429a2625379c50d6d9545a",
+       "digest": {
+        "logs": [
+         "0x0642414245b50103170200001b9dd21100000000d8a18814f2ed52c8f07dfafee55394725bbe85919df91538f69959300c68f10af5853b4eade75a2f3cc9a7142711ed015afe365f07b68ff95fa10d04cdb4460b7aa26ea65661cfa42c9a5d0075e42fa4e5980d867421e25985bde5d9b8d3cf0d",
+         "0x0442454546840363fda9671994331a1e9c9c239fcf95073e5ee8648c1c307d5d524d597404aeb1",
+         "0x05424142450101c2fba7c301b45f903292472cda3dfc532e5403e5e10d6e6a18e3c6e6908e5e30151d11ac8a0125d6424e7204fd384bbddb08d2887a96c4011a8e99aa17728e85"
+        ]
+       }
+      }
+     }
+    },
+    "chain_getFinalizedHead": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": "0xa5f46a9f2d0430b072974778b7ff4e8ec0bae24812ebab66991028e2e366896e"
+     }
+    },
+    "state_getRuntimeVersion": {
+     "ok": true,
+     "result": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": {
+       "specName": "polkadot",
+       "implName": "parity-polkadot",
+       "authoringVersion": 0,
+       "specVersion": 2005002,
+       "implVersion": 0,
+       "apis": [
+        [
+         "0x49eaaf1b548a0cb0",
+         6
+        ],
+        [
+         "0x9ffb505aa738d69c",
+         1
+        ],
+        [
+         "0x17a6bc0d0062aeb3",
+         1
+        ],
+        [
+         "0xaf2c0297a23e6d3d",
+         16
+        ],
+        [
+         "0x687ad44ad37f03c2",
+         1
+        ],
+        [
+         "0xf78b278be53f454c",
+         2
+        ],
+        [
+         "0xab3c0572291feb8b",
+         2
+        ],
+        [
+         "0xc1b8f0c037f97de8",
+         1
+        ],
+        [
+         "0xbc9d89904f5b923f",
+         1
+        ],
+        [
+         "0x37e397fc7c91f5e4",
+         2
+        ],
+        [
+         "0x91d5df18b0d2cf58",
+         3
+        ],
+        [
+         "0xcbca25e39f142387",
+         2
+        ],
+        [
+         "0x40fe3ad401f8959a",
+         6
+        ],
+        [
+         "0x2a5e924655399e60",
+         1
+        ],
+        [
+         "0x18ef58a3b67ba770",
+         1
+        ],
+        [
+         "0x6ff52ee858e6c5bd",
+         2
+        ],
+        [
+         "0xfbc577b9d747efd6",
+         1
+        ],
+        [
+         "0x91b1c8b16328eb92",
+         2
+        ],
+        [
+         "0x37c8bb1350a9a2a8",
+         4
+        ],
+        [
+         "0xd2bc9897eed08f15",
+         3
+        ],
+        [
+         "0xed99c5acb25eedf5",
+         3
+        ],
+        [
+         "0xccd9de6396c899ca",
+         1
+        ],
+        [
+         "0xdf6acb689907609b",
+         5
+        ],
+        [
+         "0xf3ff14d5ab527059",
+         3
+        ]
+       ],
+       "transactionVersion": 26,
+       "systemVersion": 1,
+       "stateVersion": 1
+      }
+     }
+    }
+   }
+  }
+ }
+}
