@@ -1,0 +1,2569 @@
+{
+ "chain": "acala",
+ "generated_at_utc": "2026-11-07T23:08:14.355568+00:00",
+ "rpc": "https://acala-rpc.aca-api.network",
+ "evm_rpc": "https://eth-rpc-acala.aca-api.network",
+ "ci_run_id": "42423828546",
+ "errors": [],
+ "anchor": {
+  "finalized_hash": "0xd88feba65ae959e54602b89426f2a0e442c2fe491de1b476108bb11ab382274b",
+  "finalized_header": {
+   "digest": {
+    "logs": [
+     "0x066175726120994ee90800000000",
+     "0x0452505352906cb06580a07546d651e4cf2351bf69b8f752ad3de28af0a20ac4f5cd10736621c6b20d08",
+     "0x056175726101011e1ecbd71a15b8142b32559076c7303af8e0e18618262925265e632e0a480f50114798beef62239d87c204cb365db685dea92a67a4155902c82b5e28e72def89"
+    ]
+   },
+   "extrinsicsRoot": "0x02a27c8207b950cb2648d76b211b20568dacfb7c78b7251434f7dd1ca8b4c078",
+   "number": "0xbcf693",
+   "parentHash": "0x9a6b0a1fa593e34d0d6c7d8abe798a925553384d93a59e7bd44d95b5ebf25c69",
+   "stateRoot": "0xb2d4a32ddb3af1bc8d6354e1ade79465713e6580eb3271bf6f4bcdb1b5824cd9"
+  },
+  "finalized_block_number": 12383891,
+  "runtime_version": {
+   "specName": "acala",
+   "implName": "acala",
+   "specVersion": 2370,
+   "transactionVersion": 3
+  }
+ },
+ "runtime_code": {
+  "storage_key": "0x3a636f6465",
+  "bytes": 1922197,
+  "sha256": "0x9ae95ba9bbcc32c47357935ae0796cf0314122865a9f6eecb27f0f3614af8b75",
+  "blake2b_256": "0xfb395779fcc731bf47ed8875b5337ab0b1ef47b4d1e5907cdde5177fd774bb23"
+ },
+ "evm": {
+  "chainId": "0x313",
+  "blockNumber": "0xbcf696",
+  "codes": {
+   "0x0000000000000000000100000000000000000000": {
+    "symbol": "ACA",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000100000000000000000001": {
+    "symbol": "AUSD",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000100000000000000000002": {
+    "symbol": "DOT",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000100000000000000000003": {
+    "symbol": "LDOT",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000100000000000000000004": {
+    "symbol": "TAP",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000200000000000000000001": {
+    "symbol": "LP_ACA_AUSD",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000200000000010000000003": {
+    "symbol": "LP_LDOT_AUSD",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x000000000000000000020000000001020000000d": {
+    "symbol": "LP_LCDOT_AUSD",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x000000000000000000020000000002020000000d": {
+    "symbol": "LP_LCDOT_DOT",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000200000000000107df96d1": {
+    "symbol": "LP_ACA_USDCET",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x00000000000000000002000000000301a7fb0045": {
+    "symbol": "LP_LDOT_JITOSOL",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x00000000000000000002000000000001fa904c86": {
+    "symbol": "LP_ACA_NEMO",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000200000000010300000003": {
+    "symbol": "LP_AUSD_IBTC",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x000000000000000000020000000002030000000a": {
+    "symbol": "LP_DOT_UNQ",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000200000000010300000004": {
+    "symbol": "LP_AUSD_INTR",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000300000000000000000000": {
+    "symbol": "SA_KSM",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000300000000000000000001": {
+    "symbol": "SA_3USD",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x000000000000000000040000000000000000000d": {
+    "symbol": "LCDOT_13",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000500000000000000000000": {
+    "symbol": "FA_RMRK",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000500000000000000000001": {
+    "symbol": "FA_ARIS",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000500000000000000000002": {
+    "symbol": "FA_QTZ",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000500000000000000000003": {
+    "symbol": "FA_MOVR",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000500000000000000000004": {
+    "symbol": "FA_HKO",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000500000000000000000005": {
+    "symbol": "FA_CSM",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000500000000000000000006": {
+    "symbol": "FA_KICO",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000500000000000000000007": {
+    "symbol": "FA_USDT",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000500000000000000000008": {
+    "symbol": "FA_TEER",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000500000000000000000009": {
+    "symbol": "FA_NEER",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x000000000000000000050000000000000000000a": {
+    "symbol": "FA_KMA",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x000000000000000000050000000000000000000b": {
+    "symbol": "FA_BSX",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x000000000000000000050000000000000000000c": {
+    "symbol": "FA_AIR",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x000000000000000000050000000000000000000d": {
+    "symbol": "FA_CRAB",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x000000000000000000050000000000000000000e": {
+    "symbol": "FA_GENS",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x000000000000000000050000000000000000000f": {
+    "symbol": "FA_EQD",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000500000000000000000010": {
+    "symbol": "FA_TUR",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000500000000000000000011": {
+    "symbol": "FA_PCHU",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000500000000000000000012": {
+    "symbol": "FA_SDN",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000500000000000000000013": {
+    "symbol": "FA_LT",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000100000000000000000080": {
+    "symbol": "KAR",
+    "present": false
+   },
+   "0x0000000000000000000100000000000000000081": {
+    "symbol": "KUSD",
+    "present": false
+   },
+   "0x0000000000000000000100000000000000000082": {
+    "symbol": "KSM",
+    "present": false
+   },
+   "0x0000000000000000000100000000000000000083": {
+    "symbol": "LKSM",
+    "present": false
+   },
+   "0x0000000000000000000100000000000000000084": {
+    "symbol": "TAI",
+    "present": false
+   },
+   "0x00000000000000000001000000000000000000a8": {
+    "symbol": "BNC",
+    "present": false
+   },
+   "0x00000000000000000001000000000000000000a9": {
+    "symbol": "VSKSM",
+    "present": false
+   },
+   "0x00000000000000000001000000000000000000aa": {
+    "symbol": "PHA",
+    "present": false
+   },
+   "0x00000000000000000001000000000000000000ab": {
+    "symbol": "KINT",
+    "present": false
+   },
+   "0x00000000000000000001000000000000000000ac": {
+    "symbol": "KBTC",
+    "present": false
+   },
+   "0x0000000000000000000200000000800000000083": {
+    "symbol": "LP_LKSM_KAR",
+    "present": false
+   },
+   "0x0000000000000000000200000000800300000002": {
+    "symbol": "LP_QTZ_KAR",
+    "present": false
+   },
+   "0x0000000000000000000200000000800000000082": {
+    "symbol": "LP_KAR_KSM",
+    "present": false
+   },
+   "0x0000000000000000000200000000820000000083": {
+    "symbol": "LP_LKSM_KSM",
+    "present": false
+   },
+   "0x0000000000000000000200000000820300000000": {
+    "symbol": "LP_RMRK_KSM",
+    "present": false
+   },
+   "0x0000000000000000000200000000820300000001": {
+    "symbol": "LP_ARIS_KSM",
+    "present": false
+   },
+   "0x0000000000000000000200000000800000000081": {
+    "symbol": "LP_KAR_KUSD",
+    "present": false
+   },
+   "0x0000000000000000000200000000810000000082": {
+    "symbol": "LP_KSM_KUSD",
+    "present": false
+   },
+   "0x0000000000000000000200000000810000000083": {
+    "symbol": "LP_LKSM_KUSD",
+    "present": false
+   },
+   "0x00000000000000000002000000008100000000a8": {
+    "symbol": "LP_BNC_KUSD",
+    "present": false
+   },
+   "0x00000000000000000002000000008100000000aa": {
+    "symbol": "LP_PHA_KUSD",
+    "present": false
+   },
+   "0x00000000000000000002000000008100000000ab": {
+    "symbol": "LP_KINT_KUSD",
+    "present": false
+   },
+   "0x00000000000000000002000000008100000000ac": {
+    "symbol": "LP_KBTC_KUSD",
+    "present": false
+   },
+   "0x0000000000000000000200000000810300000000": {
+    "symbol": "LP_RMRK_KUSD",
+    "present": false
+   },
+   "0x0000000000000000000200000000810300000002": {
+    "symbol": "LP_QTZ_KUSD",
+    "present": false
+   },
+   "0x0000000000000000000200000000810300000005": {
+    "symbol": "LP_CSM_KUSD",
+    "present": false
+   },
+   "0x000000000000000000020000000081030000000c": {
+    "symbol": "LP_AIR_KUSD",
+    "present": false
+   },
+   "0x0000000000000000000200000000840300000000": {
+    "symbol": "LP_RMRK_TAI",
+    "present": false
+   },
+   "0x0000000000000000000500000000000000000014": {
+    "symbol": "FA_LIT",
+    "present": false
+   },
+   "0x0000000000000000000000000000000000000800": {
+    "symbol": "EVM",
+    "present": true,
+    "bytes": 3622,
+    "sha256": "0xfa56a12676aa553619a5af559016d425124c6e5343d775d04920b8db1a8e2383",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000000000000000000000801": {
+    "symbol": "ORACLE",
+    "present": true,
+    "bytes": 695,
+    "sha256": "0x15981eda1014174217e16f9da062e2906c5a379b537dcbde4ef7a9d49e8dc626",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000000000000000000000802": {
+    "symbol": "SCHEDULE",
+    "present": false
+   },
+   "0x0000000000000000000000000000000000000803": {
+    "symbol": "DEXV2",
+    "present": true,
+    "bytes": 9341,
+    "sha256": "0x3902763414d58edde5d88ff8f549864011b21b88c297559416a137a36c6b12f2",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000000000000000000000804": {
+    "symbol": "STABLE_ASSET",
+    "present": true,
+    "bytes": 4522,
+    "sha256": "0xc19d1d71175b9920b32019a7d0f631f2c17f9f4718d35b87b2530644dd4f4010",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000000000000000000000805": {
+    "symbol": "HOMA",
+    "present": true,
+    "bytes": 1818,
+    "sha256": "0x94d96c584733d3fd9cc8a7cf15f11a12af8d2af04cbb8ad6f354f91f189c8479",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000000000000000000000806": {
+    "symbol": "EVM_ACCOUNTS",
+    "present": true,
+    "bytes": 1398,
+    "sha256": "0x5575247e5bfba4af7b493a388a81a528412c16327cfeefb83e09ae8f149c1ed8",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000000000000000000000807": {
+    "symbol": "HONZON",
+    "present": false
+   },
+   "0x0000000000000000000000000000000000000808": {
+    "symbol": "INCENTIVES",
+    "present": true,
+    "bytes": 3692,
+    "sha256": "0xdbb754201ae18db6bf9ae6a8c699054b4cabeab6cb73fda9b9b0b7a0e6de070d",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000000000000000000000809": {
+    "symbol": "XTOKENS",
+    "present": true,
+    "bytes": 6720,
+    "sha256": "0xc1d3e487eea0f1236738fa6bce943ac72aec24072b0c47eba1cf5ad69e6c6640",
+    "matches_repo_bytecode": true
+   },
+   "0x000000000000000000000000000000000000080a": {
+    "symbol": "LIQUID_CROWDLOAN",
+    "present": true,
+    "bytes": 1017,
+    "sha256": "0x417e090cc22a88518576be0616f6e3b090fd9790cb87361498eaeb9535e61ba5",
+    "matches_repo_bytecode": true
+   },
+   "0x000000000000000000000000000000000000080b": {
+    "symbol": "EARNING",
+    "present": true,
+    "bytes": 4116,
+    "sha256": "0x91f14ec37b11fce93bdfcc5c5381793fc8a427ee5ccfa2fc697fc9106340b580",
+    "matches_repo_bytecode": true
+   }
+  }
+ },
+ "storage_catalogue": [
+  {
+   "pallet": "System",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "System",
+   "item": "Account",
+   "modifier": "Default",
+   "value_type": "scale_info::3"
+  },
+  {
+   "pallet": "System",
+   "item": "ExtrinsicCount",
+   "modifier": "Optional",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "System",
+   "item": "InherentsApplied",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "System",
+   "item": "BlockWeight",
+   "modifier": "Default",
+   "value_type": "scale_info::9"
+  },
+  {
+   "pallet": "System",
+   "item": "AllExtrinsicsLen",
+   "modifier": "Optional",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "System",
+   "item": "BlockHash",
+   "modifier": "Default",
+   "value_type": "scale_info::13"
+  },
+  {
+   "pallet": "System",
+   "item": "ExtrinsicData",
+   "modifier": "Default",
+   "value_type": "scale_info::14"
+  },
+  {
+   "pallet": "System",
+   "item": "Number",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "System",
+   "item": "ParentHash",
+   "modifier": "Default",
+   "value_type": "scale_info::13"
+  },
+  {
+   "pallet": "System",
+   "item": "Digest",
+   "modifier": "Default",
+   "value_type": "scale_info::15"
+  },
+  {
+   "pallet": "System",
+   "item": "Events",
+   "modifier": "Default",
+   "value_type": "scale_info::19"
+  },
+  {
+   "pallet": "System",
+   "item": "EventCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "System",
+   "item": "EventTopics",
+   "modifier": "Default",
+   "value_type": "scale_info::255"
+  },
+  {
+   "pallet": "System",
+   "item": "LastRuntimeUpgrade",
+   "modifier": "Optional",
+   "value_type": "scale_info::256"
+  },
+  {
+   "pallet": "System",
+   "item": "UpgradedToU32RefCount",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "System",
+   "item": "UpgradedToTripleRefCount",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "System",
+   "item": "ExecutionPhase",
+   "modifier": "Optional",
+   "value_type": "scale_info::254"
+  },
+  {
+   "pallet": "System",
+   "item": "AuthorizedUpgrade",
+   "modifier": "Optional",
+   "value_type": "scale_info::257"
+  },
+  {
+   "pallet": "System",
+   "item": "ExtrinsicWeightReclaimed",
+   "modifier": "Default",
+   "value_type": "scale_info::10"
+  },
+  {
+   "pallet": "Timestamp",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Timestamp",
+   "item": "Now",
+   "modifier": "Default",
+   "value_type": "scale_info::12"
+  },
+  {
+   "pallet": "Timestamp",
+   "item": "DidUpdate",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "Scheduler",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Scheduler",
+   "item": "IncompleteSince",
+   "modifier": "Optional",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Scheduler",
+   "item": "Agenda",
+   "modifier": "Default",
+   "value_type": "scale_info::274"
+  },
+  {
+   "pallet": "Scheduler",
+   "item": "Retries",
+   "modifier": "Optional",
+   "value_type": "scale_info::450"
+  },
+  {
+   "pallet": "Scheduler",
+   "item": "Lookup",
+   "modifier": "Optional",
+   "value_type": "scale_info::33"
+  },
+  {
+   "pallet": "Multisig",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Multisig",
+   "item": "Multisigs",
+   "modifier": "Optional",
+   "value_type": "scale_info::454"
+  },
+  {
+   "pallet": "Proxy",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Proxy",
+   "item": "Proxies",
+   "modifier": "Default",
+   "value_type": "scale_info::457"
+  },
+  {
+   "pallet": "Proxy",
+   "item": "Announcements",
+   "modifier": "Default",
+   "value_type": "scale_info::461"
+  },
+  {
+   "pallet": "TransactionPause",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "TransactionPause",
+   "item": "PausedTransactions",
+   "modifier": "Optional",
+   "value_type": "scale_info::36"
+  },
+  {
+   "pallet": "TransactionPause",
+   "item": "PausedEvmPrecompiles",
+   "modifier": "Optional",
+   "value_type": "scale_info::36"
+  },
+  {
+   "pallet": "IdleScheduler",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "IdleScheduler",
+   "item": "Tasks",
+   "modifier": "Optional",
+   "value_type": "scale_info::48"
+  },
+  {
+   "pallet": "IdleScheduler",
+   "item": "NextTaskId",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "IdleScheduler",
+   "item": "PreviousRelayBlockNumber",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Preimage",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Preimage",
+   "item": "StatusFor",
+   "modifier": "Optional",
+   "value_type": "scale_info::467"
+  },
+  {
+   "pallet": "Preimage",
+   "item": "RequestStatusFor",
+   "modifier": "Optional",
+   "value_type": "scale_info::470"
+  },
+  {
+   "pallet": "Preimage",
+   "item": "PreimageFor",
+   "modifier": "Optional",
+   "value_type": "scale_info::475"
+  },
+  {
+   "pallet": "Balances",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Balances",
+   "item": "TotalIssuance",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Balances",
+   "item": "InactiveIssuance",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Account",
+   "modifier": "Default",
+   "value_type": "scale_info::5"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Locks",
+   "modifier": "Default",
+   "value_type": "scale_info::477"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Reserves",
+   "modifier": "Default",
+   "value_type": "scale_info::481"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Holds",
+   "modifier": "Default",
+   "value_type": "scale_info::485"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Freezes",
+   "modifier": "Default",
+   "value_type": "scale_info::495"
+  },
+  {
+   "pallet": "Tokens",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Tokens",
+   "item": "TotalIssuance",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Tokens",
+   "item": "Locks",
+   "modifier": "Default",
+   "value_type": "scale_info::500"
+  },
+  {
+   "pallet": "Tokens",
+   "item": "Accounts",
+   "modifier": "Default",
+   "value_type": "scale_info::503"
+  },
+  {
+   "pallet": "Tokens",
+   "item": "Reserves",
+   "modifier": "Default",
+   "value_type": "scale_info::504"
+  },
+  {
+   "pallet": "Vesting",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Vesting",
+   "item": "VestingSchedules",
+   "modifier": "Default",
+   "value_type": "scale_info::509"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "NextFeeMultiplier",
+   "modifier": "Default",
+   "value_type": "scale_info::64"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "AlternativeFeeSwapPath",
+   "modifier": "Optional",
+   "value_type": "scale_info::511"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "GlobalFeeSwapPath",
+   "modifier": "Optional",
+   "value_type": "scale_info::511"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "PoolSize",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "TokenExchangeRate",
+   "modifier": "Optional",
+   "value_type": "scale_info::64"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "SwapBalanceThreshold",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "OverrideChargeFeeMethod",
+   "modifier": "Optional",
+   "value_type": "scale_info::512"
+  },
+  {
+   "pallet": "Treasury",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Treasury",
+   "item": "ProposalCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Treasury",
+   "item": "Proposals",
+   "modifier": "Optional",
+   "value_type": "scale_info::516"
+  },
+  {
+   "pallet": "Treasury",
+   "item": "Deactivated",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Treasury",
+   "item": "Approvals",
+   "modifier": "Default",
+   "value_type": "scale_info::517"
+  },
+  {
+   "pallet": "Treasury",
+   "item": "SpendCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Treasury",
+   "item": "Spends",
+   "modifier": "Optional",
+   "value_type": "scale_info::519"
+  },
+  {
+   "pallet": "Treasury",
+   "item": "LastSpendPeriod",
+   "modifier": "Optional",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Bounties",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Bounties",
+   "item": "BountyCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Bounties",
+   "item": "Bounties",
+   "modifier": "Optional",
+   "value_type": "scale_info::522"
+  },
+  {
+   "pallet": "Bounties",
+   "item": "BountyDescriptions",
+   "modifier": "Optional",
+   "value_type": "scale_info::524"
+  },
+  {
+   "pallet": "Bounties",
+   "item": "BountyApprovals",
+   "modifier": "Default",
+   "value_type": "scale_info::517"
+  },
+  {
+   "pallet": "Tips",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Tips",
+   "item": "Tips",
+   "modifier": "Optional",
+   "value_type": "scale_info::526"
+  },
+  {
+   "pallet": "Tips",
+   "item": "Reasons",
+   "modifier": "Optional",
+   "value_type": "scale_info::14"
+  },
+  {
+   "pallet": "ParachainInfo",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "ParachainInfo",
+   "item": "ParachainId",
+   "modifier": "Default",
+   "value_type": "scale_info::169"
+  },
+  {
+   "pallet": "Authorship",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Authorship",
+   "item": "Author",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "CollatorSelection",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "CollatorSelection",
+   "item": "Invulnerables",
+   "modifier": "Default",
+   "value_type": "scale_info::529"
+  },
+  {
+   "pallet": "CollatorSelection",
+   "item": "Candidates",
+   "modifier": "Default",
+   "value_type": "scale_info::530"
+  },
+  {
+   "pallet": "CollatorSelection",
+   "item": "DesiredCandidates",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "CollatorSelection",
+   "item": "CandidacyBond",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "CollatorSelection",
+   "item": "SessionPoints",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "CollatorSelection",
+   "item": "NonCandidates",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Session",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Session",
+   "item": "Validators",
+   "modifier": "Default",
+   "value_type": "scale_info::69"
+  },
+  {
+   "pallet": "Session",
+   "item": "CurrentIndex",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Session",
+   "item": "QueuedChanged",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "Session",
+   "item": "QueuedKeys",
+   "modifier": "Default",
+   "value_type": "scale_info::533"
+  },
+  {
+   "pallet": "Session",
+   "item": "DisabledValidators",
+   "modifier": "Default",
+   "value_type": "scale_info::535"
+  },
+  {
+   "pallet": "Session",
+   "item": "NextKeys",
+   "modifier": "Optional",
+   "value_type": "scale_info::306"
+  },
+  {
+   "pallet": "Session",
+   "item": "KeyOwner",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "Aura",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Aura",
+   "item": "Authorities",
+   "modifier": "Default",
+   "value_type": "scale_info::542"
+  },
+  {
+   "pallet": "Aura",
+   "item": "CurrentSlot",
+   "modifier": "Default",
+   "value_type": "scale_info::544"
+  },
+  {
+   "pallet": "AuraExt",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "AuraExt",
+   "item": "Authorities",
+   "modifier": "Default",
+   "value_type": "scale_info::542"
+  },
+  {
+   "pallet": "AuraExt",
+   "item": "RelaySlotInfo",
+   "modifier": "Optional",
+   "value_type": "scale_info::545"
+  },
+  {
+   "pallet": "SessionManager",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "SessionManager",
+   "item": "SessionDuration",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "SessionManager",
+   "item": "DurationOffset",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "SessionManager",
+   "item": "SessionDurationChanges",
+   "modifier": "Default",
+   "value_type": "scale_info::33"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": "InboundXcmpSuspended",
+   "modifier": "Default",
+   "value_type": "scale_info::547"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": "OutboundXcmpStatus",
+   "modifier": "Default",
+   "value_type": "scale_info::550"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": "OutboundXcmpMessages",
+   "modifier": "Default",
+   "value_type": "scale_info::555"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": "SignalMessages",
+   "modifier": "Default",
+   "value_type": "scale_info::555"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": "QueueConfig",
+   "modifier": "Default",
+   "value_type": "scale_info::556"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": "QueueSuspended",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": "DeliveryFeeFactor",
+   "modifier": "Default",
+   "value_type": "scale_info::64"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "QueryCounter",
+   "modifier": "Default",
+   "value_type": "scale_info::12"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "Queries",
+   "modifier": "Optional",
+   "value_type": "scale_info::558"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "AssetTraps",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "SafeXcmVersion",
+   "modifier": "Optional",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "SupportedVersion",
+   "modifier": "Optional",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "VersionNotifiers",
+   "modifier": "Optional",
+   "value_type": "scale_info::12"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "VersionNotifyTargets",
+   "modifier": "Optional",
+   "value_type": "scale_info::564"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "VersionDiscoveryQueue",
+   "modifier": "Default",
+   "value_type": "scale_info::565"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "CurrentMigration",
+   "modifier": "Optional",
+   "value_type": "scale_info::568"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "RemoteLockedFungibles",
+   "modifier": "Optional",
+   "value_type": "scale_info::571"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "LockedFungibles",
+   "modifier": "Optional",
+   "value_type": "scale_info::575"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "XcmExecutionSuspended",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "ShouldRecordXcm",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "RecordedXcm",
+   "modifier": "Optional",
+   "value_type": "scale_info::93"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "AuthorizedAliases",
+   "modifier": "Optional",
+   "value_type": "scale_info::578"
+  },
+  {
+   "pallet": "UnknownTokens",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "UnknownTokens",
+   "item": "ConcreteFungibleBalances",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "UnknownTokens",
+   "item": "AbstractFungibleBalances",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "MessageQueue",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "MessageQueue",
+   "item": "BookStateFor",
+   "modifier": "Default",
+   "value_type": "scale_info::591"
+  },
+  {
+   "pallet": "MessageQueue",
+   "item": "ServiceHead",
+   "modifier": "Optional",
+   "value_type": "scale_info::168"
+  },
+  {
+   "pallet": "MessageQueue",
+   "item": "Pages",
+   "modifier": "Optional",
+   "value_type": "scale_info::595"
+  },
+  {
+   "pallet": "Authority",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Authority",
+   "item": "NextTaskIndex",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Authority",
+   "item": "SavedCalls",
+   "modifier": "Optional",
+   "value_type": "scale_info::598"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": "Proposals",
+   "modifier": "Default",
+   "value_type": "scale_info::600"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": "ProposalOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::278"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": "CostOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::601"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": "Voting",
+   "modifier": "Optional",
+   "value_type": "scale_info::602"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": "ProposalCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::69"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "GeneralCouncilMembership",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "GeneralCouncilMembership",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::604"
+  },
+  {
+   "pallet": "GeneralCouncilMembership",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": "Proposals",
+   "modifier": "Default",
+   "value_type": "scale_info::600"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": "ProposalOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::278"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": "CostOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::601"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": "Voting",
+   "modifier": "Optional",
+   "value_type": "scale_info::602"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": "ProposalCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::69"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "FinancialCouncilMembership",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "FinancialCouncilMembership",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::604"
+  },
+  {
+   "pallet": "FinancialCouncilMembership",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": "Proposals",
+   "modifier": "Default",
+   "value_type": "scale_info::600"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": "ProposalOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::278"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": "CostOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::601"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": "Voting",
+   "modifier": "Optional",
+   "value_type": "scale_info::602"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": "ProposalCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::69"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "HomaCouncilMembership",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "HomaCouncilMembership",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::604"
+  },
+  {
+   "pallet": "HomaCouncilMembership",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": "Proposals",
+   "modifier": "Default",
+   "value_type": "scale_info::600"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": "ProposalOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::278"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": "CostOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::601"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": "Voting",
+   "modifier": "Optional",
+   "value_type": "scale_info::602"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": "ProposalCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::69"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "TechnicalCommitteeMembership",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "TechnicalCommitteeMembership",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::604"
+  },
+  {
+   "pallet": "TechnicalCommitteeMembership",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "Democracy",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "PublicPropCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "PublicProps",
+   "modifier": "Default",
+   "value_type": "scale_info::612"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "DepositOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::615"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "ReferendumCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "LowestUnbaked",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "ReferendumInfoOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::616"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "VotingOf",
+   "modifier": "Default",
+   "value_type": "scale_info::619"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "LastTabledWasExternal",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "NextExternal",
+   "modifier": "Optional",
+   "value_type": "scale_info::625"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "Blacklist",
+   "modifier": "Optional",
+   "value_type": "scale_info::626"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "Cancellations",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "MetadataOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::13"
+  },
+  {
+   "pallet": "AcalaOracle",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "AcalaOracle",
+   "item": "RawValues",
+   "modifier": "Optional",
+   "value_type": "scale_info::628"
+  },
+  {
+   "pallet": "AcalaOracle",
+   "item": "Values",
+   "modifier": "Optional",
+   "value_type": "scale_info::628"
+  },
+  {
+   "pallet": "AcalaOracle",
+   "item": "HasDispatched",
+   "modifier": "Default",
+   "value_type": "scale_info::629"
+  },
+  {
+   "pallet": "OperatorMembershipAcala",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "OperatorMembershipAcala",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::632"
+  },
+  {
+   "pallet": "OperatorMembershipAcala",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "Auction",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Auction",
+   "item": "Auctions",
+   "modifier": "Optional",
+   "value_type": "scale_info::634"
+  },
+  {
+   "pallet": "Auction",
+   "item": "AuctionsIndex",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Auction",
+   "item": "AuctionEndTime",
+   "modifier": "Optional",
+   "value_type": "scale_info::36"
+  },
+  {
+   "pallet": "Rewards",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Rewards",
+   "item": "PoolInfos",
+   "modifier": "Default",
+   "value_type": "scale_info::636"
+  },
+  {
+   "pallet": "Rewards",
+   "item": "SharesAndWithdrawnRewards",
+   "modifier": "Default",
+   "value_type": "scale_info::642"
+  },
+  {
+   "pallet": "OrmlNFT",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "OrmlNFT",
+   "item": "NextClassId",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "OrmlNFT",
+   "item": "NextTokenId",
+   "modifier": "Default",
+   "value_type": "scale_info::12"
+  },
+  {
+   "pallet": "OrmlNFT",
+   "item": "Classes",
+   "modifier": "Optional",
+   "value_type": "scale_info::645"
+  },
+  {
+   "pallet": "OrmlNFT",
+   "item": "Tokens",
+   "modifier": "Optional",
+   "value_type": "scale_info::648"
+  },
+  {
+   "pallet": "OrmlNFT",
+   "item": "TokensByOwner",
+   "modifier": "Default",
+   "value_type": "scale_info::36"
+  },
+  {
+   "pallet": "Parameters",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Parameters",
+   "item": "Parameters",
+   "modifier": "Optional",
+   "value_type": "scale_info::654"
+  },
+  {
+   "pallet": "Prices",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Prices",
+   "item": "LockedPrice",
+   "modifier": "Optional",
+   "value_type": "scale_info::64"
+  },
+  {
+   "pallet": "Dex",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Dex",
+   "item": "LiquidityPool",
+   "modifier": "Default",
+   "value_type": "scale_info::638"
+  },
+  {
+   "pallet": "Dex",
+   "item": "TradingPairStatuses",
+   "modifier": "Default",
+   "value_type": "scale_info::658"
+  },
+  {
+   "pallet": "Dex",
+   "item": "ProvisioningPool",
+   "modifier": "Default",
+   "value_type": "scale_info::638"
+  },
+  {
+   "pallet": "Dex",
+   "item": "InitialShareExchangeRates",
+   "modifier": "Default",
+   "value_type": "scale_info::661"
+  },
+  {
+   "pallet": "DexOracle",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "DexOracle",
+   "item": "Cumulatives",
+   "modifier": "Default",
+   "value_type": "scale_info::663"
+  },
+  {
+   "pallet": "DexOracle",
+   "item": "AveragePrices",
+   "modifier": "Optional",
+   "value_type": "scale_info::666"
+  },
+  {
+   "pallet": "AggregatedDex",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "AggregatedDex",
+   "item": "AggregatedSwapPaths",
+   "modifier": "Optional",
+   "value_type": "scale_info::668"
+  },
+  {
+   "pallet": "Earning",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Earning",
+   "item": "Ledger",
+   "modifier": "Optional",
+   "value_type": "scale_info::671"
+  },
+  {
+   "pallet": "AuctionManager",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "AuctionManager",
+   "item": "CollateralAuctions",
+   "modifier": "Optional",
+   "value_type": "scale_info::676"
+  },
+  {
+   "pallet": "AuctionManager",
+   "item": "TotalCollateralInAuction",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "AuctionManager",
+   "item": "TotalTargetInAuction",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Loans",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Loans",
+   "item": "Positions",
+   "modifier": "Default",
+   "value_type": "scale_info::679"
+  },
+  {
+   "pallet": "Loans",
+   "item": "TotalPositions",
+   "modifier": "Default",
+   "value_type": "scale_info::679"
+  },
+  {
+   "pallet": "Honzon",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Honzon",
+   "item": "Authorization",
+   "modifier": "Optional",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "CdpTreasury",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "CdpTreasury",
+   "item": "ExpectedCollateralAuctionSize",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "CdpTreasury",
+   "item": "DebitPool",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "CdpTreasury",
+   "item": "DebitOffsetBuffer",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "CdpEngine",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "CdpEngine",
+   "item": "DebitExchangeRate",
+   "modifier": "Optional",
+   "value_type": "scale_info::64"
+  },
+  {
+   "pallet": "CdpEngine",
+   "item": "CollateralParams",
+   "modifier": "Optional",
+   "value_type": "scale_info::684"
+  },
+  {
+   "pallet": "CdpEngine",
+   "item": "LastAccumulationSecs",
+   "modifier": "Default",
+   "value_type": "scale_info::12"
+  },
+  {
+   "pallet": "CdpEngine",
+   "item": "LiquidationContracts",
+   "modifier": "Default",
+   "value_type": "scale_info::687"
+  },
+  {
+   "pallet": "EmergencyShutdown",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "EmergencyShutdown",
+   "item": "IsShutdown",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "EmergencyShutdown",
+   "item": "CanRefund",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "Homa",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Homa",
+   "item": "RelayChainCurrentEra",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Homa",
+   "item": "StakingLedgers",
+   "modifier": "Optional",
+   "value_type": "scale_info::691"
+  },
+  {
+   "pallet": "Homa",
+   "item": "TotalStakingBonded",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Homa",
+   "item": "ToBondPool",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Homa",
+   "item": "TotalVoidLiquid",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Homa",
+   "item": "UnclaimedRedemption",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Homa",
+   "item": "RedeemRequests",
+   "modifier": "Optional",
+   "value_type": "scale_info::692"
+  },
+  {
+   "pallet": "Homa",
+   "item": "Unbondings",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Homa",
+   "item": "EstimatedRewardRatePerEra",
+   "modifier": "Default",
+   "value_type": "scale_info::686"
+  },
+  {
+   "pallet": "Homa",
+   "item": "SoftBondedCapPerSubAccount",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Homa",
+   "item": "CommissionRate",
+   "modifier": "Default",
+   "value_type": "scale_info::686"
+  },
+  {
+   "pallet": "Homa",
+   "item": "FastMatchFeeRate",
+   "modifier": "Default",
+   "value_type": "scale_info::686"
+  },
+  {
+   "pallet": "Homa",
+   "item": "LastEraBumpedBlock",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Homa",
+   "item": "BumpEraFrequency",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Homa",
+   "item": "NominateIntervalEra",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "XcmInterface",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "XcmInterface",
+   "item": "XcmDestWeightAndFee",
+   "modifier": "Default",
+   "value_type": "scale_info::696"
+  },
+  {
+   "pallet": "HomaValidatorList",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "HomaValidatorList",
+   "item": "Guarantees",
+   "modifier": "Optional",
+   "value_type": "scale_info::699"
+  },
+  {
+   "pallet": "HomaValidatorList",
+   "item": "TotalLockedByGuarantor",
+   "modifier": "Optional",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "HomaValidatorList",
+   "item": "ValidatorBackings",
+   "modifier": "Optional",
+   "value_type": "scale_info::702"
+  },
+  {
+   "pallet": "NomineesElection",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "NomineesElection",
+   "item": "Nominations",
+   "modifier": "Default",
+   "value_type": "scale_info::409"
+  },
+  {
+   "pallet": "NomineesElection",
+   "item": "Ledger",
+   "modifier": "Optional",
+   "value_type": "scale_info::704"
+  },
+  {
+   "pallet": "NomineesElection",
+   "item": "Votes",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "NomineesElection",
+   "item": "ReservedNominees",
+   "modifier": "Default",
+   "value_type": "scale_info::409"
+  },
+  {
+   "pallet": "Incentives",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Incentives",
+   "item": "IncentiveRewardAmounts",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Incentives",
+   "item": "ClaimRewardDeductionRates",
+   "modifier": "Default",
+   "value_type": "scale_info::686"
+  },
+  {
+   "pallet": "Incentives",
+   "item": "ClaimRewardDeductionCurrency",
+   "modifier": "Optional",
+   "value_type": "scale_info::55"
+  },
+  {
+   "pallet": "Incentives",
+   "item": "PendingMultiRewards",
+   "modifier": "Default",
+   "value_type": "scale_info::643"
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": "NextForeignAssetId",
+   "modifier": "Default",
+   "value_type": "scale_info::42"
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": "NextStableAssetId",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": "ForeignAssetLocations",
+   "modifier": "Optional",
+   "value_type": "scale_info::135"
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": "LocationToCurrencyIds",
+   "modifier": "Optional",
+   "value_type": "scale_info::55"
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": "Erc20IdToAddress",
+   "modifier": "Optional",
+   "value_type": "scale_info::45"
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": "AssetMetadatas",
+   "modifier": "Optional",
+   "value_type": "scale_info::234"
+  },
+  {
+   "pallet": "LiquidCrowdloan",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "LiquidCrowdloan",
+   "item": "RedeemCurrencyId",
+   "modifier": "Optional",
+   "value_type": "scale_info::55"
+  },
+  {
+   "pallet": "EVM",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "EVM",
+   "item": "ChainId",
+   "modifier": "Default",
+   "value_type": "scale_info::12"
+  },
+  {
+   "pallet": "EVM",
+   "item": "Accounts",
+   "modifier": "Optional",
+   "value_type": "scale_info::711"
+  },
+  {
+   "pallet": "EVM",
+   "item": "ContractStorageSizes",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "EVM",
+   "item": "AccountStorages",
+   "modifier": "Default",
+   "value_type": "scale_info::13"
+  },
+  {
+   "pallet": "EVM",
+   "item": "Codes",
+   "modifier": "Default",
+   "value_type": "scale_info::715"
+  },
+  {
+   "pallet": "EVM",
+   "item": "CodeInfos",
+   "modifier": "Optional",
+   "value_type": "scale_info::716"
+  },
+  {
+   "pallet": "EVM",
+   "item": "NetworkContractIndex",
+   "modifier": "Default",
+   "value_type": "scale_info::12"
+  },
+  {
+   "pallet": "EVM",
+   "item": "ExtrinsicOrigin",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "EVM",
+   "item": "XcmOrigin",
+   "modifier": "Optional",
+   "value_type": "scale_info::69"
+  },
+  {
+   "pallet": "EvmAccounts",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "EvmAccounts",
+   "item": "Accounts",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "EvmAccounts",
+   "item": "EvmAddresses",
+   "modifier": "Optional",
+   "value_type": "scale_info::45"
+  },
+  {
+   "pallet": "StableAsset",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "StableAsset",
+   "item": "PoolCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "StableAsset",
+   "item": "Pools",
+   "modifier": "Optional",
+   "value_type": "scale_info::720"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "UnincludedSegment",
+   "modifier": "Default",
+   "value_type": "scale_info::722"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "AggregatedUnincludedSegment",
+   "modifier": "Optional",
+   "value_type": "scale_info::731"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "PendingValidationCode",
+   "modifier": "Default",
+   "value_type": "scale_info::14"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "NewValidationCode",
+   "modifier": "Optional",
+   "value_type": "scale_info::14"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "ValidationData",
+   "modifier": "Optional",
+   "value_type": "scale_info::431"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "DidSetValidationCode",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "LastRelayChainBlockNumber",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "UpgradeRestrictionSignal",
+   "modifier": "Default",
+   "value_type": "scale_info::732"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "UpgradeGoAhead",
+   "modifier": "Default",
+   "value_type": "scale_info::729"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "RelayStateProof",
+   "modifier": "Optional",
+   "value_type": "scale_info::433"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "RelevantMessagingState",
+   "modifier": "Optional",
+   "value_type": "scale_info::734"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "HostConfiguration",
+   "modifier": "Optional",
+   "value_type": "scale_info::739"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "LastDmqMqcHead",
+   "modifier": "Default",
+   "value_type": "scale_info::741"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "LastHrmpMqcHeads",
+   "modifier": "Default",
+   "value_type": "scale_info::742"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "ProcessedDownwardMessages",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "HrmpWatermark",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "HrmpOutboundMessages",
+   "modifier": "Default",
+   "value_type": "scale_info::745"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "UpwardMessages",
+   "modifier": "Default",
+   "value_type": "scale_info::261"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "PendingUpwardMessages",
+   "modifier": "Default",
+   "value_type": "scale_info::261"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "UpwardDeliveryFeeFactor",
+   "modifier": "Default",
+   "value_type": "scale_info::64"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "AnnouncedHrmpMessagesPerCandidate",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "ReservedXcmpWeightOverride",
+   "modifier": "Optional",
+   "value_type": "scale_info::10"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "ReservedDmpWeightOverride",
+   "modifier": "Optional",
+   "value_type": "scale_info::10"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "CustomValidationHeadData",
+   "modifier": "Optional",
+   "value_type": "scale_info::14"
+  },
+  {
+   "pallet": "Sudo",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Sudo",
+   "item": "Key",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  }
+ ]
+}

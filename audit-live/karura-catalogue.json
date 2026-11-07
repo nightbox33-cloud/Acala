@@ -1,0 +1,2632 @@
+{
+ "chain": "karura",
+ "generated_at_utc": "2026-11-07T23:08:49.881186+00:00",
+ "rpc": "https://karura-rpc.aca-api.network",
+ "evm_rpc": "https://eth-rpc-karura.aca-api.network",
+ "ci_run_id": "42423828546",
+ "errors": [],
+ "anchor": {
+  "finalized_hash": "0x37ff38b42659ba3a8787192d807ce9576a16a9768f2767c9a0109846cfdc7279",
+  "finalized_header": {
+   "digest": {
+    "logs": [
+     "0x0661757261209d4ee90800000000",
+     "0x045250535290c06eda99593fd0daf24b8e88ef35a5ade6831daabe110f7bce96ee96cba1d6d256719508",
+     "0x056175726101011e604b8f8ec7df8b621279c49d2087b4fbccc6992598d9e3e38e4d3b41972e319ba1dcacb58f447e24f49d23b75564c646b2dd46abe50a73a7e8d297116c7081"
+    ]
+   },
+   "extrinsicsRoot": "0x6ff3edddd6bc3dcab3526e2e51531d40a2efc8a5d4dfe4e51ab4cd2f051c0e7f",
+   "number": "0xc37e44",
+   "parentHash": "0xbd7fc302490f27d091502e22dc8e503dd5822e192d8782a90f3ece883f765f0e",
+   "stateRoot": "0x68a2cd07af3f40f221e4fc2428cd4a1ae734ffd781381f5f8ca8129433278ee7"
+  },
+  "finalized_block_number": 12811844,
+  "runtime_version": {
+   "specName": "karura",
+   "implName": "karura",
+   "specVersion": 2370,
+   "transactionVersion": 2
+  }
+ },
+ "runtime_code": {
+  "storage_key": "0x3a636f6465",
+  "bytes": 1932964,
+  "sha256": "0xc89def58e6b7ed5148041a905abdc4b97c4795c7cf7fa14e90075ed7c6530cdf",
+  "blake2b_256": "0x6aa0263c1a43549c262de85604f6c01a12e416ce27a990ab131be8ae284dedf3"
+ },
+ "evm": {
+  "chainId": "0x2ae",
+  "blockNumber": "0xc37e47",
+  "codes": {
+   "0x0000000000000000000100000000000000000000": {
+    "symbol": "ACA",
+    "present": false
+   },
+   "0x0000000000000000000100000000000000000001": {
+    "symbol": "AUSD",
+    "present": false
+   },
+   "0x0000000000000000000100000000000000000002": {
+    "symbol": "DOT",
+    "present": false
+   },
+   "0x0000000000000000000100000000000000000003": {
+    "symbol": "LDOT",
+    "present": false
+   },
+   "0x0000000000000000000100000000000000000004": {
+    "symbol": "TAP",
+    "present": false
+   },
+   "0x0000000000000000000200000000000000000001": {
+    "symbol": "LP_ACA_AUSD",
+    "present": false
+   },
+   "0x0000000000000000000200000000010000000003": {
+    "symbol": "LP_LDOT_AUSD",
+    "present": false
+   },
+   "0x000000000000000000020000000001020000000d": {
+    "symbol": "LP_LCDOT_AUSD",
+    "present": false
+   },
+   "0x000000000000000000020000000002020000000d": {
+    "symbol": "LP_LCDOT_DOT",
+    "present": false
+   },
+   "0x0000000000000000000200000000000107df96d1": {
+    "symbol": "LP_ACA_USDCET",
+    "present": false
+   },
+   "0x00000000000000000002000000000301a7fb0045": {
+    "symbol": "LP_LDOT_JITOSOL",
+    "present": false
+   },
+   "0x00000000000000000002000000000001fa904c86": {
+    "symbol": "LP_ACA_NEMO",
+    "present": false
+   },
+   "0x0000000000000000000200000000010300000003": {
+    "symbol": "LP_AUSD_IBTC",
+    "present": false
+   },
+   "0x000000000000000000020000000002030000000a": {
+    "symbol": "LP_DOT_UNQ",
+    "present": false
+   },
+   "0x0000000000000000000200000000010300000004": {
+    "symbol": "LP_AUSD_INTR",
+    "present": false
+   },
+   "0x0000000000000000000300000000000000000000": {
+    "symbol": "SA_KSM",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x903c68ae33370dd87dd9f0321fee047e068154a0141d006363683660b5a4c367",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000300000000000000000001": {
+    "symbol": "SA_3USD",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x903c68ae33370dd87dd9f0321fee047e068154a0141d006363683660b5a4c367",
+    "matches_repo_bytecode": false
+   },
+   "0x000000000000000000040000000000000000000d": {
+    "symbol": "LCDOT_13",
+    "present": false
+   },
+   "0x0000000000000000000500000000000000000000": {
+    "symbol": "FA_RMRK",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000500000000000000000001": {
+    "symbol": "FA_ARIS",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000500000000000000000002": {
+    "symbol": "FA_QTZ",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000500000000000000000003": {
+    "symbol": "FA_MOVR",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000500000000000000000004": {
+    "symbol": "FA_HKO",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000500000000000000000005": {
+    "symbol": "FA_CSM",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000500000000000000000006": {
+    "symbol": "FA_KICO",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000500000000000000000007": {
+    "symbol": "FA_USDT",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x903c68ae33370dd87dd9f0321fee047e068154a0141d006363683660b5a4c367",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000500000000000000000008": {
+    "symbol": "FA_TEER",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000500000000000000000009": {
+    "symbol": "FA_NEER",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x000000000000000000050000000000000000000a": {
+    "symbol": "FA_KMA",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x000000000000000000050000000000000000000b": {
+    "symbol": "FA_BSX",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x000000000000000000050000000000000000000c": {
+    "symbol": "FA_AIR",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x000000000000000000050000000000000000000d": {
+    "symbol": "FA_CRAB",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x000000000000000000050000000000000000000e": {
+    "symbol": "FA_GENS",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x000000000000000000050000000000000000000f": {
+    "symbol": "FA_EQD",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000500000000000000000010": {
+    "symbol": "FA_TUR",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000500000000000000000011": {
+    "symbol": "FA_PCHU",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000500000000000000000012": {
+    "symbol": "FA_SDN",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000500000000000000000013": {
+    "symbol": "FA_LT",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000100000000000000000080": {
+    "symbol": "KAR",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x903c68ae33370dd87dd9f0321fee047e068154a0141d006363683660b5a4c367",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000100000000000000000081": {
+    "symbol": "KUSD",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x903c68ae33370dd87dd9f0321fee047e068154a0141d006363683660b5a4c367",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000100000000000000000082": {
+    "symbol": "KSM",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000100000000000000000083": {
+    "symbol": "LKSM",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000100000000000000000084": {
+    "symbol": "TAI",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x903c68ae33370dd87dd9f0321fee047e068154a0141d006363683660b5a4c367",
+    "matches_repo_bytecode": false
+   },
+   "0x00000000000000000001000000000000000000a8": {
+    "symbol": "BNC",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x00000000000000000001000000000000000000a9": {
+    "symbol": "VSKSM",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x00000000000000000001000000000000000000aa": {
+    "symbol": "PHA",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x00000000000000000001000000000000000000ab": {
+    "symbol": "KINT",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x00000000000000000001000000000000000000ac": {
+    "symbol": "KBTC",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000200000000800000000083": {
+    "symbol": "LP_LKSM_KAR",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000200000000800300000002": {
+    "symbol": "LP_QTZ_KAR",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000200000000800000000082": {
+    "symbol": "LP_KAR_KSM",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000200000000820000000083": {
+    "symbol": "LP_LKSM_KSM",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000200000000820300000000": {
+    "symbol": "LP_RMRK_KSM",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000200000000820300000001": {
+    "symbol": "LP_ARIS_KSM",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000200000000800000000081": {
+    "symbol": "LP_KAR_KUSD",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000200000000810000000082": {
+    "symbol": "LP_KSM_KUSD",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000200000000810000000083": {
+    "symbol": "LP_LKSM_KUSD",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x00000000000000000002000000008100000000a8": {
+    "symbol": "LP_BNC_KUSD",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x00000000000000000002000000008100000000aa": {
+    "symbol": "LP_PHA_KUSD",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x00000000000000000002000000008100000000ab": {
+    "symbol": "LP_KINT_KUSD",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x00000000000000000002000000008100000000ac": {
+    "symbol": "LP_KBTC_KUSD",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000200000000810300000000": {
+    "symbol": "LP_RMRK_KUSD",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000200000000810300000002": {
+    "symbol": "LP_QTZ_KUSD",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000200000000810300000005": {
+    "symbol": "LP_CSM_KUSD",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x000000000000000000020000000081030000000c": {
+    "symbol": "LP_AIR_KUSD",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000200000000840300000000": {
+    "symbol": "LP_RMRK_TAI",
+    "present": true,
+    "bytes": 4114,
+    "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000500000000000000000014": {
+    "symbol": "FA_LIT",
+    "present": true,
+    "bytes": 4593,
+    "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000000000000000000000800": {
+    "symbol": "EVM",
+    "present": true,
+    "bytes": 3622,
+    "sha256": "0xfa56a12676aa553619a5af559016d425124c6e5343d775d04920b8db1a8e2383",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000000000000000000000801": {
+    "symbol": "ORACLE",
+    "present": true,
+    "bytes": 695,
+    "sha256": "0x15981eda1014174217e16f9da062e2906c5a379b537dcbde4ef7a9d49e8dc626",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000000000000000000000802": {
+    "symbol": "SCHEDULE",
+    "present": false
+   },
+   "0x0000000000000000000000000000000000000803": {
+    "symbol": "DEXV2",
+    "present": true,
+    "bytes": 6797,
+    "sha256": "0x294b6a8b7a577edd7933458e5fea6294b7aad75e668ef89bd10d892a55f3a542",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000000000000000000000804": {
+    "symbol": "STABLE_ASSET",
+    "present": false
+   },
+   "0x0000000000000000000000000000000000000805": {
+    "symbol": "HOMA",
+    "present": true,
+    "bytes": 1818,
+    "sha256": "0x94d96c584733d3fd9cc8a7cf15f11a12af8d2af04cbb8ad6f354f91f189c8479",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000000000000000000000806": {
+    "symbol": "EVM_ACCOUNTS",
+    "present": true,
+    "bytes": 1398,
+    "sha256": "0x91b59753c3bf22c84343c921183439a2ffcbd6117bd3565ffa0fa274a2737479",
+    "matches_repo_bytecode": false
+   },
+   "0x0000000000000000000000000000000000000807": {
+    "symbol": "HONZON",
+    "present": false
+   },
+   "0x0000000000000000000000000000000000000808": {
+    "symbol": "INCENTIVES",
+    "present": true,
+    "bytes": 3692,
+    "sha256": "0xdbb754201ae18db6bf9ae6a8c699054b4cabeab6cb73fda9b9b0b7a0e6de070d",
+    "matches_repo_bytecode": true
+   },
+   "0x0000000000000000000000000000000000000809": {
+    "symbol": "XTOKENS",
+    "present": true,
+    "bytes": 6720,
+    "sha256": "0xc1d3e487eea0f1236738fa6bce943ac72aec24072b0c47eba1cf5ad69e6c6640",
+    "matches_repo_bytecode": true
+   },
+   "0x000000000000000000000000000000000000080a": {
+    "symbol": "LIQUID_CROWDLOAN",
+    "present": false
+   },
+   "0x000000000000000000000000000000000000080b": {
+    "symbol": "EARNING",
+    "present": true,
+    "bytes": 4116,
+    "sha256": "0x91f14ec37b11fce93bdfcc5c5381793fc8a427ee5ccfa2fc697fc9106340b580",
+    "matches_repo_bytecode": true
+   }
+  }
+ },
+ "storage_catalogue": [
+  {
+   "pallet": "System",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "System",
+   "item": "Account",
+   "modifier": "Default",
+   "value_type": "scale_info::3"
+  },
+  {
+   "pallet": "System",
+   "item": "ExtrinsicCount",
+   "modifier": "Optional",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "System",
+   "item": "InherentsApplied",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "System",
+   "item": "BlockWeight",
+   "modifier": "Default",
+   "value_type": "scale_info::9"
+  },
+  {
+   "pallet": "System",
+   "item": "AllExtrinsicsLen",
+   "modifier": "Optional",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "System",
+   "item": "BlockHash",
+   "modifier": "Default",
+   "value_type": "scale_info::13"
+  },
+  {
+   "pallet": "System",
+   "item": "ExtrinsicData",
+   "modifier": "Default",
+   "value_type": "scale_info::14"
+  },
+  {
+   "pallet": "System",
+   "item": "Number",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "System",
+   "item": "ParentHash",
+   "modifier": "Default",
+   "value_type": "scale_info::13"
+  },
+  {
+   "pallet": "System",
+   "item": "Digest",
+   "modifier": "Default",
+   "value_type": "scale_info::15"
+  },
+  {
+   "pallet": "System",
+   "item": "Events",
+   "modifier": "Default",
+   "value_type": "scale_info::19"
+  },
+  {
+   "pallet": "System",
+   "item": "EventCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "System",
+   "item": "EventTopics",
+   "modifier": "Default",
+   "value_type": "scale_info::257"
+  },
+  {
+   "pallet": "System",
+   "item": "LastRuntimeUpgrade",
+   "modifier": "Optional",
+   "value_type": "scale_info::258"
+  },
+  {
+   "pallet": "System",
+   "item": "UpgradedToU32RefCount",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "System",
+   "item": "UpgradedToTripleRefCount",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "System",
+   "item": "ExecutionPhase",
+   "modifier": "Optional",
+   "value_type": "scale_info::256"
+  },
+  {
+   "pallet": "System",
+   "item": "AuthorizedUpgrade",
+   "modifier": "Optional",
+   "value_type": "scale_info::259"
+  },
+  {
+   "pallet": "System",
+   "item": "ExtrinsicWeightReclaimed",
+   "modifier": "Default",
+   "value_type": "scale_info::10"
+  },
+  {
+   "pallet": "Timestamp",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Timestamp",
+   "item": "Now",
+   "modifier": "Default",
+   "value_type": "scale_info::12"
+  },
+  {
+   "pallet": "Timestamp",
+   "item": "DidUpdate",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "Scheduler",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Scheduler",
+   "item": "IncompleteSince",
+   "modifier": "Optional",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Scheduler",
+   "item": "Agenda",
+   "modifier": "Default",
+   "value_type": "scale_info::276"
+  },
+  {
+   "pallet": "Scheduler",
+   "item": "Retries",
+   "modifier": "Optional",
+   "value_type": "scale_info::452"
+  },
+  {
+   "pallet": "Scheduler",
+   "item": "Lookup",
+   "modifier": "Optional",
+   "value_type": "scale_info::33"
+  },
+  {
+   "pallet": "Multisig",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Multisig",
+   "item": "Multisigs",
+   "modifier": "Optional",
+   "value_type": "scale_info::456"
+  },
+  {
+   "pallet": "Proxy",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Proxy",
+   "item": "Proxies",
+   "modifier": "Default",
+   "value_type": "scale_info::459"
+  },
+  {
+   "pallet": "Proxy",
+   "item": "Announcements",
+   "modifier": "Default",
+   "value_type": "scale_info::463"
+  },
+  {
+   "pallet": "TransactionPause",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "TransactionPause",
+   "item": "PausedTransactions",
+   "modifier": "Optional",
+   "value_type": "scale_info::36"
+  },
+  {
+   "pallet": "TransactionPause",
+   "item": "PausedEvmPrecompiles",
+   "modifier": "Optional",
+   "value_type": "scale_info::36"
+  },
+  {
+   "pallet": "IdleScheduler",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "IdleScheduler",
+   "item": "Tasks",
+   "modifier": "Optional",
+   "value_type": "scale_info::48"
+  },
+  {
+   "pallet": "IdleScheduler",
+   "item": "NextTaskId",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "IdleScheduler",
+   "item": "PreviousRelayBlockNumber",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Preimage",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Preimage",
+   "item": "StatusFor",
+   "modifier": "Optional",
+   "value_type": "scale_info::469"
+  },
+  {
+   "pallet": "Preimage",
+   "item": "RequestStatusFor",
+   "modifier": "Optional",
+   "value_type": "scale_info::472"
+  },
+  {
+   "pallet": "Preimage",
+   "item": "PreimageFor",
+   "modifier": "Optional",
+   "value_type": "scale_info::477"
+  },
+  {
+   "pallet": "Balances",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Balances",
+   "item": "TotalIssuance",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Balances",
+   "item": "InactiveIssuance",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Account",
+   "modifier": "Default",
+   "value_type": "scale_info::5"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Locks",
+   "modifier": "Default",
+   "value_type": "scale_info::479"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Reserves",
+   "modifier": "Default",
+   "value_type": "scale_info::483"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Holds",
+   "modifier": "Default",
+   "value_type": "scale_info::487"
+  },
+  {
+   "pallet": "Balances",
+   "item": "Freezes",
+   "modifier": "Default",
+   "value_type": "scale_info::497"
+  },
+  {
+   "pallet": "Tokens",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Tokens",
+   "item": "TotalIssuance",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Tokens",
+   "item": "Locks",
+   "modifier": "Default",
+   "value_type": "scale_info::502"
+  },
+  {
+   "pallet": "Tokens",
+   "item": "Accounts",
+   "modifier": "Default",
+   "value_type": "scale_info::505"
+  },
+  {
+   "pallet": "Tokens",
+   "item": "Reserves",
+   "modifier": "Default",
+   "value_type": "scale_info::506"
+  },
+  {
+   "pallet": "Vesting",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Vesting",
+   "item": "VestingSchedules",
+   "modifier": "Default",
+   "value_type": "scale_info::511"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "NextFeeMultiplier",
+   "modifier": "Default",
+   "value_type": "scale_info::64"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "AlternativeFeeSwapPath",
+   "modifier": "Optional",
+   "value_type": "scale_info::513"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "GlobalFeeSwapPath",
+   "modifier": "Optional",
+   "value_type": "scale_info::513"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "PoolSize",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "TokenExchangeRate",
+   "modifier": "Optional",
+   "value_type": "scale_info::64"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "SwapBalanceThreshold",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "TransactionPayment",
+   "item": "OverrideChargeFeeMethod",
+   "modifier": "Optional",
+   "value_type": "scale_info::514"
+  },
+  {
+   "pallet": "Treasury",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Treasury",
+   "item": "ProposalCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Treasury",
+   "item": "Proposals",
+   "modifier": "Optional",
+   "value_type": "scale_info::518"
+  },
+  {
+   "pallet": "Treasury",
+   "item": "Deactivated",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Treasury",
+   "item": "Approvals",
+   "modifier": "Default",
+   "value_type": "scale_info::519"
+  },
+  {
+   "pallet": "Treasury",
+   "item": "SpendCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Treasury",
+   "item": "Spends",
+   "modifier": "Optional",
+   "value_type": "scale_info::521"
+  },
+  {
+   "pallet": "Treasury",
+   "item": "LastSpendPeriod",
+   "modifier": "Optional",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Bounties",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Bounties",
+   "item": "BountyCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Bounties",
+   "item": "Bounties",
+   "modifier": "Optional",
+   "value_type": "scale_info::524"
+  },
+  {
+   "pallet": "Bounties",
+   "item": "BountyDescriptions",
+   "modifier": "Optional",
+   "value_type": "scale_info::526"
+  },
+  {
+   "pallet": "Bounties",
+   "item": "BountyApprovals",
+   "modifier": "Default",
+   "value_type": "scale_info::519"
+  },
+  {
+   "pallet": "Tips",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Tips",
+   "item": "Tips",
+   "modifier": "Optional",
+   "value_type": "scale_info::528"
+  },
+  {
+   "pallet": "Tips",
+   "item": "Reasons",
+   "modifier": "Optional",
+   "value_type": "scale_info::14"
+  },
+  {
+   "pallet": "ParachainInfo",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "ParachainInfo",
+   "item": "ParachainId",
+   "modifier": "Default",
+   "value_type": "scale_info::169"
+  },
+  {
+   "pallet": "Authorship",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Authorship",
+   "item": "Author",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "CollatorSelection",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "CollatorSelection",
+   "item": "Invulnerables",
+   "modifier": "Default",
+   "value_type": "scale_info::531"
+  },
+  {
+   "pallet": "CollatorSelection",
+   "item": "Candidates",
+   "modifier": "Default",
+   "value_type": "scale_info::532"
+  },
+  {
+   "pallet": "CollatorSelection",
+   "item": "DesiredCandidates",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "CollatorSelection",
+   "item": "CandidacyBond",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "CollatorSelection",
+   "item": "SessionPoints",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "CollatorSelection",
+   "item": "NonCandidates",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Session",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Session",
+   "item": "Validators",
+   "modifier": "Default",
+   "value_type": "scale_info::69"
+  },
+  {
+   "pallet": "Session",
+   "item": "CurrentIndex",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Session",
+   "item": "QueuedChanged",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "Session",
+   "item": "QueuedKeys",
+   "modifier": "Default",
+   "value_type": "scale_info::535"
+  },
+  {
+   "pallet": "Session",
+   "item": "DisabledValidators",
+   "modifier": "Default",
+   "value_type": "scale_info::537"
+  },
+  {
+   "pallet": "Session",
+   "item": "NextKeys",
+   "modifier": "Optional",
+   "value_type": "scale_info::308"
+  },
+  {
+   "pallet": "Session",
+   "item": "KeyOwner",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "Aura",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Aura",
+   "item": "Authorities",
+   "modifier": "Default",
+   "value_type": "scale_info::544"
+  },
+  {
+   "pallet": "Aura",
+   "item": "CurrentSlot",
+   "modifier": "Default",
+   "value_type": "scale_info::546"
+  },
+  {
+   "pallet": "AuraExt",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "AuraExt",
+   "item": "Authorities",
+   "modifier": "Default",
+   "value_type": "scale_info::544"
+  },
+  {
+   "pallet": "AuraExt",
+   "item": "RelaySlotInfo",
+   "modifier": "Optional",
+   "value_type": "scale_info::547"
+  },
+  {
+   "pallet": "SessionManager",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "SessionManager",
+   "item": "SessionDuration",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "SessionManager",
+   "item": "DurationOffset",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "SessionManager",
+   "item": "SessionDurationChanges",
+   "modifier": "Default",
+   "value_type": "scale_info::33"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": "InboundXcmpSuspended",
+   "modifier": "Default",
+   "value_type": "scale_info::549"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": "OutboundXcmpStatus",
+   "modifier": "Default",
+   "value_type": "scale_info::552"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": "OutboundXcmpMessages",
+   "modifier": "Default",
+   "value_type": "scale_info::557"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": "SignalMessages",
+   "modifier": "Default",
+   "value_type": "scale_info::557"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": "QueueConfig",
+   "modifier": "Default",
+   "value_type": "scale_info::558"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": "QueueSuspended",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "XcmpQueue",
+   "item": "DeliveryFeeFactor",
+   "modifier": "Default",
+   "value_type": "scale_info::64"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "QueryCounter",
+   "modifier": "Default",
+   "value_type": "scale_info::12"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "Queries",
+   "modifier": "Optional",
+   "value_type": "scale_info::560"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "AssetTraps",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "SafeXcmVersion",
+   "modifier": "Optional",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "SupportedVersion",
+   "modifier": "Optional",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "VersionNotifiers",
+   "modifier": "Optional",
+   "value_type": "scale_info::12"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "VersionNotifyTargets",
+   "modifier": "Optional",
+   "value_type": "scale_info::566"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "VersionDiscoveryQueue",
+   "modifier": "Default",
+   "value_type": "scale_info::567"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "CurrentMigration",
+   "modifier": "Optional",
+   "value_type": "scale_info::570"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "RemoteLockedFungibles",
+   "modifier": "Optional",
+   "value_type": "scale_info::573"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "LockedFungibles",
+   "modifier": "Optional",
+   "value_type": "scale_info::577"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "XcmExecutionSuspended",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "ShouldRecordXcm",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "RecordedXcm",
+   "modifier": "Optional",
+   "value_type": "scale_info::93"
+  },
+  {
+   "pallet": "PolkadotXcm",
+   "item": "AuthorizedAliases",
+   "modifier": "Optional",
+   "value_type": "scale_info::580"
+  },
+  {
+   "pallet": "UnknownTokens",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "UnknownTokens",
+   "item": "ConcreteFungibleBalances",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "UnknownTokens",
+   "item": "AbstractFungibleBalances",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "MessageQueue",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "MessageQueue",
+   "item": "BookStateFor",
+   "modifier": "Default",
+   "value_type": "scale_info::593"
+  },
+  {
+   "pallet": "MessageQueue",
+   "item": "ServiceHead",
+   "modifier": "Optional",
+   "value_type": "scale_info::168"
+  },
+  {
+   "pallet": "MessageQueue",
+   "item": "Pages",
+   "modifier": "Optional",
+   "value_type": "scale_info::597"
+  },
+  {
+   "pallet": "Authority",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Authority",
+   "item": "NextTaskIndex",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Authority",
+   "item": "SavedCalls",
+   "modifier": "Optional",
+   "value_type": "scale_info::600"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": "Proposals",
+   "modifier": "Default",
+   "value_type": "scale_info::602"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": "ProposalOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::280"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": "CostOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::603"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": "Voting",
+   "modifier": "Optional",
+   "value_type": "scale_info::604"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": "ProposalCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::69"
+  },
+  {
+   "pallet": "GeneralCouncil",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "GeneralCouncilMembership",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "GeneralCouncilMembership",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::606"
+  },
+  {
+   "pallet": "GeneralCouncilMembership",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": "Proposals",
+   "modifier": "Default",
+   "value_type": "scale_info::602"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": "ProposalOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::280"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": "CostOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::603"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": "Voting",
+   "modifier": "Optional",
+   "value_type": "scale_info::604"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": "ProposalCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::69"
+  },
+  {
+   "pallet": "FinancialCouncil",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "FinancialCouncilMembership",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "FinancialCouncilMembership",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::606"
+  },
+  {
+   "pallet": "FinancialCouncilMembership",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": "Proposals",
+   "modifier": "Default",
+   "value_type": "scale_info::602"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": "ProposalOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::280"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": "CostOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::603"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": "Voting",
+   "modifier": "Optional",
+   "value_type": "scale_info::604"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": "ProposalCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::69"
+  },
+  {
+   "pallet": "HomaCouncil",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "HomaCouncilMembership",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "HomaCouncilMembership",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::606"
+  },
+  {
+   "pallet": "HomaCouncilMembership",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": "Proposals",
+   "modifier": "Default",
+   "value_type": "scale_info::602"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": "ProposalOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::280"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": "CostOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::603"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": "Voting",
+   "modifier": "Optional",
+   "value_type": "scale_info::604"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": "ProposalCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::69"
+  },
+  {
+   "pallet": "TechnicalCommittee",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "TechnicalCommitteeMembership",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "TechnicalCommitteeMembership",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::606"
+  },
+  {
+   "pallet": "TechnicalCommitteeMembership",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "Democracy",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "PublicPropCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "PublicProps",
+   "modifier": "Default",
+   "value_type": "scale_info::614"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "DepositOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::617"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "ReferendumCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "LowestUnbaked",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "ReferendumInfoOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::618"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "VotingOf",
+   "modifier": "Default",
+   "value_type": "scale_info::621"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "LastTabledWasExternal",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "NextExternal",
+   "modifier": "Optional",
+   "value_type": "scale_info::627"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "Blacklist",
+   "modifier": "Optional",
+   "value_type": "scale_info::628"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "Cancellations",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "Democracy",
+   "item": "MetadataOf",
+   "modifier": "Optional",
+   "value_type": "scale_info::13"
+  },
+  {
+   "pallet": "AcalaOracle",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "AcalaOracle",
+   "item": "RawValues",
+   "modifier": "Optional",
+   "value_type": "scale_info::630"
+  },
+  {
+   "pallet": "AcalaOracle",
+   "item": "Values",
+   "modifier": "Optional",
+   "value_type": "scale_info::630"
+  },
+  {
+   "pallet": "AcalaOracle",
+   "item": "HasDispatched",
+   "modifier": "Default",
+   "value_type": "scale_info::631"
+  },
+  {
+   "pallet": "OperatorMembershipAcala",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "OperatorMembershipAcala",
+   "item": "Members",
+   "modifier": "Default",
+   "value_type": "scale_info::634"
+  },
+  {
+   "pallet": "OperatorMembershipAcala",
+   "item": "Prime",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "Auction",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Auction",
+   "item": "Auctions",
+   "modifier": "Optional",
+   "value_type": "scale_info::636"
+  },
+  {
+   "pallet": "Auction",
+   "item": "AuctionsIndex",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Auction",
+   "item": "AuctionEndTime",
+   "modifier": "Optional",
+   "value_type": "scale_info::36"
+  },
+  {
+   "pallet": "Rewards",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Rewards",
+   "item": "PoolInfos",
+   "modifier": "Default",
+   "value_type": "scale_info::638"
+  },
+  {
+   "pallet": "Rewards",
+   "item": "SharesAndWithdrawnRewards",
+   "modifier": "Default",
+   "value_type": "scale_info::644"
+  },
+  {
+   "pallet": "OrmlNFT",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "OrmlNFT",
+   "item": "NextClassId",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "OrmlNFT",
+   "item": "NextTokenId",
+   "modifier": "Default",
+   "value_type": "scale_info::12"
+  },
+  {
+   "pallet": "OrmlNFT",
+   "item": "Classes",
+   "modifier": "Optional",
+   "value_type": "scale_info::647"
+  },
+  {
+   "pallet": "OrmlNFT",
+   "item": "Tokens",
+   "modifier": "Optional",
+   "value_type": "scale_info::650"
+  },
+  {
+   "pallet": "OrmlNFT",
+   "item": "TokensByOwner",
+   "modifier": "Default",
+   "value_type": "scale_info::36"
+  },
+  {
+   "pallet": "Parameters",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Parameters",
+   "item": "Parameters",
+   "modifier": "Optional",
+   "value_type": "scale_info::656"
+  },
+  {
+   "pallet": "Prices",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Prices",
+   "item": "LockedPrice",
+   "modifier": "Optional",
+   "value_type": "scale_info::64"
+  },
+  {
+   "pallet": "Dex",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Dex",
+   "item": "LiquidityPool",
+   "modifier": "Default",
+   "value_type": "scale_info::640"
+  },
+  {
+   "pallet": "Dex",
+   "item": "TradingPairStatuses",
+   "modifier": "Default",
+   "value_type": "scale_info::660"
+  },
+  {
+   "pallet": "Dex",
+   "item": "ProvisioningPool",
+   "modifier": "Default",
+   "value_type": "scale_info::640"
+  },
+  {
+   "pallet": "Dex",
+   "item": "InitialShareExchangeRates",
+   "modifier": "Default",
+   "value_type": "scale_info::663"
+  },
+  {
+   "pallet": "DexOracle",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "DexOracle",
+   "item": "Cumulatives",
+   "modifier": "Default",
+   "value_type": "scale_info::665"
+  },
+  {
+   "pallet": "DexOracle",
+   "item": "AveragePrices",
+   "modifier": "Optional",
+   "value_type": "scale_info::668"
+  },
+  {
+   "pallet": "AggregatedDex",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "AggregatedDex",
+   "item": "AggregatedSwapPaths",
+   "modifier": "Optional",
+   "value_type": "scale_info::670"
+  },
+  {
+   "pallet": "Earning",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Earning",
+   "item": "Ledger",
+   "modifier": "Optional",
+   "value_type": "scale_info::673"
+  },
+  {
+   "pallet": "AuctionManager",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "AuctionManager",
+   "item": "CollateralAuctions",
+   "modifier": "Optional",
+   "value_type": "scale_info::678"
+  },
+  {
+   "pallet": "AuctionManager",
+   "item": "TotalCollateralInAuction",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "AuctionManager",
+   "item": "TotalTargetInAuction",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Loans",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Loans",
+   "item": "Positions",
+   "modifier": "Default",
+   "value_type": "scale_info::681"
+  },
+  {
+   "pallet": "Loans",
+   "item": "TotalPositions",
+   "modifier": "Default",
+   "value_type": "scale_info::681"
+  },
+  {
+   "pallet": "Honzon",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Honzon",
+   "item": "Authorization",
+   "modifier": "Optional",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "CdpTreasury",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "CdpTreasury",
+   "item": "ExpectedCollateralAuctionSize",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "CdpTreasury",
+   "item": "DebitPool",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "CdpTreasury",
+   "item": "DebitOffsetBuffer",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "CdpEngine",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "CdpEngine",
+   "item": "DebitExchangeRate",
+   "modifier": "Optional",
+   "value_type": "scale_info::64"
+  },
+  {
+   "pallet": "CdpEngine",
+   "item": "CollateralParams",
+   "modifier": "Optional",
+   "value_type": "scale_info::686"
+  },
+  {
+   "pallet": "CdpEngine",
+   "item": "LastAccumulationSecs",
+   "modifier": "Default",
+   "value_type": "scale_info::12"
+  },
+  {
+   "pallet": "CdpEngine",
+   "item": "LiquidationContracts",
+   "modifier": "Default",
+   "value_type": "scale_info::689"
+  },
+  {
+   "pallet": "EmergencyShutdown",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "EmergencyShutdown",
+   "item": "IsShutdown",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "EmergencyShutdown",
+   "item": "CanRefund",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "HonzonBridge",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "HonzonBridge",
+   "item": "BridgedStableCoinCurrencyId",
+   "modifier": "Optional",
+   "value_type": "scale_info::55"
+  },
+  {
+   "pallet": "Homa",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Homa",
+   "item": "RelayChainCurrentEra",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Homa",
+   "item": "StakingLedgers",
+   "modifier": "Optional",
+   "value_type": "scale_info::694"
+  },
+  {
+   "pallet": "Homa",
+   "item": "TotalStakingBonded",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Homa",
+   "item": "ToBondPool",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Homa",
+   "item": "TotalVoidLiquid",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Homa",
+   "item": "UnclaimedRedemption",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Homa",
+   "item": "RedeemRequests",
+   "modifier": "Optional",
+   "value_type": "scale_info::695"
+  },
+  {
+   "pallet": "Homa",
+   "item": "Unbondings",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Homa",
+   "item": "EstimatedRewardRatePerEra",
+   "modifier": "Default",
+   "value_type": "scale_info::688"
+  },
+  {
+   "pallet": "Homa",
+   "item": "SoftBondedCapPerSubAccount",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Homa",
+   "item": "CommissionRate",
+   "modifier": "Default",
+   "value_type": "scale_info::688"
+  },
+  {
+   "pallet": "Homa",
+   "item": "FastMatchFeeRate",
+   "modifier": "Default",
+   "value_type": "scale_info::688"
+  },
+  {
+   "pallet": "Homa",
+   "item": "LastEraBumpedBlock",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Homa",
+   "item": "BumpEraFrequency",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "Homa",
+   "item": "NominateIntervalEra",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "XcmInterface",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "XcmInterface",
+   "item": "XcmDestWeightAndFee",
+   "modifier": "Default",
+   "value_type": "scale_info::699"
+  },
+  {
+   "pallet": "HomaValidatorList",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "HomaValidatorList",
+   "item": "Guarantees",
+   "modifier": "Optional",
+   "value_type": "scale_info::702"
+  },
+  {
+   "pallet": "HomaValidatorList",
+   "item": "TotalLockedByGuarantor",
+   "modifier": "Optional",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "HomaValidatorList",
+   "item": "ValidatorBackings",
+   "modifier": "Optional",
+   "value_type": "scale_info::705"
+  },
+  {
+   "pallet": "NomineesElection",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "NomineesElection",
+   "item": "Nominations",
+   "modifier": "Default",
+   "value_type": "scale_info::411"
+  },
+  {
+   "pallet": "NomineesElection",
+   "item": "Ledger",
+   "modifier": "Optional",
+   "value_type": "scale_info::707"
+  },
+  {
+   "pallet": "NomineesElection",
+   "item": "Votes",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "NomineesElection",
+   "item": "ReservedNominees",
+   "modifier": "Default",
+   "value_type": "scale_info::411"
+  },
+  {
+   "pallet": "Incentives",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Incentives",
+   "item": "IncentiveRewardAmounts",
+   "modifier": "Default",
+   "value_type": "scale_info::6"
+  },
+  {
+   "pallet": "Incentives",
+   "item": "ClaimRewardDeductionRates",
+   "modifier": "Default",
+   "value_type": "scale_info::688"
+  },
+  {
+   "pallet": "Incentives",
+   "item": "ClaimRewardDeductionCurrency",
+   "modifier": "Optional",
+   "value_type": "scale_info::55"
+  },
+  {
+   "pallet": "Incentives",
+   "item": "PendingMultiRewards",
+   "modifier": "Default",
+   "value_type": "scale_info::645"
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": "NextForeignAssetId",
+   "modifier": "Default",
+   "value_type": "scale_info::42"
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": "NextStableAssetId",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": "ForeignAssetLocations",
+   "modifier": "Optional",
+   "value_type": "scale_info::135"
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": "LocationToCurrencyIds",
+   "modifier": "Optional",
+   "value_type": "scale_info::55"
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": "Erc20IdToAddress",
+   "modifier": "Optional",
+   "value_type": "scale_info::45"
+  },
+  {
+   "pallet": "AssetRegistry",
+   "item": "AssetMetadatas",
+   "modifier": "Optional",
+   "value_type": "scale_info::235"
+  },
+  {
+   "pallet": "XNFT",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "XNFT",
+   "item": "ForeignAssetToClass",
+   "modifier": "Optional",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "XNFT",
+   "item": "ClassToForeignAsset",
+   "modifier": "Optional",
+   "value_type": "scale_info::134"
+  },
+  {
+   "pallet": "XNFT",
+   "item": "AssetInstanceToItem",
+   "modifier": "Optional",
+   "value_type": "scale_info::12"
+  },
+  {
+   "pallet": "XNFT",
+   "item": "ItemToAssetInstance",
+   "modifier": "Optional",
+   "value_type": "scale_info::141"
+  },
+  {
+   "pallet": "EVM",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "EVM",
+   "item": "ChainId",
+   "modifier": "Default",
+   "value_type": "scale_info::12"
+  },
+  {
+   "pallet": "EVM",
+   "item": "Accounts",
+   "modifier": "Optional",
+   "value_type": "scale_info::716"
+  },
+  {
+   "pallet": "EVM",
+   "item": "ContractStorageSizes",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "EVM",
+   "item": "AccountStorages",
+   "modifier": "Default",
+   "value_type": "scale_info::13"
+  },
+  {
+   "pallet": "EVM",
+   "item": "Codes",
+   "modifier": "Default",
+   "value_type": "scale_info::720"
+  },
+  {
+   "pallet": "EVM",
+   "item": "CodeInfos",
+   "modifier": "Optional",
+   "value_type": "scale_info::721"
+  },
+  {
+   "pallet": "EVM",
+   "item": "NetworkContractIndex",
+   "modifier": "Default",
+   "value_type": "scale_info::12"
+  },
+  {
+   "pallet": "EVM",
+   "item": "ExtrinsicOrigin",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "EVM",
+   "item": "XcmOrigin",
+   "modifier": "Optional",
+   "value_type": "scale_info::69"
+  },
+  {
+   "pallet": "EvmAccounts",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "EvmAccounts",
+   "item": "Accounts",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  },
+  {
+   "pallet": "EvmAccounts",
+   "item": "EvmAddresses",
+   "modifier": "Optional",
+   "value_type": "scale_info::45"
+  },
+  {
+   "pallet": "StableAsset",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "StableAsset",
+   "item": "PoolCount",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "StableAsset",
+   "item": "Pools",
+   "modifier": "Optional",
+   "value_type": "scale_info::725"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "UnincludedSegment",
+   "modifier": "Default",
+   "value_type": "scale_info::727"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "AggregatedUnincludedSegment",
+   "modifier": "Optional",
+   "value_type": "scale_info::736"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "PendingValidationCode",
+   "modifier": "Default",
+   "value_type": "scale_info::14"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "NewValidationCode",
+   "modifier": "Optional",
+   "value_type": "scale_info::14"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "ValidationData",
+   "modifier": "Optional",
+   "value_type": "scale_info::433"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "DidSetValidationCode",
+   "modifier": "Default",
+   "value_type": "scale_info::8"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "LastRelayChainBlockNumber",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "UpgradeRestrictionSignal",
+   "modifier": "Default",
+   "value_type": "scale_info::737"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "UpgradeGoAhead",
+   "modifier": "Default",
+   "value_type": "scale_info::734"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "RelayStateProof",
+   "modifier": "Optional",
+   "value_type": "scale_info::435"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "RelevantMessagingState",
+   "modifier": "Optional",
+   "value_type": "scale_info::739"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "HostConfiguration",
+   "modifier": "Optional",
+   "value_type": "scale_info::744"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "LastDmqMqcHead",
+   "modifier": "Default",
+   "value_type": "scale_info::746"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "LastHrmpMqcHeads",
+   "modifier": "Default",
+   "value_type": "scale_info::747"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "ProcessedDownwardMessages",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "HrmpWatermark",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "HrmpOutboundMessages",
+   "modifier": "Default",
+   "value_type": "scale_info::750"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "UpwardMessages",
+   "modifier": "Default",
+   "value_type": "scale_info::263"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "PendingUpwardMessages",
+   "modifier": "Default",
+   "value_type": "scale_info::263"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "UpwardDeliveryFeeFactor",
+   "modifier": "Default",
+   "value_type": "scale_info::64"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "AnnouncedHrmpMessagesPerCandidate",
+   "modifier": "Default",
+   "value_type": "scale_info::4"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "ReservedXcmpWeightOverride",
+   "modifier": "Optional",
+   "value_type": "scale_info::10"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "ReservedDmpWeightOverride",
+   "modifier": "Optional",
+   "value_type": "scale_info::10"
+  },
+  {
+   "pallet": "ParachainSystem",
+   "item": "CustomValidationHeadData",
+   "modifier": "Optional",
+   "value_type": "scale_info::14"
+  },
+  {
+   "pallet": "Sudo",
+   "item": ":__STORAGE_VERSION__:",
+   "modifier": "Default",
+   "value_type": "u16"
+  },
+  {
+   "pallet": "Sudo",
+   "item": "Key",
+   "modifier": "Optional",
+   "value_type": "scale_info::0"
+  }
+ ]
+}
