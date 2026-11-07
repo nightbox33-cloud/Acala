@@ -72,8 +72,6 @@ def main():
         for method, params in calls:
             rec["calls"][method] = rpc(url, method, params)
             print(url, method, rec["calls"][method]["ok"], flush=True)
-            if rec["calls"][method]["ok"]:
-                break_after_first_ok = False
         out["endpoints"][url] = rec
         print('done', url, flush=True)
     os.makedirs(os.path.dirname(a.out) or '.', exist_ok=True)
