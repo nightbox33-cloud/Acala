@@ -537,3 +537,11 @@ arreglados con wrapper que siempre deja JSON.
 `stableAsset.TokenSwapped` por tx y escenarios ISOLATE (sólo Taiga, sólo Dex)
 para localizar dónde aparecen los `4,24e12` LDOT. Hasta entonces: **candidato
 abierto, NO crítico confirmado, NO cierre**.
+
+**Decimales verificados** (`primitives/src/currency.rs:409-412`, macro
+`create_token_symbol!`): `ACA("Acala", 12)`, `AUSD("Acala Dollar", 12)`,
+`DOT("Polkadot", 10)`, `LDOT("Liquid DOT", 10)`. DOT y LDOT comparten
+precisión, coherente con `precisions [1,1]` del pool Taiga. **El factor ~5,18
+no es una conversión de decimales prevista**; refuerza que hay que leer los
+eventos de transferencia del run 4243… antes de calificarlo de bug de
+unidades o de artefacto de `bal()`.
