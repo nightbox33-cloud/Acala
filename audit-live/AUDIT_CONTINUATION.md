@@ -430,3 +430,14 @@ final. Corregido: `max_results=12000, page_size=500`, wrapper global que
 
 **Estado: sin crítico confirmado, sin PnL > 0 demostrado contra inventario
 ajeno live. No se emite `"no crítico live"`.**
+
+**Hipótesis descartada sobre el artefacto**: se sospechó que `dev_setStorage`
+reemplazaba `Tokens.Accounts` completo y borraba los balances del pool. Leído
+el código de `AcalaNetwork/chopsticks@8125b81d06646bcdd88464cccac15461be204701`:
+`packages/core/src/utils/set-storage.ts::objectToStorageItems` genera pares
+`[StorageKey, valor]` sólo para las claves indicadas y
+`setStorage` hace `block.pushStorageLayer().setAll(storageItems)`; el borrado
+sólo ocurre con `$removePrefix` explícito. **Las demás claves se conservan.**
+El artefacto, si lo hay, está en la lectura/acumulación de balances, no en un
+borrado de storage de terceros. De ahí la captura de `before`/`after`
+absolutos y de las reservas del pool en el run 42434211979.
