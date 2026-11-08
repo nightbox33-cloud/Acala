@@ -1,8 +1,8 @@
 {
  "chain": "karura",
- "generated_at_utc": "2026-11-08T00:12:22.638332+00:00",
- "finalized_hash": "0xc2b0deda38f931b0a087d03a7d430517359c1c7d1fa0b18f423dd2666f3e796d",
- "block_number": 12812153,
+ "generated_at_utc": "2026-11-08T00:19:51.914150+00:00",
+ "finalized_hash": "0xbf2b90e30535d73c0b6e33cba5ee5ee80562fda6ca788dfb9562a4498878e12b",
+ "block_number": 12812190,
  "items": {
   "TransactionPause.PausedTransactions": [
    [

@@ -95,17 +95,25 @@ Either remove and explicitly install matching versions or dedupe using your pack
 The following conflicting packages were found:
 	esm 16.5.6	node_modules/@polkadot/types-known/
 	esm 17.0.2	node_modules/@polkadot/api/node_modules/@polkadot/types-known/
-SETUP ERROR [
-  {
-    "code": "too_big",
-    "maximum": 9007199254740991,
-    "type": "number",
-    "inclusive": true,
-    "exact": false,
-    "message": "Number is too big, please make it a string if you are using a hex string",
-    "path": [
-      "block"
-    ]
-  }
-]
+fork server [::]:8000
+[00:20:35.418] [32mINFO[39m: [36mAcala RPC listening on http://[::]:8000 and ws://[::]:8000[39m
+    [35mapp[39m: "chopsticks"
+fork runtime 2370
+dev_setStorage full failed, falling back: TypeError: Cannot read properties of undefined (reading 'send')
+native funding failed TypeError: Cannot read properties of undefined (reading 'send')
+stableAsset.mint(DOT,LDOT) => [{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"}] pnl(rank) 0 suspicious false
+stableAsset.redeemSingle(tDOT -> LDOT) => [{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"}] pnl(rank) 0 suspicious false
+stableAsset.redeemProportion(tDOT) => [{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"}] pnl(rank) 0 suspicious false
+stableAsset.swap DOT->LDOT then LDOT->DOT => [{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"},{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"}] pnl(rank) 0 suspicious false
+dex.addLiquidity + removeLiquidity (ACA/aUSD) => [{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"},{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"}] pnl(rank) 0 suspicious false
+dex.addLiquidity + removeLiquidity (aUSD/FA3 tiny side) => [{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"},{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"}] pnl(rank) 0 suspicious false
+aggregatedDex DOT->aUSD (Taiga+Dex path) => [{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"}] pnl(rank) 0 suspicious false
+transactionPayment.withFeeCurrency (aUSD) => [{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"}] pnl(rank) 0 suspicious false
+2026-11-08 00:20:39             VEC: Unable to decode on index 0 Cannot map Enum JSON, unable to find '0' in dex, taiga
+homa.requestRedeem(LDOT) + fastMatchRedeems => [{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"},{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"}] pnl(rank) 0 suspicious false
+liquidCrowdloan.redeem(LCDOT->DOT) => [{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"}] pnl(rank) 0 suspicious false
+incentives.claimRewards(Dex ACA/aUSD pool) => [{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"}] pnl(rank) 0 suspicious false
+emergencyShutdown.refundCollaterals(aUSD) => [{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"}] pnl(rank) 0 suspicious false
+evmAccounts.claimDefaultAccount => [{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"}] pnl(rank) 0 suspicious false
+earning.bond(ACA) => [{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"}] pnl(rank) 0 suspicious false
 wrote audit-live/fork-fuzz.json

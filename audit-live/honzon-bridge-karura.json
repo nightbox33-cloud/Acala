@@ -1,21 +1,226 @@
 {
  "chain": "karura",
- "generated_at_utc": "2026-11-08T00:12:31.229373+00:00",
- "finalized_hash": "0x506d7cb9792de1a911854eef570005504e0137fc992d6d0cdce288c533e04273",
- "block_number": 12812154,
+ "generated_at_utc": "2026-11-08T00:19:58.831521+00:00",
+ "finalized_hash": "0xbf2b90e30535d73c0b6e33cba5ee5ee80562fda6ca788dfb9562a4498878e12b",
+ "block_number": 12812190,
  "rpc": "https://karura-rpc.aca-api.network",
  "evm_rpc": "https://eth-rpc-karura.aca-api.network",
- "errors": [
-  {
-   "where": "AssetMetadatas",
-   "error": "not enough values to unpack (expected 2, got 1)"
-  }
- ],
+ "errors": [],
  "finding": "to_bridged/from_bridged swap 1:1 BASE UNITS between Token(KUSD) and Erc20(bridged)",
  "bridged_stable_coin_currency_id": null,
  "honzon_bridge_account_ss58": "23M5ttkmR6Kco5uF5giywrRtXYxsiWXC9UoZ9KXBaNne6Fm8",
  "honzon_bridge_account_h160": "0x5b828c28c334ecb918a8b5405d630349940f347b",
- "erc20_metadata": [],
+ "erc20_metadata": [
+  [
+   {
+    "Erc20": "0x577f6a0718a468e8a995f6075f2325f86a07c83b"
+   },
+   {
+    "name": "Binance USD (Portal from Ethereum)",
+    "symbol": "BUSDet",
+    "decimals": 18,
+    "minimal_balance": 10000000000000000
+   }
+  ],
+  [
+   {
+    "Erc20": "0xe278651e8ff8e2efa83d7f84205084ebc90688be"
+   },
+   {
+    "name": "Binance Coin (Portal from Ethereum)",
+    "symbol": "BNBet",
+    "decimals": 18,
+    "minimal_balance": 40000000000000
+   }
+  ],
+  [
+   {
+    "Erc20": "0x66291c7d88d2ed9a708147bae4e0814a76705e2f"
+   },
+   {
+    "name": "Wrapped BTC (Portal from Ethereum)",
+    "symbol": "WBTC",
+    "decimals": 8,
+    "minimal_balance": 35
+   }
+  ],
+  [
+   {
+    "Erc20": "0x1516d2d4436d7f2eb0eadeb9be597b8cdbfb5724"
+   },
+   {
+    "name": "Binance USD (Portal from BSC)",
+    "symbol": "BUSDbs",
+    "decimals": 18,
+    "minimal_balance": 10000000000000000
+   }
+  ],
+  [
+   {
+    "Erc20": "0x2c7de70b32cf5f20e02329a88d2e3b00ef85eb90"
+   },
+   {
+    "name": "Chainlink (Portal from Ethereum)",
+    "symbol": "LINK",
+    "decimals": 18,
+    "minimal_balance": 2000000000000000
+   }
+  ],
+  [
+   {
+    "Erc20": "0xb4ce1f6109854243d1af13b8ea34ed28542f31e0"
+   },
+   {
+    "name": "Lido DAO (Portal from Ethereum)",
+    "symbol": "LDO",
+    "decimals": 18,
+    "minimal_balance": 5000000000000000
+   }
+  ],
+  [
+   {
+    "Erc20": "0x21a3e77e77f1a73f303b0e050bdfa33c439e57d3"
+   },
+   {
+    "name": "Arbitrum (Portal from Arbitrum)",
+    "symbol": "ARB",
+    "decimals": 18,
+    "minimal_balance": 9000000000000000
+   }
+  ],
+  [
+   {
+    "Erc20": "0x54e183e533fd3c6e72debb2d1cab451d017faf72"
+   },
+   {
+    "name": "Tether USD (Portal from Ethereum)",
+    "symbol": "USDTet",
+    "decimals": 6,
+    "minimal_balance": 10000
+   }
+  ],
+  [
+   {
+    "Erc20": "0x30b1f4ba0b07789be9986fa090a57e0fe5631ebb"
+   },
+   {
+    "name": "ApeCoin (Portal from Ethereum)",
+    "symbol": "APE",
+    "decimals": 18,
+    "minimal_balance": 3000000000000000
+   }
+  ],
+  [
+   {
+    "Erc20": "0x8cc494086db58859bddc5df0f33679dfe3729a03"
+   },
+   {
+    "name": "Binance Coin (Portal from BSC)",
+    "symbol": "BNB",
+    "decimals": 18,
+    "minimal_balance": 40000000000000
+   }
+  ],
+  [
+   {
+    "Erc20": "0xa2a37aaf4730aeedada5aa8ee20a4451cb8b1c4e"
+   },
+   {
+    "name": "MATIC (Portal from Ethereum)",
+    "symbol": "MATICet",
+    "decimals": 18,
+    "minimal_balance": 10000000000000000
+   }
+  ],
+  [
+   {
+    "Erc20": "0x77cf14f938cb97308d752647d554439d99b39a3f"
+   },
+   {
+    "name": "Uniswap (Portal from Ethereum)",
+    "symbol": "UNI",
+    "decimals": 18,
+    "minimal_balance": 2000000000000000
+   }
+  ],
+  [
+   {
+    "Erc20": "0x1f3a10587a20114ea25ba1b388ee2dd4a337ce27"
+   },
+   {
+    "name": "USD Coin (Portal from Ethereum)",
+    "symbol": "USDCet",
+    "decimals": 6,
+    "minimal_balance": 10000
+   }
+  ],
+  [
+   {
+    "Erc20": "0x9759ca009cbcd75a84786ac19bb5d02f8e68bcd9"
+   },
+   {
+    "name": "Shiba Inu (Portal from Ethereum)",
+    "symbol": "SHIB",
+    "decimals": 18,
+    "minimal_balance": 1000000000000000000000
+   }
+  ],
+  [
+   {
+    "Erc20": "0x4bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a71"
+   },
+   {
+    "name": "DAI Stablecoin (Portal)",
+    "symbol": "DAI",
+    "decimals": 18,
+    "minimal_balance": 10000000000000000
+   }
+  ],
+  [
+   {
+    "Erc20": "0xc621abc3afa3f24886ea278fffa7e10e8969d755"
+   },
+   {
+    "name": "Arbitrum (Portal from Ethereum)",
+    "symbol": "ARBet",
+    "decimals": 18,
+    "minimal_balance": 9000000000000000
+   }
+  ],
+  [
+   {
+    "Erc20": "0xece0cc38021e734bef1d5da071b027ac2f71181f"
+   },
+   {
+    "name": "Wrapped Ether (Portal from Ethereum)",
+    "symbol": "WETH",
+    "decimals": 18,
+    "minimal_balance": 5555555555555
+   }
+  ],
+  [
+   {
+    "Erc20": "0xc5033741ca1ce8f4f956eca6c2ff7360cabfa08d"
+   },
+   {
+    "name": "MATIC (Portal from Polygon)",
+    "symbol": "MATICpo",
+    "decimals": 18,
+    "minimal_balance": 10000000000000000
+   }
+  ],
+  [
+   {
+    "Erc20": "0xe20683ad1ed8bbeed7e1ae74be10f19d8045b530"
+   },
+   {
+    "name": "Acala Dollar (Portal)",
+    "symbol": "waUSD",
+    "decimals": 12,
+    "minimal_balance": 100000000000
+   }
+  ]
+ ],
  "pnl_note": "BridgedStableCoinCurrencyId NOT SET (or not an Erc20): both calls revert",
  "emergency_shutdown_is_shutdown": true
 }

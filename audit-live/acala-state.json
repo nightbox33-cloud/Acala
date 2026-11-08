@@ -1,26 +1,26 @@
 {
  "chain": "acala",
- "generated_at_utc": "2026-11-08T00:09:14.126211+00:00",
+ "generated_at_utc": "2026-11-08T00:17:40.517130+00:00",
  "rpc": "https://acala-rpc.aca-api.network",
  "evm_rpc": "https://eth-rpc-acala.aca-api.network",
- "ci_run_id": "42428430187",
+ "ci_run_id": "42429075241",
  "errors": [],
  "anchor": {
-  "finalized_hash": "0x5cd135304191a233aca71137be2b9db9d24fdacefc20d2e9b2fa16e7e0b09ccf",
+  "finalized_hash": "0x315d626792c67a06f1f45049467f2560e8105150289f7a43d8e900b2b65d8fd5",
   "finalized_header": {
    "digest": {
     "logs": [
-     "0x066175726120ca4fe90800000000",
-     "0x045250535290c5c162f0688ee34fc98c74133a5791e65c7047f1ec3a04c3ccd5fda76503704f46bc0d08",
-     "0x05617572610101a8a25ac9dbc8f32069f613ea0199bbc0dcccea86984203568b7a6dda846efb198c2bfe62021c68cb319d265ebeb9ac5ecae33f0dab32eefceb74e332b552258c"
+     "0x066175726120f54fe90800000000",
+     "0x04525053529022701bef1f8897a57341a96deb558253fea863f9a82a8a8d9df3b6cecd9ada479ebd0d08",
+     "0x056175726101017e27ac182a47517d7cf9cda46642c586fc8e31d6ee429f8ddd33479ec57c381b7b5de148d51c9ba71da988e2183e406b241809afd7cba1fe3281e9b361e35b87"
     ]
    },
-   "extrinsicsRoot": "0x3784c88b68c2e9589d460200e97658f66aa94c850ff4f1c2ff30ddfc15da1c68",
-   "number": "0xbcf7c2",
-   "parentHash": "0xa8c2128f9f3f2e1243756b94b6eced2d7906c3cf9948a18318880d2ee4cd213e",
-   "stateRoot": "0x9135764cc12da2cc62fcf5781a7107f8ddbe47507de366895560c41a9c72d106"
+   "extrinsicsRoot": "0x22026f06d646ce0866004abf1d97da7ae01eca96698feee07c9e6167a93f18f2",
+   "number": "0xbcf7ed",
+   "parentHash": "0x276ae56a2e855d114fcc5f2010eadd0968370e3ab8b619afd8e384d2ea904e29",
+   "stateRoot": "0xd8f84be2250c5c0d977055fdabba45cb62003fde726a91b92b80a87b868566e0"
   },
-  "finalized_block_number": 12384194,
+  "finalized_block_number": 12384237,
   "runtime_version": {
    "specName": "acala",
    "implName": "acala",
@@ -36,7 +36,7 @@
  },
  "evm": {
   "chainId": "0x313",
-  "blockNumber": "0xbcf7c6",
+  "blockNumber": "0xbcf7f0",
   "codes": {
    "0x0000000000000000000100000000000000000000": {
     "symbol": "ACA",
@@ -4363,8 +4363,8 @@
       "Erc20": "0xc80084af223c8b598536178d9361dc55bfda6818"
      },
      {
-      "value": 75832250000000000000000,
-      "timestamp": 1794096108000
+      "value": 75830040000000000000000,
+      "timestamp": 1794096156000
      }
     ],
     [
@@ -4381,8 +4381,8 @@
       "Erc20": "0x5a4d6acdc4e3e5ab15717f407afe957f7a242578"
      },
      {
-      "value": 2239000000000000000000,
-      "timestamp": 1794096108000
+      "value": 2238900000000000000000,
+      "timestamp": 1794096624000
      }
     ]
    ]
@@ -5248,7 +5248,7 @@
          "Token": "ACA"
         },
         [
-         1135545683629286683,
+         1135561887139286683,
          783962162455872572
         ]
        ]
@@ -5305,7 +5305,7 @@
          "Token": "ACA"
         },
         [
-         161932792523549076247,
+         161933660578949076247,
          112627128417068860538
         ]
        ]
@@ -10479,11 +10479,11 @@
    "count_returned": 0,
    "rows": []
   },
-  "System.Number": 12384194,
+  "System.Number": 12384237,
   "Balances.TotalIssuance": 1319127120180453634703,
   "CdpTreasury.DebitPool": 6182665672858482289,
   "CdpTreasury.DebitOffsetBuffer": 3734615587502195269,
-  "CdpEngine.LastAccumulationSecs": 1794096492,
+  "CdpEngine.LastAccumulationSecs": 1794097008,
   "CdpEngine.LiquidationContracts": [],
   "Homa.RelayChainCurrentEra": 2349,
   "Homa.TotalStakingBonded": 19376758882225950,
@@ -10662,7 +10662,7 @@
    "providers": 18,
    "sufficients": 0,
    "data": {
-    "free": 60880670066274757316,
+    "free": 60881554325184757316,
     "reserved": 0,
     "frozen": 0,
     "flags": 170141183460469231731687303715884105728
@@ -10734,7 +10734,7 @@
    "providers": 7,
    "sufficients": 0,
    "data": {
-    "free": 3356844369970000000,
+    "free": 3355960111060000000,
     "reserved": 0,
     "frozen": 0,
     "flags": 170141183460469231731687303715884105728

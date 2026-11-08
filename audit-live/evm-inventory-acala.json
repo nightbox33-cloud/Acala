@@ -1,8 +1,8 @@
 {
  "chain": "acala",
- "generated_at_utc": "2026-11-08T00:13:09.484869+00:00",
- "finalized_hash": "0x92c9a07c26c49a18da49d0b99cbb3b39a0768473f45e1f8eb8db5fbeee43fb5f",
- "block_number": 12384214,
+ "generated_at_utc": "2026-11-08T00:30:51.679944+00:00",
+ "finalized_hash": "0xdf500643e7bda2e61f9d72a15656233eeacfc3cc71638924988c0b4be26cae93",
+ "block_number": 12384303,
  "rpc": "https://acala-rpc.aca-api.network",
  "evm_rpc": "https://eth-rpc-acala.aca-api.network",
  "max_accounts": 80,

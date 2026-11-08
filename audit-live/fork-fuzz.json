@@ -1,12 +1,358 @@
 {
- "anchor": "0x5cd135304191a233aca71137be2b9db9d24fdacefc20d2e9b2fa16e7e0b09ccf",
+ "anchor": "0x315d626792c67a06f1f45049467f2560e8105150289f7a43d8e900b2b65d8fd5",
  "note": "capital X via dev_setStorage (attacker capital, no admin); all calls ensure_signed; fake-signed extrinsics mined with dev_newBlock",
- "scenarios": [],
+ "scenarios": [
+  {
+   "name": "control: self transfer 1e12 ACA",
+   "build_error": "TypeError: api.tx.balances.transfer is not a function"
+  },
+  {
+   "name": "stableAsset.mint(DOT,LDOT)",
+   "calls": [
+    {
+     "ok": false,
+     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+    }
+   ],
+   "deltas": {
+    "ACA": "0",
+    "AUSD": "0",
+    "DOT": "0",
+    "LDOT": "0",
+    "LCDOT": "0",
+    "tDOT": "0",
+    "FA3": "0",
+    "FA12": "0",
+    "FA20": "0"
+   },
+   "pnl_aca_units_ranking_only": "0",
+   "all_non_negative": true,
+   "suspicious": false
+  },
+  {
+   "name": "stableAsset.redeemSingle(tDOT -> LDOT)",
+   "calls": [
+    {
+     "ok": false,
+     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+    }
+   ],
+   "deltas": {
+    "ACA": "0",
+    "AUSD": "0",
+    "DOT": "0",
+    "LDOT": "0",
+    "LCDOT": "0",
+    "tDOT": "0",
+    "FA3": "0",
+    "FA12": "0",
+    "FA20": "0"
+   },
+   "pnl_aca_units_ranking_only": "0",
+   "all_non_negative": true,
+   "suspicious": false
+  },
+  {
+   "name": "stableAsset.redeemProportion(tDOT)",
+   "calls": [
+    {
+     "ok": false,
+     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+    }
+   ],
+   "deltas": {
+    "ACA": "0",
+    "AUSD": "0",
+    "DOT": "0",
+    "LDOT": "0",
+    "LCDOT": "0",
+    "tDOT": "0",
+    "FA3": "0",
+    "FA12": "0",
+    "FA20": "0"
+   },
+   "pnl_aca_units_ranking_only": "0",
+   "all_non_negative": true,
+   "suspicious": false
+  },
+  {
+   "name": "stableAsset.swap DOT->LDOT then LDOT->DOT",
+   "calls": [
+    {
+     "ok": false,
+     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+    },
+    {
+     "ok": false,
+     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+    }
+   ],
+   "deltas": {
+    "ACA": "0",
+    "AUSD": "0",
+    "DOT": "0",
+    "LDOT": "0",
+    "LCDOT": "0",
+    "tDOT": "0",
+    "FA3": "0",
+    "FA12": "0",
+    "FA20": "0"
+   },
+   "pnl_aca_units_ranking_only": "0",
+   "all_non_negative": true,
+   "suspicious": false
+  },
+  {
+   "name": "dex.addLiquidity + removeLiquidity (ACA/aUSD)",
+   "calls": [
+    {
+     "ok": false,
+     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+    },
+    {
+     "ok": false,
+     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+    }
+   ],
+   "deltas": {
+    "ACA": "0",
+    "AUSD": "0",
+    "DOT": "0",
+    "LDOT": "0",
+    "LCDOT": "0",
+    "tDOT": "0",
+    "FA3": "0",
+    "FA12": "0",
+    "FA20": "0"
+   },
+   "pnl_aca_units_ranking_only": "0",
+   "all_non_negative": true,
+   "suspicious": false
+  },
+  {
+   "name": "dex.addLiquidity + removeLiquidity (aUSD/FA3 tiny side)",
+   "calls": [
+    {
+     "ok": false,
+     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+    },
+    {
+     "ok": false,
+     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+    }
+   ],
+   "deltas": {
+    "ACA": "0",
+    "AUSD": "0",
+    "DOT": "0",
+    "LDOT": "0",
+    "LCDOT": "0",
+    "tDOT": "0",
+    "FA3": "0",
+    "FA12": "0",
+    "FA20": "0"
+   },
+   "pnl_aca_units_ranking_only": "0",
+   "all_non_negative": true,
+   "suspicious": false
+  },
+  {
+   "name": "aggregatedDex DOT->aUSD (Taiga+Dex path)",
+   "calls": [
+    {
+     "ok": false,
+     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+    }
+   ],
+   "deltas": {
+    "ACA": "0",
+    "AUSD": "0",
+    "DOT": "0",
+    "LDOT": "0",
+    "LCDOT": "0",
+    "tDOT": "0",
+    "FA3": "0",
+    "FA12": "0",
+    "FA20": "0"
+   },
+   "pnl_aca_units_ranking_only": "0",
+   "all_non_negative": true,
+   "suspicious": false
+  },
+  {
+   "name": "transactionPayment.withFeeCurrency (aUSD)",
+   "calls": [
+    {
+     "ok": false,
+     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+    }
+   ],
+   "deltas": {
+    "ACA": "0",
+    "AUSD": "0",
+    "DOT": "0",
+    "LDOT": "0",
+    "LCDOT": "0",
+    "tDOT": "0",
+    "FA3": "0",
+    "FA12": "0",
+    "FA20": "0"
+   },
+   "pnl_aca_units_ranking_only": "0",
+   "all_non_negative": true,
+   "suspicious": false
+  },
+  {
+   "name": "transactionPayment.withFeeAggregatedPath",
+   "build_error": "Error: createType(Call):: Call: failed decoding transactionPayment.withFeeAggregatedPath:: Struct: failed on args: {\"fee_aggregated_path\":\"Vec<ModuleSupportDexAggregatedSwapPath>\",\"call\":\"Call\"}:: Struct: failed on fee_aggregated_path: Vec<ModuleSupportDexAggregatedSwapPath>:: Cannot map Enum JSON, unable to find '0' in dex, taiga"
+  },
+  {
+   "name": "homa.requestRedeem(LDOT) + fastMatchRedeems",
+   "calls": [
+    {
+     "ok": false,
+     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+    },
+    {
+     "ok": false,
+     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+    }
+   ],
+   "deltas": {
+    "ACA": "0",
+    "AUSD": "0",
+    "DOT": "0",
+    "LDOT": "0",
+    "LCDOT": "0",
+    "tDOT": "0",
+    "FA3": "0",
+    "FA12": "0",
+    "FA20": "0"
+   },
+   "pnl_aca_units_ranking_only": "0",
+   "all_non_negative": true,
+   "suspicious": false
+  },
+  {
+   "name": "liquidCrowdloan.redeem(LCDOT->DOT)",
+   "calls": [
+    {
+     "ok": false,
+     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+    }
+   ],
+   "deltas": {
+    "ACA": "0",
+    "AUSD": "0",
+    "DOT": "0",
+    "LDOT": "0",
+    "LCDOT": "0",
+    "tDOT": "0",
+    "FA3": "0",
+    "FA12": "0",
+    "FA20": "0"
+   },
+   "pnl_aca_units_ranking_only": "0",
+   "all_non_negative": true,
+   "suspicious": false
+  },
+  {
+   "name": "incentives.claimRewards(Dex ACA/aUSD pool)",
+   "calls": [
+    {
+     "ok": false,
+     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+    }
+   ],
+   "deltas": {
+    "ACA": "0",
+    "AUSD": "0",
+    "DOT": "0",
+    "LDOT": "0",
+    "LCDOT": "0",
+    "tDOT": "0",
+    "FA3": "0",
+    "FA12": "0",
+    "FA20": "0"
+   },
+   "pnl_aca_units_ranking_only": "0",
+   "all_non_negative": true,
+   "suspicious": false
+  },
+  {
+   "name": "emergencyShutdown.refundCollaterals(aUSD)",
+   "calls": [
+    {
+     "ok": false,
+     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+    }
+   ],
+   "deltas": {
+    "ACA": "0",
+    "AUSD": "0",
+    "DOT": "0",
+    "LDOT": "0",
+    "LCDOT": "0",
+    "tDOT": "0",
+    "FA3": "0",
+    "FA12": "0",
+    "FA20": "0"
+   },
+   "pnl_aca_units_ranking_only": "0",
+   "all_non_negative": true,
+   "suspicious": false
+  },
+  {
+   "name": "evmAccounts.claimDefaultAccount",
+   "calls": [
+    {
+     "ok": false,
+     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+    }
+   ],
+   "deltas": {
+    "ACA": "0",
+    "AUSD": "0",
+    "DOT": "0",
+    "LDOT": "0",
+    "LCDOT": "0",
+    "tDOT": "0",
+    "FA3": "0",
+    "FA12": "0",
+    "FA20": "0"
+   },
+   "pnl_aca_units_ranking_only": "0",
+   "all_non_negative": true,
+   "suspicious": false
+  },
+  {
+   "name": "earning.bond(ACA)",
+   "calls": [
+    {
+     "ok": false,
+     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+    }
+   ],
+   "deltas": {
+    "ACA": "0",
+    "AUSD": "0",
+    "DOT": "0",
+    "LDOT": "0",
+    "LCDOT": "0",
+    "tDOT": "0",
+    "FA3": "0",
+    "FA12": "0",
+    "FA20": "0"
+   },
+   "pnl_aca_units_ranking_only": "0",
+   "all_non_negative": true,
+   "suspicious": false
+  }
+ ],
  "errors": [
   {
-   "where": "setup",
-   "error": "[\n  {\n    \"code\": \"too_big\",\n    \"maximum\": 9007199254740991,\n    \"type\": \"number\",\n    \"inclusive\": true,\n    \"exact\": false,\n    \"message\": \"Number is too big, please make it a string if you are using a hex string\",\n    \"path\": [\n      \"block\"\n    ]\n  }\n]",
-   "stack": "ZodError: [\n  {\n    \"code\": \"too_big\",\n    \"maximum\": 9007199254740991,\n    \"type\": \"number\",\n    \"inclusive\": true,\n    \"exact\": false,\n    \"message\": \"Number is too big, please make it a string if you are using a hex string\",\n    \"path\": [\n      \"block\"\n    ]\n  }\n]\n    at get error (file:///home/runner/work/Acala/Acala/node_modules/zod/v3/types.js:39:31)\n    at ZodObject.parse (file:///home/runner/work/Acala/Acala/node_modules/zod/v3/types.js:114:22)\n    at fetchConfig (file:///home/runner/work/Acala/Acala/node_modules/@acala-network/chopsticks/dist/esm/schema/index.js:167:34)\n    at main (file:///home/runner/work/Acala/Acala/scripts/audit/fork_fuzz.mjs:46:39)\n    at file:///home/runner/work/Acala/Acala/scripts/audit/fork_fuzz.mjs:173:1\n    at ModuleJob.run (node:internal/modules/esm/module_job:343:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:681:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)"
+   "where": "dev_setStorage_full",
+   "error": "TypeError: Cannot read properties of undefined (reading 'send')"
   }
  ]
 }
