@@ -79,7 +79,7 @@ def main(chain, out):
     except Exception: pass
 
     try:
-        rows = sub.query_map('EVM', 'Accounts', block_hash=fin, max_results=20000, page_size=200)
+        rows = sub.query_map('EVM', 'Accounts', block_hash=fin, max_results=12000, page_size=500)
         n = 0
         for k, v in rows:
             n += 1
@@ -143,5 +143,14 @@ def main(chain, out):
               'tokens', p['token_balances'], 'setup', str(p.get('setup_eth_call'))[:60], flush=True)
 
 if __name__ == '__main__':
-    main(sys.argv[1] if len(sys.argv) > 1 else 'acala',
-         sys.argv[2] if len(sys.argv) > 2 else 'audit-live/gnosis-safes-acala.json')
+    _chain = sys.argv[1] if len(sys.argv) > 1 else 'acala'
+    _out = sys.argv[2] if len(sys.argv) > 2 else 'audit-live/probe-error.json'
+    try:
+        main(_chain, _out)
+    except Exception as _e:
+        import traceback as _tb
+        os.makedirs(os.path.dirname(_out) or '.', exist_ok=True)
+        with open(_out, 'w') as _f:
+            json.dump({'chain': _chain, 'fatal_error': str(_e),
+                       'traceback': _tb.format_exc()[-3000:]}, _f, indent=1)
+        print('FATAL', _e, flush=True)

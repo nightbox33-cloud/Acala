@@ -96,6 +96,27 @@ async function main() {
       return r
     }
     // PnL in micro-USD*1e6 (integer): delta_units * usd_micros * 1e6 / 10^decimals
+    // Snapshot the ACTUAL third-party inventory. If the attacker's aUSD delta
+    // is +2521 aUSD but this pool's aUSD reserve does not fall by that amount,
+    // the delta is a dev_setStorage measurement artefact, not a drain.
+    const pools = async () => {
+      const o = {}
+      try {
+        const lp = await api.query.dex.liquidityPool([{ token: 'AUSD' }, { token: 'LDOT' }])
+        o['dex_AUSD_LDOT'] = [lp[0].toString(), lp[1].toString()]
+      } catch (e) { o['dex_AUSD_LDOT'] = 'ERR:' + String(e) }
+      try {
+        const lp2 = await api.query.dex.liquidityPool([{ token: 'ACA' }, { token: 'AUSD' }])
+        o['dex_ACA_AUSD'] = [lp2[0].toString(), lp2[1].toString()]
+      } catch (e) { o['dex_ACA_AUSD'] = 'ERR:' + String(e) }
+      try {
+        const sp = await api.query.stableAsset.pools(0)
+        const some = sp.isSome ? sp.unwrap() : sp
+        o['taiga_0_balances'] = Array.from(some.balances).map(x => x.toString())
+        o['taiga_0_total_supply'] = some.totalSupply.toString()
+      } catch (e) { o['taiga_0'] = 'ERR:' + String(e) }
+      return o
+    }
     const val = b => Object.entries(b).reduce(
       (s, [k, v]) => s + (v * (USD[k] || 0n) * 1000000n) / (POW[k] || 1n), 0n)
     const deltas = (a, b) => Object.fromEntries(Object.keys(b).map(k => [k, (b[k] - a[k]).toString()]))
@@ -193,9 +214,11 @@ async function main() {
       let txs = []
       try { txs = build() } catch (e) { out.scenarios.push({ name, build_error: String(e) }); continue }
       const before = await bal()
+      const beforePools = await pools()
       const results = []
       for (const tx of txs) results.push(await send(tx, name))
       const after = await bal()
+      const afterPools = await pools()
       const d = deltas(before, after)
       const pnl = val(after) - val(before)
       const dv = Object.values(d).map(BigInt)
@@ -204,6 +227,9 @@ async function main() {
       const anyPositive = dv.some(x => x > 0n)
       const isUnwind = name.startsWith('UNWIND') || name.startsWith('REPEAT')
       const rec = { name, calls: results, deltas: d,
+                    before: Object.fromEntries(Object.entries(before).map(([k,v]) => [k, v.toString()])),
+                    after: Object.fromEntries(Object.entries(after).map(([k,v]) => [k, v.toString()])),
+                    before_pools: beforePools, after_pools: afterPools,
                     pnl_usd_micros: (pnl / 1000000n).toString(),
                     pnl_usd: (pnl / 1000000000000n).toString(),
                     all_non_negative: allNonNegative,

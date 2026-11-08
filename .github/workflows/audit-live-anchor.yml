@@ -13,7 +13,7 @@ jobs:
   probe:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
-    timeout-minutes: 100
+    timeout-minutes: 150
     env:
       RUN_FORK: ${{ contains(github.event.head_commit.message, 'run-fork') || github.event_name == 'workflow_dispatch' }}
     steps:
@@ -43,7 +43,7 @@ jobs:
       - name: Fork mainnet and measure PnL of accumulated call sequences
         if: env.RUN_FORK == 'true'
         continue-on-error: true
-        timeout-minutes: 14
+        timeout-minutes: 20
         run: |
           ANCHOR_HASH=$(python3 -c 'import json;print(json.load(open("audit-live/acala-state.json"))["anchor"]["finalized_hash"])')
           export ANCHOR_HASH
@@ -57,7 +57,7 @@ jobs:
           python3 scripts/audit/dump_evm_codes.py karura audit-live/evm-codes-karura.json audit-live/evm-codes-karura
       - name: Disassemble every live bytecode and probe contract roles/slots
         continue-on-error: true
-        timeout-minutes: 25
+        timeout-minutes: 35
         run: |
           python3 -m pip install --quiet pyevmasm
           python3 scripts/audit/analyze_evm_codes.py audit-live/evm-codes-acala.json audit-live/evm-codes-acala audit-live/evm-codes-analysis-acala.json
@@ -68,7 +68,7 @@ jobs:
           python3 scripts/audit/probe_gnosis_safes.py karura audit-live/gnosis-safes-karura.json
       - name: Probe permissionless takeover of live Safe/MerkleDistributor/Wormhole proxies
         continue-on-error: true
-        timeout-minutes: 25
+        timeout-minutes: 35
         run: |
           python3 scripts/audit/probe_takeover.py acala audit-live/takeover-acala.json
           python3 scripts/audit/probe_takeover.py karura audit-live/takeover-karura.json

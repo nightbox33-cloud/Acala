@@ -384,3 +384,49 @@ con la conservación del código desplegado**; apunta a un artefacto de
 sigue siendo la prueba decisiva. Si el fork llegara a mostrar PnL > 0 tras
 cerrar la posición, el siguiente paso obligatorio es guardar balances absolutos
 del atacante y `Dex.LiquidityPool`/`StableAsset.Pools[0].balances` antes/después.
+
+## 11. Run 42432563332: UNWIND descarta el 28x; REPEAT es falso positivo a demostrar
+
+Fork válido, ancla `0x37e9a4d07d949579fcefa97231a52f2018c89ff12e46fc9f9884ce48db2a3a3a`,
+20 escenarios, `errors: []`, todas las calls minadas salvo dos `build_error`
+(`transactionPayment.withFeeAggregatedPath` no decodifica) y dos `ok=false`
+(`dex.addLiquidity`/`earning.bond`). PnL ahora en **USD con decimales reales**.
+
+- **`UNWIND aggregatedDex DOT→aUSD→DOT`: PnL = −125 USD**, `suspicious=false`.
+  El `+2.431 USD` de la pierna de ida se pierde al cerrar la posición. Aplicando
+  el criterio 4 del usuario ("tras deshacer el swap el PnL sigue >= 0"), **el
+  swap favorable NO es un drenaje**. Queda descartado.
+- **`REPEAT aggregatedDex x3`: PnL = +6.575 USD**, `suspicious=true` por la
+  heurística. **No se reporta como crítico**: el pool live
+  `[AUSD,LDOT] = [96252808345604126, 194576855790128]` contiene **96 aUSD**;
+  sacar `6845511618096541` unidades (**6.845 aUSD**, 71x la reserva) en tres
+  swaps de 100 DOT es **físicamente imposible** en un AMM. Lo mismo para
+  `stableAsset.redeemSingle` (+377 USD) y `redeemProportion` (+256 USD): queman
+  `1e12` tDOT y acreditan ~`5,2e12` LDOT cuando el pro-rata de
+  `total_supply=2931757964069804` da ~`6,9e11`. Patrón: los deltas de DOT/tDOT
+  son exactos, los de LDOT ~5x y los de aUSD ~5.100x → **artefacto de medición
+  de `dev_setStorage`**, no inventario real. Para demostrarlo se añadió al fork
+  la captura de `before`/`after` absolutos del atacante y de
+  `Dex.LiquidityPool[AUSD,LDOT]`, `[ACA,AUSD]` y `StableAsset.Pools[0].balances`
+  en cada escenario: **si la reserva del pool no cae en la misma cantidad que
+  sube el atacante, el delta es espurio**.
+- **`emergencyShutdown.refundCollaterals`: sin ventaja de rounding.** Un único
+  `refund(3 aUSD)` rinde `20937184919051` ACA + `282967444` LDOT; tres llamadas
+  de `1 aUSD` rinden `20932934908176` ACA + `282967443` LDOT, es decir
+  **menos** (el truncado hacia abajo de `Ratio` perjudica al atacante). PnL
+  −2 USD en ambos. Vector muerto, confirmado con txs minadas.
+- `stableAsset.swap DOT→LDOT→DOT` PnL +4 USD (ruido de precio/redondeo, sin
+  conservación rota); `dex.addLiquidity+removeLiquidity`, `incentives.claimRewards`,
+  `homa`, `liquidCrowdloan`, `evmAccounts`, `transactionPayment`: PnL ≤ 0.
+
+**Fallo de los probes (a corregir, no un resultado)**: el step de roles sólo
+regeneró `evm-roles-acala.json`; `evm-roles-karura`, `gnosis-safes-*` y todos
+los `takeover-*`/`wormhole-*` no se escribieron: `query_map` con 20.000 cuentas
+y `page_size=200` agotó los 25 min y los scripts sólo volcaban el JSON al
+final. Corregido: `max_results=12000, page_size=500`, wrapper global que
+**siempre deja un JSON** (con `fatal_error`/traceback), checkpoint temprano en
+`probe_takeover.py` con las 5 addresses del `config.ts`, superficie limitada a
+35 implementations y timeouts 20/35/35 min (job 150).
+
+**Estado: sin crítico confirmado, sin PnL > 0 demostrado contra inventario
+ajeno live. No se emite `"no crítico live"`.**

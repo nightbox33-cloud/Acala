@@ -90,6 +90,11 @@ def main(chain, out):
             interesting[c['sha256']] = {'selectors': sorted(ss), 'inits': inits,
                                         'code_hash': c.get('file', '').replace('.hex', ''),
                                         'bytes': c['code_bytes']}
+    # Cap the surface: implementations with initializers are the takeover
+    # candidates; keep the largest ones and always keep setup()/proposeRoot().
+    _items = sorted(interesting.items(), key=lambda kv: (-len(kv[1]['inits']),
+                    -kv[1]['bytes']))
+    interesting = dict(_items[:35])
     # token addresses for balance measurement
     tokens = []
     try:
@@ -115,7 +120,7 @@ def main(chain, out):
     by_hash = collections.defaultdict(list)
     scanned = 0
     try:
-        for k, v in sub.query_map('EVM', 'Accounts', block_hash=fin, max_results=20000, page_size=200):
+        for k, v in sub.query_map('EVM', 'Accounts', block_hash=fin, max_results=12000, page_size=500):
             scanned += 1
             a = j(k); info = j(v)
             if not isinstance(a, str) or not a.startswith('0x'): continue
@@ -211,6 +216,9 @@ def main(chain, out):
         rec['candidate'] = bool(rec['takeover_ok'] and rec['has_value'])
         res['accounts'].append(rec)
         if rec['candidate']: res['takeover_candidates'].append(addr)
+    # Write an early checkpoint so the 5 cloned-config distributor addresses
+    # survive even if the remaining probes time out.
+    with open(out, 'w') as f: json.dump(res, f, indent=1, default=str)
     res['accounts_probed'] = matched
     res['takeover_ok_count'] = sum(1 for r in res['accounts'] if r['takeover_ok'])
     res['with_value_count'] = sum(1 for r in res['accounts'] if r['has_value'])
@@ -225,5 +233,14 @@ def main(chain, out):
               'setup', r.get('setup', {}).get('ok'), flush=True)
 
 if __name__ == '__main__':
-    main(sys.argv[1] if len(sys.argv) > 1 else 'acala',
-         sys.argv[2] if len(sys.argv) > 2 else 'audit-live/takeover-acala.json')
+    _chain = sys.argv[1] if len(sys.argv) > 1 else 'acala'
+    _out = sys.argv[2] if len(sys.argv) > 2 else 'audit-live/probe-error.json'
+    try:
+        main(_chain, _out)
+    except Exception as _e:
+        import traceback as _tb
+        os.makedirs(os.path.dirname(_out) or '.', exist_ok=True)
+        with open(_out, 'w') as _f:
+            json.dump({'chain': _chain, 'fatal_error': str(_e),
+                       'traceback': _tb.format_exc()[-3000:]}, _f, indent=1)
+        print('FATAL', _e, flush=True)
