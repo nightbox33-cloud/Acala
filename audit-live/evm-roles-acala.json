@@ -1,8 +1,8 @@
 {
  "chain": "acala",
- "generated_at_utc": "2026-11-08T00:52:18.894077+00:00",
- "finalized_hash": "0x08097e5473be83654e72c2608665f2d30c219818a42722eec8c714b6c23a81a4",
- "block_number": 12384410,
+ "generated_at_utc": "2026-11-08T01:17:27.008119+00:00",
+ "finalized_hash": "0x2e72591cd82ed68be974a706b84e1c8b1f5aa4b509e012bcd3d0e333c2d866c6",
+ "block_number": 12384536,
  "rpc": "https://acala-rpc.aca-api.network",
  "evm_rpc": "https://eth-rpc-acala.aca-api.network",
  "errors": [],
@@ -31,8 +31,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -55,8 +54,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -82,8 +80,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": true,
-   "uninitialized_admin": false,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -108,8 +105,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -132,8 +128,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": true,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": true,
    "has_value": false
   },
   {
@@ -159,8 +154,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -189,8 +183,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -220,8 +213,7 @@
     "ACA": 10197482490346648,
     "aUSD": 0
    },
-   "uninitialized_owner": true,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": true
   },
   {
@@ -252,8 +244,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": true,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -284,8 +275,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": true,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -310,8 +300,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -338,8 +327,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -369,8 +357,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": true,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": true,
    "has_value": false
   },
   {
@@ -394,8 +381,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": true,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -426,8 +412,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": true,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -458,8 +443,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": true,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -484,8 +468,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -513,8 +496,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -541,8 +523,7 @@
     "ACA": 280,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": true
   },
   {
@@ -571,8 +552,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": true,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -603,8 +583,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": true,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -635,8 +614,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": true,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -662,8 +640,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": true,
-   "uninitialized_admin": false,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -693,8 +670,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -721,8 +697,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -753,8 +728,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": true,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -781,8 +755,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -805,8 +778,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": true,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": true,
    "has_value": false
   },
   {
@@ -831,8 +803,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -859,8 +830,7 @@
     "ACA": 0,
     "aUSD": 2200000000000
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": true
   },
   {
@@ -891,8 +861,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": true,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -917,8 +886,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -943,8 +911,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -973,8 +940,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": true,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": true,
    "has_value": false
   },
   {
@@ -1002,8 +968,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -1034,8 +999,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": true,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -1066,8 +1030,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": true,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -1092,8 +1055,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -1123,8 +1085,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -1151,8 +1112,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -1178,8 +1138,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -1204,8 +1163,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": true,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -1229,8 +1187,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": true,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -1258,8 +1215,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -1290,8 +1246,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": true,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -1320,8 +1275,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -1346,8 +1300,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -1376,8 +1329,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": true,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -1404,8 +1356,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -1430,8 +1381,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -1458,8 +1408,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -1486,8 +1435,7 @@
     "ACA": 0,
     "aUSD": 566068000000000
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": true
   },
   {
@@ -1514,8 +1462,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -1545,8 +1492,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": true,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": true,
    "has_value": false
   },
   {
@@ -1569,8 +1515,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -1593,8 +1538,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": true,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": true,
    "has_value": false
   },
   {
@@ -1625,8 +1569,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": true,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -1654,8 +1597,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -1681,8 +1623,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -1709,8 +1650,7 @@
     "ACA": 0,
     "aUSD": 2230159545576
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": true
   },
   {
@@ -1735,8 +1675,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -1761,8 +1700,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -1791,8 +1729,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": true,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -1817,8 +1754,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -1845,8 +1781,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -1872,8 +1807,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": true,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": true,
    "has_value": false
   },
   {
@@ -1899,8 +1833,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": true,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": true,
    "has_value": false
   },
   {
@@ -1927,8 +1860,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": false,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": false,
    "has_value": false
   },
   {
@@ -1958,8 +1890,7 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": true,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": true,
    "has_value": false
   },
   {
@@ -1987,15 +1918,13 @@
     "ACA": 0,
     "aUSD": 0
    },
-   "uninitialized_owner": true,
-   "uninitialized_admin": true,
+   "heuristic_no_owner": true,
    "has_value": false
   }
  ],
  "evm_accounts_scanned": 2145,
- "uninitialized_with_value": [
-  "0x122c858f739f85d75607561ee77c42c32c3f044a"
- ],
- "uninitialized_count": 31,
+ "heuristic_no_owner_with_value": [],
+ "heuristic_note": "NOT a takeover finding: proxies have impl/admin slots and Ownable stores owner outside slot 0; see probe_takeover.py eth_call results",
+ "uninitialized_count": 10,
  "with_value_count": 5
 }

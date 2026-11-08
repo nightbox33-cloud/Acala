@@ -1,26 +1,26 @@
 {
  "chain": "acala",
- "generated_at_utc": "2026-11-08T00:38:52.151235+00:00",
+ "generated_at_utc": "2026-11-08T01:03:46.212786+00:00",
  "rpc": "https://acala-rpc.aca-api.network",
  "evm_rpc": "https://eth-rpc-acala.aca-api.network",
- "ci_run_id": "42430677033",
+ "ci_run_id": "42432563332",
  "errors": [],
  "anchor": {
-  "finalized_hash": "0x6b44836adfb82afa3b047ac8fd292509430d8c3564ee66b589a2a93c7c7ddd2a",
+  "finalized_hash": "0x37e9a4d07d949579fcefa97231a52f2018c89ff12e46fc9f9884ce48db2a3a3a",
   "finalized_header": {
    "digest": {
     "logs": [
-     "0x0661757261205f50e90800000000",
-     "0x04525053529075fad3836b51a77d0e64fa3750447546d8b2faf30eda52de3a6f4097468c6be3eec00d08",
-     "0x0561757261010114c2c925324683c098ee42bf97ce78376ab3c2c3ef29ab62e283ee5f0dfa2d01dbed54c9c3d03669735a830ad97cbc391e35e48eff5915323e0fc51d2679df80"
+     "0x066175726120db50e90800000000",
+     "0x045250535290aff5863efe873eb1d8995f605ad7d1fe9432bf112a895d22a1d8a2e282ebe8e8cec40d08",
+     "0x0561757261010136046e41a1f717acf342c02aaa0c201e58e52d91fac42227b3fdb8ae862f3e2ce9ff44e3be897bdb706e06253614c6893d3674aea1845da6e706b9d4eb39458f"
     ]
    },
-   "extrinsicsRoot": "0x9a891192a5a4a9efb6cc5e972a7ae69619d3ba2a6806ddc61a03d283d44e8754",
-   "number": "0xbcf857",
-   "parentHash": "0x37775482fb7f258e36165967eb87ccfb7c23f5a04cfd6cf86cd0da5737768368",
-   "stateRoot": "0xd65798ab4f55f9f4d1db7a21dce4fb1a1e818d193e85b41d8067cfa24abdbc1f"
+   "extrinsicsRoot": "0xb1e5cdf5c77087f54364727ae050c0508148dd1451b069e027878f40ef2cea7e",
+   "number": "0xbcf8d3",
+   "parentHash": "0x04b1264625f4d7d98b08a648da077776dfc363fdadd09fdb524a6e7141c4918f",
+   "stateRoot": "0x254a3f508a0edfda7cbb9ffa97da3a1cd63d5d1781fa3c9901e4e31423614220"
   },
-  "finalized_block_number": 12384343,
+  "finalized_block_number": 12384467,
   "runtime_version": {
    "specName": "acala",
    "implName": "acala",
@@ -36,7 +36,7 @@
  },
  "evm": {
   "chainId": "0x313",
-  "blockNumber": "0xbcf85a",
+  "blockNumber": "0xbcf8d7",
   "codes": {
    "0x0000000000000000000100000000000000000000": {
     "symbol": "ACA",
@@ -4363,8 +4363,8 @@
       "Erc20": "0xc80084af223c8b598536178d9361dc55bfda6818"
      },
      {
-      "value": 75788650000000000000000,
-      "timestamp": 1794097860000
+      "value": 75772710000000000000000,
+      "timestamp": 1794098976000
      }
     ],
     [
@@ -4372,8 +4372,8 @@
       "Token": "DOT"
      },
      {
-      "value": 898962200000000000,
-      "timestamp": 1794098196000
+      "value": 898965100000000000,
+      "timestamp": 1794098976000
      }
     ],
     [
@@ -4381,8 +4381,8 @@
       "Erc20": "0x5a4d6acdc4e3e5ab15717f407afe957f7a242578"
      },
      {
-      "value": 2237300000000000000000,
-      "timestamp": 1794097860000
+      "value": 2235800000000000000000,
+      "timestamp": 1794099372000
      }
     ]
    ]
@@ -5248,7 +5248,7 @@
          "Token": "ACA"
         },
         [
-         1135599695329286683,
+         1135644705079286683,
          783962162455872572
         ]
        ]
@@ -5305,7 +5305,7 @@
          "Token": "ACA"
         },
         [
-         161935686041549076247,
+         161938097306549076247,
          112627128417068860538
         ]
        ]
@@ -10479,11 +10479,11 @@
    "count_returned": 0,
    "rows": []
   },
-  "System.Number": 12384343,
+  "System.Number": 12384467,
   "Balances.TotalIssuance": 1319127120180453634703,
   "CdpTreasury.DebitPool": 6182665672858482289,
   "CdpTreasury.DebitOffsetBuffer": 3734615587502195269,
-  "CdpEngine.LastAccumulationSecs": 1794098280,
+  "CdpEngine.LastAccumulationSecs": 1794099768,
   "CdpEngine.LiquidationContracts": [],
   "Homa.RelayChainCurrentEra": 2349,
   "Homa.TotalStakingBonded": 19376758882225950,
@@ -10662,7 +10662,7 @@
    "providers": 18,
    "sufficients": 0,
    "data": {
-    "free": 60883617595974757316,
+    "free": 60886073870724757316,
     "reserved": 0,
     "frozen": 0,
     "flags": 170141183460469231731687303715884105728
@@ -10734,7 +10734,7 @@
    "providers": 7,
    "sufficients": 0,
    "data": {
-    "free": 3353896840270000000,
+    "free": 3351440565520000000,
     "reserved": 0,
     "frozen": 0,
     "flags": 170141183460469231731687303715884105728

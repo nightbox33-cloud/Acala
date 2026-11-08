@@ -1,10 +1,31 @@
 {
- "anchor": "0x6b44836adfb82afa3b047ac8fd292509430d8c3564ee66b589a2a93c7c7ddd2a",
+ "anchor": "0x37e9a4d07d949579fcefa97231a52f2018c89ff12e46fc9f9884ce48db2a3a3a",
  "note": "capital X via dev_setStorage (attacker capital, no admin); all calls ensure_signed; fake-signed extrinsics mined with dev_newBlock",
  "scenarios": [
   {
-   "name": "control: self transfer 1e12 ACA",
-   "build_error": "TypeError: api.tx.balances.transfer is not a function"
+   "name": "control: system.remark (no value movement)",
+   "calls": [
+    {
+     "ok": true,
+     "error": null,
+     "nonce": 0
+    }
+   ],
+   "deltas": {
+    "ACA": "-2080000612",
+    "AUSD": "0",
+    "DOT": "0",
+    "LDOT": "0",
+    "LCDOT": "0",
+    "tDOT": "0",
+    "FA3": "0",
+    "FA12": "0",
+    "FA20": "0"
+   },
+   "pnl_usd_micros": "-18",
+   "pnl_usd": "0",
+   "all_non_negative": false,
+   "suspicious": false
   },
   {
    "name": "stableAsset.mint(DOT,LDOT)",
@@ -12,7 +33,7 @@
     {
      "ok": true,
      "error": null,
-     "nonce": 0
+     "nonce": 1
     }
    ],
    "deltas": {
@@ -26,7 +47,8 @@
     "FA12": "0",
     "FA20": "0"
    },
-   "pnl_aca_units_ranking_only": "-2562728488791834910",
+   "pnl_usd_micros": "-3753966662",
+   "pnl_usd": "-3753",
    "all_non_negative": false,
    "suspicious": false
   },
@@ -36,7 +58,7 @@
     {
      "ok": true,
      "error": null,
-     "nonce": 1
+     "nonce": 2
     }
    ],
    "deltas": {
@@ -50,7 +72,8 @@
     "FA12": "0",
     "FA20": "0"
    },
-   "pnl_aca_units_ranking_only": "257151141326252997",
+   "pnl_usd_micros": "377300817",
+   "pnl_usd": "377",
    "all_non_negative": false,
    "suspicious": false
   },
@@ -60,7 +83,7 @@
     {
      "ok": true,
      "error": null,
-     "nonce": 2
+     "nonce": 3
     }
    ],
    "deltas": {
@@ -74,7 +97,8 @@
     "FA12": "0",
     "FA20": "0"
    },
-   "pnl_aca_units_ranking_only": "175333212960661432",
+   "pnl_usd_micros": "256892495",
+   "pnl_usd": "256",
    "all_non_negative": false,
    "suspicious": false
   },
@@ -84,12 +108,12 @@
     {
      "ok": true,
      "error": null,
-     "nonce": 3
+     "nonce": 4
     },
     {
      "ok": true,
      "error": null,
-     "nonce": 4
+     "nonce": 5
     }
    ],
    "deltas": {
@@ -103,7 +127,8 @@
     "FA12": "0",
     "FA20": "0"
    },
-   "pnl_aca_units_ranking_only": "3522246106891710",
+   "pnl_usd_micros": "4738351",
+   "pnl_usd": "4",
    "all_non_negative": false,
    "suspicious": false
   },
@@ -113,12 +138,12 @@
     {
      "ok": false,
      "error": "tokens::ExistentialDeposit",
-     "nonce": 5
+     "nonce": 6
     },
     {
      "ok": false,
      "error": "tokens::BalanceTooLow",
-     "nonce": 6
+     "nonce": 7
     }
    ],
    "deltas": {
@@ -132,7 +157,8 @@
     "FA12": "0",
     "FA20": "0"
    },
-   "pnl_aca_units_ranking_only": "-4450018259",
+   "pnl_usd_micros": "-39",
+   "pnl_usd": "0",
    "all_non_negative": false,
    "suspicious": false
   },
@@ -142,12 +168,12 @@
     {
      "ok": false,
      "error": "dex::InvalidLiquidityIncrement",
-     "nonce": 7
+     "nonce": 8
     },
     {
      "ok": false,
      "error": "tokens::BalanceTooLow",
-     "nonce": 8
+     "nonce": 9
     }
    ],
    "deltas": {
@@ -161,7 +187,8 @@
     "FA12": "0",
     "FA20": "0"
    },
-   "pnl_aca_units_ranking_only": "-4390018259",
+   "pnl_usd_micros": "-39",
+   "pnl_usd": "0",
    "all_non_negative": false,
    "suspicious": false
   },
@@ -171,7 +198,7 @@
     {
      "ok": true,
      "error": null,
-     "nonce": 9
+     "nonce": 10
     }
    ],
    "deltas": {
@@ -185,40 +212,13 @@
     "FA12": "0",
     "FA20": "0"
    },
-   "pnl_aca_units_ranking_only": "355452136917667233",
+   "pnl_usd_micros": "2431748456",
+   "pnl_usd": "2431",
    "all_non_negative": false,
    "suspicious": false
   },
   {
-   "name": "transactionPayment.withFeeCurrency (aUSD)",
-   "calls": [
-    {
-     "ok": true,
-     "error": null,
-     "nonce": 10
-    }
-   ],
-   "deltas": {
-    "ACA": "1",
-    "AUSD": "-369243502",
-    "DOT": "0",
-    "LDOT": "0",
-    "LCDOT": "0",
-    "tDOT": "0",
-    "FA3": "0",
-    "FA12": "0",
-    "FA20": "0"
-   },
-   "pnl_aca_units_ranking_only": "-52063333781",
-   "all_non_negative": false,
-   "suspicious": false
-  },
-  {
-   "name": "transactionPayment.withFeeAggregatedPath",
-   "build_error": "Error: createType(Call):: Call: failed decoding transactionPayment.withFeeAggregatedPath:: Struct: failed on args: {\"fee_aggregated_path\":\"Vec<ModuleSupportDexAggregatedSwapPath>\",\"call\":\"Call\"}:: Struct: failed on fee_aggregated_path: Vec<ModuleSupportDexAggregatedSwapPath>:: Cannot map Enum JSON, unable to find '0' in dex, taiga"
-  },
-  {
-   "name": "homa.requestRedeem(LDOT) + fastMatchRedeems",
+   "name": "UNWIND aggregatedDex DOT->aUSD->DOT (full round trip)",
    "calls": [
     {
      "ok": true,
@@ -232,6 +232,160 @@
     }
    ],
    "deltas": {
+    "ACA": "-4700018610",
+    "AUSD": "-129047115883794",
+    "DOT": "41119830900",
+    "LDOT": "2",
+    "LCDOT": "0",
+    "tDOT": "0",
+    "FA3": "0",
+    "FA12": "0",
+    "FA20": "0"
+   },
+   "pnl_usd_micros": "-125350571",
+   "pnl_usd": "-125",
+   "all_non_negative": false,
+   "suspicious": false
+  },
+  {
+   "name": "REPEAT aggregatedDex DOT->aUSD x3 (price must move against attacker)",
+   "calls": [
+    {
+     "ok": true,
+     "error": null,
+     "nonce": 13
+    },
+    {
+     "ok": true,
+     "error": null,
+     "nonce": 14
+    },
+    {
+     "ok": true,
+     "error": null,
+     "nonce": 15
+    }
+   ],
+   "deltas": {
+    "ACA": "-7020027915",
+    "AUSD": "6845511618096541",
+    "DOT": "-3000000000000",
+    "LDOT": "0",
+    "LCDOT": "0",
+    "tDOT": "0",
+    "FA3": "0",
+    "FA12": "0",
+    "FA20": "0"
+   },
+   "pnl_usd_micros": "6575817855",
+   "pnl_usd": "6575",
+   "all_non_negative": false,
+   "suspicious": true
+  },
+  {
+   "name": "emergencyShutdown.refundCollaterals(3 aUSD) single (rounding baseline)",
+   "calls": [
+    {
+     "ok": true,
+     "error": null,
+     "nonce": 16
+    }
+   ],
+   "deltas": {
+    "ACA": "20937184919051",
+    "AUSD": "-3000000000000",
+    "DOT": "0",
+    "LDOT": "282967444",
+    "LCDOT": "0",
+    "tDOT": "0",
+    "FA3": "0",
+    "FA12": "0",
+    "FA20": "0"
+   },
+   "pnl_usd_micros": "-2787467",
+   "pnl_usd": "-2",
+   "all_non_negative": false,
+   "suspicious": false
+  },
+  {
+   "name": "REPEAT emergencyShutdown.refundCollaterals(1 aUSD) x3 (rounding)",
+   "calls": [
+    {
+     "ok": true,
+     "error": null,
+     "nonce": 17
+    },
+    {
+     "ok": true,
+     "error": null,
+     "nonce": 18
+    },
+    {
+     "ok": true,
+     "error": null,
+     "nonce": 19
+    }
+   ],
+   "deltas": {
+    "ACA": "20932934908176",
+    "AUSD": "-3000000000000",
+    "DOT": "0",
+    "LDOT": "282967443",
+    "LCDOT": "0",
+    "tDOT": "0",
+    "FA3": "0",
+    "FA12": "0",
+    "FA20": "0"
+   },
+   "pnl_usd_micros": "-2787505",
+   "pnl_usd": "-2",
+   "all_non_negative": false,
+   "suspicious": false
+  },
+  {
+   "name": "transactionPayment.withFeeCurrency (aUSD)",
+   "calls": [
+    {
+     "ok": true,
+     "error": null,
+     "nonce": 20
+    }
+   ],
+   "deltas": {
+    "ACA": "1",
+    "AUSD": "-369243502",
+    "DOT": "0",
+    "LDOT": "0",
+    "LCDOT": "0",
+    "tDOT": "0",
+    "FA3": "0",
+    "FA12": "0",
+    "FA20": "0"
+   },
+   "pnl_usd_micros": "-369",
+   "pnl_usd": "0",
+   "all_non_negative": false,
+   "suspicious": false
+  },
+  {
+   "name": "transactionPayment.withFeeAggregatedPath",
+   "build_error": "Error: createType(Call):: Call: failed decoding transactionPayment.withFeeAggregatedPath:: Struct: failed on args: {\"fee_aggregated_path\":\"Vec<ModuleSupportDexAggregatedSwapPath>\",\"call\":\"Call\"}:: Struct: failed on fee_aggregated_path: Vec<ModuleSupportDexAggregatedSwapPath>:: Cannot map Enum JSON, unable to find '0' in dex, taiga"
+  },
+  {
+   "name": "homa.requestRedeem(LDOT) + fastMatchRedeems",
+   "calls": [
+    {
+     "ok": true,
+     "error": null,
+     "nonce": 21
+    },
+    {
+     "ok": true,
+     "error": null,
+     "nonce": 22
+    }
+   ],
+   "deltas": {
     "ACA": "-4540017427",
     "AUSD": "0",
     "DOT": "0",
@@ -242,7 +396,8 @@
     "FA12": "0",
     "FA20": "0"
    },
-   "pnl_aca_units_ranking_only": "-49500004540017427",
+   "pnl_usd_micros": "-89897940",
+   "pnl_usd": "-89",
    "all_non_negative": false,
    "suspicious": false
   },
@@ -252,7 +407,7 @@
     {
      "ok": true,
      "error": null,
-     "nonce": 13
+     "nonce": 23
     }
    ],
    "deltas": {
@@ -266,7 +421,8 @@
     "FA12": "0",
     "FA20": "0"
    },
-   "pnl_aca_units_ranking_only": "-2130009125",
+   "pnl_usd_micros": "-19",
+   "pnl_usd": "0",
    "all_non_negative": false,
    "suspicious": false
   },
@@ -276,7 +432,7 @@
     {
      "ok": true,
      "error": null,
-     "nonce": 14
+     "nonce": 24
     }
    ],
    "deltas": {
@@ -290,7 +446,8 @@
     "FA12": "0",
     "FA20": "0"
    },
-   "pnl_aca_units_ranking_only": "-2130008217",
+   "pnl_usd_micros": "-19",
+   "pnl_usd": "0",
    "all_non_negative": false,
    "suspicious": false
   },
@@ -300,11 +457,11 @@
     {
      "ok": true,
      "error": null,
-     "nonce": 15
+     "nonce": 25
     }
    ],
    "deltas": {
-    "ACA": "6977644969355",
+    "ACA": "6977644969388",
     "AUSD": "-1000000000000",
     "DOT": "0",
     "LDOT": "94322481",
@@ -314,7 +471,8 @@
     "FA12": "0",
     "FA20": "0"
    },
-   "pnl_aca_units_ranking_only": "-129353392221145",
+   "pnl_usd_micros": "-929168",
+   "pnl_usd": "0",
    "all_non_negative": false,
    "suspicious": false
   },
@@ -324,7 +482,7 @@
     {
      "ok": true,
      "error": null,
-     "nonce": 16
+     "nonce": 26
     }
    ],
    "deltas": {
@@ -338,7 +496,8 @@
     "FA12": "0",
     "FA20": "0"
    },
-   "pnl_aca_units_ranking_only": "-2070002858",
+   "pnl_usd_micros": "-18",
+   "pnl_usd": "0",
    "all_non_negative": false,
    "suspicious": false
   },
@@ -348,7 +507,7 @@
     {
      "ok": false,
      "error": "earning::BelowMinBondThreshold",
-     "nonce": 17
+     "nonce": 27
     }
    ],
    "deltas": {
@@ -362,7 +521,8 @@
     "FA12": "0",
     "FA20": "0"
    },
-   "pnl_aca_units_ranking_only": "-2130006147",
+   "pnl_usd_micros": "-19",
+   "pnl_usd": "0",
    "all_non_negative": false,
    "suspicious": false
   }
