@@ -5,6 +5,33 @@
 demostrado hasta este punto; se siguen agotando rutas de dinero con estado live.
 Este fichero registra sólo hechos que sostienen o matan un claim.
 
+## 0. Resumen ejecutivo (actualizado al último run cerrado)
+
+| Vector medido en live | Hecho que lo mata |
+| --- | --- |
+| `aggregatedDex DOT→aUSD` (28x el oráculo) | **UNWIND** DOT→aUSD→DOT minado en fork: PnL **−125 USD**. El extra se pierde al deshacer → falla criterio 4. |
+| `REPEAT aggregatedDex x3` (+6.575 USD, `suspicious=true`) | Físicamente imposible: el pool `[AUSD,LDOT]` tiene **96 aUSD** y el fork acredita 6.845 aUSD. Artefacto de medición pendiente de demostrar con reservas antes/después (run en curso). |
+| `emergencyShutdown.refundCollaterals` (rounding) | `refund(3 aUSD)` rinde **más** ACA que `3 × refund(1 aUSD)`; `Ratio` trunca hacia abajo. PnL −2 USD. CDP subcolateralizado. |
+| 19 `GnosisSafeProxy` (12 Acala / 7 Karura) | Los 13 medidos tienen `threshold` 1–2 y `setup()` **revierte**. `takeover_candidates=[]`. Hay inventario ajeno, pero no tomable. |
+| `MerkleDistributor` upgradeable | `claim` paga a `getEvmAddress(user)` (la víctima), no a `msg.sender`; `try transfer` ignora `false` (self-grief); `approveRoot`/`withdraw` son rol privilegiado. Falta medir `initialize` en las 5 addresses desplegadas. |
+| `stable-asset` (D vs total_supply, yield) | SHA del submodule `aa101e87…` == clon desplegado; `get_d(balances,a) == total_supply`; `collect_yield` minta el yield a los LP **antes** del swap. `1e12 DOT → 1,014e12 LDOT → ~0,5 aUSD`. |
+| HonzonBridge (Karura) | `BridgedStableCoinCurrencyId = None`, escrow sin mapping, shutdown activo: ambas calls revierten. |
+| Heurísticas `DELEGATECALL`/`SELFDESTRUCT`/`ORIGIN` | Falso positivo: bytes del metadata Swarm al final del runtime (pcs 3098–3101 de 3.124 B) y `0x32` como dato. |
+
+**Inventario ajeno medido**: módulos ≈ 158,6 M ACA ≈ **$1,417 M** al oráculo; Safe
+`0xf173f636…` con 2 ACA + 453,9e9 aUSD + 1,58e9 DOT; distribuidor 3USD
+`0xff066331…` con 4,221 KAR; merkles publicados con 425e15 taiKSM + 700e12 3USD
+en 1.408 hojas; 5 contratos Acala con owner no nulo y hasta 566 aUSD.
+
+**Prerrequisito/fallback**: 228 repos / 17 G de 4 orgs, 4.131 heads y 4.052
+tags, 8 FULL + 220 shallow; 465 bytecodes live (405 únicos), **15/405** con
+artefacto exacto y commit, 196+30 identificados por selectores, **390 sin
+fuente**. Submodules y Git LFS sin materializar, otros forges/privados sin
+cubrir → **NO se declara cobertura completa**. Runtime live `acala/2370`
+`0x9ae95ba9…` y `karura/2370` `0xc89def58…`; RPC y anclas en `audit-live/*.json`.
+
+**Sin crítico confirmado. Sin `"no crítico live"`. Búsqueda abierta.**
+
 ## 1. Anclas live usadas en esta continuación
 
 | cadena | bloque | hash finalizado | runtime |
@@ -158,7 +185,7 @@ criterio de conservación. Se relanza.
 `IsShutdown = true`. Ambas calls revierten; no hay inventario ajeno en ese
 bridge. **Candidato muerto.**
 
-## 6. Mapa de los 405 bytecodes live y_protocolos desplegados (cerrado parcialmente)
+## 6. Mapa de los 405 bytecodes live y protocolos desplegados (cerrado parcialmente)
 
 `scripts/audit/map_bytecodes_to_repos.py` indexó en una pasada **12.991 JSON**
 de los 228 clones (17G) buscando `deployedBytecode`/`bytecode`/`object` y
