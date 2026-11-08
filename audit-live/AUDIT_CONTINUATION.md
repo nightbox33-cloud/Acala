@@ -550,3 +550,21 @@ precisión, coherente con `precisions [1,1]` del pool Taiga. **El factor ~5,18
 no es una conversión de decimales prevista**; refuerza que hay que leer los
 eventos de transferencia del run 4243… antes de calificarlo de bug de
 unidades o de artefacto de `bal()`.
+
+### 13 bis. Código desplegado relevante al 5,18x (lectura directa del submodule)
+
+`nutsfinance/stable-asset@aa101e87` `lib/stable-asset/src/lib.rs`:
+
+- `:1353 get_balance_update_amount` → `balances[i] = T::Assets::balance(assets[i], pool_account) * precisions[i]`
+  (**re-sincroniza desde el balance real de la cuenta**, comentario
+  `"Update the balance with underlying rebasing token balances"`).
+- `:1327 get_collect_yield_amount` → `total_supply = get_d(balances, a)`.
+- `:937 get_swap_amount` → `balances[i] += dx * precisions[i]`,
+  `dy = (balances[j] - y - 1) / precisions[j]`, luego resta `swap_fee`.
+
+`precisions=[1,1]` en `acala-state.json` es coherente con la aritmética del
+fork: `929760159257862 + 2024921172474091 = 2954681331731953` frente a
+`total_supply=2950839076267481` (0,13% de diferencia, propio de `get_d` con
+`a=3000`). **Por tanto el factor 5,18 NO sale de `precisions` ni de los
+decimales.** Queda como anomalía de accounting sin explicación de código, a la
+espera de los eventos `tokens.Transferred`/`dex.Swap` del run 42436509596.
