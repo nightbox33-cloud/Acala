@@ -1,0 +1,21 @@
+{
+ "chain": "karura",
+ "generated_at_utc": "2026-11-08T00:12:31.229373+00:00",
+ "finalized_hash": "0x506d7cb9792de1a911854eef570005504e0137fc992d6d0cdce288c533e04273",
+ "block_number": 12812154,
+ "rpc": "https://karura-rpc.aca-api.network",
+ "evm_rpc": "https://eth-rpc-karura.aca-api.network",
+ "errors": [
+  {
+   "where": "AssetMetadatas",
+   "error": "not enough values to unpack (expected 2, got 1)"
+  }
+ ],
+ "finding": "to_bridged/from_bridged swap 1:1 BASE UNITS between Token(KUSD) and Erc20(bridged)",
+ "bridged_stable_coin_currency_id": null,
+ "honzon_bridge_account_ss58": "23M5ttkmR6Kco5uF5giywrRtXYxsiWXC9UoZ9KXBaNne6Fm8",
+ "honzon_bridge_account_h160": "0x5b828c28c334ecb918a8b5405d630349940f347b",
+ "erc20_metadata": [],
+ "pnl_note": "BridgedStableCoinCurrencyId NOT SET (or not an Erc20): both calls revert",
+ "emergency_shutdown_is_shutdown": true
+}

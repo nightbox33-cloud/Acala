@@ -1,0 +1,1050 @@
+{
+ "chain": "acala",
+ "generated_at_utc": "2026-11-08T00:13:09.484869+00:00",
+ "finalized_hash": "0x92c9a07c26c49a18da49d0b99cbb3b39a0768473f45e1f8eb8db5fbeee43fb5f",
+ "block_number": 12384214,
+ "rpc": "https://acala-rpc.aca-api.network",
+ "evm_rpc": "https://eth-rpc-acala.aca-api.network",
+ "max_accounts": 80,
+ "accounts": {
+  "0x4e2ecd240d895ff2efe811c9cee4547f42293fd5": {
+   "account_info": {
+    "nonce": 5,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 1667434177200583000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x7d775b8d8bdd9e8e3ce0b01f4ce614c071c98ddc": {
+   "account_info": {
+    "nonce": 2,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 628431687279000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x86df0af258f7a8dccfc3a86b8f77ab2132f7baef": {
+   "account_info": {
+    "nonce": 81,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 4630527094925000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x129077dffdf2920dbe40a95c245ad45c45e7602d": {
+   "account_info": {
+    "nonce": 1,
+    "contract_info": {
+     "code_hash": "0x3342f7b3c6fb4ebd2c31a795a2b3b2c05461b4ecc09ce6c5e3bd2ae2bbcf8a22",
+     "maintainer": "0x9cd48be8bf088fb02910669295097784f1f129f5",
+     "published": false
+    }
+   },
+   "is_contract": true,
+   "native_balance_wei": 0,
+   "code_bytes": 15754,
+   "code_sha256": "0x3e3364c6d2e9e3b17830de66e870f4d1eaed5cb04bb86d8a6cc89db940bc85e9"
+  },
+  "0xe76aa0a7ae6422fdf713ad24ed510a27f5b45eb0": {
+   "account_info": {
+    "nonce": 1,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 458656856191321000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x2efac79be8f03dea2024d481712fe277705979b5": {
+   "account_info": {
+    "nonce": 4,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 133359920188000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0xa4b114f1edda303bf96765f372ba24e919485221": {
+   "account_info": {
+    "nonce": 1,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 18098148170734000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x97af5b510b3f60328446debc55f629595172f717": {
+   "account_info": {
+    "nonce": 1,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 650369277566000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0xb58370aa383d33ae778e19e42628fbd0fbb4064f": {
+   "account_info": {
+    "nonce": 2,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 908289380564116000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x5895226815ff425ffc2a35b79c32a9a4dc8ed1f5": {
+   "account_info": {
+    "nonce": 1,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 0
+  },
+  "0x75720f62a923942adaa36037b57e3a3d38ccb7fb": {
+   "account_info": {
+    "nonce": 3,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 97336429799625000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0xbfb24bf56d0152561f9bcd666b76a2ddd8b6f133": {
+   "account_info": {
+    "nonce": 1,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 0
+  },
+  "0x85d7ce9f315b820b0ea8594dbdede4a97cba808f": {
+   "account_info": {
+    "nonce": 1,
+    "contract_info": {
+     "code_hash": "0x719348b3981342f4930ed97b783da36e2616a35debe5cc575736bf6159234fbd",
+     "maintainer": "0x9cd48be8bf088fb02910669295097784f1f129f5",
+     "published": true
+    }
+   },
+   "is_contract": true,
+   "native_balance_wei": 0,
+   "code_bytes": 5338,
+   "code_sha256": "0x11ae4fb9cdf55594b189b11c506a25d2dc6dd222b731f442e84ae4f99a994083"
+  },
+  "0x85eec419794e4dcd1e395aa12752e53aac805e72": {
+   "account_info": {
+    "nonce": 6,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 293305402354000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x421d56274ca0b74a50c56c4e610529a11d4f4470": {
+   "account_info": {
+    "nonce": 22,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 2162247558045000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0xfabab437b2aaf2a3c41332660f8ae09425a45b67": {
+   "account_info": {
+    "nonce": 75,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 9985929954194000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0xb48bae54471fe1c7c7d77792f1fc8a2d2b409c40": {
+   "account_info": {
+    "nonce": 2,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 328820506748000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x4c6dc9ce2fd9e1315daa403f3f62d4de43154251": {
+   "account_info": {
+    "nonce": 10,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 1373876251898000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0xbe030b6a57ac91bdb244f173cfe22c15a15210f8": {
+   "account_info": {
+    "nonce": 1,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 24208151520601000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x948729bc20985f29b53bbdc45c04b87f49a66e35": {
+   "account_info": {
+    "nonce": 2093,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 102658927976000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0xc10c99b29ea251d844894b82f7663239f70e9b77": {
+   "account_info": {
+    "nonce": 2,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 293799975692000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0xf1bbc34c6b67db657e7a9cb2ab632188a65563ec": {
+   "account_info": {
+    "nonce": 1,
+    "contract_info": {
+     "code_hash": "0x10a6caea421f6f18e4323a9d4081d597c11d8429233e4347617c44f714be57a7",
+     "maintainer": "0xf82e017bf16220fb986b55dc8f521bab5e8d87a1",
+     "published": true
+    }
+   },
+   "is_contract": true,
+   "native_balance_wei": 0,
+   "code_bytes": 3670,
+   "code_sha256": "0x83a715050b363c8b1e7d0ac1b1bd029113f183f39dc2781b4c6cb619028bfdc9"
+  },
+  "0x647590610c71c8f9ef6e13f635e7e7752d281752": {
+   "account_info": {
+    "nonce": 36,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 102400007215000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0xc22d3f84f58a81eaa87cb1517141eb44acf5f493": {
+   "account_info": {
+    "nonce": 1,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 0
+  },
+  "0xfbb454c7abcd986e8b06d7633e7ac25cb3d45648": {
+   "account_info": {
+    "nonce": 1,
+    "contract_info": {
+     "code_hash": "0xc466c02411e64779dfd32e11cfa65efdf833308e6a217a201873fa951d9dd706",
+     "maintainer": "0x9cd48be8bf088fb02910669295097784f1f129f5",
+     "published": true
+    }
+   },
+   "is_contract": true,
+   "native_balance_wei": 0,
+   "code_bytes": 9649,
+   "code_sha256": "0x19a2c0db17639d83496d5a9e8c55010fad7e11e5dd287c829e07e8351b001a19"
+  },
+  "0x36bd3da5ecf14b381a9edd542ea930445d5f0606": {
+   "account_info": {
+    "nonce": 4,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 0
+  },
+  "0x25d56b0feb18086aa67009b2c0fc838677ea5934": {
+   "account_info": {
+    "nonce": 17,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 6557693665889873000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0xe173cc94d4755b72eb9196cf50dbcd2cba54e348": {
+   "account_info": {
+    "nonce": 14,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 444153062974949000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0xe3b67a37f0fd4f0506397f5529d740e232dbc39a": {
+   "account_info": {
+    "nonce": 10,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 9598966436079000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x310f21641272a9fde8e2950a4100e8e5c4cee172": {
+   "account_info": {
+    "nonce": 3,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 3011089971317000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0xe3865c176a6e27c8a8e9c561faf854b61438fd63": {
+   "account_info": {
+    "nonce": 5,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 685261037866429000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x8e31b6e2e07b9a9453966da228cde93c9bac95b3": {
+   "account_info": {
+    "nonce": 1,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 8579790382426000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0xa7fc2b79ae1a0f42ec493cc5c912b77664bed598": {
+   "account_info": {
+    "nonce": 3,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 58120339977871000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x854bdfde6241a5821d9e060df3ffc14a2eaccd9a": {
+   "account_info": {
+    "nonce": 1,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 655656278844116000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x1261576ec31e99f6804b22227046becfb0e4fc87": {
+   "account_info": {
+    "nonce": 6,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 9644704686507000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0xd5d9d33a8f64ad6f50400b6eaa814156a6ed2a7f": {
+   "account_info": {
+    "nonce": 2,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 40751733166450000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x033d815f4fb30b2459a396e004c5a7ecfe30ec39": {
+   "account_info": {
+    "nonce": 4,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 509835186856000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x382f50eb7ec3c1ede3cfd1062c360d72850676a0": {
+   "account_info": {
+    "nonce": 1,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 2390006687000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x7a35d9b96d86a20575e921d879a53ca3de119340": {
+   "account_info": {
+    "nonce": 2,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 1428369062107691000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0xc46141d0895b699593d46cc792b73b9d84f6ab4e": {
+   "account_info": {
+    "nonce": 48,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 3471014829728000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x7c8e82f27a0e8185aeea74ea5fbf7fbc7ff714e7": {
+   "account_info": {
+    "nonce": 1,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 38704239529626000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x0ec8744079f5ce53c64a41fec5862ed5a201d76a": {
+   "account_info": {
+    "nonce": 1,
+    "contract_info": {
+     "code_hash": "0x69b2679e54d5a53f5573248d144e89e77c29fccaafea27d2d1e084ddb13be643",
+     "maintainer": "0x9cd48be8bf088fb02910669295097784f1f129f5",
+     "published": false
+    }
+   },
+   "is_contract": true,
+   "native_balance_wei": 0,
+   "code_bytes": 10950,
+   "code_sha256": "0xcecb1ae929568b9a68a51bdf0e02e452d6b733737c3b320105ab679f8972ae66"
+  },
+  "0x39085405c340c08bfbadef6d181e640d590ffa3f": {
+   "account_info": {
+    "nonce": 2,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 0
+  },
+  "0xb95df7165b964edee0f491396e7ceb85e944eb44": {
+   "account_info": {
+    "nonce": 1,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 717283181813359000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x42a653f5f7554a6e40fb236a8efc57f6e30354be": {
+   "account_info": {
+    "nonce": 5,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 1176605408820000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x1682f2c7e75e139bf91eb56e750b8bc05058881a": {
+   "account_info": {
+    "nonce": 2,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 40362633305759000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0xd71d5bc039cdfdbce2cf7d9a3cfd62c2aec18b6d": {
+   "account_info": {
+    "nonce": 5,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 2752083881828000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x3469b60056890a19985de50565bb790a41a55b92": {
+   "account_info": {
+    "nonce": 2,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 100000000002000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x0f949690f59852f4eeb55e09b4571e45bcfb90d0": {
+   "account_info": {
+    "nonce": 1,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 161870800059000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x70028abf1db4dde624f84c718080da67e592dce0": {
+   "account_info": {
+    "nonce": 3,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 214697321850442000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0xb432de8871c179b57850ee04144a70b76b897c37": {
+   "account_info": {
+    "nonce": 4,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 0
+  },
+  "0xf2d0435afb3802c0b0323545eb075c0e9b2b9861": {
+   "account_info": {
+    "nonce": 14,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 1019040932437051000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0xc1d14a72a1adda0585b673ae74982fb684508521": {
+   "account_info": {
+    "nonce": 2,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 1040534720788787000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x34e913453a7de591d8a0b5d20ea58a45c13a26b6": {
+   "account_info": {
+    "nonce": 4,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 131377943179000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x5c89dd9bb0bd272b3c28c010c81e0fac3d65f0f4": {
+   "account_info": {
+    "nonce": 2,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 100000000001000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x9133689602d6e2f83d4a74973b9ad41e694c1db3": {
+   "account_info": {
+    "nonce": 2,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 172405482283000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0xac29b94084c7a2a7fbc449e86346a28254277358": {
+   "account_info": {
+    "nonce": 7,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 24854112827786714000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0xc558a15be8189e56a99967ca1fdcd2b471b202c6": {
+   "account_info": {
+    "nonce": 1,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 1480628004883000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x5b4c19ca94c3c153bbad4a8380e1c68ea2f69eb6": {
+   "account_info": {
+    "nonce": 3,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 1576811394080000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x096031031c39a311f37e0d70d948640551ba6b89": {
+   "account_info": {
+    "nonce": 15,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 1253087129578000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x492682e1673e8c57332b706fc8e5b6e28e741f44": {
+   "account_info": {
+    "nonce": 9,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 2727409913951000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0xf8763e0dd62f66070c67257125e0dca3a526dfb9": {
+   "account_info": {
+    "nonce": 3,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 83608355580341000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x4d36fcc762f773dcc53f072f0b4c3f693bb8a7ce": {
+   "account_info": {
+    "nonce": 5,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 5384311091567143000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x28ab5b53bbbaf4ee3b676c3e0e6221f2d57c9989": {
+   "account_info": {
+    "nonce": 12,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 112959446656540000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x40898c6b50d8340a2ad9a9bb00c9346702855ffb": {
+   "account_info": {
+    "nonce": 7,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 10955087930690520000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x2291b2338b7fc7c31e1624fdc4f9eeb0911eed2a": {
+   "account_info": {
+    "nonce": 2,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 381307680025000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x703de64c59dbee9afe646050aa3e1c45195069da": {
+   "account_info": {
+    "nonce": 1,
+    "contract_info": {
+     "code_hash": "0xfc1ea81db44e2de921b958dc92da921a18968ff3f3465bd475fb86dd1af03986",
+     "maintainer": "0xb1a0e8f86546f33605fba526ab539aa0e42725eb",
+     "published": true
+    }
+   },
+   "is_contract": true,
+   "native_balance_wei": 0,
+   "code_bytes": 2141,
+   "code_sha256": "0xf493237b9d26fcb9d47fc3685d30e1e17c8302b5d84071394e77642cfa14cfcb"
+  },
+  "0x6f931fde0d017d0d6a0c3822a1c690246a2db4e9": {
+   "account_info": {
+    "nonce": 1,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 105625692233000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x11ffa3b682445f065ec818fe6bbe5cb4f83d11bd": {
+   "account_info": {
+    "nonce": 1,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 141909978001000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0xd7e0f92702b02e1f1ee0d9d4e3c9f15bdf8b18ec": {
+   "account_info": {
+    "nonce": 9,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 1073389881554601000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x0fbebbcff5d4b0d8f6e440507350c7bb72bcd02e": {
+   "account_info": {
+    "nonce": 1,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 0
+  },
+  "0xa259b0151c71dddec9025be2b7dd392304bf611b": {
+   "account_info": {
+    "nonce": 5,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 9902078317632000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x737ad789be9c28d2f5d9a8b2bc05dd9f3f16aaa1": {
+   "account_info": {
+    "nonce": 67,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 1840837198482000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x3127cb4e8e8bdc31776239ad1a6c2c8b41b1170a": {
+   "account_info": {
+    "nonce": 12,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 0
+  },
+  "0xd7f8ddbafa5891c6521ddced805211c6200384f4": {
+   "account_info": {
+    "nonce": 3,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 21713573065750000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0xf149698e7376c4a9e63e7d03c8b01727c6f90c45": {
+   "account_info": {
+    "nonce": 1,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 102390005685000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0xeafd5f7ba5eff7366f7192a64e3a1d927ce9052d": {
+   "account_info": {
+    "nonce": 1,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 0
+  },
+  "0x9c1357449bf65815f550efa9b159cc3441ec3cb4": {
+   "account_info": {
+    "nonce": 1,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 145818494568533000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0x00f18ccb682d2b6b935a3bbd3f1d237d263e05c0": {
+   "account_info": {
+    "nonce": 7,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 9999239993293000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  },
+  "0xd6902b581831aea0f17d116839930911f753acd3": {
+   "account_info": {
+    "nonce": 2,
+    "contract_info": null
+   },
+   "is_contract": false,
+   "native_balance_wei": 37205898597987000000,
+   "code_bytes": 0,
+   "code_sha256": null
+  }
+ },
+ "errors": [],
+ "nonzero_balance_accounts": [
+  [
+   24854112827786714000000,
+   "0xac29b94084c7a2a7fbc449e86346a28254277358"
+  ],
+  [
+   10955087930690520000000,
+   "0x40898c6b50d8340a2ad9a9bb00c9346702855ffb"
+  ],
+  [
+   6557693665889873000000,
+   "0x25d56b0feb18086aa67009b2c0fc838677ea5934"
+  ],
+  [
+   5384311091567143000000,
+   "0x4d36fcc762f773dcc53f072f0b4c3f693bb8a7ce"
+  ],
+  [
+   1667434177200583000000,
+   "0x4e2ecd240d895ff2efe811c9cee4547f42293fd5"
+  ],
+  [
+   1428369062107691000000,
+   "0x7a35d9b96d86a20575e921d879a53ca3de119340"
+  ],
+  [
+   1073389881554601000000,
+   "0xd7e0f92702b02e1f1ee0d9d4e3c9f15bdf8b18ec"
+  ],
+  [
+   1040534720788787000000,
+   "0xc1d14a72a1adda0585b673ae74982fb684508521"
+  ],
+  [
+   1019040932437051000000,
+   "0xf2d0435afb3802c0b0323545eb075c0e9b2b9861"
+  ],
+  [
+   908289380564116000000,
+   "0xb58370aa383d33ae778e19e42628fbd0fbb4064f"
+  ],
+  [
+   717283181813359000000,
+   "0xb95df7165b964edee0f491396e7ceb85e944eb44"
+  ],
+  [
+   685261037866429000000,
+   "0xe3865c176a6e27c8a8e9c561faf854b61438fd63"
+  ],
+  [
+   655656278844116000000,
+   "0x854bdfde6241a5821d9e060df3ffc14a2eaccd9a"
+  ],
+  [
+   458656856191321000000,
+   "0xe76aa0a7ae6422fdf713ad24ed510a27f5b45eb0"
+  ],
+  [
+   444153062974949000000,
+   "0xe173cc94d4755b72eb9196cf50dbcd2cba54e348"
+  ],
+  [
+   214697321850442000000,
+   "0x70028abf1db4dde624f84c718080da67e592dce0"
+  ],
+  [
+   145818494568533000000,
+   "0x9c1357449bf65815f550efa9b159cc3441ec3cb4"
+  ],
+  [
+   112959446656540000000,
+   "0x28ab5b53bbbaf4ee3b676c3e0e6221f2d57c9989"
+  ],
+  [
+   97336429799625000000,
+   "0x75720f62a923942adaa36037b57e3a3d38ccb7fb"
+  ],
+  [
+   83608355580341000000,
+   "0xf8763e0dd62f66070c67257125e0dca3a526dfb9"
+  ],
+  [
+   58120339977871000000,
+   "0xa7fc2b79ae1a0f42ec493cc5c912b77664bed598"
+  ],
+  [
+   40751733166450000000,
+   "0xd5d9d33a8f64ad6f50400b6eaa814156a6ed2a7f"
+  ],
+  [
+   40362633305759000000,
+   "0x1682f2c7e75e139bf91eb56e750b8bc05058881a"
+  ],
+  [
+   38704239529626000000,
+   "0x7c8e82f27a0e8185aeea74ea5fbf7fbc7ff714e7"
+  ],
+  [
+   37205898597987000000,
+   "0xd6902b581831aea0f17d116839930911f753acd3"
+  ],
+  [
+   24208151520601000000,
+   "0xbe030b6a57ac91bdb244f173cfe22c15a15210f8"
+  ],
+  [
+   21713573065750000000,
+   "0xd7f8ddbafa5891c6521ddced805211c6200384f4"
+  ],
+  [
+   18098148170734000000,
+   "0xa4b114f1edda303bf96765f372ba24e919485221"
+  ],
+  [
+   9999239993293000000,
+   "0x00f18ccb682d2b6b935a3bbd3f1d237d263e05c0"
+  ],
+  [
+   9985929954194000000,
+   "0xfabab437b2aaf2a3c41332660f8ae09425a45b67"
+  ],
+  [
+   9902078317632000000,
+   "0xa259b0151c71dddec9025be2b7dd392304bf611b"
+  ],
+  [
+   9644704686507000000,
+   "0x1261576ec31e99f6804b22227046becfb0e4fc87"
+  ],
+  [
+   9598966436079000000,
+   "0xe3b67a37f0fd4f0506397f5529d740e232dbc39a"
+  ],
+  [
+   8579790382426000000,
+   "0x8e31b6e2e07b9a9453966da228cde93c9bac95b3"
+  ],
+  [
+   4630527094925000000,
+   "0x86df0af258f7a8dccfc3a86b8f77ab2132f7baef"
+  ],
+  [
+   3471014829728000000,
+   "0xc46141d0895b699593d46cc792b73b9d84f6ab4e"
+  ],
+  [
+   3011089971317000000,
+   "0x310f21641272a9fde8e2950a4100e8e5c4cee172"
+  ],
+  [
+   2752083881828000000,
+   "0xd71d5bc039cdfdbce2cf7d9a3cfd62c2aec18b6d"
+  ],
+  [
+   2727409913951000000,
+   "0x492682e1673e8c57332b706fc8e5b6e28e741f44"
+  ],
+  [
+   2162247558045000000,
+   "0x421d56274ca0b74a50c56c4e610529a11d4f4470"
+  ],
+  [
+   1840837198482000000,
+   "0x737ad789be9c28d2f5d9a8b2bc05dd9f3f16aaa1"
+  ],
+  [
+   1576811394080000000,
+   "0x5b4c19ca94c3c153bbad4a8380e1c68ea2f69eb6"
+  ],
+  [
+   1480628004883000000,
+   "0xc558a15be8189e56a99967ca1fdcd2b471b202c6"
+  ],
+  [
+   1373876251898000000,
+   "0x4c6dc9ce2fd9e1315daa403f3f62d4de43154251"
+  ],
+  [
+   1253087129578000000,
+   "0x096031031c39a311f37e0d70d948640551ba6b89"
+  ],
+  [
+   1176605408820000000,
+   "0x42a653f5f7554a6e40fb236a8efc57f6e30354be"
+  ],
+  [
+   650369277566000000,
+   "0x97af5b510b3f60328446debc55f629595172f717"
+  ],
+  [
+   628431687279000000,
+   "0x7d775b8d8bdd9e8e3ce0b01f4ce614c071c98ddc"
+  ],
+  [
+   509835186856000000,
+   "0x033d815f4fb30b2459a396e004c5a7ecfe30ec39"
+  ],
+  [
+   381307680025000000,
+   "0x2291b2338b7fc7c31e1624fdc4f9eeb0911eed2a"
+  ]
+ ],
+ "largest_contracts": [
+  [
+   15754,
+   "0x129077dffdf2920dbe40a95c245ad45c45e7602d"
+  ],
+  [
+   10950,
+   "0x0ec8744079f5ce53c64a41fec5862ed5a201d76a"
+  ],
+  [
+   9649,
+   "0xfbb454c7abcd986e8b06d7633e7ac25cb3d45648"
+  ],
+  [
+   5338,
+   "0x85d7ce9f315b820b0ea8594dbdede4a97cba808f"
+  ],
+  [
+   3670,
+   "0xf1bbc34c6b67db657e7a9cb2ab632188a65563ec"
+  ],
+  [
+   2141,
+   "0x703de64c59dbee9afe646050aa3e1c45195069da"
+  ]
+ ],
+ "account_count": 80,
+ "contract_count": 6,
+ "truncated": true,
+ "total_native_balance_wei": 58872468040955207000000
+}

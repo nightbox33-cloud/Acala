@@ -1,26 +1,26 @@
 {
  "chain": "karura",
- "generated_at_utc": "2026-11-07T23:42:13.642940+00:00",
+ "generated_at_utc": "2026-11-08T00:10:47.255657+00:00",
  "rpc": "https://karura-rpc.aca-api.network",
  "evm_rpc": "https://eth-rpc-karura.aca-api.network",
- "ci_run_id": "42426307245",
+ "ci_run_id": "42428430187",
  "errors": [],
  "anchor": {
-  "finalized_hash": "0x9024c3bf2bee13f01cada38c9620346e64b92496f601f02cb042ffa0af89732a",
+  "finalized_hash": "0xeddbcdd1163f786321082ebd0d3f255d07d9fac35b0dd9d9401c52fd4ff9ee06",
   "finalized_header": {
    "digest": {
     "logs": [
-     "0x066175726120444fe90800000000",
-     "0x0452505352907f1fbacd4e47263a83effbac9637e5ca221b0dd8b81ff1b58805ae5f83d5a1de6a769508",
-     "0x05617572610101dec3ff88fe9888e06426aea31f4b6da9a6421acd4b1578b66bfa0852014de34ff061591103f4056411f84f889813b5e4ea04e2c33e35a48d01d49980dc59ab8d"
+     "0x066175726120d24fe90800000000",
+     "0x0452505352903cd0f7630623717a1bf6cfa03c82fb0b4d01e760324db12dfc21468b50902da8ba7a9508",
+     "0x056175726101011e43f8dfb740ea8b29e21c62481b7d0d6adaef874c5dc208c61d9b1d5180aa76936686361e048f9eb6a7cd47d19b930d83f0b844d89a3d8f344d87ee21e39a89"
     ]
    },
-   "extrinsicsRoot": "0xe8a9d671b706bc8d4d709c38a43e7f730c8dd0cef86708e1c69f4929e786c486",
-   "number": "0xc37ee6",
-   "parentHash": "0x00a1a930b59e960f98eb80165cbff2822e73994051e9b88e22da1010e95af925",
-   "stateRoot": "0xf5a5514f43c3ac7aad00a2f45c29aea8365251341fa3408dcf1280003866e857"
+   "extrinsicsRoot": "0x18fead22e6a389be8d4870b6d3f8bc01b798e7876eea416ab65213c162003a90",
+   "number": "0xc37f70",
+   "parentHash": "0x44dae285b9ac1d125f33846ae8b47c2329ad0e085f89dc18af8477d7126a47c3",
+   "stateRoot": "0xd98950db354d87c7be248741b442fde1b653246ae15acc67572a8f0fb98e3e1d"
   },
-  "finalized_block_number": 12812006,
+  "finalized_block_number": 12812144,
   "runtime_version": {
    "specName": "karura",
    "implName": "karura",
@@ -36,7 +36,7 @@
  },
  "evm": {
   "chainId": "0x2ae",
-  "blockNumber": "0xc37ee9",
+  "blockNumber": "0xc37f74",
   "codes": {
    "0x0000000000000000000100000000000000000000": {
     "symbol": "ACA",
@@ -4549,8 +4549,8 @@
       "Token": "KSM"
      },
      {
-      "value": 3259000000000000000,
-      "timestamp": 1794094212000
+      "value": 3264500000000000000,
+      "timestamp": 1794095430000
      }
     ],
     [
@@ -9610,11 +9610,11 @@
    "count_returned": 0,
    "rows": []
   },
-  "System.Number": 12812006,
+  "System.Number": 12812144,
   "Balances.TotalIssuance": 130189450492777337807,
   "CdpTreasury.DebitPool": 2836910678262449472,
   "CdpTreasury.DebitOffsetBuffer": 0,
-  "CdpEngine.LastAccumulationSecs": 1794094884,
+  "CdpEngine.LastAccumulationSecs": 1794096588,
   "CdpEngine.LiquidationContracts": [],
   "Homa.RelayChainCurrentEra": 10246,
   "Homa.TotalStakingBonded": 94808286531454355,

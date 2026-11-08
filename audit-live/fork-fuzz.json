@@ -1,0 +1,12 @@
+{
+ "anchor": "0x5cd135304191a233aca71137be2b9db9d24fdacefc20d2e9b2fa16e7e0b09ccf",
+ "note": "capital X via dev_setStorage (attacker capital, no admin); all calls ensure_signed; fake-signed extrinsics mined with dev_newBlock",
+ "scenarios": [],
+ "errors": [
+  {
+   "where": "setup",
+   "error": "[\n  {\n    \"code\": \"too_big\",\n    \"maximum\": 9007199254740991,\n    \"type\": \"number\",\n    \"inclusive\": true,\n    \"exact\": false,\n    \"message\": \"Number is too big, please make it a string if you are using a hex string\",\n    \"path\": [\n      \"block\"\n    ]\n  }\n]",
+   "stack": "ZodError: [\n  {\n    \"code\": \"too_big\",\n    \"maximum\": 9007199254740991,\n    \"type\": \"number\",\n    \"inclusive\": true,\n    \"exact\": false,\n    \"message\": \"Number is too big, please make it a string if you are using a hex string\",\n    \"path\": [\n      \"block\"\n    ]\n  }\n]\n    at get error (file:///home/runner/work/Acala/Acala/node_modules/zod/v3/types.js:39:31)\n    at ZodObject.parse (file:///home/runner/work/Acala/Acala/node_modules/zod/v3/types.js:114:22)\n    at fetchConfig (file:///home/runner/work/Acala/Acala/node_modules/@acala-network/chopsticks/dist/esm/schema/index.js:167:34)\n    at main (file:///home/runner/work/Acala/Acala/scripts/audit/fork_fuzz.mjs:46:39)\n    at file:///home/runner/work/Acala/Acala/scripts/audit/fork_fuzz.mjs:173:1\n    at ModuleJob.run (node:internal/modules/esm/module_job:343:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:681:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)"
+  }
+ ]
+}
