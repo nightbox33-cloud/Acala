@@ -49,6 +49,12 @@ jobs:
           export ANCHOR_HASH
           export OUT=audit-live/fork-fuzz.json
           timeout 600 node scripts/audit/fork_fuzz.mjs 2>&1 | tee audit-live/fork-fuzz.log
+      - name: Dump every deployed EVM bytecode from live EVM.Codes storage
+        continue-on-error: true
+        timeout-minutes: 10
+        run: |
+          python3 scripts/audit/dump_evm_codes.py acala audit-live/evm-codes-acala.json audit-live/evm-codes-acala
+          python3 scripts/audit/dump_evm_codes.py karura audit-live/evm-codes-karura.json audit-live/evm-codes-karura
       - name: Enumerate deployed EVM accounts, balances and bytecode
         continue-on-error: true
         timeout-minutes: 8
