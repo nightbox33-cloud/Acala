@@ -468,3 +468,22 @@ sólo ocurre con `$removePrefix` explícito. **Las demás claves se conservan.**
 El artefacto, si lo hay, está en la lectura/acumulación de balances, no en un
 borrado de storage de terceros. De ahí la captura de `before`/`after`
 absolutos y de las reservas del pool en el run 42434211979.
+
+## 12. `DexOracle` vacío: fallback a precio spot, pero proveedor HUÉRFANO
+
+`audit-live/acala-state.json` tiene `DexOracle.AveragePrices` con **0 filas**.
+`modules/dex-oracle/src/lib.rs:345` (`PriorityAverageDEXPriceProvider`) hace
+`get_average_price(...).or_else(|| get_current_price(...))`, es decir cae al
+precio **spot del DEX** (reservas `pool_1/pool_0`), manipulable con un swap.
+Parecía un vector de oráculo real y desplegado (pallet 92 en
+`runtime/acala/src/lib.rs:1957`).
+
+**Hecho que lo mata**: `grep -rn` de `PriorityAverageDEXPriceProvider`,
+`CurrentDEXPriceProvider`, `AverageDEXPriceProvider` y `DEXPriceProvider` en
+todos los `.rs` del repo devuelve **sólo** `modules/dex-oracle/src/tests.rs`
+y la definición del trait en `modules/support/src/lib.rs:103`. Ningún
+`type ...PriceProvider` del runtime, ningún pallet monetario (honzon, cdp-engine,
+transaction-payment, dex, aggregated-dex, earning) lo consume. Es una
+**función huérfana**, categoría que el usuario prohíbe explícitamente
+reportar como crítico. El oráculo realmente usado para valoración es
+`AcalaDataProvider`/oracle de `primitives`, no éste. **Vía muerta.**
