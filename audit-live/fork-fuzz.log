@@ -96,24 +96,311 @@ The following conflicting packages were found:
 	esm 16.5.6	node_modules/@polkadot/types-known/
 	esm 17.0.2	node_modules/@polkadot/api/node_modules/@polkadot/types-known/
 fork server [::]:8000
-[00:20:35.418] [32mINFO[39m: [36mAcala RPC listening on http://[::]:8000 and ws://[::]:8000[39m
+[00:41:50.293] [32mINFO[39m: [36mAcala RPC listening on http://[::]:8000 and ws://[::]:8000[39m
     [35mapp[39m: "chopsticks"
 fork runtime 2370
-dev_setStorage full failed, falling back: TypeError: Cannot read properties of undefined (reading 'send')
-native funding failed TypeError: Cannot read properties of undefined (reading 'send')
-stableAsset.mint(DOT,LDOT) => [{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"}] pnl(rank) 0 suspicious false
-stableAsset.redeemSingle(tDOT -> LDOT) => [{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"}] pnl(rank) 0 suspicious false
-stableAsset.redeemProportion(tDOT) => [{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"}] pnl(rank) 0 suspicious false
-stableAsset.swap DOT->LDOT then LDOT->DOT => [{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"},{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"}] pnl(rank) 0 suspicious false
-dex.addLiquidity + removeLiquidity (ACA/aUSD) => [{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"},{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"}] pnl(rank) 0 suspicious false
-dex.addLiquidity + removeLiquidity (aUSD/FA3 tiny side) => [{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"},{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"}] pnl(rank) 0 suspicious false
-aggregatedDex DOT->aUSD (Taiga+Dex path) => [{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"}] pnl(rank) 0 suspicious false
-transactionPayment.withFeeCurrency (aUSD) => [{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"}] pnl(rank) 0 suspicious false
-2026-11-08 00:20:39             VEC: Unable to decode on index 0 Cannot map Enum JSON, unable to find '0' in dex, taiga
-homa.requestRedeem(LDOT) + fastMatchRedeems => [{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"},{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"}] pnl(rank) 0 suspicious false
-liquidCrowdloan.redeem(LCDOT->DOT) => [{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"}] pnl(rank) 0 suspicious false
-incentives.claimRewards(Dex ACA/aUSD pool) => [{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"}] pnl(rank) 0 suspicious false
-emergencyShutdown.refundCollaterals(aUSD) => [{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"}] pnl(rank) 0 suspicious false
-evmAccounts.claimDefaultAccount => [{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"}] pnl(rank) 0 suspicious false
-earning.bond(ACA) => [{"ok":false,"error":"TypeError: Cannot read properties of undefined (reading 'send')"}] pnl(rank) 0 suspicious false
+funded attacker (ACA + all tokens) 22qXAsEV9BBAytGkFmkjzwDs1MGvy6xNPq12fPPJYi5awGKi
+[00:41:53.226] [32mINFO[39m (block-builder): [36mAcala building #12,384,344[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384344
+    [35mextrinsics[39m: [
+      "0x7902840056e31d60fcdfb0be4770d642…00000000000000000000000000000000"
+    ]
+    [35mumpCount[39m: 0
+stableAsset.mint(DOT,LDOT) => [{"ok":true,"error":null,"nonce":0}] pnl(rank) -2562728488791834910 suspicious false
+[00:42:09.683] [32mINFO[39m (block-builder): [36mAcala new head #12,384,344[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384344
+    [35mhash[39m: "0xeb14a60489511d6d203df6f061fc0648d3e781c0771d6913fbecc9b29d45ae52"
+    [35mextrinsics[39m: [
+      "0x7902840056e31d60fcdfb0be4770d642…00000000000000000000000000000000"
+    ]
+    [35mpendingExtrinsics[39m: []
+    [35mump[39m: {}
+[00:42:09.756] [32mINFO[39m (block-builder): [36mAcala building #12,384,345[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384345
+    [35mextrinsics[39m: [
+      "0x5502840056e31d60fcdfb0be4770d642…00000000000000000000000002000000"
+    ]
+    [35mumpCount[39m: 0
+stableAsset.redeemSingle(tDOT -> LDOT) => [{"ok":true,"error":null,"nonce":1}] pnl(rank) 257151141326252997 suspicious false
+[00:42:17.248] [32mINFO[39m (block-builder): [36mAcala new head #12,384,345[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384345
+    [35mhash[39m: "0x45412275e6fa861e13d8bdd22ae3e40116140d2d21f89755ff6a1b4a5613bc0e"
+    [35mextrinsics[39m: [
+      "0x5502840056e31d60fcdfb0be4770d642…00000000000000000000000002000000"
+    ]
+    [35mpendingExtrinsics[39m: []
+    [35mump[39m: {}
+[00:42:17.322] [32mINFO[39m (block-builder): [36mAcala building #12,384,346[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384346
+    [35mextrinsics[39m: [
+      "0x7902840056e31d60fcdfb0be4770d642…00000000000000000000000000000000"
+    ]
+    [35mumpCount[39m: 0
+stableAsset.redeemProportion(tDOT) => [{"ok":true,"error":null,"nonce":2}] pnl(rank) 175333212960661432 suspicious false
+[00:42:19.242] [32mINFO[39m (block-builder): [36mAcala new head #12,384,346[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384346
+    [35mhash[39m: "0xddf34876460e9ecd7248278ca4097e89f24b6abff24c8a625be523b58799d66f"
+    [35mextrinsics[39m: [
+      "0x7902840056e31d60fcdfb0be4770d642…00000000000000000000000000000000"
+    ]
+    [35mpendingExtrinsics[39m: []
+    [35mump[39m: {}
+[00:42:19.308] [32mINFO[39m (block-builder): [36mAcala building #12,384,347[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384347
+    [35mextrinsics[39m: [
+      "0x6502840056e31d60fcdfb0be4770d642…00000000000000000000000002000000"
+    ]
+    [35mumpCount[39m: 0
+[00:42:21.209] [32mINFO[39m (block-builder): [36mAcala new head #12,384,347[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384347
+    [35mhash[39m: "0xa1e4225cce1c1d2b23cf5516360d63dbeaa5833f61f76ade85529f8d7d45e242"
+    [35mextrinsics[39m: [
+      "0x6502840056e31d60fcdfb0be4770d642…00000000000000000000000002000000"
+    ]
+    [35mpendingExtrinsics[39m: []
+    [35mump[39m: {}
+[00:42:21.237] [32mINFO[39m (block-builder): [36mAcala building #12,384,348[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384348
+    [35mextrinsics[39m: [
+      "0x6502840056e31d60fcdfb0be4770d642…00000000000000000000000002000000"
+    ]
+    [35mumpCount[39m: 0
+stableAsset.swap DOT->LDOT then LDOT->DOT => [{"ok":true,"error":null,"nonce":3},{"ok":true,"error":null,"nonce":4}] pnl(rank) 3522246106891710 suspicious false
+[00:42:23.012] [32mINFO[39m (block-builder): [36mAcala new head #12,384,348[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384348
+    [35mhash[39m: "0xf45dfa3c8df388fa92bac3686bd4f4aeb38b58fe63940924c46aa4856aacb558"
+    [35mextrinsics[39m: [
+      "0x6502840056e31d60fcdfb0be4770d642…00000000000000000000000002000000"
+    ]
+    [35mpendingExtrinsics[39m: []
+    [35mump[39m: {}
+[00:42:23.087] [32mINFO[39m (block-builder): [36mAcala building #12,384,349[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384349
+    [35mextrinsics[39m: [
+      "0xed01840056e31d60fcdfb0be4770d642…0001070010a5d4e80700e40b54020000"
+    ]
+    [35mumpCount[39m: 0
+[00:42:25.783] [32mINFO[39m (block-builder): [36mAcala new head #12,384,349[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384349
+    [35mhash[39m: "0x2e7401f4d59275bdc559a6198e79ef12962f85265f9704dc47a7059044c330e7"
+    [35mextrinsics[39m: [
+      "0xed01840056e31d60fcdfb0be4770d642…0001070010a5d4e80700e40b54020000"
+    ]
+    [35mpendingExtrinsics[39m: []
+    [35mump[39m: {}
+[00:42:25.810] [32mINFO[39m (block-builder): [36mAcala building #12,384,350[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384350
+    [35mextrinsics[39m: [
+      "0xd901840056e31d60fcdfb0be4770d642…005b05000000010700e40b5402000000"
+    ]
+    [35mumpCount[39m: 0
+dex.addLiquidity + removeLiquidity (ACA/aUSD) => [{"ok":false,"error":"tokens::ExistentialDeposit","nonce":5},{"ok":false,"error":"tokens::BalanceTooLow","nonce":6}] pnl(rank) -4450018259 suspicious false
+[00:42:27.707] [32mINFO[39m (block-builder): [36mAcala new head #12,384,350[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384350
+    [35mhash[39m: "0x21cb56b3bf9a8c22d4656990da92367cbd02ca23ffc26ac5998e95ec508fe146"
+    [35mextrinsics[39m: [
+      "0xd901840056e31d60fcdfb0be4770d642…005b05000000010700e40b5402000000"
+    ]
+    [35mpendingExtrinsics[39m: []
+    [35mump[39m: {}
+[00:42:27.771] [32mINFO[39m (block-builder): [36mAcala building #12,384,351[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384351
+    [35mextrinsics[39m: [
+      "0xe101840056e31d60fcdfb0be4770d642…0200010503000700e40b5402a10f0000"
+    ]
+    [35mumpCount[39m: 0
+[00:42:29.922] [32mINFO[39m (block-builder): [36mAcala new head #12,384,351[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384351
+    [35mhash[39m: "0x4238271021ffc3ad891efa9f36601f4a0c32cb9a7ab54f04e879753b14be7ada"
+    [35mextrinsics[39m: [
+      "0xe101840056e31d60fcdfb0be4770d642…0200010503000700e40b5402a10f0000"
+    ]
+    [35mpendingExtrinsics[39m: []
+    [35mump[39m: {}
+[00:42:29.949] [32mINFO[39m (block-builder): [36mAcala building #12,384,352[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384352
+    [35mextrinsics[39m: [
+      "0xcd01840056e31d60fcdfb0be4770d642…002000005b050001050300a10f000000"
+    ]
+    [35mumpCount[39m: 0
+[00:42:31.842] [32mINFO[39m (block-builder): [36mAcala new head #12,384,352[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384352
+    [35mhash[39m: "0xc6840f82b82104e166aeb02f09beee9c62992b23e767958ad15a07ab5aa2b2eb"
+    [35mextrinsics[39m: [
+      "0xcd01840056e31d60fcdfb0be4770d642…002000005b050001050300a10f000000"
+    ]
+    [35mpendingExtrinsics[39m: []
+    [35mump[39m: {}
+dex.addLiquidity + removeLiquidity (aUSD/FA3 tiny side) => [{"ok":false,"error":"dex::InvalidLiquidityIncrement","nonce":7},{"ok":false,"error":"tokens::BalanceTooLow","nonce":8}] pnl(rank) -4390018259 suspicious false
+[00:42:31.936] [32mINFO[39m (block-builder): [36mAcala building #12,384,353[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384353
+    [35mextrinsics[39m: [
+      "0x1102840056e31d60fcdfb0be4770d642…000000000800030001070010a5d4e800"
+    ]
+    [35mumpCount[39m: 0
+aggregatedDex DOT->aUSD (Taiga+Dex path) => [{"ok":true,"error":null,"nonce":9}] pnl(rank) 355452136917667233 suspicious false
+[00:42:34.233] [32mINFO[39m (block-builder): [36mAcala new head #12,384,353[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384353
+    [35mhash[39m: "0xc8337c5d5f8e496ae58564da5e93326821f2753855622c4f296b23315ca231ab"
+    [35mextrinsics[39m: [
+      "0x1102840056e31d60fcdfb0be4770d642…000000000800030001070010a5d4e800"
+    ]
+    [35mpendingExtrinsics[39m: []
+    [35mump[39m: {}
+[00:42:34.298] [32mINFO[39m (block-builder): [36mAcala building #12,384,354[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384354
+    [35mextrinsics[39m: [
+      "0xb901840056e31d60fcdfb0be4770d642…cdcdcdcdcd002800000e040001000000"
+    ]
+    [35mumpCount[39m: 0
+transactionPayment.withFeeCurrency (aUSD) => [{"ok":true,"error":null,"nonce":10}] pnl(rank) -52063333781 suspicious false
+2026-11-08 00:42:36             VEC: Unable to decode on index 0 Cannot map Enum JSON, unable to find '0' in dex, taiga
+[00:42:36.746] [32mINFO[39m (block-builder): [36mAcala new head #12,384,354[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384354
+    [35mhash[39m: "0xd4e4e34ff1d02f6846f6681d907975b40ca90848cd39bc02b514d5b642c148b0"
+    [35mextrinsics[39m: [
+      "0xb901840056e31d60fcdfb0be4770d642…cdcdcdcdcd002800000e040001000000"
+    ]
+    [35mpendingExtrinsics[39m: []
+    [35mump[39m: {}
+[00:42:36.810] [32mINFO[39m (block-builder): [36mAcala building #12,384,355[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384355
+    [35mextrinsics[39m: [
+      "0xc101840056e31d60fcdfb0be4770d642…cdcdcd002c00007401070010a5d4e801"
+    ]
+    [35mumpCount[39m: 0
+[00:42:38.977] [32mINFO[39m (block-builder): [36mAcala new head #12,384,355[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384355
+    [35mhash[39m: "0x018e377df8e9e03a38b97b29c0dd013379a253be93bc35a480c3ef443b843adf"
+    [35mextrinsics[39m: [
+      "0xc101840056e31d60fcdfb0be4770d642…cdcdcd002c00007401070010a5d4e801"
+    ]
+    [35mpendingExtrinsics[39m: []
+    [35mump[39m: {}
+[00:42:39.004] [32mINFO[39m (block-builder): [36mAcala building #12,384,356[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384356
+    [35mextrinsics[39m: [
+      "0x2902840056e31d60fcdfb0be4770d642…7186b4c527e6d2530e58940fa63a3045"
+    ]
+    [35mumpCount[39m: 0
+homa.requestRedeem(LDOT) + fastMatchRedeems => [{"ok":true,"error":null,"nonce":11},{"ok":true,"error":null,"nonce":12}] pnl(rank) -49500004540017427 suspicious false
+[00:42:41.025] [32mINFO[39m (block-builder): [36mAcala new head #12,384,356[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384356
+    [35mhash[39m: "0xc3a0f9baea215da77949c83cf670d68893b309d7a0ef1f8b621a818adc2b2860"
+    [35mextrinsics[39m: [
+      "0x2902840056e31d60fcdfb0be4770d642…7186b4c527e6d2530e58940fa63a3045"
+    ]
+    [35mpendingExtrinsics[39m: []
+    [35mump[39m: {}
+[00:42:41.088] [32mINFO[39m (block-builder): [36mAcala building #12,384,357[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384357
+    [35mextrinsics[39m: [
+      "0xbd01840056e31d60fcdfb0be4770d642…cdcdcdcd003400007b00070010a5d4e8"
+    ]
+    [35mumpCount[39m: 0
+liquidCrowdloan.redeem(LCDOT->DOT) => [{"ok":true,"error":null,"nonce":13}] pnl(rank) -2130009125 suspicious false
+[00:42:43.506] [32mINFO[39m (block-builder): [36mAcala new head #12,384,357[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384357
+    [35mhash[39m: "0x46f8d5ec282a3b764dfb1f20ac1a527338592f7188ac266804022c34d131d08a"
+    [35mextrinsics[39m: [
+      "0xbd01840056e31d60fcdfb0be4770d642…cdcdcdcd003400007b00070010a5d4e8"
+    ]
+    [35mpendingExtrinsics[39m: []
+    [35mump[39m: {}
+[00:42:43.569] [32mINFO[39m (block-builder): [36mAcala building #12,384,358[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384358
+    [35mextrinsics[39m: [
+      "0xbd01840056e31d60fcdfb0be4770d642…cdcdcdcd003800007802010100000001"
+    ]
+    [35mumpCount[39m: 0
+incentives.claimRewards(Dex ACA/aUSD pool) => [{"ok":true,"error":null,"nonce":14}] pnl(rank) -2130008217 suspicious false
+[00:42:45.723] [32mINFO[39m (block-builder): [36mAcala new head #12,384,358[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384358
+    [35mhash[39m: "0xc69d21086268b18b170154a6a34e8d8fd53e9637b646598008e9c960fd732eea"
+    [35mextrinsics[39m: [
+      "0xbd01840056e31d60fcdfb0be4770d642…cdcdcdcd003800007802010100000001"
+    ]
+    [35mpendingExtrinsics[39m: []
+    [35mump[39m: {}
+[00:42:45.781] [32mINFO[39m (block-builder): [36mAcala building #12,384,359[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384359
+    [35mextrinsics[39m: [
+      "0xbd01840056e31d60fcdfb0be4770d642…cdcdcdcd003c00006902070010a5d4e8"
+    ]
+    [35mumpCount[39m: 0
+emergencyShutdown.refundCollaterals(aUSD) => [{"ok":true,"error":null,"nonce":15}] pnl(rank) -129353392221145 suspicious false
+[00:42:52.140] [32mINFO[39m (block-builder): [36mAcala new head #12,384,359[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384359
+    [35mhash[39m: "0x6aadcbe34f7016435150d03484d4df850d42d87c8effdc15c9c13231a43c8e59"
+    [35mextrinsics[39m: [
+      "0xbd01840056e31d60fcdfb0be4770d642…cdcdcdcd003c00006902070010a5d4e8"
+    ]
+    [35mpendingExtrinsics[39m: []
+    [35mump[39m: {}
+[00:42:52.202] [32mINFO[39m (block-builder): [36mAcala building #12,384,360[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384360
+    [35mextrinsics[39m: [
+      "0xa501840056e31d60fcdfb0be4770d642…cdcdcdcdcdcdcdcdcdcd004000008401"
+    ]
+    [35mumpCount[39m: 0
+evmAccounts.claimDefaultAccount => [{"ok":true,"error":null,"nonce":16}] pnl(rank) -2070002858 suspicious false
+[00:42:54.231] [32mINFO[39m (block-builder): [36mAcala new head #12,384,360[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384360
+    [35mhash[39m: "0x5f3d202a7a94fa129d88a3c9d4dca21aa149d4b5eae9500dd31bd17db6af8d97"
+    [35mextrinsics[39m: [
+      "0xa501840056e31d60fcdfb0be4770d642…cdcdcdcdcdcdcdcdcdcd004000008401"
+    ]
+    [35mpendingExtrinsics[39m: []
+    [35mump[39m: {}
+[00:42:54.291] [32mINFO[39m (block-builder): [36mAcala building #12,384,361[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384361
+    [35mextrinsics[39m: [
+      "0xbd01840056e31d60fcdfb0be4770d642…cdcdcdcd004400005e00070010a5d4e8"
+    ]
+    [35mumpCount[39m: 0
+earning.bond(ACA) => [{"ok":false,"error":"earning::BelowMinBondThreshold","nonce":17}] pnl(rank) -2130006147 suspicious false
 wrote audit-live/fork-fuzz.json
+[00:42:56.318] [32mINFO[39m (block-builder): [36mAcala new head #12,384,361[39m
+    [35mapp[39m: "chopsticks"
+    [35mnumber[39m: 12384361
+    [35mhash[39m: "0x02bd762e303e54828b6b00b1caa18ab970d50dbf7da1e3e7fa8aa1dfe42db7bc"
+    [35mextrinsics[39m: [
+      "0xbd01840056e31d60fcdfb0be4770d642…cdcdcdcd004400005e00070010a5d4e8"
+    ]
+    [35mpendingExtrinsics[39m: []
+    [35mump[39m: {}

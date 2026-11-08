@@ -1,8 +1,8 @@
 {
  "chain": "acala",
- "generated_at_utc": "2026-11-08T00:19:47.569360+00:00",
- "finalized_hash": "0x0eaf292f9dfff25f86c62cda3488daf3a5a3460eb39eb1b3dfaae6f6ef33422d",
- "block_number": 12384247,
+ "generated_at_utc": "2026-11-08T00:41:01.412854+00:00",
+ "finalized_hash": "0x1fb9c66fa31519c76b47d485dd25b0096405d0e3eb51468cc66f05c6977049b5",
+ "block_number": 12384354,
  "items": {
   "TransactionPause.PausedTransactions": [
    [

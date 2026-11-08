@@ -1,5 +1,5 @@
 {
- "anchor": "0x315d626792c67a06f1f45049467f2560e8105150289f7a43d8e900b2b65d8fd5",
+ "anchor": "0x6b44836adfb82afa3b047ac8fd292509430d8c3564ee66b589a2a93c7c7ddd2a",
  "note": "capital X via dev_setStorage (attacker capital, no admin); all calls ensure_signed; fake-signed extrinsics mined with dev_newBlock",
  "scenarios": [
   {
@@ -10,96 +10,101 @@
    "name": "stableAsset.mint(DOT,LDOT)",
    "calls": [
     {
-     "ok": false,
-     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+     "ok": true,
+     "error": null,
+     "nonce": 0
     }
    ],
    "deltas": {
-    "ACA": "0",
+    "ACA": "-2600014010",
     "AUSD": "0",
-    "DOT": "0",
-    "LDOT": "0",
+    "DOT": "-10000000000000",
+    "LDOT": "-51792564269684",
     "LCDOT": "0",
-    "tDOT": "0",
+    "tDOT": "20034451575371",
     "FA3": "0",
     "FA12": "0",
     "FA20": "0"
    },
-   "pnl_aca_units_ranking_only": "0",
-   "all_non_negative": true,
+   "pnl_aca_units_ranking_only": "-2562728488791834910",
+   "all_non_negative": false,
    "suspicious": false
   },
   {
    "name": "stableAsset.redeemSingle(tDOT -> LDOT)",
    "calls": [
     {
-     "ok": false,
-     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+     "ok": true,
+     "error": null,
+     "nonce": 1
     }
    ],
    "deltas": {
-    "ACA": "0",
+    "ACA": "-2510010503",
     "AUSD": "0",
     "DOT": "0",
-    "LDOT": "0",
+    "LDOT": "5196992804773",
     "LCDOT": "0",
-    "tDOT": "0",
+    "tDOT": "-1000000000000",
     "FA3": "0",
     "FA12": "0",
     "FA20": "0"
    },
-   "pnl_aca_units_ranking_only": "0",
-   "all_non_negative": true,
+   "pnl_aca_units_ranking_only": "257151141326252997",
+   "all_non_negative": false,
    "suspicious": false
   },
   {
    "name": "stableAsset.redeemProportion(tDOT)",
    "calls": [
     {
-     "ok": false,
-     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+     "ok": true,
+     "error": null,
+     "nonce": 2
     }
    ],
    "deltas": {
-    "ACA": "0",
+    "ACA": "-2600012768",
     "AUSD": "0",
-    "DOT": "0",
-    "LDOT": "0",
+    "DOT": "314132352982",
+    "LDOT": "3543470754048",
     "LCDOT": "0",
-    "tDOT": "0",
+    "tDOT": "-1000000000000",
     "FA3": "0",
     "FA12": "0",
     "FA20": "0"
    },
-   "pnl_aca_units_ranking_only": "0",
-   "all_non_negative": true,
+   "pnl_aca_units_ranking_only": "175333212960661432",
+   "all_non_negative": false,
    "suspicious": false
   },
   {
    "name": "stableAsset.swap DOT->LDOT then LDOT->DOT",
    "calls": [
     {
-     "ok": false,
-     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+     "ok": true,
+     "error": null,
+     "nonce": 3
     },
     {
-     "ok": false,
-     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+     "ok": true,
+     "error": null,
+     "nonce": 4
     }
    ],
    "deltas": {
-    "ACA": "0",
+    "ACA": "-5100020190",
     "AUSD": "0",
-    "DOT": "0",
-    "LDOT": "0",
+    "DOT": "-18485283651",
+    "LDOT": "71193934046",
     "LCDOT": "0",
     "tDOT": "0",
     "FA3": "0",
     "FA12": "0",
     "FA20": "0"
    },
-   "pnl_aca_units_ranking_only": "0",
-   "all_non_negative": true,
+   "pnl_aca_units_ranking_only": "3522246106891710",
+   "all_non_negative": false,
    "suspicious": false
   },
   {
@@ -107,15 +112,17 @@
    "calls": [
     {
      "ok": false,
-     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+     "error": "tokens::ExistentialDeposit",
+     "nonce": 5
     },
     {
      "ok": false,
-     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+     "error": "tokens::BalanceTooLow",
+     "nonce": 6
     }
    ],
    "deltas": {
-    "ACA": "0",
+    "ACA": "-4450018259",
     "AUSD": "0",
     "DOT": "0",
     "LDOT": "0",
@@ -125,8 +132,8 @@
     "FA12": "0",
     "FA20": "0"
    },
-   "pnl_aca_units_ranking_only": "0",
-   "all_non_negative": true,
+   "pnl_aca_units_ranking_only": "-4450018259",
+   "all_non_negative": false,
    "suspicious": false
   },
   {
@@ -134,15 +141,17 @@
    "calls": [
     {
      "ok": false,
-     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+     "error": "dex::InvalidLiquidityIncrement",
+     "nonce": 7
     },
     {
      "ok": false,
-     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+     "error": "tokens::BalanceTooLow",
+     "nonce": 8
     }
    ],
    "deltas": {
-    "ACA": "0",
+    "ACA": "-4390018259",
     "AUSD": "0",
     "DOT": "0",
     "LDOT": "0",
@@ -152,22 +161,23 @@
     "FA12": "0",
     "FA20": "0"
    },
-   "pnl_aca_units_ranking_only": "0",
-   "all_non_negative": true,
+   "pnl_aca_units_ranking_only": "-4390018259",
+   "all_non_negative": false,
    "suspicious": false
   },
   {
    "name": "aggregatedDex DOT->aUSD (Taiga+Dex path)",
    "calls": [
     {
-     "ok": false,
-     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+     "ok": true,
+     "error": null,
+     "nonce": 9
     }
    ],
    "deltas": {
-    "ACA": "0",
-    "AUSD": "0",
-    "DOT": "0",
+    "ACA": "-2340009305",
+    "AUSD": "2521646377714018",
+    "DOT": "-1000000000000",
     "LDOT": "0",
     "LCDOT": "0",
     "tDOT": "0",
@@ -175,21 +185,22 @@
     "FA12": "0",
     "FA20": "0"
    },
-   "pnl_aca_units_ranking_only": "0",
-   "all_non_negative": true,
+   "pnl_aca_units_ranking_only": "355452136917667233",
+   "all_non_negative": false,
    "suspicious": false
   },
   {
    "name": "transactionPayment.withFeeCurrency (aUSD)",
    "calls": [
     {
-     "ok": false,
-     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+     "ok": true,
+     "error": null,
+     "nonce": 10
     }
    ],
    "deltas": {
-    "ACA": "0",
-    "AUSD": "0",
+    "ACA": "1",
+    "AUSD": "-369243502",
     "DOT": "0",
     "LDOT": "0",
     "LCDOT": "0",
@@ -198,8 +209,8 @@
     "FA12": "0",
     "FA20": "0"
    },
-   "pnl_aca_units_ranking_only": "0",
-   "all_non_negative": true,
+   "pnl_aca_units_ranking_only": "-52063333781",
+   "all_non_negative": false,
    "suspicious": false
   },
   {
@@ -210,62 +221,66 @@
    "name": "homa.requestRedeem(LDOT) + fastMatchRedeems",
    "calls": [
     {
-     "ok": false,
-     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+     "ok": true,
+     "error": null,
+     "nonce": 11
     },
     {
-     "ok": false,
-     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+     "ok": true,
+     "error": null,
+     "nonce": 12
     }
    ],
    "deltas": {
-    "ACA": "0",
+    "ACA": "-4540017427",
     "AUSD": "0",
     "DOT": "0",
-    "LDOT": "0",
+    "LDOT": "-1000000000000",
     "LCDOT": "0",
     "tDOT": "0",
     "FA3": "0",
     "FA12": "0",
     "FA20": "0"
    },
-   "pnl_aca_units_ranking_only": "0",
-   "all_non_negative": true,
+   "pnl_aca_units_ranking_only": "-49500004540017427",
+   "all_non_negative": false,
    "suspicious": false
   },
   {
    "name": "liquidCrowdloan.redeem(LCDOT->DOT)",
    "calls": [
     {
-     "ok": false,
-     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+     "ok": true,
+     "error": null,
+     "nonce": 13
     }
    ],
    "deltas": {
-    "ACA": "0",
+    "ACA": "-2130009125",
     "AUSD": "0",
-    "DOT": "0",
+    "DOT": "1000000000000",
     "LDOT": "0",
-    "LCDOT": "0",
+    "LCDOT": "-1000000000000",
     "tDOT": "0",
     "FA3": "0",
     "FA12": "0",
     "FA20": "0"
    },
-   "pnl_aca_units_ranking_only": "0",
-   "all_non_negative": true,
+   "pnl_aca_units_ranking_only": "-2130009125",
+   "all_non_negative": false,
    "suspicious": false
   },
   {
    "name": "incentives.claimRewards(Dex ACA/aUSD pool)",
    "calls": [
     {
-     "ok": false,
-     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+     "ok": true,
+     "error": null,
+     "nonce": 14
     }
    ],
    "deltas": {
-    "ACA": "0",
+    "ACA": "-2130008217",
     "AUSD": "0",
     "DOT": "0",
     "LDOT": "0",
@@ -275,43 +290,45 @@
     "FA12": "0",
     "FA20": "0"
    },
-   "pnl_aca_units_ranking_only": "0",
-   "all_non_negative": true,
+   "pnl_aca_units_ranking_only": "-2130008217",
+   "all_non_negative": false,
    "suspicious": false
   },
   {
    "name": "emergencyShutdown.refundCollaterals(aUSD)",
    "calls": [
     {
-     "ok": false,
-     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+     "ok": true,
+     "error": null,
+     "nonce": 15
     }
    ],
    "deltas": {
-    "ACA": "0",
-    "AUSD": "0",
+    "ACA": "6977644969355",
+    "AUSD": "-1000000000000",
     "DOT": "0",
-    "LDOT": "0",
+    "LDOT": "94322481",
     "LCDOT": "0",
     "tDOT": "0",
     "FA3": "0",
     "FA12": "0",
     "FA20": "0"
    },
-   "pnl_aca_units_ranking_only": "0",
-   "all_non_negative": true,
+   "pnl_aca_units_ranking_only": "-129353392221145",
+   "all_non_negative": false,
    "suspicious": false
   },
   {
    "name": "evmAccounts.claimDefaultAccount",
    "calls": [
     {
-     "ok": false,
-     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+     "ok": true,
+     "error": null,
+     "nonce": 16
     }
    ],
    "deltas": {
-    "ACA": "0",
+    "ACA": "-2070002858",
     "AUSD": "0",
     "DOT": "0",
     "LDOT": "0",
@@ -321,8 +338,8 @@
     "FA12": "0",
     "FA20": "0"
    },
-   "pnl_aca_units_ranking_only": "0",
-   "all_non_negative": true,
+   "pnl_aca_units_ranking_only": "-2070002858",
+   "all_non_negative": false,
    "suspicious": false
   },
   {
@@ -330,11 +347,12 @@
    "calls": [
     {
      "ok": false,
-     "error": "TypeError: Cannot read properties of undefined (reading 'send')"
+     "error": "earning::BelowMinBondThreshold",
+     "nonce": 17
     }
    ],
    "deltas": {
-    "ACA": "0",
+    "ACA": "-2130006147",
     "AUSD": "0",
     "DOT": "0",
     "LDOT": "0",
@@ -344,15 +362,10 @@
     "FA12": "0",
     "FA20": "0"
    },
-   "pnl_aca_units_ranking_only": "0",
-   "all_non_negative": true,
+   "pnl_aca_units_ranking_only": "-2130006147",
+   "all_non_negative": false,
    "suspicious": false
   }
  ],
- "errors": [
-  {
-   "where": "dev_setStorage_full",
-   "error": "TypeError: Cannot read properties of undefined (reading 'send')"
-  }
- ]
+ "errors": []
 }

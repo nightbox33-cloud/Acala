@@ -1,8 +1,8 @@
 {
  "chain": "acala",
- "generated_at_utc": "2026-11-08T00:30:34.835253+00:00",
- "finalized_hash": "0x762c25248715bdba1cece1538ff3dc089929dd7a816b5e285d3a9a8a452555e3",
- "block_number": 12384301,
+ "generated_at_utc": "2026-11-08T00:51:49.543994+00:00",
+ "finalized_hash": "0xde59e4fd8014b88b095d9f79b6108d2e70017c2788da09b44188af3c2bec4802",
+ "block_number": 12384407,
  "rpc": "https://acala-rpc.aca-api.network",
  "codes": [
   {
