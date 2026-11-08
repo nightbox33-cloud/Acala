@@ -1,0 +1,834 @@
+{
+ "chain": "karura",
+ "abi_json_files": 13001,
+ "selectors_indexed": 3436,
+ "exact_mapped": 15,
+ "candidates": [
+  {
+   "sha256": "0x2c242392114e17787f9b23e6cbbab269d734c5483753277932545332f4d77afb",
+   "code_hash": null,
+   "bytes": 22958,
+   "selectors": 32,
+   "top": [
+    [
+     "AcalaNetwork/safe-eth-py/gnosis/eth/contracts/GnosisSafe_V1_3_0.json",
+     31,
+     96.9
+    ],
+    [
+     "AcalaNetwork/safe-eth-py/gnosis/eth/contracts/GnosisSafe_V1_1_1.json",
+     24,
+     75.0
+    ],
+    [
+     "AcalaNetwork/safe-deployments/src/assets/v1.1.1/gnosis_safe.json",
+     22,
+     68.8
+    ],
+    [
+     "AcalaNetwork/safe-eth-py/gnosis/eth/contracts/GnosisSafe_V0_0_1.json",
+     20,
+     62.5
+    ]
+   ]
+  },
+  {
+   "sha256": "0x1a228d95bdbbf637c2bb2b90efd9d92484b754a087d93783992299fba554d379",
+   "code_hash": null,
+   "bytes": 20981,
+   "selectors": 78,
+   "top": [
+    [
+     "nutsfinance/stable-asset-rewards-subql/merkleDistributor.abi.json",
+     71,
+     91.0
+    ],
+    [
+     "nutsfinance/nuts-dapp/src/app/common/web3/abi/PriceOracle.json",
+     6,
+     7.7
+    ],
+    [
+     "nutsfinance/yield-server/src/adaptors/fringe/abis/lendingPoolsABI.json",
+     6,
+     7.7
+    ],
+    [
+     "nutsfinance/yield-server/src/adaptors/fringe/abis/protocolContractABI.json",
+     6,
+     7.7
+    ]
+   ]
+  },
+  {
+   "sha256": "0xcf7800a7c5b4d600c3519e1804f86d332c1edb5264545fb4b6ccdc6fa8902721",
+   "code_hash": null,
+   "bytes": 10199,
+   "selectors": 19,
+   "top": [
+    [
+     "nutsfinance/stable-asset-rewards-subql/merkleDistributor.abi.json",
+     8,
+     42.1
+    ],
+    [
+     "nutsfinance/nuts-dapp/src/app/common/web3/abi/PriceOracle.json",
+     6,
+     31.6
+    ],
+    [
+     "nutsfinance/yield-server/src/adaptors/fringe/abis/lendingPoolsABI.json",
+     6,
+     31.6
+    ],
+    [
+     "nutsfinance/yield-server/src/adaptors/fringe/abis/protocolContractABI.json",
+     6,
+     31.6
+    ]
+   ]
+  },
+  {
+   "sha256": "0x04a1beed9fc38c5cf14cdb68b79301c2efd29c96ad153f44770cab403206b934",
+   "code_hash": null,
+   "bytes": 11526,
+   "selectors": 19,
+   "top": [
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/ERC721Metadata.json",
+     8,
+     42.1
+    ],
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/IERC721Metadata.json",
+     8,
+     42.1
+    ],
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/NFTMock.json",
+     7,
+     36.8
+    ],
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/ERC721.json",
+     7,
+     36.8
+    ]
+   ]
+  },
+  {
+   "sha256": "0x0a361fab579c5cc770578553a1eb560264d056feacd9490445ba51a925cd0658",
+   "code_hash": null,
+   "bytes": 24206,
+   "selectors": 20,
+   "top": [
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/FeeManager.json",
+     3,
+     15.0
+    ],
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/LinkdropFactory.json",
+     3,
+     15.0
+    ],
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/LinkdropFactoryCommon.json",
+     3,
+     15.0
+    ],
+    [
+     "nutsfinance/yield-server/src/adaptors/ease.org/bribePotAbi.json",
+     2,
+     10.0
+    ]
+   ]
+  },
+  {
+   "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+   "code_hash": null,
+   "bytes": 4114,
+   "selectors": 11,
+   "top": [
+    [
+     "AcalaNetwork/Acala/ts-tests/build/ERC20.json",
+     9,
+     81.8
+    ],
+    [
+     "AcalaNetwork/Acala/ts-tests/build/Erc20DemoContract.json",
+     9,
+     81.8
+    ],
+    [
+     "AcalaNetwork/Acala/ts-tests/build/Erc20DemoContract2.json",
+     9,
+     81.8
+    ],
+    [
+     "AcalaNetwork/Acala/ts-tests/build/IERC20Metadata.json",
+     9,
+     81.8
+    ]
+   ]
+  },
+  {
+   "sha256": "0x27167cecb16adecded38f50a544588ef1b731a7723583447aa743b6f1ea1b0e4",
+   "code_hash": null,
+   "bytes": 1881,
+   "selectors": 13,
+   "top": [
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/FeeManager.json",
+     3,
+     23.1
+    ],
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/LinkdropFactory.json",
+     3,
+     23.1
+    ],
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/LinkdropFactoryCommon.json",
+     3,
+     23.1
+    ],
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/LinkdropFactoryERC20.json",
+     2,
+     15.4
+    ]
+   ]
+  },
+  {
+   "sha256": "0x294b6a8b7a577edd7933458e5fea6294b7aad75e668ef89bd10d892a55f3a542",
+   "code_hash": null,
+   "bytes": 6797,
+   "selectors": 8,
+   "top": [
+    [
+     "AcalaNetwork/telescope/subql-euphrates/abis/Dex.json",
+     8,
+     100.0
+    ]
+   ]
+  },
+  {
+   "sha256": "0x2b980e710376a09cce04094c8d67ca51bacc8a585d75a3d36c6d85adee7463b9",
+   "code_hash": null,
+   "bytes": 4703,
+   "selectors": 11,
+   "top": [
+    [
+     "AcalaNetwork/Acala/ts-tests/build/ERC20.json",
+     9,
+     81.8
+    ],
+    [
+     "AcalaNetwork/Acala/ts-tests/build/Erc20DemoContract.json",
+     9,
+     81.8
+    ],
+    [
+     "AcalaNetwork/Acala/ts-tests/build/Erc20DemoContract2.json",
+     9,
+     81.8
+    ],
+    [
+     "AcalaNetwork/Acala/ts-tests/build/IERC20Metadata.json",
+     9,
+     81.8
+    ]
+   ]
+  },
+  {
+   "sha256": "0x339081325f4f71637fab4dee1e13c1d65db5c0c740f37ad78fa21ee007e8cf2f",
+   "code_hash": null,
+   "bytes": 21516,
+   "selectors": 79,
+   "top": [
+    [
+     "nutsfinance/stable-asset-rewards-subql/merkleDistributor.abi.json",
+     71,
+     89.9
+    ],
+    [
+     "nutsfinance/nuts-dapp/src/app/common/web3/abi/PriceOracle.json",
+     6,
+     7.6
+    ],
+    [
+     "nutsfinance/yield-server/src/adaptors/fringe/abis/lendingPoolsABI.json",
+     6,
+     7.6
+    ],
+    [
+     "nutsfinance/yield-server/src/adaptors/fringe/abis/protocolContractABI.json",
+     6,
+     7.6
+    ]
+   ]
+  },
+  {
+   "sha256": "0x3ce1293bb4639dcf0c9b80ae4e9586abab5925b4fee25a9579bdeda9e3f136c2",
+   "code_hash": null,
+   "bytes": 5346,
+   "selectors": 9,
+   "top": [
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/FeeManager.json",
+     3,
+     33.3
+    ],
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/LinkdropFactory.json",
+     3,
+     33.3
+    ],
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/LinkdropFactoryCommon.json",
+     3,
+     33.3
+    ],
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/LinkdropFactoryERC20.json",
+     2,
+     22.2
+    ]
+   ]
+  },
+  {
+   "sha256": "0x3fefecee006b32c72f093872d9accf82ba59785aa2ea51b374a08f106c26976b",
+   "code_hash": null,
+   "bytes": 8338,
+   "selectors": 16,
+   "top": [
+    [
+     "nutsfinance/stable-asset-rewards-subql/merkleDistributor.abi.json",
+     8,
+     50.0
+    ],
+    [
+     "nutsfinance/nuts-dapp/src/app/common/web3/abi/PriceOracle.json",
+     6,
+     37.5
+    ],
+    [
+     "nutsfinance/yield-server/src/adaptors/fringe/abis/lendingPoolsABI.json",
+     6,
+     37.5
+    ],
+    [
+     "nutsfinance/yield-server/src/adaptors/fringe/abis/protocolContractABI.json",
+     6,
+     37.5
+    ]
+   ]
+  },
+  {
+   "sha256": "0x61394cb580c416fee638964eccd44a3e991b529d920516e4bb84cba638ca47c7",
+   "code_hash": null,
+   "bytes": 4558,
+   "selectors": 18,
+   "top": [
+    [
+     "AcalaNetwork/Acala/ts-tests/build/ERC20.json",
+     9,
+     50.0
+    ],
+    [
+     "AcalaNetwork/Acala/ts-tests/build/Erc20DemoContract.json",
+     9,
+     50.0
+    ],
+    [
+     "AcalaNetwork/Acala/ts-tests/build/Erc20DemoContract2.json",
+     9,
+     50.0
+    ],
+    [
+     "AcalaNetwork/Acala/ts-tests/build/IERC20Metadata.json",
+     9,
+     50.0
+    ]
+   ]
+  },
+  {
+   "sha256": "0x6f49b87e0a0e68f7abee92e570346f937481ae4a600badb52925588c70d26b50",
+   "code_hash": null,
+   "bytes": 6680,
+   "selectors": 23,
+   "top": [
+    [
+     "AcalaNetwork/Acala/ts-tests/build/ERC20.json",
+     9,
+     39.1
+    ],
+    [
+     "AcalaNetwork/Acala/ts-tests/build/Erc20DemoContract.json",
+     9,
+     39.1
+    ],
+    [
+     "AcalaNetwork/Acala/ts-tests/build/Erc20DemoContract2.json",
+     9,
+     39.1
+    ],
+    [
+     "AcalaNetwork/Acala/ts-tests/build/IERC20Metadata.json",
+     9,
+     39.1
+    ]
+   ]
+  },
+  {
+   "sha256": "0x7c06fdc2cd0327767c03f673206a503f2c1d27af8d2826a38c194bbb46f70f17",
+   "code_hash": null,
+   "bytes": 13173,
+   "selectors": 82,
+   "top": [
+    [
+     "nutsfinance/stable-asset-rewards-subql/merkleDistributor.abi.json",
+     71,
+     86.6
+    ],
+    [
+     "nutsfinance/nuts-dapp/src/app/common/web3/abi/PriceOracle.json",
+     6,
+     7.3
+    ],
+    [
+     "nutsfinance/yield-server/src/adaptors/fringe/abis/lendingPoolsABI.json",
+     6,
+     7.3
+    ],
+    [
+     "nutsfinance/yield-server/src/adaptors/fringe/abis/protocolContractABI.json",
+     6,
+     7.3
+    ]
+   ]
+  },
+  {
+   "sha256": "0x80e69715af92c76a139211d131b6413bf5f05fa49fd237bbbb1f0336f7ba548d",
+   "code_hash": null,
+   "bytes": 21077,
+   "selectors": 78,
+   "top": [
+    [
+     "nutsfinance/stable-asset-rewards-subql/merkleDistributor.abi.json",
+     71,
+     91.0
+    ],
+    [
+     "nutsfinance/nuts-dapp/src/app/common/web3/abi/PriceOracle.json",
+     6,
+     7.7
+    ],
+    [
+     "nutsfinance/yield-server/src/adaptors/fringe/abis/lendingPoolsABI.json",
+     6,
+     7.7
+    ],
+    [
+     "nutsfinance/yield-server/src/adaptors/fringe/abis/protocolContractABI.json",
+     6,
+     7.7
+    ]
+   ]
+  },
+  {
+   "sha256": "0x83aa64472acae6fbbada783913a7e093e01f4118404a5dbcd0afa4661ae420ff",
+   "code_hash": null,
+   "bytes": 5835,
+   "selectors": 22,
+   "top": [
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/ERC721Metadata.json",
+     8,
+     36.4
+    ],
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/IERC721Metadata.json",
+     8,
+     36.4
+    ],
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/NFTMock.json",
+     7,
+     31.8
+    ],
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/ERC721.json",
+     7,
+     31.8
+    ]
+   ]
+  },
+  {
+   "sha256": "0x8beb5af3e90c98fad0a62ce3b501361844c2e76bc2bbebf766713133347488a9",
+   "code_hash": null,
+   "bytes": 18905,
+   "selectors": 20,
+   "top": [
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/FeeManager.json",
+     3,
+     15.0
+    ],
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/LinkdropFactory.json",
+     3,
+     15.0
+    ],
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/LinkdropFactoryCommon.json",
+     3,
+     15.0
+    ],
+    [
+     "nutsfinance/yield-server/src/adaptors/ease.org/bribePotAbi.json",
+     2,
+     10.0
+    ]
+   ]
+  },
+  {
+   "sha256": "0x903c68ae33370dd87dd9f0321fee047e068154a0141d006363683660b5a4c367",
+   "code_hash": null,
+   "bytes": 4114,
+   "selectors": 11,
+   "top": [
+    [
+     "AcalaNetwork/Acala/ts-tests/build/ERC20.json",
+     9,
+     81.8
+    ],
+    [
+     "AcalaNetwork/Acala/ts-tests/build/Erc20DemoContract.json",
+     9,
+     81.8
+    ],
+    [
+     "AcalaNetwork/Acala/ts-tests/build/Erc20DemoContract2.json",
+     9,
+     81.8
+    ],
+    [
+     "AcalaNetwork/Acala/ts-tests/build/IERC20Metadata.json",
+     9,
+     81.8
+    ]
+   ]
+  },
+  {
+   "sha256": "0x9523cbd18853a0bb7fa7bb55e0aff440c6795ac720eb63543bb7f5025611d211",
+   "code_hash": null,
+   "bytes": 9658,
+   "selectors": 16,
+   "top": [
+    [
+     "AcalaNetwork/Acala/ts-tests/build/ERC20.json",
+     9,
+     56.2
+    ],
+    [
+     "AcalaNetwork/Acala/ts-tests/build/Erc20DemoContract.json",
+     9,
+     56.2
+    ],
+    [
+     "AcalaNetwork/Acala/ts-tests/build/Erc20DemoContract2.json",
+     9,
+     56.2
+    ],
+    [
+     "AcalaNetwork/Acala/ts-tests/build/IERC20Metadata.json",
+     9,
+     56.2
+    ]
+   ]
+  },
+  {
+   "sha256": "0x9998b2bb92bd9857d7f5380cf3c034b7c0ffb18b11c63bd55732b7366b11e510",
+   "code_hash": null,
+   "bytes": 2269,
+   "selectors": 6,
+   "top": [
+    [
+     "AcalaNetwork/safe-eth-py/gnosis/eth/contracts/CompatibilityFallbackHandler_V1_3_0.json",
+     5,
+     83.3
+    ],
+    [
+     "AcalaNetwork/safe-deployments/src/assets/v1.1.1/default_callback_handler.json",
+     4,
+     66.7
+    ],
+    [
+     "AcalaNetwork/safe-deployments/src/assets/v1.3.0/compatibility_fallback_handler.json",
+     3,
+     50.0
+    ],
+    [
+     "AcalaNetwork/safe-eth-py/gnosis/eth/contracts/GnosisSafe_V0_0_1.json",
+     2,
+     33.3
+    ]
+   ]
+  },
+  {
+   "sha256": "0xa380d4af0e31fce4d598140b1fd28971547e4c8b6f8c4afd1a2e2bc76d0cdd69",
+   "code_hash": null,
+   "bytes": 19128,
+   "selectors": 75,
+   "top": [
+    [
+     "nutsfinance/stable-asset-rewards-subql/merkleDistributor.abi.json",
+     71,
+     94.7
+    ],
+    [
+     "nutsfinance/nuts-dapp/src/app/common/web3/abi/PriceOracle.json",
+     6,
+     8.0
+    ],
+    [
+     "nutsfinance/yield-server/src/adaptors/fringe/abis/lendingPoolsABI.json",
+     6,
+     8.0
+    ],
+    [
+     "nutsfinance/yield-server/src/adaptors/fringe/abis/protocolContractABI.json",
+     6,
+     8.0
+    ]
+   ]
+  },
+  {
+   "sha256": "0xa78747700222d4c4011ffd2e187be15c4d13bc9de32304e5f09dc2eeecbf99ec",
+   "code_hash": null,
+   "bytes": 5469,
+   "selectors": 20,
+   "top": [
+    [
+     "nutsfinance/stable-asset-rewards-subql/merkleDistributor.abi.json",
+     10,
+     50.0
+    ],
+    [
+     "nutsfinance/nuts-dapp/src/app/common/web3/abi/PriceOracle.json",
+     6,
+     30.0
+    ],
+    [
+     "nutsfinance/yield-server/src/adaptors/fringe/abis/lendingPoolsABI.json",
+     6,
+     30.0
+    ],
+    [
+     "nutsfinance/yield-server/src/adaptors/fringe/abis/protocolContractABI.json",
+     6,
+     30.0
+    ]
+   ]
+  },
+  {
+   "sha256": "0xbfec267c76b2020e94cca62b2b8bad7ee2e3d5e472a70c3200f9b10766632de5",
+   "code_hash": null,
+   "bytes": 3628,
+   "selectors": 14,
+   "top": [
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/FeeManager.json",
+     3,
+     21.4
+    ],
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/LinkdropFactory.json",
+     3,
+     21.4
+    ],
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/LinkdropFactoryCommon.json",
+     3,
+     21.4
+    ],
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/LinkdropFactoryERC20.json",
+     2,
+     14.3
+    ]
+   ]
+  },
+  {
+   "sha256": "0xcb4972c169c335867e5b73e2f7790ba4765357b6561f6efdb8476ab4de29bdbd",
+   "code_hash": null,
+   "bytes": 4585,
+   "selectors": 18,
+   "top": [
+    [
+     "AcalaNetwork/Acala/ts-tests/build/ERC20.json",
+     9,
+     50.0
+    ],
+    [
+     "AcalaNetwork/Acala/ts-tests/build/Erc20DemoContract.json",
+     9,
+     50.0
+    ],
+    [
+     "AcalaNetwork/Acala/ts-tests/build/Erc20DemoContract2.json",
+     9,
+     50.0
+    ],
+    [
+     "AcalaNetwork/Acala/ts-tests/build/IERC20Metadata.json",
+     9,
+     50.0
+    ]
+   ]
+  },
+  {
+   "sha256": "0xcc39e9185b2faa6d6912f0a048a8ee2d773653886cc1aaf025098c74b27a3d80",
+   "code_hash": null,
+   "bytes": 10434,
+   "selectors": 26,
+   "top": [
+    [
+     "AcalaNetwork/Acala/ts-tests/build/ERC20.json",
+     9,
+     34.6
+    ],
+    [
+     "AcalaNetwork/Acala/ts-tests/build/Erc20DemoContract.json",
+     9,
+     34.6
+    ],
+    [
+     "AcalaNetwork/Acala/ts-tests/build/Erc20DemoContract2.json",
+     9,
+     34.6
+    ],
+    [
+     "AcalaNetwork/Acala/ts-tests/build/IERC20Metadata.json",
+     9,
+     34.6
+    ]
+   ]
+  },
+  {
+   "sha256": "0xd3eed4db5c0d0fec871c45e44d4117f0417bf696dd73274539645a837a0bd175",
+   "code_hash": null,
+   "bytes": 11211,
+   "selectors": 15,
+   "top": [
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/ERC721Metadata.json",
+     8,
+     53.3
+    ],
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/IERC721Metadata.json",
+     8,
+     53.3
+    ],
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/ERC721.json",
+     7,
+     46.7
+    ],
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/IERC721.json",
+     7,
+     46.7
+    ]
+   ]
+  },
+  {
+   "sha256": "0xecf2ae7de6ba2b72f437c50775cfcd8e97b81e6a6abd0de73bfcf5874f454669",
+   "code_hash": null,
+   "bytes": 3522,
+   "selectors": 8,
+   "top": [
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/FeeManager.json",
+     3,
+     37.5
+    ],
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/LinkdropFactory.json",
+     3,
+     37.5
+    ],
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/LinkdropFactoryCommon.json",
+     3,
+     37.5
+    ],
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/LinkdropFactoryERC20.json",
+     2,
+     25.0
+    ]
+   ]
+  },
+  {
+   "sha256": "0xf88f18e3b7d78f9db72cfdf88e452c8df211eb8c817fe05ebdc20245588d4f47",
+   "code_hash": null,
+   "bytes": 19911,
+   "selectors": 33,
+   "top": [
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/FeeManager.json",
+     3,
+     9.1
+    ],
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/LinkdropFactory.json",
+     3,
+     9.1
+    ],
+    [
+     "AcalaNetwork/evm-provider/linkdrop/build/LinkdropFactoryCommon.json",
+     3,
+     9.1
+    ],
+    [
+     "nutsfinance/yield-server/src/adaptors/ease.org/bribePotAbi.json",
+     2,
+     6.1
+    ]
+   ]
+  },
+  {
+   "sha256": "0xf97f3f41117ee04750241832afa134e7f84cba9deca0e3fe9b0de3e033ae36de",
+   "code_hash": null,
+   "bytes": 2570,
+   "selectors": 35,
+   "top": [
+    [
+     "nutsfinance/stable-asset-rewards-subql/merkleDistributor.abi.json",
+     34,
+     97.1
+    ],
+    [
+     "AcalaNetwork/acala-subql-services/packages/lsd-staking/lsd.abi.json",
+     3,
+     8.6
+    ],
+    [
+     "AcalaNetwork/telescope/subql-euphrates/abis/Euphrates.json",
+     3,
+     8.6
+    ],
+    [
+     "AcalaNetwork/telescope/subql-euphrates/abis/Staking.json",
+     3,
+     8.6
+    ]
+   ]
+  }
+ ],
+ "identified": 30
+}

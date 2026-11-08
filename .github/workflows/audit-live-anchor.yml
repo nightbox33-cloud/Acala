@@ -66,6 +66,14 @@ jobs:
           python3 scripts/audit/probe_evm_roles.py karura audit-live/evm-roles-karura.json
           python3 scripts/audit/probe_gnosis_safes.py acala audit-live/gnosis-safes-acala.json
           python3 scripts/audit/probe_gnosis_safes.py karura audit-live/gnosis-safes-karura.json
+      - name: Probe permissionless takeover of live Safe/MerkleDistributor/Wormhole proxies
+        continue-on-error: true
+        timeout-minutes: 18
+        run: |
+          python3 scripts/audit/probe_takeover.py acala audit-live/takeover-acala.json
+          python3 scripts/audit/probe_takeover.py karura audit-live/takeover-karura.json
+          python3 scripts/audit/probe_wormhole_bridge.py acala audit-live/wormhole-acala.json
+          python3 scripts/audit/probe_wormhole_bridge.py karura audit-live/wormhole-karura.json
       - name: Enumerate deployed EVM accounts, balances and bytecode
         continue-on-error: true
         timeout-minutes: 8

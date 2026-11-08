@@ -153,7 +153,106 @@ usando `provider.send(...)`; se relanza.
 `IsShutdown = true`. Ambas calls revierten; no hay inventario ajeno en ese
 bridge. **Candidato muerto.**
 
-## 6. Lo que queda por agotar
+## 6. Mapa de los 405 bytecodes live y_protocolos desplegados (cerrado parcialmente)
+
+`scripts/audit/map_bytecodes_to_repos.py` indexó en una pasada **12.991 JSON**
+de los 228 clones (17G) buscando `deployedBytecode`/`bytecode`/`object` y
+variantes runtime (`f3fe`/`f3`/`fe`), y comparó sha256 con los 405 únicos
+`EVM.Codes`. Resultado en `audit-live/bytecode-repo-map.json`:
+**15/405 (3,7%)** tienen artefacto en repos de la fundación; **390 siguen sin
+fuente**. Los 15 incluyen 10 `predeploy-contracts@b074c00f3e3d...`,
+`safe-eth-py@3f01e6fa1bd8b45e9dd42b9fc14cf38ea454ad33` (4),
+`bodhi.js@49e98321...`, `bodhi-examples@d8da4d9e...`, `lottery@6322f79f...`.
+
+`scripts/audit/index_abi_selectors.py` nombró **220/1.774** selectores live
+con los ABIs clonados (`audit-live/abi-selector-index.json`). Con firmas
+canónicas verificadas por keccak se identificaron, sin explorer:
+
+- **Gnosis Safe V1.3.0**: `GnosisSafeProxy` de 171 B con `ref_count` **12 en
+  Acala / 7 en Karura**; singleton `GnosisSafeL2` (23.800 B), `ProxyFactory`
+  y `CompatibilityFallbackHandler`. `ProxyFactory.createProxy(address,bytes)`
+  despliega el proxy y **solo inicializa si `bytes` no está vacío**; el
+  singleton `setup(...)` (`0xb63e800d`) tiene guard `threshold == 0`. Un proxy
+  sin `setup()` es tomable por cualquiera → `execTransaction` movería sus
+  fondos. Vector medido por `scripts/audit/probe_gnosis_safes.py`.
+- **Wormhole Token Bridge**: el bytecode de 21.967 B
+  (`0x027f00ef...` Acala / `0x1aec779d...` Karura) coincide con el dispatcher
+  de `BridgeImplementation`: `isInitialized(address)=0xd60b347f`,
+  `tokenImplementation()=0x2f3a3d5d`, `isWrappedAsset(address)=0x1a2be4da`,
+  `wrappedAsset(uint16,bytes32)=0x1ff1e286`,
+  `governanceContract()=0xb172b222`, `WETH()=0xad5c4648`,
+  `implementation()=0x5c60da1b`, `initialize()=0x8129fc1c`. Repo oficial
+  clonado: `wormhole-foundation/wormhole@4725d90675b78c6881be0320a09f41aadb7c5e91`
+  (sparse: `ethereum/contracts`, `sdk/js/src/token_bridge`,
+  `node/pkg/txverifier`). `Implementation.sol` cablea **Karura chain 11 →
+  evmChainId 686** y **Acala chain 12 → 787**. `TokenImplementation.initialize(...)`
+  es `initializer public` y fija `_state.owner`, que controla `mint`/`burn`;
+  pero `Bridge._createWrapped` despliega el `BeaconProxy` con
+  `initialisationArgs` y `owner_ = address(this)` en el mismo `create2`, así
+  que el flujo oficial NO deja tokens sin inicializar. Queda medir en live si
+  existe algún proxy desplegado por otra vía: `probe_wormhole_bridge.py`
+  simula `initialize(...)` (`0xc71f4615`) por `eth_call` sobre todos los
+  contratos pequeños.
+- **Fork Uniswap V2** (19.057 B, `0x85c46bdc...`, Acala): mismo dispatcher con
+  selectores de Factory (`createPair`, `setFeeTo`, `setFeeToSetter`) y de Pair
+  (`swap`, `mint`, `burn`, `skim`, `sync`, `initialize(address,address)`).
+  `0x5855a25a` aparece en factories Pancake/Isecta V2. Sin addresses ni
+  reservas medidas todavía.
+
+Hecho que mata la vía Wormhole por ahora: guardianes/governance son rol
+privilegiado (prohibido) y `initialize` del implementation no altera el
+storage del proxy. El único ángulo permissionless restante es un wrapped token
+o proxy sin inicializar **con inventario ajeno**.
+
+## 6 bis. Corrección de falsos positivos propios, MerkleDistributor y superficie `initialize`
+
+**Los flags de `analyze_evm_codes.py` son RUIDO y quedan retirados como
+evidencia.** En `0x2997ab61` (WETH9-like de Solidity 0.4.x, empieza
+`0x6060604052`, 3.124 B) el `DELEGATECALL` y los dos `SELFDESTRUCT` están en
+los pc **3098–3101**, es decir en los últimos 26 bytes: son los `0xf4`/`0xff`
+del metadata Swarm que Solidity 0.4 pega al final del runtime, no instrucciones
+alcanzables. `ORIGIN` (opcode `0x32`) aparece como byte de dato en `PUSH` de
+dispatchers compilados. Por tanto `delegatecall_dynamic_target`, `selfdestruct`
+y `origin_auth_suspicious` **no sostienen ningún claim**; los selectores del
+dispatcher (`PUSH4`/`EQ` del inicio) sí son reales y son los que se usan.
+
+**Identificación por intersección de selectores** (`identify_unmapped_bytecodes.py`,
+3.436 selectores de todos los ABIs de los clones): **196/380 Acala** y
+**30/85 Karura** tienen candidato fuerte (`unmapped-identification-*.json`).
+Además de los ya citados: `0x1a228d95` y `0x33908132` coinciden **71/78 y
+71/79** con `nutsfinance/stable-asset-rewards-subql/merkleDistributor.abi.json`;
+`0x9740362f` 24/32 con `UniswapV2Router02`; `0x294b6a8b` 8/8 con
+`AcalaNetwork/telescope/.../abis/Dex.json`.
+
+**MerkleDistributor leído del código fuente clonado**, no inferido:
+`nutsfinance/merkle-distributor@60e96956cac2de773965f8d5bd066e40d4cfd515` y
+`tapio-eth-merkle-distributor@d9e7437bcefa163be5d3e08df28d285680195353`.
+`initialize(admin,proposer,validator)` = `0xc0c53b8b` (`initializer`),
+`withdraw(address,uint256)` = `0xf3fef3a3` con `_onlyAdmin()`,
+`approveRoot`/`proposeRoot` con `ROOT_VALIDATOR_ROLE`/`ROOT_PROPOSER_ROLE`.
+`claim(...)` verifica
+`MerkleProof.verify(proof, merkleRoot, keccak256(abi.encode(index,user,cycle,tokens,cumulative)))`
+y `claimed[user][token] += amount` **antes** del `transfer`. Hechos que matan
+los ángulos obvios: el pago va a
+`IEVMAccounts(ADDRESS.EVMAccounts).getEvmAddress(user)` (la cuenta Substrate de
+la hoja), **no a `msg.sender`** → reclamar para otro no roba; `try
+IERC20.transfer(...)` ignora un retorno `false`, lo que quema el claim de la
+víctima (self-grief), no drena; roles de root/admin son privilegiados. El único
+ángulo permanece: un **proxy o implementation sin inicializar y con inventario**
+→ `initialize` + `withdraw`. Se mide, no se asume.
+
+**Superficie real de inicializadores** (keccak verificado, sobre los 465
+bytecodes): ~40 contratos Acala y ~25 Karura exponen alguna de
+`0xc0c53b8b`/`0xc4d66de8`/`0x8129fc1c`/`0x485cc955`; 9 exponen `upgradeTo`
+(`0x3659cfe6`); 8 en cada cadena exponen `proposeRoot`+`approveRoot`+`claim`.
+`scripts/audit/probe_takeover.py` resuelve sus addresses desde `EVM.Accounts`,
+simula cada `initialize` y el `setup` de Safe por `eth_call`, lee slots
+EIP-1967, `owner()`, `merkleRoot()`, `paused()` y mide nativo + ERC20. Sólo
+marca `candidate` si **la llamada de toma de control NO revierte Y hay valor**.
+Un `initialize()` que revierte (`Initializable: contract is already
+initialized`) o una cuenta sin fondos mata el claim.
+
+## 7. Lo que queda por agotar
 
 1. Reejecutar el fork fuzz con el provider corregido y medir PnL real de las
    16 secuencias acumulativas (Homa, DEX LP, Taiga, aggregated-dex, fee-pool,
