@@ -10,7 +10,7 @@ Este fichero registra sólo hechos que sostienen o matan un claim.
 | Vector medido en live | Hecho que lo mata |
 | --- | --- |
 | `aggregatedDex DOT→aUSD` (28x el oráculo) | **UNWIND** DOT→aUSD→DOT minado en fork: PnL **−125 USD**. El extra se pierde al deshacer → falla criterio 4. |
-| `REPEAT aggregatedDex x3` (+6.575 USD, `suspicious=true`) | Físicamente imposible: el pool `[AUSD,LDOT]` tiene **96 aUSD** y el fork acredita 6.845 aUSD. Artefacto de medición pendiente de demostrar con reservas antes/después (run en curso). |
+| `REPEAT aggregatedDex x3` (+6.575 USD, `suspicious=true`) | **CANDIDATO ABIERTO, no crítico aún.** Las reservas antes/después demostraron que **NO es artefacto**: el pool `Dex.LiquidityPool[AUSD,LDOT]` bajó exactamente `6845511618096541` (= el aUSD ganado). Pero el LDOT no se conserva (el Dex recibe ~5,18x lo que pierde el Taiga sin que el atacante pierda LDOT) y **no se ha localizado el bug en código** → falla criterio 1. Run de eventos 42436509596 en curso (§13). |
 | `emergencyShutdown.refundCollaterals` (rounding) | `refund(3 aUSD)` rinde **más** ACA que `3 × refund(1 aUSD)`; `Ratio` trunca hacia abajo. PnL −2 USD. CDP subcolateralizado. |
 | 19 `GnosisSafeProxy` (12 Acala / 7 Karura) | Los 13 medidos tienen `threshold` 1–2 y `setup()` **revierte**. `takeover_candidates=[]`. Hay inventario ajeno, pero no tomable. |
 | `MerkleDistributor` upgradeable | `claim` paga a `getEvmAddress(user)` (la víctima), no a `msg.sender`; `try transfer` ignora `false` (self-grief); `approveRoot`/`withdraw` son rol privilegiado. Falta medir `initialize` en las 5 addresses desplegadas. |
