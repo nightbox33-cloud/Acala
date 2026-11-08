@@ -41,11 +41,15 @@ function decodeError(d, api) {
 }
 
 async function main() {
-  let ctx, api
+  let ctx, api, provider
   try {
     ctx = await setupWithServer(await fetchConfig(YAML))
     log('fork server', ctx.addr)
-    api = await ApiPromise.create({ provider: new WsProvider(`ws://${ctx.addr}`, 3000), noInitWarn: true })
+    // @polkadot/api v17 no longer exposes api.rpc.provider; keep the provider
+    // instance ourselves and call .send() on it directly.
+    const wsProvider = new WsProvider(`ws://${ctx.addr}`, 3000)
+    provider = wsProvider
+    api = await ApiPromise.create({ provider: wsProvider, noInitWarn: true })
     await api.isReady
     log('fork runtime', api.runtimeVersion.specVersion.toString())
 
@@ -58,19 +62,19 @@ async function main() {
       storage.Tokens.Accounts.push([[A.address, cur], { free: X.toString(), reserved: 0, frozen: 0 }])
     }
     try {
-        await api.rpc.provider.send('dev_setStorage', [storage])
+        await provider.send('dev_setStorage', [storage])
         log('funded attacker (ACA + all tokens)', A.address)
     } catch (e) {
         out.errors.push({ where: 'dev_setStorage_full', error: String(e) })
         log('dev_setStorage full failed, falling back:', String(e).slice(0, 200))
         try {
-            await api.rpc.provider.send('dev_setStorage', [
+            await provider.send('dev_setStorage', [
                 { System: { Account: [[[A.address], { providers: 1, data: { free: X.toString() } }]] } }])
             log('funded attacker (native only)', A.address)
         } catch (e2) { log('native funding failed', String(e2).slice(0, 200)) }
         for (const cur of Object.values(CURRENCIES)) {
             try {
-                await api.rpc.provider.send('dev_setStorage', [
+                await provider.send('dev_setStorage', [
                     { Tokens: { Accounts: [[[A.address, cur], { free: X.toString(), reserved: 0, frozen: 0 }]] } }])
             } catch (e3) { /* record but continue */ }
         }
@@ -104,7 +108,7 @@ async function main() {
         generic.signature.set(sig)
         const hex = generic.toHex()
         seq++
-        await api.rpc.provider.send('dev_newBlock', [{ transactions: [hex] }])
+        await provider.send('dev_newBlock', [{ transactions: [hex] }])
         let failure = null
         try {
           const evs = await api.query.system.events()

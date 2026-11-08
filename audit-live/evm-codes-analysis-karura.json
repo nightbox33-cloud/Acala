@@ -1,0 +1,3781 @@
+{
+ "chain": "karura",
+ "block_number": 12812242,
+ "finalized_hash": "0x59871622fb7604e407ee0f9355d1febaae875144f0b12604022b099b00fe1530",
+ "code_count_in_index": 85,
+ "files_analyzed": 85,
+ "contracts": [
+  {
+   "file": "f493237b9d26fcb9d47fc3685d30e1e17c8302b5.hex",
+   "sha256": "0xf493237b9d26fcb9d47fc3685d30e1e17c8302b5d84071394e77642cfa14cfcb",
+   "code_bytes": 2141,
+   "selectors": [
+    "0x3659cfe6",
+    "0x4f1ef286",
+    "0x5c60da1b",
+    "0x8f283970",
+    "0xf851a440"
+   ],
+   "known_selectors": {
+    "0x3659cfe6": "upgradeTo(address) [proxy]",
+    "0x4f1ef286": "upgradeToAndCall(address,bytes) [proxy]",
+    "0x5c60da1b": "implementation() [EIP1967]",
+    "0x8f283970": "changeAdmin(address)"
+   },
+   "danger_ops": {
+    "CALLVALUE": 4,
+    "COINBASE": 1,
+    "DELEGATECALL": 3,
+    "SSTORE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": true,
+   "selfdestruct": false,
+   "instruction_count": 1179,
+   "matches_predeploy": null
+  },
+  {
+   "file": "2c242392114e17787f9b23e6cbbab269d734c548.hex",
+   "sha256": "0x2c242392114e17787f9b23e6cbbab269d734c5483753277932545332f4d77afb",
+   "code_bytes": 22958,
+   "selectors": [
+    "0x0d582f13",
+    "0x12fb68e0",
+    "0x2d9ad53d",
+    "0x2f54bf6e",
+    "0x3408e470",
+    "0x468721a7",
+    "0x5229073f",
+    "0x5624b25b",
+    "0x5ae6bd37",
+    "0x610b5925",
+    "0x694e80c3",
+    "0x6a761202",
+    "0x7d832974",
+    "0x934f3a11",
+    "0xa0e67e2b",
+    "0xaffed0e0",
+    "0xb4faba09",
+    "0xb63e800d",
+    "0xc4ca3a9c",
+    "0xcc2f8452",
+    "0xd4d9bdcd",
+    "0xd8d11f78",
+    "0xe009cfde",
+    "0xe19a9dd9",
+    "0xe318b52b",
+    "0xe75235b8",
+    "0xe86637db",
+    "0xf08a0323",
+    "0xf698da25",
+    "0xf8dc5dd9",
+    "0xffa1ad74",
+    "0xffffffff"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALL": 6,
+    "CALLVALUE": 32,
+    "DELEGATECALL": 2,
+    "SSTORE": 23,
+    "ORIGIN": 1
+   },
+   "origin_auth_suspicious": true,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 11003,
+   "matches_predeploy": null
+  },
+  {
+   "file": "382183ad763afbcc7f7728a6dbd6fd51b46843b0.hex",
+   "sha256": "0x382183ad763afbcc7f7728a6dbd6fd51b46843b0e1ebdc33a0def6e7939f4aa2",
+   "code_bytes": 23800,
+   "selectors": [
+    "0x0d582f13",
+    "0x12fb68e0",
+    "0x2d9ad53d",
+    "0x2f54bf6e",
+    "0x3408e470",
+    "0x468721a7",
+    "0x5229073f",
+    "0x5624b25b",
+    "0x5ae6bd37",
+    "0x610b5925",
+    "0x694e80c3",
+    "0x6a761202",
+    "0x7d832974",
+    "0x934f3a11",
+    "0xa0e67e2b",
+    "0xaffed0e0",
+    "0xb4faba09",
+    "0xb63e800d",
+    "0xc4ca3a9c",
+    "0xcc2f8452",
+    "0xd4d9bdcd",
+    "0xd8d11f78",
+    "0xe009cfde",
+    "0xe19a9dd9",
+    "0xe318b52b",
+    "0xe75235b8",
+    "0xe86637db",
+    "0xf08a0323",
+    "0xf698da25",
+    "0xf8dc5dd9",
+    "0xffa1ad74",
+    "0xffffffff"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALL": 6,
+    "CALLVALUE": 32,
+    "DELEGATECALL": 2,
+    "SSTORE": 23,
+    "ORIGIN": 1
+   },
+   "origin_auth_suspicious": true,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 11561,
+   "matches_predeploy": null
+  },
+  {
+   "file": "0ee1ec637e47d19b5d9ebf760b223a2fc6f7aa5a.hex",
+   "sha256": "0x0ee1ec637e47d19b5d9ebf760b223a2fc6f7aa5a70695ed18d6d93f957d0015e",
+   "code_bytes": 6859,
+   "selectors": [
+    "0x0479d644",
+    "0x0a42d500",
+    "0x38bb09c9",
+    "0x413a675f",
+    "0x87ca165a",
+    "0x938de0e6",
+    "0x98d079b0",
+    "0x9af1d35a",
+    "0xc0f36cb0"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALL": 4,
+    "SELFDESTRUCT": 1,
+    "CALLVALUE": 3,
+    "DELEGATECALL": 3,
+    "SSTORE": 4,
+    "CREATE2": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": true,
+   "instruction_count": 3883,
+   "matches_predeploy": null
+  },
+  {
+   "file": "1789bee73c3f45031f4c6dadb62f5750299bfa54.hex",
+   "sha256": "0x1789bee73c3f45031f4c6dadb62f5750299bfa5446e50303d1e19da79f8a7dc7",
+   "code_bytes": 6859,
+   "selectors": [
+    "0x0479d644",
+    "0x0a42d500",
+    "0x38bb09c9",
+    "0x413a675f",
+    "0x87ca165a",
+    "0x938de0e6",
+    "0x98d079b0",
+    "0x9af1d35a",
+    "0xc0f36cb0"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALL": 4,
+    "SELFDESTRUCT": 1,
+    "CALLVALUE": 3,
+    "DELEGATECALL": 3,
+    "SSTORE": 4,
+    "CREATE2": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": true,
+   "instruction_count": 3883,
+   "matches_predeploy": null
+  },
+  {
+   "file": "1a228d95bdbbf637c2bb2b90efd9d92484b754a0.hex",
+   "sha256": "0x1a228d95bdbbf637c2bb2b90efd9d92484b754a087d93783992299fba554d379",
+   "code_bytes": 20981,
+   "selectors": [
+    "0x01ffc9a7",
+    "0x0552a3e2",
+    "0x08c379a0",
+    "0x0a4cad6b",
+    "0x0bea593a",
+    "0x0d4202ce",
+    "0x18ad37af",
+    "0x18dca9ba",
+    "0x19550da4",
+    "0x1f927675",
+    "0x1fe065ad",
+    "0x248a9ca3",
+    "0x280d1060",
+    "0x29941edd",
+    "0x2eb4a7ab",
+    "0x2f2ff15d",
+    "0x2f37a774",
+    "0x2fd7d1fd",
+    "0x302ec18f",
+    "0x351f5f3d",
+    "0x36568abe",
+    "0x36877dce",
+    "0x36e02950",
+    "0x3f4ba83a",
+    "0x41da8653",
+    "0x57216320",
+    "0x5c975abb",
+    "0x5d499e82",
+    "0x6022c7ab",
+    "0x6589b168",
+    "0x6b80a04c",
+    "0x6cd83f18",
+    "0x783dc03d",
+    "0x78d894d9",
+    "0x80935aa9",
+    "0x80bd60e8",
+    "0x8270d87b",
+    "0x8456cb59",
+    "0x8cbc762e",
+    "0x8e6f3458",
+    "0x91d14854",
+    "0x94e4cab9",
+    "0x9637f475",
+    "0x96f7cd57",
+    "0x97c9c12f",
+    "0xa155285f",
+    "0xa1b56226",
+    "0xa217fddf",
+    "0xa5770a54",
+    "0xb0dadb7b",
+    "0xb20cd555",
+    "0xb3d27bc5",
+    "0xb52086ee",
+    "0xbab2f552",
+    "0xbacbd7cc",
+    "0xc0c53b8b",
+    "0xc30054c0",
+    "0xc4969815",
+    "0xc6bd6a9a",
+    "0xd12ed897",
+    "0xd547741f",
+    "0xd54dc1ab",
+    "0xd7f269fe",
+    "0xd9dc7fcd",
+    "0xda038baf",
+    "0xdd5b769e",
+    "0xdfcae622",
+    "0xe18b7ac5",
+    "0xe63ab1e9",
+    "0xec8f8f8f",
+    "0xef5d9ae8",
+    "0xef832979",
+    "0xf24a534e",
+    "0xf29588c7",
+    "0xf589b63d",
+    "0xfb1bb9de",
+    "0xfd458921",
+    "0xfe0317ef"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALL": 2,
+    "SELFDESTRUCT": 1,
+    "CALLVALUE": 1,
+    "SSTORE": 34
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": true,
+   "instruction_count": 11567,
+   "matches_predeploy": null
+  },
+  {
+   "file": "76ff48ebd58d5c41ed940e7ed7673b29809a3824.hex",
+   "sha256": "0x76ff48ebd58d5c41ed940e7ed7673b29809a38240bec2f9b5720be12cb252680",
+   "code_bytes": 12683,
+   "selectors": [
+    "0x2eac61b6",
+    "0x31d0c1ed",
+    "0x388a5863",
+    "0x38bb09c9",
+    "0x57376746",
+    "0x9af1d35a",
+    "0xc0f36cb0",
+    "0xd6a51805",
+    "0xdcf978d9"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALL": 10,
+    "SELFDESTRUCT": 2,
+    "CALLVALUE": 5,
+    "COINBASE": 1,
+    "SSTORE": 12,
+    "CALLCODE": 1,
+    "CREATE2": 2
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": true,
+   "instruction_count": 7607,
+   "matches_predeploy": null
+  },
+  {
+   "file": "887033e2f8fd9e4b0731e9759f379f964ee2ce0f.hex",
+   "sha256": "0x887033e2f8fd9e4b0731e9759f379f964ee2ce0fc596260902c12fab2a72e8ac",
+   "code_bytes": 12331,
+   "selectors": [
+    "0x2eac61b6",
+    "0x31d0c1ed",
+    "0x388a5863",
+    "0x38bb09c9",
+    "0x57376746",
+    "0x9af1d35a",
+    "0xc0f36cb0",
+    "0xd6a51805",
+    "0xdcf978d9"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALL": 9,
+    "SELFDESTRUCT": 3,
+    "CALLVALUE": 4,
+    "COINBASE": 2,
+    "SSTORE": 12,
+    "CREATE2": 2
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": true,
+   "instruction_count": 7396,
+   "matches_predeploy": null
+  },
+  {
+   "file": "c1920f8df6f7635b028c6ab7eeb7334d0033829a.hex",
+   "sha256": "0xc1920f8df6f7635b028c6ab7eeb7334d0033829a49bb9ac8aa578e25ef6a8559",
+   "code_bytes": 6859,
+   "selectors": [
+    "0x0479d644",
+    "0x0a42d500",
+    "0x38bb09c9",
+    "0x413a675f",
+    "0x87ca165a",
+    "0x938de0e6",
+    "0x98d079b0",
+    "0x9af1d35a",
+    "0xc0f36cb0"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALL": 4,
+    "SELFDESTRUCT": 1,
+    "CALLVALUE": 3,
+    "DELEGATECALL": 3,
+    "SSTORE": 4,
+    "CREATE2": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": true,
+   "instruction_count": 3883,
+   "matches_predeploy": null
+  },
+  {
+   "file": "cf7800a7c5b4d600c3519e1804f86d332c1edb52.hex",
+   "sha256": "0xcf7800a7c5b4d600c3519e1804f86d332c1edb5264545fb4b6ccdc6fa8902721",
+   "code_bytes": 10199,
+   "selectors": [
+    "0x01ffc9a7",
+    "0x15270ace",
+    "0x248a9ca3",
+    "0x2bd9b361",
+    "0x2f2ff15d",
+    "0x36568abe",
+    "0x3f4ba83a",
+    "0x562c4784",
+    "0x5c975abb",
+    "0x8456cb59",
+    "0x91d14854",
+    "0xa217fddf",
+    "0xc4d66de8",
+    "0xd547741f",
+    "0xe63ab1e9",
+    "0xf0bd87cc",
+    "0xf3fef3a3",
+    "0xfb1bb9de",
+    "0xffffffff"
+   ],
+   "known_selectors": {
+    "0xf3fef3a3": "withdraw(uint256,uint256)"
+   },
+   "danger_ops": {
+    "CALL": 1,
+    "SELFDESTRUCT": 1,
+    "CALLVALUE": 1,
+    "SSTORE": 9
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": true,
+   "instruction_count": 5137,
+   "matches_predeploy": null
+  },
+  {
+   "file": "e65b9e4c5f3f01d7c376bd450ca68131be341274.hex",
+   "sha256": "0xe65b9e4c5f3f01d7c376bd450ca68131be341274377e7cee8338a5e6744a1bea",
+   "code_bytes": 3774,
+   "selectors": [
+    "0x1688f0b9",
+    "0x2500510e",
+    "0x53e5d935",
+    "0x61b69abd",
+    "0xaddacc0f",
+    "0xd18af54d"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALL": 3,
+    "SELFDESTRUCT": 7,
+    "CALLVALUE": 4,
+    "DELEGATECALL": 2,
+    "SSTORE": 1,
+    "CREATE2": 1,
+    "CREATE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": true,
+   "instruction_count": 2216,
+   "matches_predeploy": null
+  },
+  {
+   "file": "04a1beed9fc38c5cf14cdb68b79301c2efd29c96.hex",
+   "sha256": "0x04a1beed9fc38c5cf14cdb68b79301c2efd29c96ad153f44770cab403206b934",
+   "code_bytes": 11526,
+   "selectors": [
+    "0x01ffc9a7",
+    "0x06fdde03",
+    "0x081812fc",
+    "0x095ea7b3",
+    "0x150b7a02",
+    "0x23b872dd",
+    "0x42842e0e",
+    "0x6352211e",
+    "0x70a08231",
+    "0x860d248a",
+    "0x8da5cb5b",
+    "0x95d89b41",
+    "0xa22cb465",
+    "0xb88d4fde",
+    "0xc87b56dd",
+    "0xd3fc9864",
+    "0xe985e9c5",
+    "0xf2fde38b",
+    "0xf3fe3bc3"
+   ],
+   "known_selectors": {
+    "0x095ea7b3": "approve(address,uint256)",
+    "0x23b872dd": "transferFrom(address,address,uint256)",
+    "0x70a08231": "balanceOf(address)",
+    "0x8da5cb5b": "owner()",
+    "0xf2fde38b": "transferOwnership(address)"
+   },
+   "danger_ops": {
+    "CALL": 1,
+    "CALLVALUE": 2,
+    "SSTORE": 13,
+    "CALLCODE": 1,
+    "ORIGIN": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 5264,
+   "matches_predeploy": null
+  },
+  {
+   "file": "0a361fab579c5cc770578553a1eb560264d056fe.hex",
+   "sha256": "0x0a361fab579c5cc770578553a1eb560264d056feacd9490445ba51a925cd0658",
+   "code_bytes": 24206,
+   "selectors": [
+    "0x1056b992",
+    "0x15eaef6b",
+    "0x3659cfe6",
+    "0x3b2757d1",
+    "0x3ccdbb28",
+    "0x3e4ad34f",
+    "0x41c0e1b5",
+    "0x4f1ef286",
+    "0x715018a6",
+    "0x8da5cb5b",
+    "0x94fbad0b",
+    "0x95851a65",
+    "0x98e4e667",
+    "0xa598ac1d",
+    "0xa771e3e2",
+    "0xc4d66de8",
+    "0xc4ed5340",
+    "0xdad5053d",
+    "0xf2fde38b",
+    "0xffffffff"
+   ],
+   "known_selectors": {
+    "0x3659cfe6": "upgradeTo(address) [proxy]",
+    "0x4f1ef286": "upgradeToAndCall(address,bytes) [proxy]",
+    "0x715018a6": "renounceOwnership()",
+    "0x8da5cb5b": "owner()",
+    "0xf2fde38b": "transferOwnership(address)"
+   },
+   "danger_ops": {
+    "CALL": 5,
+    "CALLVALUE": 18,
+    "COINBASE": 1,
+    "DELEGATECALL": 1,
+    "SSTORE": 39
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 11971,
+   "matches_predeploy": null
+  },
+  {
+   "file": "0a412346ad046a87cdf6fe417f26f3185579a1b1.hex",
+   "sha256": "0x0a412346ad046a87cdf6fe417f26f3185579a1b1ce3af5251048ba0232c56168",
+   "code_bytes": 680,
+   "selectors": [],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALLVALUE": 1,
+    "COINBASE": 1,
+    "DELEGATECALL": 2
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 408,
+   "matches_predeploy": null
+  },
+  {
+   "file": "143cd0876c1815f002b02c031d8910b837b80e30.hex",
+   "sha256": "0x143cd0876c1815f002b02c031d8910b837b80e3081ee81637c953668467b743c",
+   "code_bytes": 2920,
+   "selectors": [
+    "0x0a2df826",
+    "0x3261ccdb",
+    "0x7054b489",
+    "0xe1c7392a",
+    "0xe4b73db2"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALL": 1,
+    "CALLVALUE": 6,
+    "DELEGATECALL": 3,
+    "SSTORE": 2,
+    "CREATE2": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 1573,
+   "matches_predeploy": null
+  },
+  {
+   "file": "15981eda1014174217e16f9da062e2906c5a379b.hex",
+   "sha256": "0x15981eda1014174217e16f9da062e2906c5a379b537dcbde4ef7a9d49e8dc626",
+   "code_bytes": 695,
+   "selectors": [
+    "0x41976e09"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALL": 1,
+    "CALLVALUE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 367,
+   "matches_predeploy": null
+  },
+  {
+   "file": "1aec779d9b470ff06a506c68c38bcb13c8cb9ed1.hex",
+   "sha256": "0x1aec779d9b470ff06a506c68c38bcb13c8cb9ed1b3028917a5827d20772d9af2",
+   "code_bytes": 21967,
+   "selectors": [
+    "0x01f53255",
+    "0x07dfd8fb",
+    "0x0f5287b0",
+    "0x16a04a9d",
+    "0x1a2be4da",
+    "0x1aa63eff",
+    "0x1ff1e286",
+    "0x25394645",
+    "0x2b511375",
+    "0x2c3c02a4",
+    "0x2e1a7d4d",
+    "0x2f3a3d5d",
+    "0x40c10f19",
+    "0x4e487b71",
+    "0x5662d9d8",
+    "0x57a3a13e",
+    "0x5c60da1b",
+    "0x5f854266",
+    "0x6f6e7375",
+    "0x8129fc1c",
+    "0x84acd1bb",
+    "0x9981509f",
+    "0x9a8a0592",
+    "0x9dc29fac",
+    "0xa5799f93",
+    "0xaa4efa5b",
+    "0xad5c4648",
+    "0xad66a5f1",
+    "0xb046223b",
+    "0xb172b222",
+    "0xb96c7e4d",
+    "0xc48fa115",
+    "0xc6878519",
+    "0xd60b347f",
+    "0xe8059810",
+    "0xf1777fd8",
+    "0xf768441f",
+    "0xfbe3c2cd",
+    "0xfbeeacd9",
+    "0xff200cde",
+    "0xffffffff"
+   ],
+   "known_selectors": {
+    "0x2e1a7d4d": "withdraw(uint256) [WETH/MasterChef]",
+    "0x40c10f19": "mint(address,uint256)",
+    "0x5c60da1b": "implementation() [EIP1967]",
+    "0x9dc29fac": "burn(address,uint256)"
+   },
+   "danger_ops": {
+    "CALL": 15,
+    "CALLVALUE": 35,
+    "COINBASE": 2,
+    "DELEGATECALL": 4,
+    "SSTORE": 14,
+    "CREATE2": 1,
+    "CREATE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 13661,
+   "matches_predeploy": null
+  },
+  {
+   "file": "24ca2d7a8936781c51b7aa48d93e6d914337f233.hex",
+   "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+   "code_bytes": 4114,
+   "selectors": [
+    "0x06fdde03",
+    "0x095ea7b3",
+    "0x18160ddd",
+    "0x23b872dd",
+    "0x313ce567",
+    "0x39509351",
+    "0x70a08231",
+    "0x95d89b41",
+    "0xa457c2d7",
+    "0xa9059cbb",
+    "0xdd62ed3e"
+   ],
+   "known_selectors": {
+    "0x095ea7b3": "approve(address,uint256)",
+    "0x23b872dd": "transferFrom(address,address,uint256)",
+    "0x70a08231": "balanceOf(address)",
+    "0xa9059cbb": "transfer(address,uint256)"
+   },
+   "danger_ops": {
+    "CALL": 1,
+    "CALLVALUE": 1,
+    "SSTORE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 1944,
+   "matches_predeploy": null
+  },
+  {
+   "file": "250fab32398706cfb4817f012af9923847c17b29.hex",
+   "sha256": "0x250fab32398706cfb4817f012af9923847c17b297c50e0a47534502ee652b61d",
+   "code_bytes": 23434,
+   "selectors": [
+    "0x01f53255",
+    "0x07dfd8fb",
+    "0x0f509008",
+    "0x0f5287b0",
+    "0x1a2be4da",
+    "0x1c8475e4",
+    "0x1ff1e286",
+    "0x25394645",
+    "0x2b511375",
+    "0x2c3c02a4",
+    "0x2e1a7d4d",
+    "0x2f3a3d5d",
+    "0x40c10f19",
+    "0x4e487b71",
+    "0x5c60da1b",
+    "0x5f854266",
+    "0x739fc8d1",
+    "0x8129fc1c",
+    "0x84acd1bb",
+    "0x9981509f",
+    "0x9a8a0592",
+    "0x9dc29fac",
+    "0xa5799f93",
+    "0xaa4efa5b",
+    "0xad5c4648",
+    "0xad66a5f1",
+    "0xb046223b",
+    "0xb172b222",
+    "0xb96c7e4d",
+    "0xbee9cdfc",
+    "0xc3f511c1",
+    "0xc48fa115",
+    "0xc5a5ebda",
+    "0xc6878519",
+    "0xd56e2e24",
+    "0xd60b347f",
+    "0xe8059810",
+    "0xe89bc401",
+    "0xea63738d",
+    "0xf768441f",
+    "0xfbe3c2cd",
+    "0xfbeeacd9",
+    "0xff200cde",
+    "0xffffffff"
+   ],
+   "known_selectors": {
+    "0x2e1a7d4d": "withdraw(uint256) [WETH/MasterChef]",
+    "0x40c10f19": "mint(address,uint256)",
+    "0x5c60da1b": "implementation() [EIP1967]",
+    "0x9dc29fac": "burn(address,uint256)"
+   },
+   "danger_ops": {
+    "CALL": 14,
+    "CALLVALUE": 39,
+    "COINBASE": 2,
+    "DELEGATECALL": 4,
+    "SSTORE": 14,
+    "CREATE2": 1,
+    "CREATE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 14509,
+   "matches_predeploy": null
+  },
+  {
+   "file": "25bb070fcfc44b8360e183177f91f5d5de8a7c34.hex",
+   "sha256": "0x25bb070fcfc44b8360e183177f91f5d5de8a7c34a22bcb5db90654348ae44980",
+   "code_bytes": 1507,
+   "selectors": [
+    "0x1e73f7b6",
+    "0xaa2ea1e2",
+    "0xb48272cc"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALL": 1,
+    "CALLVALUE": 1,
+    "SSTORE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 971,
+   "matches_predeploy": null
+  },
+  {
+   "file": "27167cecb16adecded38f50a544588ef1b731a77.hex",
+   "sha256": "0x27167cecb16adecded38f50a544588ef1b731a7723583447aa743b6f1ea1b0e4",
+   "code_bytes": 1881,
+   "selectors": [
+    "0x08f28397",
+    "0x1b2ce7f3",
+    "0x204e1c7a",
+    "0x278f7943",
+    "0x3659cfe6",
+    "0x715018a6",
+    "0x7eff275e",
+    "0x8da5cb5b",
+    "0x8f283970",
+    "0x9623609d",
+    "0x99a88ec4",
+    "0xf2fde38b",
+    "0xf3b7dead"
+   ],
+   "known_selectors": {
+    "0x3659cfe6": "upgradeTo(address) [proxy]",
+    "0x715018a6": "renounceOwnership()",
+    "0x8da5cb5b": "owner()",
+    "0x8f283970": "changeAdmin(address)",
+    "0xf2fde38b": "transferOwnership(address)"
+   },
+   "danger_ops": {
+    "CALL": 2,
+    "CALLVALUE": 8,
+    "SSTORE": 2
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 1193,
+   "matches_predeploy": null
+  },
+  {
+   "file": "294b6a8b7a577edd7933458e5fea6294b7aad75e.hex",
+   "sha256": "0x294b6a8b7a577edd7933458e5fea6294b7aad75e668ef89bd10d892a55f3a542",
+   "code_bytes": 6797,
+   "selectors": [
+    "0x3d8d9620",
+    "0x4d60beb1",
+    "0x6fc4b4e5",
+    "0x91c98a2a",
+    "0xdbcd19a2",
+    "0xe2dc85dc",
+    "0xf4f31ede",
+    "0xffd73c4a"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALL": 4,
+    "CALLVALUE": 2,
+    "CREATE2": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 2831,
+   "matches_predeploy": null
+  },
+  {
+   "file": "2b980e710376a09cce04094c8d67ca51bacc8a58.hex",
+   "sha256": "0x2b980e710376a09cce04094c8d67ca51bacc8a585d75a3d36c6d85adee7463b9",
+   "code_bytes": 4703,
+   "selectors": [
+    "0x06fdde03",
+    "0x095ea7b3",
+    "0x18160ddd",
+    "0x23b872dd",
+    "0x313ce567",
+    "0x39509351",
+    "0x70a08231",
+    "0x95d89b41",
+    "0xa457c2d7",
+    "0xa9059cbb",
+    "0xdd62ed3e"
+   ],
+   "known_selectors": {
+    "0x095ea7b3": "approve(address,uint256)",
+    "0x23b872dd": "transferFrom(address,address,uint256)",
+    "0x70a08231": "balanceOf(address)",
+    "0xa9059cbb": "transfer(address,uint256)"
+   },
+   "danger_ops": {
+    "CALLVALUE": 1,
+    "SSTORE": 3
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 2394,
+   "matches_predeploy": null
+  },
+  {
+   "file": "339081325f4f71637fab4dee1e13c1d65db5c0c7.hex",
+   "sha256": "0x339081325f4f71637fab4dee1e13c1d65db5c0c740f37ad78fa21ee007e8cf2f",
+   "code_bytes": 21516,
+   "selectors": [
+    "0x01ffc9a7",
+    "0x0552a3e2",
+    "0x08c379a0",
+    "0x0a4cad6b",
+    "0x0bea593a",
+    "0x0d4202ce",
+    "0x18ad37af",
+    "0x18dca9ba",
+    "0x19550da4",
+    "0x1f927675",
+    "0x1fe065ad",
+    "0x248a9ca3",
+    "0x280d1060",
+    "0x29941edd",
+    "0x2eb4a7ab",
+    "0x2f2ff15d",
+    "0x2f37a774",
+    "0x2fd7d1fd",
+    "0x302ec18f",
+    "0x351f5f3d",
+    "0x36568abe",
+    "0x36877dce",
+    "0x36e02950",
+    "0x3f4ba83a",
+    "0x41da8653",
+    "0x57216320",
+    "0x5c975abb",
+    "0x5d499e82",
+    "0x6022c7ab",
+    "0x6589b168",
+    "0x6b80a04c",
+    "0x6cd83f18",
+    "0x783dc03d",
+    "0x78d894d9",
+    "0x80935aa9",
+    "0x80bd60e8",
+    "0x8270d87b",
+    "0x8456cb59",
+    "0x8cbc762e",
+    "0x8e6f3458",
+    "0x91d14854",
+    "0x94e4cab9",
+    "0x9637f475",
+    "0x96f7cd57",
+    "0x97c9c12f",
+    "0xa155285f",
+    "0xa1b56226",
+    "0xa217fddf",
+    "0xa5770a54",
+    "0xb0dadb7b",
+    "0xb20cd555",
+    "0xb3d27bc5",
+    "0xb52086ee",
+    "0xbab2f552",
+    "0xbacbd7cc",
+    "0xc0c53b8b",
+    "0xc30054c0",
+    "0xc4969815",
+    "0xc6bd6a9a",
+    "0xd12ed897",
+    "0xd547741f",
+    "0xd54dc1ab",
+    "0xd7f269fe",
+    "0xd9dc7fcd",
+    "0xda038baf",
+    "0xdd5b769e",
+    "0xdfcae622",
+    "0xe18b7ac5",
+    "0xe63ab1e9",
+    "0xec8f8f8f",
+    "0xef5d9ae8",
+    "0xef832979",
+    "0xf24a534e",
+    "0xf29588c7",
+    "0xf3fef3a3",
+    "0xf589b63d",
+    "0xfb1bb9de",
+    "0xfd458921",
+    "0xfe0317ef"
+   ],
+   "known_selectors": {
+    "0xf3fef3a3": "withdraw(uint256,uint256)"
+   },
+   "danger_ops": {
+    "CALL": 3,
+    "CALLVALUE": 2,
+    "DELEGATECALL": 1,
+    "SSTORE": 34
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 11893,
+   "matches_predeploy": null
+  },
+  {
+   "file": "34a276c76cd04e4f0fb6ffc1f9e7fb318747dbb0.hex",
+   "sha256": "0x34a276c76cd04e4f0fb6ffc1f9e7fb318747dbb04ee7471dea196267865a673e",
+   "code_bytes": 619,
+   "selectors": [
+    "0x7e896446"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALLVALUE": 1,
+    "SSTORE": 5
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 343,
+   "matches_predeploy": null
+  },
+  {
+   "file": "35a35137a107c5e49e15c9976351cfb9eaba3399.hex",
+   "sha256": "0x35a35137a107c5e49e15c9976351cfb9eaba3399a70b512a3bc8210fc4283fd1",
+   "code_bytes": 1505,
+   "selectors": [
+    "0x29f4acb0",
+    "0xa7731797"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALLVALUE": 1,
+    "SSTORE": 6
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 954,
+   "matches_predeploy": null
+  },
+  {
+   "file": "3ce1293bb4639dcf0c9b80ae4e9586abab5925b4.hex",
+   "sha256": "0x3ce1293bb4639dcf0c9b80ae4e9586abab5925b4fee25a9579bdeda9e3f136c2",
+   "code_bytes": 5346,
+   "selectors": [
+    "0x13e7c9d8",
+    "0x2929abe6",
+    "0x6d44a3b2",
+    "0x715018a6",
+    "0x8da5cb5b",
+    "0xd4b83992",
+    "0xf2fde38b",
+    "0xf3fef3a3",
+    "0xffffffff"
+   ],
+   "known_selectors": {
+    "0x715018a6": "renounceOwnership()",
+    "0x8da5cb5b": "owner()",
+    "0xf2fde38b": "transferOwnership(address)",
+    "0xf3fef3a3": "withdraw(uint256,uint256)"
+   },
+   "danger_ops": {
+    "CALL": 1,
+    "CALLVALUE": 1,
+    "SSTORE": 2
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 2723,
+   "matches_predeploy": null
+  },
+  {
+   "file": "3eeb0392850c5c01b747be4a23076d8409f28242.hex",
+   "sha256": "0x3eeb0392850c5c01b747be4a23076d8409f2824282f1cdda1987f027d9d53414",
+   "code_bytes": 418,
+   "selectors": [
+    "0xb88c9148"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALLVALUE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 235,
+   "matches_predeploy": null
+  },
+  {
+   "file": "3fefecee006b32c72f093872d9accf82ba59785a.hex",
+   "sha256": "0x3fefecee006b32c72f093872d9accf82ba59785aa2ea51b374a08f106c26976b",
+   "code_bytes": 8338,
+   "selectors": [
+    "0x01ffc9a7",
+    "0x248a9ca3",
+    "0x2f2ff15d",
+    "0x36568abe",
+    "0x3f4ba83a",
+    "0x562c4784",
+    "0x5c975abb",
+    "0x8456cb59",
+    "0x91d14854",
+    "0xa217fddf",
+    "0xc4d66de8",
+    "0xd547741f",
+    "0xe63ab1e9",
+    "0xedca3f6f",
+    "0xf0bd87cc",
+    "0xfb1bb9de"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALL": 2,
+    "CALLVALUE": 1,
+    "SSTORE": 9
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 4337,
+   "matches_predeploy": null
+  },
+  {
+   "file": "402e462a2d407c018ffaa2918cf78bcba737a5f1.hex",
+   "sha256": "0x402e462a2d407c018ffaa2918cf78bcba737a5f18a2b498ed4b155b25330f392",
+   "code_bytes": 558,
+   "selectors": [
+    "0xc605f76c"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALLVALUE": 1,
+    "COINBASE": 1,
+    "CALLCODE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 391,
+   "matches_predeploy": null
+  },
+  {
+   "file": "4fe34e3b238b3a7016fcc9158b5a1b016e194377.hex",
+   "sha256": "0x4fe34e3b238b3a7016fcc9158b5a1b016e194377ba22ddbc16c0390bfb906343",
+   "code_bytes": 24437,
+   "selectors": [
+    "0x01f53255",
+    "0x07dfd8fb",
+    "0x0e9ac0d6",
+    "0x0f509008",
+    "0x0f5287b0",
+    "0x178149e7",
+    "0x1a2be4da",
+    "0x1c8475e4",
+    "0x1ff1e286",
+    "0x25394645",
+    "0x2b511375",
+    "0x2c3c02a4",
+    "0x2e1a7d4d",
+    "0x2f3a3d5d",
+    "0x40c10f19",
+    "0x4e454152",
+    "0x4e487b71",
+    "0x5c60da1b",
+    "0x5f854266",
+    "0x64d42b17",
+    "0x6f6e7375",
+    "0x739fc8d1",
+    "0x8129fc1c",
+    "0x84acd1bb",
+    "0x9981509f",
+    "0x9a8a0592",
+    "0x9dc29fac",
+    "0xa5799f93",
+    "0xaa4efa5b",
+    "0xad5c4648",
+    "0xad66a5f1",
+    "0xb046223b",
+    "0xb172b222",
+    "0xb96c7e4d",
+    "0xbee9cdfc",
+    "0xc3f511c1",
+    "0xc48fa115",
+    "0xc5a5ebda",
+    "0xc6878519",
+    "0xcb4cfea8",
+    "0xd56e2e24",
+    "0xd60b347f",
+    "0xe039f224",
+    "0xe8059810",
+    "0xe89bc401",
+    "0xea63738d",
+    "0xf768441f",
+    "0xfbe3c2cd",
+    "0xfbeeacd9",
+    "0xff200cde",
+    "0xffffffff"
+   ],
+   "known_selectors": {
+    "0x2e1a7d4d": "withdraw(uint256) [WETH/MasterChef]",
+    "0x40c10f19": "mint(address,uint256)",
+    "0x5c60da1b": "implementation() [EIP1967]",
+    "0x9dc29fac": "burn(address,uint256)"
+   },
+   "danger_ops": {
+    "CALL": 14,
+    "CALLVALUE": 43,
+    "COINBASE": 2,
+    "DELEGATECALL": 4,
+    "SSTORE": 16,
+    "CREATE2": 1,
+    "CREATE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 15021,
+   "matches_predeploy": null
+  },
+  {
+   "file": "5b8bff324e02136edb0775bd77aa0fe773c1e230.hex",
+   "sha256": "0x5b8bff324e02136edb0775bd77aa0fe773c1e23092305fe63f50a9e92f5b8faf",
+   "code_bytes": 171,
+   "selectors": [],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALLVALUE": 1,
+    "DELEGATECALL": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 66,
+   "matches_predeploy": null
+  },
+  {
+   "file": "5f65870cb01b122cc017ec42797f378dea76cb1d.hex",
+   "sha256": "0x5f65870cb01b122cc017ec42797f378dea76cb1d13d501adde2fb74043dbd239",
+   "code_bytes": 24240,
+   "selectors": [
+    "0x10d61c83",
+    "0x16d82500",
+    "0x30167abe",
+    "0x301bc3a6",
+    "0x3a2ef9df",
+    "0x44c61418",
+    "0x478350a2",
+    "0x481c6a75",
+    "0x48775724",
+    "0x6dcea85f",
+    "0x702f8968",
+    "0x80f55605",
+    "0x8b3d6217",
+    "0x8bc7e8c4",
+    "0x9af1d35a",
+    "0xa275b704",
+    "0xa36a3630",
+    "0xaccac8b6",
+    "0xb2016bd4",
+    "0xc7e41521",
+    "0xc8691afe",
+    "0xd06f317e",
+    "0xd0ebdbe7",
+    "0xd91cfceb",
+    "0xdfafd4fd",
+    "0xe8964b36",
+    "0xe9d8abb1",
+    "0xf9d06485",
+    "0xffffffff"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALL": 1,
+    "CALLVALUE": 1,
+    "SSTORE": 110
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 12422,
+   "matches_predeploy": null
+  },
+  {
+   "file": "61394cb580c416fee638964eccd44a3e991b529d.hex",
+   "sha256": "0x61394cb580c416fee638964eccd44a3e991b529d920516e4bb84cba638ca47c7",
+   "code_bytes": 4558,
+   "selectors": [
+    "0x06fdde03",
+    "0x095ea7b3",
+    "0x18160ddd",
+    "0x23b872dd",
+    "0x313ce567",
+    "0x39509351",
+    "0x3d6c043b",
+    "0x40c10f19",
+    "0x70a08231",
+    "0x8da5cb5b",
+    "0x95d89b41",
+    "0x9a8a0592",
+    "0x9dc29fac",
+    "0xa18cd7c6",
+    "0xa457c2d7",
+    "0xa9059cbb",
+    "0xc71f4615",
+    "0xdd62ed3e"
+   ],
+   "known_selectors": {
+    "0x095ea7b3": "approve(address,uint256)",
+    "0x23b872dd": "transferFrom(address,address,uint256)",
+    "0x40c10f19": "mint(address,uint256)",
+    "0x70a08231": "balanceOf(address)",
+    "0x8da5cb5b": "owner()",
+    "0x9dc29fac": "burn(address,uint256)",
+    "0xa9059cbb": "transfer(address,uint256)"
+   },
+   "danger_ops": {
+    "CALLVALUE": 1,
+    "SSTORE": 18
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 2778,
+   "matches_predeploy": null
+  },
+  {
+   "file": "62f0a7c30a980c8cbc81e0af607fd6f89416b87b.hex",
+   "sha256": "0x62f0a7c30a980c8cbc81e0af607fd6f89416b87b96e94db9434da6e46c52ec97",
+   "code_bytes": 115,
+   "selectors": [
+    "0x5e67164c"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALLVALUE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 61,
+   "matches_predeploy": null
+  },
+  {
+   "file": "6f49b87e0a0e68f7abee92e570346f937481ae4a.hex",
+   "sha256": "0x6f49b87e0a0e68f7abee92e570346f937481ae4a600badb52925588c70d26b50",
+   "code_bytes": 6680,
+   "selectors": [
+    "0x06fdde03",
+    "0x095ea7b3",
+    "0x18160ddd",
+    "0x23b872dd",
+    "0x313ce567",
+    "0x3644e515",
+    "0x39509351",
+    "0x3d6c043b",
+    "0x40c10f19",
+    "0x4e487b71",
+    "0x70a08231",
+    "0x7ecebe00",
+    "0x84b0196e",
+    "0x8da5cb5b",
+    "0x95d89b41",
+    "0x9a8a0592",
+    "0x9dc29fac",
+    "0xa18cd7c6",
+    "0xa457c2d7",
+    "0xa9059cbb",
+    "0xc71f4615",
+    "0xd505accf",
+    "0xdd62ed3e"
+   ],
+   "known_selectors": {
+    "0x095ea7b3": "approve(address,uint256)",
+    "0x23b872dd": "transferFrom(address,address,uint256)",
+    "0x40c10f19": "mint(address,uint256)",
+    "0x70a08231": "balanceOf(address)",
+    "0x8da5cb5b": "owner()",
+    "0x9dc29fac": "burn(address,uint256)",
+    "0xa9059cbb": "transfer(address,uint256)"
+   },
+   "danger_ops": {
+    "CALLVALUE": 1,
+    "SSTORE": 24
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 4070,
+   "matches_predeploy": null
+  },
+  {
+   "file": "7989651a30a71c8a5b7a627a2c0031ce75f39109.hex",
+   "sha256": "0x7989651a30a71c8a5b7a627a2c0031ce75f391092e207ac9608b1b93160ca838",
+   "code_bytes": 367,
+   "selectors": [
+    "0x445df0ac",
+    "0x8da5cb5b",
+    "0xfdacd576"
+   ],
+   "known_selectors": {
+    "0x8da5cb5b": "owner()"
+   },
+   "danger_ops": {
+    "CALLVALUE": 1,
+    "SSTORE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 192,
+   "matches_predeploy": null
+  },
+  {
+   "file": "7c06fdc2cd0327767c03f673206a503f2c1d27af.hex",
+   "sha256": "0x7c06fdc2cd0327767c03f673206a503f2c1d27af8d2826a38c194bbb46f70f17",
+   "code_bytes": 13173,
+   "selectors": [
+    "0x01ffc9a7",
+    "0x0232027e",
+    "0x0552a3e2",
+    "0x08c379a0",
+    "0x0a4cad6b",
+    "0x0bea593a",
+    "0x0d4202ce",
+    "0x18ad37af",
+    "0x18dca9ba",
+    "0x19550da4",
+    "0x1f927675",
+    "0x1fe065ad",
+    "0x248a9ca3",
+    "0x280d1060",
+    "0x29941edd",
+    "0x2eb4a7ab",
+    "0x2f2ff15d",
+    "0x2f37a774",
+    "0x2fd7d1fd",
+    "0x302ec18f",
+    "0x351f5f3d",
+    "0x36568abe",
+    "0x36877dce",
+    "0x36e02950",
+    "0x3f4ba83a",
+    "0x41da8653",
+    "0x57216320",
+    "0x5c975abb",
+    "0x5d499e82",
+    "0x6022c7ab",
+    "0x6589b168",
+    "0x6b80a04c",
+    "0x6cd83f18",
+    "0x783dc03d",
+    "0x78d894d9",
+    "0x80935aa9",
+    "0x80bd60e8",
+    "0x8270d87b",
+    "0x8456cb59",
+    "0x8cbc762e",
+    "0x8e6f3458",
+    "0x91d14854",
+    "0x94e4cab9",
+    "0x9637f475",
+    "0x96f7cd57",
+    "0x97c9c12f",
+    "0xa155285f",
+    "0xa1b56226",
+    "0xa217fddf",
+    "0xa5770a54",
+    "0xa9059cbb",
+    "0xb0dadb7b",
+    "0xb20cd555",
+    "0xb3d27bc5",
+    "0xb52086ee",
+    "0xbab2f552",
+    "0xbacbd7cc",
+    "0xbe4327a6",
+    "0xc0c53b8b",
+    "0xc30054c0",
+    "0xc4969815",
+    "0xc6bd6a9a",
+    "0xd12ed897",
+    "0xd547741f",
+    "0xd54dc1ab",
+    "0xd7f269fe",
+    "0xd9dc7fcd",
+    "0xda038baf",
+    "0xdd5b769e",
+    "0xdfcae622",
+    "0xe18b7ac5",
+    "0xe63ab1e9",
+    "0xec8f8f8f",
+    "0xef5d9ae8",
+    "0xef832979",
+    "0xf24a534e",
+    "0xf29588c7",
+    "0xf3fef3a3",
+    "0xf589b63d",
+    "0xfb1bb9de",
+    "0xfd458921",
+    "0xfe0317ef"
+   ],
+   "known_selectors": {
+    "0xa9059cbb": "transfer(address,uint256)",
+    "0xf3fef3a3": "withdraw(uint256,uint256)"
+   },
+   "danger_ops": {
+    "CALL": 3,
+    "CALLVALUE": 1,
+    "SSTORE": 33
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 7634,
+   "matches_predeploy": null
+  },
+  {
+   "file": "7e512114a43a0dcf2b5f5e7bf23307b52d036f18.hex",
+   "sha256": "0x7e512114a43a0dcf2b5f5e7bf23307b52d036f181ae0fd392579a2c5b2003477",
+   "code_bytes": 1119,
+   "selectors": [
+    "0x4847be6f",
+    "0x4c8c9ea1"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALLVALUE": 1,
+    "CREATE2": 1,
+    "CREATE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 585,
+   "matches_predeploy": null
+  },
+  {
+   "file": "8081d1ffda9f8b03bba1b8aafdc9671051471809.hex",
+   "sha256": "0x8081d1ffda9f8b03bba1b8aafdc9671051471809dbd8a19371864423fc3b1d7f",
+   "code_bytes": 11953,
+   "selectors": [
+    "0x0319e59c",
+    "0x04ca84cf",
+    "0x1a90a219",
+    "0x1cfe7951",
+    "0x2c3c02a4",
+    "0x436f7265",
+    "0x4cf842b5",
+    "0x4fdc60fa",
+    "0x515f3247",
+    "0x5cb8cae2",
+    "0x6606b4e0",
+    "0x875be02a",
+    "0x93df337e",
+    "0x9a8a0592",
+    "0xa0cce1b3",
+    "0xa9e11893",
+    "0xb172b222",
+    "0xb19a437e",
+    "0xc0fd8bde",
+    "0xd60b347f",
+    "0xeb8d3f12",
+    "0xf42bc641",
+    "0xf951975a",
+    "0xfbe3c2cd",
+    "0xffffffff"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALL": 1,
+    "CALLVALUE": 23,
+    "DELEGATECALL": 1,
+    "SSTORE": 10,
+    "ORIGIN": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 7628,
+   "matches_predeploy": null
+  },
+  {
+   "file": "80e69715af92c76a139211d131b6413bf5f05fa4.hex",
+   "sha256": "0x80e69715af92c76a139211d131b6413bf5f05fa49fd237bbbb1f0336f7ba548d",
+   "code_bytes": 21077,
+   "selectors": [
+    "0x01ffc9a7",
+    "0x0552a3e2",
+    "0x08c379a0",
+    "0x0a4cad6b",
+    "0x0bea593a",
+    "0x0d4202ce",
+    "0x18ad37af",
+    "0x18dca9ba",
+    "0x19550da4",
+    "0x1f927675",
+    "0x1fe065ad",
+    "0x248a9ca3",
+    "0x280d1060",
+    "0x29941edd",
+    "0x2eb4a7ab",
+    "0x2f2ff15d",
+    "0x2f37a774",
+    "0x2fd7d1fd",
+    "0x302ec18f",
+    "0x351f5f3d",
+    "0x36568abe",
+    "0x36877dce",
+    "0x36e02950",
+    "0x3f4ba83a",
+    "0x41da8653",
+    "0x57216320",
+    "0x5c975abb",
+    "0x5d499e82",
+    "0x6022c7ab",
+    "0x6589b168",
+    "0x6b80a04c",
+    "0x6cd83f18",
+    "0x783dc03d",
+    "0x78d894d9",
+    "0x80935aa9",
+    "0x80bd60e8",
+    "0x8270d87b",
+    "0x8456cb59",
+    "0x8cbc762e",
+    "0x8e6f3458",
+    "0x91d14854",
+    "0x94e4cab9",
+    "0x9637f475",
+    "0x96f7cd57",
+    "0x97c9c12f",
+    "0xa155285f",
+    "0xa1b56226",
+    "0xa217fddf",
+    "0xa5770a54",
+    "0xb0dadb7b",
+    "0xb20cd555",
+    "0xb3d27bc5",
+    "0xb52086ee",
+    "0xbab2f552",
+    "0xbacbd7cc",
+    "0xc0c53b8b",
+    "0xc30054c0",
+    "0xc4969815",
+    "0xc6bd6a9a",
+    "0xd12ed897",
+    "0xd547741f",
+    "0xd54dc1ab",
+    "0xd7f269fe",
+    "0xd9dc7fcd",
+    "0xda038baf",
+    "0xdd5b769e",
+    "0xdfcae622",
+    "0xe18b7ac5",
+    "0xe63ab1e9",
+    "0xec8f8f8f",
+    "0xef5d9ae8",
+    "0xef832979",
+    "0xf24a534e",
+    "0xf29588c7",
+    "0xf589b63d",
+    "0xfb1bb9de",
+    "0xfd458921",
+    "0xfe0317ef"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALL": 2,
+    "CALLVALUE": 1,
+    "SSTORE": 34
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 11624,
+   "matches_predeploy": null
+  },
+  {
+   "file": "83aa64472acae6fbbada783913a7e093e01f4118.hex",
+   "sha256": "0x83aa64472acae6fbbada783913a7e093e01f4118404a5dbcd0afa4661ae420ff",
+   "code_bytes": 5835,
+   "selectors": [
+    "0x01ffc9a7",
+    "0x03e72858",
+    "0x06fdde03",
+    "0x081812fc",
+    "0x095ea7b3",
+    "0x0a85bd01",
+    "0x23b872dd",
+    "0x3d6c043b",
+    "0x42842e0e",
+    "0x42966c68",
+    "0x5b5e139f",
+    "0x6352211e",
+    "0x70a08231",
+    "0x80ac58cd",
+    "0x8da5cb5b",
+    "0x95d89b41",
+    "0x9a8a0592",
+    "0xa22cb465",
+    "0xb88d4fde",
+    "0xc87b56dd",
+    "0xd3fc9864",
+    "0xe985e9c5"
+   ],
+   "known_selectors": {
+    "0x095ea7b3": "approve(address,uint256)",
+    "0x23b872dd": "transferFrom(address,address,uint256)",
+    "0x42966c68": "burn(uint256)",
+    "0x70a08231": "balanceOf(address)",
+    "0x8da5cb5b": "owner()"
+   },
+   "danger_ops": {
+    "CALL": 1,
+    "CALLVALUE": 1,
+    "SSTORE": 17,
+    "ORIGIN": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 3496,
+   "matches_predeploy": null
+  },
+  {
+   "file": "8b651c1001a702f5c8e74eb9374196f6a7adf992.hex",
+   "sha256": "0x8b651c1001a702f5c8e74eb9374196f6a7adf99229dee9b1454953609657c830",
+   "code_bytes": 4593,
+   "selectors": [
+    "0x06fdde03",
+    "0x095ea7b3",
+    "0x18160ddd",
+    "0x23b872dd",
+    "0x313ce567",
+    "0x39509351",
+    "0x70a08231",
+    "0x871069c0",
+    "0x95d89b41",
+    "0xa457c2d7",
+    "0xa9059cbb",
+    "0xdd62ed3e"
+   ],
+   "known_selectors": {
+    "0x095ea7b3": "approve(address,uint256)",
+    "0x23b872dd": "transferFrom(address,address,uint256)",
+    "0x70a08231": "balanceOf(address)",
+    "0xa9059cbb": "transfer(address,uint256)"
+   },
+   "danger_ops": {
+    "CALL": 1,
+    "CALLVALUE": 1,
+    "SSTORE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 2105,
+   "matches_predeploy": [
+    [
+     "0x0000000000000000000100000000000000000000",
+     "ACA"
+    ],
+    [
+     "0x0000000000000000000100000000000000000001",
+     "AUSD"
+    ],
+    [
+     "0x0000000000000000000100000000000000000002",
+     "DOT"
+    ],
+    [
+     "0x0000000000000000000100000000000000000003",
+     "LDOT"
+    ],
+    [
+     "0x0000000000000000000100000000000000000004",
+     "TAP"
+    ],
+    [
+     "0x0000000000000000000200000000000000000001",
+     "LP_ACA_AUSD"
+    ],
+    [
+     "0x0000000000000000000200000000010000000003",
+     "LP_LDOT_AUSD"
+    ],
+    [
+     "0x000000000000000000020000000001020000000d",
+     "LP_LCDOT_AUSD"
+    ],
+    [
+     "0x000000000000000000020000000002020000000d",
+     "LP_LCDOT_DOT"
+    ],
+    [
+     "0x0000000000000000000200000000000107df96d1",
+     "LP_ACA_USDCET"
+    ],
+    [
+     "0x00000000000000000002000000000301a7fb0045",
+     "LP_LDOT_JITOSOL"
+    ],
+    [
+     "0x00000000000000000002000000000001fa904c86",
+     "LP_ACA_NEMO"
+    ],
+    [
+     "0x0000000000000000000200000000010300000003",
+     "LP_AUSD_IBTC"
+    ],
+    [
+     "0x000000000000000000020000000002030000000a",
+     "LP_DOT_UNQ"
+    ],
+    [
+     "0x0000000000000000000200000000010300000004",
+     "LP_AUSD_INTR"
+    ],
+    [
+     "0x0000000000000000000300000000000000000000",
+     "SA_DOT"
+    ],
+    [
+     "0x0000000000000000000300000000000000000001",
+     "SA_TUSD"
+    ],
+    [
+     "0x000000000000000000040000000000000000000d",
+     "LCDOT_13"
+    ],
+    [
+     "0x0000000000000000000500000000000000000000",
+     "FA_GLMR"
+    ],
+    [
+     "0x0000000000000000000500000000000000000001",
+     "FA_PARA"
+    ],
+    [
+     "0x0000000000000000000500000000000000000002",
+     "FA_ASTR"
+    ],
+    [
+     "0x0000000000000000000500000000000000000003",
+     "FA_IBTC"
+    ],
+    [
+     "0x0000000000000000000500000000000000000004",
+     "FA_INTR"
+    ],
+    [
+     "0x0000000000000000000500000000000000000005",
+     "FA_WBTC"
+    ],
+    [
+     "0x0000000000000000000500000000000000000006",
+     "FA_WETH"
+    ],
+    [
+     "0x0000000000000000000500000000000000000007",
+     "FA_EQ"
+    ],
+    [
+     "0x0000000000000000000500000000000000000008",
+     "FA_EQD"
+    ],
+    [
+     "0x0000000000000000000500000000000000000009",
+     "FA_PHA"
+    ],
+    [
+     "0x000000000000000000050000000000000000000a",
+     "FA_UNQ"
+    ],
+    [
+     "0x000000000000000000050000000000000000000b",
+     "FA_CRU"
+    ],
+    [
+     "0x000000000000000000050000000000000000000c",
+     "FA_USDT"
+    ],
+    [
+     "0x000000000000000000050000000000000000000d",
+     "FA_PINK"
+    ],
+    [
+     "0x000000000000000000050000000000000000000e",
+     "FA_USDC"
+    ],
+    [
+     "0x000000000000000000050000000000000000000f",
+     "FA_CFG"
+    ],
+    [
+     "0x0000000000000000000500000000000000000010",
+     "FA_PDEX"
+    ],
+    [
+     "0x0000000000000000000500000000000000000011",
+     "FA_HDX"
+    ],
+    [
+     "0x0000000000000000000500000000000000000012",
+     "FA_LOVA"
+    ],
+    [
+     "0x0000000000000000000500000000000000000013",
+     "FA_DAMN"
+    ],
+    [
+     "0x0000000000000000000100000000000000000080",
+     "KAR"
+    ],
+    [
+     "0x0000000000000000000100000000000000000081",
+     "KUSD"
+    ],
+    [
+     "0x0000000000000000000100000000000000000082",
+     "KSM"
+    ],
+    [
+     "0x0000000000000000000100000000000000000083",
+     "LKSM"
+    ],
+    [
+     "0x0000000000000000000100000000000000000084",
+     "TAI"
+    ],
+    [
+     "0x00000000000000000001000000000000000000a8",
+     "BNC"
+    ],
+    [
+     "0x00000000000000000001000000000000000000a9",
+     "VSKSM"
+    ],
+    [
+     "0x00000000000000000001000000000000000000aa",
+     "PHA"
+    ],
+    [
+     "0x00000000000000000001000000000000000000ab",
+     "KINT"
+    ],
+    [
+     "0x00000000000000000001000000000000000000ac",
+     "KBTC"
+    ],
+    [
+     "0x0000000000000000000200000000800000000083",
+     "LP_LKSM_KAR"
+    ],
+    [
+     "0x0000000000000000000200000000800300000002",
+     "LP_QTZ_KAR"
+    ],
+    [
+     "0x0000000000000000000200000000800000000082",
+     "LP_KAR_KSM"
+    ],
+    [
+     "0x0000000000000000000200000000820000000083",
+     "LP_LKSM_KSM"
+    ],
+    [
+     "0x0000000000000000000200000000820300000000",
+     "LP_RMRK_KSM"
+    ],
+    [
+     "0x0000000000000000000200000000820300000001",
+     "LP_ARIS_KSM"
+    ],
+    [
+     "0x0000000000000000000200000000800000000081",
+     "LP_KAR_KUSD"
+    ],
+    [
+     "0x0000000000000000000200000000810000000082",
+     "LP_KSM_KUSD"
+    ],
+    [
+     "0x0000000000000000000200000000810000000083",
+     "LP_LKSM_KUSD"
+    ],
+    [
+     "0x00000000000000000002000000008100000000a8",
+     "LP_BNC_KUSD"
+    ],
+    [
+     "0x00000000000000000002000000008100000000aa",
+     "LP_PHA_KUSD"
+    ],
+    [
+     "0x00000000000000000002000000008100000000ab",
+     "LP_KINT_KUSD"
+    ],
+    [
+     "0x00000000000000000002000000008100000000ac",
+     "LP_KBTC_KUSD"
+    ],
+    [
+     "0x0000000000000000000200000000810300000000",
+     "LP_RMRK_KUSD"
+    ],
+    [
+     "0x0000000000000000000200000000810300000002",
+     "LP_QTZ_KUSD"
+    ],
+    [
+     "0x0000000000000000000200000000810300000005",
+     "LP_CSM_KUSD"
+    ],
+    [
+     "0x000000000000000000020000000081030000000c",
+     "LP_AIR_KUSD"
+    ],
+    [
+     "0x0000000000000000000200000000840300000000",
+     "LP_RMRK_TAI"
+    ],
+    [
+     "0x0000000000000000000300000000000000000000",
+     "SA_KSM"
+    ],
+    [
+     "0x0000000000000000000300000000000000000001",
+     "SA_3USD"
+    ],
+    [
+     "0x0000000000000000000500000000000000000000",
+     "FA_RMRK"
+    ],
+    [
+     "0x0000000000000000000500000000000000000001",
+     "FA_ARIS"
+    ],
+    [
+     "0x0000000000000000000500000000000000000002",
+     "FA_QTZ"
+    ],
+    [
+     "0x0000000000000000000500000000000000000003",
+     "FA_MOVR"
+    ],
+    [
+     "0x0000000000000000000500000000000000000004",
+     "FA_HKO"
+    ],
+    [
+     "0x0000000000000000000500000000000000000005",
+     "FA_CSM"
+    ],
+    [
+     "0x0000000000000000000500000000000000000006",
+     "FA_KICO"
+    ],
+    [
+     "0x0000000000000000000500000000000000000007",
+     "FA_USDT"
+    ],
+    [
+     "0x0000000000000000000500000000000000000008",
+     "FA_TEER"
+    ],
+    [
+     "0x0000000000000000000500000000000000000009",
+     "FA_NEER"
+    ],
+    [
+     "0x000000000000000000050000000000000000000a",
+     "FA_KMA"
+    ],
+    [
+     "0x000000000000000000050000000000000000000b",
+     "FA_BSX"
+    ],
+    [
+     "0x000000000000000000050000000000000000000c",
+     "FA_AIR"
+    ],
+    [
+     "0x000000000000000000050000000000000000000d",
+     "FA_CRAB"
+    ],
+    [
+     "0x000000000000000000050000000000000000000e",
+     "FA_GENS"
+    ],
+    [
+     "0x000000000000000000050000000000000000000f",
+     "FA_EQD"
+    ],
+    [
+     "0x0000000000000000000500000000000000000010",
+     "FA_TUR"
+    ],
+    [
+     "0x0000000000000000000500000000000000000011",
+     "FA_PCHU"
+    ],
+    [
+     "0x0000000000000000000500000000000000000012",
+     "FA_SDN"
+    ],
+    [
+     "0x0000000000000000000500000000000000000013",
+     "FA_LT"
+    ],
+    [
+     "0x0000000000000000000500000000000000000014",
+     "FA_LIT"
+    ]
+   ]
+  },
+  {
+   "file": "8beb5af3e90c98fad0a62ce3b501361844c2e76b.hex",
+   "sha256": "0x8beb5af3e90c98fad0a62ce3b501361844c2e76bc2bbebf766713133347488a9",
+   "code_bytes": 18905,
+   "selectors": [
+    "0x06a78673",
+    "0x1820c9b9",
+    "0x26fae0d3",
+    "0x2bac818a",
+    "0x3330dd15",
+    "0x3659cfe6",
+    "0x398d92bb",
+    "0x4f1ef286",
+    "0x66fa1932",
+    "0x715018a6",
+    "0x743a073e",
+    "0x8129fc1c",
+    "0x8bae165b",
+    "0x8da5cb5b",
+    "0xbb941cff",
+    "0xce2092bd",
+    "0xda4fad0d",
+    "0xf2fde38b",
+    "0xff582705",
+    "0xffffffff"
+   ],
+   "known_selectors": {
+    "0x3659cfe6": "upgradeTo(address) [proxy]",
+    "0x4f1ef286": "upgradeToAndCall(address,bytes) [proxy]",
+    "0x715018a6": "renounceOwnership()",
+    "0x8da5cb5b": "owner()",
+    "0xf2fde38b": "transferOwnership(address)"
+   },
+   "danger_ops": {
+    "CALL": 1,
+    "CALLVALUE": 18,
+    "COINBASE": 1,
+    "DELEGATECALL": 1,
+    "SSTORE": 43
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 8888,
+   "matches_predeploy": null
+  },
+  {
+   "file": "903c68ae33370dd87dd9f0321fee047e068154a0.hex",
+   "sha256": "0x903c68ae33370dd87dd9f0321fee047e068154a0141d006363683660b5a4c367",
+   "code_bytes": 4114,
+   "selectors": [
+    "0x06fdde03",
+    "0x095ea7b3",
+    "0x18160ddd",
+    "0x23b872dd",
+    "0x313ce567",
+    "0x39509351",
+    "0x70a08231",
+    "0x95d89b41",
+    "0xa457c2d7",
+    "0xa9059cbb",
+    "0xdd62ed3e"
+   ],
+   "known_selectors": {
+    "0x095ea7b3": "approve(address,uint256)",
+    "0x23b872dd": "transferFrom(address,address,uint256)",
+    "0x70a08231": "balanceOf(address)",
+    "0xa9059cbb": "transfer(address,uint256)"
+   },
+   "danger_ops": {
+    "CALL": 1,
+    "CALLVALUE": 1,
+    "SSTORE": 2
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 1955,
+   "matches_predeploy": null
+  },
+  {
+   "file": "91b59753c3bf22c84343c921183439a2ffcbd611.hex",
+   "sha256": "0x91b59753c3bf22c84343c921183439a2ffcbd6117bd3565ffa0fa274a2737479",
+   "code_bytes": 1398,
+   "selectors": [
+    "0x0232027e",
+    "0xbe4327a6",
+    "0xe0b490f7"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALL": 1,
+    "CALLVALUE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 719,
+   "matches_predeploy": null
+  },
+  {
+   "file": "91f14ec37b11fce93bdfcc5c5381793fc8a427ee.hex",
+   "sha256": "0x91f14ec37b11fce93bdfcc5c5381793fc8a427ee5ccfa2fc697fc9106340b580",
+   "code_bytes": 4116,
+   "selectors": [
+    "0x09bfc8a1",
+    "0x27de9e32",
+    "0x361592d7",
+    "0x5990dc2b",
+    "0x6e373bef",
+    "0x6fd2c80b",
+    "0x7384977d",
+    "0x9940686e",
+    "0xc3e07c04",
+    "0xeaffb3f9"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALL": 4,
+    "CALLVALUE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 2047,
+   "matches_predeploy": [
+    [
+     "0x000000000000000000000000000000000000080b",
+     "EARNING"
+    ]
+   ]
+  },
+  {
+   "file": "94d96c584733d3fd9cc8a7cf15f11a12af8d2af0.hex",
+   "sha256": "0x94d96c584733d3fd9cc8a7cf15f11a12af8d2af04cbb8ad6f354f91f189c8479",
+   "code_bytes": 1818,
+   "selectors": [
+    "0x3e4eb36c",
+    "0x50f9c245",
+    "0xa0712d68",
+    "0xc18290dd",
+    "0xd313f77e",
+    "0xe6aa216c"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALL": 2,
+    "CALLVALUE": 2,
+    "CREATE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 899,
+   "matches_predeploy": [
+    [
+     "0x0000000000000000000000000000000000000805",
+     "HOMA"
+    ]
+   ]
+  },
+  {
+   "file": "9523cbd18853a0bb7fa7bb55e0aff440c6795ac7.hex",
+   "sha256": "0x9523cbd18853a0bb7fa7bb55e0aff440c6795ac720eb63543bb7f5025611d211",
+   "code_bytes": 9658,
+   "selectors": [
+    "0x06fdde03",
+    "0x095ea7b3",
+    "0x18160ddd",
+    "0x23b872dd",
+    "0x313ce567",
+    "0x39509351",
+    "0x638c9763",
+    "0x70a08231",
+    "0x8bff0976",
+    "0x95d89b41",
+    "0xa457c2d7",
+    "0xa9059cbb",
+    "0xc45a0155",
+    "0xdd62ed3e",
+    "0xef80fc2e",
+    "0xffffffff"
+   ],
+   "known_selectors": {
+    "0x095ea7b3": "approve(address,uint256)",
+    "0x23b872dd": "transferFrom(address,address,uint256)",
+    "0x70a08231": "balanceOf(address)",
+    "0xa9059cbb": "transfer(address,uint256)"
+   },
+   "danger_ops": {
+    "CALL": 1,
+    "CALLVALUE": 1,
+    "SSTORE": 18
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 4677,
+   "matches_predeploy": null
+  },
+  {
+   "file": "9998b2bb92bd9857d7f5380cf3c034b7c0ffb18b.hex",
+   "sha256": "0x9998b2bb92bd9857d7f5380cf3c034b7c0ffb18b11c63bd55732b7366b11e510",
+   "code_bytes": 2269,
+   "selectors": [
+    "0x01ffc9a7",
+    "0x150b7a02",
+    "0xa3f4df7e",
+    "0xbc197c81",
+    "0xf23a6e61",
+    "0xffa1ad74"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALLVALUE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 1244,
+   "matches_predeploy": null
+  },
+  {
+   "file": "a380d4af0e31fce4d598140b1fd28971547e4c8b.hex",
+   "sha256": "0xa380d4af0e31fce4d598140b1fd28971547e4c8b6f8c4afd1a2e2bc76d0cdd69",
+   "code_bytes": 19128,
+   "selectors": [
+    "0x01ffc9a7",
+    "0x0552a3e2",
+    "0x0a4cad6b",
+    "0x0bea593a",
+    "0x0d4202ce",
+    "0x18ad37af",
+    "0x18dca9ba",
+    "0x19550da4",
+    "0x1f927675",
+    "0x1fe065ad",
+    "0x248a9ca3",
+    "0x280d1060",
+    "0x29941edd",
+    "0x2eb4a7ab",
+    "0x2f2ff15d",
+    "0x2f37a774",
+    "0x2fd7d1fd",
+    "0x302ec18f",
+    "0x351f5f3d",
+    "0x36568abe",
+    "0x36877dce",
+    "0x36e02950",
+    "0x3f4ba83a",
+    "0x41da8653",
+    "0x57216320",
+    "0x5c975abb",
+    "0x5d499e82",
+    "0x6022c7ab",
+    "0x6589b168",
+    "0x6b80a04c",
+    "0x6cd83f18",
+    "0x783dc03d",
+    "0x78d894d9",
+    "0x80935aa9",
+    "0x80bd60e8",
+    "0x8270d87b",
+    "0x8456cb59",
+    "0x8cbc762e",
+    "0x8e6f3458",
+    "0x91d14854",
+    "0x94e4cab9",
+    "0x9637f475",
+    "0x96f7cd57",
+    "0x97c9c12f",
+    "0xa155285f",
+    "0xa1b56226",
+    "0xa217fddf",
+    "0xa5770a54",
+    "0xb0dadb7b",
+    "0xb20cd555",
+    "0xb3d27bc5",
+    "0xb52086ee",
+    "0xbab2f552",
+    "0xbacbd7cc",
+    "0xc0c53b8b",
+    "0xc30054c0",
+    "0xc4969815",
+    "0xc6bd6a9a",
+    "0xd12ed897",
+    "0xd547741f",
+    "0xd54dc1ab",
+    "0xd7f269fe",
+    "0xd9dc7fcd",
+    "0xda038baf",
+    "0xdd5b769e",
+    "0xdfcae622",
+    "0xe18b7ac5",
+    "0xe63ab1e9",
+    "0xef5d9ae8",
+    "0xf24a534e",
+    "0xf29588c7",
+    "0xf589b63d",
+    "0xfb1bb9de",
+    "0xfd458921",
+    "0xfe0317ef"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALL": 2,
+    "CALLVALUE": 1,
+    "SSTORE": 24
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 10365,
+   "matches_predeploy": null
+  },
+  {
+   "file": "a78747700222d4c4011ffd2e187be15c4d13bc9d.hex",
+   "sha256": "0xa78747700222d4c4011ffd2e187be15c4d13bc9de32304e5f09dc2eeecbf99ec",
+   "code_bytes": 5469,
+   "selectors": [
+    "0x01ffc9a7",
+    "0x0a938567",
+    "0x248a9ca3",
+    "0x29941edd",
+    "0x2f2ff15d",
+    "0x36568abe",
+    "0x3f4ba83a",
+    "0x562c4784",
+    "0x5c975abb",
+    "0x8456cb59",
+    "0x91d14854",
+    "0xa217fddf",
+    "0xc4d66de8",
+    "0xd547741f",
+    "0xdd5b769e",
+    "0xe2c1d954",
+    "0xe63ab1e9",
+    "0xedca3f6f",
+    "0xf0bd87cc",
+    "0xfb1bb9de"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALL": 4,
+    "CALLVALUE": 1,
+    "SSTORE": 7
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 3007,
+   "matches_predeploy": null
+  },
+  {
+   "file": "adc5956e63469178e9829551fd6c09872696e63e.hex",
+   "sha256": "0xadc5956e63469178e9829551fd6c09872696e63ea935afc9c7334e358eabec11",
+   "code_bytes": 418,
+   "selectors": [
+    "0xb88c9148"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALLVALUE": 1,
+    "CREATE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 241,
+   "matches_predeploy": null
+  },
+  {
+   "file": "ae43c5a715b504a27dacda52a4d9a6158e886119.hex",
+   "sha256": "0xae43c5a715b504a27dacda52a4d9a6158e886119abf1d36bceb19f28e9acbb6f",
+   "code_bytes": 23553,
+   "selectors": [
+    "0x01f53255",
+    "0x07dfd8fb",
+    "0x0f509008",
+    "0x0f5287b0",
+    "0x1a2be4da",
+    "0x1c8475e4",
+    "0x1ff1e286",
+    "0x25394645",
+    "0x2b511375",
+    "0x2c3c02a4",
+    "0x2e1a7d4d",
+    "0x2f3a3d5d",
+    "0x40c10f19",
+    "0x4e487b71",
+    "0x5c60da1b",
+    "0x5f854266",
+    "0x739fc8d1",
+    "0x8129fc1c",
+    "0x84acd1bb",
+    "0x9981509f",
+    "0x9a8a0592",
+    "0x9dc29fac",
+    "0xa5799f93",
+    "0xaa4efa5b",
+    "0xad5c4648",
+    "0xad66a5f1",
+    "0xb046223b",
+    "0xb172b222",
+    "0xb96c7e4d",
+    "0xbee9cdfc",
+    "0xc3f511c1",
+    "0xc48fa115",
+    "0xc5a5ebda",
+    "0xc6878519",
+    "0xd56e2e24",
+    "0xd60b347f",
+    "0xe8059810",
+    "0xe89bc401",
+    "0xea63738d",
+    "0xf768441f",
+    "0xfbe3c2cd",
+    "0xfbeeacd9",
+    "0xff200cde",
+    "0xffffffff"
+   ],
+   "known_selectors": {
+    "0x2e1a7d4d": "withdraw(uint256) [WETH/MasterChef]",
+    "0x40c10f19": "mint(address,uint256)",
+    "0x5c60da1b": "implementation() [EIP1967]",
+    "0x9dc29fac": "burn(address,uint256)"
+   },
+   "danger_ops": {
+    "CALL": 14,
+    "CALLVALUE": 39,
+    "COINBASE": 2,
+    "DELEGATECALL": 4,
+    "SSTORE": 14,
+    "CREATE2": 1,
+    "CREATE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 14476,
+   "matches_predeploy": null
+  },
+  {
+   "file": "bfec267c76b2020e94cca62b2b8bad7ee2e3d5e4.hex",
+   "sha256": "0xbfec267c76b2020e94cca62b2b8bad7ee2e3d5e472a70c3200f9b10766632de5",
+   "code_bytes": 3628,
+   "selectors": [
+    "0x091d2788",
+    "0x28bd75ce",
+    "0x3ccfd60b",
+    "0x44a0d68a",
+    "0x529dca32",
+    "0x70a6f5f7",
+    "0x715018a6",
+    "0x8da5cb5b",
+    "0x921b58a9",
+    "0xbcd66f7d",
+    "0xc23ee3c3",
+    "0xd2168b06",
+    "0xda25b725",
+    "0xf2fde38b"
+   ],
+   "known_selectors": {
+    "0x3ccfd60b": "withdraw()",
+    "0x715018a6": "renounceOwnership()",
+    "0x8da5cb5b": "owner()",
+    "0xf2fde38b": "transferOwnership(address)"
+   },
+   "danger_ops": {
+    "CALL": 2,
+    "CALLVALUE": 12,
+    "SSTORE": 8
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 2330,
+   "matches_predeploy": null
+  },
+  {
+   "file": "c1d3e487eea0f1236738fa6bce943ac72aec2407.hex",
+   "sha256": "0xc1d3e487eea0f1236738fa6bce943ac72aec24072b0c47eba1cf5ad69e6c6640",
+   "code_bytes": 6720,
+   "selectors": [
+    "0x1cbdd728",
+    "0x9b7da4cd",
+    "0xb59713bb",
+    "0xb8923b8e",
+    "0xd2c22a5d",
+    "0xe9b07bbf",
+    "0xffffffff"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALL": 3,
+    "CALLVALUE": 2
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 3007,
+   "matches_predeploy": [
+    [
+     "0x0000000000000000000000000000000000000809",
+     "XTOKENS"
+    ]
+   ]
+  },
+  {
+   "file": "c4728fd550b0d72615eae88e3f37e55193ac4dfa.hex",
+   "sha256": "0xc4728fd550b0d72615eae88e3f37e55193ac4dfa5ccbb247d3b7dbc4ce0f8d2c",
+   "code_bytes": 15223,
+   "selectors": [
+    "0x01f53255",
+    "0x01ffc9a7",
+    "0x150b7a02",
+    "0x1a2be4da",
+    "0x1ff1e286",
+    "0x25394645",
+    "0x2b511375",
+    "0x2c3c02a4",
+    "0x2f3a3d5d",
+    "0x34ff2619",
+    "0x3ca64826",
+    "0x42842e0e",
+    "0x42966c68",
+    "0x4e487b71",
+    "0x5b5e139f",
+    "0x5c60da1b",
+    "0x8129fc1c",
+    "0x84acd1bb",
+    "0x9a8a0592",
+    "0xa5799f93",
+    "0xaa4efa5b",
+    "0xad66a5f1",
+    "0xb172b222",
+    "0xc6878519",
+    "0xc96616e1",
+    "0xd60b347f",
+    "0xe6a853e0",
+    "0xfbe3c2cd",
+    "0xfbeeacd9",
+    "0xffffffff"
+   ],
+   "known_selectors": {
+    "0x42966c68": "burn(uint256)",
+    "0x5c60da1b": "implementation() [EIP1967]"
+   },
+   "danger_ops": {
+    "CALL": 5,
+    "CALLVALUE": 24,
+    "COINBASE": 2,
+    "DELEGATECALL": 4,
+    "SSTORE": 13,
+    "CREATE2": 1,
+    "CREATE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 9441,
+   "matches_predeploy": null
+  },
+  {
+   "file": "cb4972c169c335867e5b73e2f7790ba4765357b6.hex",
+   "sha256": "0xcb4972c169c335867e5b73e2f7790ba4765357b6561f6efdb8476ab4de29bdbd",
+   "code_bytes": 4585,
+   "selectors": [
+    "0x06fdde03",
+    "0x095ea7b3",
+    "0x18160ddd",
+    "0x23b872dd",
+    "0x313ce567",
+    "0x39509351",
+    "0x3d6c043b",
+    "0x40c10f19",
+    "0x70a08231",
+    "0x8da5cb5b",
+    "0x95d89b41",
+    "0x9a8a0592",
+    "0x9dc29fac",
+    "0xa18cd7c6",
+    "0xa457c2d7",
+    "0xa9059cbb",
+    "0xc71f4615",
+    "0xdd62ed3e"
+   ],
+   "known_selectors": {
+    "0x095ea7b3": "approve(address,uint256)",
+    "0x23b872dd": "transferFrom(address,address,uint256)",
+    "0x40c10f19": "mint(address,uint256)",
+    "0x70a08231": "balanceOf(address)",
+    "0x8da5cb5b": "owner()",
+    "0x9dc29fac": "burn(address,uint256)",
+    "0xa9059cbb": "transfer(address,uint256)"
+   },
+   "danger_ops": {
+    "CALLVALUE": 1,
+    "SSTORE": 18
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 2790,
+   "matches_predeploy": null
+  },
+  {
+   "file": "cc39e9185b2faa6d6912f0a048a8ee2d77365388.hex",
+   "sha256": "0xcc39e9185b2faa6d6912f0a048a8ee2d773653886cc1aaf025098c74b27a3d80",
+   "code_bytes": 10434,
+   "selectors": [
+    "0x01ffc9a7",
+    "0x06fdde03",
+    "0x095ea7b3",
+    "0x18160ddd",
+    "0x23b872dd",
+    "0x248a9ca3",
+    "0x2f2ff15d",
+    "0x313ce567",
+    "0x36568abe",
+    "0x39509351",
+    "0x3f4ba83a",
+    "0x40c10f19",
+    "0x42966c68",
+    "0x5c975abb",
+    "0x70a08231",
+    "0x79cc6790",
+    "0x8456cb59",
+    "0x91d14854",
+    "0x95d89b41",
+    "0xa217fddf",
+    "0xa457c2d7",
+    "0xa9059cbb",
+    "0xd5391393",
+    "0xd547741f",
+    "0xdd62ed3e",
+    "0xe63ab1e9"
+   ],
+   "known_selectors": {
+    "0x095ea7b3": "approve(address,uint256)",
+    "0x23b872dd": "transferFrom(address,address,uint256)",
+    "0x40c10f19": "mint(address,uint256)",
+    "0x42966c68": "burn(uint256)",
+    "0x70a08231": "balanceOf(address)",
+    "0xa9059cbb": "transfer(address,uint256)"
+   },
+   "danger_ops": {
+    "CALLVALUE": 1,
+    "SSTORE": 11
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 5046,
+   "matches_predeploy": null
+  },
+  {
+   "file": "d1656ea73fff4281ecab881dc363c91cfc7e01a6.hex",
+   "sha256": "0xd1656ea73fff4281ecab881dc363c91cfc7e01a63e957fb20e362d08adbaffda",
+   "code_bytes": 665,
+   "selectors": [
+    "0x3bfa0638"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALLVALUE": 2,
+    "SSTORE": 6,
+    "CREATE2": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 380,
+   "matches_predeploy": null
+  },
+  {
+   "file": "d3eed4db5c0d0fec871c45e44d4117f0417bf696.hex",
+   "sha256": "0xd3eed4db5c0d0fec871c45e44d4117f0417bf696dd73274539645a837a0bd175",
+   "code_bytes": 11211,
+   "selectors": [
+    "0x01ffc9a7",
+    "0x06fdde03",
+    "0x081812fc",
+    "0x095ea7b3",
+    "0x150b7a02",
+    "0x23b872dd",
+    "0x42842e0e",
+    "0x6352211e",
+    "0x70a08231",
+    "0x95d89b41",
+    "0xa22cb465",
+    "0xb88d4fde",
+    "0xc87b56dd",
+    "0xe985e9c5",
+    "0xeacabe14"
+   ],
+   "known_selectors": {
+    "0x095ea7b3": "approve(address,uint256)",
+    "0x23b872dd": "transferFrom(address,address,uint256)",
+    "0x70a08231": "balanceOf(address)"
+   },
+   "danger_ops": {
+    "CALL": 1,
+    "CALLVALUE": 1,
+    "SSTORE": 13
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 5616,
+   "matches_predeploy": null
+  },
+  {
+   "file": "d5335c57eeffe55daac50aba65fe52262a3f40d8.hex",
+   "sha256": "0xd5335c57eeffe55daac50aba65fe52262a3f40d8e278152626f9e54abf3870d7",
+   "code_bytes": 23324,
+   "selectors": [
+    "0x01f53255",
+    "0x07dfd8fb",
+    "0x0f509008",
+    "0x0f5287b0",
+    "0x1a2be4da",
+    "0x1c8475e4",
+    "0x1ff1e286",
+    "0x25394645",
+    "0x2b511375",
+    "0x2c3c02a4",
+    "0x2e1a7d4d",
+    "0x2f3a3d5d",
+    "0x40c10f19",
+    "0x4e487b71",
+    "0x5c60da1b",
+    "0x5f854266",
+    "0x739fc8d1",
+    "0x8129fc1c",
+    "0x84acd1bb",
+    "0x9981509f",
+    "0x9a8a0592",
+    "0x9dc29fac",
+    "0xa5799f93",
+    "0xaa4efa5b",
+    "0xad5c4648",
+    "0xad66a5f1",
+    "0xb046223b",
+    "0xb172b222",
+    "0xb96c7e4d",
+    "0xbee9cdfc",
+    "0xc3f511c1",
+    "0xc48fa115",
+    "0xc5a5ebda",
+    "0xc6878519",
+    "0xd56e2e24",
+    "0xd60b347f",
+    "0xe8059810",
+    "0xe89bc401",
+    "0xea63738d",
+    "0xf768441f",
+    "0xfbe3c2cd",
+    "0xfbeeacd9",
+    "0xff200cde",
+    "0xffffffff"
+   ],
+   "known_selectors": {
+    "0x2e1a7d4d": "withdraw(uint256) [WETH/MasterChef]",
+    "0x40c10f19": "mint(address,uint256)",
+    "0x5c60da1b": "implementation() [EIP1967]",
+    "0x9dc29fac": "burn(address,uint256)"
+   },
+   "danger_ops": {
+    "CALL": 14,
+    "CALLVALUE": 39,
+    "COINBASE": 2,
+    "DELEGATECALL": 4,
+    "SSTORE": 14,
+    "CREATE2": 1,
+    "CREATE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 14461,
+   "matches_predeploy": null
+  },
+  {
+   "file": "dbb754201ae18db6bf9ae6a8c699054b4cabeab6.hex",
+   "sha256": "0xdbb754201ae18db6bf9ae6a8c699054b4cabeab6cb73fda9b9b0b7a0e6de070d",
+   "code_bytes": 3692,
+   "selectors": [
+    "0x0720ad71",
+    "0x10b8087f",
+    "0x2b4b3abb",
+    "0x6ccf80da",
+    "0x6ff45b8b",
+    "0xa4a7ade2"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALL": 3,
+    "CALLVALUE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 1858,
+   "matches_predeploy": [
+    [
+     "0x0000000000000000000000000000000000000808",
+     "INCENTIVES"
+    ]
+   ]
+  },
+  {
+   "file": "ddb8c321cc53729afecb2dcd07cecb4530089b07.hex",
+   "sha256": "0xddb8c321cc53729afecb2dcd07cecb4530089b079cb764539ce880673faa0a97",
+   "code_bytes": 23716,
+   "selectors": [
+    "0x01f53255",
+    "0x07dfd8fb",
+    "0x0f509008",
+    "0x0f5287b0",
+    "0x178149e7",
+    "0x1a2be4da",
+    "0x1c8475e4",
+    "0x1ff1e286",
+    "0x25394645",
+    "0x2b511375",
+    "0x2c3c02a4",
+    "0x2e1a7d4d",
+    "0x2f3a3d5d",
+    "0x40c10f19",
+    "0x4e487b71",
+    "0x5c60da1b",
+    "0x5f854266",
+    "0x64d42b17",
+    "0x739fc8d1",
+    "0x8129fc1c",
+    "0x84acd1bb",
+    "0x9981509f",
+    "0x9a8a0592",
+    "0x9dc29fac",
+    "0xa5799f93",
+    "0xaa4efa5b",
+    "0xad5c4648",
+    "0xad66a5f1",
+    "0xb046223b",
+    "0xb172b222",
+    "0xb96c7e4d",
+    "0xbee9cdfc",
+    "0xc3f511c1",
+    "0xc48fa115",
+    "0xc5a5ebda",
+    "0xc6878519",
+    "0xcb4cfea8",
+    "0xd56e2e24",
+    "0xd60b347f",
+    "0xe039f224",
+    "0xe8059810",
+    "0xe89bc401",
+    "0xea63738d",
+    "0xf768441f",
+    "0xfbe3c2cd",
+    "0xfbeeacd9",
+    "0xff200cde",
+    "0xffffffff"
+   ],
+   "known_selectors": {
+    "0x2e1a7d4d": "withdraw(uint256) [WETH/MasterChef]",
+    "0x40c10f19": "mint(address,uint256)",
+    "0x5c60da1b": "implementation() [EIP1967]",
+    "0x9dc29fac": "burn(address,uint256)"
+   },
+   "danger_ops": {
+    "CALL": 14,
+    "CALLVALUE": 43,
+    "COINBASE": 3,
+    "DELEGATECALL": 4,
+    "SSTORE": 14,
+    "CREATE2": 1,
+    "CREATE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 14732,
+   "matches_predeploy": null
+  },
+  {
+   "file": "e02c3b1c62d379f094294b024f437c87530d9cad.hex",
+   "sha256": "0xe02c3b1c62d379f094294b024f437c87530d9cada35f200d8d0ba75533daf47d",
+   "code_bytes": 19944,
+   "selectors": [
+    "0x01f53255",
+    "0x07dfd8fb",
+    "0x0f5287b0",
+    "0x1a2be4da",
+    "0x1ff1e286",
+    "0x25394645",
+    "0x2b511375",
+    "0x2c3c02a4",
+    "0x2e1a7d4d",
+    "0x2f3a3d5d",
+    "0x40c10f19",
+    "0x4e487b71",
+    "0x5c60da1b",
+    "0x5f854266",
+    "0x70a08231",
+    "0x8129fc1c",
+    "0x84acd1bb",
+    "0x9981509f",
+    "0x9a8a0592",
+    "0x9dc29fac",
+    "0xa5799f93",
+    "0xaa4efa5b",
+    "0xad5c4648",
+    "0xad66a5f1",
+    "0xb046223b",
+    "0xb172b222",
+    "0xb96c7e4d",
+    "0xc48fa115",
+    "0xc6878519",
+    "0xd60b347f",
+    "0xe8059810",
+    "0xf768441f",
+    "0xfbe3c2cd",
+    "0xfbeeacd9",
+    "0xff200cde",
+    "0xffffffff"
+   ],
+   "known_selectors": {
+    "0x2e1a7d4d": "withdraw(uint256) [WETH/MasterChef]",
+    "0x40c10f19": "mint(address,uint256)",
+    "0x5c60da1b": "implementation() [EIP1967]",
+    "0x70a08231": "balanceOf(address)",
+    "0x9dc29fac": "burn(address,uint256)"
+   },
+   "danger_ops": {
+    "CALL": 14,
+    "CALLVALUE": 32,
+    "COINBASE": 2,
+    "DELEGATECALL": 4,
+    "SSTORE": 12,
+    "CREATE2": 1,
+    "CREATE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 12306,
+   "matches_predeploy": null
+  },
+  {
+   "file": "e0af82ad2e5188285db8ba0b2ae054d13f0fd4fe.hex",
+   "sha256": "0xe0af82ad2e5188285db8ba0b2ae054d13f0fd4fe325c48c7f2dace48454404b9",
+   "code_bytes": 69,
+   "selectors": [],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALLVALUE": 1,
+    "CREATE2": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 32,
+   "matches_predeploy": null
+  },
+  {
+   "file": "e2a822aaa2933f57a5dfe39e427bdcd2a81d945d.hex",
+   "sha256": "0xe2a822aaa2933f57a5dfe39e427bdcd2a81d945d21358cb5fc017052294b36c9",
+   "code_bytes": 850,
+   "selectors": [
+    "0x1c5fb211"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALL": 1,
+    "CALLVALUE": 1,
+    "DELEGATECALL": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 521,
+   "matches_predeploy": null
+  },
+  {
+   "file": "e6443eb13d03fc7e01cbd3718d1d42692cff8833.hex",
+   "sha256": "0xe6443eb13d03fc7e01cbd3718d1d42692cff8833ecc1a7b7ac8ebef085f6a6b1",
+   "code_bytes": 966,
+   "selectors": [
+    "0x0a1028c4",
+    "0x85a5affe",
+    "0xffffffff"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALLVALUE": 1,
+    "SSTORE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 602,
+   "matches_predeploy": null
+  },
+  {
+   "file": "e6e3b3259192682bf9cb41d85764a60b94de49dd.hex",
+   "sha256": "0xe6e3b3259192682bf9cb41d85764a60b94de49dd1665ead32289dafc6160d151",
+   "code_bytes": 15725,
+   "selectors": [
+    "0x01f53255",
+    "0x01ffc9a7",
+    "0x150b7a02",
+    "0x1a2be4da",
+    "0x1ff1e286",
+    "0x25394645",
+    "0x2b511375",
+    "0x2c3c02a4",
+    "0x2f3a3d5d",
+    "0x34ff2619",
+    "0x3ca64826",
+    "0x42842e0e",
+    "0x42966c68",
+    "0x4e487b71",
+    "0x5b5e139f",
+    "0x5c60da1b",
+    "0x739fc8d1",
+    "0x8129fc1c",
+    "0x84acd1bb",
+    "0x9a8a0592",
+    "0xa5799f93",
+    "0xaa4efa5b",
+    "0xad66a5f1",
+    "0xb172b222",
+    "0xc6878519",
+    "0xc96616e1",
+    "0xd60b347f",
+    "0xe6a853e0",
+    "0xfbe3c2cd",
+    "0xfbeeacd9",
+    "0xffffffff"
+   ],
+   "known_selectors": {
+    "0x42966c68": "burn(uint256)",
+    "0x5c60da1b": "implementation() [EIP1967]"
+   },
+   "danger_ops": {
+    "CALL": 6,
+    "CALLVALUE": 26,
+    "COINBASE": 2,
+    "DELEGATECALL": 4,
+    "SSTORE": 14,
+    "CREATE2": 1,
+    "CREATE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 9742,
+   "matches_predeploy": null
+  },
+  {
+   "file": "ecf2ae7de6ba2b72f437c50775cfcd8e97b81e6a.hex",
+   "sha256": "0xecf2ae7de6ba2b72f437c50775cfcd8e97b81e6a6abd0de73bfcf5874f454669",
+   "code_bytes": 3522,
+   "selectors": [
+    "0x46e368d4",
+    "0x5c60da1b",
+    "0x715018a6",
+    "0x8da5cb5b",
+    "0x94d1dd93",
+    "0xbcead63e",
+    "0xf2fde38b",
+    "0xf77c4791"
+   ],
+   "known_selectors": {
+    "0x5c60da1b": "implementation() [EIP1967]",
+    "0x715018a6": "renounceOwnership()",
+    "0x8da5cb5b": "owner()",
+    "0xf2fde38b": "transferOwnership(address)"
+   },
+   "danger_ops": {
+    "CALL": 1,
+    "CALLVALUE": 1,
+    "SSTORE": 2,
+    "CALLCODE": 1,
+    "CREATE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 1715,
+   "matches_predeploy": null
+  },
+  {
+   "file": "eec6894136b0ea9a5dabd2d1873e5bf079569176.hex",
+   "sha256": "0xeec6894136b0ea9a5dabd2d1873e5bf079569176f0f540b5543484877b0f90f4",
+   "code_bytes": 5492,
+   "selectors": [
+    "0x01ffc9a7",
+    "0x0a1028c4",
+    "0x150b7a02",
+    "0x1626ba7e",
+    "0x20c13b0b",
+    "0x6ac24784",
+    "0xa3f4df7e",
+    "0xb2494df3",
+    "0xbc197c81",
+    "0xbd61951d",
+    "0xf23a6e61",
+    "0xffa1ad74",
+    "0xffffffff"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALL": 1,
+    "CALLVALUE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 3407,
+   "matches_predeploy": null
+  },
+  {
+   "file": "f473ff69489120cc796991483e089ed25d718f7c.hex",
+   "sha256": "0xf473ff69489120cc796991483e089ed25d718f7c806e5a4a86363c05bb0e04b0",
+   "code_bytes": 1050,
+   "selectors": [
+    "0x34a5fcd4"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALLVALUE": 2,
+    "SSTORE": 7
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 661,
+   "matches_predeploy": null
+  },
+  {
+   "file": "f88f18e3b7d78f9db72cfdf88e452c8df211eb8c.hex",
+   "sha256": "0xf88f18e3b7d78f9db72cfdf88e452c8df211eb8c817fe05ebdc20245588d4f47",
+   "code_bytes": 19911,
+   "selectors": [
+    "0x07ca744f",
+    "0x1056b992",
+    "0x2720f0c3",
+    "0x2cfa4c75",
+    "0x3659cfe6",
+    "0x3b2757d1",
+    "0x3c242b2a",
+    "0x4c9e8ba4",
+    "0x4f1ef286",
+    "0x68c21861",
+    "0x6f307c6e",
+    "0x715018a6",
+    "0x78703642",
+    "0x8129fc1c",
+    "0x88cc58e4",
+    "0x8ba0f2ed",
+    "0x8da5cb5b",
+    "0x93ed0d13",
+    "0xa0bf835d",
+    "0xb9e2bea0",
+    "0xba4102ee",
+    "0xbd252fa8",
+    "0xbf7b76fc",
+    "0xdd684085",
+    "0xe1b5c6fe",
+    "0xe53173ec",
+    "0xf2fde38b",
+    "0xf35ed9a2",
+    "0xf384cf15",
+    "0xf7f4b453",
+    "0xff582705",
+    "0xffbf80e3",
+    "0xffffffff"
+   ],
+   "known_selectors": {
+    "0x3659cfe6": "upgradeTo(address) [proxy]",
+    "0x4f1ef286": "upgradeToAndCall(address,bytes) [proxy]",
+    "0x715018a6": "renounceOwnership()",
+    "0x8da5cb5b": "owner()",
+    "0xf2fde38b": "transferOwnership(address)"
+   },
+   "danger_ops": {
+    "CALL": 6,
+    "CALLVALUE": 29,
+    "COINBASE": 1,
+    "DELEGATECALL": 1,
+    "SSTORE": 46
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 9943,
+   "matches_predeploy": null
+  },
+  {
+   "file": "f97f3f41117ee04750241832afa134e7f84cba9d.hex",
+   "sha256": "0xf97f3f41117ee04750241832afa134e7f84cba9deca0e3fe9b0de3e033ae36de",
+   "code_bytes": 2570,
+   "selectors": [
+    "0x0a4cad6b",
+    "0x0bea593a",
+    "0x18ad37af",
+    "0x18dca9ba",
+    "0x19550da4",
+    "0x1f927675",
+    "0x280d1060",
+    "0x2fd7d1fd",
+    "0x351f5f3d",
+    "0x36e02950",
+    "0x41da8653",
+    "0x5d499e82",
+    "0x6022c7ab",
+    "0x6b80a04c",
+    "0x6cd83f18",
+    "0x783dc03d",
+    "0x80935aa9",
+    "0x80bd60e8",
+    "0xa1b56226",
+    "0xa5770a54",
+    "0xb0dadb7b",
+    "0xb3d27bc5",
+    "0xbacbd7cc",
+    "0xc30054c0",
+    "0xc4969815",
+    "0xc6bd6a9a",
+    "0xd54dc1ab",
+    "0xd7f269fe",
+    "0xd9dc7fcd",
+    "0xe0b490f7",
+    "0xe18b7ac5",
+    "0xf24a534e",
+    "0xf29588c7",
+    "0xf589b63d",
+    "0xfd458921"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALLVALUE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 1444,
+   "matches_predeploy": null
+  },
+  {
+   "file": "f9a56d7ae41077dc875c190a28339b24055de18c.hex",
+   "sha256": "0xf9a56d7ae41077dc875c190a28339b24055de18c56c2ac0cde5c5f841c1bfe85",
+   "code_bytes": 5034,
+   "selectors": [
+    "0x06fdde03",
+    "0x095ea7b3",
+    "0x18160ddd",
+    "0x23b872dd",
+    "0x313ce567",
+    "0x39509351",
+    "0x70a08231",
+    "0x95d89b41",
+    "0xa457c2d7",
+    "0xa9059cbb",
+    "0xdd62ed3e"
+   ],
+   "known_selectors": {
+    "0x095ea7b3": "approve(address,uint256)",
+    "0x23b872dd": "transferFrom(address,address,uint256)",
+    "0x70a08231": "balanceOf(address)",
+    "0xa9059cbb": "transfer(address,uint256)"
+   },
+   "danger_ops": {
+    "CALL": 1,
+    "CALLVALUE": 1,
+    "SSTORE": 3
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 2477,
+   "matches_predeploy": null
+  },
+  {
+   "file": "fa56a12676aa553619a5af559016d425124c6e53.hex",
+   "sha256": "0xfa56a12676aa553619a5af559016d425124c6e5343d775d04920b8db1a8e2383",
+   "code_bytes": 3622,
+   "selectors": [
+    "0x06ad1355",
+    "0x541333f8",
+    "0x68a18855",
+    "0x6e043998",
+    "0x6e0e540c",
+    "0x710f50ff",
+    "0xa23e8b82",
+    "0xb6cbb1a8",
+    "0xcfbd33d7",
+    "0xe3be1f49"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALL": 4,
+    "CALLVALUE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 1631,
+   "matches_predeploy": null
+  },
+  {
+   "file": "fb48494f60c4eb969ebf6b54ec4e56b4f46775a7.hex",
+   "sha256": "0xfb48494f60c4eb969ebf6b54ec4e56b4f46775a7a1f32a710824212a6d06a064",
+   "code_bytes": 944,
+   "selectors": [
+    "0xc987336c"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALLVALUE": 1,
+    "DELEGATECALL": 1,
+    "SSTORE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 514,
+   "matches_predeploy": null
+  },
+  {
+   "file": "31b6a3c8e559684c35f83fa8f8e20e7cc2839e93.hex",
+   "sha256": "0x31b6a3c8e559684c35f83fa8f8e20e7cc2839e93a97b06ba9056e1e0406b47ec",
+   "code_bytes": 680,
+   "selectors": [],
+   "known_selectors": {},
+   "danger_ops": {
+    "COINBASE": 1,
+    "DELEGATECALL": 2
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 396,
+   "matches_predeploy": null
+  },
+  {
+   "file": "345a7cdcc46034e720ca178abc8cd64e557cfa1d.hex",
+   "sha256": "0x345a7cdcc46034e720ca178abc8cd64e557cfa1d2d9b0460a761665373e46cc0",
+   "code_bytes": 1435,
+   "selectors": [
+    "0x0f8902a0",
+    "0xd2fd1312"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALL": 2
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 844,
+   "matches_predeploy": null
+  },
+  {
+   "file": "64bb325386b13ad57f930440002c3820cdcf45cf.hex",
+   "sha256": "0x64bb325386b13ad57f930440002c3820cdcf45cf15bdb85a3a82031e3f1cf05e",
+   "code_bytes": 831,
+   "selectors": [
+    "0xffffffff"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALL": 1,
+    "COINBASE": 1,
+    "DELEGATECALL": 2
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 513,
+   "matches_predeploy": null
+  },
+  {
+   "file": "6c634456490781430a60070df5b905d9aa8ec4b0.hex",
+   "sha256": "0x6c634456490781430a60070df5b905d9aa8ec4b0c8a152d0f836ab11b0a695d6",
+   "code_bytes": 680,
+   "selectors": [],
+   "known_selectors": {},
+   "danger_ops": {
+    "COINBASE": 1,
+    "DELEGATECALL": 2
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 428,
+   "matches_predeploy": null
+  },
+  {
+   "file": "6d6008ecad712446b9e578d343f9558159bbc4e3.hex",
+   "sha256": "0x6d6008ecad712446b9e578d343f9558159bbc4e303ea5724749520b841ab8e7c",
+   "code_bytes": 629,
+   "selectors": [
+    "0x8d80ff0a"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALL": 1,
+    "DELEGATECALL": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 348,
+   "matches_predeploy": null
+  },
+  {
+   "file": "9be28ce198f1732867140d9a7425494c3a48e978.hex",
+   "sha256": "0x9be28ce198f1732867140d9a7425494c3a48e9785839c1104b275d2458ceefac",
+   "code_bytes": 410,
+   "selectors": [
+    "0x8d80ff0a"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "CALL": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 290,
+   "matches_predeploy": null
+  },
+  {
+   "file": "ca645c31b4289f7fb61e45ce217d671098e18da6.hex",
+   "sha256": "0xca645c31b4289f7fb61e45ce217d671098e18da68c71adacf799f9ae9a255db1",
+   "code_bytes": 680,
+   "selectors": [],
+   "known_selectors": {},
+   "danger_ops": {
+    "COINBASE": 1,
+    "DELEGATECALL": 2,
+    "CREATE": 1
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 413,
+   "matches_predeploy": null
+  },
+  {
+   "file": "e60f3bea7fe46bf988e324b1da961e7bfa2111ed.hex",
+   "sha256": "0xe60f3bea7fe46bf988e324b1da961e7bfa2111eda5fb3c329d5b965daefb7bba",
+   "code_bytes": 831,
+   "selectors": [
+    "0xffffffff"
+   ],
+   "known_selectors": {},
+   "danger_ops": {
+    "COINBASE": 1,
+    "DELEGATECALL": 2
+   },
+   "origin_auth_suspicious": false,
+   "delegatecall_dynamic_target": false,
+   "selfdestruct": false,
+   "instruction_count": 522,
+   "matches_predeploy": null
+  }
+ ],
+ "errors": [],
+ "unique_bytecodes": 85,
+ "suspicious_top20": [
+  {
+   "sha256": "0xf493237b9d26fcb9d47fc3685d30e1e17c8302b5d84071394e77642cfa14cfcb",
+   "score": 105,
+   "bytes": 2141,
+   "known": {
+    "0x3659cfe6": "upgradeTo(address) [proxy]",
+    "0x4f1ef286": "upgradeToAndCall(address,bytes) [proxy]",
+    "0x5c60da1b": "implementation() [EIP1967]",
+    "0x8f283970": "changeAdmin(address)"
+   },
+   "origin_auth": false,
+   "delegate_dynamic": true
+  },
+  {
+   "sha256": "0x2c242392114e17787f9b23e6cbbab269d734c5483753277932545332f4d77afb",
+   "score": 85,
+   "bytes": 22958,
+   "known": {},
+   "origin_auth": true,
+   "delegate_dynamic": false
+  },
+  {
+   "sha256": "0x382183ad763afbcc7f7728a6dbd6fd51b46843b0e1ebdc33a0def6e7939f4aa2",
+   "score": 85,
+   "bytes": 23800,
+   "known": {},
+   "origin_auth": true,
+   "delegate_dynamic": false
+  },
+  {
+   "sha256": "0x0ee1ec637e47d19b5d9ebf760b223a2fc6f7aa5a70695ed18d6d93f957d0015e",
+   "score": 65,
+   "bytes": 6859,
+   "known": {},
+   "origin_auth": false,
+   "delegate_dynamic": false
+  },
+  {
+   "sha256": "0x1789bee73c3f45031f4c6dadb62f5750299bfa5446e50303d1e19da79f8a7dc7",
+   "score": 65,
+   "bytes": 6859,
+   "known": {},
+   "origin_auth": false,
+   "delegate_dynamic": false
+  },
+  {
+   "sha256": "0x1a228d95bdbbf637c2bb2b90efd9d92484b754a087d93783992299fba554d379",
+   "score": 65,
+   "bytes": 20981,
+   "known": {},
+   "origin_auth": false,
+   "delegate_dynamic": false
+  },
+  {
+   "sha256": "0x76ff48ebd58d5c41ed940e7ed7673b29809a38240bec2f9b5720be12cb252680",
+   "score": 65,
+   "bytes": 12683,
+   "known": {},
+   "origin_auth": false,
+   "delegate_dynamic": false
+  },
+  {
+   "sha256": "0x887033e2f8fd9e4b0731e9759f379f964ee2ce0fc596260902c12fab2a72e8ac",
+   "score": 65,
+   "bytes": 12331,
+   "known": {},
+   "origin_auth": false,
+   "delegate_dynamic": false
+  },
+  {
+   "sha256": "0xc1920f8df6f7635b028c6ab7eeb7334d0033829a49bb9ac8aa578e25ef6a8559",
+   "score": 65,
+   "bytes": 6859,
+   "known": {},
+   "origin_auth": false,
+   "delegate_dynamic": false
+  },
+  {
+   "sha256": "0xcf7800a7c5b4d600c3519e1804f86d332c1edb5264545fb4b6ccdc6fa8902721",
+   "score": 65,
+   "bytes": 10199,
+   "known": {
+    "0xf3fef3a3": "withdraw(uint256,uint256)"
+   },
+   "origin_auth": false,
+   "delegate_dynamic": false
+  },
+  {
+   "sha256": "0xe65b9e4c5f3f01d7c376bd450ca68131be341274377e7cee8338a5e6744a1bea",
+   "score": 65,
+   "bytes": 3774,
+   "known": {},
+   "origin_auth": false,
+   "delegate_dynamic": false
+  },
+  {
+   "sha256": "0x04a1beed9fc38c5cf14cdb68b79301c2efd29c96ad153f44770cab403206b934",
+   "score": 5,
+   "bytes": 11526,
+   "known": {
+    "0x095ea7b3": "approve(address,uint256)",
+    "0x23b872dd": "transferFrom(address,address,uint256)",
+    "0x70a08231": "balanceOf(address)",
+    "0x8da5cb5b": "owner()",
+    "0xf2fde38b": "transferOwnership(address)"
+   },
+   "origin_auth": false,
+   "delegate_dynamic": false
+  },
+  {
+   "sha256": "0x0a361fab579c5cc770578553a1eb560264d056feacd9490445ba51a925cd0658",
+   "score": 5,
+   "bytes": 24206,
+   "known": {
+    "0x3659cfe6": "upgradeTo(address) [proxy]",
+    "0x4f1ef286": "upgradeToAndCall(address,bytes) [proxy]",
+    "0x715018a6": "renounceOwnership()",
+    "0x8da5cb5b": "owner()",
+    "0xf2fde38b": "transferOwnership(address)"
+   },
+   "origin_auth": false,
+   "delegate_dynamic": false
+  },
+  {
+   "sha256": "0x0a412346ad046a87cdf6fe417f26f3185579a1b1ce3af5251048ba0232c56168",
+   "score": 5,
+   "bytes": 680,
+   "known": {},
+   "origin_auth": false,
+   "delegate_dynamic": false
+  },
+  {
+   "sha256": "0x143cd0876c1815f002b02c031d8910b837b80e3081ee81637c953668467b743c",
+   "score": 5,
+   "bytes": 2920,
+   "known": {},
+   "origin_auth": false,
+   "delegate_dynamic": false
+  },
+  {
+   "sha256": "0x15981eda1014174217e16f9da062e2906c5a379b537dcbde4ef7a9d49e8dc626",
+   "score": 5,
+   "bytes": 695,
+   "known": {},
+   "origin_auth": false,
+   "delegate_dynamic": false
+  },
+  {
+   "sha256": "0x1aec779d9b470ff06a506c68c38bcb13c8cb9ed1b3028917a5827d20772d9af2",
+   "score": 5,
+   "bytes": 21967,
+   "known": {
+    "0x2e1a7d4d": "withdraw(uint256) [WETH/MasterChef]",
+    "0x40c10f19": "mint(address,uint256)",
+    "0x5c60da1b": "implementation() [EIP1967]",
+    "0x9dc29fac": "burn(address,uint256)"
+   },
+   "origin_auth": false,
+   "delegate_dynamic": false
+  },
+  {
+   "sha256": "0x24ca2d7a8936781c51b7aa48d93e6d914337f233d3340915dfa91080b98743fa",
+   "score": 5,
+   "bytes": 4114,
+   "known": {
+    "0x095ea7b3": "approve(address,uint256)",
+    "0x23b872dd": "transferFrom(address,address,uint256)",
+    "0x70a08231": "balanceOf(address)",
+    "0xa9059cbb": "transfer(address,uint256)"
+   },
+   "origin_auth": false,
+   "delegate_dynamic": false
+  },
+  {
+   "sha256": "0x250fab32398706cfb4817f012af9923847c17b297c50e0a47534502ee652b61d",
+   "score": 5,
+   "bytes": 23434,
+   "known": {
+    "0x2e1a7d4d": "withdraw(uint256) [WETH/MasterChef]",
+    "0x40c10f19": "mint(address,uint256)",
+    "0x5c60da1b": "implementation() [EIP1967]",
+    "0x9dc29fac": "burn(address,uint256)"
+   },
+   "origin_auth": false,
+   "delegate_dynamic": false
+  },
+  {
+   "sha256": "0x25bb070fcfc44b8360e183177f91f5d5de8a7c34a22bcb5db90654348ae44980",
+   "score": 5,
+   "bytes": 1507,
+   "known": {},
+   "origin_auth": false,
+   "delegate_dynamic": false
+  }
+ ]
+}
