@@ -1,12 +1,27 @@
-# Auditoría ofensiva Acala / Karura — estado DESPLEGADO (2026-11-07)
+# Auditoría ofensiva Acala / Karura — estado DESPLEGADO (actualizado 2026-11-08)
 
-## Veredicto
+## Estado: REABIERTO — sin veredicto
 
-**no crítico live**. No encontré ninguna transición `permisionless X → Y > X` que
-saque la diferencia de inventario ajeno live y sobreviva al unwind. El
-inventario ajeno medido y los hechos que matan cada candidato están abajo.
+Este informe **no emite veredicto**. El cierre anterior `"no crítico live"`
+fue rechazado por el solicitante y queda **sin efecto**: la búsqueda sigue
+abierta hasta agotar las rutas de dinero con estado live. Todo el trabajo
+posterior, los descartes y los candidatos abiertos están en
+[`audit-live/AUDIT_CONTINUATION.md`](audit-live/AUDIT_CONTINUATION.md)
+(resumen ejecutivo en §0, candidato de conservación en §13).
 
-No declaro cobertura completa: ver §6 (repos/artefactos bloqueados).
+**No hay ningún crítico confirmado**: ningún candidato cumple simultáneamente
+PnL > 0 en USD con decimales y precios de oráculo reales, contra inventario
+ajeno live, con extrinsics minados, conservación rota y bug concreto en código
+desplegado. El candidato más fuerte (`REPEAT aggregatedDex x3`, +6.575 USD)
+saca aUSD **real** del pool de los LP —las reservas antes/después lo prueban—,
+pero su LDOT no se conserva de forma inexplicada y **el bug aún no se ha
+localizado en código**; el UNWIND da −125 USD. Run de trazado de eventos
+`42436509596` en curso. Ver §13 de la continuación.
+
+**No declaro cobertura completa**: submodules sin inicializar, Git LFS, otros
+forges y repos privados siguen sin materializar; 390 bytecodes desplegados sin
+fuente; faltan mapas completos de `Loans.Positions`, `Tokens.Accounts` global,
+allowances, logs/eventos históricos, `debug_traceCall` y reorg/flash EVM.
 
 ---
 

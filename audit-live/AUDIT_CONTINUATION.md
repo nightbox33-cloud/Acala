@@ -381,6 +381,9 @@ run en curso mide DOT→aUSD→DOT con PnL en micro-USD y decimales correctos, m
 conservan, hay drenaje de terceros; si el PnL ≤ 0, la discrepancia es
 arbitraje/artefacto y NO se reporta como crítico. Hasta entonces: **no
 confirmado, no descartado**.
+> **CORRECCIÓN §13**: las reservas demostraron lo contrario: el aUSD **sí sale
+> realmente** del pool. Sigue sin cumplirse el criterio 1 (bug sin localizar),
+> pero el diagnóstico de "artefacto" de este párrafo quedó refutado.
 
 ## 10. Descarte del `stable-asset` (código DESPLEGADO verificado por submodule SHA)
 
@@ -435,6 +438,8 @@ Fork válido, ancla `0x37e9a4d07d949579fcefa97231a52f2018c89ff12e46fc9f9884ce48d
   de `dev_setStorage`**, no inventario real. Para demostrarlo se añadió al fork
   la captura de `before`/`after` absolutos del atacante y de
   `Dex.LiquidityPool[AUSD,LDOT]`, `[ACA,AUSD]` y `StableAsset.Pools[0].balances`
+> **CORRECCIÓN §13**: esa captura se ejecutó y refutó la conclusión de
+> "artefacto": la reserva aUSD baja exactamente lo que gana el atacante.
   en cada escenario: **si la reserva del pool no cae en la misma cantidad que
   sube el atacante, el delta es espurio**.
 - **`emergencyShutdown.refundCollaterals`: sin ventaja de rounding.** Un único
