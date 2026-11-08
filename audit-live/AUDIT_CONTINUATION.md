@@ -354,3 +354,33 @@ run en curso mide DOT→aUSD→DOT con PnL en micro-USD y decimales correctos, m
 conservan, hay drenaje de terceros; si el PnL ≤ 0, la discrepancia es
 arbitraje/artefacto y NO se reporta como crítico. Hasta entonces: **no
 confirmado, no descartado**.
+
+## 10. Descarte del `stable-asset` (código DESPLEGADO verificado por submodule SHA)
+
+El `Cargo.toml` del runtime usa `ecosystem-modules/stable-asset`, un submodule
+**no inicializado** en este checkout. `git ls-tree HEAD ecosystem-modules/stable-asset`
+da el SHA **`aa101e87234bd3d388c8de062f231d635d79cf7b`**, que es **exactamente el
+HEAD del clon `nutsfinance/stable-asset`** (`aa101e87…`). El código analizado
+es por tanto el desplegado, no una versión aproximada.
+
+`get_swap_amount` (`lib/stable-asset/src/lib.rs:937`) llama antes a
+`get_balance_update_amount` (lee `T::Assets::balance` real de la cuenta del
+pool) y `get_collect_yield_amount` (recalcula `D = get_d(balances, a)` y pone
+`total_supply = D`). El `swap` real (`:1677`) llama a **`collect_yield`
+ANTES** de calcular, y `collect_yield` (`:1438`) **minta `new_d - old_d` LP
+tokens al `yield_recipient`** y exige `ensure!(new_d >= old_d,
+InvalidPoolValue)`. El yield de LDOT se acredita a los LP, **no se lo lleva el
+swapper**; `collect_fee` persiste balances/supply al final. No hay captura de
+inventario ajeno por esa vía.
+
+Cálculo numérico fiel a `get_d`/`get_y` (U512→enteros Python) con los parámetros
+LIVE (`precisions [1,1]`, `a=3000`, `APrecision=100`, `swap_fee 25000000/1e10`):
+**`get_d(balances, a) = 2931757964069804 = total_supply`** (divergencia 0%), y
+`dx=1e12 DOT → dy=1013926305092 LDOT` (~1:1), que en el Dex
+`[AUSD,LDOT]=[96252808345604126,194576855790128]` rinde **`~4,99e11` unidades
+aUSD = 0,5 aUSD**. El `+2521646377714018` del fork es por tanto **incompatible
+con la conservación del código desplegado**; apunta a un artefacto de
+`dev_setStorage`/medición de balances en chopsticks, no a un drenaje. El UNWIND
+sigue siendo la prueba decisiva. Si el fork llegara a mostrar PnL > 0 tras
+cerrar la posición, el siguiente paso obligatorio es guardar balances absolutos
+del atacante y `Dex.LiquidityPool`/`StableAsset.Pools[0].balances` antes/después.
