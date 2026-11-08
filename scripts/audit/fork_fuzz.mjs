@@ -17,7 +17,7 @@ const YAML = '/tmp/acala-fuzz-fork.yml'
 fs.writeFileSync(YAML, `endpoint: https://acala-rpc.aca-api.network
 mock-signature-host: true
 build-block-mode: Manual
-block: ${ANCHOR}
+block: '${ANCHOR}'
 `)
 
 const CURRENCIES = {
@@ -57,8 +57,24 @@ async function main() {
     for (const cur of Object.values(CURRENCIES)) {
       storage.Tokens.Accounts.push([[A.address, cur], { free: X.toString(), reserved: 0, frozen: 0 }])
     }
-    await api.rpc.provider.send('dev_setStorage', [storage])
-    log('funded attacker', A.address)
+    try {
+        await api.rpc.provider.send('dev_setStorage', [storage])
+        log('funded attacker (ACA + all tokens)', A.address)
+    } catch (e) {
+        out.errors.push({ where: 'dev_setStorage_full', error: String(e) })
+        log('dev_setStorage full failed, falling back:', String(e).slice(0, 200))
+        try {
+            await api.rpc.provider.send('dev_setStorage', [
+                { System: { Account: [[[A.address], { providers: 1, data: { free: X.toString() } }]] } }])
+            log('funded attacker (native only)', A.address)
+        } catch (e2) { log('native funding failed', String(e2).slice(0, 200)) }
+        for (const cur of Object.values(CURRENCIES)) {
+            try {
+                await api.rpc.provider.send('dev_setStorage', [
+                    { Tokens: { Accounts: [[[A.address, cur], { free: X.toString(), reserved: 0, frozen: 0 }]] } }])
+            } catch (e3) { /* record but continue */ }
+        }
+    }
 
     const bal = async () => {
       const sys = await api.query.system.account(A.address)

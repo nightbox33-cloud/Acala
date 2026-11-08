@@ -51,14 +51,14 @@ def main(chain, out, dump_dir):
            'rpc': rpc_url, 'codes': [], 'errors': []}
     os.makedirs(dump_dir, exist_ok=True)
     try:
-        rows = list(sub.query_map('EVM', 'Codes', block_hash=fin, max_results=2000, page_size=50))
+        rows = list(sub.query_map('EVM', 'Codes', block_hash=fin, max_results=2000, page_size=20))
         print('EVM.Codes rows', len(rows), flush=True)
     except Exception as e:
         res['errors'].append({'where': 'EVM.Codes', 'error': str(e), 'trace': traceback.format_exc()[-1200:]})
         rows = []
         print('EVM.Codes ERROR', e, flush=True)
     for k, v in rows:
-        code = tohex(v)
+        code = tohex(v) or tohex(j(v))
         if not code or len(code) <= 2: continue
         try: raw = bytes.fromhex(code[2:])
         except Exception: continue

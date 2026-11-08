@@ -80,10 +80,19 @@ def main(out):
 
     # 3. registered metadata / decimals of all ERC20s
     try:
-        metas = j(sub.query_map('AssetRegistry', 'AssetMetadatas', block_hash=fin,
-                                max_results=200, page_size=100))
-        res['erc20_metadata'] = [[k, v] for k, v in metas if 'Erc20' in str(k)]
-        print('erc20 metadata rows', len(res['erc20_metadata']), flush=True)
+        metas = sub.query_map('AssetRegistry', 'AssetMetadatas', block_hash=fin,
+                              max_results=200, page_size=100)
+        rows = []
+        for item in metas:
+            if isinstance(item, (list, tuple)) and len(item) == 2:
+                k, v = item
+            elif isinstance(item, (list, tuple)) and len(item) == 1:
+                k, v = item[0], None
+            else:
+                continue
+            rows.append([j(k), j(v)])
+        res['erc20_metadata'] = [r for r in rows if 'Erc20' in str(r[0])]
+        print('erc20 metadata rows', len(rows), '/ erc20', len(res['erc20_metadata']), flush=True)
     except Exception as e:
         res['errors'].append({'where': 'AssetMetadatas', 'error': str(e)})
         res['erc20_metadata'] = []

@@ -72,7 +72,7 @@ def main(chain, out, dump_dir):
                 code = rpc(evm_url, 'eth_getCode', [addr, 'latest'], timeout=8).get('result') or '0x'
                 rec['code_bytes'] = (len(code) - 2) // 2
                 rec['code_sha256'] = ('0x' + hashlib.sha256(bytes.fromhex(code[2:])).hexdigest()) if len(code) > 2 else None
-                if rec['code_bytes'] and rec.get('native_balance_wei'):
+                if rec['code_bytes']:
                     with open(os.path.join(dump_dir, addr.lower() + '.hex'), 'w') as f:
                         f.write(code)
             except Exception as e:
