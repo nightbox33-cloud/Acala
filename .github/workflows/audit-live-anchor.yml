@@ -57,13 +57,15 @@ jobs:
           python3 scripts/audit/dump_evm_codes.py karura audit-live/evm-codes-karura.json audit-live/evm-codes-karura
       - name: Disassemble every live bytecode and probe contract roles/slots
         continue-on-error: true
-        timeout-minutes: 12
+        timeout-minutes: 18
         run: |
           python3 -m pip install --quiet pyevmasm
           python3 scripts/audit/analyze_evm_codes.py audit-live/evm-codes-acala.json audit-live/evm-codes-acala audit-live/evm-codes-analysis-acala.json
           python3 scripts/audit/analyze_evm_codes.py audit-live/evm-codes-karura.json audit-live/evm-codes-karura audit-live/evm-codes-analysis-karura.json
           python3 scripts/audit/probe_evm_roles.py acala audit-live/evm-roles-acala.json
           python3 scripts/audit/probe_evm_roles.py karura audit-live/evm-roles-karura.json
+          python3 scripts/audit/probe_gnosis_safes.py acala audit-live/gnosis-safes-acala.json
+          python3 scripts/audit/probe_gnosis_safes.py karura audit-live/gnosis-safes-karura.json
       - name: Enumerate deployed EVM accounts, balances and bytecode
         continue-on-error: true
         timeout-minutes: 8
