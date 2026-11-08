@@ -325,3 +325,32 @@ sí sería drenaje. `poc_conservation.py` (256 DEX round-trips, Δ máx -1) y
 que se conserva, pero eran simulaciones de fórmula, no txs minadas.
 
 **No hay crítico confirmado. No se emite `"no crítico live"`.**
+
+## 9. Discrepancia NO explicada del `aggregatedDex` (bajo verificación)
+
+Con las reservas LIVE del state probe
+`Dex.LiquidityPool[{Token:AUSD},{Token:LDOT}] = [96252808345604126, 194576855790128]`
+y `Dex.TradingPairStatuses = Enabled`, un `ExactSupply` de `1e12` unidades LDOT
+debería dar `y*dx/(x+dx) ≈ 4,9e11` unidades aUSD (**0,5 aUSD**). El pool
+Taiga 0 (`assets [DOT,LDOT]`, `precisions [1,1]`, `balances
+[920055806327193, 2015580124107418]`, `swap_fee 25000000/1e10`) convierte
+`1e12` DOT en ~`1e12` LDOT, así que el path oficial
+`AggregatedSwapPaths[DOT,AUSD] = [Taiga[0,0,1], Dex[LDOT,AUSD]]` no debería
+rendir `2521646377714018` aUSD (**2.521 aUSD**, ~5.100x). Los escenarios
+`stableAsset.redeemSingle/redeemProportion` también muestran deltas LDOT ~5–7x
+superiores al pro-rata del `total_supply=2931757964069804`.
+
+`check_swap_paths` valida la continuidad de tokens y `do_aggregated_swap` es
+`#[transactional]`, encadenando `output_amount` crudo; `Dex::_swap` exige
+`k_after >= k_before`. No se ha encontrado un bug de unidades en el código.
+La hipótesis alternativa es un **artefacto de medición del fork**: el capital
+inicial se inyecta con `dev_setStorage` (`1e18` unidades por token) y el fork
+acumula estado entre los 16 escenarios; `fork-fuzz.json` sólo guarda deltas,
+no balances absolutos ni reservas antes/después.
+
+**Por eso el criterio decisivo es el UNWIND**, no el precio de una pierna: el
+run en curso mide DOT→aUSD→DOT con PnL en micro-USD y decimales correctos, más
+`REPEAT x3`. Si tras cerrar la posición el PnL sigue > 0 y las reservas no se
+conservan, hay drenaje de terceros; si el PnL ≤ 0, la discrepancia es
+arbitraje/artefacto y NO se reporta como crítico. Hasta entonces: **no
+confirmado, no descartado**.
