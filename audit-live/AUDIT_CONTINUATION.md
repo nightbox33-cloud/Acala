@@ -487,3 +487,53 @@ transaction-payment, dex, aggregated-dex, earning) lo consume. Es una
 **función huérfana**, categoría que el usuario prohíbe explícitamente
 reportar como crítico. El oráculo realmente usado para valoración es
 `AcalaDataProvider`/oracle de `primitives`, no éste. **Vía muerta.**
+
+## 13. Run 42434211979: conservación aparentemente rota — CANDIDATO NO CONFIRMADO
+
+El fork ya guarda `before`/`after` absolutos del atacante y las reservas del
+pool. **NO es un artefacto de medición**: en `aggregatedDex DOT→aUSD`, la
+reserva `Dex.LiquidityPool[AUSD,LDOT]` baja de `96252808345604126` a
+`93731161967890108`, diferencia **`2521646377714018`, exactamente** lo que sube
+el aUSD del atacante (`1000000000000000000 → 1002521646377714018`). En
+`REPEAT x3` baja de `93860209083773902` a `87014697465677361`, diferencia
+`6845511618096541` = exactamente el aUSD ganado por 3×`1e12` DOT. **Sale
+inventario real del pool de los LP.**
+
+**Pero la conservación de LDOT no cuadra** y por eso NO se reporta todavía:
+
+| escenario | LDOT del atacante | pool Taiga `balances[1]` | pool Dex LDOT |
+| --- | --- | --- | --- |
+| `aggregatedDex` (1×) | `0` | `−1013745155322` | `+5250446111009` |
+| `REPEAT x3` | `0` | `−3037718992050` | `+15749868196056` |
+
+El Dex recibe ~5,18x el LDOT que pierde el Taiga, sin que el atacante pierda
+LDOT. Lo mismo en `stableAsset.mint` (atacante paga `51792564269684` LDOT, el
+pool Taiga recibe `110423884768358`) y `redeemSingle` (pool pierde
+`10034245102736`, atacante recibe `5196992804773`). O `bal()` no refleja el
+LDOT real del atacante, o hay un bug de accounting/unidades en el encadenado.
+El código de `do_aggregated_swap` (`#[transactional]`, `output_amount` crudo
+entre tramos) y `stable-asset@aa101e87` (`get_d == total_supply`,
+`collect_yield` a los LP) **no explican** el factor por sí solos.
+
+**Criterio 4**: `UNWIND` (ida+vuelta) da **−125 USD**. El `REPEAT x3` da
+**+6.575 USD** pero deja posición abierta en aUSD (token estable, sin flash ni
+préstamo que deshacer). Queda decidir si el "+6.575" es un arbitraje de AMM
+con precio desalineado (prohibido: "MEV normal"/"known issue") o un bug
+concreto de mint/accounting. **Sin bug localizado en código, no pasa el
+criterio 1.**
+
+**Descartes del mismo run**: los **19** `GnosisSafeProxy` completos (12 Acala
+con 9.933 cuentas + 7 Karura con 7.150) tienen `uninitialized_count=0` y
+`takeover_candidates=[]` → vector cerrado definitivamente. Wormhole:
+`bridge_like=0` en ambas cadenas; el supuesto `0xacbd3e74…`
+`INITIALISABLE_WITH_VALUE` es **falso positivo**: sus `eth_call` devuelven su
+propio bytecode de 474 B para cualquier selector, y `ok()` lo tomó por un
+`initialize` válido y un `totalSupply` gigante; `wei=0`. Corregido exigiendo
+respuestas ≤ 32 bytes. `evm-roles-*` y `takeover-*` fallaron por dos bugs
+propios (`KeyError` tras renombrar un campo; desempaquetado de `inits`), ya
+arreglados con wrapper que siempre deja JSON.
+
+**Siguiente (run 4243…)**: eventos `tokens.Transferred`/`dex.Swap`/
+`stableAsset.TokenSwapped` por tx y escenarios ISOLATE (sólo Taiga, sólo Dex)
+para localizar dónde aparecen los `4,24e12` LDOT. Hasta entonces: **candidato
+abierto, NO crítico confirmado, NO cierre**.

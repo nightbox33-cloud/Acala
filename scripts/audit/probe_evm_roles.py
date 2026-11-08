@@ -142,7 +142,7 @@ def main(chain, out):
     with open(out, 'w') as f: json.dump(res, f, indent=1, default=str)
     print('wrote', out, 'uninitialized', res['uninitialized_count'],
           'with_value', res['with_value_count'],
-          'uninitialized_WITH_VALUE', res['uninitialized_with_value'][:10], flush=True)
+          'uninitialized_WITH_VALUE', res['heuristic_no_owner_with_value'][:10], flush=True)
 
 if __name__ == '__main__':
     _chain = sys.argv[1] if len(sys.argv) > 1 else 'acala'

@@ -139,15 +139,20 @@ async function main() {
         seq++
         await provider.send('dev_newBlock', [{ transactions: [hex] }])
         let failure = null
+        const moneyEvents = []
         try {
           const evs = await api.query.system.events()
           for (const { event } of evs) {
             if (event.section === 'system' && event.method === 'ExtrinsicFailed') {
               failure = decodeError(event.data[0], api)
             }
+            if (['stableAsset','dex','tokens','balances','aggregatedDex','currencies'].includes(event.section)) {
+              moneyEvents.push({ section: event.section, method: event.method,
+                data: Array.from(event.data).map(x => String(x)).slice(0, 10) })
+            }
           }
         } catch (e) { /* events unavailable; outcome unknown */ }
-        return { ok: failure === null, error: failure, nonce }
+        return { ok: failure === null, error: failure, nonce, money_events: moneyEvents }
       } catch (e) { return { ok: false, error: String(e) } }
     }
 
@@ -169,6 +174,10 @@ async function main() {
         api.tx.aggregatedDex.swapWithExactSupply(
           [{ taiga: [0, 0, 1] }, { dex: [{ token: 'LDOT' }, { token: 'AUSD' }] }],
           10n ** 12n, 0)]],
+      ['ISOLATE Taiga DOT->LDOT (1e12)', () => [
+        api.tx.stableAsset.swap(0, 0, 1, 10n ** 12n, 0, 2)]],
+      ['ISOLATE Dex LDOT->aUSD (1e12)', () => [
+        api.tx.dex.swapWithExactSupply([{ token: 'LDOT' }, { token: 'AUSD' }], 10n ** 12n, 0)]],
       ['UNWIND aggregatedDex DOT->aUSD->DOT (full round trip)', () => [
         api.tx.aggregatedDex.swapWithExactSupply(
           [{ taiga: [0, 0, 1] }, { dex: [{ token: 'LDOT' }, { token: 'AUSD' }] }],

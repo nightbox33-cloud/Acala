@@ -50,7 +50,11 @@ def call(url, to, data, frm=None):
         return r.get('result')
     except Exception as e: return 'ERR:' + str(e)
 
-def ok(v): return isinstance(v, str) and v.startswith('0x') and not v.startswith('ERR')
+def ok(v):
+    # An initialize()/getter that succeeds returns '0x' or one 32-byte word.
+    # A catch-all fallback that returns its own 474-byte bytecode is NOT a
+    # valid initializer (this produced the 0xacbd3e74... false positive).
+    return isinstance(v, str) and v.startswith('0x') and not v.startswith('ERR') and len(v) <= 66
 
 def u256(v):
     return int(v, 16) if ok(v) and len(v) >= 66 else 0

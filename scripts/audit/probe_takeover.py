@@ -149,7 +149,8 @@ def main(chain, out):
                 rec = {'address': addr, 'sha256': sha, 'code_bytes': meta['bytes'],
                        'inits': {}, 'slots': {}, 'views': {}, 'token_balances': {}}
                 # takeover simulations
-                for sel, (sig, nargs) in meta['inits'].items():
+                for sel, sig in meta['inits'].items():
+                    nargs = INIT[sel][1]
                     data = sel + ''.join(w(ATTACKER) for _ in range(nargs))
                     val, err = call(evm, addr, data)
                     rec['inits'][sig] = {'ok': val is not None, 'result': val or '', 'error': err}
