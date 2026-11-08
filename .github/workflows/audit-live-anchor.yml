@@ -33,24 +33,30 @@ jobs:
         run: |
           python3 scripts/audit/query_paused.py acala audit-live/paused-calls-acala.json
           python3 scripts/audit/query_paused.py karura audit-live/paused-calls-karura.json
-      - name: Enumerate deployed EVM accounts, balances and bytecode
+      - name: Probe the Karura HonzonBridge 1:1 conversion and escrow
         continue-on-error: true
-        env:
-          EVM_MAX_ACCOUNTS: '400'
-        run: |
-          python3 scripts/audit/evm_inventory.py acala audit-live/evm-inventory-acala.json audit-live/evm-code-acala
-          python3 scripts/audit/evm_inventory.py karura audit-live/evm-inventory-karura.json audit-live/evm-code-karura
+        timeout-minutes: 5
+        run: python3 scripts/audit/probe_honzon_bridge.py audit-live/honzon-bridge-karura.json
       - name: Install chopsticks fork tooling
         if: env.RUN_FORK == 'true'
         run: npm install --no-audit --no-fund --silent @acala-network/chopsticks@1.5.2 @acala-network/chopsticks-core@1.5.2 @polkadot/api@latest
       - name: Fork mainnet and measure PnL of accumulated call sequences
         if: env.RUN_FORK == 'true'
         continue-on-error: true
+        timeout-minutes: 14
         run: |
           ANCHOR_HASH=$(python3 -c 'import json;print(json.load(open("audit-live/acala-state.json"))["anchor"]["finalized_hash"])')
           export ANCHOR_HASH
           export OUT=audit-live/fork-fuzz.json
           timeout 600 node scripts/audit/fork_fuzz.mjs 2>&1 | tee audit-live/fork-fuzz.log
+      - name: Enumerate deployed EVM accounts, balances and bytecode
+        continue-on-error: true
+        timeout-minutes: 8
+        env:
+          EVM_MAX_ACCOUNTS: '80'
+        run: |
+          python3 scripts/audit/evm_inventory.py acala audit-live/evm-inventory-acala.json audit-live/evm-code-acala
+          python3 scripts/audit/evm_inventory.py karura audit-live/evm-inventory-karura.json audit-live/evm-code-karura
       - name: Publish evidence to branch
         run: |
           git config user.name "audit-bot"

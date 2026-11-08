@@ -13,9 +13,9 @@ CHAINS = {
     'acala': ('https://acala-rpc.aca-api.network', 'https://eth-rpc-acala.aca-api.network', 10),
     'karura': ('https://karura-rpc.aca-api.network', 'https://eth-rpc-karura.aca-api.network', 8),
 }
-MAX_ACCOUNTS = int(os.environ.get('EVM_MAX_ACCOUNTS', '1200'))
+MAX_ACCOUNTS = int(os.environ.get('EVM_MAX_ACCOUNTS', '120'))
 
-def rpc(url, method, params, timeout=30):
+def rpc(url, method, params, timeout=8):
     req = urllib.request.Request(url, data=json.dumps({
         'jsonrpc': '2.0', 'id': 1, 'method': method, 'params': params}).encode(),
         headers={'Content-Type': 'application/json'})
@@ -69,7 +69,7 @@ def main(chain, out, dump_dir):
             rec['balance_error'] = str(e)
         if is_contract or rec.get('native_balance_wei'):
             try:
-                code = rpc(evm_url, 'eth_getCode', [addr, 'latest'], timeout=30).get('result') or '0x'
+                code = rpc(evm_url, 'eth_getCode', [addr, 'latest'], timeout=8).get('result') or '0x'
                 rec['code_bytes'] = (len(code) - 2) // 2
                 rec['code_sha256'] = ('0x' + hashlib.sha256(bytes.fromhex(code[2:])).hexdigest()) if len(code) > 2 else None
                 if rec['code_bytes'] and rec.get('native_balance_wei'):
