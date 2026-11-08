@@ -139,13 +139,18 @@ Karura **85** / 670.411 B en el 12.812.242; `truncated: false` en ambos,
   compilados → **se descartó como señal**; se pasa a leer slots y roles reales
   por RPC (`scripts/audit/probe_evm_roles.py`).
 
-**Fork fuzz: la pasada anterior es INVÁLIDA, no un descarte.** Con el hash del
-bloque ya entrecomillado, el fork arrancó, pero
-`@polkadot/api` v17 ya no expone `api.rpc.provider`; las 16 secuencias
-terminaron con `TypeError: Cannot read properties of undefined (reading 'send')`
-y **0 extrinsics ejecutadas** (`deltas` vacíos, `pnl=0`). No se usa como
-evidencia de conservación. Corregido guardando la instancia de `WsProvider` y
-usando `provider.send(...)`; se relanza.
+**Fork fuzz: las dos pasadas anteriores eran INVÁLIDAS** (`ZodError` del hash
+del bloque y `TypeError ... reading 'send'` de `api.rpc.provider` en
+`@polkadot/api` v17). **El run 42430677033 ya es válido**: guardando la
+instancia `WsProvider` y usando `provider.send('dev_newBlock', ...)`, el fork
+minó extrinsics reales (`ok: true`, nonces 0..15, `errors: []`, ancla
+`0x6b44836a…`) y produjo `deltas` no vacíos en 15/16 secuencias. Sigue siendo
+**insuficiente como PnL**: la tabla `PRICE` comparaba unidades crudas de 10 y
+12 decimales 1:1 (1e12 unidades de aUSD = 1 aUSD, no 1e12 aUSD), así que
+`pnl_aca_units_ranking_only` no es un PnL. Corregido a micro-USD con decimales
+reales y precios del oráculo, y se añadieron escenarios de **unwind**
+(DOT→aUSD→DOT), **repetición x3** y **rounding de refund** para aplicar el
+criterio de conservación. Se relanza.
 
 **HonzonBridge (confirmado dos veces)**: bloque 12.812.190,
 `BridgedStableCoinCurrencyId = None`, `escrow_evm_address_mapping = None`,
@@ -268,3 +273,55 @@ initialized`) o una cuenta sin fondos mata el claim.
    mercado (no sólo el oráculo).
 
 **No se emite `"no crítico live"` mientras estos puntos sigan abiertos.**
+
+## 8. Resultados MEDIDOS del run 42430677033 (y falsos positivos descartados)
+
+**GnosisSafeProxy — vector MUERTO en los 13 proxies medidos.**
+`gnosis-safes-{acala,karura}.json`, bloques #12.384.428 / #12.812.371,
+`errors: []`: **8** proxies Acala + **5** Karura (`query_map` truncó a 4.000
+cuentas; `EVM.CodeInfos` decía 12/7, así que faltan 6 por medir → se subió
+`max_results` a 20.000). `uninitialized_count = 0`,
+`takeover_candidates = []`: todos tienen `threshold` **1 o 2** y
+`setup([atacante],1)` **revierte** (`execution reverted`). Inventario ajeno
+real pero NO tomable, p. ej. `0xf173f6361b62a0afbca804fef4a86129cd4882e8`
+(Acala) con 2 ACA nativos + `453909246615` aUSD + `1581128854` DOT;
+`0x0e11d950…` (Karura) con `520243260000000000` wei. **Hecho que mata el
+claim: `threshold > 0` → `setupOwners` revierte `GS200`.**
+
+**`uninitialized_with_value` de `probe_evm_roles.py` era un FALSO POSITIVO.**
+Acala `0x122c858f…` (10,197 ACA) devuelve `owner()` =
+`0x…ec676347105e7e898e0d8e24f524989cbff23d55` (no nulo; el owner de Ownable
+no está en slot 0). Karura `0xff066331…` — que es el **MerkleDistributor 3USD**
+del `config.ts` clonado — es un proxy EIP-1967 con
+`impl = 0xa88a5221…`, `admin = 0x637f31a6…` y `slot0 = 1`
+(`Initializable._initialized`), es decir **inicializado**; `owner()` es `null`
+sólo porque un proxy EIP-1967 no expone `owner()`. El campo se renombró a
+`heuristic_no_owner_with_value` con nota explícita: **sólo un `eth_call` de
+`initialize()`/`setup()` puede probar una toma de control**.
+
+**MerkleDistributor: inventario publicado y addresses desplegadas, desde el
+clone** `nutsfinance/merkle-distributor@60e96956` (`rewards/config.ts`):
+Karura `0xf595F4a8…` (taiKSM), `0xff066331…` (3USD), `0xc907CE08…` (LKSM);
+Acala `0x219FA396…` (tDOT), `0x73D6df43…` (LDOT). Los merkles del repo
+(`rewards/data/merkles/karura_taiksm_{12,13}.json`) publican
+`tokenTotals` de **425111111111110533** unidades del token `0x…0084` y
+**700864904555340** de `0x…0300…0000`, con 1.408 hojas y pruebas reales.
+`0xff066331…` tiene 4,221 KAR nativos medidos en live. `probe_takeover.py`
+simula `initialize(admin,proposer,validator)` en esas 5 addresses y mide sus
+balances: **pendiente**, no se afirma drenaje.
+
+**Fork fuzz (válido, PnL aún no concluyente)**: `aggregatedDex DOT→aUSD`
+devolvió `+2521646377714018` unidades aUSD por `-1000000000000` DOT con
+`ok: true`. Con decimales (DOT 10, aUSD 12) son 100 DOT → 2.521 aUSD, un
+precio ~28x el oráculo. `emergencyShutdown.refundCollaterals(1 aUSD)` dio
+`+6977644969355` ACA + `94322481` LDOT, es decir ~0,062 USD por 1 aUSD
+quemado → **PnL negativo, el CDP está subcolateralizado, vector muerto**.
+El swap favorable **no es todavía un crítico**: puede ser arbitraje de AMM con
+precio desalineado, que el usuario excluye ("MEV normal") y que pierde el extra
+al deshacer. El run siguiente mide el **round-trip completo** y la repetición
+x3; si tras el unwind el PnL en USD sigue > 0 y las reservas no se conservan,
+sí sería drenaje. `poc_conservation.py` (256 DEX round-trips, Δ máx -1) y
+`poc_taiga_dex_liquidity.py` (275 secuencias, sin `INVARIANT BREAK`) apuntan a
+que se conserva, pero eran simulaciones de fórmula, no txs minadas.
+
+**No hay crítico confirmado. No se emite `"no crítico live"`.**

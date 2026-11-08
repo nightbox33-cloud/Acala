@@ -71,7 +71,7 @@ def main(chain, out):
 
     # address -> code_hash from live EVM.Accounts
     try:
-        rows = sub.query_map('EVM', 'Accounts', block_hash=fin, max_results=3000, page_size=100)
+        rows = sub.query_map('EVM', 'Accounts', block_hash=fin, max_results=20000, page_size=200)
         n = 0
         for k, v in rows:
             n += 1
@@ -122,15 +122,21 @@ def main(chain, out):
                 v = r.get('result')
                 c['token_balances'][sym] = int(v, 16) if isinstance(v, str) else None
             except Exception: c['token_balances'][sym] = None
-        owner_zero = (c.get('slot0') in (ZERO, '0x0', '0x', None) or
-                      c.get('call_owner') in (ZERO, '0x', None))
-        admin_zero = c.get('eip1967_admin') in (ZERO, '0x0', '0x', None)
-        c['uninitialized_owner'] = bool(owner_zero)
-        c['uninitialized_admin'] = bool(admin_zero)
+        # HEURISTIC ONLY. slot0 is not Ownable's owner slot; an EIP-1967 proxy
+        # legitimately has slot0=0/1, a nonzero impl slot and a nonzero admin
+        # slot, and may not expose owner() at all. Only an eth_call of
+        # initialize()/setup() (probe_takeover.py) can prove a takeover.
+        no_owner_call = c.get('call_owner') in (ZERO, '0x', None)
+        no_admin = c.get('eip1967_admin') in (ZERO, '0x0', '0x', None)
+        no_impl = c.get('eip1967_impl') in (ZERO, '0x0', '0x', None)
+        slot0_zero = c.get('slot0') in (ZERO, '0x0', '0x', None)
+        c['heuristic_no_owner'] = bool(no_owner_call and no_admin and no_impl and slot0_zero)
         c['has_value'] = bool(c.get('native_balance_wei')) or any(c['token_balances'].values())
-    res['uninitialized_with_value'] = [c['address'] for c in res['contracts']
-                                       if c.get('uninitialized_owner') and c.get('has_value')]
-    res['uninitialized_count'] = sum(1 for c in res['contracts'] if c.get('uninitialized_owner'))
+    res['heuristic_no_owner_with_value'] = [c['address'] for c in res['contracts']
+                                       if c.get('heuristic_no_owner') and c.get('has_value')]
+    res['heuristic_note'] = ('NOT a takeover finding: proxies have impl/admin slots and '
+                             'Ownable stores owner outside slot 0; see probe_takeover.py eth_call results')
+    res['uninitialized_count'] = sum(1 for c in res['contracts'] if c.get('heuristic_no_owner'))
     res['with_value_count'] = sum(1 for c in res['contracts'] if c.get('has_value'))
     os.makedirs(os.path.dirname(out) or '.', exist_ok=True)
     with open(out, 'w') as f: json.dump(res, f, indent=1, default=str)

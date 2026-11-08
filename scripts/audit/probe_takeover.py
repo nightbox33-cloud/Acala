@@ -115,7 +115,7 @@ def main(chain, out):
     by_hash = collections.defaultdict(list)
     scanned = 0
     try:
-        for k, v in sub.query_map('EVM', 'Accounts', block_hash=fin, max_results=6000, page_size=100):
+        for k, v in sub.query_map('EVM', 'Accounts', block_hash=fin, max_results=20000, page_size=200):
             scanned += 1
             a = j(k); info = j(v)
             if not isinstance(a, str) or not a.startswith('0x'): continue

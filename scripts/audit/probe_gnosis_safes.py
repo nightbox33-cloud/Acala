@@ -79,7 +79,7 @@ def main(chain, out):
     except Exception: pass
 
     try:
-        rows = sub.query_map('EVM', 'Accounts', block_hash=fin, max_results=4000, page_size=100)
+        rows = sub.query_map('EVM', 'Accounts', block_hash=fin, max_results=20000, page_size=200)
         n = 0
         for k, v in rows:
             n += 1

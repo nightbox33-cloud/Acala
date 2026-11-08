@@ -25,8 +25,14 @@ const CURRENCIES = {
   LCDOT: { liquidCrowdloan: 13 }, tDOT: { stableAssetPoolToken: 0 },
   FA3: { foreignAsset: 3 }, FA12: { foreignAsset: 12 }, FA20: { foreignAsset: 20 },
 }
-const PRICE = { ACA: 1n, AUSD: 141n, DOT: 100n, LDOT: 49500n, LCDOT: 100n,
-                tDOT: 100n, FA3: 1n, FA12: 1n, FA20: 1n }
+// Live oracle prices (micro-USD per WHOLE token) and real decimals. The old
+// PRICE table compared raw 10/12-decimal units 1:1 and produced a meaningless
+// "pnl": 1e12 aUSD units is 1 aUSD, not 1e12 aUSD.
+const DEC = { ACA: 12n, AUSD: 12n, DOT: 10n, LDOT: 10n, LCDOT: 10n,
+              tDOT: 10n, FA3: 12n, FA12: 12n, FA20: 12n }
+const USD = { ACA: 8936n, AUSD: 1000000n, DOT: 898979n, LDOT: 898979n,
+              LCDOT: 898979n, tDOT: 898979n, FA3: 0n, FA12: 0n, FA20: 0n }
+const POW = {}; for (const [k, d] of Object.entries(DEC)) POW[k] = 10n ** d
 
 const out = { anchor: ANCHOR,
               note: 'capital X via dev_setStorage (attacker capital, no admin); all calls ensure_signed; fake-signed extrinsics mined with dev_newBlock',
@@ -89,7 +95,9 @@ async function main() {
       }
       return r
     }
-    const val = b => Object.entries(b).reduce((s, [k, v]) => s + v * (PRICE[k] || 0n), 0n)
+    // PnL in micro-USD*1e6 (integer): delta_units * usd_micros * 1e6 / 10^decimals
+    const val = b => Object.entries(b).reduce(
+      (s, [k, v]) => s + (v * (USD[k] || 0n) * 1000000n) / (POW[k] || 1n), 0n)
     const deltas = (a, b) => Object.fromEntries(Object.keys(b).map(k => [k, (b[k] - a[k]).toString()]))
 
     let seq = 0
@@ -123,7 +131,7 @@ async function main() {
     }
 
     const scenarios = [
-      ['control: self transfer 1e12 ACA', () => [api.tx.balances.transfer(A.address, 10n ** 12n)]],
+      ['control: system.remark (no value movement)', () => [api.tx.system.remark('0x')]],
       ['stableAsset.mint(DOT,LDOT)', () => [api.tx.stableAsset.mint(0, [10n ** 13n, 10n ** 13n], 0)]],
       ['stableAsset.redeemSingle(tDOT -> LDOT)', () => [api.tx.stableAsset.redeemSingle(0, 10n ** 12n, 1, 0, 2)]],
       ['stableAsset.redeemProportion(tDOT)', () => [api.tx.stableAsset.redeemProportion(0, 10n ** 12n, [0, 0])]],
@@ -140,6 +148,29 @@ async function main() {
         api.tx.aggregatedDex.swapWithExactSupply(
           [{ taiga: [0, 0, 1] }, { dex: [{ token: 'LDOT' }, { token: 'AUSD' }] }],
           10n ** 12n, 0)]],
+      ['UNWIND aggregatedDex DOT->aUSD->DOT (full round trip)', () => [
+        api.tx.aggregatedDex.swapWithExactSupply(
+          [{ taiga: [0, 0, 1] }, { dex: [{ token: 'LDOT' }, { token: 'AUSD' }] }],
+          10n ** 12n, 0),
+        api.tx.aggregatedDex.swapWithExactSupply(
+          [{ dex: [{ token: 'AUSD' }, { token: 'LDOT' }] }, { taiga: [0, 1, 0] }],
+          2521646377714018n, 0)]],
+      ['REPEAT aggregatedDex DOT->aUSD x3 (price must move against attacker)', () => [
+        api.tx.aggregatedDex.swapWithExactSupply(
+          [{ taiga: [0, 0, 1] }, { dex: [{ token: 'LDOT' }, { token: 'AUSD' }] }],
+          10n ** 12n, 0),
+        api.tx.aggregatedDex.swapWithExactSupply(
+          [{ taiga: [0, 0, 1] }, { dex: [{ token: 'LDOT' }, { token: 'AUSD' }] }],
+          10n ** 12n, 0),
+        api.tx.aggregatedDex.swapWithExactSupply(
+          [{ taiga: [0, 0, 1] }, { dex: [{ token: 'LDOT' }, { token: 'AUSD' }] }],
+          10n ** 12n, 0)]],
+      ['emergencyShutdown.refundCollaterals(3 aUSD) single (rounding baseline)', () => [
+        api.tx.emergencyShutdown.refundCollaterals(3n * 10n ** 12n)]],
+      ['REPEAT emergencyShutdown.refundCollaterals(1 aUSD) x3 (rounding)', () => [
+        api.tx.emergencyShutdown.refundCollaterals(10n ** 12n),
+        api.tx.emergencyShutdown.refundCollaterals(10n ** 12n),
+        api.tx.emergencyShutdown.refundCollaterals(10n ** 12n)]],
       ['transactionPayment.withFeeCurrency (aUSD)', () => [
         api.tx.transactionPayment.withFeeCurrency({ token: 'AUSD' }, api.tx.system.remark('0x'))]],
       ['transactionPayment.withFeeAggregatedPath', () => [
@@ -171,10 +202,15 @@ async function main() {
       // A real drain = attacker gains in some asset while losing in NO asset.
       const allNonNegative = dv.every(x => x >= 0n)
       const anyPositive = dv.some(x => x > 0n)
+      const isUnwind = name.startsWith('UNWIND') || name.startsWith('REPEAT')
       const rec = { name, calls: results, deltas: d,
-                    pnl_aca_units_ranking_only: pnl.toString(),
+                    pnl_usd_micros: (pnl / 1000000n).toString(),
+                    pnl_usd: (pnl / 1000000000000n).toString(),
                     all_non_negative: allNonNegative,
-                    suspicious: allNonNegative && anyPositive }
+                    // A real drain needs positive USD PnL AFTER the unwind,
+                    // not merely a favourable price on one leg of a swap.
+                    // Gas is priced into ACA, so all_non_negative is NOT required.
+                    suspicious: isUnwind && pnl > 0n }
       out.scenarios.push(rec)
       log(name, '=>', JSON.stringify(results).slice(0, 200), 'pnl(rank)', pnl.toString(),
           'suspicious', rec.suspicious)
