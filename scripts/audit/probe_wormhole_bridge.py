@@ -111,8 +111,25 @@ def main(chain, out):
     res['evm_contract_accounts_scanned'] = len(accounts)
     print('EVM contract accounts', len(accounts), flush=True)
 
-    # read bridge getters on every account: only the bridge/proxy answers them
-    for a, ci in accounts:
+    # Only bytecodes whose LIVE dispatcher actually contains the
+    # BridgeImplementation selectors can be the bridge. Reading 8 getters on
+    # 20,000 accounts would be ~160,000 RPC calls (hours); filter by code_hash
+    # from the already-disassembled local evidence instead.
+    BRIDGE_SELS = {'0x9a8a0592', '0x2f3a3d5d', '0x1a2be4da', '0x1ff1e286',
+                   '0xb172b222', '0xad5c4648', '0xd60b347f'}
+    bridge_hashes = set()
+    try:
+        ana = json.load(open(f'audit-live/evm-codes-analysis-{chain}.json'))
+        for c in ana['contracts']:
+            if len(BRIDGE_SELS & set(c['selectors'])) >= 4:
+                bridge_hashes.add(c['file'].replace('.hex', '').lower())
+    except Exception as e:
+        res['errors'].append({'where': 'bridge bytecode filter', 'error': str(e)})
+    res['bridge_code_hashes'] = sorted(bridge_hashes)
+    candidates = [(a, ci) for a, ci in accounts
+                  if str(ci.get('code_hash', '')).lower() in bridge_hashes]
+    res['bridge_candidate_count'] = len(candidates)
+    for a, ci in candidates[:40]:
         g = {}
         for n, sel in BRIDGE_GETTERS.items():
             v = call(erpc, a, sel)
@@ -126,7 +143,14 @@ def main(chain, out):
 
     # small proxies = candidates for Wormhole BeaconProxy / UUPS / Safe proxies
     small = []
-    for a, ci in accounts:
+    try:
+        idx = json.load(open(f'audit-live/evm-codes-{chain}.json'))['codes']
+        small_hashes = {c['storage_key'].lower() for c in idx if c['code_bytes'] <= 600
+                        and c['code_bytes'] > 0}
+    except Exception: small_hashes = set()
+    small_accounts = [(a, ci) for a, ci in accounts
+                      if str(ci.get('code_hash', '')).lower() in small_hashes]
+    for a, ci in small_accounts:
         try:
             r = rpc(erpc, 'eth_getCode', [a, 'latest'])
             code = r.get('result', '0x')
@@ -136,7 +160,7 @@ def main(chain, out):
     res['small_proxy_count'] = len(small)
     print('small contracts (<=600B)', len(small), flush=True)
 
-    for a, nbytes, code in small[:400]:
+    for a, nbytes, code in small[:150]:
         rec = {'address': a, 'code_bytes': nbytes}
         for n, sel in PROXY_GETTERS.items():
             rec[n] = call(erpc, a, sel)
