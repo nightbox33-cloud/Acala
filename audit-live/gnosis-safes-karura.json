@@ -1,8 +1,8 @@
 {
  "chain": "karura",
- "generated_at_utc": "2026-11-08T00:56:59.169768+00:00",
- "finalized_hash": "0x57028e5ca75b86a44a4008c625adfcf3b8f0d345f467d6343e3420d1332c7566",
- "block_number": 12812371,
+ "generated_at_utc": "2026-11-08T01:47:16.232479+00:00",
+ "finalized_hash": "0xafb906e4d01bf687e54608914dc7e8237f75afd2a15b6c4a498cf60493a8e654",
+ "block_number": 12812613,
  "rpc": "https://karura-rpc.aca-api.network",
  "evm_rpc": "https://eth-rpc-karura.aca-api.network",
  "safe_proxy_code_hash": "0xb89c1b3bdf2cf8827818646bce9a8f6e372885f8c55e5c07acbd307cb133b000",
@@ -87,10 +87,42 @@
    "has_value": true,
    "uninitialized": false,
    "takeover_candidate": false
+  },
+  {
+   "address": "0x26800e02120093598e8f3758151a7ac014e02407",
+   "getOwners": "0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000020000000000000000000000006de4de587117b83c0a762e5d03bf1ecddd68ebb1000000000000000000000000643c8a8120efb675e82c5c58d8d473f5add0b5e6",
+   "getThreshold": "0x0000000000000000000000000000000000000000000000000000000000000001",
+   "getModules": "ERR:{'code': -32603, 'message': 'execution reverted: ', 'data': '0x'}",
+   "VERSION": "ERR:{'code': -32603, 'message': 'execution reverted: ', 'data': '0x'}",
+   "getFallbackHandler": "ERR:{'code': -32603, 'message': 'execution reverted: ', 'data': '0x'}",
+   "getGuard": "ERR:{'code': -32603, 'message': 'execution reverted: ', 'data': '0x'}",
+   "threshold": 1,
+   "setup_eth_call": "ERR:{'code': -32603, 'message': 'execution reverted: ', 'data': '0x'}",
+   "native_balance_wei": 2500000000000000000,
+   "token_balances": {},
+   "has_value": true,
+   "uninitialized": false,
+   "takeover_candidate": false
+  },
+  {
+   "address": "0xf7668506ccd207a69118820fc0f3ef0c24a5815c",
+   "getOwners": "0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000003000000000000000000000000ffffd2ff9b840f6bd74f80df8e532b4d7886ffff000000000000000000000000bbbba9ebe50f9456e106e6ef29921791828899990000000000000000000000000b3ec326eca90ee87f0b51a894ddf860fee782c3",
+   "getThreshold": "0x0000000000000000000000000000000000000000000000000000000000000002",
+   "getModules": "ERR:{'code': -32603, 'message': 'execution reverted: ', 'data': '0x'}",
+   "VERSION": "ERR:{'code': -32603, 'message': 'execution reverted: ', 'data': '0x'}",
+   "getFallbackHandler": "ERR:{'code': -32603, 'message': 'execution reverted: ', 'data': '0x'}",
+   "getGuard": "ERR:{'code': -32603, 'message': 'execution reverted: ', 'data': '0x'}",
+   "threshold": 2,
+   "setup_eth_call": "ERR:{'code': -32603, 'message': 'execution reverted: ', 'data': '0x'}",
+   "native_balance_wei": 2700000000000000000,
+   "token_balances": {},
+   "has_value": true,
+   "uninitialized": false,
+   "takeover_candidate": false
   }
  ],
- "evm_accounts_scanned": 4000,
+ "evm_accounts_scanned": 7150,
  "takeover_candidates": [],
  "uninitialized_count": 0,
- "with_value_count": 2
+ "with_value_count": 4
 }

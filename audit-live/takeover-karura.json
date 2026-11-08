@@ -1,0 +1,5 @@
+{
+ "chain": "karura",
+ "fatal_error": "too many values to unpack (expected 2)",
+ "traceback": "Traceback (most recent call last):\n  File \"/home/runner/work/Acala/Acala/scripts/audit/probe_takeover.py\", line 239, in <module>\n    main(_chain, _out)\n    ~~~~^^^^^^^^^^^^^^\n  File \"/home/runner/work/Acala/Acala/scripts/audit/probe_takeover.py\", line 152, in main\n    for sel, (sig, nargs) in meta['inits'].items():\n             ^^^^^^^^^^^^\nValueError: too many values to unpack (expected 2)\n"
+}

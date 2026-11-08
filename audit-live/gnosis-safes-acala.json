@@ -1,8 +1,8 @@
 {
  "chain": "acala",
- "generated_at_utc": "2026-11-08T00:55:51.875178+00:00",
- "finalized_hash": "0x5926f6637bc6705ea31302b994ea55aac6f320e2c070bc52b3068e776588746d",
- "block_number": 12384428,
+ "generated_at_utc": "2026-11-08T01:45:08.456357+00:00",
+ "finalized_hash": "0xea58743d4a06ff23979720503c4d0bcd29c3b1b2c6eb44780cde3e973b7eff11",
+ "block_number": 12384674,
  "rpc": "https://acala-rpc.aca-api.network",
  "evm_rpc": "https://eth-rpc-acala.aca-api.network",
  "safe_proxy_code_hash": "0xb89c1b3bdf2cf8827818646bce9a8f6e372885f8c55e5c07acbd307cb133b000",
@@ -143,10 +143,80 @@
    "has_value": true,
    "uninitialized": false,
    "takeover_candidate": false
+  },
+  {
+   "address": "0x692117a469b274027166c29ee88b21784b0f695d",
+   "getOwners": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000200000000000000000000000020cc148211ccddb9904e64895b59a6b313cc9fc3000000000000000000000000643c8a8120efb675e82c5c58d8d473f5add0b5e6",
+   "getThreshold": "0x0000000000000000000000000000000000000000000000000000000000000001",
+   "getModules": "ERR:{'code': -32603, 'message': 'execution reverted: ', 'data': '0x'}",
+   "VERSION": "ERR:{'code': -32603, 'message': 'execution reverted: ', 'data': '0x'}",
+   "getFallbackHandler": "ERR:{'code': -32603, 'message': 'execution reverted: ', 'data': '0x'}",
+   "getGuard": "ERR:{'code': -32603, 'message': 'execution reverted: ', 'data': '0x'}",
+   "threshold": 1,
+   "setup_eth_call": "ERR:{'code': -32603, 'message': 'execution reverted: ', 'data': '0x'}",
+   "native_balance_wei": 0,
+   "token_balances": {},
+   "has_value": false,
+   "uninitialized": false,
+   "takeover_candidate": false
+  },
+  {
+   "address": "0x9f036b36fc252648a3e604e3db16da7e51faa6ca",
+   "getOwners": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000200000000000000000000000020cc148211ccddb9904e64895b59a6b313cc9fc3000000000000000000000000643c8a8120efb675e82c5c58d8d473f5add0b5e6",
+   "getThreshold": "0x0000000000000000000000000000000000000000000000000000000000000002",
+   "getModules": "ERR:{'code': -32603, 'message': 'execution reverted: ', 'data': '0x'}",
+   "VERSION": "ERR:{'code': -32603, 'message': 'execution reverted: ', 'data': '0x'}",
+   "getFallbackHandler": "ERR:{'code': -32603, 'message': 'execution reverted: ', 'data': '0x'}",
+   "getGuard": "ERR:{'code': -32603, 'message': 'execution reverted: ', 'data': '0x'}",
+   "threshold": 2,
+   "setup_eth_call": "ERR:{'code': -32603, 'message': 'execution reverted: ', 'data': '0x'}",
+   "native_balance_wei": 0,
+   "token_balances": {},
+   "has_value": false,
+   "uninitialized": false,
+   "takeover_candidate": false
+  },
+  {
+   "address": "0x5b6dc62ce67b13523d6382b61b16a94336623264",
+   "getOwners": "0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000001000000000000000000000000b0b43081bae8781c22120d5a9d1cd14ae9a91607",
+   "getThreshold": "0x0000000000000000000000000000000000000000000000000000000000000001",
+   "getModules": "ERR:{'code': -32603, 'message': 'execution reverted: ', 'data': '0x'}",
+   "VERSION": "ERR:{'code': -32603, 'message': 'execution reverted: ', 'data': '0x'}",
+   "getFallbackHandler": "ERR:{'code': -32603, 'message': 'execution reverted: ', 'data': '0x'}",
+   "getGuard": "ERR:{'code': -32603, 'message': 'execution reverted: ', 'data': '0x'}",
+   "threshold": 1,
+   "setup_eth_call": "ERR:{'code': -32603, 'message': 'execution reverted: ', 'data': '0x'}",
+   "native_balance_wei": 10000000000000000000,
+   "token_balances": {
+    "ACA:0x0000000000000000000100000000000000000000": 10000000000000
+   },
+   "has_value": true,
+   "uninitialized": false,
+   "takeover_candidate": false
+  },
+  {
+   "address": "0x6065a6262ff9edbe6ad1f4625c400d2d2ce54b5a",
+   "getOwners": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000300000000000000000000000020cc148211ccddb9904e64895b59a6b313cc9fc30000000000000000000000006de4de587117b83c0a762e5d03bf1ecddd68ebb1000000000000000000000000643c8a8120efb675e82c5c58d8d473f5add0b5e6",
+   "getThreshold": "0x0000000000000000000000000000000000000000000000000000000000000001",
+   "getModules": "ERR:{'code': -32603, 'message': 'execution reverted: ', 'data': '0x'}",
+   "VERSION": "ERR:{'code': -32603, 'message': 'execution reverted: ', 'data': '0x'}",
+   "getFallbackHandler": "ERR:{'code': -32603, 'message': 'execution reverted: ', 'data': '0x'}",
+   "getGuard": "ERR:{'code': -32603, 'message': 'execution reverted: ', 'data': '0x'}",
+   "threshold": 1,
+   "setup_eth_call": "ERR:{'code': -32603, 'message': 'execution reverted: ', 'data': '0x'}",
+   "native_balance_wei": 2900000000000000000,
+   "token_balances": {
+    "ACA:0x0000000000000000000100000000000000000000": 2900000000000,
+    "AUSD:0x0000000000000000000100000000000000000001": 400000000000,
+    "DOT:0x0000000000000000000100000000000000000002": 900000000
+   },
+   "has_value": true,
+   "uninitialized": false,
+   "takeover_candidate": false
   }
  ],
- "evm_accounts_scanned": 4000,
+ "evm_accounts_scanned": 9933,
  "takeover_candidates": [],
  "uninitialized_count": 0,
- "with_value_count": 3
+ "with_value_count": 5
 }

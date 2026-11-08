@@ -1,8 +1,8 @@
 {
  "chain": "karura",
- "generated_at_utc": "2026-11-08T01:22:25.962506+00:00",
- "finalized_hash": "0x5b335dcd59fd438a62520695f7b22c1d19bb45d156ed72933302fe964e7267e9",
- "block_number": 12812492,
+ "generated_at_utc": "2026-11-08T01:53:59.076336+00:00",
+ "finalized_hash": "0xc0b2d70ee087c1e8806f87537ecbab3c14d8b124365138ff3926a1a6390d6c9e",
+ "block_number": 12812647,
  "rpc": "https://karura-rpc.aca-api.network",
  "evm_rpc": "https://eth-rpc-karura.aca-api.network",
  "max_accounts": 80,

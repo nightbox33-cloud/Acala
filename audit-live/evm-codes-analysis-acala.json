@@ -1,7 +1,7 @@
 {
  "chain": "acala",
- "block_number": 12384533,
- "finalized_hash": "0x0ac5098f52b709dc943387e49ae8389cec677ca3ce14b4714ab9b161c89826d3",
+ "block_number": 12384645,
+ "finalized_hash": "0x97a1c714c112d5a02cc5eceba7b2ceda5eb99eeb4f2ad09f4f3d9731ccc7e2d7",
  "code_count_in_index": 380,
  "files_analyzed": 380,
  "contracts": [
@@ -32,11 +32,11 @@
     "0xd0e30db0": "deposit()"
    },
    "danger_ops": {
-    "DELEGATECALL": 1,
+    "CALL": 1,
     "CALLVALUE": 14,
     "SSTORE": 6,
-    "SELFDESTRUCT": 2,
-    "CALL": 1
+    "DELEGATECALL": 1,
+    "SELFDESTRUCT": 2
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": true,
@@ -81,11 +81,11 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "ORIGIN": 2,
+    "CALL": 6,
     "CALLVALUE": 22,
     "SSTORE": 11,
-    "SELFDESTRUCT": 1,
-    "ORIGIN": 2,
-    "CALL": 6
+    "SELFDESTRUCT": 1
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -113,14 +113,14 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
+    "ORIGIN": 2,
+    "CALL": 22,
+    "COINBASE": 1,
     "CALLVALUE": 5,
+    "CALLCODE": 1,
     "SSTORE": 17,
     "SELFDESTRUCT": 1,
-    "CREATE": 2,
-    "CALLCODE": 1,
-    "ORIGIN": 2,
-    "COINBASE": 1,
-    "CALL": 22
+    "CREATE": 2
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -150,13 +150,13 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
-    "DELEGATECALL": 1,
+    "ORIGIN": 2,
+    "CALL": 22,
     "CALLVALUE": 5,
     "SSTORE": 17,
+    "DELEGATECALL": 1,
     "SELFDESTRUCT": 1,
-    "CREATE": 2,
-    "ORIGIN": 2,
-    "CALL": 22
+    "CREATE": 2
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -221,11 +221,11 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "ORIGIN": 2,
+    "CALL": 8,
     "CALLVALUE": 43,
     "SSTORE": 32,
-    "SELFDESTRUCT": 1,
-    "ORIGIN": 2,
-    "CALL": 8
+    "SELFDESTRUCT": 1
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -248,11 +248,11 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "DELEGATECALL": 1,
-    "CALLVALUE": 1,
-    "SELFDESTRUCT": 1,
     "ORIGIN": 1,
-    "CALL": 10
+    "CALL": 10,
+    "CALLVALUE": 1,
+    "DELEGATECALL": 1,
+    "SELFDESTRUCT": 1
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -279,14 +279,14 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "DELEGATECALL": 1,
-    "CALLVALUE": 3,
-    "SSTORE": 13,
-    "SELFDESTRUCT": 3,
     "ORIGIN": 1,
+    "CALL": 9,
     "COINBASE": 1,
     "CREATE2": 1,
-    "CALL": 9
+    "CALLVALUE": 3,
+    "SSTORE": 13,
+    "DELEGATECALL": 1,
+    "SELFDESTRUCT": 3
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -315,12 +315,12 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
+    "ORIGIN": 3,
+    "CALL": 22,
     "CALLVALUE": 5,
     "SSTORE": 18,
     "SELFDESTRUCT": 1,
-    "CREATE": 2,
-    "ORIGIN": 3,
-    "CALL": 22
+    "CREATE": 2
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -341,10 +341,10 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
-    "SELFDESTRUCT": 1,
     "ORIGIN": 1,
-    "CALL": 7
+    "CALL": 7,
+    "CALLVALUE": 1,
+    "SELFDESTRUCT": 1
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -385,12 +385,12 @@
     "0xb6b55f25": "deposit(uint256)"
    },
    "danger_ops": {
-    "DELEGATECALL": 1,
-    "CALLVALUE": 1,
-    "SSTORE": 12,
-    "CALLCODE": 1,
+    "CALL": 2,
     "CREATE2": 3,
-    "CALL": 2
+    "CALLVALUE": 1,
+    "CALLCODE": 1,
+    "SSTORE": 12,
+    "DELEGATECALL": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": true,
@@ -409,10 +409,10 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "DELEGATECALL": 1,
+    "CALL": 2,
     "CALLVALUE": 3,
-    "CREATE": 1,
-    "CALL": 2
+    "DELEGATECALL": 1,
+    "CREATE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": true,
@@ -438,10 +438,10 @@
     "0x8f283970": "changeAdmin(address)"
    },
    "danger_ops": {
-    "DELEGATECALL": 3,
+    "COINBASE": 1,
     "CALLVALUE": 4,
     "SSTORE": 1,
-    "COINBASE": 1
+    "DELEGATECALL": 3
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": true,
@@ -469,10 +469,10 @@
     "0x8da5cb5b": "owner()"
    },
    "danger_ops": {
-    "DELEGATECALL": 1,
+    "CALL": 3,
     "CALLVALUE": 1,
     "SSTORE": 1,
-    "CALL": 3
+    "DELEGATECALL": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": true,
@@ -496,13 +496,13 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "DELEGATECALL": 1,
-    "CALLVALUE": 5,
-    "SSTORE": 14,
-    "CREATE": 2,
-    "CALLCODE": 1,
     "ORIGIN": 2,
-    "CALL": 22
+    "CALL": 22,
+    "CALLVALUE": 5,
+    "CALLCODE": 1,
+    "SSTORE": 14,
+    "DELEGATECALL": 1,
+    "CREATE": 2
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -524,9 +524,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
     "ORIGIN": 1,
-    "CALL": 10
+    "CALL": 10,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -547,10 +547,10 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
     "ORIGIN": 1,
+    "CALL": 10,
     "COINBASE": 1,
-    "CALL": 10
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -579,11 +579,11 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
+    "ORIGIN": 2,
+    "CALL": 22,
     "CALLVALUE": 5,
     "SSTORE": 17,
-    "CREATE": 2,
-    "ORIGIN": 2,
-    "CALL": 22
+    "CREATE": 2
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -631,11 +631,11 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "DELEGATECALL": 2,
+    "ORIGIN": 1,
+    "CALL": 6,
     "CALLVALUE": 32,
     "SSTORE": 23,
-    "ORIGIN": 1,
-    "CALL": 6
+    "DELEGATECALL": 2
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -665,10 +665,10 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "SSTORE": 7,
     "ORIGIN": 1,
-    "CALL": 7
+    "CALL": 7,
+    "CALLVALUE": 1,
+    "SSTORE": 7
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -716,11 +716,11 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "DELEGATECALL": 2,
+    "ORIGIN": 1,
+    "CALL": 6,
     "CALLVALUE": 32,
     "SSTORE": 23,
-    "ORIGIN": 1,
-    "CALL": 6
+    "DELEGATECALL": 2
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -741,9 +741,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
     "ORIGIN": 1,
-    "CALL": 7
+    "CALL": 7,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -767,11 +767,11 @@
    ],
    "known_selectors": {},
    "danger_ops": {
+    "ORIGIN": 2,
+    "CALL": 21,
     "CALLVALUE": 5,
     "SSTORE": 14,
-    "CREATE": 2,
-    "ORIGIN": 2,
-    "CALL": 21
+    "CREATE": 2
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -794,11 +794,11 @@
    ],
    "known_selectors": {},
    "danger_ops": {
+    "ORIGIN": 2,
+    "CALL": 15,
     "CALLVALUE": 3,
     "SSTORE": 7,
-    "CREATE": 1,
-    "ORIGIN": 2,
-    "CALL": 15
+    "CREATE": 1
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -820,9 +820,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
     "ORIGIN": 1,
-    "CALL": 10
+    "CALL": 10,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -843,9 +843,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
     "ORIGIN": 1,
-    "CALL": 7
+    "CALL": 7,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -866,9 +866,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
     "ORIGIN": 1,
-    "CALL": 7
+    "CALL": 7,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -889,9 +889,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
     "ORIGIN": 1,
-    "CALL": 7
+    "CALL": 7,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -920,11 +920,11 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
+    "ORIGIN": 2,
+    "CALL": 22,
     "CALLVALUE": 5,
     "SSTORE": 17,
-    "CREATE": 2,
-    "ORIGIN": 2,
-    "CALL": 22
+    "CREATE": 2
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -952,11 +952,11 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
+    "ORIGIN": 2,
+    "CALL": 21,
     "CALLVALUE": 5,
     "SSTORE": 17,
-    "CREATE": 2,
-    "ORIGIN": 2,
-    "CALL": 21
+    "CREATE": 2
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -977,9 +977,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
     "ORIGIN": 1,
-    "CALL": 9
+    "CALL": 9,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -1001,9 +1001,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 2,
     "ORIGIN": 1,
-    "CALL": 10
+    "CALL": 10,
+    "CALLVALUE": 2
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -1027,11 +1027,11 @@
    ],
    "known_selectors": {},
    "danger_ops": {
+    "ORIGIN": 4,
+    "CALL": 16,
     "CALLVALUE": 3,
     "SSTORE": 9,
-    "CREATE": 1,
-    "ORIGIN": 4,
-    "CALL": 16
+    "CREATE": 1
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -1091,12 +1091,12 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
-    "CALLVALUE": 3,
-    "SSTORE": 52,
     "ORIGIN": 3,
+    "CALL": 3,
     "COINBASE": 3,
     "CREATE2": 1,
-    "CALL": 3
+    "CALLVALUE": 3,
+    "SSTORE": 52
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -1121,13 +1121,13 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 3,
-    "SSTORE": 12,
-    "CREATE": 1,
     "ORIGIN": 4,
+    "CALL": 17,
     "COINBASE": 1,
     "CREATE2": 1,
-    "CALL": 17
+    "CALLVALUE": 3,
+    "SSTORE": 12,
+    "CREATE": 1
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -1184,11 +1184,11 @@
     "0xfb3bdb41": "swap(uint256,uint256,address[],address) [Balancer]"
    },
    "danger_ops": {
-    "CALLVALUE": 24,
-    "SSTORE": 28,
     "ORIGIN": 2,
+    "CALL": 25,
     "COINBASE": 12,
-    "CALL": 25
+    "CALLVALUE": 24,
+    "SSTORE": 28
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -1267,12 +1267,12 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "ORIGIN": 5,
+    "CALL": 9,
+    "CREATE2": 2,
     "CALLVALUE": 34,
     "SSTORE": 27,
-    "CREATE": 2,
-    "ORIGIN": 5,
-    "CREATE2": 2,
-    "CALL": 9
+    "CREATE": 2
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -1293,9 +1293,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
     "ORIGIN": 1,
-    "CALL": 7
+    "CALL": 7,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -1314,9 +1314,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
     "ORIGIN": 1,
-    "CALL": 6
+    "CALL": 6,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -1337,9 +1337,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
     "ORIGIN": 1,
-    "CALL": 7
+    "CALL": 7,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -1362,10 +1362,10 @@
    ],
    "known_selectors": {},
    "danger_ops": {
+    "ORIGIN": 1,
     "CALLVALUE": 1,
     "SSTORE": 9,
-    "CREATE": 1,
-    "ORIGIN": 1
+    "CREATE": 1
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -1395,9 +1395,9 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
+    "ORIGIN": 1,
     "CALLVALUE": 1,
-    "SSTORE": 6,
-    "ORIGIN": 1
+    "SSTORE": 6
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -1421,11 +1421,11 @@
    ],
    "known_selectors": {},
    "danger_ops": {
+    "ORIGIN": 4,
+    "CALL": 16,
     "CALLVALUE": 3,
     "SSTORE": 9,
-    "CREATE": 1,
-    "ORIGIN": 4,
-    "CALL": 16
+    "CREATE": 1
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -1446,9 +1446,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
     "ORIGIN": 1,
-    "CALL": 7
+    "CALL": 7,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -1471,11 +1471,11 @@
    ],
    "known_selectors": {},
    "danger_ops": {
+    "ORIGIN": 2,
+    "CALL": 17,
     "CALLVALUE": 3,
     "SSTORE": 7,
-    "CREATE": 1,
-    "ORIGIN": 2,
-    "CALL": 17
+    "CREATE": 1
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -1504,12 +1504,12 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
+    "ORIGIN": 2,
+    "CALL": 22,
+    "CREATE2": 1,
     "CALLVALUE": 6,
     "SSTORE": 17,
-    "CREATE": 2,
-    "ORIGIN": 2,
-    "CREATE2": 1,
-    "CALL": 22
+    "CREATE": 2
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -1609,11 +1609,11 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
-    "DELEGATECALL": 1,
+    "ORIGIN": 2,
+    "CALL": 1,
     "CALLVALUE": 92,
     "SSTORE": 127,
-    "ORIGIN": 2,
-    "CALL": 1
+    "DELEGATECALL": 1
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -1634,9 +1634,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
     "ORIGIN": 1,
-    "CALL": 7
+    "CALL": 7,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -1671,11 +1671,11 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "ORIGIN": 1,
+    "CALL": 2,
     "CALLVALUE": 17,
     "SSTORE": 6,
-    "CREATE": 1,
-    "ORIGIN": 1,
-    "CALL": 2
+    "CREATE": 1
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -1697,9 +1697,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
     "ORIGIN": 1,
-    "CALL": 10
+    "CALL": 10,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -1752,10 +1752,10 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "SSTORE": 48,
     "ORIGIN": 4,
-    "CALL": 1
+    "CALL": 1,
+    "CALLVALUE": 1,
+    "SSTORE": 48
    },
    "origin_auth_suspicious": true,
    "delegatecall_dynamic_target": false,
@@ -1779,11 +1779,11 @@
    ],
    "known_selectors": {},
    "danger_ops": {
+    "CALL": 6,
+    "CREATE2": 1,
     "CALLVALUE": 3,
     "SSTORE": 7,
-    "SELFDESTRUCT": 1,
-    "CREATE2": 1,
-    "CALL": 6
+    "SELFDESTRUCT": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -1844,14 +1844,14 @@
     "0x9dc29fac": "burn(address,uint256)"
    },
    "danger_ops": {
-    "DELEGATECALL": 5,
-    "CALLVALUE": 35,
-    "SSTORE": 14,
-    "SELFDESTRUCT": 1,
-    "CREATE": 2,
+    "CALL": 15,
     "COINBASE": 2,
     "CREATE2": 1,
-    "CALL": 15
+    "CALLVALUE": 35,
+    "SSTORE": 14,
+    "DELEGATECALL": 5,
+    "SELFDESTRUCT": 1,
+    "CREATE": 2
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -1899,10 +1899,10 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 4,
     "CALLVALUE": 20,
     "SSTORE": 8,
-    "SELFDESTRUCT": 1,
-    "CALL": 4
+    "SELFDESTRUCT": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -1930,11 +1930,11 @@
    ],
    "known_selectors": {},
    "danger_ops": {
+    "CALL": 10,
+    "CREATE2": 1,
     "CALLVALUE": 3,
     "SSTORE": 10,
-    "SELFDESTRUCT": 2,
-    "CREATE2": 1,
-    "CALL": 10
+    "SELFDESTRUCT": 2
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -1956,12 +1956,12 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "DELEGATECALL": 1,
+    "CALL": 5,
+    "CREATE2": 2,
     "CALLVALUE": 3,
     "SSTORE": 4,
-    "SELFDESTRUCT": 1,
-    "CREATE2": 2,
-    "CALL": 5
+    "DELEGATECALL": 1,
+    "SELFDESTRUCT": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -2055,10 +2055,10 @@
    ],
    "known_selectors": {},
    "danger_ops": {
+    "CALL": 2,
     "CALLVALUE": 1,
     "SSTORE": 34,
-    "SELFDESTRUCT": 1,
-    "CALL": 2
+    "SELFDESTRUCT": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -2118,11 +2118,11 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 6,
+    "COINBASE": 1,
     "CALLVALUE": 32,
     "SSTORE": 80,
-    "SELFDESTRUCT": 1,
-    "COINBASE": 1,
-    "CALL": 6
+    "SELFDESTRUCT": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -2165,11 +2165,11 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 1,
     "CALLVALUE": 1,
     "SSTORE": 17,
     "SELFDESTRUCT": 1,
-    "CREATE": 1,
-    "CALL": 1
+    "CREATE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -2229,11 +2229,11 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 6,
+    "COINBASE": 1,
     "CALLVALUE": 32,
     "SSTORE": 80,
-    "SELFDESTRUCT": 1,
-    "COINBASE": 1,
-    "CALL": 6
+    "SELFDESTRUCT": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -2261,11 +2261,11 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
-    "DELEGATECALL": 1,
+    "CALL": 2,
     "CALLVALUE": 1,
     "SSTORE": 3,
-    "SELFDESTRUCT": 1,
-    "CALL": 2
+    "DELEGATECALL": 1,
+    "SELFDESTRUCT": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -2352,15 +2352,15 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 75,
-    "SSTORE": 150,
-    "SELFDESTRUCT": 1,
-    "CREATE": 2,
-    "CALLCODE": 1,
     "ORIGIN": 1,
+    "CALL": 11,
     "COINBASE": 1,
     "CREATE2": 3,
-    "CALL": 11
+    "CALLVALUE": 75,
+    "CALLCODE": 1,
+    "SSTORE": 150,
+    "SELFDESTRUCT": 1,
+    "CREATE": 2
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -2380,10 +2380,10 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "DELEGATECALL": 2,
+    "CALL": 2,
     "CALLVALUE": 1,
-    "SELFDESTRUCT": 1,
-    "CALL": 2
+    "DELEGATECALL": 2,
+    "SELFDESTRUCT": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -2450,14 +2450,14 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
-    "CALLVALUE": 3,
-    "SSTORE": 51,
-    "SELFDESTRUCT": 2,
-    "CALLCODE": 1,
     "ORIGIN": 2,
+    "CALL": 4,
     "COINBASE": 2,
     "CREATE2": 2,
-    "CALL": 4
+    "CALLVALUE": 3,
+    "CALLCODE": 1,
+    "SSTORE": 51,
+    "SELFDESTRUCT": 2
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -2481,11 +2481,11 @@
    ],
    "known_selectors": {},
    "danger_ops": {
+    "CALL": 6,
+    "CREATE2": 1,
     "CALLVALUE": 3,
     "SSTORE": 7,
-    "SELFDESTRUCT": 1,
-    "CREATE2": 1,
-    "CALL": 6
+    "SELFDESTRUCT": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -2510,12 +2510,12 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "DELEGATECALL": 2,
+    "CALL": 4,
+    "CREATE2": 1,
     "CALLVALUE": 3,
     "SSTORE": 4,
-    "SELFDESTRUCT": 1,
-    "CREATE2": 1,
-    "CALL": 4
+    "DELEGATECALL": 2,
+    "SELFDESTRUCT": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -2540,13 +2540,13 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 5,
-    "SSTORE": 12,
-    "SELFDESTRUCT": 2,
-    "CALLCODE": 1,
+    "CALL": 10,
     "COINBASE": 1,
     "CREATE2": 2,
-    "CALL": 10
+    "CALLVALUE": 5,
+    "CALLCODE": 1,
+    "SSTORE": 12,
+    "SELFDESTRUCT": 2
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -2569,11 +2569,11 @@
     "0x8da5cb5b": "owner()"
    },
    "danger_ops": {
-    "DELEGATECALL": 1,
+    "CALL": 3,
     "CALLVALUE": 4,
-    "SELFDESTRUCT": 1,
     "CALLCODE": 1,
-    "CALL": 3
+    "DELEGATECALL": 1,
+    "SELFDESTRUCT": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -2597,11 +2597,11 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
-    "SELFDESTRUCT": 1,
-    "CALLCODE": 1,
+    "CALL": 1,
     "COINBASE": 1,
-    "CALL": 1
+    "CALLVALUE": 1,
+    "CALLCODE": 1,
+    "SELFDESTRUCT": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -2628,12 +2628,12 @@
    ],
    "known_selectors": {},
    "danger_ops": {
+    "CALL": 9,
+    "CREATE2": 1,
     "CALLVALUE": 4,
     "SSTORE": 14,
     "SELFDESTRUCT": 2,
-    "CREATE": 1,
-    "CREATE2": 1,
-    "CALL": 9
+    "CREATE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -2655,10 +2655,10 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
+    "CALL": 3,
     "CALLVALUE": 1,
-    "SELFDESTRUCT": 1,
     "CALLCODE": 1,
-    "CALL": 3
+    "SELFDESTRUCT": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -2703,10 +2703,10 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CREATE2": 1,
     "CALLVALUE": 1,
     "SSTORE": 8,
-    "SELFDESTRUCT": 1,
-    "CREATE2": 1
+    "SELFDESTRUCT": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -2734,11 +2734,11 @@
    ],
    "known_selectors": {},
    "danger_ops": {
+    "CALL": 10,
+    "CREATE2": 1,
     "CALLVALUE": 3,
     "SSTORE": 10,
-    "SELFDESTRUCT": 2,
-    "CREATE2": 1,
-    "CALL": 10
+    "SELFDESTRUCT": 2
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -2792,11 +2792,11 @@
     "0xfb3bdb41": "swap(uint256,uint256,address[],address) [Balancer]"
    },
    "danger_ops": {
+    "CALL": 25,
+    "COINBASE": 10,
     "CALLVALUE": 28,
     "SSTORE": 18,
-    "SELFDESTRUCT": 1,
-    "COINBASE": 10,
-    "CALL": 25
+    "SELFDESTRUCT": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -2850,11 +2850,11 @@
     "0xfb3bdb41": "swap(uint256,uint256,address[],address) [Balancer]"
    },
    "danger_ops": {
+    "CALL": 25,
+    "COINBASE": 13,
     "CALLVALUE": 28,
     "SSTORE": 30,
-    "SELFDESTRUCT": 1,
-    "COINBASE": 13,
-    "CALL": 25
+    "SELFDESTRUCT": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -2889,11 +2889,11 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 2,
     "CALLVALUE": 9,
     "SSTORE": 2,
     "SELFDESTRUCT": 1,
-    "CREATE": 1,
-    "CALL": 2
+    "CREATE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -2930,10 +2930,10 @@
     "0xf3fef3a3": "withdraw(uint256,uint256)"
    },
    "danger_ops": {
+    "CALL": 1,
     "CALLVALUE": 1,
     "SSTORE": 9,
-    "SELFDESTRUCT": 1,
-    "CALL": 1
+    "SELFDESTRUCT": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -2993,11 +2993,11 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 6,
+    "COINBASE": 1,
     "CALLVALUE": 32,
     "SSTORE": 80,
-    "SELFDESTRUCT": 1,
-    "COINBASE": 1,
-    "CALL": 6
+    "SELFDESTRUCT": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -3019,11 +3019,11 @@
    ],
    "known_selectors": {},
    "danger_ops": {
+    "CALL": 5,
+    "CREATE2": 1,
     "CALLVALUE": 3,
     "SSTORE": 4,
-    "SELFDESTRUCT": 1,
-    "CREATE2": 1,
-    "CALL": 5
+    "SELFDESTRUCT": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -3058,10 +3058,10 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 4,
     "CALLVALUE": 8,
     "SSTORE": 3,
-    "SELFDESTRUCT": 1,
-    "CALL": 4
+    "SELFDESTRUCT": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -3093,10 +3093,10 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "COINBASE": 1,
     "CALLVALUE": 1,
     "SSTORE": 5,
-    "SELFDESTRUCT": 1,
-    "COINBASE": 1
+    "SELFDESTRUCT": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -3118,13 +3118,13 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "DELEGATECALL": 2,
+    "CALL": 3,
+    "CREATE2": 1,
     "CALLVALUE": 4,
     "SSTORE": 1,
+    "DELEGATECALL": 2,
     "SELFDESTRUCT": 7,
-    "CREATE": 1,
-    "CREATE2": 1,
-    "CALL": 3
+    "CREATE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -3184,11 +3184,11 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 6,
+    "COINBASE": 1,
     "CALLVALUE": 32,
     "SSTORE": 80,
-    "SELFDESTRUCT": 1,
-    "COINBASE": 1,
-    "CALL": 6
+    "SELFDESTRUCT": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -3298,12 +3298,12 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 39,
-    "SSTORE": 45,
-    "CALLCODE": 1,
     "ORIGIN": 1,
+    "CALL": 3,
     "CREATE2": 3,
-    "CALL": 3
+    "CALLVALUE": 39,
+    "CALLCODE": 1,
+    "SSTORE": 45
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -3371,12 +3371,12 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
-    "CALLVALUE": 3,
-    "SSTORE": 51,
     "ORIGIN": 3,
+    "CALL": 4,
     "COINBASE": 2,
     "CREATE2": 1,
-    "CALL": 4
+    "CALLVALUE": 3,
+    "SSTORE": 51
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -3408,9 +3408,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 1,
     "CALLVALUE": 11,
-    "SSTORE": 7,
-    "CALL": 1
+    "SSTORE": 7
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -3457,8 +3457,8 @@
    "known_selectors": {},
    "danger_ops": {
     "CALLVALUE": 1,
-    "SSTORE": 4,
-    "CALLCODE": 2
+    "CALLCODE": 2,
+    "SSTORE": 4
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -3476,9 +3476,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 3,
+    "CALL": 2,
     "COINBASE": 1,
-    "CALL": 2
+    "CALLVALUE": 3
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -3501,10 +3501,10 @@
     "0x8da5cb5b": "owner()"
    },
    "danger_ops": {
-    "CALLVALUE": 4,
-    "CALLCODE": 1,
     "ORIGIN": 1,
-    "CALL": 3
+    "CALL": 3,
+    "CALLVALUE": 4,
+    "CALLCODE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -3519,9 +3519,9 @@
    "selectors": [],
    "known_selectors": {},
    "danger_ops": {
-    "DELEGATECALL": 2,
+    "COINBASE": 1,
     "CALLVALUE": 1,
-    "COINBASE": 1
+    "DELEGATECALL": 2
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -3567,9 +3567,9 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
-    "CALLVALUE": 21,
+    "CALL": 32,
     "COINBASE": 1,
-    "CALL": 32
+    "CALLVALUE": 21
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -3609,9 +3609,9 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
-    "CALLVALUE": 17,
+    "CALL": 25,
     "COINBASE": 1,
-    "CALL": 25
+    "CALLVALUE": 17
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -3671,9 +3671,9 @@
     "0xf3fef3a3": "withdraw(uint256,uint256)"
    },
    "danger_ops": {
+    "CALL": 1,
     "CALLVALUE": 1,
-    "SSTORE": 10,
-    "CALL": 1
+    "SSTORE": 10
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -3701,9 +3701,9 @@
     "0x8da5cb5b": "owner()"
    },
    "danger_ops": {
+    "CALL": 2,
     "CALLVALUE": 1,
-    "SSTORE": 1,
-    "CALL": 2
+    "SSTORE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -3725,9 +3725,9 @@
     "0x8da5cb5b": "owner()"
    },
    "danger_ops": {
+    "CALL": 1,
     "CALLVALUE": 4,
-    "SSTORE": 1,
-    "CALL": 1
+    "SSTORE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -3749,8 +3749,8 @@
     "0x8da5cb5b": "owner()"
    },
    "danger_ops": {
-    "CALLVALUE": 3,
-    "CALL": 2
+    "CALL": 2,
+    "CALLVALUE": 3
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -3780,9 +3780,9 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
+    "ORIGIN": 1,
     "CALLVALUE": 1,
-    "SSTORE": 5,
-    "ORIGIN": 1
+    "SSTORE": 5
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -3803,11 +3803,11 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "DELEGATECALL": 3,
+    "CALL": 1,
+    "CREATE2": 1,
     "CALLVALUE": 6,
     "SSTORE": 2,
-    "CREATE2": 1,
-    "CALL": 1
+    "DELEGATECALL": 3
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -3824,8 +3824,8 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 1
+    "CALL": 1,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -3847,9 +3847,9 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
+    "CALL": 3,
     "COINBASE": 1,
-    "CALL": 3
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -3894,10 +3894,10 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "SSTORE": 16,
     "ORIGIN": 1,
-    "CALL": 1
+    "CALL": 1,
+    "CALLVALUE": 1,
+    "SSTORE": 16
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -3924,9 +3924,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "ORIGIN": 1,
     "CALLVALUE": 1,
-    "SSTORE": 3,
-    "ORIGIN": 1
+    "SSTORE": 3
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -3947,10 +3947,10 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "DELEGATECALL": 1,
-    "CALLVALUE": 1,
     "ORIGIN": 1,
-    "CALL": 2
+    "CALL": 2,
+    "CALLVALUE": 1,
+    "DELEGATECALL": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -4003,10 +4003,10 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "SSTORE": 37,
     "ORIGIN": 2,
-    "CALL": 1
+    "CALL": 1,
+    "CALLVALUE": 1,
+    "SSTORE": 37
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -4144,9 +4144,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 6,
     "CALLVALUE": 1,
-    "SSTORE": 55,
-    "CALL": 6
+    "SSTORE": 55
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -4206,12 +4206,12 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
-    "CALLVALUE": 3,
-    "SSTORE": 50,
     "ORIGIN": 2,
+    "CALL": 3,
     "COINBASE": 3,
     "CREATE2": 1,
-    "CALL": 3
+    "CALLVALUE": 3,
+    "SSTORE": 50
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -4262,11 +4262,11 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "SSTORE": 43,
     "ORIGIN": 1,
+    "CALL": 2,
     "COINBASE": 2,
-    "CALL": 2
+    "CALLVALUE": 1,
+    "SSTORE": 43
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -4319,9 +4319,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 11,
     "CALLVALUE": 31,
-    "SSTORE": 23,
-    "CALL": 11
+    "SSTORE": 23
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -4354,8 +4354,8 @@
     "0x095ea7b3": "approve(address,uint256)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 8
+    "CALL": 8,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -4377,9 +4377,9 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
+    "CALL": 3,
     "CALLVALUE": 1,
-    "CALLCODE": 2,
-    "CALL": 3
+    "CALLCODE": 2
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -4398,9 +4398,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
+    "CALL": 1,
     "CALLVALUE": 1,
-    "SSTORE": 1,
-    "CALL": 1
+    "SSTORE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -4435,9 +4435,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 2,
     "CALLVALUE": 8,
-    "SSTORE": 2,
-    "CALL": 2
+    "SSTORE": 2
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -4486,10 +4486,10 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "DELEGATECALL": 1,
+    "CALL": 1,
     "CALLVALUE": 29,
     "SSTORE": 13,
-    "CALL": 1
+    "DELEGATECALL": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -4513,10 +4513,10 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "DELEGATECALL": 1,
+    "ORIGIN": 1,
     "CALLVALUE": 8,
     "SSTORE": 6,
-    "ORIGIN": 1
+    "DELEGATECALL": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -4561,9 +4561,9 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
-    "CALLVALUE": 21,
+    "CALL": 30,
     "COINBASE": 1,
-    "CALL": 30
+    "CALLVALUE": 21
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -4667,10 +4667,10 @@
     "0xfb3bdb41": "swap(uint256,uint256,address[],address) [Balancer]"
    },
    "danger_ops": {
-    "CALLVALUE": 28,
-    "SSTORE": 30,
+    "CALL": 25,
     "COINBASE": 13,
-    "CALL": 25
+    "CALLVALUE": 28,
+    "SSTORE": 30
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -4733,10 +4733,10 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 2,
     "CALLVALUE": 1,
-    "SSTORE": 4,
     "CALLCODE": 1,
-    "CALL": 2
+    "SSTORE": 4
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -4817,8 +4817,8 @@
     "0x095ea7b3": "approve(address,uint256)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 8
+    "CALL": 8,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -4857,9 +4857,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 2,
     "CALLVALUE": 17,
-    "SSTORE": 20,
-    "CALL": 2
+    "SSTORE": 20
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -4956,10 +4956,10 @@
     "0xf3fef3a3": "withdraw(uint256,uint256)"
    },
    "danger_ops": {
-    "DELEGATECALL": 1,
+    "CALL": 3,
     "CALLVALUE": 2,
     "SSTORE": 34,
-    "CALL": 3
+    "DELEGATECALL": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -5031,10 +5031,10 @@
     "0xb6b55f25": "deposit(uint256)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CREATE": 1,
+    "CALL": 6,
     "CREATE2": 1,
-    "CALL": 6
+    "CALLVALUE": 1,
+    "CREATE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -5172,9 +5172,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 3,
     "CALLVALUE": 1,
-    "SSTORE": 61,
-    "CALL": 3
+    "SSTORE": 61
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -5248,9 +5248,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 26,
     "CALLVALUE": 1,
-    "SSTORE": 29,
-    "CALL": 26
+    "SSTORE": 29
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -5273,8 +5273,8 @@
     "0x8da5cb5b": "owner()"
    },
    "danger_ops": {
-    "CALLVALUE": 4,
-    "CALL": 3
+    "CALL": 3,
+    "CALLVALUE": 4
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -5302,10 +5302,10 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
-    "CALLVALUE": 4,
-    "CALLCODE": 1,
+    "CALL": 7,
     "CREATE2": 1,
-    "CALL": 7
+    "CALLVALUE": 4,
+    "CALLCODE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -5327,8 +5327,8 @@
     "0x8da5cb5b": "owner()"
    },
    "danger_ops": {
-    "CALLVALUE": 3,
-    "CALL": 2
+    "CALL": 2,
+    "CALLVALUE": 3
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -5358,8 +5358,8 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 7
+    "CALL": 7,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -5423,12 +5423,12 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
-    "CALLVALUE": 3,
-    "SSTORE": 50,
     "ORIGIN": 3,
+    "CALL": 3,
     "COINBASE": 2,
     "CREATE2": 1,
-    "CALL": 3
+    "CALLVALUE": 3,
+    "SSTORE": 50
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -5483,12 +5483,12 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "SSTORE": 41,
-    "CALLCODE": 1,
     "ORIGIN": 1,
+    "CALL": 2,
     "COINBASE": 2,
-    "CALL": 2
+    "CALLVALUE": 1,
+    "CALLCODE": 1,
+    "SSTORE": 41
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -5518,9 +5518,9 @@
     "0xf3fef3a3": "withdraw(uint256,uint256)"
    },
    "danger_ops": {
+    "CALL": 1,
     "CALLVALUE": 1,
-    "SSTORE": 2,
-    "CALL": 1
+    "SSTORE": 2
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -5577,11 +5577,11 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "SSTORE": 41,
     "ORIGIN": 1,
+    "CALL": 2,
     "COINBASE": 2,
-    "CALL": 2
+    "CALLVALUE": 1,
+    "SSTORE": 41
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -5616,8 +5616,8 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 11
+    "CALL": 11,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -5663,8 +5663,8 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 16
+    "CALL": 16,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -5739,10 +5739,10 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
-    "DELEGATECALL": 1,
+    "CALL": 26,
     "CALLVALUE": 1,
     "SSTORE": 29,
-    "CALL": 26
+    "DELEGATECALL": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -5813,10 +5813,10 @@
     "0xfb3bdb41": "swap(uint256,uint256,address[],address) [Balancer]"
    },
    "danger_ops": {
-    "CALLVALUE": 28,
-    "SSTORE": 18,
+    "CALL": 25,
     "COINBASE": 11,
-    "CALL": 25
+    "CALLVALUE": 28,
+    "SSTORE": 18
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -5848,9 +5848,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
+    "CALL": 2,
     "CALLVALUE": 1,
-    "SSTORE": 9,
-    "CALL": 2
+    "SSTORE": 9
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -5867,9 +5867,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
+    "COINBASE": 1,
     "CALLVALUE": 1,
-    "CALLCODE": 1,
-    "COINBASE": 1
+    "CALLCODE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -5889,8 +5889,8 @@
     "0xdb006a75": "emergencyWithdraw()"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 1
+    "CALL": 1,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -6031,9 +6031,9 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
+    "CALL": 1,
     "CALLVALUE": 1,
-    "SSTORE": 12,
-    "CALL": 1
+    "SSTORE": 12
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -6075,9 +6075,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "ORIGIN": 4,
     "CALLVALUE": 1,
-    "SSTORE": 9,
-    "ORIGIN": 4
+    "SSTORE": 9
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -6101,9 +6101,9 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
+    "CALL": 2,
     "CALLVALUE": 1,
-    "SSTORE": 5,
-    "CALL": 2
+    "SSTORE": 5
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -6144,9 +6144,9 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
+    "CALL": 4,
     "CALLVALUE": 1,
-    "SSTORE": 35,
-    "CALL": 4
+    "SSTORE": 35
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -6192,9 +6192,9 @@
     "0xf14210a6": "withdraw(address,uint256)"
    },
    "danger_ops": {
+    "CALL": 3,
     "CALLVALUE": 6,
-    "SSTORE": 1,
-    "CALL": 3
+    "SSTORE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -6259,9 +6259,9 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
     "ORIGIN": 1,
-    "CALL": 25
+    "CALL": 25,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -6308,8 +6308,8 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 25
+    "CALL": 25,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -6401,9 +6401,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 10,
     "CALLVALUE": 43,
-    "SSTORE": 32,
-    "CALL": 10
+    "SSTORE": 32
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -6478,9 +6478,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 26,
     "CALLVALUE": 2,
-    "SSTORE": 29,
-    "CALL": 26
+    "SSTORE": 29
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -6512,9 +6512,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 2,
     "CALLVALUE": 1,
-    "SSTORE": 4,
-    "CALL": 2
+    "SSTORE": 4
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -6573,12 +6573,12 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
-    "CALLVALUE": 3,
-    "SSTORE": 50,
     "ORIGIN": 2,
+    "CALL": 4,
     "COINBASE": 3,
     "CREATE2": 1,
-    "CALL": 4
+    "CALLVALUE": 3,
+    "SSTORE": 50
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -6625,10 +6625,10 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CREATE": 1,
+    "CALL": 25,
     "COINBASE": 1,
-    "CALL": 25
+    "CALLVALUE": 1,
+    "CREATE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -6676,11 +6676,11 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 24,
-    "SSTORE": 23,
-    "CALLCODE": 1,
+    "CALL": 2,
     "CREATE2": 1,
-    "CALL": 2
+    "CALLVALUE": 24,
+    "CALLCODE": 1,
+    "SSTORE": 23
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -6699,9 +6699,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
+    "CALL": 1,
     "CALLVALUE": 2,
-    "SSTORE": 1,
-    "CALL": 1
+    "SSTORE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -6720,11 +6720,11 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "DELEGATECALL": 2,
+    "COINBASE": 1,
     "CALLVALUE": 1,
-    "SSTORE": 1,
     "CALLCODE": 1,
-    "COINBASE": 1
+    "SSTORE": 1,
+    "DELEGATECALL": 2
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -6791,12 +6791,12 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "ORIGIN": 1,
+    "CALL": 4,
+    "CREATE2": 1,
     "CALLVALUE": 5,
     "SSTORE": 59,
-    "CREATE": 2,
-    "ORIGIN": 1,
-    "CREATE2": 1,
-    "CALL": 4
+    "CREATE": 2
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -6829,9 +6829,9 @@
     "0x095ea7b3": "approve(address,uint256)"
    },
    "danger_ops": {
+    "CALL": 8,
     "CALLVALUE": 1,
-    "SSTORE": 1,
-    "CALL": 8
+    "SSTORE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -6853,8 +6853,8 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 3
+    "CALL": 3,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -6900,8 +6900,8 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 1
+    "CALL": 1,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -6924,10 +6924,10 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 2,
-    "CALLCODE": 1,
+    "CALL": 2,
     "CREATE2": 1,
-    "CALL": 2
+    "CALLVALUE": 2,
+    "CALLCODE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -6942,8 +6942,8 @@
    "selectors": [],
    "known_selectors": {},
    "danger_ops": {
-    "DELEGATECALL": 1,
-    "CALLVALUE": 1
+    "CALLVALUE": 1,
+    "DELEGATECALL": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -7008,9 +7008,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 8,
     "CALLVALUE": 43,
-    "SSTORE": 32,
-    "CALL": 8
+    "SSTORE": 32
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -7061,11 +7061,11 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "SSTORE": 41,
     "ORIGIN": 1,
+    "CALL": 2,
     "COINBASE": 3,
-    "CALL": 2
+    "CALLVALUE": 1,
+    "SSTORE": 41
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -7109,9 +7109,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 1,
     "CALLVALUE": 1,
-    "SSTORE": 15,
-    "CALL": 1
+    "SSTORE": 15
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -7188,9 +7188,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 6,
     "CALLVALUE": 1,
-    "SSTORE": 62,
-    "CALL": 6
+    "SSTORE": 62
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -7252,9 +7252,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 11,
+    "CALL": 4,
     "COINBASE": 1,
-    "CALL": 4
+    "CALLVALUE": 11
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -7292,10 +7292,10 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
+    "CALL": 11,
     "CALLVALUE": 1,
     "SSTORE": 1,
-    "CREATE": 1,
-    "CALL": 11
+    "CREATE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -7341,8 +7341,8 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
-    "CALLVALUE": 21,
-    "CALL": 28
+    "CALL": 28,
+    "CALLVALUE": 21
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -7377,8 +7377,8 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 11
+    "CALL": 11,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -7541,12 +7541,12 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "ORIGIN": 4,
+    "CALL": 1,
+    "COINBASE": 1,
     "CALLVALUE": 1,
     "SSTORE": 33,
-    "CREATE": 1,
-    "ORIGIN": 4,
-    "COINBASE": 1,
-    "CALL": 1
+    "CREATE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -7584,8 +7584,8 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 11
+    "CALL": 11,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -7602,8 +7602,8 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
-    "COINBASE": 1
+    "COINBASE": 1,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -7698,12 +7698,12 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
-    "CALLVALUE": 32,
-    "SSTORE": 19,
     "ORIGIN": 5,
+    "CALL": 6,
     "COINBASE": 1,
     "CREATE2": 2,
-    "CALL": 6
+    "CALLVALUE": 32,
+    "SSTORE": 19
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -7731,10 +7731,10 @@
     "0x8da5cb5b": "owner()"
    },
    "danger_ops": {
+    "CALL": 2,
     "CALLVALUE": 1,
     "SSTORE": 1,
-    "CREATE": 1,
-    "CALL": 2
+    "CREATE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -7833,9 +7833,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 8,
     "CALLVALUE": 25,
-    "SSTORE": 21,
-    "CALL": 8
+    "SSTORE": 21
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -7891,13 +7891,13 @@
     "0x5c60da1b": "implementation() [EIP1967]"
    },
    "danger_ops": {
-    "DELEGATECALL": 4,
-    "CALLVALUE": 29,
-    "SSTORE": 15,
-    "CREATE": 1,
+    "CALL": 5,
     "COINBASE": 2,
     "CREATE2": 1,
-    "CALL": 5
+    "CALLVALUE": 29,
+    "SSTORE": 15,
+    "DELEGATECALL": 4,
+    "CREATE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -7929,9 +7929,9 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
+    "CALL": 2,
     "CALLVALUE": 1,
-    "SSTORE": 1,
-    "CALL": 2
+    "SSTORE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -7960,10 +7960,10 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "SSTORE": 10,
+    "CALL": 3,
     "COINBASE": 1,
-    "CALL": 3
+    "CALLVALUE": 1,
+    "SSTORE": 10
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -8037,10 +8037,10 @@
     "0xf3fef3a3": "withdraw(uint256,uint256)"
    },
    "danger_ops": {
-    "DELEGATECALL": 1,
+    "CALL": 16,
     "CALLVALUE": 45,
     "SSTORE": 66,
-    "CALL": 16
+    "DELEGATECALL": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -8142,11 +8142,11 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
-    "DELEGATECALL": 1,
+    "ORIGIN": 1,
+    "CALL": 1,
     "CALLVALUE": 94,
     "SSTORE": 128,
-    "ORIGIN": 1,
-    "CALL": 1
+    "DELEGATECALL": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -8169,8 +8169,8 @@
     "0x8da5cb5b": "owner()"
    },
    "danger_ops": {
-    "CALLVALUE": 4,
-    "CALL": 3
+    "CALL": 3,
+    "CALLVALUE": 4
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -8245,10 +8245,10 @@
     "0xdb006a75": "emergencyWithdraw()"
    },
    "danger_ops": {
-    "DELEGATECALL": 2,
+    "ORIGIN": 1,
     "CALLVALUE": 53,
     "SSTORE": 1,
-    "ORIGIN": 1
+    "DELEGATECALL": 2
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -8289,11 +8289,11 @@
     "0xb6b55f25": "deposit(uint256)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "SSTORE": 12,
-    "CALLCODE": 1,
+    "CALL": 2,
     "CREATE2": 2,
-    "CALL": 2
+    "CALLVALUE": 1,
+    "CALLCODE": 1,
+    "SSTORE": 12
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -8338,9 +8338,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
-    "DELEGATECALL": 1,
     "CALLVALUE": 1,
-    "SSTORE": 11
+    "SSTORE": 11,
+    "DELEGATECALL": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -8357,8 +8357,8 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 1
+    "CALL": 1,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -8403,9 +8403,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "ORIGIN": 1,
     "CALLVALUE": 1,
-    "SSTORE": 11,
-    "ORIGIN": 1
+    "SSTORE": 11
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -8450,9 +8450,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 1,
     "CALLVALUE": 21,
-    "SSTORE": 9,
-    "CALL": 1
+    "SSTORE": 9
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -8499,9 +8499,9 @@
     "0x5c60da1b": "implementation() [EIP1967]"
    },
    "danger_ops": {
-    "DELEGATECALL": 3,
     "CALLVALUE": 3,
-    "SSTORE": 1
+    "SSTORE": 1,
+    "DELEGATECALL": 3
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -8555,10 +8555,10 @@
     "0xfb3bdb41": "swap(uint256,uint256,address[],address) [Balancer]"
    },
    "danger_ops": {
-    "CALLVALUE": 29,
-    "SSTORE": 28,
+    "CALL": 25,
     "COINBASE": 13,
-    "CALL": 25
+    "CALLVALUE": 29,
+    "SSTORE": 28
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -8659,9 +8659,9 @@
     "0xf3fef3a3": "withdraw(uint256,uint256)"
    },
    "danger_ops": {
+    "CALL": 3,
     "CALLVALUE": 1,
-    "SSTORE": 33,
-    "CALL": 3
+    "SSTORE": 33
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -8702,10 +8702,10 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "SSTORE": 35,
     "ORIGIN": 1,
-    "CALL": 3
+    "CALL": 3,
+    "CALLVALUE": 1,
+    "SSTORE": 35
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -8723,9 +8723,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
+    "CREATE2": 1,
     "CALLVALUE": 1,
-    "CREATE": 1,
-    "CREATE2": 1
+    "CREATE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -8758,9 +8758,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 2,
     "CALLVALUE": 8,
-    "SSTORE": 1,
-    "CALL": 2
+    "SSTORE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -8801,11 +8801,11 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "DELEGATECALL": 1,
+    "ORIGIN": 1,
+    "CALL": 1,
     "CALLVALUE": 23,
     "SSTORE": 10,
-    "ORIGIN": 1,
-    "CALL": 1
+    "DELEGATECALL": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -8899,9 +8899,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
+    "CALL": 2,
     "CALLVALUE": 1,
-    "SSTORE": 34,
-    "CALL": 2
+    "SSTORE": 34
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -8968,12 +8968,12 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 39,
-    "SSTORE": 45,
-    "CALLCODE": 1,
     "ORIGIN": 1,
+    "CALL": 3,
     "CREATE2": 3,
-    "CALL": 3
+    "CALLVALUE": 39,
+    "CALLCODE": 1,
+    "SSTORE": 45
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -9021,9 +9021,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 20,
     "CALLVALUE": 21,
-    "SSTORE": 9,
-    "CALL": 20
+    "SSTORE": 9
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -9061,9 +9061,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 1,
     "CALLVALUE": 1,
-    "SSTORE": 4,
-    "CALL": 1
+    "SSTORE": 4
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -9138,10 +9138,10 @@
     "0x8da5cb5b": "owner()"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "SSTORE": 17,
     "ORIGIN": 1,
-    "CALL": 1
+    "CALL": 1,
+    "CALLVALUE": 1,
+    "SSTORE": 17
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -9244,12 +9244,12 @@
     "0xdb006a75": "emergencyWithdraw()"
    },
    "danger_ops": {
-    "CALLVALUE": 2,
-    "SSTORE": 77,
-    "CALLCODE": 1,
+    "CALL": 15,
     "COINBASE": 28,
     "CREATE2": 2,
-    "CALL": 15
+    "CALLVALUE": 2,
+    "CALLCODE": 1,
+    "SSTORE": 77
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -9278,9 +9278,9 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
+    "CALL": 2,
     "CALLVALUE": 1,
-    "SSTORE": 3,
-    "CALL": 2
+    "SSTORE": 3
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -9304,9 +9304,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
+    "CALL": 1,
     "COINBASE": 1,
-    "CALL": 1
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -9326,9 +9326,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
+    "CALL": 2,
     "CREATE2": 1,
-    "CALL": 2
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -9403,11 +9403,11 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "SSTORE": 41,
     "ORIGIN": 1,
+    "CALL": 2,
     "COINBASE": 2,
-    "CALL": 2
+    "CALLVALUE": 1,
+    "SSTORE": 41
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -9440,9 +9440,9 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
+    "CALL": 1,
     "CALLVALUE": 1,
-    "SSTORE": 1,
-    "CALL": 1
+    "SSTORE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -9816,8 +9816,8 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 1
+    "CALL": 1,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -9838,11 +9838,11 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "DELEGATECALL": 3,
+    "CALL": 1,
+    "CREATE2": 1,
     "CALLVALUE": 6,
     "SSTORE": 2,
-    "CREATE2": 1,
-    "CALL": 1
+    "DELEGATECALL": 3
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -9865,8 +9865,8 @@
     "0x8da5cb5b": "owner()"
    },
    "danger_ops": {
-    "CALLVALUE": 4,
-    "CALL": 3
+    "CALL": 3,
+    "CALLVALUE": 4
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -9920,10 +9920,10 @@
     "0xfb3bdb41": "swap(uint256,uint256,address[],address) [Balancer]"
    },
    "danger_ops": {
-    "CALLVALUE": 29,
-    "SSTORE": 30,
+    "CALL": 25,
     "COINBASE": 13,
-    "CALL": 25
+    "CALLVALUE": 29,
+    "SSTORE": 30
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -9963,9 +9963,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 4,
     "CALLVALUE": 20,
-    "SSTORE": 8,
-    "CALL": 4
+    "SSTORE": 8
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -10016,12 +10016,12 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
-    "DELEGATECALL": 3,
+    "CALL": 2,
+    "COINBASE": 1,
     "CALLVALUE": 5,
     "SSTORE": 14,
-    "CREATE": 1,
-    "COINBASE": 1,
-    "CALL": 2
+    "DELEGATECALL": 3,
+    "CREATE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -10039,8 +10039,8 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
-    "ORIGIN": 1
+    "ORIGIN": 1,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -10071,10 +10071,10 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
-    "SSTORE": 15,
     "ORIGIN": 1,
-    "CALL": 2
+    "CALL": 2,
+    "CALLVALUE": 1,
+    "SSTORE": 15
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -10128,10 +10128,10 @@
     "0xfb3bdb41": "swap(uint256,uint256,address[],address) [Balancer]"
    },
    "danger_ops": {
-    "CALLVALUE": 28,
-    "SSTORE": 30,
+    "CALL": 25,
     "COINBASE": 13,
-    "CALL": 25
+    "CALLVALUE": 28,
+    "SSTORE": 30
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -10183,10 +10183,10 @@
     "0x9dc29fac": "burn(address,uint256)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "SSTORE": 51,
+    "CALL": 1,
     "CREATE2": 1,
-    "CALL": 1
+    "CALLVALUE": 1,
+    "SSTORE": 51
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -10213,8 +10213,8 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 2
+    "CALL": 2,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -10240,8 +10240,8 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 4
+    "CALL": 4,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -10268,9 +10268,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
+    "CALL": 2,
     "CALLVALUE": 2,
-    "CREATE": 1,
-    "CALL": 2
+    "CREATE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -10304,9 +10304,9 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
+    "CALL": 2,
     "CALLVALUE": 1,
-    "SSTORE": 3,
-    "CALL": 2
+    "SSTORE": 3
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -10342,8 +10342,8 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 11
+    "CALL": 11,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -10375,9 +10375,9 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
+    "CALL": 6,
     "CALLVALUE": 3,
-    "SSTORE": 3,
-    "CALL": 6
+    "SSTORE": 3
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -10405,9 +10405,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
+    "CALL": 2,
     "COINBASE": 1,
-    "CALL": 2
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -10430,9 +10430,9 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
+    "CALL": 3,
     "CALLVALUE": 1,
-    "CREATE": 1,
-    "CALL": 3
+    "CREATE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -10519,9 +10519,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 8,
     "CALLVALUE": 43,
-    "SSTORE": 32,
-    "CALL": 8
+    "SSTORE": 32
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -10538,8 +10538,8 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 2
+    "CALL": 2,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -10626,9 +10626,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
+    "CALL": 1,
     "COINBASE": 1,
-    "CALL": 1
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -10719,9 +10719,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
+    "CALL": 2,
     "CALLVALUE": 1,
-    "SSTORE": 24,
-    "CALL": 2
+    "SSTORE": 24
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -10796,9 +10796,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 1,
     "CALLVALUE": 1,
-    "SSTORE": 12,
-    "CALL": 1
+    "SSTORE": 12
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -10820,9 +10820,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
+    "CALL": 2,
     "CALLVALUE": 6,
-    "SSTORE": 1,
-    "CALL": 2
+    "SSTORE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -10877,9 +10877,9 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
+    "CALL": 1,
     "CALLVALUE": 1,
-    "SSTORE": 12,
-    "CALL": 1
+    "SSTORE": 12
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -10915,9 +10915,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
+    "CALL": 4,
     "CALLVALUE": 1,
-    "SSTORE": 7,
-    "CALL": 4
+    "SSTORE": 7
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -10982,10 +10982,10 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
-    "DELEGATECALL": 9,
+    "CALL": 18,
     "CALLVALUE": 1,
     "SSTORE": 21,
-    "CALL": 18
+    "DELEGATECALL": 9
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -11054,13 +11054,13 @@
     "0x9dc29fac": "burn(address,uint256)"
    },
    "danger_ops": {
-    "DELEGATECALL": 4,
-    "CALLVALUE": 43,
-    "SSTORE": 16,
-    "CREATE": 1,
+    "CALL": 14,
     "COINBASE": 2,
     "CREATE2": 1,
-    "CALL": 14
+    "CALLVALUE": 43,
+    "SSTORE": 16,
+    "DELEGATECALL": 4,
+    "CREATE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -11126,9 +11126,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 10,
     "CALLVALUE": 44,
-    "SSTORE": 32,
-    "CALL": 10
+    "SSTORE": 32
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -11163,8 +11163,8 @@
     "0xb6b55f25": "deposit(uint256)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 4
+    "CALL": 4,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -11267,9 +11267,9 @@
     "0xd0e30db0": "deposit()"
    },
    "danger_ops": {
+    "CALL": 1,
     "CALLVALUE": 11,
-    "SSTORE": 6,
-    "CALL": 1
+    "SSTORE": 6
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -11286,8 +11286,8 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 2
+    "CALL": 2,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -11309,8 +11309,8 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 4
+    "CALL": 4,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -11356,8 +11356,8 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
-    "CALLVALUE": 21,
-    "CALL": 30
+    "CALL": 30,
+    "CALLVALUE": 21
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -11374,9 +11374,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
+    "ORIGIN": 1,
     "CALLVALUE": 1,
-    "SSTORE": 6,
-    "ORIGIN": 1
+    "SSTORE": 6
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -11398,8 +11398,8 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 3
+    "CALL": 3,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -11455,9 +11455,9 @@
     "0x9dc29fac": "burn(address,uint256)"
    },
    "danger_ops": {
+    "CALL": 1,
     "CALLVALUE": 1,
-    "SSTORE": 66,
-    "CALL": 1
+    "SSTORE": 66
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -11484,8 +11484,8 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 2
+    "CALL": 2,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -11534,9 +11534,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 2,
     "CALLVALUE": 20,
-    "SSTORE": 33,
-    "CALL": 2
+    "SSTORE": 33
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -11598,9 +11598,9 @@
     "0xd0e30db0": "deposit()"
    },
    "danger_ops": {
+    "CALL": 1,
     "CALLVALUE": 11,
-    "SSTORE": 6,
-    "CALL": 1
+    "SSTORE": 6
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -11628,9 +11628,9 @@
     "0x8da5cb5b": "owner()"
    },
    "danger_ops": {
+    "CALL": 2,
     "CALLVALUE": 1,
-    "SSTORE": 1,
-    "CALL": 2
+    "SSTORE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -11665,9 +11665,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 2,
     "CALLVALUE": 12,
-    "SSTORE": 8,
-    "CALL": 2
+    "SSTORE": 8
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -11691,8 +11691,8 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 3,
-    "ORIGIN": 1
+    "ORIGIN": 1,
+    "CALLVALUE": 3
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -11716,10 +11716,10 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 2,
     "CALLVALUE": 1,
     "SSTORE": 2,
-    "CREATE": 1,
-    "CALL": 2
+    "CREATE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -11777,9 +11777,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
+    "CALL": 5,
     "CALLVALUE": 1,
-    "SSTORE": 1,
-    "CALL": 5
+    "SSTORE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -11807,8 +11807,8 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 2,
-    "CALL": 3
+    "CALL": 3,
+    "CALLVALUE": 2
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -11846,9 +11846,9 @@
     "0x095ea7b3": "approve(address,uint256)"
    },
    "danger_ops": {
+    "CALL": 8,
     "CALLVALUE": 1,
-    "CREATE": 1,
-    "CALL": 8
+    "CREATE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -11897,13 +11897,13 @@
     "0x5c60da1b": "implementation() [EIP1967]"
    },
    "danger_ops": {
-    "DELEGATECALL": 4,
-    "CALLVALUE": 24,
-    "SSTORE": 13,
-    "CREATE": 1,
+    "CALL": 5,
     "COINBASE": 2,
     "CREATE2": 1,
-    "CALL": 5
+    "CALLVALUE": 24,
+    "SSTORE": 13,
+    "DELEGATECALL": 4,
+    "CREATE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -11949,10 +11949,10 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
-    "CALLVALUE": 21,
+    "CALL": 32,
     "COINBASE": 1,
     "CREATE2": 1,
-    "CALL": 32
+    "CALLVALUE": 21
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -12014,9 +12014,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 2,
     "CALLVALUE": 1,
-    "SSTORE": 16,
-    "CALL": 2
+    "SSTORE": 16
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -12076,8 +12076,8 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 1
+    "CALL": 1,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -12103,10 +12103,10 @@
     "0x8f283970": "changeAdmin(address)"
    },
    "danger_ops": {
-    "DELEGATECALL": 2,
+    "COINBASE": 1,
     "CALLVALUE": 4,
     "SSTORE": 1,
-    "COINBASE": 1
+    "DELEGATECALL": 2
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -12186,8 +12186,8 @@
     "0x095ea7b3": "approve(address,uint256)"
    },
    "danger_ops": {
-    "CALLVALUE": 2,
-    "CALL": 8
+    "CALL": 8,
+    "CALLVALUE": 2
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -12239,9 +12239,9 @@
     "0x9dc29fac": "burn(address,uint256)"
    },
    "danger_ops": {
+    "CALL": 1,
     "CALLVALUE": 1,
-    "SSTORE": 51,
-    "CALL": 1
+    "SSTORE": 51
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -12344,10 +12344,10 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "SSTORE": 47,
     "ORIGIN": 1,
-    "CALL": 2
+    "CALL": 2,
+    "CALLVALUE": 1,
+    "SSTORE": 47
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -12411,10 +12411,10 @@
     "0xd0e30db0": "deposit()"
    },
    "danger_ops": {
-    "CALLVALUE": 11,
-    "SSTORE": 6,
     "ORIGIN": 1,
-    "CALL": 1
+    "CALL": 1,
+    "CALLVALUE": 11,
+    "SSTORE": 6
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -12447,10 +12447,10 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "SSTORE": 7,
     "ORIGIN": 1,
-    "COINBASE": 1
+    "COINBASE": 1,
+    "CALLVALUE": 1,
+    "SSTORE": 7
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -12516,10 +12516,10 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 44,
-    "SSTORE": 32,
     "ORIGIN": 1,
-    "CALL": 10
+    "CALL": 10,
+    "CALLVALUE": 44,
+    "SSTORE": 32
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -12573,9 +12573,9 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
+    "CALL": 1,
     "CALLVALUE": 1,
-    "SSTORE": 13,
-    "CALL": 1
+    "SSTORE": 13
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -12616,11 +12616,11 @@
     "0xb6b55f25": "deposit(uint256)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "SSTORE": 12,
-    "CALLCODE": 1,
+    "CALL": 2,
     "CREATE2": 2,
-    "CALL": 2
+    "CALLVALUE": 1,
+    "CALLCODE": 1,
+    "SSTORE": 12
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -12664,9 +12664,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
+    "CALL": 3,
     "CALLVALUE": 1,
-    "SSTORE": 30,
-    "CALL": 3
+    "SSTORE": 30
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -12809,13 +12809,13 @@
     "0x9dc29fac": "burn(address,uint256)"
    },
    "danger_ops": {
-    "DELEGATECALL": 4,
-    "CALLVALUE": 39,
-    "SSTORE": 14,
-    "CREATE": 1,
+    "CALL": 14,
     "COINBASE": 2,
     "CREATE2": 1,
-    "CALL": 14
+    "CALLVALUE": 39,
+    "SSTORE": 14,
+    "DELEGATECALL": 4,
+    "CREATE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -12863,9 +12863,9 @@
     "0x5c60da1b": "implementation() [EIP1967]"
    },
    "danger_ops": {
-    "DELEGATECALL": 3,
     "CALLVALUE": 3,
-    "SSTORE": 1
+    "SSTORE": 1,
+    "DELEGATECALL": 3
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -12903,10 +12903,10 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
+    "CALL": 5,
     "CALLVALUE": 10,
     "SSTORE": 16,
-    "CREATE": 2,
-    "CALL": 5
+    "CREATE": 2
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -12935,9 +12935,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "ORIGIN": 1,
     "CALLVALUE": 1,
-    "SSTORE": 21,
-    "ORIGIN": 1
+    "SSTORE": 21
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -12959,8 +12959,8 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 3
+    "CALL": 3,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -13018,9 +13018,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 2,
     "CALLVALUE": 24,
-    "SSTORE": 54,
-    "CALL": 2
+    "SSTORE": 54
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -13066,8 +13066,8 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 16
+    "CALL": 16,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -13136,13 +13136,13 @@
     "0x9dc29fac": "burn(address,uint256)"
    },
    "danger_ops": {
-    "DELEGATECALL": 4,
-    "CALLVALUE": 43,
-    "SSTORE": 14,
-    "CREATE": 1,
+    "CALL": 14,
     "COINBASE": 3,
     "CREATE2": 1,
-    "CALL": 14
+    "CALLVALUE": 43,
+    "SSTORE": 14,
+    "DELEGATECALL": 4,
+    "CREATE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -13174,10 +13174,10 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 2,
     "CALLVALUE": 1,
-    "SSTORE": 4,
     "CALLCODE": 1,
-    "CALL": 2
+    "SSTORE": 4
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -13210,11 +13210,11 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
-    "SSTORE": 10,
-    "CALLCODE": 1,
     "ORIGIN": 1,
-    "COINBASE": 2
+    "COINBASE": 2,
+    "CALLVALUE": 1,
+    "CALLCODE": 1,
+    "SSTORE": 10
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -13246,9 +13246,9 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
+    "COINBASE": 1,
     "CALLVALUE": 1,
-    "SSTORE": 3,
-    "COINBASE": 1
+    "SSTORE": 3
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -13263,8 +13263,8 @@
    "selectors": [],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CREATE2": 1
+    "CREATE2": 1,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -13315,9 +13315,9 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
+    "CALL": 1,
     "CALLVALUE": 1,
-    "SSTORE": 29,
-    "CALL": 1
+    "SSTORE": 29
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -13334,9 +13334,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "DELEGATECALL": 1,
+    "CALL": 1,
     "CALLVALUE": 1,
-    "CALL": 1
+    "DELEGATECALL": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -13424,10 +13424,10 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 25,
-    "SSTORE": 21,
     "ORIGIN": 1,
-    "CALL": 8
+    "CALL": 8,
+    "CALLVALUE": 25,
+    "SSTORE": 21
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -13468,10 +13468,10 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "SSTORE": 35,
     "ORIGIN": 1,
-    "CALL": 4
+    "CALL": 4,
+    "CALLVALUE": 1,
+    "SSTORE": 35
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -13494,8 +13494,8 @@
     "0x8da5cb5b": "owner()"
    },
    "danger_ops": {
-    "CALLVALUE": 4,
-    "CALL": 3
+    "CALL": 3,
+    "CALLVALUE": 4
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -13527,9 +13527,9 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
+    "CALL": 6,
     "CALLVALUE": 3,
-    "SSTORE": 3,
-    "CALL": 6
+    "SSTORE": 3
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -13599,13 +13599,13 @@
     "0x5c60da1b": "implementation() [EIP1967]"
    },
    "danger_ops": {
-    "DELEGATECALL": 4,
-    "CALLVALUE": 26,
-    "SSTORE": 14,
-    "CREATE": 1,
+    "CALL": 6,
     "COINBASE": 2,
     "CREATE2": 1,
-    "CALL": 6
+    "CALLVALUE": 26,
+    "SSTORE": 14,
+    "DELEGATECALL": 4,
+    "CREATE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -13659,10 +13659,10 @@
     "0xfb3bdb41": "swap(uint256,uint256,address[],address) [Balancer]"
    },
    "danger_ops": {
-    "CALLVALUE": 28,
-    "SSTORE": 30,
+    "CALL": 25,
     "COINBASE": 13,
-    "CALL": 25
+    "CALLVALUE": 28,
+    "SSTORE": 30
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -13689,9 +13689,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
-    "DELEGATECALL": 1,
     "CALLVALUE": 1,
     "SSTORE": 4,
+    "DELEGATECALL": 1,
     "CREATE": 1
    },
    "origin_auth_suspicious": false,
@@ -13776,10 +13776,10 @@
     "0xfb3bdb41": "swap(uint256,uint256,address[],address) [Balancer]"
    },
    "danger_ops": {
-    "CALLVALUE": 29,
-    "SSTORE": 28,
+    "CALL": 25,
     "COINBASE": 13,
-    "CALL": 25
+    "CALLVALUE": 29,
+    "SSTORE": 28
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -13844,9 +13844,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 1,
     "CALLVALUE": 1,
-    "SSTORE": 15,
-    "CALL": 1
+    "SSTORE": 15
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -13877,9 +13877,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
+    "COINBASE": 2,
     "CALLVALUE": 1,
-    "SSTORE": 10,
-    "COINBASE": 2
+    "SSTORE": 10
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -13898,8 +13898,8 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 3
+    "CALL": 3,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -13928,9 +13928,9 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
+    "CALL": 2,
     "CALLVALUE": 1,
-    "SSTORE": 3,
-    "CALL": 2
+    "SSTORE": 3
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -13959,8 +13959,8 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 1
+    "CALL": 1,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -14001,11 +14001,11 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
-    "DELEGATECALL": 1,
+    "ORIGIN": 1,
+    "CALL": 2,
     "CALLVALUE": 1,
     "SSTORE": 35,
-    "ORIGIN": 1,
-    "CALL": 2
+    "DELEGATECALL": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -14173,8 +14173,8 @@
     "0xdb006a75": "emergencyWithdraw()"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 6
+    "CALL": 6,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -14256,10 +14256,10 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 42,
     "CALLVALUE": 1,
     "SSTORE": 35,
-    "CREATE": 1,
-    "CALL": 42
+    "CREATE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -14289,9 +14289,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "COINBASE": 1,
     "CALLVALUE": 10,
-    "SSTORE": 5,
-    "COINBASE": 1
+    "SSTORE": 5
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -14323,8 +14323,8 @@
     "0xdb006a75": "emergencyWithdraw()"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 3
+    "CALL": 3,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -14413,8 +14413,8 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 11
+    "CALL": 11,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -14446,9 +14446,9 @@
     "0xa9059cbb": "transfer(address,uint256)"
    },
    "danger_ops": {
+    "CALL": 1,
     "CALLVALUE": 1,
-    "SSTORE": 3,
-    "CALL": 1
+    "SSTORE": 3
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -14474,8 +14474,8 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 4
+    "CALL": 4,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -14528,11 +14528,11 @@
     "0x5c60da1b": "implementation() [EIP1967]"
    },
    "danger_ops": {
-    "DELEGATECALL": 3,
+    "CALL": 16,
     "CALLVALUE": 5,
     "SSTORE": 6,
-    "CREATE": 1,
-    "CALL": 16
+    "DELEGATECALL": 3,
+    "CREATE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -14549,9 +14549,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "DELEGATECALL": 1,
     "CALLVALUE": 1,
-    "SSTORE": 1
+    "SSTORE": 1,
+    "DELEGATECALL": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -14619,9 +14619,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 8,
     "CALLVALUE": 1,
-    "SSTORE": 68,
-    "CALL": 8
+    "SSTORE": 68
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -14643,8 +14643,8 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 4
+    "CALL": 4,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -14661,10 +14661,10 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "CALLVALUE": 1,
     "ORIGIN": 1,
     "COINBASE": 1,
-    "CREATE2": 1
+    "CREATE2": 1,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -14734,12 +14734,12 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
-    "DELEGATECALL": 12,
+    "ORIGIN": 1,
+    "CALL": 3,
     "CALLVALUE": 1,
     "SSTORE": 49,
-    "CREATE": 1,
-    "ORIGIN": 1,
-    "CALL": 3
+    "DELEGATECALL": 12,
+    "CREATE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -14801,8 +14801,8 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 11
+    "CALL": 11,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -14868,9 +14868,9 @@
     "0xf2fde38b": "transferOwnership(address)"
    },
    "danger_ops": {
+    "CALL": 10,
     "CALLVALUE": 43,
-    "SSTORE": 32,
-    "CALL": 10
+    "SSTORE": 32
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -14923,10 +14923,10 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "SSTORE": 37,
     "ORIGIN": 2,
-    "CALL": 1
+    "CALL": 1,
+    "CALLVALUE": 1,
+    "SSTORE": 37
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -14964,8 +14964,8 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
-    "CALLVALUE": 1,
-    "CALL": 11
+    "CALL": 11,
+    "CALLVALUE": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -15035,8 +15035,8 @@
    "selectors": [],
    "known_selectors": {},
    "danger_ops": {
-    "DELEGATECALL": 2,
-    "COINBASE": 1
+    "COINBASE": 1,
+    "DELEGATECALL": 2
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -15102,9 +15102,9 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "DELEGATECALL": 2,
+    "CALL": 1,
     "COINBASE": 1,
-    "CALL": 1
+    "DELEGATECALL": 2
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -15119,8 +15119,8 @@
    "selectors": [],
    "known_selectors": {},
    "danger_ops": {
-    "DELEGATECALL": 2,
-    "COINBASE": 1
+    "COINBASE": 1,
+    "DELEGATECALL": 2
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -15137,8 +15137,8 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "DELEGATECALL": 1,
-    "CALL": 1
+    "CALL": 1,
+    "DELEGATECALL": 1
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -15205,8 +15205,8 @@
    ],
    "known_selectors": {},
    "danger_ops": {
-    "DELEGATECALL": 2,
-    "COINBASE": 1
+    "COINBASE": 1,
+    "DELEGATECALL": 2
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
@@ -15280,10 +15280,10 @@
     "0x70a08231": "balanceOf(address)"
    },
    "danger_ops": {
-    "SSTORE": 11,
     "ORIGIN": 1,
+    "CALL": 5,
     "COINBASE": 2,
-    "CALL": 5
+    "SSTORE": 11
    },
    "origin_auth_suspicious": false,
    "delegatecall_dynamic_target": false,
